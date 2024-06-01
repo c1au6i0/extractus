@@ -1,7 +1,7 @@
 #' items_to_down
 #'
 #' Columns of Main Data of CompTox extracted data. Used in `get_comptox`
-#' @seealso [get_comptox()]
+#' @seealso [extr_tox()]
 items_to_down <- function() {
   c(
     "DTXSID",
@@ -43,30 +43,87 @@ items_to_down <- function() {
   )
 }
 
-
-
-
-
-
-
-
-#' Checked required arg
+#' ice_assays
 #'
-#' Function that handle missing arguments. It checks if there are required arguments that are missng and
-#' print a message. It is supposed to be used inside a function.
-#'
-#' @param required_arg Vector of required arguments.
-#' @param get_arg If TRUE output a list of arguments.
-handle_required_args <- function(required_arg, get_arg = FALSE) {
+#' Assays of iris used in `extr_tox`.
+#' @seealso [extr_tox()]
+ice_assays <- function() {
 
-  passed <- as.list(sys.call(-1))[-1]
-  passed <- lapply(passed, rlang::eval_tidy, env = rlang::caller_env(n = 2))
+  ice_carc_woe <-
+    c(
+      "OPP Carcinogenicity",
+      "Report on Carcinogens",
+      "IRIS Carcinogenicity",
+      "IARC Carcinogenicity",
+      "IRIS Carcinogenicity"
+    )
 
-  required_arg_missing <- required_arg[!required_arg %in% names(passed)]
 
-  if (length(required_arg_missing) != 0) cli::cli_abort("The argument{?s} {.field {required_arg_missing}} {?is/is/are} required.")
+  ice_invivo_acute_tox <-
+    c(
+      "Rat Acute Oral Toxicity",
+      "Rat Acute Inhalation Toxicity",
+      "Rat Acute Dermal Toxicity"
+    )
 
-  if (get_arg) return(passed)
+
+  ice_invivo_sensitization <- c("Human Maximization Test", "Human Repeat Insult Patch Test", "LLNA", "Guinea Pig Maximization/Buehler")
+
+  ice_invivo_irritation <- c(
+    "Draize Skin Irritation/Corrosion Test",
+    "Draize Eye Irritation/Corrosion Test",
+    "Four-hour Human Patch Test"
+  )
+
+
+  ice_invivo_endocrine <- c(
+    "Hershberger-Agonist",
+    "Hershberger-Antagonist",
+    "Uterotrophic-Agonist"
+  )
+
+  ice_cancer <- c(
+    "In Vitro Genotoxicity",
+    "In Vivo Genotoxicity",
+    "NTP Carcinogenicity",
+    "Two year cancer bioassay"
+  )
+
+  ice_dart <- c(
+    "Urinalysis", "Microscopic Pathology",
+    "Gross Pathology", "Organ Weight", "In Life Observation", "Hematology",
+    "Clinical Chemistry", "Cholinesterase", "in vivo", "Offspring Survival Late",
+    "Developmental Malformation", "Developmental Landmark", "Reproductive Performance",
+    "Offspring Survival Early"
+  )
+
+
+  list(ice_carc_woe = ice_carc_woe,
+       ice_invivo_acute_tox = ice_invivo_acute_tox,
+       ice_invivo_sensitization = ice_invivo_sensitization,
+       ice_invivo_irritation = ice_invivo_irritation,
+       ice_invivo_endocrine = ice_invivo_endocrine,
+       ice_cancer = ice_cancer,
+       ice_dart = ice_dart
+       )
+}
+
+
+
+# Function to create an Excel file with each dataframe as a separate sheet
+write_dataframes_to_excel <- function(df_list, filename) {
+  # Create a new workbook
+  wb <- openxlsx::createWorkbook()
+
+  # Add each dataframe as a new sheet
+  for (name in names(df_list)) {
+    openxlsx::addWorksheet(wb, name)
+    openxlsx::writeData(wb, sheet = name, df_list[[name]])
+  }
+
+  # Save the workbook
+  openxlsx::saveWorkbook(wb, filename, overwrite = TRUE)
+  cli::cli_alert_info("Excell file written in {filename}...")
 
 }
 

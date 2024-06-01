@@ -1,0 +1,666 @@
+Chemical Name,CASRN,Exposure Route,Assessment Type,Critical Effect or Tumor Type,WOE Characterization,Toxicity Value Type,Toxicity Value
+Acenaphthene,83-32-9,Oral,Noncancer,Hepatotoxicity,n/a,RfD,6x10-2 mg/kg-day
+Acephate,30560-19-1,Oral,Noncancer,Inhibition of brain ChE,n/a,RfD,4x10-3 mg/kg-day
+Acetaldehyde,75-07-0,Inhalation,Cancer,Nasal squamous cell carcinoma or adenocarcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,2.2x10-6 per ｵg/m3
+Acetaldehyde,75-07-0,Inhalation,Noncancer,Degeneration of olfactory epithelium,n/a,RfC,9x10-3 mg/m3
+Acetochlor,34256-82-1,Oral,Noncancer,"Salivation, increased ALT and ornithine carbamyl transferase; significant increases in triglyceride and decreased blood glucose levels; histopathological changes in kidneys and testes of males",n/a,RfD,2x10-2 mg/kg-day
+Acetone,67-64-1,Oral,Noncancer,Nephropathy,n/a,RfD,9x10-1 mg/kg-day
+Acetonitrile,75-05-8,Inhalation,Noncancer,Mortality,n/a,RfC,6x10-2 mg/m3
+Acetophenone,98-86-2,Oral,Noncancer,General Toxicity,n/a,RfD,1x10-1 mg/kg-day
+"Acifluorfen, sodium",62476-59-9,Oral,Noncancer,Mortality and kidney lesions,n/a,RfD,1.3x10-2 mg/kg-day
+Acrolein,107-02-8,Inhalation,Noncancer,Nasal lesions,n/a,RfC,2x10-5 mg/m3
+Acrolein,107-02-8,Oral,Noncancer,Decreased survival,n/a,RfD,5x10-4 mg/kg-day
+Acrylamide,79-06-1,Oral,Noncancer,Degenerative nerve changes,n/a,RfD,2x10-3 mg/kg-day
+Acrylamide,79-06-1,Inhalation,Noncancer,Degenerative nerve changes,n/a,RfC,6x10-3 mg/m3
+Acrylamide,79-06-1,Oral,Cancer,thyroid tumors and tunica vaginalis mesotheliomas,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,5x10-1 per mg/kg-day
+Acrylamide,79-06-1,Inhalation,Cancer,thyroid tumors and tunica vaginalis mesotheliomas,Likely to be carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,1x10-4 per ｵg/m3
+Acrylic acid,79-10-7,Inhalation,Noncancer,Degeneration of the nasal olfactory epithelium,n/a,RfC,1x10-3 mg/m3
+Acrylic acid,79-10-7,Oral,Noncancer,Reduced pup weight,n/a,RfD,5x10-1 mg/kg-day
+Acrylonitrile,107-13-1,Inhalation,Cancer,Respiratory cancer,B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines),Inhalation Unit Risk,6.8x10-5 per ｵg/m3
+Acrylonitrile,107-13-1,Oral,Cancer,"Brain and spinal cord astrocytomas, Zymbal gland carcinomas and stomach papillomas/ carcinomas",B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines),Oral Slope Factor,5.4x10-1 per mg/kg-day
+Acrylonitrile,107-13-1,Inhalation,Noncancer,Degeneration and inflammation of nasal respiratory epithelium; hyperplasia of mucous secreting cells,n/a,RfC,2x10-3 mg/m3
+Alachlor,15972-60-8,Oral,Noncancer,"Hemosiderosis, hemolytic anemia",n/a,RfD,1x10-2 mg/kg-day
+Alar,1596-84-5,Oral,Noncancer,No adverse effects,n/a,RfD,1.5x10-1 mg/kg-day
+Aldicarb,116-06-3,Oral,Noncancer,Sweating as clinical sign of AChe inhibition,n/a,RfD,1x10-3 mg/kg-day
+Aldicarb sulfone,1646-88-4,Oral,Noncancer,Brain ChE inhibition in females,n/a,RfD,1x10-3 mg/kg-day
+Aldrin,309-00-2,Oral,Noncancer,Liver toxicity,n/a,RfD,3x10-5 mg/kg-day
+Aldrin,309-00-2,Oral,Cancer,Liver carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.7x101 per mg/kg-day
+Aldrin,309-00-2,Inhalation,Cancer,Liver carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,4.9x10-3 per ｵg/m3
+Ally,74223-64-6,Oral,Noncancer,Decreased body weight,n/a,RfD,2.5x10-1 mg/kg-day
+Allyl alcohol,107-18-6,Oral,Noncancer,Impaired renal function and increased liver and kidney weights,n/a,RfD,5x10-3 mg/kg-day
+Allyl chloride,107-05-1,Inhalation,Noncancer,Functional and histological peripheral neurotoxicity,n/a,RfC,1x10-3 mg/m3
+Aluminum phosphide,20859-73-8,Oral,Noncancer,Body weight and clinical parameters,n/a,RfD,4x10-4 mg/kg-day
+Amdro,67485-29-4,Oral,Noncancer,Increased organ weights,n/a,RfD,3x10-4 mg/kg-day
+Ametryn,834-12-8,Oral,Noncancer,Liver toxicity,n/a,RfD,9x10-3 mg/kg-day
+Amitraz,33089-61-1,Oral,Noncancer,Increased mean blood sugar concentration; slight hypothermia,n/a,RfD,2.5x10-3 mg/kg-day
+Ammonia,7664-41-7,Inhalation,Noncancer,Decreased lung function and respiratory symptoms,n/a,RfC,5x10-1 mg/m3
+Ammonium sulfamate,7773-06-0,Oral,Noncancer,Decrease in body weight,n/a,RfD,2x10-1 mg/kg-day
+Aniline,62-53-3,Oral,Cancer,"Spleen, combined fibrosarcoma, stromal sarcoma, capsular sarcoma and hemangiosarcoma",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,5.7x10-3 per mg/kg-day
+Aniline,62-53-3,Inhalation,Noncancer,"Methemoglobin increase, spleen toxicity",n/a,RfC,1x10-3 mg/m3
+Anthracene,120-12-7,Oral,Noncancer,No observed effects,n/a,RfD,3x10-1 mg/kg-day
+Antimony,7440-36-0,Oral,Noncancer,"Longevity, blood glucose, and cholesterol",n/a,RfD,4x10-4 mg/kg-day
+Antimony trioxide,1309-64-4,Inhalation,Noncancer,"Pulmonary toxicity, chronic interstitial inflammation",n/a,RfC,2x10-4 mg/m3
+Apollo,74115-24-5,Oral,Noncancer,Liver effects; organ weight changes,n/a,RfD,1.3x10-2 mg/kg-day
+Aramite,140-57-8,Oral,Cancer,Neoplastic liver nodules and carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.5x10-2 per mg/kg-day
+Aramite,140-57-8,Inhalation,Cancer,Neoplastic liver nodules and carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,7.1x10-6 per ｵg/m3
+Aroclor 1016,12674-11-2,Oral,Noncancer,Reduced birth weights,n/a,RfD,7x10-5 mg/kg-day
+Aroclor 1254,11097-69-1,Oral,Noncancer,"Ocular exudate, inflamed and prominent Meibomian glands, distorted growth of finger and toe nails; decreased antibody (IgG and IgM) response to sheep erythrocytes",n/a,RfD,2x10-5 mg/kg-day
+"Arsenic, Inorganic",7440-38-2,Inhalation,Cancer,Lung cancer,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,4.3x10-3 per ｵg/m3
+"Arsenic, Inorganic",7440-38-2,Oral,Cancer,Skin cancer,A (Human carcinogen) (1986 guidelines),Oral Slope Factor,1.5 per mg/kg-day
+"Arsenic, Inorganic",7440-38-2,Oral,Noncancer,"Hyperpigmentation, keratosis and possible vascular complications",n/a,RfD,3x10-4 mg/kg-day
+Arsine,7784-42-1,Inhalation,Noncancer,"Increased hemolysis, abnormal RBC morphology, and increased spleen weight",n/a,RfC,5x10-5 mg/m3
+Asbestos,1332-21-4,Inhalation,Cancer,Lung cancer and mesothelioma,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,2.3x10-1 per f/mL
+Assure,76578-14-8,Oral,Noncancer,Liver cell enlargement,n/a,RfD,9x10-3 mg/kg-day
+Asulam,3337-71-1,Oral,Noncancer,"Lower ovarian weight, lower liver/body weight",n/a,RfD,5x10-2 mg/kg-day
+Atrazine,1912-24-9,Oral,Noncancer,Decreased body weight gain,n/a,RfD,3.5x10-2 mg/kg-day
+Avermectin B1,65195-55-3,Oral,Noncancer,"Increased retinal folds in weanlings, decreased viability and lactation indices, decreased pup body weight, increase of dead pups at birth",n/a,RfD,4x10-4 mg/kg-day
+Azobenzene,103-33-3,Inhalation,Cancer,Abdominal cavity sarcomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,3.1x10-5 per ｵg/m3
+Azobenzene,103-33-3,Oral,Cancer,Abdominal cavity sarcomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.1x10-1 per mg/kg-day
+Barium and Compounds,7440-39-3,Oral,Noncancer,Nephropathy,n/a,RfD,2x10-1 mg/kg-day
+Baygon,114-26-1,Oral,Noncancer,Mild cholinergic symptoms and RBD ChE inhibition,n/a,RfD,4x10-3 mg/kg-day
+Bayleton,43121-43-3,Oral,Noncancer,"Decreased body weight gain, erythrocyte count and hemoglobin level",n/a,RfD,3x10-2 mg/kg-day
+Baythroid,68359-37-5,Oral,Noncancer,"Decreased body weights in males, inflammatory foci in kidneys of females",n/a,RfD,2.5x10-2 mg/kg-day
+Benefin,1861-40-1,Oral,Noncancer,Depressed erythrocyte counts,n/a,RfD,3x10-1 mg/kg-day
+Benomyl,17804-35-2,Oral,Noncancer,Decreased pup weanling weights,n/a,RfD,5x10-2 mg/kg-day
+Bentazon (Basagran),25057-89-0,Oral,Noncancer,Blood loss into the gastrointestinal tract; coagulation defect in male and female dogs,n/a,RfD,3.0x10-2 mg/kg-day
+Benzaldehyde,100-52-7,Oral,Noncancer,"Forestomach lesions, kidney toxicity",n/a,RfD,1x10-1 mg/kg-day
+Benzene,71-43-2,Inhalation,Cancer,Leukemia,A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,2.2x10-6 per ｵg/m3
+Benzene,71-43-2,Oral,Cancer,Leukemia,A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,5.5x10-2 per mg/kg-day
+Benzene,71-43-2,Inhalation,Noncancer,Decreased lymphocyte count,n/a,RfC,3x10-2 mg/m3
+Benzene,71-43-2,Oral,Noncancer,Decreased lymphocyte count,n/a,RfD,4.0x10-3 mg/kg-day
+Benzene,71-43-2,Oral,Cancer,Leukemia,A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,1.5x10-2 per mg/kg-day
+Benzene,71-43-2,Inhalation,Cancer,Leukemia,A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,7.8x10-6 per ｵg/m3
+Benzidine,92-87-5,Inhalation,Cancer,Bladder tumors,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,6.7x10-2 per ｵg/m3
+Benzidine,92-87-5,Oral,Noncancer,Brain cell vacuolization; liver cell alterations in females,n/a,RfD,3x10-3 mg/kg-day
+Benzidine,92-87-5,Oral,Cancer,Bladder tumors,A (Human carcinogen) (1986 guidelines),Oral Slope Factor,2.3x102 per mg/kg-day
+Benzo[a]pyrene (BaP),50-32-8,Oral,Noncancer,Decreased thymus weight and serum IgM,n/a,RfD,2x10-3 mg/kg-day
+Benzo[a]pyrene (BaP),50-32-8,Inhalation,Noncancer,Decreased embryo/fetal survival,n/a,RfC,2x10-6 mg/m3
+Benzo[a]pyrene (BaP),50-32-8,Oral,Cancer,"forestomach, esophagus, tongue, and larynx tumors",Carcinogenic to humans (2005 guidelines),Oral Slope Factor,1 per mg/kg-day
+Benzo[a]pyrene (BaP),50-32-8,Inhalation,Noncancer,Reduced ovulation rate and ovary weight,n/a,RfC,3x10-6 mg/m3
+Benzo[a]pyrene (BaP),50-32-8,Oral,Noncancer,Neurobehavioral changes,n/a,RfD,3x10-4 mg/kg-day
+Benzo[a]pyrene (BaP),50-32-8,Oral,Noncancer,Decreased ovarian follicles and ovary weight,n/a,RfD,4x10-4 mg/kg-day
+Benzo[a]pyrene (BaP),50-32-8,Inhalation,Cancer,"Squamous cell neoplasia in the larynx, pharynx, trachea, nasal cavity, esophagus, and forestomach.",Carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,6x10-4 per ｵg/m3
+Benzoic acid,65-85-0,Oral,Noncancer,No adverse effects observed,n/a,RfD,4 mg/kg-day
+Benzotrichloride,98-07-7,Oral,Cancer,"Lung, adenocarcinoma",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.3x101 per mg/kg-day
+Benzyl chloride,100-44-7,Oral,Cancer,"Thyroid, C-cell adenoma/ carcinoma",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.7x10-1 per mg/kg-day
+Beryllium and compounds,7440-41-7,Oral,Noncancer,Small intestinal lesions,n/a,RfD,2x10-3 mg/kg-day
+Beryllium and compounds,7440-41-7,Inhalation,Noncancer,Beryllium sensitization and progression to CBD,n/a,RfC,2x10-5 mg/m3
+Beryllium and compounds,7440-41-7,Inhalation,Cancer,Lung cancer,B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines) Carcinogenic potential cannot be determined (1996 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,2.4x10-3 per ｵg/m3
+Bidrin,141-66-2,Oral,Noncancer,Decreased pup survival,n/a,RfD,1x10-4 mg/kg-day
+Biphenthrin,82657-04-3,Oral,Noncancer,Tremors,n/a,RfD,1.5x10-2 mg/kg-day
+Biphenyl,92-52-4,Oral,Cancer,Liver adenomas or carcinomas,Suggestive evidence of carcinogenic potential (2005 guidelines),Oral Slope Factor,8x10-3 per mg/kg-day
+Biphenyl,92-52-4,Oral,Noncancer,Renal papillary mineralization in male F344 rats,n/a,RfD,5x10-1 mg/kg-day
+Bis(2-chloro-1-methylethyl) ether,108-60-1,Oral,Noncancer,Decrease in hemoglobin and possible erythrocyte destruction,n/a,RfD,4x10-2 mg/kg-day
+Bis(chloroethyl)ether (BCEE),111-44-4,Inhalation,Cancer,Hepatomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,3.3x10-4 per ｵg/m3
+Bis(chloroethyl)ether (BCEE),111-44-4,Oral,Cancer,Hepatomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.1 per mg/kg-day
+Bis(chloromethyl)ether (BCME),542-88-1,Oral,Cancer,Respiratory tract tumors,A (Human carcinogen) (1986 guidelines),Oral Slope Factor,2.2x102 per mg/kg-day
+Bis(chloromethyl)ether (BCME),542-88-1,Inhalation,Cancer,Respiratory tract tumors,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,6.2x10-2 per ｵg/m3
+Bisphenol A,80-05-7,Oral,Noncancer,Reduced mean body weight,n/a,RfD,5x10-2 mg/kg-day
+Boron and Compounds,7440-42-8,Oral,Noncancer,Decreased fetal weight (developmental),n/a,RfD,2x10-1 mg/kg-day
+Bromate,15541-45-4,Oral,Cancer,"Testicular mesothelioma, renal tubular adenoma and carcinoma, and thyroid follicular cell adenoma and carcinoma",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Carcinogenic potential cannot be determined (1996 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,7x10-1 per mg/kg-day
+Bromate,15541-45-4,Oral,Noncancer,Renal effects: urothelial hyperplasia,n/a,RfD,4x10-3 mg/kg-day
+Bromobenzene,108-86-1,Inhalation,Noncancer,Hepatocellular cytomegaly in female B6C3F1 mice,n/a,RfC,2x10-1 mg/m3 (Subchronic)
+Bromobenzene,108-86-1,Oral,Noncancer,Hepatocellular cytomegaly in male B6C3F1 mice,n/a,RfD,8x10-3 mg/kg-day (Chronic)
+Bromobenzene,108-86-1,Inhalation,Noncancer,Hepatocellular cytomegaly in female B6C3F1 mice,n/a,RfC,6x10-2 mg/m3 (Chronic)
+Bromobenzene,108-86-1,Oral,Noncancer,Hepatocellular cytomegaly in male B6C3F1 mice,n/a,RfD,2x10-2 mg/kg-day (Subchronic)
+Bromodichloromethane,75-27-4,Oral,Noncancer,Renal cytomegaly,n/a,RfD,2x10-2 mg/kg-day
+Bromodichloromethane,75-27-4,Oral,Cancer,Kidney (tubular cell adenoma and tubular cell adenocarcinoma),B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,6.2x10-2 per mg/kg-day
+Bromoform,75-25-2,Oral,Cancer,Neoplastic lesions in the large intestine,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,7.9x10-3 per mg/kg-day
+Bromoform,75-25-2,Oral,Noncancer,Hepatic lesions,n/a,RfD,2x10-2 mg/kg-day
+Bromoform,75-25-2,Inhalation,Cancer,Neoplastic lesions in the large intestine,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.1x10-6 per ｵg/m3
+Bromomethane,74-83-9,Inhalation,Noncancer,Degenerative and proliferative lesions of the olfactory epithelium of the nasal cavity,n/a,RfC,5x10-3 mg/m3
+Bromomethane,74-83-9,Oral,Noncancer,Epithelial hyperplasia of the forestomach,n/a,RfD,1.4x10-3 mg/kg-day
+Bromoxynil,1689-84-5,Oral,Noncancer,No adverse effects,n/a,RfD,2x10-2 mg/kg-day
+Bromoxynil octanoate,1689-99-2,Oral,Noncancer,No effects,n/a,RfD,2x10-2 mg/kg-day
+"1,3-Butadiene",106-99-0,Inhalation,Cancer,Leukemia,Carcinogenic to humans (1999 guidelines),Inhalation Unit Risk,3x10-5 per ｵg/m3
+"1,3-Butadiene",106-99-0,Inhalation,Noncancer,Ovarian atrophy,n/a,RfC,2x10-3 mg/m3
+Butyl benzyl phthalate (BBP),85-68-7,Oral,Noncancer,Significantly increased liver-to-body weight and liver-to-brain weight ratios,n/a,RfD,2x10-1 mg/kg-day
+Butylate,2008-41-5,Oral,Noncancer,Increased relative liver weight in male dogs,n/a,RfD,5x10-2 mg/kg-day
+Butylphthalyl butylglycolate (BPBG),85-70-1,Oral,Noncancer,No adverse effect,n/a,RfD,1 mg/kg-day
+Cadmium,7440-43-9,Oral,Noncancer,Significant proteinuria,n/a,RfD,5x10-4 mg/kg-day (water)
+Cadmium,7440-43-9,Oral,Noncancer,Significant proteinuria,n/a,RfD,1x10-3 mg/kg-day (food)
+Cadmium,7440-43-9,Inhalation,Cancer,"Lung, trachea, bronchus cancer deaths",B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines),Inhalation Unit Risk,1.8x10-3 per ｵg/m3
+Calcium cyanide,592-01-8,Oral,Noncancer,"Decreased cauda epididymis weight in male F344/N rats. The RfD for cyanide, free is presented in section I.A.3 of the hydrogen cyanide and cyanide salts IRIS Summary.",n/a,RfD,1x10-3 mg/kg-day
+Caprolactam,105-60-2,Oral,Noncancer,Reduced offspring body weight,n/a,RfD,5x10-1 mg/kg-day
+Captafol,6/1/2425,Oral,Noncancer,Kidney and bladder toxicity,n/a,RfD,2x10-3 mg/kg-day
+Captan,133-06-2,Oral,Noncancer,Decreased mean body weights,n/a,RfD,1.3x10-1 mg/kg-day
+Carbaryl,63-25-2,Oral,Noncancer,Kidney and liver toxicity,n/a,RfD,1x10-1 mg/kg-day
+Carbofuran,1563-66-2,Oral,Noncancer,"RBC and plasma cholinesterase inhibition, and testicular and uterine effects",n/a,RfD,5x10-3 mg/kg-day
+Carbon disulfide,75-15-0,Inhalation,Noncancer,Peripheral nervous system dysfunction,n/a,RfC,7x10-1 mg/m3
+Carbon disulfide,75-15-0,Oral,Noncancer,Fetal toxicity/ malformations,n/a,RfD,1x10-1 mg/kg-day
+Carbon tetrachloride,56-23-5,Oral,Noncancer,Elevated serum SDH activity,n/a,RfD,4x10-3 mg/kg-day
+Carbon tetrachloride,56-23-5,Inhalation,Noncancer,Fatty changes in the liver,n/a,RfC,1x10-1 mg/m3
+Carbon tetrachloride,56-23-5,Oral,Cancer,Hepatocellular adenoma or carcinoma,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,7x10-2 per mg/kg-day
+Carbon tetrachloride,56-23-5,Inhalation,Cancer,Pheochromocytoma,Likely to be carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,6x10-6 per ｵg/m3
+Carbosulfan,55285-14-8,Oral,Noncancer,Decreased body weight,n/a,RfD,1x10-2 mg/kg-day
+Carboxin,5234-68-4,Oral,Noncancer,"Reduced weight gain, organ weight changes, increased mortality",n/a,RfD,1x10-1 mg/kg-day
+Cerium Oxide and Cerium Compounds,1306-38-3,Inhalation,Noncancer,Increased incidence of alveolar epithelial hyperplasia in the lungs of male and female rats,n/a,RfC,9x10-4 mg/m3
+Chloral hydrate,302-17-0,Oral,Noncancer,CNS depression and GI irritation in humans,n/a,RfD,1x10-1 mg/kg-day
+Chloramben,133-90-4,Oral,Noncancer,Hepatocyte degeneration,n/a,RfD,1.5x10-2 mg/kg-day
+Chlordane (Technical),12789-03-6,Inhalation,Noncancer,Hepatic effects,n/a,RfC,7x10-4 mg/m3
+Chlordane (Technical),12789-03-6,Inhalation,Cancer,Hepatocellular carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,1x10-4 per ｵg/m3
+Chlordane (Technical),12789-03-6,Oral,Cancer,Hepatocellular carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,3.5x10-1 per mg/kg-day
+Chlordane (Technical),12789-03-6,Oral,Noncancer,Hepatic necrosis,n/a,RfD,5x10-4 mg/kg-day
+Chlordecone (Kepone),143-50-0,Oral,Noncancer,Renal lesions (glomerulosclerosis) in female Wistar rats,n/a,RfD,3x10-4 mg/kg-day
+Chlordecone (Kepone),143-50-0,Oral,Cancer,liver hepatocellular carcinoma,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,1x101 per mg/kg-day
+Chlorimuron-ethyl,90982-32-4,Oral,Noncancer,"Increase in WBC, decreased in RBC in females, increase in alkaline phosphatase in males",n/a,RfD,2x10-2 mg/kg-day
+Chlorine,7782-50-5,Oral,Noncancer,No observed adverse effects,n/a,RfD,1x10-1 mg/kg-day
+Chlorine cyanide,506-77-4,Oral,Noncancer,"Weight loss, thyroid effects, and myelin degeneration",n/a,RfD,5x10-2 mg/kg-day
+Chlorine dioxide,10049-04-4,Inhalation,Noncancer,Vascular congestion and peribronchial edema,n/a,RfC,2x10-4 mg/m3
+Chlorine dioxide,10049-04-4,Oral,Noncancer,Neurodevelopmental effects,n/a,RfD,3x10-2 mg/kg-day
+Chlorite (sodium salt),7758-19-2,Oral,Noncancer,Neurodevelopmental effects,n/a,RfD,3x10-2 mg/kg-day
+"1-Chloro-1,1-difluoroethane",75-68-3,Inhalation,Noncancer,No adverse effects,n/a,RfC,5x101 mg/m3
+2-Chloroacetophenone,532-27-4,Inhalation,Noncancer,Squamous hyperplasia of the nasal respiratory epithelium,n/a,RfC,3x10-5 mg/m3
+p-Chloroaniline,106-47-8,Oral,Noncancer,Nonneoplastic lesions of splenic capsule,n/a,RfD,4x10-3 mg/kg-day
+Chlorobenzene,108-90-7,Oral,Noncancer,Histopathologic changes in liver,n/a,RfD,2x10-2 mg/kg-day
+Chlorobenzilate,510-15-6,Oral,Noncancer,"Decreased stool quantity, food consumption and body weight gains hyperirritability (maternal effects)",n/a,RfD,2x10-2 mg/kg-day
+Chlorodifluoromethane,75-45-6,Inhalation,Noncancer,"Increased kidney, adrenal and pituitary weights",n/a,RfC,5x101 mg/m3
+Chloroform,67-66-3,Inhalation,Cancer,Hepatocellular carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Likely to be carcinogenic to humans (1999 guidelines) Not likely to be carcinogenic to humans (1999 guidelines),Inhalation Unit Risk,2.3x10-5 per ｵg/m3
+Chloroform,67-66-3,Oral,Noncancer,Moderate/marked fatty cyst formation in the liver and elevated SGPT,n/a,RfD,1x10-2 mg/kg-day
+beta-Chloronaphthalene,91-58-7,Oral,Noncancer,"Dyspnea, abnormal appearance, liver enlargement",n/a,RfD,8x10-2 mg/kg-day
+2-Chlorophenol,95-57-8,Oral,Noncancer,Reproductive effects,n/a,RfD,5x10-3 mg/kg-day
+Chloroprene,126-99-8,Inhalation,Cancer,"alveolar/ bronchiolar adenoma or carcinoma hemangioma/ hemangiosarcoma (all organs) mammary gland adenocarcinoma, carcinoma, or adenoacanthoma forestomach squamous cell papilloma or carcinoma hepatocellular adenoma or carcinoma Harderian gland adenoma or carcinoma skin sarcoma and Zymbal's gland carcinoma",Likely to be carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,3x10-4 per ｵg/m3
+Chloroprene,126-99-8,Inhalation,Noncancer,"Increase in incidence of olfactory atrophy, alveolar hyperplasia, and splenic hematopoietic proliferation in male F344/N rats, female F344/N rats, and female B6C3F1 mice, respectively",n/a,RfC,2x10-2 mg/m3
+Chlorothalonil,1897-45-6,Oral,Noncancer,Renal tubular epithelial vacuolation,n/a,RfD,1.5x10-2 mg/kg-day
+o-Chlorotoluene,95-49-8,Oral,Noncancer,Decrease in body weight gain,n/a,RfD,2x10-2 mg/kg-day
+Chlorpropham,101-21-3,Oral,Noncancer,"Kidney, spleen, liver, and bone marrow toxicity",n/a,RfD,2x10-1 mg/kg-day
+Chlorsulfuron,64902-72-3,Oral,Noncancer,Decreased body weight,n/a,RfD,5x10-2 mg/kg-day
+"Chromium(III), insoluble salts",16065-83-1,Oral,Noncancer,No effects observed,n/a,RfD,1.5 mg/kg-day
+Chromium(VI),18540-29-9,Inhalation,Cancer,Lung cancer,A (Human carcinogen) (1986 guidelines) Carcinogenic potential cannot be determined (1996 guidelines) D (Not classifiable as to human carcinogenicity) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,1.2x10-2 per ｵg/m3
+Chromium(VI),18540-29-9,Oral,Noncancer,None reported,n/a,RfD,3x10-3 mg/kg-day
+Chromium(VI),18540-29-9,Inhalation,Noncancer,Lactate dehydrogenase in bronchioalveolar lavage fluid,n/a,RfC,1x10-4 mg/m3 (Cr(VI) particulates)
+Chromium(VI),18540-29-9,Inhalation,Noncancer,Nasal septum atrophy,n/a,RfC,8x10-6 mg/m3 (Chromic acid mists and dissolved Cr(VI) aerosols)
+Coke oven emissions,,Inhalation,Cancer,Respiratory cancer,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,6.2x10-4 per ｵg/m3
+Copper cyanide,544-92-3,Oral,Noncancer,"Decreased body and organ weights, histopathologic alterations in liver and kidney",n/a,RfD,5x10-3 mg/kg-day
+Cumene,98-82-8,Oral,Noncancer,Increased average kidney weight in female rats,n/a,RfD,1x10-1 mg/kg-day
+Cumene,98-82-8,Inhalation,Noncancer,Increased kidney weights in female rats and adrenal weights in male and female rats,n/a,RfC,4x10-1 mg/m3
+"Cyanide, free",57-12-5,Oral,Noncancer,"Decreased cauda epididymis weight in male F344/N rats. The RfD for cyanide, free is presented in section 1.A.3 of the hydrogen cyanide and cyanide salts IRIS Summary.",n/a,RfD,6.3x10-4 mg/kg-day
+Cyanogen,460-19-5,Oral,Noncancer,Decreased cauda epididymis weight in male F344/N rats. The RfD for cyanogen is presented in section I.A.3 of the hydrogen cyanide and cyanide salts IRIS Summary.,n/a,RfD,1x10-3 mg/kg-day
+Cyanogen bromide,506-68-3,Oral,Noncancer,"Weight loss, thyroid effects and myelin degeneration",n/a,RfD,9x10-2 mg/kg-day
+Cyclohexane,110-82-7,Inhalation,Noncancer,Reduced pup weights in the F1 and F2 generations,n/a,RfC,6 mg/m3
+Cyclohexanone,108-94-1,Oral,Noncancer,Body weight depression,n/a,RfD,5 mg/kg-day
+Cyclohexylamine,108-91-8,Oral,Noncancer,Testicular damage,n/a,RfD,2x10-1 mg/kg-day
+Cyhalothrin/Karate,68085-85-8,Oral,Noncancer,Reduced body weight gain preceding pregnancy reduced body weight gain in offspring during weaning period,n/a,RfD,5x10-3 mg/kg-day
+Cypermethrin,52315-07-8,Oral,Noncancer,G.I. tract disturbances,n/a,RfD,1x10-2 mg/kg-day
+Cyromazine,66215-27-8,Oral,Noncancer,Hematologic effects,n/a,RfD,7.5x10-3 mg/kg-day
+Dacthal,1861-32-1,Oral,Noncancer,"Effects on the lungs, liver, kidney, thyroid and thyroid hormones in males and females and eyes of females",n/a,RfD,1x10-2 mg/kg-day
+"Dalapon, sodium salt",75-99-0,Oral,Noncancer,Increased kidney body weight ratio,n/a,RfD,3x10-2 mg/kg-day
+Danitol,39515-41-8,Oral,Noncancer,Tremors,n/a,RfD,2.5x10-2 mg/kg-day
+"2,2',3,3',4,4',5,5',6,6'-Decabromodiphenyl ether (BDE-209)",1163-19-5,Oral,Noncancer,Neurobehavioral effects,n/a,RfD,7x10-3 mg/kg-day
+"2,2',3,3',4,4',5,5',6,6'-Decabromodiphenyl ether (BDE-209)",1163-19-5,Oral,Cancer,Liver neoplastic nodules or carcinoma (combined),Suggestive evidence of carcinogenic potential (2005 guidelines),Oral Slope Factor,7x10-4 per mg/kg-day
+Demeton,8065-48-3,Oral,Noncancer,"ChE inhibition, optic nerve degeneration",n/a,RfD,4x10-5 mg/kg-day
+Di (2-ethylhexyl)phthalate (DEHP),117-81-7,Oral,Noncancer,Increased relative liver weight,n/a,RfD,2x10-2 mg/kg-day
+Di (2-ethylhexyl)phthalate (DEHP),117-81-7,Oral,Cancer,Hepatocellular carcinoma and adenoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.4x10-2 per mg/kg-day
+Di(2-ethylhexyl)adipate,103-23-1,Oral,Noncancer,"Changes in body weight and liver weight increased liver weight of male and female parents reduced ossification and slightly dilated ureters in fetuses reduced offspring weight gain, total litter weight, and litter size",n/a,RfD,6x10-1 mg/kg-day
+Di(2-ethylhexyl)adipate,103-23-1,Oral,Cancer,Combined hepatocellular adenomas and carcinomas,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,1.2x10-3 per mg/kg-day
+"1,2-Dibromo-3-chloropropane (DBCP)",96-12-8,Inhalation,Noncancer,Testicular effects,n/a,RfC,2x10-4 mg/m3
+"1,4-Dibromobenzene",106-37-6,Oral,Noncancer,Liver/body weight ratio and hepatic microsomal enzyme induction,n/a,RfD,1x10-2 mg/kg-day
+Dibromochloromethane,124-48-1,Oral,Noncancer,Hepatic lesions,n/a,RfD,2x10-2 mg/kg-day
+Dibromochloromethane,124-48-1,Oral,Cancer,Hepatocellular adenoma or carcinoma,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,8.4x10-2 per mg/kg-day
+"1,2-Dibromoethane",106-93-4,Oral,Cancer,"Forestomach tumors, hemangiosarcomas, thyroid follicular cell adenomas or carcinomas",Likely to be carcinogenic to humans (1999 guidelines),Oral Slope Factor,1 mg/kg-day (central tendency estimate)
+"1,2-Dibromoethane",106-93-4,Oral,Cancer,"Forestomach tumors, hemangiosarcomas, thyroid follicular cell adenomas or carcinomas",Likely to be carcinogenic to humans (1999 guidelines),Oral Slope Factor,2 per mg/kg-day (95% upper bound)
+"1,2-Dibromoethane",106-93-4,Inhalation,Cancer,"Nasal cavity (includes adenoma, adenocarcinoma, papillary adenoma, squamous cell carcinoma, and or/papilloma), hemangiosarcomas, mesotheliomas",Likely to be carcinogenic to humans (1999 guidelines),Inhalation Unit Risk,6x10-4 per ｵg/m3 (95% upper bound)
+"1,2-Dibromoethane",106-93-4,Inhalation,Cancer,"Nasal cavity (includes adenoma, adenocarcinoma, papillary adenoma, squamous cell carcinoma, and or/papilloma), hemangiosarcomas, mesotheliomas",Likely to be carcinogenic to humans (1999 guidelines),Inhalation Unit Risk,3x10-4 per ｵg/m3 (central tendency estimate)
+"1,2-Dibromoethane",106-93-4,Oral,Noncancer,"Testicular atrophy, liver peliosis, and adrenal cortical degeneration",n/a,RfD,9x10-3 mg/kg-day
+"1,2-Dibromoethane",106-93-4,Inhalation,Noncancer,Nasal inflammation,n/a,RfC,9x10-3 mg/m3
+Dibutyl phthalate (DBP),84-74-2,Oral,Noncancer,Increased mortality,n/a,RfD,1x10-1 mg/kg-day
+Dicamba,1918-00-9,Oral,Noncancer,Maternal (reduced weight gain) and fetal toxicity,n/a,RfD,3x10-2 mg/kg-day
+Dichloroacetic acid,79-43-6,Oral,Noncancer,"Lesions observed in the testes, cerebrum, cerebellum, and liver.",n/a,RfD,4x10-3 mg/kg-day
+Dichloroacetic acid,79-43-6,Oral,Cancer,Hepatoadenoma and Hepatocarcinoma,Likely to be carcinogenic to humans (1999 guidelines),Oral Slope Factor,5x10-2 per mg/kg-day
+"1,2-Dichlorobenzene",95-50-1,Oral,Noncancer,No adverse effects observed,n/a,RfD,9x10-2 mg/kg-day
+"1,4-Dichlorobenzene",106-46-7,Inhalation,Noncancer,Increased liver weights in P1 males,n/a,RfC,8x10-1 mg/m3
+"3,3'-Dichlorobenzidine",91-94-1,Oral,Cancer,Mammary adenocarcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,4.5x10-1 per mg/kg-day
+Dichlorodifluoromethane,75-71-8,Oral,Noncancer,Reduced body weight,n/a,RfD,2x10-1 mg/kg-day
+"p,p'-Dichlorodiphenyl dichloroethane (DDD)",72-54-8,Oral,Cancer,Liver tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.4x10-1 per mg/kg-day
+"p,p'-Dichlorodiphenyldichloroethylene (DDE)",72-55-9,Oral,Cancer,"Hepatocellular carcinomas, hepatomas",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,3.4x10-1 per mg/kg-day
+"p,p'-Dichlorodiphenyltrichloroethane (DDT)",50-29-3,Inhalation,Cancer,"Liver tumors, benign and malignant",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,9.7x10-5 per ｵg/m3
+"p,p'-Dichlorodiphenyltrichloroethane (DDT)",50-29-3,Oral,Cancer,"Liver tumors, benign and malignant",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,3.4x10-1 per mg/kg-day
+"p,p'-Dichlorodiphenyltrichloroethane (DDT)",50-29-3,Oral,Noncancer,Liver lesions,n/a,RfD,5x10-4 mg/kg-day
+"1,2-Dichloroethane",107-06-2,Oral,Cancer,Hemangiosarcomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,9.1x10-2 per mg/kg-day
+"1,2-Dichloroethane",107-06-2,Inhalation,Cancer,Hemangiosarcomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,2.6x10-5 per ｵg/m3
+"cis-1,2-Dichloroethylene",156-59-2,Oral,Noncancer,Increased relative kidney weight in male rats,n/a,RfD,2x10-3 mg/kg-day
+"trans-1,2-Dichloroethylene",156-60-5,Oral,Noncancer,Decrease in number of antibody forming cells (AFCs) against sheep red blood cells (sRBCs) in male mice,n/a,RfD,2x10-2 mg/kg-day
+"1,1-Dichloroethylene (1,1-DCE)",75-35-4,Inhalation,Noncancer,Liver toxicity (fatty change),n/a,RfC,2x10-1 mg/m3
+"1,1-Dichloroethylene (1,1-DCE)",75-35-4,Oral,Noncancer,Liver toxicity (fatty change),n/a,RfD,5x10-2 mg/kg-day
+Dichloromethane,75-09-2,Oral,Cancer,Hepatocellular carcinomas or adenomas,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,2x10-3 per mg/kg-day
+Dichloromethane,75-09-2,Oral,Noncancer,"Hepatic effects (hepatic vacuolation, liver foci)",n/a,RfD,6x10-3 mg/kg-day
+Dichloromethane,75-09-2,Inhalation,Cancer,"Hepatocellular carcinomas or adenomas, bronchoalveolar carcinomas or adenomas",Likely to be carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,1x10-8 per ｵg/m3
+Dichloromethane,75-09-2,Inhalation,Noncancer,Hepatic effects (hepatic vacuolation),n/a,RfC,6x10-1 mg/m3
+"2,4-Dichlorophenol",120-83-2,Oral,Noncancer,Decreased delayed hypersensitivity response,n/a,RfD,3x10-3 mg/kg-day
+"4-(2,4-Dichlorophenoxy)butyric acid (2,4-DB)",94-82-6,Oral,Noncancer,"Internal hemorrhage, mortality",n/a,RfD,8x10-3 mg/kg-day
+"2,4-Dichlorophenoxyacetic acid (2,4-D)",94-75-7,Oral,Noncancer,"Hematologic, hepatic and renal toxicity",n/a,RfD,1x10-2 mg/kg-day
+"1,2-Dichloropropane",78-87-5,Inhalation,Noncancer,Hyperplasia of the nasal mucosa,n/a,RfC,4x10-3 mg/m3
+"2,3-Dichloropropanol",616-23-9,Oral,Noncancer,"Myocardial degeneration, hepatotoxicity and nephrotoxicity",n/a,RfD,3x10-3 mg/kg-day
+"1,3-Dichloropropene",542-75-6,Oral,Cancer,Hepatocellular adenoma/carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,5x10-2 per mg/kg-day
+"1,3-Dichloropropene",542-75-6,Oral,Cancer,Urinary bladder carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,1x10-1 per mg/kg-day
+"1,3-Dichloropropene",542-75-6,Inhalation,Cancer,Bronchioalveolar adenoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,4x10-6 per ｵg/m3
+"1,3-Dichloropropene",542-75-6,Oral,Cancer,Hepatocellular adenoma/carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,5x10-2 per mg/kg-day
+"1,3-Dichloropropene",542-75-6,Inhalation,Noncancer,Hypertrophy/ hyperplasia of the nasal respiratory epithelium,n/a,RfC,2x10-2 mg/m3
+"1,3-Dichloropropene",542-75-6,Oral,Noncancer,Chronic irritation,n/a,RfD,3x10-2 mg/kg-day
+Dichlorvos,62-73-7,Oral,Noncancer,Plasma and RBC ChE inhibition in males and females brain ChE inhibition in males,n/a,RfD,5x10-4 mg/kg-day
+Dichlorvos,62-73-7,Oral,Cancer,"Forestomach tumors, pancreatic acinar adenoma, leukemia",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.9x10-1 per mg/kg-day
+Dichlorvos,62-73-7,Inhalation,Noncancer,Decreased brain cholinesterase activity,n/a,RfC,5x10-4 mg/m3
+Dieldrin,60-57-1,Oral,Noncancer,Liver lesions,n/a,RfD,5x10-5 mg/kg-day
+Dieldrin,60-57-1,Oral,Cancer,Liver carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.6x101 per mg/kg-day
+Dieldrin,60-57-1,Inhalation,Cancer,Liver carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,4.6x10-3 per ｵg/m3
+Diesel engine exhaust,,Inhalation,Noncancer,Pulmonary inflammation and histopathology,n/a,RfC,5x10-3 mg/m3
+Diethyl phthalate (DEP),84-66-2,Oral,Noncancer,"Decreased growth rate, food consumption and altered organ weights",n/a,RfD,8x10-1 mg/kg-day
+Difenzoquat,43222-48-6,Oral,Noncancer,Decreased body weight,n/a,RfD,8x10-2 mg/kg-day
+Diflubenzuron,35367-38-5,Oral,Noncancer,Methemoglobin and sulfhemoglobin formation,n/a,RfD,2x10-2 mg/kg-day
+"1,1-Difluoroethane",75-37-6,Inhalation,Noncancer,No adverse effects observed,n/a,RfC,4x101 mg/m3
+Diisopropyl methylphosphonate (DIMP),1445-75-6,Oral,Noncancer,No effects related to treatment,n/a,RfD,8x10-2 mg/kg-day
+Dimethipin,55290-64-7,Oral,Noncancer,Increased absolute and relative liver weight,n/a,RfD,2x10-2 mg/kg-day
+Dimethoate,60-51-5,Oral,Noncancer,Brain ChE inhibition,n/a,RfD,2x10-4 mg/kg-day
+Dimethyl terephthalate (DMT),120-61-6,Oral,Noncancer,Chronic kidney inflammation,n/a,RfD,1x10-1 mg/kg-day
+N-N-Dimethylaniline,121-69-7,Oral,Noncancer,"Splenomegaly, increased splenic hemosiderosis and hematopoiesis",n/a,RfD,2x10-3 mg/kg-day
+"N,N-Dimethylformamide",68-12-2,Inhalation,Noncancer,Digestive disturbances and minimal hepatic changes suggestive of liver abnormalities,n/a,RfC,3x10-2 mg/m3
+"2,4-Dimethylphenol",105-67-9,Oral,Noncancer,"Clinical signs (lethargy, prostration, and ataxia) and hematological changes",n/a,RfD,2x10-2 mg/kg-day
+"2,6-Dimethylphenol",576-26-1,Oral,Noncancer,"Body weight changes and histopathological changes of internal organs (liver, spleen and kidneys)",n/a,RfD,6x10-4 mg/kg-day
+"3,4-Dimethylphenol",95-65-8,Oral,Noncancer,"Changes in blood pressure and body weight histopathological changes in liver, kidney and spleen",n/a,RfD,1x10-3 mg/kg-day
+"4,6-Dinitro-o-cyclohexyl phenol",131-89-5,Oral,Noncancer,Cataract formation,n/a,RfD,2x10-3 mg/kg-day
+m-Dinitrobenzene,99-65-0,Oral,Noncancer,Increased splenic weight,n/a,RfD,1x10-4 mg/kg-day
+"2,4-Dinitrophenol",51-28-5,Oral,Noncancer,Cataract formation,n/a,RfD,2x10-3 mg/kg-day
+"2,4-Dinitrotoluene",121-14-2,Oral,Noncancer,"Neurotoxicity, Heinz bodies and biliary tract hyperplasia",n/a,RfD,2x10-3 mg/kg-day
+"2,4-/2,6-Dinitrotoluene mixture",Various,Oral,Cancer,"Liver: hepatocellular carcinomas, neoplastic nodules; mammary gland: adenomas, fibroadenomas, fibromas, adenocarcinomas/ carcinomas",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,6.8x10-1 per mg/kg-day
+Dinoseb,88-85-7,Oral,Noncancer,Decreased fetal weight,n/a,RfD,1x10-3 mg/kg-day
+"1,4-Dioxane",123-91-1,Inhalation,Cancer,"Multiple (nasal, liver, kidney, peritoneal, mammary gland, and Zymbal gland)",Likely to be carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,5x10-6 per ｵg/m3
+"1,4-Dioxane",123-91-1,Inhalation,Noncancer,Atrophy and respiratory metaplasia of the olfactory epithelium,n/a,RfC,3x10-2 mg/m3
+"1,4-Dioxane",123-91-1,Oral,Cancer,Hepatocellular adenoma and carcinoma,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,1x10-1 per mg/kg-day
+"1,4-Dioxane",123-91-1,Oral,Noncancer,Liver and kidney toxicity,n/a,RfD,3x10-2 mg/kg-day
+Diphenamid,957-51-7,Oral,Noncancer,Liver toxicity,n/a,RfD,3x10-2 mg/kg-day
+Diphenylamine,122-39-4,Oral,Noncancer,"Decreased body weight gain, and increased liver and kidney weights",n/a,RfD,2.5x10-2 mg/kg-day
+"1,2-Diphenylhydrazine",122-66-7,Oral,Cancer,Hepatocellular carcinomas and neoplastic liver nodules,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,8.0x10-1 per mg/kg-day
+"1,2-Diphenylhydrazine",122-66-7,Inhalation,Cancer,Hepatocellular carcinomas and neoplastic liver nodules,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,2.2x10-4 per ｵg/m3
+Diquat,2764-72-9,Oral,Noncancer,Minimal lens opacity and cataracts,n/a,RfD,2.2x10-3 mg/kg-day
+Disulfoton,298-04-4,Oral,Noncancer,"ChE inhibition, optic nerve degeneration",n/a,RfD,4x10-5 mg/kg-day
+"1,4-Dithiane",505-29-3,Oral,Noncancer,Nasal olfactory lesions,n/a,RfD,1x10-2 mg/kg-day
+Diuron,330-54-1,Oral,Noncancer,Abnormal pigments in blood,n/a,RfD,2x10-3 mg/kg-day
+Dodine,10/3/2439,Oral,Noncancer,Thyroid toxicity,n/a,RfD,4x10-3 mg/kg-day
+Endosulfan,115-29-7,Oral,Noncancer,Reduced body weight gain in males and females increased incidence of marked progressive glomerulonephrosis and blood vessel aneurysms in males,n/a,RfD,6x10-3 mg/kg-day
+Endothall,145-73-3,Oral,Noncancer,Increased absolute and relative weights of stomach and small intestine,n/a,RfD,2x10-2 mg/kg-day
+Endrin,72-20-8,Oral,Noncancer,"Mild histological lesions in liver, occasional convulsions",n/a,RfD,3x10-4 mg/kg-day
+Epichlorohydrin,106-89-8,Oral,Cancer,Papillomas and carcinomas of the forestomach,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,9.9x10-3 per mg/kg-day
+Epichlorohydrin,106-89-8,Inhalation,Noncancer,Changes in the nasal turbinates,n/a,RfC,1x10-3 mg/m3
+Epichlorohydrin,106-89-8,Inhalation,Cancer,Nasal cavity tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.2x10-6 per ｵg/m3
+"1,2-Epoxybutane (EBU)",106-88-7,Inhalation,Noncancer,Degenerative lesions of the nasal cavity,n/a,RfC,2x10-2 mg/m3
+Ethephon,16672-87-0,Oral,Noncancer,Plasma ChE inhibition,n/a,RfD,5x10-3 mg/kg-day
+Ethion,563-12-2,Oral,Noncancer,Plasma cholinesterase inhibition,n/a,RfD,5x10-4 mg/kg-day
+2-Ethoxyethanol,110-80-5,Inhalation,Noncancer,"Decreased testis weight, seminiferous tubule degeneration and decreased hemoglobin",n/a,RfC,2x10-1 mg/m3
+Ethyl Tertiary Butyl Ether (ETBE),637-92-3,Oral,Noncancer,Increased absolute kidney weight in female rats,n/a,RfD,1 mg/kg-day
+Ethyl Tertiary Butyl Ether (ETBE),637-92-3,Inhalation,Noncancer,Increased absolute kidney weight in female rats,n/a,RfC,4x101 mg/m3
+Ethyl Tertiary Butyl Ether (ETBE),637-92-3,Inhalation,Cancer,Hepatocellular adenomas and carcinomas,Suggestive evidence of carcinogenic potential (2005 guidelines),Inhalation Unit Risk,8x10-5 per mg/m3
+Ethyl acetate,141-78-6,Oral,Noncancer,Mortality and body weight loss,n/a,RfD,9x10-1 mg/kg-day
+Ethyl chloride,75-00-3,Inhalation,Noncancer,Delayed fetal ossification,n/a,RfC,1x101 mg/m3
+S-Ethyl dipropylthiocarbamate (EPTC),759-94-4,Oral,Noncancer,Degenerative cardiomyopathy,n/a,RfD,2.5x10-2 mg/kg-day
+Ethyl ether,60-29-7,Oral,Noncancer,Depressed body weights,n/a,RfD,2x10-1 mg/kg-day
+Ethyl p-nitrophenyl phenylphosphorothioate (EPN),2104-64-5,Oral,Noncancer,Neurotoxicity,n/a,RfD,1x10-5 mg/kg-day
+Ethylbenzene,100-41-4,Oral,Noncancer,Liver and kidney toxicity,n/a,RfD,1x10-1 mg/kg-day
+Ethylbenzene,100-41-4,Inhalation,Noncancer,Developmental toxicity,n/a,RfC,1 mg/m3
+Ethylene glycol,107-21-1,Oral,Noncancer,Kidney toxicity,n/a,RfD,2 mg/kg-day
+Ethylene glycol monobutyl ether (EGBE) (2-Butoxyethanol),111-76-2,Oral,Noncancer,Hemosiderin deposition in the liver,n/a,RfD,1x10-1 mg/kg-day
+Ethylene glycol monobutyl ether (EGBE) (2-Butoxyethanol),111-76-2,Inhalation,Noncancer,Hemosiderin deposition in the liver,n/a,RfC,1.6 mg/m3
+Ethylene oxide,75-21-8,Inhalation,Cancer,"Lymphoid cancer, (female) breast cancer",Carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,3x10-3 per ｵg/m3
+Ethylene thiourea (ETU),96-45-7,Oral,Noncancer,Increased incidence of thyroid hyperplasia,n/a,RfD,8x10-5 mg/kg-day
+Ethylphthalyl ethylglycolate (EPEG),84-72-0,Oral,Noncancer,Kidney damage and reduced lifespan,n/a,RfD,3 mg/kg-day
+Express,101200-48-0,Oral,Noncancer,"Elevated serum bilirubin and AST levels, increased urinary volume",n/a,RfD,8x10-3 mg/kg-day
+Fenamiphos,22224-92-6,Oral,Noncancer,ChE inhibition,n/a,RfD,2.5x10-4 mg/kg-day
+Fluometuron,2164-17-2,Oral,Noncancer,No adverse effects,n/a,RfD,1.3x10-2 mg/kg-day
+Fluoranthene,206-44-0,Oral,Noncancer,"Nephropathy, increased liver weights, hematological alterations, and clinical effects",n/a,RfD,4x10-2 mg/kg-day
+Fluorene,86-73-7,Oral,Noncancer,"Decreased RBC, packed cell volume and hemoglobin",n/a,RfD,4x10-2 mg/kg-day
+Fluorine (soluble fluoride),7782-41-4,Oral,Noncancer,"Objectionable dental fluorosis, a cosmetic effect",n/a,RfD,6x10-2 mg/kg-day
+Fluridone,59756-60-4,Oral,Noncancer,"Glomerulonephritis, atrophic testes, eye keratitis decreased body weight and organ weights",n/a,RfD,8x10-2 mg/kg-day
+Flurprimidol,56425-91-3,Oral,Noncancer,Increased incidence of hepatocellular changes including fatty change and vacuolation (M) increased susceptibility to stress factors (F),n/a,RfD,2x10-2 mg/kg-day
+Flutolanil,66332-96-5,Oral,Noncancer,Decreased body weight and body weight gains in both doses increased liver weights at high dose,n/a,RfD,6x10-2 mg/kg-day
+Fluvalinate,69409-94-5,Oral,Noncancer,Decreases in body weight gain increase in plantar ulcer (females),n/a,RfD,1x10-2 mg/kg-day
+Folpet,133-07-3,Oral,Noncancer,"Decreased body weight gain, altered serum chemistry parameters (decreased serum cholesterol, total protein, and serum albumin and globulin levels)",n/a,RfD,1x10-1 mg/kg-day
+Fonofos,944-22-9,Oral,Noncancer,"Cholinesterase inhibition, cholinergic symptoms, and increased liver weight",n/a,RfD,2x10-3 mg/kg-day
+Formaldehyde,50-00-0,Inhalation,Cancer,Squamous cell carcinoma,B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines),Inhalation Unit Risk,1.3x10-5 per ｵg/m3
+Formaldehyde,50-00-0,Oral,Noncancer,"Reduced weight gain, histopathology in rats",n/a,RfD,2x10-1 mg/kg-day
+Fosetyl-al,39148-24-8,Oral,Noncancer,Slight testicular degeneration,n/a,RfD,3 mg/kg-day
+Furan,110-00-9,Oral,Noncancer,Hepatic lesions,n/a,RfD,1x10-3 mg/kg-day
+Furfural,98-01-1,Oral,Noncancer,Mild hepatocellular vacuolization,n/a,RfD,3x10-3 mg/kg-day
+Furmecyclox,60568-05-0,Oral,Cancer,Combined liver nodules and carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,3.0x10-2 per mg/kg-day
+Glufosinate-ammonium,77182-82-2,Oral,Noncancer,Increased absolute and relative kidney weights in males,n/a,RfD,4x10-4 mg/kg-day
+Glycidaldehyde,765-34-4,Oral,Noncancer,"Weight gain retardation, enlarged adrenals, hydropic renal pelvis and hematopoietic effects",n/a,RfD,4x10-4 mg/kg-day
+Glyphosate,1071-83-6,Oral,Noncancer,Increased incidence of renal tubular dilation in F3b offspring,n/a,RfD,1x10-1 mg/kg-day
+Haloxyfop-methyl,69806-40-2,Oral,Noncancer,"Reduced relative kidney weights in F0, F1, and F2b adults; reduced fertility in the F1/F2b generation",n/a,RfD,5x10-5 mg/kg-day
+Harmony,79277-27-3,Oral,Noncancer,"Reduced body weight gains in males, reduced serum sodium in males and females",n/a,RfD,1.3x10-2 mg/kg-day
+Heptachlor,76-44-8,Oral,Cancer,Hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,4.5 per mg/kg-day
+Heptachlor,76-44-8,Oral,Noncancer,Liver weight increases in males,n/a,RfD,5x10-4 mg/kg-day
+Heptachlor,76-44-8,Inhalation,Cancer,Hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.3x10-3 per ｵg/m3
+Heptachlor epoxide,1024-57-3,Oral,Noncancer,Increased liver-to-body weight ratio in both males and females,n/a,RfD,1.3x10-5 mg/kg-day
+Heptachlor epoxide,1024-57-3,Oral,Cancer,Hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,9.1 per mg/kg-day
+Heptachlor epoxide,1024-57-3,Inhalation,Cancer,Hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,2.6x10-3 per ｵg/m3
+Hexabromobenzene,87-82-1,Oral,Noncancer,"Induced serum carboxylesterase activity, increased relative liver weight, increased liver porphyrins",n/a,RfD,2x10-3 mg/kg-day
+"2,2',4,4',5,5'-Hexabromodiphenyl ether (BDE-153)",68631-49-2,Oral,Noncancer,Neurobehavioral effects,n/a,RfD,2x10-4 mg/kg-day
+Hexachlorobenzene,118-74-1,Inhalation,Cancer,Hepatocellular carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,4.6x10-4 per ｵg/m3
+Hexachlorobenzene,118-74-1,Oral,Noncancer,Liver effects,n/a,RfD,8x10-4 mg/kg-day
+Hexachlorobenzene,118-74-1,Oral,Cancer,Hepatocellular carcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.6 per mg/kg-day
+Hexachlorobutadiene,87-68-3,Inhalation,Cancer,Renal tubular adenomas and adenocarcinomas,C (Possible human carcinogen) (1986 guidelines),Inhalation Unit Risk,2.2x10-5 per ｵg/m3
+Hexachlorobutadiene,87-68-3,Oral,Cancer,Renal tubular adenomas and adenocarcinomas,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,7.8x10-2 per mg/kg-day
+alpha-Hexachlorocyclohexane (alpha-HCH),319-84-6,Inhalation,Cancer,Hepatic nodules and hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.8x10-3 per ｵg/m3
+alpha-Hexachlorocyclohexane (alpha-HCH),319-84-6,Oral,Cancer,Hepatic nodules and hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,6.3 per mg/kg-day
+beta-Hexachlorocyclohexane (beta-HCH),319-85-7,Inhalation,Cancer,Hepatic nodules and hepatocellular carcinomas,C (Possible human carcinogen) (1986 guidelines),Inhalation Unit Risk,5.3x10-4 per ｵg/m3
+beta-Hexachlorocyclohexane (beta-HCH),319-85-7,Oral,Cancer,Hepatic nodules and hepatocellular carcinomas,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,1.8 per mg/kg-day
+gamma-Hexachlorocyclohexane (gamma-HCH),58-89-9,Oral,Noncancer,Liver and kidney toxicity,n/a,RfD,3x10-4 mg/kg-day
+technical Hexachlorocyclohexane (t-HCH),608-73-1,Oral,Cancer,Liver nodules and hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.8 per mg/kg-day
+technical Hexachlorocyclohexane (t-HCH),608-73-1,Inhalation,Cancer,Liver nodules and hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,5.1x10-4 per ｵg/m3
+Hexachlorocyclopentadiene (HCCPD),77-47-4,Oral,Noncancer,Chronic irritation,n/a,RfD,6x10-3 mg/kg-day
+Hexachlorocyclopentadiene (HCCPD),77-47-4,Inhalation,Noncancer,Suppurative inflammation of the nose,n/a,RfC,2x10-4 mg/m3
+"Hexachlorodibenzo-p-dioxin (HxCDD), mixture of 1,2,3,6,7,8-HxCDD and 1,2,3,7,8,9-HxCDD",57653-85-7,Oral,Cancer,Liver tumors (adenomas and carcinomas; neoplastic nodules and hepatocellular carcinomas),B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,6.2x103 per mg/kg-day
+"Hexachlorodibenzo-p-dioxin (HxCDD), mixture of 1,2,3,6,7,8-HxCDD and 1,2,3,7,8,9-HxCDD",57653-85-7,Inhalation,Cancer,Liver tumors (adenomas and carcinomas; neoplastic nodules and hepatocellular carcinomas),B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.3 per ｵg/m3
+Hexachloroethane,67-72-1,Oral,Noncancer,Atrophy and degeneration of renal tubules,n/a,RfD,7x10-4 mg/kg-day
+Hexachloroethane,67-72-1,Inhalation,Noncancer,Neurotoxicity (tremors and ruffled pelt),n/a,RfC,3x10-2 mg/m3
+Hexachloroethane,67-72-1,Oral,Cancer,Renal adenomas and carcinomas (combined),Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,4x10-2 per mg/kg-day
+Hexachlorophene,70-30-4,Oral,Noncancer,"Swollen salivary glands, status spongiosis in brain and optic nerve",n/a,RfD,3x10-4 mg/kg-day
+"Hexahydro-1,3,5-trinitro-1,3,5-triazine (RDX)",121-82-4,Oral,Noncancer,Suppurative prostatitis in F344 rats,n/a,RfD,8x10-4 mg/kg-day
+"Hexahydro-1,3,5-trinitro-1,3,5-triazine (RDX)",121-82-4,Oral,Cancer,Liver (hepatocellular adenomas or carcinomas) and lung (alveolar/bronchiolar adenomas or carcinomas),Suggestive evidence of carcinogenic potential (2005 guidelines),Oral Slope Factor,8x10-2 per mg/kg-day
+"Hexahydro-1,3,5-trinitro-1,3,5-triazine (RDX)",121-82-4,Oral,Noncancer,Convulsions in F344 rats,n/a,RfD,4x10-3 mg/kg-day
+"Hexahydro-1,3,5-trinitro-1,3,5-triazine (RDX)",121-82-4,Oral,Noncancer,Kidney medullary papillary necrosis in F344 rats,n/a,RfD,1x10-2 mg/kg-day
+"1,6-Hexamethylene diisocyanate",822-06-0,Inhalation,Noncancer,Degeneration of olfactory epithelium,n/a,RfC,1x10-5 mg/m3
+n-Hexane,110-54-3,Inhalation,Noncancer,Peripheral neuropathy (decreased MCV at 12 weeks),n/a,RfC,7x10-1 mg/m3
+2-Hexanone,591-78-6,Inhalation,Noncancer,Motor conduction velocity of the sciatic-tibial nerve,n/a,RfC,3x10-2 mg/m3
+2-Hexanone,591-78-6,Oral,Noncancer,Axonal swelling of the peripheral nerve,n/a,RfD,5x10-3 mg/kg-day
+Hexazinone,51235-04-2,Oral,Noncancer,Decreased body weight,n/a,RfD,3.3x10-2 mg/kg-day
+Hydrazine/Hydrazine sulfate,302-01-2,Oral,Cancer,Hepatoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,3.0 per mg/kg-day
+Hydrazine/Hydrazine sulfate,302-01-2,Inhalation,Cancer,Nasal cavity adenoma or adenocarcinoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,4.9x10-3 per ｵg/m3
+Hydrogen Cyanide and Cyanide Salts,Various,Oral,Noncancer,Decreased cauda epididymis weight in male F344/N rats,n/a,RfD,6x10-4 mg/kg-day
+Hydrogen Cyanide and Cyanide Salts,Various,Inhalation,Noncancer,Thyroid enlargement and altered iodide uptake,n/a,RfC,8x10-4 mg/m3
+Hydrogen chloride,7647-01-0,Inhalation,Noncancer,Hyperplasia of nasal mucosa larynx and trachea,n/a,RfC,2x10-2 mg/m3
+Hydrogen sulfide,6/4/7783,Inhalation,Noncancer,Nasal lesions of the olfactory mucosa,n/a,RfC,2x10-3 mg/m3
+Imazalil,35554-44-0,Oral,Noncancer,Decreased body weight gain,n/a,RfD,1.3x10-2 mg/kg-day
+Imazaquin,81335-37-7,Oral,Noncancer,"Decreased body weight gain, skeletal myopathy, slight anemia, bone marrow hyperplasia, elevated serum SGOT, SGPT, CPK",n/a,RfD,2.5x10-1 mg/kg-day
+Iprodione,36734-19-7,Oral,Noncancer,Increased RBC Heinz bodies; decreased prostate weight,n/a,RfD,4x10-2 mg/kg-day
+Isobutyl alcohol,78-83-1,Oral,Noncancer,Hypoactivity and ataxia,n/a,RfD,3x10-1 mg/kg-day
+Isophorone,78-59-1,Oral,Cancer,Preputial gland carcinoma,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,9.5x10-4 per mg/kg-day
+Isophorone,78-59-1,Oral,Noncancer,Kidney pathology,n/a,RfD,2x10-1 mg/kg-day
+Isopropalin,33820-53-0,Oral,Noncancer,"Reduced hemoglobin concentration, lowered hematocrits, and altered organ weights",n/a,RfD,1.5x10-2 mg/kg-day
+Isopropyl methyl phosphonic acid (IMPA),1832-54-8,Oral,Noncancer,No adverse effects observed,n/a,RfD,1x10-1 mg/kg-day
+Isoxaben,82558-50-7,Oral,Noncancer,Increased BUN; decreased serum AP and AST; decreased food consumption efficiency; increased heart/body weight,n/a,RfD,5x10-2 mg/kg-day
+Lactofen,77501-63-4,Oral,Noncancer,Increased absolute and relative liver weight; hepatocytomegaly in males,n/a,RfD,2x10-3 mg/kg-day
+Libby Amphibole Asbestos,1318-09-8,Inhalation,Noncancer,Localized pleural thickening,n/a,RfC,9x10-5 fiber/cc
+Libby Amphibole Asbestos,1318-09-8,Inhalation,Cancer,Cancer mortality from lung cancer and mesothelioma,Carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,1.7x10-1 per fiber/cc
+Linuron,330-55-2,Oral,Noncancer,Abnormal blood pigment,n/a,RfD,2x10-3 mg/kg-day
+Londax,83055-99-6,Oral,Noncancer,Liver effects,n/a,RfD,2x10-1 mg/kg-day
+Malathion,121-75-5,Oral,Noncancer,RBC ChE depression,n/a,RfD,2x10-2 mg/kg-day
+Maleic anhydride,108-31-6,Oral,Noncancer,Renal lesions,n/a,RfD,1x10-1 mg/kg-day
+Maleic hydrazide,123-33-1,Oral,Noncancer,Renal dysfunction,n/a,RfD,5x10-1 mg/kg-day
+Maneb,12427-38-2,Oral,Noncancer,Increased thyroid weight,n/a,RfD,5x10-3 mg/kg-day
+Manganese,7439-96-5,Oral,Noncancer,CNS effects,n/a,RfD,1.4x10-1 mg/kg-day
+Manganese,7439-96-5,Inhalation,Noncancer,Impairment of neurobehavioral function,n/a,RfC,5x10-5 mg/m3
+Mepiquat chloride,24307-26-4,Oral,Noncancer,Sedation and tonoclonic spasms decreased food intake and body weights hematologic effects,n/a,RfD,3x10-2 mg/kg-day
+Mercuric chloride (HgCl2),7487-94-7,Oral,Noncancer,Autoimmune effects (autoimmune glomerulonephritis),n/a,RfD,3x10-4 mg/kg-day
+"Mercury, elemental",7439-97-6,Inhalation,Noncancer,Hand tremor; increases in memory disturbances; slight subjective and objective evidence of autonomic dysfunction,n/a,RfC,3x10-4 mg/m3
+Merphos,150-50-5,Oral,Noncancer,"Ataxia, delayed neurotoxicity and weight loss",n/a,RfD,3x10-5 mg/kg-day
+Merphos oxide,78-48-8,Oral,Noncancer,"Ataxia, delayed neurotoxicity and weight loss",n/a,RfD,3x10-5 mg/kg-day
+Metalaxyl,57837-19-1,Oral,Noncancer,Increased serum alkaline phosphatase levels and increased liver-to-brain weight ratio,n/a,RfD,6x10-2 mg/kg-day
+Methacrylonitrile,126-98-7,Oral,Noncancer,Increased SGOT and SGPT levels,n/a,RfD,1x10-4 mg/kg-day
+Methamidophos,10265-92-6,Oral,Noncancer,ChE inhibition,n/a,RfD,5x10-5 mg/kg-day
+Methanol,67-56-1,Oral,Noncancer,Extra cervical ribs,n/a,RfD,2 mg/kg-day
+Methanol,67-56-1,Inhalation,Noncancer,Reduced brain weight in rat pups at 6 weeks of age,n/a,RfC,2x101 mg/m3
+Methidathion,950-37-8,Oral,Noncancer,Liver toxicity,n/a,RfD,1x10-3 mg/kg-day
+Methomyl,16752-77-5,Oral,Noncancer,Kidney and spleen pathology,n/a,RfD,2.5x10-2 mg/kg-day
+Methoxychlor,72-43-5,Oral,Noncancer,Excessive loss of litters,n/a,RfD,5x10-3 mg/kg-day
+2-Methoxyethanol,109-86-4,Inhalation,Noncancer,Testicular effects,n/a,RfC,2x10-2 mg/m3
+Methyl chloride,74-87-3,Inhalation,Noncancer,Cerebellar lesions,n/a,RfC,9x10-2 mg/m3
+Methyl ethyl ketone (MEK),78-93-3,Inhalation,Noncancer,Developmental toxicity (skeletal variations),n/a,RfC,5 mg/m3
+Methyl ethyl ketone (MEK),78-93-3,Oral,Noncancer,Decreased pup body weight,n/a,RfD,6x10-1 mg/kg-day
+Methyl isobutyl ketone (MIBK),108-10-1,Inhalation,Noncancer,"Reduced fetal body weight, skeletal variations, and increased fetal death in mice, and skeletal variations in rats.",n/a,RfC,3 mg/m3
+Methyl methacrylate,80-62-6,Inhalation,Noncancer,Degeneration/ atrophy of olfactory epithelium (male rats),n/a,RfC,7x10-1 mg/m3
+Methyl methacrylate,80-62-6,Oral,Noncancer,None,n/a,RfD,1.4 mg/kg-day
+Methyl parathion,298-00-0,Oral,Noncancer,"RBC, ChE inhibition; reduced hemoglobin, hematocrit and RBCs",n/a,RfD,2.5x10-4 mg/kg-day
+Methyl tert-butyl ether (MTBE),1634-04-4,Inhalation,Noncancer,"Increased absolute and relative liver and kidney weights and increased severity of spontaneous renal lesions (females), increased prostration (females), and swollen periocular tissue (males and females)",n/a,RfC,3 mg/m3
+4-(2-Methyl-4-chlorophenoxy) butyric acid (MCPB),94-81-5,Oral,Noncancer,"Male reproductive toxicity and other effects (including decreased body weight gain), increased liver and kidney weights",n/a,RfD,1x10-2 mg/kg-day
+2-(2-Methyl-4-chlorophenoxy)propionic acid (MCPP),93-65-2,Oral,Noncancer,Increased absolute and relative kidney weights,n/a,RfD,1x10-3 mg/kg-day
+2-Methyl-4-chlorophenoxyacetic acid (MCPA),94-74-6,Oral,Noncancer,Kidney and liver toxicity,n/a,RfD,5x10-4 mg/kg-day
+Methylene Diphenyl Diisocyanate (monomeric MDI) and polymeric MDI (PMDI),101-68-8,Inhalation,Noncancer,Hyperplasia of olfactory epithelium,n/a,RfC,6x10-4 mg/m3
+"4,4'-Methylene bis(N,N'-dimethyl)aniline",101-61-1,Oral,Cancer,"Thyroid, follicular cell carcinoma/ adenoma",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,4.6x10-2 per mg/kg-day
+Methylmercury (MeHg),22967-92-6,Oral,Noncancer,Developmental neuropsychological impairment,n/a,RfD,1x10-4 mg/kg-day (High end of BMDL05 range)
+Methylmercury (MeHg),22967-92-6,Oral,Noncancer,Developmental neuropsychological impairment,n/a,RfD,1x10-4 mg/kg-day (Low end of BMDL05 range)
+2-Methylnaphthalene,91-57-6,Oral,Noncancer,Pulmonary alveolar proteinosis,n/a,RfD,4x10-3 mg/kg-day
+2-Methylphenol,95-48-7,Oral,Noncancer,Decreased body weights and neurotoxicity,n/a,RfD,5x10-2 mg/kg-day
+3-Methylphenol,108-39-4,Oral,Noncancer,Decreased body weights and neurotoxicity,n/a,RfD,5x10-2 mg/kg-day
+Metolachlor,51218-45-2,Oral,Noncancer,"Decreased body weight gain, decreased pup weight and parental food consumption",n/a,RfD,1.5x10-1 mg/kg-day
+Metribuzin,21087-64-9,Oral,Noncancer,"Liver and kidney effects, decreased body weight, mortality",n/a,RfD,2.5x10-2 mg/kg-day
+Mirex,2385-85-5,Oral,Noncancer,"Liver cytomegaly, fatty metamorphosis, angiectasis; thyroid cystic follicles",n/a,RfD,2x10-4 mg/kg-day
+Molinate,2212-67-1,Oral,Noncancer,Reproductive toxicity,n/a,RfD,2x10-3 mg/kg-day
+Molybdenum,7439-98-7,Oral,Noncancer,Increased uric acid levels,n/a,RfD,5x10-3 mg/kg-day
+Monochloramine,10599-90-3,Oral,Noncancer,No observed effects,n/a,RfD,1x10-1 mg/kg-day
+Naled,300-76-5,Oral,Noncancer,Brain ChE inhibition,n/a,RfD,2x10-3 mg/kg-day
+Naphthalene,91-20-3,Inhalation,Noncancer,"Nasal effects: hyperplasia and metaplasia in respiratory and olfactory epithelium, respectively",n/a,RfC,3x10-3 mg/m3
+Naphthalene,91-20-3,Oral,Noncancer,Decreased mean terminal body weight in males,n/a,RfD,2x10-2 mg/kg-day
+Napropamide,15299-99-7,Oral,Noncancer,Decreased body weight gain in parental animals and pups,n/a,RfD,1x10-1 mg/kg-day
+Nickel refinery dust,,Inhalation,Cancer,Lung cancer,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,2.4x10-4 per ｵg/m3
+Nickel subsulfide,12035-72-2,Inhalation,Cancer,Lung cancer,A (Human carcinogen) (1986 guidelines),Inhalation Unit Risk,4.8x10-4 per ｵg/m3
+"Nickel, soluble salts",Various,Oral,Noncancer,Decreased body and organ weights,n/a,RfD,2x10-2 mg/kg-day
+Nitrate,14797-55-8,Oral,Noncancer,Early clinical signs of methemoglobinemia in excess of 10% (0-3 months old infants formula),n/a,RfD,1.6 mg/kg-day
+Nitrite,14797-65-0,Oral,Noncancer,Methemoglobinemia,n/a,RfD,1x10-1 mg/kg-day
+Nitrobenzene,98-95-3,Oral,Noncancer,Increased methemoglobin levels,n/a,RfD,2x10-3 mg/kg-day
+Nitrobenzene,98-95-3,Inhalation,Noncancer,Bronchiolization of the alveoli and olfactory degeneration,n/a,RfC,9x10-3 mg/m3
+Nitrobenzene,98-95-3,Inhalation,Cancer,"Liver hepatocellular adenomas or carcinomas, kidney tubular adenomas or carcinomas, thyroid follicular cell adenomas or carcinomas",Likely to be carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,4x10-5 per ｵg/m3
+Nitroguanidine,556-88-7,Oral,Noncancer,"Reduced weight gain in female rats, maternal/ fetal toxicity in rats, and equivocal evidence of developmental toxicity in rabbits",n/a,RfD,1x10-1 mg/kg-day
+2-Nitropropane,79-46-9,Inhalation,Noncancer,Liver focal vacuolization and nodules,n/a,RfC,2x10-2 mg/m3
+N-Nitroso-N-methylethylamine,10595-95-6,Oral,Cancer,Hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.2x101 per mg/kg-day
+N-Nitroso-di-n-butylamine,924-16-3,Oral,Cancer,Bladder and esophagus tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,5.4 per mg/kg-day
+N-Nitroso-di-n-butylamine,924-16-3,Inhalation,Cancer,Bladder and esophagus tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.6x10-3 per ｵg/m3
+N-Nitrosodi-N-propylamine,621-64-7,Oral,Cancer,Hepatocellular carcinomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,7.0 per mg/kg-day
+N-Nitrosodiethanolamine,1116-54-7,Oral,Cancer,"Hepatocellular carcinoma, cholangiocellular carcinoma and adenoma and neoplastic nodules",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.8 per mg/kg-day
+N-Nitrosodiethylamine,55-18-5,Oral,Cancer,Liver tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.5x102 per mg/kg-day
+N-Nitrosodiethylamine,55-18-5,Inhalation,Cancer,Liver tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,4.3x10-2 per ｵg/m3
+N-Nitrosodimethylamine,62-75-9,Oral,Cancer,Liver tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,5.1x101 per mg/kg-day
+N-Nitrosodimethylamine,62-75-9,Inhalation,Cancer,Liver tumors,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1.4x10-2 per ｵg/m3
+N-Nitrosodiphenylamine,86-30-6,Oral,Cancer,Transitional cell carcinoma of the bladder,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,4.9x10-3 per mg/kg-day
+N-Nitrosopyrrolidine,930-55-2,Oral,Cancer,Hepatocellular carcinoma and adenoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.1 per mg/kg-day
+N-Nitrosopyrrolidine,930-55-2,Inhalation,Cancer,Hepatocellular carcinoma and adenoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,6.1x10-4 per ｵg/m3
+Norflurazon,27314-13-2,Oral,Noncancer,Liver and thyroid effects,n/a,RfD,4x10-2 mg/kg-day
+NuStar,85509-19-9,Oral,Noncancer,Liver cell enlargement,n/a,RfD,7x10-4 mg/kg-day
+Octabromodiphenyl ether,32536-52-0,Oral,Noncancer,Induction of hepatic enzymes; liver histopathology,n/a,RfD,3x10-3 mg/kg-day
+"Octahydro-1,3,5,7-tetranitro-1,3,5,7-tetrazocine (HMX)",2691-41-0,Oral,Noncancer,Hepatic lesions,n/a,RfD,5x10-2 mg/kg-day
+Oryzalin,19044-88-3,Oral,Noncancer,"Increases in serum cholesterol, alkaline phosphatase, and relative liver and kidney weights, and decreases in alanine transaminase and adrenal weights",n/a,RfD,5x10-2 mg/kg-day
+Oxadiazon,19666-30-9,Oral,Noncancer,Increased levels of serum proteins and increased liver weights,n/a,RfD,5x10-3 mg/kg-day
+Oxamyl,23135-22-0,Oral,Noncancer,Decreased body weight gain and food consumption,n/a,RfD,2.5x10-2 mg/kg-day
+Oxyfluorfen,42874-03-3,Oral,Noncancer,Increased absolute liver weight and nonneoplastic lesions,n/a,RfD,3x10-3 mg/kg-day
+Paclobutrazol,76738-62-0,Oral,Noncancer,"Elevated liver weights, serum cholesterol, hepatic aminopyrine N-demethylase activity, and alanine transaminase levels",n/a,RfD,1.3x10-2 mg/kg-day
+Paraquat,1910-42-5,Oral,Noncancer,Chronic pneumonitis,n/a,RfD,4.5x10-3 mg/kg-day
+Pendimethalin,40487-42-1,Oral,Noncancer,"Increase in serum alkaline phosphatase and liver weight, and hepatic lesions",n/a,RfD,4x10-2 mg/kg-day
+Pentabromodiphenyl ether,32534-81-9,Oral,Noncancer,Induction of hepatic enzymes,n/a,RfD,2x10-3 mg/kg-day
+"2,2',4,4',5-Pentabromodiphenyl ether (BDE-99)",60348-60-9,Oral,Noncancer,Neurobehavioral effects,n/a,RfD,1x10-4 mg/kg-day
+Pentachlorobenzene,608-93-5,Oral,Noncancer,Liver and kidney toxicity,n/a,RfD,8x10-4 mg/kg-day
+Pentachloronitrobenzene (PCNB),82-68-8,Oral,Noncancer,Liver toxicity,n/a,RfD,3x10-3 mg/kg-day
+Pentachlorophenol,87-86-5,Oral,Noncancer,Hepatotoxicity,n/a,RfD,5x10-3 mg/kg-day
+Pentachlorophenol,87-86-5,Oral,Cancer,Hepatocellular adenomas or carcinomas and adrenal benign or malignant pheochromocytomas,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,4x10-1 per mg/kg-day
+Perchlorate (ClO4) and Perchlorate Salts,7790-98-9,Oral,Noncancer,Radioactive iodide uptake inhibition (RAIU) in the thyroid,n/a,RfD,7x10-4 mg/kg-day
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,"Increased hepatocellular hypertrophy (Liver), Decreased total T4 (Thyroid)",n/a,RfD,1x10-3 mg/kg-day (Chronic)
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,Developmental delays,n/a,RfD,6x10-3 mg/kg-day (Chronic)
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,Decreased total T4,n/a,RfD,1x10-2 mg/kg-day (Subchronic)
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,Increased hepatocellular hypertrophy,n/a,RfD,1x10-3 mg/kg-day (Chronic)
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,Developmental delays,n/a,RfD,6x10-3 mg/kg-day (Subchronic)
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,Developmental delays,n/a,RfD,6x10-3 mg/kg-day (Subchronic)
+Perfluorobutanoic Acid (PFBA),375-22-4,Oral,Noncancer,Increased hepatocellular hypertrophy,n/a,RfD,1x10-2 mg/kg-day (Subchronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Decreased postnatal (PND 0) body weight in F1 Sprague窶船awley male and female rats,n/a,RfD,5x10-4 mg/kg-day (Subchronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Increased hepatocellular hypertrophy in adult rats,n/a,RfD,1x10-3 mg/kg-day (Subchronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Decreased red blood cells in adult female Crl:CD Sprague窶船awley rats,n/a,RfD,5x10-3 mg/kg-day (Chronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Increased hepatocellular hypertrophy in adult male Crl:CD Sprague窶船awley rats,n/a,RfD,4x10-4 mg/kg-day (Chronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Decreased postnatal (PND 0) body weight in F1 Sprague窶船awley male and female rats,n/a,RfD,5x10-4 mg/kg-day (Chronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Decreased red blood cells in adult female Crl:CD Sprague窶船awley rats,n/a,RfD,8x10-4 mg/kg-day (Subchronic)
+Perfluorohexanoic Acid (PFHxA),307-24-4,Oral,Noncancer,Decreased total T4 in adult male Harlan Sprague-Dawley rats,n/a,RfD,1x10-3 mg/kg-day (Subchronic)
+Permethrin,52645-53-1,Oral,Noncancer,Increased liver weights,n/a,RfD,5x10-2 mg/kg-day
+Phenmedipham,13684-63-4,Oral,Noncancer,No adverse effects,n/a,RfD,2.5x10-1 mg/kg-day
+Phenol,108-95-2,Oral,Noncancer,Decreased maternal weight gain,n/a,RfD,3x10-1 mg/kg-day
+m-Phenylenediamine,108-45-2,Oral,Noncancer,Increased relative and absolute liver weights and degenerative liver lesions,n/a,RfD,6x10-3 mg/kg-day
+Phenylmercuric acetate,62-38-4,Oral,Noncancer,Renal damage,n/a,RfD,8x10-5 mg/kg-day
+Phosgene,75-44-5,Inhalation,Noncancer,Collagen staining indicative of fibrosis,n/a,RfC,3x10-4 mg/m3
+Phosmet,732-11-6,Oral,Noncancer,"Reduced body weight (males), liver cell vacuolation, cholinesterase inhibition",n/a,RfD,2x10-2 mg/kg-day
+Phosphine,7803-51-2,Inhalation,Noncancer,Decreased body weight,n/a,RfC,3x10-4 mg/m3
+Phosphine,7803-51-2,Oral,Noncancer,Body weight and clinical parameters,n/a,RfD,3x10-4 mg/kg-day
+Phosphoric acid,7664-38-2,Inhalation,Noncancer,Bronchiolar fibrosis,n/a,RfC,1x10-2 mg/m3
+Phthalic anhydride,85-44-9,Oral,Noncancer,Lung and kidney histopathology,n/a,RfD,2 mg/kg-day
+Picloram,2/1/1918,Oral,Noncancer,Increased liver weights,n/a,RfD,7x10-2 mg/kg-day
+Pirimiphos-methyl,29232-93-7,Oral,Noncancer,Transient plasma ChE depression,n/a,RfD,1x10-2 mg/kg-day
+Polychlorinated Biphenyls (PCBs),1336-36-3,Oral,Cancer,"Liver hepatocellular adenomas, carcinomas, cholangiomas, or cholangiocarcinomas",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2 per mg/kg-day
+Polychlorinated Biphenyls (PCBs),1336-36-3,Inhalation,Cancer,"Liver hepatocellular adenomas, carcinomas, cholangiomas, or cholangiocarcinomas",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,1x10-4 per ｵg/m3 (Applies to inhalation of evaporated congeners)
+Potassium cyanide,151-50-8,Oral,Noncancer,Decreased cauda epididymis weight in male F344/N rats. The RfD for potassium cyanide is presented in section I.A.3 of the hydrogen cyanide and cyanide salts IRIS Summary.,n/a,RfD,2x10-3 mg/kg-day
+Potassium silver cyanide,506-61-6,Oral,Noncancer,Decreased cauda epididymis weight in male F344/N rats. The RfD for potassium cyanide is presented in section I.A.3 of the hydrogen cyanide and cyanide salts IRIS Summary.,n/a,RfD,5x10-3 mg/kg-day
+Prochloraz,67747-09-5,Oral,Noncancer,"Increase in SAP and liver weights, liver histopathology",n/a,RfD,9x10-3 mg/kg-day
+Prochloraz,67747-09-5,Oral,Cancer,Liver adenoma/ carcinoma combined,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,1.5x10-1 per mg/kg-day
+Prometon,1610-18-0,Oral,Noncancer,No treatment related effects observed,n/a,RfD,1.5x10-2 mg/kg-day
+Prometryn,7287-19-6,Oral,Noncancer,Liver and kidney degeneration and bone marrow atrophy,n/a,RfD,4x10-3 mg/kg-day
+Pronamide,23950-58-5,Oral,Noncancer,No effects,n/a,RfD,7.5x10-2 mg/kg-day
+Propachlor,1918-16-7,Oral,Noncancer,"Decreased weight gain, food consumption increased relative liver weights",n/a,RfD,1.3x10-2 mg/kg-day
+Propanil,709-98-8,Oral,Noncancer,Increased relative spleen weight in females,n/a,RfD,5x10-3 mg/kg-day
+Propargite,2312-35-8,Oral,Noncancer,"Reduced body weight gain (maternal), increased resorption, reduced body weight (fetal), delayed ossification",n/a,RfD,2x10-2 mg/kg-day (Maternal toxicity and fetotoxicity)
+Propargyl alcohol,107-19-7,Oral,Noncancer,Renal and hepatotoxicity,n/a,RfD,2x10-3 mg/kg-day
+Propazine,139-40-2,Oral,Noncancer,Decrease in body weight,n/a,RfD,2x10-2 mg/kg-day
+Propham,122-42-9,Oral,Noncancer,Increase in male spleen weight and ChE depression in females,n/a,RfD,2x10-2 mg/kg-day
+Propiconazole,60207-90-1,Oral,Noncancer,Gastric mucosal irritation,n/a,RfD,1.3x10-2 mg/kg-day
+Propionaldehyde,123-38-6,Inhalation,Noncancer,Atrophy of olfactory epithelium,n/a,RfC,8x10-3 mg/m3
+Propylene glycol monomethyl ether (PGME),107-98-2,Inhalation,Noncancer,Mild reversible sedation,n/a,RfC,2 mg/m3
+Propylene oxide,75-56-9,Inhalation,Noncancer,Nest-like infolds of the nasal respiratory epithelium,n/a,RfC,3x10-2 mg/m3
+Propylene oxide,75-56-9,Inhalation,Cancer,Nasal cavity hemangioma or hemangiosarcoma,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,3.7x10-6 per ｵg/m3
+Propylene oxide,75-56-9,Oral,Cancer,"Forestomach, squamous cell carcinoma",B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,2.4x10-1 per mg/kg-day
+Pursuit,81335-77-5,Oral,Noncancer,"Decreased packed cell volume, hemoglobin, erythrocytes in females",n/a,RfD,2.5x10-1 mg/kg-day
+Pydrin,51630-58-1,Oral,Noncancer,Neurological dysfunction,n/a,RfD,2.5x10-2 mg/kg-day
+Pyrene,129-00-0,Oral,Noncancer,"Kidney effects (renal tubular pathology, decreased kidney weights)",n/a,RfD,3x10-2 mg/kg-day
+Pyridine,110-86-1,Oral,Noncancer,Increased liver weight,n/a,RfD,1x10-3 mg/kg-day
+Quinalphos,13593-03-8,Oral,Noncancer,No adverse effects reported,n/a,RfD,5x10-4 mg/kg-day
+Quinoline,91-22-5,Oral,Cancer,Hepatic hemangioendotheliomas or hemangiosarcomas,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,3 per mg/kg-day
+Resmethrin,10453-86-8,Oral,Noncancer,Reproductive toxicity,n/a,RfD,3x10-2 mg/kg-day
+Rotenone,83-79-4,Oral,Noncancer,Reduced pup weight,n/a,RfD,4x10-3 mg/kg-day
+Savey,78587-05-0,Oral,Noncancer,Hypertrophy of adrenal cortex (both sexes) hematologic effects (males),n/a,RfD,2.5x10-2 mg/kg-day
+Selenious acid,7783-00-8,Oral,Noncancer,Clinical selenosis,n/a,RfD,5x10-3 mg/kg-day
+Selenium and Compounds,7782-49-2,Oral,Noncancer,Clinical selenosis,n/a,RfD,5x10-3 mg/kg-day
+Sethoxydim,74051-80-2,Oral,Noncancer,Mild anemia in males,n/a,RfD,9x10-2 mg/kg-day
+Silver,7440-22-4,Oral,Noncancer,Argyria,n/a,RfD,5x10-3 mg/kg-day
+Silver cyanide,506-64-9,Oral,Noncancer,"Weight loss, thyroid effects, and myelin degeneration",n/a,RfD,1x10-1 mg/kg-day
+Simazine,122-34-9,Oral,Noncancer,Reduction in weight gains hematological changes in females,n/a,RfD,5x10-3 mg/kg-day
+Sodium azide,26628-22-8,Oral,Noncancer,"Clinical sign (e.g., hunched postures) and reduced body weight",n/a,RfD,4x10-3 mg/kg-day
+Sodium cyanide,143-33-9,Oral,Noncancer,Decreased cauda epididymis weight in male F344/N rats. The RfD for potassium cyanide is presented in section I.A.3 of the hydrogen cyanide and cyanide salts IRIS Summary.,n/a,RfD,1x10-3 mg/kg-day
+Sodium diethyldithiocarbamate,148-18-5,Oral,Noncancer,Reduced body weight,n/a,RfD,3x10-2 mg/kg-day
+Sodium fluoroacetate,62-74-8,Oral,Noncancer,Increased heart weight in females and males; decreased testis weight and altered spermatogenesis in males.,n/a,RfD,2x10-5 mg/kg-day
+Strontium,7440-24-6,Oral,Noncancer,Rachitic bone,n/a,RfD,6x10-1 mg/kg-day
+Strychnine,57-24-9,Oral,Noncancer,Toxicity/histopathology,n/a,RfD,3x10-4 mg/kg-day
+Styrene,100-42-5,Oral,Noncancer,Red blood cell and liver effects,n/a,RfD,2x10-1 mg/kg-day
+Styrene,100-42-5,Inhalation,Noncancer,CNS effects,n/a,RfC,1 mg/m3
+Systhane,88671-89-0,Oral,Noncancer,Testicular atrophy,n/a,RfD,2.5x10-2 mg/kg-day
+Tebuthiuron,34014-18-1,Oral,Noncancer,Depressed body weight gain in F1 females,n/a,RfD,7x10-2 mg/kg-day
+Terbacil,5902-51-2,Oral,Noncancer,Increase in thyroid/body weight ratio; slight increase in liver weights; elevated alkaline phosphatase,n/a,RfD,1.3x10-2 mg/kg-day
+Terbutryn,886-50-0,Oral,Noncancer,Hematologic effects in females,n/a,RfD,1x10-3 mg/kg-day
+"2,2',4,4'-Tetrabromodiphenyl ether (BDE-47)",5436-43-1,Oral,Noncancer,Neurobehavioral effects,n/a,RfD,1x10-4 mg/kg-day
+"1,2,4,5-Tetrachlorobenzene",95-94-3,Oral,Noncancer,Kidney lesions,n/a,RfD,3x10-4 mg/kg-day
+"2,3,7,8-Tetrachlorodibenzo-p-dioxin",1746-01-6,Oral,Noncancer,Decreased sperm count and motility in men exposed to TCDD as boys / Increased TSH in neonates,n/a,RfD,7x10-10 mg/kg-day
+"2,3,7,8-Tetrachlorodibenzo-p-dioxin",1746-01-6,Oral,Noncancer,Decreased sperm count and motility in men exposed to TCDD as boys / Increased TSH in neonates,n/a,RfD,7x10-10 mg/kg-day
+"1,1,1,2-Tetrachloroethane",630-20-6,Inhalation,Cancer,Hepatocellular adenoma or carcinoma,C (Possible human carcinogen) (1986 guidelines),Inhalation Unit Risk,7.4x10-6 per ｵg/m3
+"1,1,1,2-Tetrachloroethane",630-20-6,Oral,Noncancer,"Mineralization of the kidneys in males, hepatic clear cell change in females",n/a,RfD,3x10-2 mg/kg-day
+"1,1,1,2-Tetrachloroethane",630-20-6,Oral,Cancer,Hepatocellular adenoma or carcinoma,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,2.6x10-2 per mg/kg-day
+"1,1,2,2-Tetrachloroethane",79-34-5,Oral,Cancer,hepatocellular carcinomas,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,2x10-1 per mg/kg-day
+"1,1,2,2-Tetrachloroethane",79-34-5,Oral,Noncancer,Increased relative liver weight in rats,n/a,RfD,2x10-2 mg/kg-day (Chronic)
+"1,1,2,2-Tetrachloroethane",79-34-5,Oral,Noncancer,Increased relative liver weight in rats,n/a,RfD,5x10-2 mg/kg-day (Subchronic)
+Tetrachloroethylene (Perchloroethylene),127-18-4,Oral,Noncancer,(See Note),n/a,RfD,6x10-3 mg/kg-day
+Tetrachloroethylene (Perchloroethylene),127-18-4,Inhalation,Noncancer,(See Note),n/a,RfC,4x10-2 mg/m3
+Tetrachloroethylene (Perchloroethylene),127-18-4,Inhalation,Cancer,Hepatocellular adenomas or carcinomas,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,0
+Tetrachloroethylene (Perchloroethylene),127-18-4,Oral,Cancer,Hepatocellular adenomas or carcinomas,Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,2.1x10-3 per mg/kg-day
+"2,3,4,6-Tetrachlorophenol",58-90-2,Oral,Noncancer,Increased liver weights and centrilobular hypertrophy,n/a,RfD,3x10-2 mg/kg-day
+Tetrachlorovinphos,961-11-5,Oral,Noncancer,"Reduced body weight gain, increased liver and kidney weights, and RBC ChE inhibition",n/a,RfD,3x10-2 mg/kg-day
+Tetraethyl lead,78-00-2,Oral,Noncancer,Histopathology of liver and thymus,n/a,RfD,1x10-7 mg/kg-day
+Tetraethyldithiopyrophosphate,3689-24-5,Oral,Noncancer,Depressed RBC and plasma cholinesterase activity,n/a,RfD,5x10-4 mg/kg-day
+"1,1,1,2-Tetrafluoroethane",811-97-2,Inhalation,Noncancer,Leydig cell hyperplasia,n/a,RfC,8x101 mg/m3
+Tetrahydrofuran,109-99-9,Oral,Noncancer,Decreased pup body weight gain,n/a,RfD,9x10-1 mg/kg-day
+Tetrahydrofuran,109-99-9,Inhalation,Noncancer,"Increased liver weight and centrilobular cytomegaly, CNS effects (narcosis)",n/a,RfC,2 mg/m3
+Thiobencarb,28249-77-6,Oral,Noncancer,"Decrease in body weight, increase in BUN",n/a,RfD,1x10-2 mg/kg-day
+Thiophanate-methyl,23564-05-8,Oral,Noncancer,"Decreased body weight, decreased spermatogenesis, and histological evidence of hyperthyroidism",n/a,RfD,8x10-2 mg/kg-day
+Thiram,137-26-8,Oral,Noncancer,Neurotoxicity,n/a,RfD,5x10-3 mg/kg-day
+Toluene,108-88-3,Inhalation,Noncancer,Neurological effects in occupationally-exposed workers,n/a,RfC,5 mg/m3
+Toluene,108-88-3,Oral,Noncancer,Increased kidney weight,n/a,RfD,8x10-2 mg/kg-day
+"2,4-/2,6-Toluene diisocyanate mixture (TDI)",26471-62-5,Inhalation,Noncancer,Chronic lung-function decline,n/a,RfC,7x10-5 mg/m3
+Toxaphene,8001-35-2,Inhalation,Cancer,Hepatocellular carcinomas and neoplastic nodules,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,3.2x10-4 per ｵg/m3
+Toxaphene,8001-35-2,Oral,Cancer,Hepatocellular carcinomas and neoplastic nodules,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.1 per mg/kg-day
+Tralomethrin,66841-25-6,Oral,Noncancer,Decreased body weight gain in males increased food and water consumption in males and females,n/a,RfD,7.5x10-3 mg/kg-day
+Triallate,2303-17-5,Oral,Noncancer,"Increased hemosiderin deposition, serum alkaline phosphatase, and liver weight in females",n/a,RfD,1.3x10-2 mg/kg-day
+Triasulfuron,82097-50-5,Oral,Noncancer,Centrilobular hepatocytomegaly in males,n/a,RfD,1x10-2 mg/kg-day
+"1,2,4-Tribromobenzene",615-54-3,Oral,Noncancer,Increased liver-to-body weight ratio and hepatic microsomal enzyme induction,n/a,RfD,5x10-3 mg/kg-day
+Tributyltin oxide (TBTO),56-35-9,Oral,Noncancer,Immunosuppression,n/a,RfD,3x10-4 mg/kg-day
+"1,1,2-Trichloro-1,2,2-trifluoroethane (CFC-113)",76-13-1,Oral,Noncancer,Psychomotor impairment,n/a,RfD,3x101 mg/kg-day
+Trichloroacetic acid,76-03-9,Oral,Noncancer,Hepatocellular necrosis,n/a,RfD,2x10-2 mg/kg-day
+Trichloroacetic acid,76-03-9,Oral,Cancer,Hepatocellular adenomas or carcinomas,Suggestive evidence of carcinogenic potential (2005 guidelines),Oral Slope Factor,7x10-2 per mg/kg-day
+"1,2,4-Trichlorobenzene",120-82-1,Oral,Noncancer,Increased adrenal weights; vacuolization of zona fasciculata in the cortex,n/a,RfD,1x10-2 mg/kg-day
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Performance on neurobehavioral tests,n/a,RfC,9 mg/m3 (Acute: 1 hour)
+"1,1,1-Trichloroethane",71-55-6,Oral,Noncancer,Reduced body weight,n/a,RfD,2 mg/kg-day (Chronic)
+"1,1,1-Trichloroethane",71-55-6,Oral,Noncancer,Reduced body weight,n/a,RfD,7 mg/kg-day (Subchronic)
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Performance on neurobehavioral tests,n/a,RfC,7 mg/m3 (Acute: 4 hours)
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Liver histopathologic changes,n/a,RfC,5 mg/m3 (Chronic)
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Liver histopathologic changes,n/a,RfC,5 mg/m3 (Subchronic)
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Performance on neurobehavioral tests,n/a,RfC,7 mg/m3 (Acute: 8 hours)
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Performance on neurobehavioral tests,n/a,RfC,6 mg/m3 (Acute: 24 hours)
+"1,1,1-Trichloroethane",71-55-6,Inhalation,Noncancer,Performance on neurobehavioral tests,n/a,RfC,5 mg/m3 (Short-term)
+"1,1,2-Trichloroethane",79-00-5,Inhalation,Cancer,Hepatocellular carcinoma,C (Possible human carcinogen) (1986 guidelines),Inhalation Unit Risk,1.6x10-5 per ｵg/m3
+"1,1,2-Trichloroethane",79-00-5,Oral,Noncancer,Clinical serum chemistry (effects on erythrocytes and depressed humoral immune status),n/a,RfD,4x10-3 mg/kg-day
+"1,1,2-Trichloroethane",79-00-5,Oral,Cancer,Hepatocellular carcinoma,C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,5.7x10-2 per mg/kg-day
+Trichloroethylene,79-01-6,Oral,Cancer,"Renal cell carcinoma, non-Hodgkin's lymphoma, and liver tumors",Carcinogenic to humans (2005 guidelines),Oral Slope Factor,4.6 x10-2 per mg/kg-day
+Trichloroethylene,79-01-6,Inhalation,Cancer,"Renal cell carcinoma, non-Hodgkin's lymphoma, and liver tumors",Carcinogenic to humans (2005 guidelines),Inhalation Unit Risk,4.1x10-6 per ｵg/m3
+Trichloroethylene,79-01-6,Oral,Noncancer,(See Note),n/a,RfD,5x10-4 mg/kg-day
+Trichloroethylene,79-01-6,Inhalation,Noncancer,(See Note),n/a,RfC,2x10-3 mg/m3
+Trichlorofluoromethane,75-69-4,Oral,Noncancer,Survival and histopathology (pleuritis and pericarditis),n/a,RfD,3x10-1 mg/kg-day
+"2,4,5-Trichlorophenol",95-95-4,Oral,Noncancer,Liver and kidney pathology,n/a,RfD,1x10-1 mg/kg-day
+"2,4,6-Trichlorophenol",88-06-2,Oral,Cancer,Leukemia,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Oral Slope Factor,1.1x10-2 per mg/kg-day
+"2,4,6-Trichlorophenol",88-06-2,Inhalation,Cancer,Leukemia,B2 (Probable human carcinogen - based on sufficient evidence of carcinogenicity in animals) (1986 guidelines),Inhalation Unit Risk,3.1x10-6 per ｵg/m3
+"2(2,4,5-Trichlorophenoxy) propionic acid (2,4,5-TP)",93-72-1,Oral,Noncancer,Histopathological changes in liver,n/a,RfD,8x10-3 mg/kg-day
+"2,4,5-Trichlorophenoxyacetic acid (2,4,5-T)",93-76-5,Oral,Noncancer,Increased urinary coproporphyrins,n/a,RfD,1x10-2 mg/kg-day
+"1,1,2-Trichloropropane",598-77-6,Oral,Noncancer,"Mild lesions in liver, kidney and thyroid",n/a,RfD,5x10-3 mg/kg-day
+"1,2,3-Trichloropropane",96-18-4,Oral,Noncancer,Increased absolute liver weight in male rats,n/a,RfD,4x10-3 mg/kg-day
+"1,2,3-Trichloropropane",96-18-4,Oral,Cancer,"alimentary system squamous cell neoplasms, liver hepatocellular adenomas or carcinomas, Harderian gland adenomas, uterine/cervix adenomas or carcinomas",Likely to be carcinogenic to humans (2005 guidelines),Oral Slope Factor,3x101 per mg/kg-day
+"1,2,3-Trichloropropane",96-18-4,Inhalation,Noncancer,peribronchial lymphoid hyperplasia in male rats,n/a,RfC,3x10-4 mg/m3
+Tridiphane,58138-08-2,Oral,Noncancer,Decreased fertility index and depressed body weight of dams,n/a,RfD,3x10-3 mg/kg-day
+Triethylamine,121-44-8,Inhalation,Noncancer,Inflammation of the nasal passage,n/a,RfC,7x10-3 mg/m3
+Trifluralin,1582-09-8,Oral,Cancer,"Combined renal pelvis carcinomas, urinary bladder papillomas and/or thyroid adenomas and carcinomas",C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,7.7x10-3 per mg/kg-day
+Trifluralin,1582-09-8,Oral,Noncancer,Increased liver weights; increase in methemoglobin,n/a,RfD,7.5x10-3 mg/kg-day
+"1,2,3-Trimethylbenzene",526-73-8,Inhalation,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfC,6x10-2 mg/m3 (Chronic)
+"1,2,3-Trimethylbenzene",526-73-8,Oral,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfD,4x10-2 mg/kg-day (Subchronic)
+"1,2,3-Trimethylbenzene",526-73-8,Oral,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfD,1x10-2 mg/kg-day (Chronic)
+"1,2,3-Trimethylbenzene",526-73-8,Inhalation,Noncancer,Inflammatory lung lesions,n/a,RfC,2x10-1 mg/m3
+"1,2,3-Trimethylbenzene",526-73-8,Inhalation,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfC,2x10-1 mg/m3 (Subchronic)
+"1,2,3-Trimethylbenzene",526-73-8,Inhalation,Noncancer,Decreased segmented neutrophils,n/a,RfC,6x10-2 mg/m3
+"1,2,4-Trimethylbenzene",95-63-6,Inhalation,Noncancer,Inflammatory lung lesions,n/a,RfC,2x10-1 mg/m3
+"1,2,4-Trimethylbenzene",95-63-6,Inhalation,Noncancer,Decreased fetal weight,n/a,RfC,4 mg/m3
+"1,2,4-Trimethylbenzene",95-63-6,Inhalation,Noncancer,Decreased maternal weight,n/a,RfC,3 mg/m3
+"1,2,4-Trimethylbenzene",95-63-6,Oral,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfD,1x10-2 mg/kg-day (Chronic)
+"1,2,4-Trimethylbenzene",95-63-6,Oral,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfD,4x10-2 mg/kg-day (Subchronic)
+"1,2,4-Trimethylbenzene",95-63-6,Inhalation,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfC,6x10-2 mg/m3 (Chronic)
+"1,2,4-Trimethylbenzene",95-63-6,Inhalation,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfC,2x10-1 mg/m3 (Subchronic)
+"1,2,4-Trimethylbenzene",95-63-6,Inhalation,Noncancer,Decreased clotting time,n/a,RfC,8x10-2 mg/m3
+"1,3,5-Trimethylbenzene",108-67-8,Inhalation,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfC,2x10-1 mg/m3 (Subchronic)
+"1,3,5-Trimethylbenzene",108-67-8,Oral,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfD,1x10-2 mg/kg-day (Chronic)
+"1,3,5-Trimethylbenzene",108-67-8,Inhalation,Noncancer,Decreased fetal weight,n/a,RfC,4 mg/m3
+"1,3,5-Trimethylbenzene",108-67-8,Inhalation,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfC,6x10-2 mg/m3 (Chronic)
+"1,3,5-Trimethylbenzene",108-67-8,Oral,Noncancer,Decreased pain sensitivity in male Wistar rats,n/a,RfD,4x10-2 mg/kg-day (Subchronic)
+"1,3,5-Trimethylbenzene",108-67-8,Inhalation,Noncancer,Decreased maternal weight,n/a,RfC,4x10-1 mg/m3
+"1,3,5-Trinitrobenzene",99-35-4,Oral,Noncancer,Methemoglobinemia and spleen-erythroid cell hyperplasia,n/a,RfD,3x10-2 mg/kg-day
+"2,4,6-Trinitrotoluene (TNT)",118-96-7,Oral,Noncancer,Liver effects,n/a,RfD,5x10-4 mg/kg-day
+"2,4,6-Trinitrotoluene (TNT)",118-96-7,Oral,Cancer,"Urinary bladder, transitional cell papilloma and transitional squamous cell carcinomas",C (Possible human carcinogen) (1986 guidelines),Oral Slope Factor,3.0x10-2 per mg/kg-day
+"Uranium, soluble salts",Various,Oral,Noncancer,Initial body weight loss moderate nephrotoxicity,n/a,RfD,3x10-3 mg/kg-day
+Vanadium pentoxide,1314-62-1,Oral,Noncancer,Decreased hair cystine,n/a,RfD,9x10-3 mg/kg-day
+Vernam,1929-77-7,Oral,Noncancer,Decreased body weight,n/a,RfD,1x10-3 mg/kg-day
+Vinclozolin,50471-44-8,Oral,Noncancer,Organ weight changes (adrenal and kidney),n/a,RfD,2.5x10-2 mg/kg-day
+Vinyl acetate,108-05-4,Inhalation,Noncancer,Nasal epithelial lesions,n/a,RfC,2x10-1 mg/m3
+Vinyl bromide,593-60-2,Inhalation,Noncancer,"Hypertrophy, basophilic and eosinophilic foci, in the liver",n/a,RfC,3x10-3 mg/m3
+Vinyl chloride,75-01-4,Inhalation,Cancer,"Liver angiosarcomas, angiomas, hepatomas, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,8.8x10-6 per ｵg/m3 (Continuous lifetime exposure from birth)
+Vinyl chloride,75-01-4,Oral,Cancer,"Total of liver angiosarcoma, hepatocellular carcinoma, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,7.2x10-1 per mg/kg-day (Continuous lifetime exposure during adulthood)
+Vinyl chloride,75-01-4,Oral,Cancer,"Total of liver angiosarcoma, hepatocellular carcinoma, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,7.5x10-1 per mg/kg-day (Continuous lifetime exposure during adulthood)
+Vinyl chloride,75-01-4,Oral,Cancer,"Total of liver angiosarcoma, hepatocellular carcinoma, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,1.4 per mg/kg-day (Continuous lifetime exposure from birth)
+Vinyl chloride,75-01-4,Inhalation,Cancer,"Liver angiosarcomas, angiomas, hepatomas, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,4.4x10-6 per ｵg/m3 (Continuous lifetime exposure during adulthood)
+Vinyl chloride,75-01-4,Inhalation,Cancer,"Liver angiosarcomas, angiomas, hepatomas, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,8.8x10-6 per ｵg/m3 (Continuous lifetime exposure from birth)
+Vinyl chloride,75-01-4,Oral,Cancer,"Total of liver angiosarcoma, hepatocellular carcinoma, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Oral Slope Factor,1.5 per mg/kg-day (Continuous lifetime exposure from birth)
+Vinyl chloride,75-01-4,Oral,Noncancer,Liver cell polymorphism,n/a,RfD,3x10-3 mg/kg-day
+Vinyl chloride,75-01-4,Inhalation,Noncancer,Liver cell polymorphism,n/a,RfC,1x10-1 mg/m3
+Vinyl chloride,75-01-4,Inhalation,Cancer,"Liver angiosarcomas, angiomas, hepatomas, and neoplastic nodules",A (Human carcinogen) (1986 guidelines) Known/likely human carcinogen (1996 guidelines),Inhalation Unit Risk,4.4x10-6 per ｵg/m3 (Continuous lifetime exposure during adulthood)
+Warfarin,81-81-2,Oral,Noncancer,Increased prothrombin time,n/a,RfD,3x10-4 mg/kg-day
+White phosphorus,7723-14-0,Oral,Noncancer,Parturition mortality; forelimb hair loss,n/a,RfD,2x10-5 mg/kg-day
+Xylenes,1330-20-7,Oral,Noncancer,"Decreased body weight, increased mortality",n/a,RfD,2x10-1 mg/kg-day
+Xylenes,1330-20-7,Inhalation,Noncancer,Impaired motor coordination (decreased rotarod performance),n/a,RfC,1x10-1 mg/m3
+Zinc and Compounds,7440-66-6,Oral,Noncancer,"Decreases in erythrocyte Cu, Zn-superoxide dismutase (ESOD) activity in healthy adult male and female volunteers",n/a,RfD,3x10-1 mg/kg-day
+Zinc cyanide,557-21-1,Oral,Noncancer,"Weight loss, thyroid effects, and myelin degeneration",n/a,RfD,5x10-2 mg/kg-day
+Zinc phosphide,1314-84-7,Oral,Noncancer,Reduction of food intake and body weight,n/a,RfD,3x10-4 mg/kg-day
+Zineb,12122-67-7,Oral,Noncancer,Thyroid hyperplasia,n/a,RfD,5x10-2 mg/kg-day
+n-Butanol,71-36-3,Oral,Noncancer,Hypoactivity and ataxia,n/a,RfD,1x10-1 mg/kg-day
+tert-Butyl Alcohol (tBA),75-65-0,Inhalation,Noncancer,Increased severity of nephropathy,n/a,RfC,5 mg/m3
+tert-Butyl Alcohol (tBA),75-65-0,Oral,Cancer,"Renal adenomas and carcinomas, thyroid adenomas",Suggestive evidence of carcinogenic potential (2005 guidelines),Oral Slope Factor,5x10-4 per mg/kg-day
+tert-Butyl Alcohol (tBA),75-65-0,Oral,Noncancer,Increased severity of nephropathy,n/a,RfD,4x10-1 mg/kg-day

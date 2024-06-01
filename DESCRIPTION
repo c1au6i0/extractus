@@ -12,4 +12,11 @@ RoxygenNote: 7.3.1
 Imports: 
     cli,
     ECOTOXr,
-    rlang
+    httr,
+    jsonlite,
+    openxlsx,
+    rlang,
+    webchem
+Depends: 
+    R (>= 2.10)
+LazyData: true
