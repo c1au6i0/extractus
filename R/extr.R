@@ -113,7 +113,6 @@ extr_comptox <- function(ids, ...) {
   dat <- ECOTOXr::websearch_comptox(
     searchItems = ids,
     downloadItems = items_to_down(),
-    verify_ssl = FALSE,
     ...
   )
   cat("\n")
