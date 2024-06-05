@@ -2,7 +2,10 @@ Package: extractus
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("Claudio", "Zanettini", "claudio.zanettini@gmail.com", role = c("aut", "cre"),
+    person(given = "Claudio",
+           family = "Zanettini",
+           role = c("aut", "cre"),
+           email = "claudio.zanettini@gmail.com",
            comment = c(ORCID = "0000-0001-5043-8033"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
@@ -13,9 +16,9 @@ Imports:
     cli,
     ECOTOXr,
     httr,
+    janitor,
     jsonlite,
     openxlsx,
-    rlang,
     webchem
 Depends: 
     R (>= 2.10)

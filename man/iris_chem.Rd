@@ -3,17 +3,20 @@
 \docType{data}
 \name{iris_chem}
 \alias{iris_chem}
-\title{Integrated Risk Information System}
+\title{Iris Chemical Composition}
 \format{
 An object of class \code{data.frame} with 665 rows and 8 columns.
 }
 \source{
-\href{https://cfpub.epa.gov/ncea/iris/search/index.cfm}
+\href{https://cfpub.epa.gov/ncea/iris/search/index.cfm}{IRIS (Integrated Risk Information System)}
 }
 \usage{
 data(iris_chem)
 }
 \description{
-Integrated Risk Information System of US EPA, listing 665 chemicals. Data downloaded in date 05/31/2024
+Dataset containing the chemical composition of iris flowers.
+}
+\details{
+This dataset provides information on the chemical composition of iris flowers.
 }
 \keyword{datasets}

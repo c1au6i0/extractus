@@ -7,7 +7,7 @@
 extr_tox(casrn)
 }
 \arguments{
-\item{casrn}{}
+\item{casrn}{CASRN in vector.}
 }
 \value{
 List of Dataframes.

@@ -92,7 +92,7 @@ extr_ice <- function(ids, assays = NULL) {
 #'
 #' Extract toxicological information from PubChem, ICE, Comptox, IRIS.
 #'
-#' @param casrn
+#' @param casrn CASRN in vector.
 #'
 #' @return List of Dataframes.
 #' @export
@@ -115,7 +115,9 @@ extr_tox <- function(casrn) {
   ice_dat_list <- lapply(assays_to_filt, function(x) ice_dat[ice_dat$assay %in% x, ])
   names(ice_dat_list) <- names(assays_to_filt)
 
-  iris_filt <- iris_chem[iris_chem$casrn %in% casrn, ]
+  dat <- utils::data("iris_chem")
+
+  iris_filt <- dat[dat$casrn %in% casrn, ]
 
   c(list(ghs_dat =  ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
 }
