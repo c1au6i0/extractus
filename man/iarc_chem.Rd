@@ -3,17 +3,17 @@
 \docType{data}
 \name{iarc_chem}
 \alias{iarc_chem}
-\title{IARC Classification}
+\title{WHO Agents classified by the \href{https://monographs.iarc.who.int/list-of-classifications/}{IARC Monographs}, Volumes 1–135.}
 \format{
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1115 rows and 7 columns.
 }
 \source{
-\href{https://monographs.iarc.who.int/list-of-classifications/}
+\href{https://monographs.iarc.who.int/list-of-classifications/}{IARC Monograph}
 }
 \usage{
 data(iarc_chem)
 }
 \description{
-WHO Agents classified by the IARC Monographs, Volumes 1–135.
+This dataset contains information on WHO agents classified by the International Agency for Research on Cancer (IARC) Monographs program.
 }
 \keyword{datasets}
