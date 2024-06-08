@@ -20,13 +20,13 @@ extr_iris_ <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer"))
     cancer_or_no_cancer = cancer_types
   )
 
+
   # Perform the request and get a response
   cli::cli_inform("Quering {.field {keyword}} to EPA IRIS database...")
-
-
   resp <- tryCatch({
     httr2::request(base_url = "https://cfpub.epa.gov/ncea/iris/search/basic/") |>
       httr2::req_url_query(!!!query_params, .multi = "explode") |>
+      httr2::req_options(ssl_verifypeer = FALSE) |>
       httr2::req_perform()
   }, error = function(e) {
     cli::cli_abort("Failed to perform the request: {e$message}")
@@ -129,33 +129,52 @@ extr_ghs_pubchem <- function(casrn) {
 }
 
 
-#' extr_ice
+#' Extract Data from ICE Database
 #'
-#' Extra info from the Integrated Chemical Environment using ICE REST API
+#' The `extr_ice` function sends a POST request to the ICE API to search for information based on specified chemical IDs and assays.
 #'
-#' @param ids Vector of chemical ids.
-#' @param assays Vector of assays to extra info of.
+#' @param ids A character vector specifying the chemical IDs (CASRNs) for the search.
+#' @param assays A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.
 #'
-#' @return A dataframe.
-extr_ice <- function(ids, assays = NULL) {
+#' @return A data frame containing the extracted data from the ICE API.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' dat <- extr_ice(c("50-00-0"))
+#' }
+extr_ice <- function(ids = c("50-00-0"), assays = NULL) {
 
-  cli::cli_alert_info("Getting info from ICE...")
-  cat("\n")
+  # Perform the request and get a response
+  cli::cli_inform("Sending request to ICE database...")
 
+  resp <- tryCatch({
+    request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
+      req_body_json(list(chemids = ids, assays = assays), auto_unbox = FALSE) |>
+      req_perform()
+  }, error = function(e) {
+    cli::cli_abort("Failed to perform the request: {e$message}")
+  })
 
-  ids_string <- paste(shQuote(ids, type = "cmd"), collapse = ", ")
+  # Check the status code
+  status_code <- httr2::resp_status(resp)
+  if (status_code != 200L) {
+    cli::cli_abort("Request failed with status code: {status_code}")
+  } else {
+    cli::cli_inform("Request succeeded with status code: {status_code}")
+  }
 
+  # Parse the JSON content
+  content <- httr2::resp_body_json(resp)
 
-  assays_string <- paste(shQuote(assays, type = "cmd"), collapse = ", ")
+  # Extract and combine data from the response
+  dat <- tryCatch({
+    do.call(rbind, content$endPoints) %>% as.data.frame()
+  }, error = function(e) {
+    cli::cli_abort("Failed to parse the JSON content: {e$message}")
+  })
 
-
-  body_content <- paste0('{"chemids": [', ids_string, '], "assays":[', assays_string, "]}", collapse = "")
-  results <- httr::POST("https://ice.ntp.niehs.nih.gov/api/v1/search", httr::content_type_json(), body = body_content)
-
-  json_text <- httr::content(results, "text", encoding = "UTF-8")
-  json_results <- jsonlite::fromJSON(json_text)
-  json_results$endPoints
-
+  return(dat)
 }
 
 

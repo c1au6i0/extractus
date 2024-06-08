@@ -30,8 +30,8 @@ dat <- request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
 results <- dat |>
   resp_body_json()
 
+do.call(rbind, results$endPoints)
 
-unique(dplyr::bind_rows(results$endPoints)$assay)
 
 
 ## IRIS --------------------
