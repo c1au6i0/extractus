@@ -127,7 +127,6 @@ extr_ghs_pubchem <- function(casrn) {
   }
 
   # Check if online
-  check_internet()
 
   cli::cli_alert_info("Getting PubChem IDS...")
   dat_cid <-  webchem::get_cid(casrn, from = "cas", match = "first", verbose = TRUE)
@@ -204,6 +203,7 @@ extr_ice <- function(casrn, assays = NULL) {
   })
 
   return(dat)
+
 }
 
 
@@ -235,8 +235,8 @@ extr_tox <- function(casrn) {
   ice_dat_list <- lapply(assays_to_filt, function(x) ice_dat[ice_dat$assay %in% x, ])
   names(ice_dat_list) <- names(assays_to_filt)
 
-  iris_filt <- extr_iris(keyword = casrn)
 
+  iris_filt <- extr_iris(keyword = casrn)
 
   c(list(ghs_dat =  ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
 }

@@ -1,4 +1,4 @@
-' IARC Classification
+#' IARC Classification
 #'
 #' WHO Agents classified by the [IARC Monographs](https://monographs.iarc.who.int/list-of-classifications/), Volumes 1–135.
 #'
