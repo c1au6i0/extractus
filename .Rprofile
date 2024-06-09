@@ -7,3 +7,7 @@ options(
   renv.config.pak.enabled = TRUE,
   renv.config.ppm.enabled = TRUE
 )
+
+
+
+Sys.setenv(PATH = paste("C:/rtools44/", Sys.getenv("PATH"), sep=";"))

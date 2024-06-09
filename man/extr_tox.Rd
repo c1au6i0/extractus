@@ -7,10 +7,10 @@
 extr_tox(casrn)
 }
 \arguments{
-\item{casrn}{CASRN in vector.}
+\item{casrn}{A vector of CASRN.}
 }
 \value{
-List of Dataframes.
+List of dataframes.
 }
 \description{
 Extract toxicological information from PubChem, ICE, Comptox, IRIS.

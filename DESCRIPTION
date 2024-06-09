@@ -2,12 +2,12 @@ Package: extractus
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Claudio",
-           family = "Zanettini",
+    person(given = "Claudio", 
+           family = "Zanettini", 
+           email = "claudio.zanettini@gmail.com", 
            role = c("aut", "cre"),
-           email = "claudio.zanettini@gmail.com",
            comment = c(ORCID = "0000-0001-5043-8033"))
-Description: What the package does (one paragraph).
+Description: Extract Tox Info.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -15,11 +15,15 @@ RoxygenNote: 7.3.1
 Imports: 
     cli,
     ECOTOXr,
-    httr,
+    httr2,
     janitor,
-    jsonlite,
     openxlsx,
+    pingr,
+    rvest,
     webchem
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1)
 LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

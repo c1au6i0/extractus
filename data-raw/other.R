@@ -30,13 +30,15 @@ dat <- request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
 results <- dat |>
   resp_body_json()
 
+do.call(rbind, results$endPoints)
 
-unique(dplyr::bind_rows(results$endPoints)$assay)
 
 
 ## IRIS --------------------
-
+library(httr2)
+library(rvest)
 query_params <- list(
+  keyword = "acephate",
   cancer_or_no_cancer = c("non_cancer", "cancer")
 )
 
@@ -53,6 +55,13 @@ content <- resp |>
 dat <- content %>%
   html_element("#searchMain , th, td") %>%
   html_table()
+
+
+
+
+
+
+
 
 ## IRI2
 

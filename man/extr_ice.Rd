@@ -2,18 +2,23 @@
 % Please edit documentation in R/extr.R
 \name{extr_ice}
 \alias{extr_ice}
-\title{extr_ice}
+\title{Extract Data from ICE Database}
 \usage{
-extr_ice(ids, assays = NULL)
+extr_ice(casrn, assays = NULL)
 }
 \arguments{
-\item{ids}{Vector of chemical ids.}
+\item{casrn}{A character vector specifying the chemical IDs (CASRNs) for the search.}
 
-\item{assays}{Vector of assays to extra info of.}
+\item{assays}{A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.}
 }
 \value{
-A dataframe.
+A data frame containing the extracted data from the ICE API.
 }
 \description{
-Extra info from the Integrated Chemical Environment using ICE REST API
+The \code{extr_ice} function sends a POST request to the ICE API to search for information based on specified chemical IDs and assays.
+}
+\examples{
+\dontrun{
+dat <- extr_ice(c("50-00-0"))
+}
 }

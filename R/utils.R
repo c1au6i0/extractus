@@ -109,8 +109,22 @@ ice_assays <- function() {
 }
 
 
-
-# Function to create an Excel file with each dataframe as a separate sheet
+#' Write Dataframes to Excel
+#'
+#' This function creates an Excel file with each dataframe in a list as a separate sheet.
+#'
+#' @param df_list A named list of dataframes to write to the Excel file.
+#' @param filename The name of the Excel file to create.
+#'
+#' @return No return value. The function prints a message indicating the completion of the Excel file writing.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' df1 <- data.frame(a = 1:3, b = letters[1:3])
+#' df2 <- data.frame(x = rnorm(5), y = runif(5))
+#' write_dataframes_to_excel(list(df1 = df1, df2 = df2), "mydata.xlsx")
+#' }
 write_dataframes_to_excel <- function(df_list, filename) {
   # Create a new workbook
   wb <- openxlsx::createWorkbook()
@@ -127,4 +141,15 @@ write_dataframes_to_excel <- function(df_list, filename) {
 
 }
 
+#' Check Internet Connection
+#'
+#' This function checks if the computer is connected to the internet.
+#' If not connected, it stops execution with an error message.
+#'
+#' @return Prints a message indicating whether the computer is connected to the internet.
+check_internet <- function() {
 
+  if (!pingr::is_online()) {
+    cli::cli_abort("It seems that you are not connected to internet")
+  }
+}

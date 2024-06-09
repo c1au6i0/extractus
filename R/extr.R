@@ -1,10 +1,107 @@
+#' Extract Data from EPA IRIS Database
+#'
+#' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keyword and cancer types. It retrieves and parses the HTML content from the response.
+#' Note that if `keyword` is not provide all dataset is retrieved.
+#'
+#' @param keyword A single character string specifying the IUPAC name or the CASRN for the search.
+#' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
+#'
+#' @return A data frame containing the extracted data.
+#' @examples
+#' \dontrun{
+#' dat <- extr_iris("acephate")
+#' }
+extr_iris_ <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) {
+
+  # Check if online
+  check_internet()
+
+  # Construct query parameters
+  query_params <- list(
+    keyword = keyword,
+    cancer_or_no_cancer = cancer_types
+  )
+
+
+  # Perform the request and get a response
+  cli::cli_inform("Quering {.field {keyword}} to EPA IRIS database...")
+  resp <- tryCatch({
+      httr2::request(base_url = "https://cfpub.epa.gov/ncea/iris/search/basic/") |>
+      httr2::req_url_query(!!!query_params, .multi = "explode") |>
+      httr2::req_options(ssl_verifypeer = FALSE) |>
+      httr2::req_perform()
+  }, error = function(e) {
+    cli::cli_abort("Failed to perform the request: {e$message}")
+  })
+
+  # Check the status code
+  status_code <- httr2::resp_status(resp)
+  if (status_code != 200L) {
+    cli::cli_abort("Request failed with status code: {status_code}")
+  }
+
+  # Parse the HTML content
+  content <- httr2::resp_body_html(resp)
+
+
+  dat <- tryCatch({
+    rvest::html_element(content, "#searchMain , th, td") |>
+      rvest::html_table()
+  }, error = function(e) {
+    cli::cli_abort("Failed to parse the HTML content: {e$message}")
+  })
+
+  dat
+}
+
+#' @inherit extr_iris_ title description params return details
+#' @export
+#' @examples
+#' \dontrun{
+#' dat <- extr_iris("glyphosate")
+#' dat <- extr_iris(c("glyphosate", "50-00-0"))
+#' }
+extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) {
+
+
+  if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
+    cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
+  }
+
+  # Check if online
+  check_internet()
+
+  if(length(keyword) > 1) {
+
+    dat <- lapply(keyword, extr_iris_, cancer_types = cancer_types)
+    out <- do.call(rbind, dat)
+  } else {
+
+    out <- extr_iris_(keyword = keyword, cancer_types = cancer_types)
+  }
+
+  out |>
+    janitor::clean_names()
+
+}
+
+
+
 #' extr_comptox
 #'
 #' @param ids A vector of characters where each element is a substance descriptor you wish to query.
-#' @param ... Any other argument of `ECOTOXr::websearch_comptox`
+#' @param ... Any other argument of `ECOTOXr::websearch_comptox`.
 #'
-#' @return List of data.frames
+#' @return List of data.frames.
 extr_comptox <- function(ids, ...) {
+
+  if (missing(ids)) {
+    cli::cli_abort("The argument {.field {casrn}} is required.")
+  }
+
+  # Check if online
+  check_internet()
+
   cli::cli_alert_info("Getting CompTox info.")
   dat <- ECOTOXr::websearch_comptox(
     searchItems = ids,
@@ -24,6 +121,12 @@ extr_comptox <- function(ids, ...) {
 #' @return Dataframe of GHS info.
 #' @export
 extr_ghs_pubchem <- function(casrn) {
+
+  if (missing(casrn)) {
+    cli::cli_abort("The argument {.field {casrn}} is required.")
+  }
+
+  # Check if online
 
   cli::cli_alert_info("Getting PubChem IDS...")
   dat_cid <-  webchem::get_cid(casrn, from = "cas", match = "first", verbose = TRUE)
@@ -46,45 +149,61 @@ extr_ghs_pubchem <- function(casrn) {
 }
 
 
-
-
-
-#' extr_ice
+#' Extract Data from ICE Database
 #'
-#' Extra info from the Integrated Chemical Environment using ICE REST API
+#' The `extr_ice` function sends a POST request to the ICE API to search for information based on specified chemical IDs and assays.
 #'
-#' @param ids Vector of chemical ids.
-#' @param assays Vector of assays to extra info of.
+#' @param casrn A character vector specifying the chemical IDs (CASRNs) for the search.
+#' @param assays A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.
 #'
-#' @return A dataframe.
-extr_ice <- function(ids, assays = NULL) {
+#' @return A data frame containing the extracted data from the ICE API.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' dat <- extr_ice(c("50-00-0"))
+#' }
+extr_ice <- function(casrn, assays = NULL) {
 
-  cli::cli_alert_info("Getting info from ICE...")
-  cat("\n")
+  if (missing(casrn)) {
+    cli::cli_abort("The argument {.field {casrn}} is required.")
+  }
 
+  # Check if online
+  check_internet()
 
-  ids_string <- paste(shQuote(ids, type = "cmd"), collapse = ", ")
+  # Perform the request and get a response
+  cli::cli_inform("Sending request to ICE database...")
 
+  resp <- tryCatch({
+      httr2::request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
+      httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
+      httr2::req_perform()
+  }, error = function(e) {
+    cli::cli_abort("Failed to perform the request: {e$message}")
+  })
 
-  assays_string <- paste(shQuote(assays, type = "cmd"), collapse = ", ")
+  # Check the status code
+  status_code <- httr2::resp_status(resp)
+  if (status_code != 200L) {
+    cli::cli_abort("Request failed with status code: {status_code}")
+  } else {
+    cli::cli_inform("Request succeeded with status code: {status_code}")
+  }
 
+  # Parse the JSON content
+  content <- httr2::resp_body_json(resp)
 
-  body_content <- paste0('{"chemids": [', ids_string, '], "assays":[', assays_string, "]}", collapse = "")
-  results <- httr::POST("https://ice.ntp.niehs.nih.gov/api/v1/search", httr::content_type_json(), body = body_content)
+  # Extract and combine data from the response
+  dat <- tryCatch({
+    do.call(rbind, content$endPoints) |>
+      as.data.frame()
+  }, error = function(e) {
+    cli::cli_abort("Failed to parse the JSON content: {e$message}")
+  })
 
-  json_text <- httr::content(results, "text", encoding = "UTF-8")
-  json_results <- jsonlite::fromJSON(json_text)
-  json_results$endPoints
+  return(dat)
 
-  # if it doesn't find the value it returns all of them.
-
-  # endpoints_filt <- endpoints[endpoints$casrn %in% ids & endpoints$assay %in% assays, ]
-  #
-  # if (nrow(endpoints_filt) == 0) {
-  #   endpoints_filt[1, ] <- NA
-  # }
-  #
-  # endpoints_filt
 }
 
 
@@ -92,11 +211,12 @@ extr_ice <- function(ids, assays = NULL) {
 #'
 #' Extract toxicological information from PubChem, ICE, Comptox, IRIS.
 #'
-#' @param casrn CASRN in vector.
+#' @param casrn A vector of CASRN.
 #'
-#' @return List of Dataframes.
+#' @return List of dataframes.
 #' @export
 extr_tox <- function(casrn) {
+
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
   }
@@ -107,7 +227,7 @@ extr_tox <- function(casrn) {
   comptox_list <- extr_comptox(casrn)
 
   ice_dat <- extr_ice(
-    ids = casrn,
+    casrn = casrn,
     assays = NULL
   )
 
@@ -115,11 +235,9 @@ extr_tox <- function(casrn) {
   ice_dat_list <- lapply(assays_to_filt, function(x) ice_dat[ice_dat$assay %in% x, ])
   names(ice_dat_list) <- names(assays_to_filt)
 
-  dat <- utils::data("iris_chem")
 
-  iris_filt <- dat[dat$casrn %in% casrn, ]
+  iris_filt <- extr_iris(keyword = casrn)
 
   c(list(ghs_dat =  ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
 }
-
 
