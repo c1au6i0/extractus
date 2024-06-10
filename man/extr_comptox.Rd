@@ -9,7 +9,8 @@ extr_comptox(ids, ...)
 \arguments{
 \item{ids}{A vector of characters where each element is a substance descriptor you wish to query.}
 
-\item{...}{Any other argument of \code{ECOTOXr::websearch_comptox}.}
+\item{...}{Any other argument of \code{ECOTOXr::websearch_comptox}.
+ama}
 }
 \value{
 List of data.frames.

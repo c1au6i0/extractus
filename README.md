@@ -6,20 +6,23 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of extractus is to …
+`extractus` is an R package designed to facilitate the extraction of
+toxicological and chemical information from several key databases,
+including EPA IRIS, Comptox, PubChem, and ICE.
+
+To communicate to Pubchem and Comptox, `extractus` relies on `ECOTOXr`
+and `webchem`.
 
 ## Installation
 
-You can install the development version of extractus like so:
+You can install the package from GitHub:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-```
+# Install devtools if not already installed
+if (!requireNamespace("devtools", quietly = TRUE)) {
+  install.packages("devtools")
+}
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
+# Install the package from GitHub
+devtools::install_github("YourUsername/YourPackageName")
 ```

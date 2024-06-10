@@ -4,12 +4,16 @@
 \alias{extr_ice}
 \title{Extract Data from ICE Database}
 \usage{
-extr_ice(casrn, assays = NULL)
+extr_ice(casrn, assays = NULL, verify_ssl = FALSE, ...)
 }
 \arguments{
 \item{casrn}{A character vector specifying the chemical IDs (CASRNs) for the search.}
 
 \item{assays}{A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.}
+
+\item{verify_ssl}{Boolean to control of SSL should be verified or not.}
+
+\item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }
 \value{
 A data frame containing the extracted data from the ICE API.
