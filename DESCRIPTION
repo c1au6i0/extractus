@@ -6,7 +6,6 @@ Authors@R:
            family = "Zanettini",
            role = c("aut", "cre"),
            email = "claudio.zanettini@gmail.com",
->>>>>>> b50926e (fix: checks)
            comment = c(ORCID = "0000-0001-5043-8033"))
 Description: Extract Tox Info.
 License: MIT + file LICENSE

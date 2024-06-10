@@ -7,11 +7,7 @@
 extr_tox(casrn)
 }
 \arguments{
-<<<<<<< HEAD
 \item{casrn}{A vector of CASRN.}
-=======
-\item{casrn}{CASRN in vector.}
->>>>>>> b50926e (fix: checks)
 }
 \value{
 List of dataframes.
