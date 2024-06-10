@@ -5,13 +5,19 @@
 #'
 #' @param keyword A single character string specifying the IUPAC name or the CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
+#' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #'
 #' @return A data frame containing the extracted data.
+#' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @examples
 #' \dontrun{
 #' dat <- extr_iris("acephate")
 #' }
-extr_iris_ <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) {
+extr_iris_ <- function(keyword = NULL,
+                       cancer_types = c("non_cancer", "cancer"),
+                       verify_ssl = FALSE,
+                       ...) {
 
   # Check if online
   check_internet()
@@ -22,13 +28,14 @@ extr_iris_ <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer"))
     cancer_or_no_cancer = cancer_types
   )
 
+  libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   # Perform the request and get a response
   cli::cli_inform("Quering {.field {keyword}} to EPA IRIS database...")
   resp <- tryCatch({
       httr2::request(base_url = "https://cfpub.epa.gov/ncea/iris/search/basic/") |>
       httr2::req_url_query(!!!query_params, .multi = "explode") |>
-      httr2::req_options(ssl_verifypeer = FALSE) |>
+      httr2::req_options(!!!libcurl_opt) |>
       httr2::req_perform()
   }, error = function(e) {
     cli::cli_abort("Failed to perform the request: {e$message}")
@@ -54,7 +61,7 @@ extr_iris_ <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer"))
   dat
 }
 
-#' @inherit extr_iris_ title description params return details
+#' @inherit extr_iris_ title description params return details seealso
 #' @export
 #' @examples
 #' \dontrun{
@@ -91,7 +98,7 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
 #'
 #' @param ids A vector of characters where each element is a substance descriptor you wish to query.
 #' @param ... Any other argument of `ECOTOXr::websearch_comptox`.
-#'
+#'ama
 #' @return List of data.frames.
 extr_comptox <- function(ids, ...) {
 
@@ -106,6 +113,7 @@ extr_comptox <- function(ids, ...) {
   dat <- ECOTOXr::websearch_comptox(
     searchItems = ids,
     downloadItems = items_to_down(),
+    verify_ssl = FALSE,
     ...
   )
   cat("\n")
@@ -155,6 +163,8 @@ extr_ghs_pubchem <- function(casrn) {
 #'
 #' @param casrn A character vector specifying the chemical IDs (CASRNs) for the search.
 #' @param assays A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.
+#' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #'
 #' @return A data frame containing the extracted data from the ICE API.
 #' @export
@@ -163,7 +173,7 @@ extr_ghs_pubchem <- function(casrn) {
 #' \dontrun{
 #' dat <- extr_ice(c("50-00-0"))
 #' }
-extr_ice <- function(casrn, assays = NULL) {
+extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
@@ -175,9 +185,14 @@ extr_ice <- function(casrn, assays = NULL) {
   # Perform the request and get a response
   cli::cli_inform("Sending request to ICE database...")
 
+
+  libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
+
+
   resp <- tryCatch({
       httr2::request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
       httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
+      httr2::req_options(!!!libcurl_opt) |>
       httr2::req_perform()
   }, error = function(e) {
     cli::cli_abort("Failed to perform the request: {e$message}")

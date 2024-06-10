@@ -153,3 +153,21 @@ check_internet <- function() {
     cli::cli_abort("It seems that you are not connected to internet")
   }
 }
+
+
+
+
+#' Verify SSL
+#'
+#' @param verify_ssl Boolean.
+#' @param ... Any other arguments to be supplied to `req_option`
+#'
+#' @return Named list.
+set_ssl <- function(verify_ssl, ...) {
+  libcurl_opt <- list(...)
+  if (!verify_ssl) {
+    libcurl_opt[["ssl_verifyhost"]] <- 0
+    libcurl_opt[["ssl_verifypeer"]] <- 0
+  }
+  libcurl_opt
+}

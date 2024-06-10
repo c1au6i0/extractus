@@ -24,3 +24,6 @@ dat <- extr_iris("glyphosate")
 dat <- extr_iris(c("glyphosate", "50-00-0"))
 }
 }
+\seealso{
+\href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
+}

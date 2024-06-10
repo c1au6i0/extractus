@@ -2651,19 +2651,6 @@
       102 712 50-00-0 Formaldehyde
       103 712 50-00-0 Formaldehyde
       104 712 50-00-0 Formaldehyde
-      105 712 50-00-0 Formaldehyde
-      106 712 50-00-0 Formaldehyde
-      107 712 50-00-0 Formaldehyde
-      108 712 50-00-0 Formaldehyde
-      109 712 50-00-0 Formaldehyde
-      110 712 50-00-0 Formaldehyde
-      111 712 50-00-0 Formaldehyde
-      112 712 50-00-0 Formaldehyde
-      113 712 50-00-0 Formaldehyde
-      114 712 50-00-0 Formaldehyde
-      115 712 50-00-0 Formaldehyde
-      116 712 50-00-0 Formaldehyde
-      117 712 50-00-0 Formaldehyde
                                                                                                                                                                                                                                                                                                                                          GHS
       1                                                                                                                                                                                                                                                                                                                               Danger
       2                                                                                                                                                                                                                                                                      H301 (83.48%): Toxic if swallowed [Danger Acute toxicity, oral]
@@ -2760,28 +2747,15 @@
       93             P203, P210, P222, P233, P260, P261, P262, P264, P264+P265, P270, P271, P272, P273, P280, P284, P301+P317, P302+P352, P304+P340, P305+P351+P338, P308+P316, P316, P318, P319, P320, P321, P330, P332+P317, P333+P317, P337+P317, P342+P316, P361+P364, P362+P364, P377, P381, P403, P403+P233, P405, P410+P403, and P501
       94                                                                                                                                                                                                                                           (The corresponding statement to each P-code can be found at the GHS Classification page.)
       95                                                                                                                                                                                                                                                                                                                              Danger
-      96                                                                                                                                                                                                                                                                                     H228: Flammable solid [Danger Flammable solids]
-      97                                                                                                                                                                                                                                                                           H302: Harmful if swallowed [Warning Acute toxicity, oral]
-      98                                                                                                                                                                                                                                                                    H315: Causes skin irritation [Warning Skin corrosion/irritation]
-      99                                                                                                                                                                                                                                                     H319: Causes serious eye irritation [Warning Serious eye damage/eye irritation]
-      100                                                                                                                                                                                                                                                                      H332: Harmful if inhaled [Warning Acute toxicity, inhalation]
-      101                                                                                                                                                                                                                                             H370: Causes damage to organs [Danger Specific target organ toxicity, single exposure]
-      102                                                                                                                          P210, P240, P241, P260, P261, P264, P264+P265, P270, P271, P280, P301+P317, P302+P352, P304+P340, P305+P351+P338, P308+P316, P317, P321, P330, P332+P317, P337+P317, P362+P364, P370+P378, P405, and P501
-      103                                                                                                                                                                                                                                          (The corresponding statement to each P-code can be found at the GHS Classification page.)
-      104                                                                                                                                                                                                                                                 H402: Harmful to aquatic life [Hazardous to the aquatic environment, acute hazard]
-      105                                                                                                                                                                                                                   H412: Harmful to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]
-      106                                                                                                                                                                                                                                                                                                                     P273, and P501
-      107                                                                                                                                                                                                                                          (The corresponding statement to each P-code can be found at the GHS Classification page.)
-      108                                                                                                                                                                                                                                                                                                                             Danger
-      109                                                                                                                                                                                                                                                                             H301: Toxic if swallowed [Danger Acute toxicity, oral]
-      110                                                                                                                                                                                                                                                                   H311: Toxic in contact with skin [Danger Acute toxicity, dermal]
-      111                                                                                                                                                                                                                                                   H314: Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
-      112                                                                                                                                                                                                                                                            H317: May cause an allergic skin reaction [Warning Sensitization, Skin]
-      113                                                                                                                                                                                                                                                                         H331: Toxic if inhaled [Danger Acute toxicity, inhalation]
-      114                                                                                                                                                                                                                                                        H341: Suspected of causing genetic defects [Warning Germ cell mutagenicity]
-      115                                                                                                                                                                                                                                                                                    H350: May cause cancer [Danger Carcinogenicity]
-      116                                                                                                    P203, P260, P261, P262, P264, P270, P271, P272, P280, P301+P316, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P318, P321, P330, P333+P317, P361+P364, P362+P364, P363, P403+P233, P405, and P501
-      117                                                                                                                                                                                                                                          (The corresponding statement to each P-code can be found at the GHS Classification page.)
+      96                                                                                                                                                                                                                                                                              H301: Toxic if swallowed [Danger Acute toxicity, oral]
+      97                                                                                                                                                                                                                                                                    H311: Toxic in contact with skin [Danger Acute toxicity, dermal]
+      98                                                                                                                                                                                                                                                    H314: Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
+      99                                                                                                                                                                                                                                                             H317: May cause an allergic skin reaction [Warning Sensitization, Skin]
+      100                                                                                                                                                                                                                                                                         H331: Toxic if inhaled [Danger Acute toxicity, inhalation]
+      101                                                                                                                                                                                                                                                        H341: Suspected of causing genetic defects [Warning Germ cell mutagenicity]
+      102                                                                                                                                                                                                                                                                                    H350: May cause cancer [Danger Carcinogenicity]
+      103                                                                                                    P203, P260, P261, P262, P264, P270, P271, P272, P280, P301+P316, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P318, P321, P330, P333+P317, P361+P364, P362+P364, P363, P403+P233, P405, and P501
+      104                                                                                                                                                                                                                                          (The corresponding statement to each P-code can be found at the GHS Classification page.)
                                                                          source_name
       1                                             European Chemicals Agency (ECHA)
       2                                             European Chemicals Agency (ECHA)
@@ -2877,29 +2851,16 @@
       92                                                                    NITE-CMC
       93                                                                    NITE-CMC
       94                                                                    NITE-CMC
-      95                                                                    NITE-CMC
-      96                                                                    NITE-CMC
-      97                                                                    NITE-CMC
-      98                                                                    NITE-CMC
-      99                                                                    NITE-CMC
-      100                                                                   NITE-CMC
-      101                                                                   NITE-CMC
-      102                                                                   NITE-CMC
-      103                                                                   NITE-CMC
-      104                                                                   NITE-CMC
-      105                                                                   NITE-CMC
-      106                                                                   NITE-CMC
-      107                                                                   NITE-CMC
-      108 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      109 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      110 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      111 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      112 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      113 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      114 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      115 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      116 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
-      117 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      95  Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      96  Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      97  Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      98  Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      99  Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      100 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      101 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      102 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      103 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
+      104 Regulation (EC) No 1272/2008 of the European Parliament and of the Council
                      source_id
       1                  55163
       2                  55163
@@ -2995,29 +2956,16 @@
       92             H29_B_039
       93             H29_B_039
       94             H29_B_039
-      95        R03_B_020_METI
-      96        R03_B_020_METI
-      97        R03_B_020_METI
-      98        R03_B_020_METI
-      99        R03_B_020_METI
-      100       R03_B_020_METI
-      101       R03_B_020_METI
-      102       R03_B_020_METI
-      103       R03_B_020_METI
-      104        H30_C_072_MOE
-      105        H30_C_072_MOE
-      106        H30_C_072_MOE
-      107        H30_C_072_MOE
-      108         605-001-00-5
-      109         605-001-00-5
-      110         605-001-00-5
-      111         605-001-00-5
-      112         605-001-00-5
-      113         605-001-00-5
-      114         605-001-00-5
-      115         605-001-00-5
-      116         605-001-00-5
-      117         605-001-00-5
+      95          605-001-00-5
+      96          605-001-00-5
+      97          605-001-00-5
+      98          605-001-00-5
+      99          605-001-00-5
+      100         605-001-00-5
+      101         605-001-00-5
+      102         605-001-00-5
+      103         605-001-00-5
+      104         605-001-00-5
       
       $iris
       # A tibble: 2 x 8

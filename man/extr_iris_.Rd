@@ -4,12 +4,21 @@
 \alias{extr_iris_}
 \title{Extract Data from EPA IRIS Database}
 \usage{
-extr_iris_(keyword = NULL, cancer_types = c("non_cancer", "cancer"))
+extr_iris_(
+  keyword = NULL,
+  cancer_types = c("non_cancer", "cancer"),
+  verify_ssl = FALSE,
+  ...
+)
 }
 \arguments{
 \item{keyword}{A single character string specifying the IUPAC name or the CASRN for the search.}
 
 \item{cancer_types}{A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".}
+
+\item{verify_ssl}{Boolean to control of SSL should be verified or not.}
+
+\item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }
 \value{
 A data frame containing the extracted data.
@@ -22,4 +31,7 @@ Note that if \code{keyword} is not provide all dataset is retrieved.
 \dontrun{
 dat <- extr_iris("acephate")
 }
+}
+\seealso{
+\href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 }
