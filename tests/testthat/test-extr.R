@@ -5,13 +5,12 @@
 # IRIS ----
 # @@@@@@@@@
 
-result <- extr_iris_("50-00-0")
 
 test_that("extr_iris_ fetches data for CASRN 50-00-0", {
 
-
+  results <- extr_iris_("50-00-0")
   # Ensure the output is as expected by comparing to a stored snapshot
-  expect_snapshot(result)
+  expect_snapshot(results)
 })
 
 test_that("extr_iris_ returns a data frame", {

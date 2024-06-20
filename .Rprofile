@@ -10,4 +10,3 @@ options(
 
 
 
-Sys.setenv(PATH = paste("C:/rtools44/", Sys.getenv("PATH"), sep=";"))

@@ -140,6 +140,8 @@ extr_ghs_pubchem <- function(casrn) {
   dat_cid <-  webchem::get_cid(casrn, from = "cas", match = "first", verbose = TRUE)
   cat("\n")
 
+
+
   names(dat_cid)[1] <- "casrn"
   dat_cid <- dat_cid[!is.na(dat_cid$cid), ]
 

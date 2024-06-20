@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.2",
+    "Version": "4.3.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -306,12 +306,12 @@
       "Package": "cli",
       "Version": "3.6.2",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "RemoteType": "standard",
       "RemotePkgRef": "cli",
       "RemoteRef": "cli",
       "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "x86_64-w64-mingw32",
+      "RemotePkgPlatform": "source",
       "RemoteSha": "3.6.2",
       "Requirements": [
         "R",
@@ -369,36 +369,16 @@
       ],
       "Hash": "e8a1e41acf02548751f45c718d55aa6a"
     },
-    "credentials": {
-      "Package": "credentials",
-      "Version": "2.0.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "credentials",
-      "RemoteRef": "credentials",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "2.0.1",
-      "Requirements": [
-        "askpass",
-        "curl",
-        "jsonlite",
-        "openssl",
-        "sys"
-      ],
-      "Hash": "c7844b32098dcbd1c59cbd8dddb4ecc6"
-    },
     "curl": {
       "Package": "curl",
       "Version": "5.2.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "RemoteType": "standard",
       "RemotePkgRef": "curl",
       "RemoteRef": "curl",
       "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "x86_64-w64-mingw32",
+      "RemotePkgPlatform": "source",
       "RemoteSha": "5.2.1",
       "Requirements": [
         "R"
@@ -644,67 +624,6 @@
       ],
       "Hash": "15e9634c0fcd294799e9b2e929ed1b86"
     },
-    "gert": {
-      "Package": "gert",
-      "Version": "2.0.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "gert",
-      "RemoteRef": "gert",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "x86_64-w64-mingw32",
-      "RemoteSha": "2.0.1",
-      "Requirements": [
-        "askpass",
-        "credentials",
-        "openssl",
-        "rstudioapi",
-        "sys",
-        "zip"
-      ],
-      "Hash": "f70d3fe2d9e7654213a946963d1591eb"
-    },
-    "gh": {
-      "Package": "gh",
-      "Version": "1.4.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "gh",
-      "RemoteRef": "gh",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "1.4.1",
-      "Requirements": [
-        "R",
-        "cli",
-        "gitcreds",
-        "glue",
-        "httr2",
-        "ini",
-        "jsonlite",
-        "lifecycle",
-        "rlang"
-      ],
-      "Hash": "fbbbc48eba7a6626a08bb365e44b563b"
-    },
-    "gitcreds": {
-      "Package": "gitcreds",
-      "Version": "0.1.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "gitcreds",
-      "RemoteRef": "gitcreds",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "0.1.2",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "ab08ac61f3e1be454ae21911eb8bc2fe"
-    },
     "glue": {
       "Package": "glue",
       "Version": "1.7.0",
@@ -844,19 +763,6 @@
         "withr"
       ],
       "Hash": "03d741c92fda96d98c3a3f22494e3b4a"
-    },
-    "ini": {
-      "Package": "ini",
-      "Version": "0.3.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "ini",
-      "RemoteRef": "ini",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "0.3.1",
-      "Hash": "6154ec2223172bce8162d4153cda21f7"
     },
     "janitor": {
       "Package": "janitor",
@@ -1088,6 +994,24 @@
         "vctrs"
       ],
       "Hash": "15da5a8412f317beeee6175fbc76f4bb"
+    },
+    "pingr": {
+      "Package": "pingr",
+      "Version": "2.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "pingr",
+      "RemoteRef": "pingr",
+      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
+      "RemotePkgPlatform": "source",
+      "RemoteSha": "2.0.3",
+      "Requirements": [
+        "R",
+        "processx",
+        "utils"
+      ],
+      "Hash": "8d2db1d13f4198a00ebf2f066bf2ab67"
     },
     "pkgbuild": {
       "Package": "pkgbuild",
@@ -1439,19 +1363,6 @@
       ],
       "Hash": "4c8415e0ec1e29f3f4f6fc108bef0144"
     },
-    "rstudioapi": {
-      "Package": "rstudioapi",
-      "Version": "0.16.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "RemoteType": "standard",
-      "RemotePkgRef": "rstudioapi",
-      "RemoteRef": "rstudioapi",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "0.16.0",
-      "Hash": "96710351d642b70e8f02ddeb237c46a7"
-    },
     "rvest": {
       "Package": "rvest",
       "Version": "1.0.4",
@@ -1750,43 +1661,6 @@
       ],
       "Hash": "f561504ec2897f4d46f0c7657e488ae1"
     },
-    "usethis": {
-      "Package": "usethis",
-      "Version": "2.2.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "usethis",
-      "RemoteRef": "usethis",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "2.2.3",
-      "Requirements": [
-        "R",
-        "cli",
-        "clipr",
-        "crayon",
-        "curl",
-        "desc",
-        "fs",
-        "gert",
-        "gh",
-        "glue",
-        "jsonlite",
-        "lifecycle",
-        "purrr",
-        "rappdirs",
-        "rlang",
-        "rprojroot",
-        "rstudioapi",
-        "stats",
-        "utils",
-        "whisker",
-        "withr",
-        "yaml"
-      ],
-      "Hash": "d524fd42c517035027f866064417d7e6"
-    },
     "utf8": {
       "Package": "utf8",
       "Version": "1.2.4",
@@ -1908,19 +1782,6 @@
       ],
       "Hash": "d50060a7d42076dbbe89f18329b23b64"
     },
-    "whisker": {
-      "Package": "whisker",
-      "Version": "0.4.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "whisker",
-      "RemoteRef": "whisker",
-      "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
-      "RemoteSha": "0.4.1",
-      "Hash": "c6abfa47a46d281a7d5159d0a8891e88"
-    },
     "withr": {
       "Package": "withr",
       "Version": "3.0.0",
@@ -1961,12 +1822,12 @@
       "Package": "xml2",
       "Version": "1.3.6",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "RemoteType": "standard",
       "RemotePkgRef": "xml2",
       "RemoteRef": "xml2",
       "RemoteRepos": "https://ftp.osuosl.org/pub/cran",
-      "RemotePkgPlatform": "x86_64-w64-mingw32",
+      "RemotePkgPlatform": "source",
       "RemoteSha": "1.3.6",
       "Requirements": [
         "R",
