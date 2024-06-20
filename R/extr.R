@@ -141,10 +141,19 @@ extr_ghs_pubchem <- function(casrn) {
   cat("\n")
 
 
+  if (all(is.na(dat_cid$cid))) {
+
+    na_matrix <- matrix(NA, nrow = length(casrn), ncol = 6)
+    out_df <- as.data.frame(na_matrix)
+    colnames(out_df) <- c("cid", "casrn", "name", "GHS", "source_name", "source_id")
+
+    out_df$casrn <- casrn
+
+
+  } else {
 
   names(dat_cid)[1] <- "casrn"
   dat_cid <- dat_cid[!is.na(dat_cid$cid), ]
-
 
   cli::cli_alert_info("Getting GHS from PubChem...")
   dat <- webchem::pc_sect(dat_cid$cid, verbose = TRUE, section = "GHS Classification") |>
@@ -154,7 +163,10 @@ extr_ghs_pubchem <- function(casrn) {
   dat_f<- dat[dat$result != "          ", ]
 
   names(dat_f)[3] <- "GHS"
-  merge(dat_cid, dat_f, by = "cid")
+  out_df <- merge(dat_cid, dat_f, by = "cid")
+  }
+
+  out_df
 
 }
 
@@ -191,6 +203,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
 
+
   resp <- tryCatch({
       httr2::request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
       httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
@@ -200,6 +213,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     cli::cli_abort("Failed to perform the request: {e$message}")
   })
 
+
   # Check the status code
   status_code <- httr2::resp_status(resp)
   if (status_code != 200L) {
@@ -208,8 +222,22 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     cli::cli_inform("Request succeeded with status code: {status_code}")
   }
 
+
   # Parse the JSON content
-  content <- httr2::resp_body_json(resp)
+  content <- tryCatch(
+    {
+      content <- httr2::resp_body_json(resp)
+      content
+    },
+    error = function(e) {
+      if (grepl("Unexpected content type \"text/plain\"", e$message)) {
+        cli::cli_warn("It seems that the ids were not found in ICE: {e$message}")
+        NULL  # Or another suitable value
+      } else {
+        cli::cli_abort("An unexpected error occurred: {e$message}")
+      }
+    }
+  )
 
   # Extract and combine data from the response
   dat <- tryCatch({
