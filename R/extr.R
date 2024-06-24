@@ -137,7 +137,7 @@ extr_ghs_pubchem <- function(casrn) {
   # Check if online
 
   cli::cli_alert_info("Getting PubChem IDS...")
-  dat_cid <-  webchem::get_cid(casrn, from = "cas", match = "first", verbose = TRUE)
+  dat_cid <-  webchem::get_cid(casrn, match = "first", verbose = TRUE)
   cat("\n")
 
 
@@ -156,6 +156,7 @@ extr_ghs_pubchem <- function(casrn) {
   dat_cid <- dat_cid[!is.na(dat_cid$cid), ]
 
   cli::cli_alert_info("Getting GHS from PubChem...")
+
   dat <- webchem::pc_sect(dat_cid$cid, verbose = TRUE, section = "GHS Classification") |>
     janitor::clean_names()
   cat("\n")
