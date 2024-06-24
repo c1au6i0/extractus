@@ -24,5 +24,5 @@ if (!requireNamespace("devtools", quietly = TRUE)) {
 }
 
 # Install the package from GitHub
-devtools::install_github("YourUsername/YourPackageName")
+devtools::install_github("c1au6i0/extractus")
 ```
