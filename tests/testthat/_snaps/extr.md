@@ -2518,6 +2518,27 @@
       225                                                             
       226                                                     25541156
 
+<<<<<<< HEAD
+=======
+# extr_ice fetches data for CASRN 50-00-1
+
+    Code
+      extr_ice(casrn = "50-00-1")
+    Message
+      Sending request to ICE database...
+      Request succeeded with status code: 200
+    Condition
+      Warning:
+      It seems that the ids were not found in ICE: Unexpected content type "text/plain".
+    Output
+        assay endpoint substanceType   casrn qsarReadyId value unit species
+      1    NA       NA            NA 50-00-1          NA    NA   NA      NA
+        receptorSpecies route sex strain lifeStage tissue lesion location assaySource
+      1              NA    NA  NA     NA        NA     NA     NA       NA          NA
+        inVitroAssayFormat reference referenceUrl dtxsid substanceName pubMedId
+      1                 NA        NA           NA     NA            NA       NA
+
+>>>>>>> dev
 # extr_tox fetches data for CASRN 50-00-0
 
     Code
@@ -2653,6 +2674,7 @@
       104 712 50-00-0 Formaldehyde
                                                                                                                                                                                                                                                                                                                                          GHS
       1                                                                                                                                                                                                                                                                                                                               Danger
+<<<<<<< HEAD
       2                                                                                                                                                                                                                                                                      H301 (83.48%): Toxic if swallowed [Danger Acute toxicity, oral]
       3                                                                                                                                                                                                                                                            H311 (83.48%): Toxic in contact with skin [Danger Acute toxicity, dermal]
       4                                                                                                                                                                                                                                            H314 (83.48%): Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
@@ -2669,6 +2691,24 @@
       15                                                                                                                                                                                       Reported as not meeting GHS hazard criteria by 3 of 6354 reports by companies. For more detailed information, please visit  ECHA C&L website.
       16                                                                                                                                                                                                                              Of the 93 notification(s) provided by 6351 of 6354 reports by companies with hazard statement code(s).
       17                                           Information may vary between notifications depending on impurities, additives, and other factors. The percentage value in parenthesis indicates the notified classification ratio from companies that provide hazard codes. Only hazard codes with percentage values above 40% are shown.
+=======
+      2                                                                                                                                                                                                                                                                      H301 (83.33%): Toxic if swallowed [Danger Acute toxicity, oral]
+      3                                                                                                                                                                                                                                                            H311 (83.33%): Toxic in contact with skin [Danger Acute toxicity, dermal]
+      4                                                                                                                                                                                                                                            H314 (83.33%): Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
+      5                                                                                                                                                                                                                                                     H317 (90.59%): May cause an allergic skin reaction [Warning Sensitization, Skin]
+      6                                                                                                                                                                                                                                                  H318 (48.25%): Causes serious eye damage [Danger Serious eye damage/eye irritation]
+      7                                                                                                                                                                                                                                                                   H330 (13.6%): Fatal if inhaled [Danger Acute toxicity, inhalation]
+      8                                                                                                                                                                                                                                                                  H331 (78.08%): Toxic if inhaled [Danger Acute toxicity, inhalation]
+      9                                                                                                                                                                                                                                                 H341 (18.59%): Suspected of causing genetic defects [Warning Germ cell mutagenicity]
+      10                                                                                                                                                                                                                                                                            H350 (18.59%): May cause cancer [Danger Carcinogenicity]
+      11                                                                                                                                                                                                                                                                H351 (64.79%): Suspected of causing cancer [Warning Carcinogenicity]
+      12                                                                        P203, P260, P261, P262, P264, P264+P265, P270, P271, P272, P280, P284, P301+P316, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P318, P320, P321, P330, P333+P317, P361+P364, P362+P364, P363, P403+P233, P405, and P501
+      13                                                                                                                                                                                                                                           (The corresponding statement to each P-code can be found at the GHS Classification page.)
+      14                                                                                                                                                      Aggregated GHS information provided by 6393 reports by companies from 97 notifications to the ECHA C&L Inventory. Each notification may be associated with multiple companies.
+      15                                                                                                                                                                                       Reported as not meeting GHS hazard criteria by 3 of 6393 reports by companies. For more detailed information, please visit  ECHA C&L website.
+      16                                                                                                                                                                                                                              Of the 96 notification(s) provided by 6390 of 6393 reports by companies with hazard statement code(s).
+      17                                           Information may vary between notifications depending on impurities, additives, and other factors. The percentage value in parenthesis indicates the notified classification ratio from companies that provide hazard codes. Only hazard codes with percentage values above 10% are shown.
+>>>>>>> dev
       18                                                                                                                                                                                                                                                                                                                              Danger
       19                                                                                                                                                                                                                                                                       H220 (100%): Extremely flammable gas [Danger Flammable gases]
       20                                                                                                                                                                                                                                      H280 (100%): Contains gas under pressure; may explode if heated [Warning Gases under pressure]
@@ -2678,7 +2718,11 @@
       24                                                                                                                                                                                     P203, P210, P222, P260, P261, P264, P270, P271, P280, P304+P340, P316, P318, P319, P321, P377, P381, P403, P403+P233, P405, P410+P403, and P501
       25                                                                                                                                                                                                                                           (The corresponding statement to each P-code can be found at the GHS Classification page.)
       26                                                                                                                                                         Aggregated GHS information provided by 38 reports by companies from 1 notifications to the ECHA C&L Inventory. Each notification may be associated with multiple companies.
+<<<<<<< HEAD
       27                                           Information may vary between notifications depending on impurities, additives, and other factors. The percentage value in parenthesis indicates the notified classification ratio from companies that provide hazard codes. Only hazard codes with percentage values above 40% are shown.
+=======
+      27                                           Information may vary between notifications depending on impurities, additives, and other factors. The percentage value in parenthesis indicates the notified classification ratio from companies that provide hazard codes. Only hazard codes with percentage values above 10% are shown.
+>>>>>>> dev
       28                                                                                                                                                                                                                                                                                                                              Danger
       29                                                                                                                                                                                                                                                                              H301: Toxic if swallowed [Danger Acute toxicity, oral]
       30                                                                                                                                                                                                                                                                    H311: Toxic in contact with skin [Danger Acute toxicity, dermal]
