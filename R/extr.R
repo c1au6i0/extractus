@@ -214,6 +214,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   })
 
 
+
   # Check the status code
   status_code <- httr2::resp_status(resp)
   if (status_code != 200L) {
@@ -222,6 +223,17 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     cli::cli_inform("Request succeeded with status code: {status_code}")
   }
 
+
+  # This is used in case no results are retrieved in next chunk
+  col_names <- c("assay", "endpoint", "substanceType", "casrn", "qsarReadyId",
+    "value", "unit", "species", "receptorSpecies", "route", "sex",
+    "strain", "lifeStage", "tissue", "lesion", "location", "assaySource",
+    "inVitroAssayFormat", "reference", "referenceUrl", "dtxsid",
+    "substanceName", "pubMedId")
+
+  out <- setNames(data.frame(matrix(ncol = length(col_names), nrow = length(casrn))), col_names)
+
+  out$casrn <- casrn
 
   # Parse the JSON content
   content <- tryCatch(
@@ -239,13 +251,22 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     }
   )
 
-  # Extract and combine data from the response
-  dat <- tryCatch({
-    do.call(rbind, content$endPoints) |>
-      as.data.frame()
-  }, error = function(e) {
-    cli::cli_abort("Failed to parse the JSON content: {e$message}")
-  })
+  # if nothing is retrieved
+  if (is.null(content)) {
+
+    dat <- out
+
+  } else {
+
+    # Extract and combine data from the response
+    dat <- tryCatch({
+      do.call(rbind, content$endPoints) |>
+        as.data.frame()
+    }, error = function(e) {
+      cli::cli_abort("Failed to parse the JSON content: {e$message}")
+    })
+
+  }
 
   return(dat)
 
