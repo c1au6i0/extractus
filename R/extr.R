@@ -286,3 +286,45 @@ extr_tox <- function(casrn) {
   c(list(ghs_dat =  ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
 }
 
+
+
+# library(httr2)
+#
+#
+# resp <- request("https://ctdbase.org/query.go") |>
+#   req_url_query(
+#     chem = "50-00-0",
+#     disease = "",
+#     `d-3572529-e` = "1",
+#     gene = "",
+#     chemqt = "equals",
+#     go = "",
+#     type = "tetramer",
+#     diseaseInputTermSearchTypeName = "directAssociations",
+#     perPage = "50",
+#     goInputTermSearchTypeName = "directAssociations",
+#     diseaseqt = "equals",
+#     action = "Search",
+#     chemInputTermSearchTypeName = "directAssociations",
+#     goqt = "equals",
+#     `6578706f7274` = "1",
+#     geneqt = "equals",
+#   ) |>
+#   req_headers(
+#     `User-Agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0",
+#     Accept = "*/*",
+#     `Accept-Language` = "en-US,en;q=0.5",
+#     `Accept-Encoding` = "gzip, deflate, br, zstd",
+#     Cookie = "JSESSIONID=CCDE56D28D4060ADEDA3A86D5247D481",
+#     `Sec-GPC` = "1",
+#     Priority = "u=0",
+#   ) |>
+#   req_perform()
+#
+#
+# tab_file <- tempfile(fileext = "csv")
+#
+# writeBin(resp$body, tab_file)
+#
+# cc <- read.csv(tab_file)
+#
