@@ -378,7 +378,7 @@ extr_ctd <- function(
     httr2::req_perform() %>%
     httr2::resp_body_string()
 
-  out <- readr::read_csv(resp)
+  out <- read.csv(resp)
 
   out
 }
