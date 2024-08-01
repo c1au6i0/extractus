@@ -247,7 +247,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     cli::cli_abort("Failed to parse the JSON content: {e$message}")
   })
 
-  return(dat)
+  dat
 
 }
 
@@ -286,14 +286,110 @@ extr_tox <- function(casrn) {
   c(list(ghs_dat =  ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
 }
 
+#' Extract Data from the CTD API
+#'
+#' This function queries the Comparative Toxicogenomics Database API to retrieve data related to chemicals, diseases, genes, or other categories.
+#'
+#' @param input_terms A character vector of input terms such as CAS numbers or IUPAC names.
+#' @param category A string specifying the category of data to query. Valid options are "all", "chem", "disease", "gene", "go", "pathway", "reference", and "taxon". Default is "chem".
+#' @param report_type A string specifying the type of report to return. Default is "genes_curated". Valid options include:
+#'   \describe{
+#'     \item{"cgixns"}{Curated chemical-gene interactions. Requires at least one \code{action_types} parameter.}
+#'     \item{"chems"}{All chemical associations.}
+#'     \item{"chems_curated"}{Curated chemical associations.}
+#'     \item{"chems_inferred"}{Inferred chemical associations.}
+#'     \item{"genes"}{All gene associations.}
+#'     \item{"genes_curated"}{Curated gene associations.}
+#'     \item{"genes_inferred"}{Inferred gene associations.}
+#'     \item{"diseases"}{All disease associations.}
+#'     \item{"diseases_curated"}{Curated disease associations.}
+#'     \item{"diseases_inferred"}{Inferred disease associations.}
+#'     \item{"pathways_curated"}{Curated pathway associations.}
+#'     \item{"pathways_inferred"}{Inferred pathway associations.}
+#'     \item{"pathways_enriched"}{Enriched pathway associations.}
+#'     \item{"phenotypes_curated"}{Curated phenotype associations.}
+#'     \item{"phenotypes_inferred"}{Inferred phenotype associations.}
+#'     \item{"go"}{All Gene Ontology (GO) associations. Requires at least one \code{ontology} parameter.}
+#'     \item{"go_enriched"}{Enriched GO associations. Requires at least one \code{ontology} parameter.}
+#'   }
+#' @param input_term_search_type A string specifying the search method to use. Options are "hierarchicalAssociations" or "directAssociations". Default is "directAssociations".
+#' @param action_types An optional character vector specifying one or more interaction types for filtering results. Default is NULL.
+#' @param ontology An optional character vector specifying one or more ontologies for filtering GO reports. Default is NULL.
+#'
+#' @return A data frame containing the queried data in CSV format.
+#'
+#' @references
+#' - Comparative Toxicogenomics Database: \url{http://ctdbase.org}
+#' - Davis, A. P., Grondin, C. J., Johnson, R. J., Sciaky, D., McMorran, R., Wiegers, T. C., & Mattingly, C. J. (2019).
+#' The Comparative Toxicogenomics Database: update 2019. Nucleic acids research, 47(D1), D948–D954. \doi{10.1093/nar/gky868}
+#'
+#' @examples
+#' input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
+#' dat <- extr_ctd(
+#'   input_terms = input_terms,
+#'   category = "chem",
+#'   report_type = "genes_curated",
+#'   input_term_search_type = "directAssociations",
+#'   action_types = "ANY",
+#'   ontology = c("go_bp", "go_cc")
+#' )
+#' dplyr::glimpse(dat)
+extr_ctd <- function(
+    input_terms,
+    category = "chem",
+    report_type = "genes_curated",
+    input_term_search_type = "directAssociations",
+    action_types = NULL,
+    ontology = NULL
+) {
+
+  # Check that input terms are provided
+  if (length(input_terms) == 0) {
+    stop("At least one input term must be provided.")
+  }
+
+  # Define the base URL
+  base_url <- "https://ctdbase.org/tools/batchQuery.go"
+
+  # Combine input terms into a single string, assuming input_terms is a vector
+  input_terms_string <- paste(input_terms, collapse = "|")
+
+  # Define the parameters for the request
+  params <- list(
+    inputType = category,
+    inputTerms = input_terms_string,
+    report = report_type,
+    format = "csv",  # Fixed to CSV format
+    inputTermSearchType = input_term_search_type
+  )
+
+  # Add optional parameters if they are provided
+  if (!is.null(action_types)) {
+    params$actionTypes <- paste(action_types, collapse = "|")
+  }
+
+  if (!is.null(ontology)) {
+    params$ontology <- paste(ontology, collapse = "|")
+  }
+
+  # Create and perform the request
+  resp <- httr2::request(base_url) %>%
+    httr2::req_url_query(!!!params) %>%
+    httr2::req_perform() %>%
+    httr2::resp_body_string()
+
+  out <- readr::read_csv(resp)
+
+  out
+}
+
 
 
 # library(httr2)
-#
-#
+# Tetramer -------
 # resp <- request("https://ctdbase.org/query.go") |>
 #   req_url_query(
-#     chem = "50-00-0",
+#     chem = c("50-00-0"),
 #     disease = "",
 #     `d-3572529-e` = "1",
 #     gene = "",
@@ -320,8 +416,8 @@ extr_tox <- function(casrn) {
 #     Priority = "u=0",
 #   ) |>
 #   req_perform()
-#
-#
+
+
 # tab_file <- tempfile(fileext = "csv")
 #
 # writeBin(resp$body, tab_file)
