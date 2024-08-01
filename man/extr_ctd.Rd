@@ -10,7 +10,9 @@ extr_ctd(
   report_type = "genes_curated",
   input_term_search_type = "directAssociations",
   action_types = NULL,
-  ontology = NULL
+  ontology = NULL,
+  verify_ssl = FALSE,
+  ...
 )
 }
 \arguments{
@@ -44,6 +46,10 @@ extr_ctd(
 \item{action_types}{An optional character vector specifying one or more interaction types for filtering results. Default is NULL.}
 
 \item{ontology}{An optional character vector specifying one or more ontologies for filtering GO reports. Default is NULL.}
+
+\item{verify_ssl}{Boolean to control of SSL should be verified or not.}
+
+\item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }
 \value{
 A data frame containing the queried data in CSV format.

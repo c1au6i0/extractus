@@ -315,6 +315,8 @@ extr_tox <- function(casrn) {
 #' @param input_term_search_type A string specifying the search method to use. Options are "hierarchicalAssociations" or "directAssociations". Default is "directAssociations".
 #' @param action_types An optional character vector specifying one or more interaction types for filtering results. Default is NULL.
 #' @param ontology An optional character vector specifying one or more ontologies for filtering GO reports. Default is NULL.
+#' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #'
 #' @return A data frame containing the queried data in CSV format.
 #'
@@ -340,47 +342,75 @@ extr_ctd <- function(
     report_type = "genes_curated",
     input_term_search_type = "directAssociations",
     action_types = NULL,
-    ontology = NULL
+    ontology = NULL,
+    verify_ssl = FALSE,
+    ...
 ) {
 
-  # Check that input terms are provided
-  if (length(input_terms) == 0) {
-    stop("At least one input term must be provided.")
+  if (missing(input_terms)) {
+    cli::cli_abort("The argument {.field {input_terms}} is required.")
   }
+
+  # Check if online
+  check_internet()
 
   # Define the base URL
   base_url <- "https://ctdbase.org/tools/batchQuery.go"
 
-  # Combine input terms into a single string, assuming input_terms is a vector
-  input_terms_string <- paste(input_terms, collapse = "|")
 
   # Define the parameters for the request
   params <- list(
     inputType = category,
-    inputTerms = input_terms_string,
+    inputTerms = NULL, # this is add after
     report = report_type,
     format = "csv",  # Fixed to CSV format
     inputTermSearchType = input_term_search_type
   )
 
-  # Add optional parameters if they are provided
-  if (!is.null(action_types)) {
-    params$actionTypes <- paste(action_types, collapse = "|")
+  # Add optional parameters and collapse is vector of length > 1
+  params_to_collapse <- list(inputTerms = input_terms,
+                             actionTypes = action_types,
+                             ontology = ontology)
+
+  for (param_name in names(params_to_collapse)) {
+    param_value <- params_to_collapse[[param_name]]
+    if (!is.null(param_value)) {
+      params[[param_name]] <- paste(param_value, collapse = "|")
+    }
   }
 
-  if (!is.null(ontology)) {
-    params$ontology <- paste(ontology, collapse = "|")
+  # Perform the request and get a response
+  cli::cli_inform("Sending request to CTD database...")
+
+  libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
+
+  resp <- tryCatch({
+    httr2::request(base_url) |>
+      httr2::req_url_query(!!!params) |>
+      httr2::req_options(!!!libcurl_opt) |>
+      httr2::req_perform()
+
+    }, error = function(e) {
+    cli::cli_abort("Failed to perform the request: {e$message}")
+  })
+
+  # Check the status code
+  status_code <- httr2::resp_status(resp)
+  if (status_code != 200L) {
+    cli::cli_abort("Request failed with status code: {status_code}")
+  } else {
+    cli::cli_inform("Request succeeded with status code: {status_code}")
   }
 
-  # Create and perform the request
-  resp <- httr2::request(base_url) %>%
-    httr2::req_url_query(!!!params) %>%
-    httr2::req_perform() %>%
-    httr2::resp_body_string()
+  csv_file <- tempfile(fileext = "csv")
 
-  out <- read.csv(resp)
+  resp |>
+    httr2::resp_body_raw() |>
+    writeBin(csv_file)
 
-  out
+  read.csv(csv_file) |>
+    janitor::clean_names()
+
 }
 
 
