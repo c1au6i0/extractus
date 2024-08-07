@@ -14,7 +14,8 @@ test_that("extr_iris_ fetches data for CASRN 50-00-0", {
 })
 
 test_that("extr_iris_ returns a data frame", {
-  expect_s3_class(result, "data.frame")
+  results <- extr_iris_("50-00-0")
+  expect_s3_class(results, "data.frame")
 })
 
 
