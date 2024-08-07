@@ -269,7 +269,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 
   }
 
-  return(dat)
+  dat
 
 }
 
