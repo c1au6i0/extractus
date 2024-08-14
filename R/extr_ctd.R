@@ -25,8 +25,10 @@
 #'     \item{"go_enriched"}{Enriched GO associations. Requires at least one \code{ontology} parameter.}
 #'   }
 #' @param input_term_search_type A string specifying the search method to use. Options are "hierarchicalAssociations" or "directAssociations". Default is "directAssociations".
-#' @param action_types An optional character vector specifying one or more interaction types for filtering results. Default is NULL.
-#' @param ontology An optional character vector specifying one or more ontologies for filtering GO reports. Default is NULL.
+#' @param action_types An optional character vector specifying one or more interaction types for filtering results. Default is "ANY".
+#'    Other acceptable inputs are "abundance", "activity", "binding", "cotreatment", "expression", "folding", "localization", "metabolic processing"...See https://ctdbase.org/tools/batchQuery.go
+#'    for a full list.
+#' @param ontology An optional character vector specifying one or more ontologies for filtering GO reports. Default NULL.
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @export

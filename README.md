@@ -8,7 +8,7 @@
 
 `extractus` is an R package designed to facilitate the extraction of
 toxicological and chemical information from several key databases,
-including EPA IRIS, Comptox, PubChem, and ICE.
+including EPA IRIS, Comptox, PubChem, ICE and CTD.
 
 To communicate to Pubchem and Comptox, `extractus` relies on `ECOTOXr`
 and `webchem`.
