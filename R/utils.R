@@ -171,3 +171,21 @@ set_ssl <- function(verify_ssl, ...) {
   }
   libcurl_opt
 }
+
+#' Check the status code of an HTTP response
+#'
+#' This function checks the status code of an HTTP response and provides
+#' appropriate messages based on the status.
+#'
+#' @param resp An HTTP response object from the httr2 package.
+#' @return This function does not return a value. It is used for its side effects.
+check_status_code <- function(resp) {
+  status_code <- httr2::resp_status(resp)
+  if (!status_code %in% c(200L, 202L)) {
+    cli::cli_abort("Request failed with status code: {status_code}")
+  } else {
+    cli::cli_inform("Request succeeded with status code: {status_code}")
+  }
+}
+
+

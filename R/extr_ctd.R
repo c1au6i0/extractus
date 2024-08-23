@@ -89,6 +89,7 @@ extr_ctd <- function(
                              actionTypes = action_types,
                              ontology = ontology)
 
+  # this can be fixed using .multi in req_url_query
   for (param_name in names(params_to_collapse)) {
     param_value <- params_to_collapse[[param_name]]
     if (!is.null(param_value)) {
@@ -111,13 +112,7 @@ extr_ctd <- function(
     cli::cli_abort("Failed to perform the request: {e$message}")
   })
 
-  # Check the status code
-  status_code <- httr2::resp_status(resp)
-  if (status_code != 200L) {
-    cli::cli_abort("Request failed with status code: {status_code}")
-  } else {
-    cli::cli_inform("Request succeeded with status code: {status_code}")
-  }
+  check_status_code(resp)
 
   csv_file <- tempfile(fileext = "csv")
 
@@ -216,13 +211,7 @@ extr_tetramer <- function(
     cli::cli_abort("Failed to perform the request: {e$message}")
   })
 
-  # Check the status code
-  status_code <- httr2::resp_status(resp)
-  if (status_code != 200L) {
-    cli::cli_abort("Request failed with status code: {status_code}")
-  } else {
-    cli::cli_inform("Request succeeded with status code: {status_code}")
-  }
+  check_status_code(resp)
 
   tab_file <- tempfile(fileext = "csv")
 
