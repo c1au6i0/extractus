@@ -6,8 +6,6 @@
 \usage{
 extr_comptox(
   ids,
-  identifier_types = c("chemical_name", "CASRN", "INCHIKEY", "dtxsid"),
-  input_type = "IDENTIFIER",
   download_items = c("DTXCID", "CASRN", "INCHIKEY", "IUPAC_NAME", "SMILES",
     "INCHI_STRING", "MS_READY_SMILES", "QSAR_READY_SMILES", "MOLECULAR_FORMULA",
     "AVERAGE_MASS", "MONOISOTOPIC_MASS", "QC_LEVEL", "SAFETY_DATA", "EXPOCAST",
@@ -46,23 +44,6 @@ extr_comptox(
 }
 \arguments{
 \item{ids}{A character vector containing the items to be searched within the CompTox Chemistry Dashboard. These can be chemical names, CAS Registry Numbers (CASRN), InChIKeys, or DSSTox substance identifiers (DTXSID).}
-
-\item{identifier_types}{A character vector specifying the types of identifiers to be used for the search. Options include:
-\describe{
-\item{\code{"chemical_name"}}{Search by chemical name.}
-\item{\code{"CASRN"}}{Search by CAS Registry Number.}
-\item{\code{"INCHIKEY"}}{Search by InChIKey.}
-\item{\code{"dtxsid"}}{Search by DSSTox substance identifier (DTXSID).}
-}}
-
-\item{input_type}{The type of input used for searching. Default is \code{"IDENTIFIER"}. Other valid options are:
-\describe{
-\item{\code{"DTXCID"}}{Search using DTXCID.}
-\item{\code{"INCHIKEY_SKELETON"}}{Search using InChIKey skeleton.}
-\item{\code{"MSREADY_FORMULA"}}{Search using MS-ready molecular formula.}
-\item{\code{"EXACT_FORMULA"}}{Search using exact molecular formula.}
-\item{\code{"MASS"}}{Search using molecular mass.}
-}}
 
 \item{download_items}{A character vector of items to be downloaded. This includes a comprehensive set of chemical properties, identifiers, predictive data, and other relevant information. By Default, it download all the info
 \describe{
@@ -108,12 +89,12 @@ extr_comptox(
 \item{AMES_MUTAGENICITY_TEST_PRED}{Predicted Ames mutagenicity from tests.}
 \item{ORAL_RAT_LD50_MOL/KG_TEST_PRED}{Predicted oral LD50 for rats in mol/kg from tests.}
 \item{SURFACE_TENSION_DYN/CM_TEST_PRED}{Predicted surface tension in dyn/cm from tests.}
-\item{THERMAL_CONDUCTIVITY_MW/(M\emph{K)_TEST_PRED}{Predicted thermal conductivity in mW/(m}K) from tests.}
+\item{THERMAL_CONDUCTIVITY_MW_M×K_TEST_PRED}{Predicted thermal conductivity in mW/m×K from tests.}
 \item{TETRAHYMENA_PYRIFORMIS_IGC50_MOL/L_TEST_PRED}{Predicted IGC50 for Tetrahymena pyriformis in mol/L from tests.}
 \item{VISCOSITY_CP_CP_TEST_PRED}{Predicted viscosity in cP from tests.}
 \item{VAPOR_PRESSURE_MMHG_TEST_PRED}{Predicted vapor pressure in mmHg from tests.}
 \item{WATER_SOLUBILITY_MOL/L_TEST_PRED}{Predicted water solubility in mol/L from tests.}
-\item{ATMOSPHERIC_HYDROXYLATION_RATE_(AOH)_CM3/MOLECULE\emph{SEC_OPERA_PRED}{Predicted atmospheric hydroxylation rate in cm³/molecule}sec from OPERA.}
+\item{ATMOSPHERIC_HYDROXYLATION_RATE_\(AOH\)_CM3/MOLECULE\*SEC_OPERA_PRED}{Predicted atmospheric hydroxylation rate in cm³/molecule\*sec from OPERA.}
 \item{BIOCONCENTRATION_FACTOR_OPERA_PRED}{Predicted bioconcentration factor from OPERA.}
 \item{BIODEGRADATION_HALF_LIFE_DAYS_DAYS_OPERA_PRED}{Predicted biodegradation half-life in days from OPERA.}
 \item{BOILING_POINT_DEGC_OPERA_PRED}{Predicted boiling point in degrees Celsius from OPERA.}
@@ -150,7 +131,6 @@ This function interacts with the CompTox Chemistry Dashboard to download and ext
 \examples{
 \dontrun{
 # Example usage of the function:
-extr_comptox_2(search_items = c("Aspirin", "50-00-0"))
+extr_comptox(ids = c("Aspirin", "50-00-0"))
 }
-
 }

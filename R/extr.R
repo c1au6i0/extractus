@@ -95,7 +95,6 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
 #' This function interacts with the CompTox Chemistry Dashboard to download and extract a wide range of chemical data based on user-defined search criteria. It allows for flexible input types and supports downloading various chemical properties, identifiers, and predictive data.
 #'
 #' @param ids A character vector containing the items to be searched within the CompTox Chemistry Dashboard. These can be chemical names, CAS Registry Numbers (CASRN), InChIKeys, or DSSTox substance identifiers (DTXSID).
-#'
 #' @param download_items A character vector of items to be downloaded. This includes a comprehensive set of chemical properties, identifiers, predictive data, and other relevant information. By Default, it download all the info
 #' \describe{
 #'   \item{DTXCID}{The unique identifier for a chemical in the EPA's CompTox Chemicals Dashboard.}
@@ -140,12 +139,12 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
 #'   \item{AMES_MUTAGENICITY_TEST_PRED}{Predicted Ames mutagenicity from tests.}
 #'   \item{ORAL_RAT_LD50_MOL/KG_TEST_PRED}{Predicted oral LD50 for rats in mol/kg from tests.}
 #'   \item{SURFACE_TENSION_DYN/CM_TEST_PRED}{Predicted surface tension in dyn/cm from tests.}
-#'   \item{THERMAL_CONDUCTIVITY_MW/(M*K)_TEST_PRED}{Predicted thermal conductivity in mW/(m*K) from tests.}
+#'   \item{THERMAL_CONDUCTIVITY_MW_M×K_TEST_PRED}{Predicted thermal conductivity in mW/m×K from tests.}
 #'   \item{TETRAHYMENA_PYRIFORMIS_IGC50_MOL/L_TEST_PRED}{Predicted IGC50 for Tetrahymena pyriformis in mol/L from tests.}
 #'   \item{VISCOSITY_CP_CP_TEST_PRED}{Predicted viscosity in cP from tests.}
 #'   \item{VAPOR_PRESSURE_MMHG_TEST_PRED}{Predicted vapor pressure in mmHg from tests.}
 #'   \item{WATER_SOLUBILITY_MOL/L_TEST_PRED}{Predicted water solubility in mol/L from tests.}
-#'   \item{ATMOSPHERIC_HYDROXYLATION_RATE_(AOH)_CM3/MOLECULE*SEC_OPERA_PRED}{Predicted atmospheric hydroxylation rate in cm³/molecule*sec from OPERA.}
+#'   \item{ATMOSPHERIC_HYDROXYLATION_RATE_\(AOH\)_CM3/MOLECULE\*SEC_OPERA_PRED}{Predicted atmospheric hydroxylation rate in cm³/molecule\*sec from OPERA.}
 #'   \item{BIOCONCENTRATION_FACTOR_OPERA_PRED}{Predicted bioconcentration factor from OPERA.}
 #'   \item{BIODEGRADATION_HALF_LIFE_DAYS_DAYS_OPERA_PRED}{Predicted biodegradation half-life in days from OPERA.}
 #'   \item{BOILING_POINT_DEGC_OPERA_PRED}{Predicted boiling point in degrees Celsius from OPERA.}
@@ -164,23 +163,16 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
 #'   \item{TOXCAST_NUMBER_OF_ASSAYS/TOTAL}{Number of assays in ToxCast.}
 #'   \item{TOXCAST_PERCENT_ACTIVE}{Percentage of active assays in ToxCast.}
 #' }
-#'
 #' @param mass_error Numeric value indicating the mass error tolerance for searches involving mass data. Default is `0`.
-#'
 #' @param timeout Numeric value specifying the timeout duration in seconds. Default is `300`.
-#'
 #' @param verify_ssl Logical value indicating whether SSL certificates should be verified. Default is `FALSE`.
-#'
 #' @param ... Additional arguments passed to `httr2::req_options()`.
-#'
 #' @return A cleaned data frame containing the requested data from CompTox.
-#'
 #' @examples
 #' \dontrun{
 #' # Example usage of the function:
 #' extr_comptox(ids = c("Aspirin", "50-00-0"))
 #' }
-#'
 #' @export
 extr_comptox <- function(ids,
                            download_items = c(
@@ -431,7 +423,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     "inVitroAssayFormat", "reference", "referenceUrl", "dtxsid",
     "substanceName", "pubMedId")
 
-  out <- setNames(data.frame(matrix(ncol = length(col_names), nrow = length(casrn))), col_names)
+  out <- stats::setNames(data.frame(matrix(ncol = length(col_names), nrow = length(casrn))), col_names)
 
   out$casrn <- casrn
 

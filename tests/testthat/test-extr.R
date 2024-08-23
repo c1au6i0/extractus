@@ -43,6 +43,7 @@ test_that("extr_ice fetches data for CASRN 50-00-1", {
 # TOX ----
 # @@@@@@@@@
 
+Sys.sleep(3)
 test_that("extr_tox fetches data for CASRN 50-00-0", {
 
   # Ensure the output is as expected by comparing to a stored snapshot
