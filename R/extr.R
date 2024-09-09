@@ -1,7 +1,7 @@
 #' Extract Data from EPA IRIS Database
 #'
 #' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keyword and cancer types. It retrieves and parses the HTML content from the response.
-#' Note that if `keyword` is not provide all dataset is retrieved.
+#' Note that if `keyword` is not provide all dataset are retrieved.
 #'
 #' @param keyword A single character string specifying the IUPAC name or the CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
@@ -18,7 +18,6 @@ extr_iris_ <- function(keyword = NULL,
                        cancer_types = c("non_cancer", "cancer"),
                        verify_ssl = FALSE,
                        ...) {
-
   # Check if online
   check_internet()
 
@@ -32,27 +31,32 @@ extr_iris_ <- function(keyword = NULL,
 
   # Perform the request and get a response
   cli::cli_inform("Quering {.field {keyword}} to EPA IRIS database...")
-  resp <- tryCatch({
+  resp <- tryCatch(
+    {
       httr2::request(base_url = "https://cfpub.epa.gov/ncea/iris/search/basic/") |>
-      httr2::req_url_query(!!!query_params, .multi = "explode") |>
-      httr2::req_options(!!!libcurl_opt) |>
-      httr2::req_perform()
-  }, error = function(e) {
-    cli::cli_abort("Failed to perform the request: {e$message}")
-  })
+        httr2::req_url_query(!!!query_params, .multi = "explode") |>
+        httr2::req_options(!!!libcurl_opt) |>
+        httr2::req_perform()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to perform the request: {e$message}")
+    }
+  )
 
   check_status_code(resp)
 
   # Parse the HTML content
   content <- httr2::resp_body_html(resp)
 
-
-  dat <- tryCatch({
-    rvest::html_element(content, "#searchMain , th, td") |>
-      rvest::html_table()
-  }, error = function(e) {
-    cli::cli_abort("Failed to parse the HTML content: {e$message}")
-  })
+  dat <- tryCatch(
+    {
+      rvest::html_element(content, "#searchMain , th, td") |>
+        rvest::html_table()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to parse the HTML content: {e$message}")
+    }
+  )
 
   dat
 }
@@ -65,8 +69,6 @@ extr_iris_ <- function(keyword = NULL,
 #' dat <- extr_iris(c("glyphosate", "50-00-0"))
 #' }
 extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) {
-
-
   if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
     cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
   }
@@ -74,18 +76,15 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
   # Check if online
   check_internet()
 
-  if(length(keyword) > 1) {
-
+  if (length(keyword) > 1) {
     dat <- lapply(keyword, extr_iris_, cancer_types = cancer_types)
     out <- do.call(rbind, dat)
   } else {
-
     out <- extr_iris_(keyword = keyword, cancer_types = cancer_types)
   }
 
   out |>
     janitor::clean_names()
-
 }
 
 
@@ -93,6 +92,7 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
 #' Download and Extract Data from CompTox Chemistry Dashboard
 #'
 #' This function interacts with the CompTox Chemistry Dashboard to download and extract a wide range of chemical data based on user-defined search criteria. It allows for flexible input types and supports downloading various chemical properties, identifiers, and predictive data.
+#' It was inspired by the `ECOTOXr::websearch_comptox` function.
 #'
 #' @param ids A character vector containing the items to be searched within the CompTox Chemistry Dashboard. These can be chemical names, CAS Registry Numbers (CASRN), InChIKeys, or DSSTox substance identifiers (DTXSID).
 #' @param download_items A character vector of items to be downloaded. This includes a comprehensive set of chemical properties, identifiers, predictive data, and other relevant information. By Default, it download all the info
@@ -175,78 +175,77 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
 #' }
 #' @export
 extr_comptox <- function(ids,
-                           download_items = c(
-                             "DTXCID",
-                             "CASRN",
-                             "INCHIKEY",
-                             "IUPAC_NAME",
-                             "SMILES",
-                             "INCHI_STRING",
-                             "MS_READY_SMILES",
-                             "QSAR_READY_SMILES",
-                             "MOLECULAR_FORMULA",
-                             "AVERAGE_MASS",
-                             "MONOISOTOPIC_MASS",
-                             "QC_LEVEL",
-                             "SAFETY_DATA",
-                             "EXPOCAST",
-                             "DATA_SOURCES",
-                             "TOXVAL_DATA",
-                             "NUMBER_OF_PUBMED_ARTICLES",
-                             "PUBCHEM_DATA_SOURCES",
-                             "CPDAT_COUNT",
-                             "IRIS_LINK",
-                             "PPRTV_LINK",
-                             "WIKIPEDIA_ARTICLE",
-                             "QC_NOTES",
-                             "ABSTRACT_SHIFTER",
-                             "TOXPRINT_FINGERPRINT",
-                             "ACTOR_REPORT",
-                             "SYNONYM_IDENTIFIER",
-                             "RELATED_RELATIONSHIP",
-                             "ASSOCIATED_TOXCAST_ASSAYS",
-                             "TOXVAL_DETAILS",
-                             "CHEMICAL_PROPERTIES_DETAILS",
-                             "BIOCONCENTRATION_FACTOR_TEST_PRED",
-                             "BOILING_POINT_DEGC_TEST_PRED",
-                             "48HR_DAPHNIA_LC50_MOL/L_TEST_PRED",
-                             "DENSITY_G/CM^3_TEST_PRED",
-                             "DEVTOX_TEST_PRED",
-                             "96HR_FATHEAD_MINNOW_MOL/L_TEST_PRED",
-                             "FLASH_POINT_DEGC_TEST_PRED",
-                             "MELTING_POINT_DEGC_TEST_PRED",
-                             "AMES_MUTAGENICITY_TEST_PRED",
-                             "ORAL_RAT_LD50_MOL/KG_TEST_PRED",
-                             "SURFACE_TENSION_DYN/CM_TEST_PRED",
-                             "THERMAL_CONDUCTIVITY_MW/(M*K)_TEST_PRED",
-                             "TETRAHYMENA_PYRIFORMIS_IGC50_MOL/L_TEST_PRED",
-                             "VISCOSITY_CP_CP_TEST_PRED",
-                             "VAPOR_PRESSURE_MMHG_TEST_PRED",
-                             "WATER_SOLUBILITY_MOL/L_TEST_PRED",
-                             "ATMOSPHERIC_HYDROXYLATION_RATE_(AOH)_CM3/MOLECULE*SEC_OPERA_PRED",
-                             "BIOCONCENTRATION_FACTOR_OPERA_PRED",
-                             "BIODEGRADATION_HALF_LIFE_DAYS_DAYS_OPERA_PRED",
-                             "BOILING_POINT_DEGC_OPERA_PRED",
-                             "HENRYS_LAW_ATM-M3/MOLE_OPERA_PRED",
-                             "OPERA_KM_DAYS_OPERA_PRED",
-                             "OCTANOL_AIR_PARTITION_COEFF_LOGKOA_OPERA_PRED",
-                             "SOIL_ADSORPTION_COEFFICIENT_KOC_L/KG_OPERA_PRED",
-                             "OCTANOL_WATER_PARTITION_LOGP_OPERA_PRED",
-                             "MELTING_POINT_DEGC_OPERA_PRED",
-                             "OPERA_PKAA_OPERA_PRED",
-                             "OPERA_PKAB_OPERA_PRED",
-                             "VAPOR_PRESSURE_MMHG_OPERA_PRED",
-                             "WATER_SOLUBILITY_MOL/L_OPERA_PRED",
-                             "EXPOCAST_MEDIAN_EXPOSURE_PREDICTION_MG/KG-BW/DAY",
-                             "NHANES",
-                             "TOXCAST_NUMBER_OF_ASSAYS/TOTAL",
-                             "TOXCAST_PERCENT_ACTIVE"
-                           ),
-                           mass_error = 0,
-                           timeout = 300,
-                           verify_ssl = FALSE,
-                           ...) {
-
+                         download_items = c(
+                           "DTXCID",
+                           "CASRN",
+                           "INCHIKEY",
+                           "IUPAC_NAME",
+                           "SMILES",
+                           "INCHI_STRING",
+                           "MS_READY_SMILES",
+                           "QSAR_READY_SMILES",
+                           "MOLECULAR_FORMULA",
+                           "AVERAGE_MASS",
+                           "MONOISOTOPIC_MASS",
+                           "QC_LEVEL",
+                           "SAFETY_DATA",
+                           "EXPOCAST",
+                           "DATA_SOURCES",
+                           "TOXVAL_DATA",
+                           "NUMBER_OF_PUBMED_ARTICLES",
+                           "PUBCHEM_DATA_SOURCES",
+                           "CPDAT_COUNT",
+                           "IRIS_LINK",
+                           "PPRTV_LINK",
+                           "WIKIPEDIA_ARTICLE",
+                           "QC_NOTES",
+                           "ABSTRACT_SHIFTER",
+                           "TOXPRINT_FINGERPRINT",
+                           "ACTOR_REPORT",
+                           "SYNONYM_IDENTIFIER",
+                           "RELATED_RELATIONSHIP",
+                           "ASSOCIATED_TOXCAST_ASSAYS",
+                           "TOXVAL_DETAILS",
+                           "CHEMICAL_PROPERTIES_DETAILS",
+                           "BIOCONCENTRATION_FACTOR_TEST_PRED",
+                           "BOILING_POINT_DEGC_TEST_PRED",
+                           "48HR_DAPHNIA_LC50_MOL/L_TEST_PRED",
+                           "DENSITY_G/CM^3_TEST_PRED",
+                           "DEVTOX_TEST_PRED",
+                           "96HR_FATHEAD_MINNOW_MOL/L_TEST_PRED",
+                           "FLASH_POINT_DEGC_TEST_PRED",
+                           "MELTING_POINT_DEGC_TEST_PRED",
+                           "AMES_MUTAGENICITY_TEST_PRED",
+                           "ORAL_RAT_LD50_MOL/KG_TEST_PRED",
+                           "SURFACE_TENSION_DYN/CM_TEST_PRED",
+                           "THERMAL_CONDUCTIVITY_MW/(M*K)_TEST_PRED",
+                           "TETRAHYMENA_PYRIFORMIS_IGC50_MOL/L_TEST_PRED",
+                           "VISCOSITY_CP_CP_TEST_PRED",
+                           "VAPOR_PRESSURE_MMHG_TEST_PRED",
+                           "WATER_SOLUBILITY_MOL/L_TEST_PRED",
+                           "ATMOSPHERIC_HYDROXYLATION_RATE_(AOH)_CM3/MOLECULE*SEC_OPERA_PRED",
+                           "BIOCONCENTRATION_FACTOR_OPERA_PRED",
+                           "BIODEGRADATION_HALF_LIFE_DAYS_DAYS_OPERA_PRED",
+                           "BOILING_POINT_DEGC_OPERA_PRED",
+                           "HENRYS_LAW_ATM-M3/MOLE_OPERA_PRED",
+                           "OPERA_KM_DAYS_OPERA_PRED",
+                           "OCTANOL_AIR_PARTITION_COEFF_LOGKOA_OPERA_PRED",
+                           "SOIL_ADSORPTION_COEFFICIENT_KOC_L/KG_OPERA_PRED",
+                           "OCTANOL_WATER_PARTITION_LOGP_OPERA_PRED",
+                           "MELTING_POINT_DEGC_OPERA_PRED",
+                           "OPERA_PKAA_OPERA_PRED",
+                           "OPERA_PKAB_OPERA_PRED",
+                           "VAPOR_PRESSURE_MMHG_OPERA_PRED",
+                           "WATER_SOLUBILITY_MOL/L_OPERA_PRED",
+                           "EXPOCAST_MEDIAN_EXPOSURE_PREDICTION_MG/KG-BW/DAY",
+                           "NHANES",
+                           "TOXCAST_NUMBER_OF_ASSAYS/TOTAL",
+                           "TOXCAST_PERCENT_ACTIVE"
+                         ),
+                         mass_error = 0,
+                         timeout = 300,
+                         verify_ssl = FALSE,
+                         ...) {
   if (missing(ids)) {
     cli::cli_abort("The argument {.field ids} is required.")
   }
@@ -256,13 +255,12 @@ extr_comptox <- function(ids,
 
   cli::cli_alert_info("Getting CompTox info...")
 
-
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
-  identifier_types = c("chemical_name", "CASRN", "INCHIKEY", "dtxsid")
-  input_type = "IDENTIFIER"
+  identifier_types <- c("chemical_name", "CASRN", "INCHIKEY", "dtxsid")
+  input_type <- "IDENTIFIER"
 
-  params  <- list(
+  params <- list(
     identifierTypes = identifier_types,
     massError = mass_error,
     downloadItems = download_items,
@@ -275,16 +273,19 @@ extr_comptox <- function(ids,
 
   cli::cli_alert_info("Sending request to CompTox...")
 
-  post_result <- tryCatch({
-    httr2::request(base_url) |>
-      httr2::req_retry(max_tries = 5, max_seconds = 10) |>
-      httr2::req_body_json(params) |>
-      httr2::req_options(!!!libcurl_opt) |>
-      httr2::req_method("POST") |>
-      httr2::req_perform()
-  }, error = function(e) {
-    cli::cli_abort("Failed to perform the request: {e$message}")
-  })
+  post_result <- tryCatch(
+    {
+      httr2::request(base_url) |>
+        httr2::req_retry(max_tries = 5, max_seconds = 10) |>
+        httr2::req_body_json(params) |>
+        httr2::req_options(!!!libcurl_opt) |>
+        httr2::req_method("POST") |>
+        httr2::req_perform()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to perform the request: {e$message}")
+    }
+  )
 
 
   check_status_code(post_result)
@@ -294,13 +295,16 @@ extr_comptox <- function(ids,
 
   cli::cli_alert_info("Getting info from CompTox...")
 
-  resp <-  tryCatch({
-    httr2::request(paste0(base_url_down, response_body)) |>
-      httr2::req_options(!!!libcurl_opt) |>
-      httr2::req_perform()
-  }, error = function(e) {
-    cli::cli_abort("Failed to perform the request: {e$message}")
-  })
+  resp <- tryCatch(
+    {
+      httr2::request(paste0(base_url_down, response_body)) |>
+        httr2::req_options(!!!libcurl_opt) |>
+        httr2::req_perform()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to perform the request: {e$message}")
+    }
+  )
 
 
   check_status_code(resp)
@@ -317,7 +321,6 @@ extr_comptox <- function(ids,
   unlink(csv_file)
 
   out
-
 }
 
 
@@ -329,7 +332,6 @@ extr_comptox <- function(ids,
 #' @return Dataframe of GHS info.
 #' @export
 extr_ghs_pubchem <- function(casrn) {
-
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
   }
@@ -337,38 +339,33 @@ extr_ghs_pubchem <- function(casrn) {
   # Check if online
 
   cli::cli_alert_info("Getting PubChem IDS...")
-  dat_cid <-  webchem::get_cid(casrn, match = "first", verbose = TRUE)
+  dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
   cat("\n")
 
 
   if (all(is.na(dat_cid$cid))) {
-
     na_matrix <- matrix(NA, nrow = length(casrn), ncol = 6)
     out_df <- as.data.frame(na_matrix)
     colnames(out_df) <- c("cid", "casrn", "name", "GHS", "source_name", "source_id")
 
     out_df$casrn <- casrn
-
-
   } else {
+    names(dat_cid)[1] <- "casrn"
+    dat_cid <- dat_cid[!is.na(dat_cid$cid), ]
 
-  names(dat_cid)[1] <- "casrn"
-  dat_cid <- dat_cid[!is.na(dat_cid$cid), ]
+    cli::cli_alert_info("Getting GHS from PubChem...")
 
-  cli::cli_alert_info("Getting GHS from PubChem...")
+    dat <- webchem::pc_sect(dat_cid$cid, verbose = TRUE, section = "GHS Classification") |>
+      janitor::clean_names()
+    cat("\n")
 
-  dat <- webchem::pc_sect(dat_cid$cid, verbose = TRUE, section = "GHS Classification") |>
-    janitor::clean_names()
-  cat("\n")
+    dat_f <- dat[dat$result != "          ", ]
 
-  dat_f<- dat[dat$result != "          ", ]
-
-  names(dat_f)[3] <- "GHS"
-  out_df <- merge(dat_cid, dat_f, by = "cid")
+    names(dat_f)[3] <- "GHS"
+    out_df <- merge(dat_cid, dat_f, by = "cid")
   }
 
   out_df
-
 }
 
 
@@ -389,7 +386,6 @@ extr_ghs_pubchem <- function(casrn) {
 #' dat <- extr_ice(c("50-00-0"))
 #' }
 extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
-
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
   }
@@ -405,23 +401,28 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 
 
 
-  resp <- tryCatch({
+  resp <- tryCatch(
+    {
       httr2::request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
-      httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
-      httr2::req_options(!!!libcurl_opt) |>
-      httr2::req_perform()
-  }, error = function(e) {
-    cli::cli_abort("Failed to perform the request: {e$message}")
-  })
+        httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
+        httr2::req_options(!!!libcurl_opt) |>
+        httr2::req_perform()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to perform the request: {e$message}")
+    }
+  )
 
   check_status_code(resp)
 
   # This is used in case no results are retrieved in next chunk
-  col_names <- c("assay", "endpoint", "substanceType", "casrn", "qsarReadyId",
+  col_names <- c(
+    "assay", "endpoint", "substanceType", "casrn", "qsarReadyId",
     "value", "unit", "species", "receptorSpecies", "route", "sex",
     "strain", "lifeStage", "tissue", "lesion", "location", "assaySource",
     "inVitroAssayFormat", "reference", "referenceUrl", "dtxsid",
-    "substanceName", "pubMedId")
+    "substanceName", "pubMedId"
+  )
 
   out <- stats::setNames(data.frame(matrix(ncol = length(col_names), nrow = length(casrn))), col_names)
 
@@ -436,7 +437,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     error = function(e) {
       if (grepl("Unexpected content type \"text/plain\"", e$message)) {
         cli::cli_warn("It seems that the ids were not found in ICE: {e$message}")
-        NULL  # Or another suitable value
+        NULL # Or another suitable value
       } else {
         cli::cli_abort("An unexpected error occurred: {e$message}")
       }
@@ -445,23 +446,21 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 
   # if nothing is retrieved
   if (is.null(content)) {
-
     dat <- out
-
   } else {
-
     # Extract and combine data from the response
-    dat <- tryCatch({
-      do.call(rbind, content$endPoints) |>
-        as.data.frame()
-    }, error = function(e) {
-      cli::cli_abort("Failed to parse the JSON content: {e$message}")
-    })
-
+    dat <- tryCatch(
+      {
+        do.call(rbind, content$endPoints) |>
+          as.data.frame()
+      },
+      error = function(e) {
+        cli::cli_abort("Failed to parse the JSON content: {e$message}")
+      }
+    )
   }
 
   dat
-
 }
 
 
@@ -474,7 +473,6 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 #' @return List of dataframes.
 #' @export
 extr_tox <- function(casrn) {
-
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
   }
@@ -496,6 +494,5 @@ extr_tox <- function(casrn) {
 
   iris_filt <- extr_iris(keyword = casrn)
 
-  c(list(ghs_dat =  ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
+  c(list(ghs_dat = ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
 }
-

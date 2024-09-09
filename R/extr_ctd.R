@@ -52,6 +52,15 @@
 #'   ontology = c("go_bp", "go_cc")
 #' )
 #' str(dat)
+#'
+#' # Get expresssion data
+#' dat2 <-  extr_ctd(input_terms = input_terms,
+#'    report_type = "cgixns",
+#'    category = "chem",
+#'    action_types = "expression")
+#'
+#' str(dat2)
+#'
 #' }
 extr_ctd <- function(
     input_terms,
@@ -61,9 +70,7 @@ extr_ctd <- function(
     action_types = NULL,
     ontology = NULL,
     verify_ssl = FALSE,
-    ...
-) {
-
+    ...) {
   if (missing(input_terms)) {
     cli::cli_abort("The argument {.field {input_terms}} is required.")
   }
@@ -80,14 +87,16 @@ extr_ctd <- function(
     inputType = category,
     inputTerms = NULL, # this is add after
     report = report_type,
-    format = "csv",  # Fixed to CSV format
+    format = "csv", # Fixed to CSV format
     inputTermSearchType = input_term_search_type
   )
 
   # Add optional parameters and collapse is vector of length > 1
-  params_to_collapse <- list(inputTerms = input_terms,
-                             actionTypes = action_types,
-                             ontology = ontology)
+  params_to_collapse <- list(
+    inputTerms = input_terms,
+    actionTypes = action_types,
+    ontology = ontology
+  )
 
   # this can be fixed using .multi in req_url_query
   for (param_name in names(params_to_collapse)) {
@@ -102,15 +111,17 @@ extr_ctd <- function(
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
-  resp <- tryCatch({
-    httr2::request(base_url) |>
-      httr2::req_url_query(!!!params) |>
-      httr2::req_options(!!!libcurl_opt) |>
-      httr2::req_perform()
-
-  }, error = function(e) {
-    cli::cli_abort("Failed to perform the request: {e$message}")
-  })
+  resp <- tryCatch(
+    {
+      httr2::request(base_url) |>
+        httr2::req_url_query(!!!params) |>
+        httr2::req_options(!!!libcurl_opt) |>
+        httr2::req_perform()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to perform the request: {e$message}")
+    }
+  )
 
   check_status_code(resp)
 
@@ -164,9 +175,7 @@ extr_tetramer <- function(
     input_term_search_type = "directAssociations",
     qt_match_type = "equals",
     verify_ssl = FALSE,
-    ...
-) {
-
+    ...) {
   if (missing(chem)) {
     cli::cli_abort("The argument {.field {chem}} is required.")
   }
@@ -201,15 +210,17 @@ extr_tetramer <- function(
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
-  resp <- tryCatch({
-    httr2::request(base_url) |>
-      httr2::req_url_query(!!!params) |>
-      httr2::req_options(!!!libcurl_opt) |>
-      httr2::req_perform()
-
-  }, error = function(e) {
-    cli::cli_abort("Failed to perform the request: {e$message}")
-  })
+  resp <- tryCatch(
+    {
+      httr2::request(base_url) |>
+        httr2::req_url_query(!!!params) |>
+        httr2::req_options(!!!libcurl_opt) |>
+        httr2::req_perform()
+    },
+    error = function(e) {
+      cli::cli_abort("Failed to perform the request: {e$message}")
+    }
+  )
 
   check_status_code(resp)
 
@@ -225,5 +236,4 @@ extr_tetramer <- function(
   unlink(tab_file)
 
   out
-
 }

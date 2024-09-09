@@ -48,7 +48,6 @@ items_to_down <- function() {
 #' Assays of iris used in `extr_tox`.
 #' @seealso [extr_tox()]
 ice_assays <- function() {
-
   ice_carc_woe <-
     c(
       "OPP Carcinogenicity",
@@ -98,14 +97,15 @@ ice_assays <- function() {
   )
 
 
-  list(ice_carc_woe = ice_carc_woe,
-       ice_invivo_acute_tox = ice_invivo_acute_tox,
-       ice_invivo_sensitization = ice_invivo_sensitization,
-       ice_invivo_irritation = ice_invivo_irritation,
-       ice_invivo_endocrine = ice_invivo_endocrine,
-       ice_cancer = ice_cancer,
-       ice_dart = ice_dart
-       )
+  list(
+    ice_carc_woe = ice_carc_woe,
+    ice_invivo_acute_tox = ice_invivo_acute_tox,
+    ice_invivo_sensitization = ice_invivo_sensitization,
+    ice_invivo_irritation = ice_invivo_irritation,
+    ice_invivo_endocrine = ice_invivo_endocrine,
+    ice_cancer = ice_cancer,
+    ice_dart = ice_dart
+  )
 }
 
 
@@ -138,7 +138,6 @@ write_dataframes_to_excel <- function(df_list, filename) {
   # Save the workbook
   openxlsx::saveWorkbook(wb, filename, overwrite = TRUE)
   cli::cli_alert_info("Excell file written in {filename}...")
-
 }
 
 #' Check Internet Connection
@@ -148,7 +147,6 @@ write_dataframes_to_excel <- function(df_list, filename) {
 #'
 #' @return Prints a message indicating whether the computer is connected to the internet.
 check_internet <- function() {
-
   if (!pingr::is_online()) {
     cli::cli_abort("It seems that you are not connected to internet")
   }
@@ -187,5 +185,3 @@ check_status_code <- function(resp) {
     cli::cli_inform("Request succeeded with status code: {status_code}")
   }
 }
-
-

@@ -36,5 +36,3 @@ test_that("Missing required parameter", {
     "The argument ids is required."
   )
 })
-
-
