@@ -1,52 +1,6 @@
-#' items_to_down
-#'
-#' Columns of Main Data of CompTox extracted data. Used in `get_comptox`
-#' @seealso [extr_tox()]
-items_to_down <- function() {
-  c(
-    "DTXSID",
-    "PREFERRED_NAME",
-    "DTXCID",
-    "CASRN",
-    "INCHIKEY",
-    "IUPAC_NAME",
-    "SMILES",
-    "INCHI_STRING",
-    "MOLECULAR_FORMULA",
-    "SAFETY_DATA",
-    "TOXVAL_DATA",
-    "NUMBER_OF_PUBMED_ARTICLES",
-    "PUBCHEM_DATA_SOURCES",
-    "CPDAT_COUNT",
-    "IRIS_LINK",
-    "PPRTV_LINK",
-    "BIOCONCENTRATION_FACTOR_TEST_PRED",
-    "48HR_DAPHNIA_LC50_MOL/L_TEST_PRED",
-    "DEVTOX_TEST_PRED",
-    "96HR_FATHEAD_MINNOW_MOL/L_TEST_PRED",
-    "AMES_MUTAGENICITY_TEST_PRED",
-    "ORAL_RAT_LD50_MOL/KG_TEST_PRED",
-    "TETRAHYMENA_PYRIFORMIS_IGC50_MOL/L_TEST_PRED",
-    "WATER_SOLUBILITY_MOL/L_TEST_PRED",
-    "BIOCONCENTRATION_FACTOR_OPERA_PRED",
-    "BIODEGRADATION_HALF_LIFE_DAYS_DAYS_OPERA_PRED",
-    "OCTANOL_AIR_PARTITION_COEFF_LOGKOA_OPERA_PRED",
-    "SOIL_ADSORPTION_COEFFICIENT_KOC_L/KG_OPERA_PRED",
-    "OCTANOL_WATER_PARTITION_LOGP_OPERA_PRED",
-    "OPERA_PKAA_OPERA_PRED",
-    "OPERA_PKAB_OPERA_PRED",
-    "EXPOCAST_MEDIAN_EXPOSURE_PREDICTION_MG/KG-BW/DAY",
-    "NHANES",
-    "TOXCAST_NUMBER_OF_ASSAYS/TOTAL",
-    "TOXCAST_PERCENT_ACTIVE",
-    "TOXVAL_DETAILS"
-  )
-}
-
 #' ice_assays
 #'
-#' Assays of iris used in `extr_tox`.
-#' @seealso [extr_tox()]
+#' Selection of assays of iris
 ice_assays <- function() {
   ice_carc_woe <-
     c(
@@ -121,9 +75,8 @@ ice_assays <- function() {
 #'
 #' @examples
 #' \dontrun{
-#' df1 <- data.frame(a = 1:3, b = letters[1:3])
-#' df2 <- data.frame(x = rnorm(5), y = runif(5))
-#' write_dataframes_to_excel(list(df1 = df1, df2 = df2), "mydata.xlsx")
+#' tox_dat <- extr_tox("50-00-0")
+#' write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
 #' }
 write_dataframes_to_excel <- function(df_list, filename) {
   # Create a new workbook

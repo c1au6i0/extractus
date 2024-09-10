@@ -22,480 +22,588 @@
       Request succeeded with status code: 200
     Output
                                                                                                                                              assay
-      1                                                                                                                                      hCLAT
-      2                                                                                                                      Report on Carcinogens
-      3                                                                                                                                      hCLAT
-      4                                                                                                                       IRIS Carcinogenicity
-      5                                                                                                                        CoMPARA, AR Agonist
-      6                                                                                                                                      hCLAT
-      7                                                                                                                                     U-SENS
-      8                                                                                                                       IARC Carcinogenicity
-      9                                                                                                                                      hCLAT
-      10                                                                                                                     In Vitro Genotoxicity
-      11                                                                                                                                     hCLAT
-      12                                                                                                                      IRIS Carcinogenicity
-      13                                                                                                                                     hCLAT
-      14                                                                                                                      IRIS Carcinogenicity
-      15                                     OPERA, Collaborative Acute Toxicity Modeling Suite. Nontoxic. LD50 > 2000 mg/kg vs LD50  ≤ 2000 mg/kg
-      16                                                                                                                                    LuSens
-      17                                                                                                                    CoMPARA, AR Antagonist
-      18                                                                                                                             TER Corrosion
-      19                                                                                                                             TER Corrosion
-      20                                                                                                                             TER Corrosion
-      21                                                                                                                        CERAPP, ER Binding
-      22                                                                                                                              KeratinoSens
-      23                                                                                                                       CoMPARA, AR Binding
-      24                                                                                                                              KeratinoSens
-      25                                                                                                                        CERAPP, ER Agonist
-      26                                                                                                                                    mMUSST
-      27                                                                                                                                      DPRA
-      28                                                                                                                                      DPRA
-      29                                                                                                               CATMoS, Acute Oral Toxicity
-      30                                                                                                                                      DPRA
-      31                                                                                                                                      DPRA
-      32                                                                                                                                      DPRA
-      33                                                                                                                                      DPRA
-      34                                                                                                                                      DPRA
-      35                                                                                                                                      DPRA
-      36                                                                                                                                    U-SENS
-      37                                                                                                                                      DPRA
-      38                                                                                                                                      DPRA
-      39                                                                                                                                      LLNA
-      40                                                                                                                                      DPRA
-      41                                                                                                            Human Repeat Insult Patch Test
-      42                                         OPERA, Collaborative Acute Toxicity Modeling Suite. very_toxic LD50 ≤ 50 mg/kg vs LD50 > 50 mg/kg
-      43                                                                                                            Human Repeat Insult Patch Test
-      44                                                                                                            Human Repeat Insult Patch Test
-      45                                                                                                            Human Repeat Insult Patch Test
-      46                                                                                                            Human Repeat Insult Patch Test
-      47                                                                                                            Human Repeat Insult Patch Test
-      48                                                                                                            Human Repeat Insult Patch Test
-      49                                                                                                            Human Repeat Insult Patch Test
-      50                                                                                                                                      DPRA
-      51                                                                                                                   Human Maximization Test
-      52                                                                                                                   Human Maximization Test
-      53                                                                                                               CATMoS, Acute Oral Toxicity
+      1                                                                                                                              TER Corrosion
+      2                                                                                   OPERA, soil adsorption coefficient of organic compounds.
+      3                                                                                                                              TER Corrosion
+      4                                                                                                                OPERA, Henry's Law Constant
+      5                                   OPERA, The whole body primary biotransformation rate (half-life) constant for organic chemicals in fish.
+      6                                                                                                                              TER Corrosion
+      7                                                                                                 OPERA, Octanol-Water Partition Coefficient
+      8                                                                                                                              TER Corrosion
+      9                                                                                                                              TER Corrosion
+      10                                                                                                               OPERA, HPLC retention time.
+      11                                                                                                                             TER Corrosion
+      12                                                                                                      OPERA, Human Plasma Fraction Unbound
+      13                                                                                                                       CoMPARA, AR Binding
+      14                                                                                                       OPERA, Fish bioconcentration factor
+      15  OPERA, OH rate constant for the atmospheric, gas-phase reaction between photochemically produced hydroxyl radicals and organic chemicals
+      16                                                                                                      OPERA, Caco-2 permeability (logPapp)
+      17                                                                                                                        CERAPP, ER Agonist
+      18                                                                                                                       CoMPARA, AR Binding
+      19                                                         OPERA, biodegradation half-life for compounds containing only carbon and hydrogen
+      20                                                                                                                    CoMPARA, AR Antagonist
+      21                                                                                                  OPERA, Human Hepatic Intrinsic Clearance
+      22                                                                                                                        CERAPP, ER Agonist
+      23                                                                                                                    CoMPARA, AR Antagonist
+      24                                                                                                                     CERAPP, ER Antagonist
+      25                                                                                                                     CERAPP, ER Antagonist
+      26                                                                                                                       CoMPARA, AR Agonist
+      27                                                                                                                       CoMPARA, AR Agonist
+      28                                                                                                               CATMoS, Acute Oral Toxicity
+      29                                                                                                                                   SENS-IS
+      30                                                                                                               CATMoS, Acute Oral Toxicity
+      31                                                                                                                                    U-SENS
+      32                                                                                                                        CERAPP, ER Binding
+      33                                                                                                                                    U-SENS
+      34                                                                                                                        CERAPP, ER Binding
+      35                                                                                                                            Functional Use
+      36                                                                                                               CATMoS, Acute Oral Toxicity
+      37                                                                                                                            Functional Use
+      38                                                                                                               CATMoS, Acute Oral Toxicity
+      39                                                                                                                            Functional Use
+      40                                                                                                               CATMoS, Acute Oral Toxicity
+      41                                                                                                                            Functional Use
+      42                                                                                                               CATMoS, Acute Oral Toxicity
+      43                                                                                                                            Functional Use
+      44                                                                                                               CATMoS, Acute Oral Toxicity
+      45                                                                                                                            Functional Use
+      46                                                                                                                      OPERA, Boiling Point
+      47                                                                                                                            Functional Use
+      48                                                                                                               CATMoS, Acute Oral Toxicity
+      49                                                                                                               CATMoS, Acute Oral Toxicity
+      50                                                                                                                     OPERA, Vapor Pressure
+      51                                                                                                                   OPERA, Water Solubility
+      52                                                                                                                      OPERA, Melting Point
+      53                                                                                                  OPERA, Octanol-Air Partition Coefficient
       54                                                                                                                                     hCLAT
       55                                                                                                                                     hCLAT
       56                                                                                                                                     hCLAT
-      57                                                                                                                     CERAPP, ER Antagonist
-      58                                                                                                            Human Repeat Insult Patch Test
-      59                                                                                                            Human Repeat Insult Patch Test
-      60                                                                                                                   Human Maximization Test
-      61                                                                                                                             TER Corrosion
-      62                                                                                                                             TER Corrosion
-      63                                                                                                                             TER Corrosion
-      64                                                                                                            Human Repeat Insult Patch Test
-      65                                                                                                            Human Repeat Insult Patch Test
+      57                                                                                                                                     hCLAT
+      58                                                                                                                     Report on Carcinogens
+      59                                                                                                                      IARC Carcinogenicity
+      60                                                                                                                              KeratinoSens
+      61                                                                                                                              KeratinoSens
+      62                                                                                                                              KeratinoSens
+      63                                                                                                                              KeratinoSens
+      64                                                                                                                                    LuSens
+      65                                                                                                                                    LuSens
       66                                                                                                                   Human Maximization Test
-      67                                                                                                            Human Repeat Insult Patch Test
-      68                                                                                                                                     hCLAT
-      69                                                                                                                   Human Maximization Test
-      70                                                                                                                   Human Maximization Test
-      71                                                                                                                                     hCLAT
-      72                                                                                                                   Human Maximization Test
-      73                                                                                                                                     hCLAT
-      74                                                                                                                   Human Maximization Test
-      75                                                                                                                                    LuSens
-      76                                                                                                             Rat Acute Inhalation Toxicity
-      77                                                                                                      OPERA, Caco-2 permeability (logPapp)
-      78                                                                                             OPERA, Octanol-Water Distribution Coefficient
-      79                                                                                                            Human Repeat Insult Patch Test
-      80                                                                                                                                     hCLAT
-      81                                                                                                                                      LLNA
-      82                                  OPERA, The whole body primary biotransformation rate (half-life) constant for organic chemicals in fish.
-      83                                                                                                                                     hCLAT
-      84                                                                                                            Human Repeat Insult Patch Test
-      85                                                                                                                                     hCLAT
-      86                                                                                                                                      LLNA
-      87                                                                                                            Human Repeat Insult Patch Test
+      67                                                                                                                   Human Maximization Test
+      68                                                                                                                                    mMUSST
+      69                                                                                                                                   SENS-IS
+      70                                                                                                                                      DPRA
+      71                                                                                                                                      DPRA
+      72                                                                                                                                      DPRA
+      73                                                                                                                                      DPRA
+      74                                                                                                                                      DPRA
+      75                                                                                                                                      DPRA
+      76                                                                                                                                      DPRA
+      77                                                                                                                                      LLNA
+      78                                                                                                                      IRIS Carcinogenicity
+      79                                                                                             OPERA, Octanol-Water Distribution Coefficient
+      80                                                                                                                      IRIS Carcinogenicity
+      81                                                                                                                              Genotoxicity
+      82                                                                                                                                     hCLAT
+      83                                                                                         OPERA, Negative Log of Acid Dissociation Constant
+      84                                                                                                                                     hCLAT
+      85                                                                                         OPERA, Negative Log of Acid Dissociation Constant
+      86                                                                                                                                     hCLAT
+      87                                                                                             OPERA, Octanol-Water Distribution Coefficient
       88                                                                                                                                     hCLAT
-      89                                                                                                                                      LLNA
-      90                                                                                                            Human Repeat Insult Patch Test
-      91                                                                                                                                      LLNA
+      89                                                                                         OPERA, Negative Log of Acid Dissociation Constant
+      90                                                                                                                                     hCLAT
+      91                                                                                                            Human Repeat Insult Patch Test
       92                                                                                                            Human Repeat Insult Patch Test
-      93                                                                                                                                      LLNA
+      93                                                                                                            Human Repeat Insult Patch Test
       94                                                                                                            Human Repeat Insult Patch Test
-      95                                                                                                                                      LLNA
+      95                                                                                                            Human Repeat Insult Patch Test
       96                                                                                                            Human Repeat Insult Patch Test
-      97                                                                                                                                      LLNA
-      98                                                                                                                                      DPRA
-      99                                                                                                                                    U-SENS
-      100                                                                                                                                     DPRA
-      101                                                                                                                                   U-SENS
+      97                                                                                                            Human Repeat Insult Patch Test
+      98                                                                                                            Human Repeat Insult Patch Test
+      99                                                                                                            Human Repeat Insult Patch Test
+      100                                                                                                           Human Repeat Insult Patch Test
+      101                                                                                                                                     DPRA
       102                                                                                                                                     DPRA
-      103 OPERA, OH rate constant for the atmospheric, gas-phase reaction between photochemically produced hydroxyl radicals and organic chemicals
+      103                                                                                                                                     DPRA
       104                                                                                                                                     DPRA
       105                                                                                                                                     DPRA
-      106                                                                                                           Human Repeat Insult Patch Test
-      107                                                                                                           Human Repeat Insult Patch Test
-      108                                                                                                                                     LLNA
-      109                                                                                                                                   Cancer
-      110                                                                                                                OPERA, Molar refractivity
+      106                                                                                                                                     DPRA
+      107                                                                                                                                     DPRA
+      108                                                                                                                                     DPRA
+      109                                                                                                                                     DPRA
+      110                                                                                                           Human Repeat Insult Patch Test
       111                                                                                                           Human Repeat Insult Patch Test
       112                                                                                                           Human Repeat Insult Patch Test
-      113                                                                                            OPERA, Octanol-Water Distribution Coefficient
-      114                                                                                                                                     LLNA
-      115                                                                                                           Human Repeat Insult Patch Test
-      116                                                                                                           Human Repeat Insult Patch Test
-      117                                                                                                           Human Repeat Insult Patch Test
-      118                                                                                                           Human Repeat Insult Patch Test
-      119                                                                                                           Human Repeat Insult Patch Test
-      120                                                                                                                                     LLNA
-      121                                                                                                           Human Repeat Insult Patch Test
-      122                                                                                                                                     LLNA
-      123                                                                                                           Human Repeat Insult Patch Test
-      124                                                                                                                                     LLNA
-      125                                                                                                           Human Repeat Insult Patch Test
-      126                                                                                                                                     LLNA
-      127                                                                                                           Human Repeat Insult Patch Test
-      128                                                                                                                                     LLNA
-      129                                                                                                           Human Repeat Insult Patch Test
-      130                                                                                                                                     LLNA
-      131                                                                                                           Human Repeat Insult Patch Test
-      132                                                                                                                  OPERA, Water Solubility
-      133                                                                                                                                     LLNA
-      134                                                                                                           Human Repeat Insult Patch Test
-      135                                                                                                                                     LLNA
+      113                                                                                                           Human Repeat Insult Patch Test
+      114                                                                                                                                     DPRA
+      115                                                                                                                                     DPRA
+      116                                                                                                                                     DPRA
+      117                                                                                                                                     DPRA
+      118                                                                                                                                     DPRA
+      119                                                                                                                                     DPRA
+      120                                                                                                                                     DPRA
+      121                                                                                                                                     DPRA
+      122                                                                                                                                     DPRA
+      123                                                                                                                                     DPRA
+      124                                                                                                                                     DPRA
+      125                                                                                                                                     DPRA
+      126                                                                                                                                     DPRA
+      127                                                                                                                                     DPRA
+      128                                                                                                                                     DPRA
+      129                                                                                                                                     DPRA
+      130                                                                                                                                     DPRA
+      131                                                                                                            OPERA, Number of oxygen atoms
+      132                                                                                                                                     DPRA
+      133                                                                                                              OPERA, HPLC retention time.
+      134                                                                                                                                     DPRA
+      135                                                                               OPERA, Number of rotatable bonds, excluding terminal bonds
       136                                                                                                                                     DPRA
-      137                                                                                                                                     DPRA
+      137                                                                                                          OPERA, Number of nitrogen atoms
       138                                                                                                                                     DPRA
       139                                                                                                                                     DPRA
       140                                                                                                                                     DPRA
       141                                                                                                                                     DPRA
-      142                                                                                                                                     DPRA
-      143                                                                                                                                     DPRA
-      144                                                                                                                                     DPRA
-      145                                                                                                                                     DPRA
-      146                                                                                                                                     DPRA
-      147                                                                                                                                     DPRA
-      148                                                                                                                                     DPRA
-      149                                                                                                                                     DPRA
-      150                                                                                                                                     DPRA
-      151                                                                                               OPERA, Octanol-Water Partition Coefficient
-      152                                                                                                                                     DPRA
-      153                                                                                                                                     DPRA
-      154                                                                                                                                     DPRA
-      155                                                                                                              OPERA, Henry's Law Constant
-      156                                                                                                                                     DPRA
-      157                                                                                                                                     DPRA
-      158                                                                                                                                     DPRA
-      159                                                                                                                                     DPRA
-      160                                                                                                                                     DPRA
-      161                                                                                                                                     DPRA
-      162                                                                                                                                     DPRA
-      163                                                                                                                                   LuSens
-      164                                                                                                                                     DPRA
-      165                                                                                                                    OPERA, Vapor Pressure
-      166                                                                                                                                     DPRA
-      167                                                                                                                                     DPRA
-      168                                                                                                                                     DPRA
-      169                                                                                                OPERA, Combined dipolarity/polarizability
-      170                                                                                                            OPERA, Number of oxygen atoms
-      171                                                                                                            OPERA, Number of carbon atoms
-      172                                                                                                              OPERA, HPLC retention time.
-      173                                                                                                                                     DPRA
-      174                                                                                                                                     DPRA
-      175                                                                                                                                   mMUSST
-      176                                                                                        OPERA, Negative Log of Acid Dissociation Constant
-      177                                                                                                 OPERA, Octanol-Air Partition Coefficient
-      178                                                        OPERA, biodegradation half-life for compounds containing only carbon and hydrogen
-      179                                                                  OPERA, Number of rings containing heteroatoms (N, O, P, S, or halogens)
-      180                                                                                       OPERA, Number failures of the Lipinski's Rule Of 5
-      181                                                                                                              CATMoS, Acute Oral Toxicity
-      182                                                                                                     OPERA, Human Plasma Fraction Unbound
-      183                                                                                         OPERA, Number of heavy atoms (i.e. not hydrogen)
-      184                                                                                                 OPERA, Human Hepatic Intrinsic Clearance
-      185                                                                                                          OPERA, Number of nitrogen atoms
-      186                                                                                                                   OPERA, Number of atoms
+      142                                                                                                           Human Repeat Insult Patch Test
+      143                                                                                                           Human Repeat Insult Patch Test
+      144                                                                                                           Human Repeat Insult Patch Test
+      145                                                                                                           Human Repeat Insult Patch Test
+      146                                                                                                           Human Repeat Insult Patch Test
+      147                                                                                                           Human Repeat Insult Patch Test
+      148                                                                                                           Human Repeat Insult Patch Test
+      149                                                                                                           Human Repeat Insult Patch Test
+      150                                                                                                           Human Repeat Insult Patch Test
+      151                                                                                                           Human Repeat Insult Patch Test
+      152                                                                                                           Human Repeat Insult Patch Test
+      153                                                                                                           Human Repeat Insult Patch Test
+      154                                                                                                           Human Repeat Insult Patch Test
+      155                                                                                                           Human Repeat Insult Patch Test
+      156                                                                                                           Human Repeat Insult Patch Test
+      157                                                                                                           Human Repeat Insult Patch Test
+      158                                                                                                           Human Repeat Insult Patch Test
+      159                                                                                                           Human Repeat Insult Patch Test
+      160                                                                                                           Human Repeat Insult Patch Test
+      161                                                                                                                            TER Corrosion
+      162                                                                                                           Human Repeat Insult Patch Test
+      163                                                                                                                            TER Corrosion
+      164                                                                                                           Human Repeat Insult Patch Test
+      165                                                                                                           Human Repeat Insult Patch Test
+      166                                                                                                           Human Repeat Insult Patch Test
+      167                                                                                                                            TER Corrosion
+      168                                                                                                           Human Repeat Insult Patch Test
+      169                                                                                                                            TER Corrosion
+      170                                                                                                           Human Repeat Insult Patch Test
+      171                                                                                                                            TER Corrosion
+      172                                                                                                           Human Repeat Insult Patch Test
+      173                                                                                                                            TER Corrosion
+      174                                                                                                           Human Repeat Insult Patch Test
+      175                                                                                                                  Rat Acute Oral Toxicity
+      176                                                                                                                  Rat Acute Oral Toxicity
+      177                                                                                                            Rat Acute Inhalation Toxicity
+      178                                                                                                            Rat Acute Inhalation Toxicity
+      179                                                                                                            Rat Acute Inhalation Toxicity
+      180                                                                                                            Rat Acute Inhalation Toxicity
+      181                                                                                                            Rat Acute Inhalation Toxicity
+      182                                                                                                            Rat Acute Inhalation Toxicity
+      183                                                                                            OPERA, Octanol-Water Distribution Coefficient
+      184                                                                                                                                    hCLAT
+      185                                                                                                                                    hCLAT
+      186                                                                                                                  Rat Acute Oral Toxicity
       187                                                                                                                  Rat Acute Oral Toxicity
-      188                                                                                                            Rat Acute Inhalation Toxicity
+      188                                                                                                                  Rat Acute Oral Toxicity
       189                                                                                                                  Rat Acute Oral Toxicity
-      190                                                                                                            Rat Acute Inhalation Toxicity
+      190                                                                                                                  Rat Acute Oral Toxicity
       191                                                                                                                  Rat Acute Oral Toxicity
-      192                                                                                                                  Rat Acute Oral Toxicity
-      193                                                                                                                  Rat Acute Oral Toxicity
-      194                                                                                                                                   LuSens
-      195                                                                                                                  Rat Acute Oral Toxicity
-      196                                                                                                          OPERA, Number of aromatic atoms
-      197                                              OPERA, Number of hydrogen bond acceptors (using CDK HBondAcceptorCountDescriptor algorithm)
-      198                                                                                                              SEEM3, Exposure Predictions
-      199                                                                                                              SEEM3, Exposure Predictions
-      200                                                                                                              SEEM3, Exposure Predictions
-      201                                                                                                                   OPERA, Number of rings
-      202                                                                                            OPERA, Fraction of sp3 carbons to sp2 carbons
-      203                                                                                                            Rat Acute Inhalation Toxicity
-      204                                                    OPERA, Number of hydrogen bond donors (using CDK HBondDonorCountDescriptor algorithm)
-      205                                                                                                                             KeratinoSens
+      192                                                                                                                             KeratinoSens
+      193                                                                                                                             KeratinoSens
+      194                                                                                                                                    hCLAT
+      195                                                                                                                             KeratinoSens
+      196                                                                                                                                    hCLAT
+      197                                                                                                                                    hCLAT
+      198                                                                                                                                    hCLAT
+      199                                                                                                                                    hCLAT
+      200                                                                                                                  Human Maximization Test
+      201                                                                                                                  Human Maximization Test
+      202                                                                                                                  Human Maximization Test
+      203                                                                                                                  Human Maximization Test
+      204                                                                                                                                   LuSens
+      205                                                                                                                                   LuSens
       206                                                                                                                             KeratinoSens
       207                                                                                                                             KeratinoSens
-      208                                                                                                                             KeratinoSens
-      209                                                                                                                                     LLNA
-      210                                                                                                                             KeratinoSens
-      211                                                                                                                     OPERA, Boiling Point
-      212                                                                               OPERA, Number of rotatable bonds, excluding terminal bonds
-      213                                                                                                            Rat Acute Inhalation Toxicity
-      214                                                                                                                  Rat Acute Oral Toxicity
-      215                                                                                                                  Rat Acute Oral Toxicity
-      216                                                                                                            Rat Acute Inhalation Toxicity
-      217                                                                                                                         Molecular Weight
-      218                                                                                 OPERA, soil adsorption coefficient of organic compounds.
-      219                                                                                                                     OPERA, Melting Point
-      220                                                                                                      OPERA, Fish bioconcentration factor
-      221                                                                                                                             KeratinoSens
-      222                                                                                                                             KeratinoSens
-      223                                                                                                    OPERA, Topological polar surface area
-      224                                                                                                            Rat Acute Inhalation Toxicity
-      225                                                                                                            Rat Acute Inhalation Toxicity
-      226                                                                                                                                   U-SENS
+      208                                                                                                                                     DPRA
+      209                                                                                                                  OPERA, Water Solubility
+      210                                                                                                                                     DPRA
+      211                                 OPERA, The whole body primary biotransformation rate (half-life) constant for organic chemicals in fish.
+      212                                                                                                                                     DPRA
+      213                                                                                               OPERA, Octanol-Water Partition Coefficient
+      214                                                                                                                                     DPRA
+      215                                                                                 OPERA, soil adsorption coefficient of organic compounds.
+      216                                                                                                                                     DPRA
+      217                                                                                                              OPERA, Henry's Law Constant
+      218                                                                                                                                     DPRA
+      219                                                                                                                   OPERA, Number of rings
+      220                                                                                                                                     DPRA
+      221                                                    OPERA, Number of hydrogen bond donors (using CDK HBondDonorCountDescriptor algorithm)
+      222                                                                                                                                     DPRA
+      223                                                                                            OPERA, Fraction of sp3 carbons to sp2 carbons
+      224                                                                                                                                     LLNA
+      225                                                                                                            OPERA, Number of carbon atoms
+      226                                                                                                                                     LLNA
+      227                                                                                       OPERA, Number failures of the Lipinski's Rule Of 5
+      228                                                                                                                                     LLNA
+      229                                              OPERA, Number of hydrogen bond acceptors (using CDK HBondAcceptorCountDescriptor algorithm)
+      230                                                                                                                                     LLNA
+      231                                                                                                                     OPERA, Melting Point
+      232                                                                                                                                     LLNA
+      233                                                                                                 OPERA, Octanol-Air Partition Coefficient
+      234                                                                                                                                     LLNA
+      235                                                                                                                    OPERA, Vapor Pressure
+      236                                                                                                                                     LLNA
+      237                                                                                                                OPERA, Molar refractivity
+      238                                                                                                                                     LLNA
+      239                                                                                                                         Molecular Weight
+      240                                                                                                                                     LLNA
+      241                                                                                                OPERA, Combined dipolarity/polarizability
+      242                                                                                                                                     LLNA
+      243                                                                                                              CATMoS, Acute Oral Toxicity
+      244                                                                                                                                     LLNA
+      245                                                                                                                     OPERA, Boiling Point
+      246                                                                                                                                     LLNA
+      247                                                                                                    OPERA, Topological polar surface area
+      248                                                                                                                                     LLNA
+      249                                                                  OPERA, Number of rings containing heteroatoms (N, O, P, S, or halogens)
+      250                                                                                                                                     LLNA
+      251                                                                                                          OPERA, Number of aromatic atoms
+      252                                                                                                                                     LLNA
+      253                                                                                         OPERA, Number of heavy atoms (i.e. not hydrogen)
+      254                                                                                                                                     LLNA
+      255                                                                                                                   OPERA, Number of atoms
+      256                                                                                                            Rat Acute Inhalation Toxicity
+      257                                                                                            OPERA, Octanol-Water Distribution Coefficient
+      258                                                                                                            Rat Acute Inhalation Toxicity
+      259                                                                                        OPERA, Negative Log of Acid Dissociation Constant
+      260                                                                                                              SEEM3, Exposure Predictions
+      261                                                                                                      OPERA, Fish bioconcentration factor
+      262                                                                                                              SEEM3, Exposure Predictions
+      263 OPERA, OH rate constant for the atmospheric, gas-phase reaction between photochemically produced hydroxyl radicals and organic chemicals
+      264                                                                                                                     IRIS Carcinogenicity
+      265                                                                                                     OPERA, Human Plasma Fraction Unbound
+      266                                                                                                              SEEM3, Exposure Predictions
+      267                                                        OPERA, biodegradation half-life for compounds containing only carbon and hydrogen
+      268                                                                                                                                     LLNA
+      269                                                                                                     OPERA, Caco-2 permeability (logPapp)
+      270                                                                                                                                     LLNA
+      271                                                                                                 OPERA, Human Hepatic Intrinsic Clearance
+      272                                                                                                                                   U-SENS
+      273                                                                                                                                   U-SENS
+      274                                                                                                                                  SENS-IS
+      275                                                                                                                                  SENS-IS
+      276                                                                                                                  Human Maximization Test
+      277                                                                                                                                   mMUSST
+      278                                                                                                                  Human Maximization Test
+      279                                                                                                                  Human Maximization Test
+      280                                                                                                                                   U-SENS
                                                                   endpoint
-      1                                                         CD54, Call
-      2                                                     Listing status
-      3                                                         CD86, Call
-      4                                               WOE characterization
-      5                                                               Call
+      1                                                               Call
+      2                                               Applicability_Domain
+      3                                                               Call
+      4                                               Applicability_Domain
+      5                                               Applicability_Domain
       6                                                               Call
-      7                                                               Call
-      8                                                         IARC group
-      9                                                         CD86, Call
-      10                                            Bacterial mutagenicity
+      7                                               Applicability_Domain
+      8                                                               Call
+      9                                                               Call
+      10                                              Applicability_Domain
       11                                                              Call
-      12                                                        Tumor type
-      13                                                        CD54, Call
-      14                                              Inhalation risk unit
-      15                                                         CATMoS_NT
-      16                                                              Call
+      12                                              Applicability_Domain
+      13                                                              Call
+      14                                              Applicability_Domain
+      15                                              Applicability_Domain
+      16                                              Applicability_Domain
       17                                                              Call
-      18                                                              Call
-      19                                                              Call
-      20                                                              Call
-      21                                                              Call
-      22                                                              Call
+      18                                              Applicability_Domain
+      19                                              Applicability_Domain
+      20                                              Applicability_Domain
+      21                                              Applicability_Domain
+      22                                              Applicability_Domain
       23                                                              Call
       24                                                              Call
-      25                                                              Call
+      25                                              Applicability_Domain
       26                                                              Call
-      27                                                              Call
-      28                                                              Call
-      29                                                EPA Classification
-      30                                                              Call
+      27                                              Applicability_Domain
+      28                                                        Very Toxic
+      29                                                           Potency
+      30                                              Applicability_Domain
       31                                                              Call
       32                                                              Call
       33                                                              Call
-      34                                                              Call
-      35                                                              Call
-      36                                                              Call
-      37                                                              Call
-      38                                                              Call
-      39                                                              Call
-      40                                                              Call
-      41                                                              Call
-      42                                                         CATMoS_VT
-      43                                        Relative reliability score
-      44                                                              Call
-      45                                        Relative reliability score
-      46                                                              Call
-      47                                        Relative reliability score
-      48                                                              Call
-      49                                        Relative reliability score
-      50                                                              Call
-      51                                                              Call
-      52                                        Relative reliability score
-      53                                                GHS Classification
+      34                                              Applicability_Domain
+      35                                               OECD Functional Use
+      36                                                         Non Toxic
+      37                                               OECD Functional Use
+      38                                              Applicability_Domain
+      39                                               OECD Functional Use
+      40                                                EPA Classification
+      41                                               OECD Functional Use
+      42                                              Applicability_Domain
+      43                                               OECD Functional Use
+      44                                              Applicability_Domain
+      45                                               OECD Functional Use
+      46                                              Applicability_Domain
+      47                                               OECD Functional Use
+      48                                                GHS Classification
+      49                                              Applicability_Domain
+      50                                              Applicability_Domain
+      51                                              Applicability_Domain
+      52                                              Applicability_Domain
+      53                                              Applicability_Domain
       54                                                        CD86, Call
-      55                                                        CD54, Call
-      56                                                              Call
-      57                                                              Call
-      58                                                              Call
-      59                                        Relative reliability score
-      60                                      Induction dose per skin area
-      61                                                               TER
-      62                                                               TER
-      63                                                               TER
-      64                                   Incidence of positive responses
-      65                                      Induction dose per skin area
-      66  Induction dose per skin area, 5% incidence of positive responses
-      67                                      Induction dose per skin area
-      68                                                              CV75
-      69               Induction dose per skin area, one positive response
-      70                 Concentration, 5% incidence of positive responses
-      71                                                       CD86, EC150
-      72                                   Incidence of positive responses
-      73                                                       CD54, EC200
-      74                              Concentration, one positive response
-      75                                                             EC1.5
-      76                                                              LC50
-      77                                                          LogCACO2
-      78                                                      LogD, ph 7.4
-      79  Induction dose per skin area, 5% incidence of positive responses
-      80                                                       CD54, EC200
-      81                                                               EC3
-      82                                                             LogKM
-      83                                                              CV75
-      84               Induction dose per skin area, one positive response
-      85                                                              CV75
-      86                                                               EC3
-      87                 Concentration, 5% incidence of positive responses
-      88                                                       CD86, EC150
-      89                                                               EC3
-      90                                   Incidence of positive responses
-      91                                                               EC3
-      92                              Concentration, one positive response
-      93                                                               EC3
-      94  Induction dose per skin area, 5% incidence of positive responses
-      95                                                               EC3
-      96                                      Induction dose per skin area
-      97                                                               EC3
-      98                                                     Depletion Lys
-      99                                                       CD86, EC150
-      100                                                    Depletion Cys
-      101                                                             CV70
-      102                                                    Depletion Cys
-      103                                                           LogAOH
-      104                                              Depletion Lys + Cys
-      105                                                    Depletion Lys
-      106                                  Incidence of positive responses
-      107                             Concentration, one positive response
-      108                                                              EC3
-      109                                            Cancer Endpoint Count
-      110                                                     MolarRefract
-      111 Induction dose per skin area, 5% incidence of positive responses
-      112                                     Induction dose per skin area
-      113                                                     LogD, ph 5.5
-      114                                                              EC3
-      115              Induction dose per skin area, one positive response
-      116                Concentration, 5% incidence of positive responses
-      117                                  Incidence of positive responses
-      118                             Concentration, one positive response
-      119              Induction dose per skin area, one positive response
-      120                                                              EC3
-      121                Concentration, 5% incidence of positive responses
-      122                                                              EC3
-      123                                  Incidence of positive responses
-      124                                                              EC3
-      125                             Concentration, one positive response
-      126                                                              EC3
-      127 Induction dose per skin area, 5% incidence of positive responses
-      128                                                              EC3
-      129                                     Induction dose per skin area
-      130                                                              EC3
-      131              Induction dose per skin area, one positive response
-      132                                                               WS
-      133                                                              EC3
-      134                Concentration, 5% incidence of positive responses
-      135                                                              EC3
-      136                                                    Depletion Lys
-      137                                                    Depletion Cys
-      138                                                    Depletion Cys
-      139                                              Depletion Lys + Cys
+      55                                                              Call
+      56                                                        CD54, Call
+      57                                                        CD86, Call
+      58                                                    Listing status
+      59                                                        IARC group
+      60                                                              Call
+      61                                                              Call
+      62                                                              Imax
+      63                                                              Imax
+      64                                                              Imax
+      65                                                              Call
+      66                                                              Call
+      67                                        Relative reliability score
+      68                                                              Call
+      69                                                           Potency
+      70                                                              Call
+      71                                                              Call
+      72                                                              Call
+      73                                                              Call
+      74                                                              Call
+      75                                                              Call
+      76                                                              Call
+      77                                                              Call
+      78                                                        Tumor type
+      79                                              Applicability_Domain
+      80                                              WOE characterization
+      81                                            Bacterial mutagenicity
+      82                                                              Call
+      83                                              Applicability_Domain
+      84                                                        CD86, Call
+      85                                              Applicability_Domain
+      86                                                        CD54, Call
+      87                                              Applicability_Domain
+      88                                                              Call
+      89                                              Applicability_Domain
+      90                                                        CD54, Call
+      91                                                              Call
+      92                                                              Call
+      93                                        Relative reliability score
+      94                                        Relative reliability score
+      95                                                              Call
+      96                                        Relative reliability score
+      97                                                              Call
+      98                                                              Call
+      99                                        Relative reliability score
+      100                                       Relative reliability score
+      101                                                             Call
+      102                                                             Call
+      103                                                             Call
+      104                                                             Call
+      105                                                             Call
+      106                                                    Depletion Cys
+      107                                              Depletion Lys + Cys
+      108                                                    Depletion Cys
+      109                                                    Depletion Lys
+      110                                     Induction dose per skin area
+      111                                  Incidence of positive responses
+      112 Induction dose per skin area, 5% incidence of positive responses
+      113                                     Induction dose per skin area
+      114                                                    Depletion Lys
+      115                                              Depletion Lys + Cys
+      116                                                    Depletion Cys
+      117                                              Depletion Lys + Cys
+      118                                              Depletion Lys + Cys
+      119                                                    Depletion Lys
+      120                                                    Depletion Lys
+      121                                                    Depletion Cys
+      122                                                    Depletion Lys
+      123                                                    Depletion Cys
+      124                                                    Depletion Cys
+      125                                              Depletion Lys + Cys
+      126                                              Depletion Lys + Cys
+      127                                                    Depletion Lys
+      128                                                    Depletion Lys
+      129                                                    Depletion Cys
+      130                                              Depletion Lys + Cys
+      131                                                              nbO
+      132                                                    Depletion Lys
+      133                                                               RT
+      134                                                    Depletion Cys
+      135                                                          nbRotBd
+      136                                              Depletion Lys + Cys
+      137                                                              nbN
+      138                                                    Depletion Lys
+      139                                                    Depletion Cys
       140                                              Depletion Lys + Cys
       141                                                    Depletion Lys
-      142                                                    Depletion Lys
-      143                                                    Depletion Cys
-      144                                              Depletion Lys + Cys
-      145                                                    Depletion Lys
-      146                                                    Depletion Lys
-      147                                                    Depletion Cys
-      148                                                    Depletion Cys
-      149                                              Depletion Lys + Cys
-      150                                              Depletion Lys + Cys
-      151                                                             LogP
-      152                                                    Depletion Lys
-      153                                              Depletion Lys + Cys
-      154                                                    Depletion Lys
-      155                                                               HL
-      156                                                    Depletion Lys
-      157                                                    Depletion Cys
-      158                                                    Depletion Cys
-      159                                              Depletion Lys + Cys
-      160                                              Depletion Lys + Cys
-      161                                                    Depletion Lys
-      162                                              Depletion Lys + Cys
-      163                                                             IC50
-      164                                                    Depletion Lys
-      165                                                               VP
-      166                                                    Depletion Cys
-      167                                                    Depletion Cys
-      168                                              Depletion Lys + Cys
-      169                                                 CombDipolPolariz
-      170                                                              nbO
-      171                                                              nbC
-      172                                                               RT
-      173                                                    Depletion Cys
-      174                                              Depletion Lys + Cys
-      175                                                      CD86, EC120
-      176                                                 pKa, Ionizations
-      177                                                              KOA
-      178                                                        LogBioDeg
-      179                                                     nbHeteroRing
-      180                                               nbLipinskiFailures
-      181                                                             LD50
-      182                                                               Fu
-      183                                                     nbHeavyAtoms
-      184                                                            Clint
-      185                                                              nbN
-      186                                                          nbAtoms
+      142                                                    Concentration
+      143                                                    Concentration
+      144                                  Incidence of positive responses
+      145 Induction dose per skin area, 5% incidence of positive responses
+      146 Induction dose per skin area, 5% incidence of positive responses
+      147                Concentration, 5% incidence of positive responses
+      148                Concentration, 5% incidence of positive responses
+      149              Induction dose per skin area, one positive response
+      150              Induction dose per skin area, one positive response
+      151                             Concentration, one positive response
+      152                             Concentration, one positive response
+      153 Induction dose per skin area, 5% incidence of positive responses
+      154                                     Induction dose per skin area
+      155              Induction dose per skin area, one positive response
+      156                Concentration, 5% incidence of positive responses
+      157                                  Incidence of positive responses
+      158                             Concentration, one positive response
+      159                                     Induction dose per skin area
+      160                                                    Concentration
+      161                                                              TER
+      162                                  Incidence of positive responses
+      163                                                              TER
+      164                Concentration, 5% incidence of positive responses
+      165                                                    Concentration
+      166              Induction dose per skin area, one positive response
+      167                                                              TER
+      168                             Concentration, one positive response
+      169                                                              TER
+      170                                     Induction dose per skin area
+      171                                                              TER
+      172                                                    Concentration
+      173                                                              TER
+      174                                  Incidence of positive responses
+      175                                                             LD50
+      176                                                             LD50
+      177                                                             LC50
+      178                                                             LC50
+      179                                                             LC50
+      180                                                             LC50
+      181                                                             LC50
+      182                                                             LC50
+      183                                                     LogD, ph 5.5
+      184                                                      CD86, EC150
+      185                                                      CD54, EC200
+      186                                                             LD50
       187                                                             LD50
-      188                                                             LC50
+      188                                                             LD50
       189                                                             LD50
-      190                                                             LC50
+      190                                                             LD50
       191                                                             LD50
-      192                                                             LD50
-      193                                                             LD50
-      194                                                             Imax
-      195                                                             LD50
-      196                                                       nbAromAtom
-      197                                                         nbHBdAcc
-      198                                                  50th percentile
-      199                                                   5th percentile
-      200                                                  95th percentile
-      201                                                           nbRing
-      202                                                   Sp3Sp2HybRatio
-      203                                                             LC50
-      204                                                         ndHBdDon
+      192                                                            EC1.5
+      193                                                              EC3
+      194                                                             CV75
+      195                                                            EC1.5
+      196                                                      CD86, EC150
+      197                                                      CD54, EC200
+      198                                                             CV75
+      199                                                             CV75
+      200                                     Induction dose per skin area
+      201                                  Incidence of positive responses
+      202              Induction dose per skin area, one positive response
+      203                                                    Concentration
+      204                                                            EC1.5
       205                                                             IC50
       206                                                             IC50
-      207                                                            EC1.5
-      208                                                              EC3
-      209                                                              EC3
-      210                                                            EC1.5
-      211                                                               BP
-      212                                                          nbRotBd
-      213                                                             LC50
-      214                                                             LD50
-      215                                                             LD50
-      216                                                             LC50
-      217                                                               MW
-      218                                                           LogKOC
-      219                                                               MP
-      220                                                           LogBCF
-      221                                                             Imax
-      222                                                             Imax
-      223                                                   TopoPolSurfAir
-      224                                                             LC50
-      225                                                             LC50
-      226                                                      CD86, EC150
+      207                                                             IC50
+      208                                                    Depletion Cys
+      209                                                               WS
+      210                                              Depletion Lys + Cys
+      211                                                            LogKM
+      212                                              Depletion Lys + Cys
+      213                                                             LogP
+      214                                                    Depletion Lys
+      215                                                           LogKOC
+      216                                                    Depletion Cys
+      217                                                               HL
+      218                                              Depletion Lys + Cys
+      219                                                           nbRing
+      220                                                    Depletion Lys
+      221                                                         ndHBdDon
+      222                                                    Depletion Cys
+      223                                                   Sp3Sp2HybRatio
+      224                                                              EC3
+      225                                                              nbC
+      226                                                              EC3
+      227                                               nbLipinskiFailures
+      228                                                              EC3
+      229                                                         nbHBdAcc
+      230                                                              EC3
+      231                                                               MP
+      232                                                              EC3
+      233                                                              KOA
+      234                                                              EC3
+      235                                                               VP
+      236                                                              EC3
+      237                                                     MolarRefract
+      238                                                              EC3
+      239                                                               MW
+      240                                                              EC3
+      241                                                 CombDipolPolariz
+      242                                                              EC3
+      243                                                             LD50
+      244                                                              EC3
+      245                                                               BP
+      246                                                              EC3
+      247                                                   TopoPolSurfAir
+      248                                                              EC3
+      249                                                     nbHeteroRing
+      250                                                              EC3
+      251                                                       nbAromAtom
+      252                                                              EC3
+      253                                                     nbHeavyAtoms
+      254                                                              EC3
+      255                                                          nbAtoms
+      256                                                             LC50
+      257                                                     LogD, ph 7.4
+      258                                                             LC50
+      259                                                 pKa, Ionizations
+      260                                                   5th percentile
+      261                                                           LogBCF
+      262                                                  95th percentile
+      263                                                           LogAOH
+      264                                             Inhalation risk unit
+      265                                                               Fu
+      266                                                  50th percentile
+      267                                                        LogBioDeg
+      268                                                              EC3
+      269                                                         LogCACO2
+      270                                                              EC3
+      271                                                            Clint
+      272                                                      CD86, EC150
+      273                                                      CD86, EC150
+      274                                                    Concentration
+      275                                                    Concentration
+      276 Induction dose per skin area, 5% incidence of positive responses
+      277                                                      CD86, EC120
+      278                             Concentration, one positive response
+      279                Concentration, 5% incidence of positive responses
+      280                                                             CV70
           substanceType         casrn                 qsarReadyId
-      1        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      1         Mixture ICE_660959215                            
       2        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      3        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      3         Mixture ICE_660959215                            
       4        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       5        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      6        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      6         Mixture ICE_660959215                            
       7        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      8        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      9        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      8         Mixture ICE_660959215                            
+      9         Mixture ICE_660959215                            
       10       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      11       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      11        Mixture ICE_660959215                            
       12       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       13       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       14       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       15       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       16       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       17       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      18        Mixture ICE_660959215                            
-      19        Mixture ICE_660959215                            
-      20        Mixture ICE_660959215                            
+      18       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      19       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      20       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       21       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       22       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       23       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
@@ -536,9 +644,9 @@
       58       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       59       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       60       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      61        Mixture ICE_660959215                            
-      62        Mixture ICE_660959215                            
-      63        Mixture ICE_660959215                            
+      61       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      62       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      63       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       64       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       65       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       66       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
@@ -636,19 +744,19 @@
       158      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       159      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       160      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      161      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      161       Mixture ICE_660959215                            
       162      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      163      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      163       Mixture ICE_660959215                            
       164      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       165      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       166      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      167      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      167       Mixture ICE_660959215                            
       168      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      169      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      169       Mixture ICE_660959215                            
       170      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      171      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      171       Mixture ICE_660959215                            
       172      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      173      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      173       Mixture ICE_660959215                            
       174      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       175      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       176      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
@@ -702,687 +810,903 @@
       224      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       225      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
       226      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      227      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      228      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      229      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      230      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      231      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      232      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      233      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      234      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      235      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      236      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      237      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      238      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      239      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      240      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      241      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      242      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      243      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      244      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      245      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      246      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      247      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      248      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      249      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      250      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      251      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      252      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      253      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      254      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      255      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      256      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      257      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      258      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      259      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      260      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      261      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      262      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      263      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      264      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      265      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      266      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      267      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      268      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      269      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      270      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      271      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      272      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      273      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      274      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      275      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      276      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      277      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      278      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      279      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      280      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
                                                                                                               value
       1                                                                                                    Inactive
-      2                                                                                                       Known
+      2                                                                                                           1
       3                                                                                                    Inactive
-      4   B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines)
-      5                                                                                                    Inactive
+      4                                                                                                           1
+      5                                                                                                           0
       6                                                                                                    Inactive
-      7                                                                                                      Active
-      8                                                                                                           1
-      9                                                                                                      Active
-      10     Weakly Positive; Weakly Positive; Positive; Positive; Positive; Positive; Positive; Positive; Positive
-      11                                                                                                     Active
-      12                                                                                    Squamous cell carcinoma
-      13                                                                                                     Active
-      14                                                                                      1.2999999999999999E-5
-      15                                                                                                          0
-      16                                                                                                     Active
-      17                                                                                                   Inactive
-      18                                                                                                   Inactive
-      19                                                                                                   Inactive
-      20                                                                                                   Inactive
-      21                                                                                                   Inactive
-      22                                                                                                     Active
-      23                                                                                                   Inactive
-      24                                                                                                     Active
-      25                                                                                                   Inactive
-      26                                                                                                     Active
-      27                                                                                                     Active
-      28                                                                                                     Active
-      29                                                                                                          2
-      30                                                                                                     Active
+      7                                                                                                           1
+      8                                                                                                    Inactive
+      9                                                                                                    Inactive
+      10                                                                                                          0
+      11                                                                                                   Inactive
+      12                                                                                                          0
+      13                                                                                                          0
+      14                                                                                                          1
+      15                                                                                                          1
+      16                                                                                                          0
+      17                                                                                                        0.0
+      18                                                                                                          1
+      19                                                                                                          0
+      20                                                                                                          1
+      21                                                                                                          0
+      22                                                                                                          1
+      23                                                                                                        0.0
+      24                                                                                                        0.0
+      25                                                                                                          1
+      26                                                                                                        0.0
+      27                                                                                                          1
+      28                                                                                                          0
+      29                                                                                                     Strong
+      30                                                                                                          1
       31                                                                                                     Active
-      32                                                                                                     Active
+      32                                                                                                          0
       33                                                                                                     Active
-      34                                                                                                     Active
-      35                                                                                                     Active
-      36                                                                                                     Active
-      37                                                                                                     Active
-      38                                                                                                     Active
-      39                                                                                                     Active
-      40                                                                                                     Active
-      41                                                                                                     Active
-      42                                                                                                          0
-      43                                                                                                          2
-      44                                                                                                   Inactive
-      45                                                                                                          2
-      46                                                                                                     Active
-      47                                                                                                          3
-      48                                                                                                     Active
-      49                                                                                                          2
-      50                                                                                                     Active
-      51                                                                                                     Active
+      34                                                                                                        1.0
+      35                                                                                                    Biocide
+      36                                                                                                          0
+      37                                                                                    Flavouring and nutrient
+      38                                                                                                          1
+      39                                                                                               Preservative
+      40                                                                                                          2
+      41                                                                                                   Monomers
+      42                                                                                                          1
+      43                                                                                                     Binder
+      44                                                                                                          1
+      45                                                                                                   Monomers
+      46                                                                                                          1
+      47                                                                                               Preservative
+      48                                                                                                          3
+      49                                                                                                          1
+      50                                                                                                          1
+      51                                                                                                          1
       52                                                                                                          1
-      53                                                                                                          3
-      54                                                                                                     Active
+      53                                                                                                          1
+      54                                                                                                   Inactive
       55                                                                                                     Active
       56                                                                                                     Active
-      57                                                                                                   Inactive
-      58                                                                                                     Active
-      59                                                                                                          3
-      60                                                                                                    1148.28
-      61                                                                                                        6.1
-      62                                                                                                        6.4
-      63                                                                                                       12.3
-      64                                                                                                        0.0
-      65                                                                                                     286.75
-      66                                                                                                      79.74
-      67                                                                                                      28.68
-      68                                                                                                        5.8
-      69                                                                                                      63.79
-      70                                                                                                       0.13
-      71                                                                                                        4.3
-      72                                                                                                       72.0
-      73                                                                                                        5.2
-      74                                                                                                        0.1
-      75                                                                                                     184.38
-      76                                                                                                      0.203
-      77                                                                                                      -5.07
-      78                                                                                                       0.35
-      79                                                                                                    1828.03
-      80                                                                                                       5.14
-      81                                                                                                       12.3
-      82                                                                                                      -0.65
-      83                                                                                                        5.8
-      84                                                                                                     358.44
-      85                                                                                                       23.3
-      86                                                                                                        5.6
-      87                                                                                                       2.36
-      88                                                                                                        4.3
-      89                                                                                                        8.2
-      90                                                                                                       7.84
-      91                                                                                                        3.8
-      92                                                                                                       0.46
-      93                                                                                                        8.0
-      94                                                                                                     931.94
-      95                                                                                                        3.6
-      96                                                                                                    2867.51
-      97                                                                                                        4.2
-      98                                                                                                       11.2
-      99                                                                                                       5.74
-      100                                                                                                      60.4
-      101                                                                                                      5.74
-      102                                                                                                      54.8
-      103                                                                                                    -11.03
-      104                                                                                                      28.6
-      105                                                                                                       2.4
-      106                                                                                                      5.68
-      107                                                                                                      0.22
-      108                                                                                                      0.37
-      109                                                                                                       6.0
-      110                                                                                                     6.307
-      111                                                                                                    319.01
-      112                                                                                                    860.25
-      113                                                                                                      0.35
-      114                                                                                                      0.61
-      115                                                                                                     71.69
-      116                                                                                                      0.41
-      117                                                                                                      4.49
-      118                                                                                                      0.09
-      119                                                                                                    358.44
-      120                                                                                                       0.3
-      121                                                                                                       1.2
-      122                                                                                                      14.5
-      123                                                                                                      7.69
-      124                                                                                                      0.27
-      125                                                                                                      0.46
-      126                                                                                                      0.11
-      127                                                                                                    757.02
-      128                                                                                                      0.44
-      129                                                                                                   1433.75
-      130                                                                                                      0.37
-      131                                                                                                    172.05
-      132                                                                                                      1.17
-      133                                                                                                      0.99
-      134                                                                                                      0.98
-      135                                                                                                      0.35
-      136                                                                                                       3.2
-      137                                                                                                      36.6
-      138                                                                                                      30.5
-      139                                                                                                      15.4
-      140                                                                                                      24.0
-      141                                                                                                       0.3
-      142                                                                                                       3.6
-      143                                                                                                      44.2
-      144                                                                                                     25.95
-      145                                                                                                       2.5
-      146                                                                                                       2.3
-      147                                                                                                      49.6
-      148                                                                                                      40.6
-      149                                                                                                      22.2
-      150                                                                                                      19.9
-      151                                                                                                      0.35
-      152                                                                                                       3.8
-      153                                                                                                      25.3
-      154                                                                                                       1.8
-      155                                                                                                     -6.46
-      156                                                                                                       2.0
-      157                                                                                                      48.6
-      158                                                                                                      44.7
-      159                                                                                                     24.45
-      160                                                                                                      35.8
-      161                                                                                                       4.2
-      162                                                                                                      19.0
-      163                                                                                                   > 288.0
-      164                                                                                                       1.3
-      165                                                                                                      2.92
-      166                                                                                                      36.7
-      167                                                                                                      37.3
-      168                                                                                                     19.55
-      169                                                                                                     0.562
-      170                                                                                                       1.0
-      171                                                                                                       1.0
-      172                                                                                                       0.0
-      173                                                                                                      51.4
-      174                                                                                                     26.95
-      175                                                                                                    633.55
-      176                                                                                                       0.0
-      177                                                                                                      1.21
-      178                                                                                                      0.91
-      179                                                                                                       0.0
-      180                                                                                                       0.0
-      181                                                                                                     290.0
-      182                                                                                                      0.73
-      183                                                                                                       2.0
-      184                                                                                                      6.35
-      185                                                                                                       0.0
-      186                                                                                                       4.0
+      57                                                                                                     Active
+      58                                                                                                      Known
+      59                                                                                                          1
+      60                                                                                                     Active
+      61                                                                                                     Active
+      62                                                                                                      16.92
+      63                                                                                                        4.1
+      64                                                                                                       3.99
+      65                                                                                                     Active
+      66                                                                                                     Active
+      67                                                                                                          1
+      68                                                                                                     Active
+      69                                                                                                     Strong
+      70                                                                                                     Active
+      71                                                                                                     Active
+      72                                                                                                     Active
+      73                                                                                                     Active
+      74                                                                                                     Active
+      75                                                                                                     Active
+      76                                                                                                     Active
+      77                                                                                                     Active
+      78                                                                                    Squamous cell carcinoma
+      79                                                                                                          0
+      80  B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines)
+      81     Weakly Positive; Weakly Positive; Positive; Positive; Positive; Positive; Positive; Positive; Positive
+      82                                                                                                     Active
+      83                                                                                                          0
+      84                                                                                                     Active
+      85                                                                                                          0
+      86                                                                                                     Active
+      87                                                                                                          0
+      88                                                                                                   Inactive
+      89                                                                                                          0
+      90                                                                                                   Inactive
+      91                                                                                                     Active
+      92                                                                                                     Active
+      93                                                                                                          2
+      94                                                                                                          3
+      95                                                                                                     Active
+      96                                                                                                          2
+      97                                                                                                     Active
+      98                                                                                                   Inactive
+      99                                                                                                          2
+      100                                                                                                         3
+      101                                                                                                    Active
+      102                                                                                                    Active
+      103                                                                                                    Active
+      104                                                                                                    Active
+      105                                                                                                    Active
+      106                                                                                                      48.6
+      107                                                                                                      25.3
+      108                                                                                                      44.2
+      109                                                                                                       2.0
+      110                                                                                                    2868.0
+      111                                                                                                     4.494
+      112                                                                                                     931.9
+      113                                                                                                     286.8
+      114                                                                                                       3.6
+      115                                                                                                      24.0
+      116                                                                                                      36.7
+      117                                                                                                      19.0
+      118                                                                                                     19.55
+      119                                                                                                       1.3
+      120                                                                                                       1.8
+      121                                                                                                      37.3
+      122                                                                                                       3.8
+      123                                                                                                      40.6
+      124                                                                                                      36.6
+      125                                                                                                      19.9
+      126                                                                                                      15.4
+      127                                                                                                       3.2
+      128                                                                                                       0.3
+      129                                                                                                      30.5
+      130                                                                                                      28.6
+      131                                                                                                       1.0
+      132                                                                                                       2.5
+      133                                                                                                       0.0
+      134                                                                                                      49.6
+      135                                                                                                       0.0
+      136                                                                                                     25.95
+      137                                                                                                       0.0
+      138                                                                                                       2.3
+      139                                                                                                      54.8
+      140                                                                                                      22.2
+      141                                                                                                       2.4
+      142                                                                                                       3.7
+      143                                                                                                      0.37
+      144                                                                                                     7.843
+      145                                                                                                     319.0
+      146                                                                                                    1828.0
+      147                                                                                                    0.4116
+      148                                                                                                     2.359
+      149                                                                                                     71.69
+      150                                                                                                     358.4
+      151                                                                                                    0.0925
+      152                                                                                                    0.4625
+      153                                                                                                     757.0
+      154                                                                                                    1434.0
+      155                                                                                                     172.1
+      156                                                                                                    0.9768
+      157                                                                                                     5.682
+      158                                                                                                     0.222
+      159                                                                                                     860.3
+      160                                                                                                      1.11
+      161                                                                                                      12.3
+      162                                                                                                       0.0
+      163                                                                                                       6.4
+      164                                                                                                     1.202
+      165                                                                                                     0.037
+      166                                                                                                     358.4
+      167                                                                                                      12.3
+      168                                                                                                    0.4625
+      169                                                                                                       6.4
+      170                                                                                                     28.68
+      171                                                                                                       6.1
+      172                                                                                                      1.85
+      173                                                                                                       6.1
+      174                                                                                                     7.692
+      175                                                                                                   > 100.0
+      176                                                                                                     100.0
+      177                                                                                                  < 0.5682
+      178                                                                                                    0.5866
+      179                                                                                                    1.0002
+      180                                                                                                    1.0064
+      181                                                                                                    0.3068
+      182                                                                                                    0.3068
+      183                                                                                                      0.35
+      184                                                                                                       4.3
+      185                                                                                                       5.2
+      186                                                                                                     550.0
       187                                                                                                   < 800.0
-      188                                                                                                     0.578
+      188                                                                                                    2020.0
       189                                                                                                     800.0
-      190                                                                                                    0.3068
-      191                                                                                                     500.0
-      192                                                                                                     550.0
-      193                                                                                                   > 100.0
-      194                                                                                                      3.99
-      195                                                                                                     100.0
-      196                                                                                                       0.0
-      197                                                                                                       1.0
-      198                                                                                                  2.938E-5
-      199                                                                                                  1.409E-9
-      200                                                                                                    0.6579
-      201                                                                                                       0.0
-      202                                                                                                       0.0
-      203                                                                                                  < 0.5682
-      204                                                                                                       0.0
-      205                                                                                                    201.63
-      206                                                                                                     385.9
-      207                                                                                                     63.21
-      208                                                                                                      72.2
-      209                                                                                                       0.7
-      210                                                                                                     137.0
-      211                                                                                                     -19.0
-      212                                                                                                       0.0
-      213                                                                                                    1.0002
-      214                                                                                                    2020.0
-      215                                                                                                  > 7000.0
-      216                                                                                                    0.3068
-      217                                                                                                   30.0106
-      218                                                                                                      0.44
-      219                                                                                                    -105.0
-      220                                                                                                      0.24
-      221                                                                                                     16.92
-      222                                                                                                       4.1
-      223                                                                                                     17.07
-      224                                                                                                    1.0064
-      225                                                                                                    0.5866
-      226                                                                                                    1599.8
-                            unit        species receptorSpecies          route
-      1                                      NA                             NA
-      2                          Not applicable                 Not applicable
-      3                                      NA                             NA
-      4                          Not applicable                     Inhalation
-      5                                                                       
-      6                                      NA                             NA
-      7                                      NA                             NA
-      8                          Not applicable                 Not applicable
-      9                                      NA                             NA
-      10                         Not applicable                 Not applicable
-      11                                     NA                             NA
-      12                         Not applicable                     Inhalation
-      13                                     NA                             NA
-      14                         Not applicable                     Inhalation
-      15                                                                      
-      16                                     NA                             NA
-      17                                                                      
-      18                                                                      
-      19                                                                      
-      20                                                                      
-      21                                                                      
-      22                                     NA                             NA
-      23                                                                      
-      24                                     NA                             NA
-      25                                                                      
-      26                                     NA                             NA
-      27                                     NA                             NA
-      28                                     NA                             NA
-      29                                                                      
-      30                                     NA                             NA
-      31                                     NA                             NA
-      32                                     NA                             NA
-      33                                     NA                             NA
-      34                                     NA                             NA
-      35                                     NA                             NA
-      36                                     NA                             NA
-      37                                     NA                             NA
-      38                                     NA                             NA
-      39                                  Mouse                         Dermal
-      40                                     NA                             NA
-      41                                  Human                         Dermal
-      42                                                                      
-      43                                  Human                         Dermal
-      44                                  Human                         Dermal
-      45                                  Human                         Dermal
-      46                                  Human                         Dermal
-      47                                  Human                         Dermal
-      48                                  Human                         Dermal
-      49                                  Human                         Dermal
-      50                                     NA                             NA
-      51                                  Human                         Dermal
-      52                                  Human                         Dermal
-      53                                                                      
-      54                                     NA                             NA
-      55                                     NA                             NA
-      56                                     NA                             NA
-      57                                                                      
-      58                                  Human                         Dermal
-      59                                  Human                         Dermal
-      60                  ug/cm2          Human                         Dermal
-      61                kiloohms                                              
-      62                kiloohms                                              
-      63                kiloohms                                              
-      64                       %          Human                         Dermal
-      65                  ug/cm2          Human                         Dermal
-      66                  ug/cm2          Human                         Dermal
-      67                  ug/cm2          Human                         Dermal
-      68                   ug/mL             NA                             NA
-      69                  ug/cm2          Human                         Dermal
-      70                       %          Human                         Dermal
-      71                   ug/mL             NA                             NA
-      72                       %          Human                         Dermal
-      73                   ug/mL             NA                             NA
-      74                       %          Human                         Dermal
-      75                      uM             NA                             NA
-      76                    mg/L                                              
-      77          log(10-6 cm/s)                                              
-      78                   log10                                              
-      79                  ug/cm2          Human                         Dermal
-      80                   ug/mL             NA                             NA
-      81                       %          Mouse                         Dermal
-      82              Log10 days                                              
-      83                   ug/mL             NA                             NA
-      84                  ug/cm2          Human                         Dermal
-      85                   ug/mL             NA                             NA
-      86                       %          Mouse                         Dermal
-      87                       %          Human                         Dermal
-      88                   ug/mL             NA                             NA
-      89                       %          Mouse                         Dermal
-      90                       %          Human                         Dermal
-      91                       %          Mouse                         Dermal
-      92                       %          Human                         Dermal
-      93                       %          Mouse                         Dermal
-      94                  ug/cm2          Human                         Dermal
-      95                       %          Mouse                         Dermal
-      96                  ug/cm2          Human                         Dermal
-      97                       %          Mouse                         Dermal
-      98                       %             NA                             NA
-      99                   ug/mL             NA                             NA
-      100                      %             NA                             NA
-      101                  ug/mL             NA                             NA
-      102                      %             NA                             NA
-      103 Log10 cm3/molecule-sec                                              
-      104                      %             NA                             NA
-      105                      %             NA                             NA
-      106                      %          Human                         Dermal
-      107                      %          Human                         Dermal
-      108                      %          Mouse                         Dermal
-      109                     NA                                              
-      110                 m3/mol                                              
-      111                 ug/cm2          Human                         Dermal
-      112                 ug/cm2          Human                         Dermal
-      113                  log10                                              
-      114                      %          Mouse                         Dermal
-      115                 ug/cm2          Human                         Dermal
-      116                      %          Human                         Dermal
-      117                      %          Human                         Dermal
-      118                      %          Human                         Dermal
-      119                 ug/cm2          Human                         Dermal
-      120                      %          Mouse                         Dermal
-      121                      %          Human                         Dermal
-      122                      %          Mouse                         Dermal
-      123                      %          Human                         Dermal
-      124                      %          Mouse                         Dermal
-      125                      %          Human                         Dermal
-      126                      %          Mouse                         Dermal
-      127                 ug/cm2          Human                         Dermal
-      128                      %          Mouse                         Dermal
-      129                 ug/cm2          Human                         Dermal
-      130                      %          Mouse                         Dermal
-      131                 ug/cm2          Human                         Dermal
-      132         log10, moles/L                                              
-      133                      %          Mouse                         Dermal
-      134                      %          Human                         Dermal
-      135                      %          Mouse                         Dermal
-      136                      %             NA                             NA
-      137                      %             NA                             NA
-      138                      %             NA                             NA
-      139                      %             NA                             NA
-      140                      %             NA                             NA
-      141                      %             NA                             NA
-      142                      %             NA                             NA
-      143                      %             NA                             NA
-      144                      %             NA                             NA
-      145                      %             NA                             NA
-      146                      %             NA                             NA
-      147                      %             NA                             NA
-      148                      %             NA                             NA
-      149                      %             NA                             NA
-      150                      %             NA                             NA
-      151                  log10                                              
-      152                      %             NA                             NA
-      153                      %             NA                             NA
-      154                      %             NA                             NA
-      155     log10, atm-m3/mole                                              
-      156                      %             NA                             NA
-      157                      %             NA                             NA
-      158                      %             NA                             NA
-      159                      %             NA                             NA
-      160                      %             NA                             NA
-      161                      %             NA                             NA
-      162                      %             NA                             NA
-      163                     uM             NA                             NA
-      164                      %             NA                             NA
-      165            log10, mmHg                                              
-      166                      %             NA                             NA
-      167                      %             NA                             NA
-      168                      %             NA                             NA
-      169  dipole moment/ volume                                              
-      170                  count                                              
-      171                  count                                              
-      172                Minutes                                              
-      173                      %             NA                             NA
-      174                      %             NA                             NA
-      175                  ug/mL             NA                             NA
-      176                     NA                                              
-      177                  log10                                              
-      178             Log10 days                                              
-      179                  count                                              
-      180                  count                                              
-      181                  mg/kg                                              
-      182               unitless                                              
-      183                  count                                              
-      184      ul/min/10^6 cells                                              
-      185                  count                                              
-      186                  count                                              
-      187                  mg/kg            Rat                             NA
-      188                   mg/L                                              
-      189                  mg/kg            Rat                             NA
-      190                   mg/L                                              
-      191                  mg/kg            Rat                             NA
-      192                  mg/kg            Rat                             NA
-      193                  mg/kg            Rat                             NA
-      194               Unitless             NA                             NA
-      195                  mg/kg            Rat                             NA
-      196                  count                                              
-      197                  count                                              
-      198              mg/kg/day                                              
-      199              mg/kg/day                                              
-      200              mg/kg/day                                              
-      201                  count                                              
-      202               fraction                                              
-      203                   mg/L                                              
-      204                  count                                              
-      205                     uM             NA                             NA
-      206                     uM             NA                             NA
-      207                     uM             NA                             NA
-      208                     uM             NA                             NA
-      209                      %          Mouse                         Dermal
-      210                     uM             NA                             NA
-      211                      C                                              
-      212                  count                                              
-      213                   mg/L                                              
-      214                  mg/kg            Rat                             NA
-      215                  mg/kg            Rat                             NA
-      216                   mg/L                                              
-      217                  g/mol                                              
-      218             Log10 L/Kg                                              
-      219                      C                                              
-      220         Log10 unitless                                              
-      221               Unitless             NA                             NA
-      222               Unitless             NA                             NA
-      223                    A^2                                              
-      224                   mg/L                                              
-      225                   mg/L                                              
-      226                  ug/mL             NA                             NA
-                     sex         strain lifeStage tissue lesion location assaySource
-      1               NA                                                            
-      2   Not applicable Not applicable                                             
-      3               NA                                                            
-      4   Not applicable Not applicable                                             
-      5                                                                             
-      6               NA                                                            
-      7               NA                                                            
-      8   Not applicable Not applicable                                             
-      9               NA                                                            
-      10  Not applicable Not applicable                                             
-      11              NA                                                            
-      12  Not applicable Not applicable                                             
-      13              NA                                                            
-      14  Not applicable Not applicable                                             
-      15                                                                            
-      16              NA                                                            
-      17                                                                            
-      18                                                                            
-      19                                                                            
-      20                                                                            
-      21                                                                            
-      22              NA                                                            
-      23                                                                            
-      24              NA                                                            
-      25                                                                            
-      26              NA                                                            
-      27              NA                                                            
-      28              NA                                                            
-      29                                                                            
-      30              NA                                                            
-      31              NA                                                            
-      32              NA                                                            
-      33              NA                                                            
-      34              NA                                                            
-      35              NA                                                            
-      36              NA                                                            
-      37              NA                                                            
-      38              NA                                                            
-      39              NA                                                            
-      40              NA                                                            
-      41              NA                                                            
-      42                                                                            
-      43              NA                                                            
-      44              NA                                                            
-      45              NA                                                            
-      46              NA                                                            
-      47              NA                                                            
-      48              NA                                                            
-      49              NA                                                            
-      50              NA                                                            
-      51              NA                                                            
-      52              NA                                                            
-      53                                                                            
-      54              NA                                                            
-      55              NA                                                            
-      56              NA                                                            
-      57                                                                            
-      58              NA                                                            
-      59              NA                                                            
-      60              NA                                                            
-      61                                                                            
-      62                                                                            
-      63                                                                            
-      64              NA                                                            
-      65              NA                                                            
-      66              NA                                                            
-      67              NA                                                            
-      68              NA                                                            
-      69              NA                                                            
-      70              NA                                                            
-      71              NA                                                            
-      72              NA                                                            
-      73              NA                                                            
-      74              NA                                                            
-      75              NA                                                            
-      76                                                                            
-      77                                                                            
-      78                                                                            
-      79              NA                                                            
-      80              NA                                                            
-      81              NA                                                            
-      82                                                                            
-      83              NA                                                            
-      84              NA                                                            
-      85              NA                                                            
-      86              NA                                                            
-      87              NA                                                            
-      88              NA                                                            
-      89              NA                                                            
-      90              NA                                                            
-      91              NA                                                            
-      92              NA                                                            
-      93              NA                                                            
-      94              NA                                                            
-      95              NA                                                            
-      96              NA                                                            
-      97              NA                                                            
-      98              NA                                                            
-      99              NA                                                            
-      100             NA                                                            
-      101             NA                                                            
-      102             NA                                                            
-      103                                                                           
-      104             NA                                                            
-      105             NA                                                            
-      106             NA                                                            
-      107             NA                                                            
-      108             NA                                                            
-      109                                                                           
-      110                                                                           
-      111             NA                                                            
-      112             NA                                                            
-      113                                                                           
-      114             NA                                                            
-      115             NA                                                            
-      116             NA                                                            
-      117             NA                                                            
-      118             NA                                                            
-      119             NA                                                            
-      120             NA                                                            
-      121             NA                                                            
-      122             NA                                                            
-      123             NA                                                            
-      124             NA                                                            
-      125             NA                                                            
-      126             NA                                                            
-      127             NA                                                            
-      128             NA                                                            
-      129             NA                                                            
-      130             NA                                                            
-      131             NA                                                            
-      132                                                                           
-      133             NA                                                            
-      134             NA                                                            
-      135             NA                                                            
-      136             NA                                                            
-      137             NA                                                            
-      138             NA                                                            
-      139             NA                                                            
-      140             NA                                                            
-      141             NA                                                            
-      142             NA                                                            
-      143             NA                                                            
-      144             NA                                                            
-      145             NA                                                            
-      146             NA                                                            
-      147             NA                                                            
-      148             NA                                                            
-      149             NA                                                            
-      150             NA                                                            
-      151                                                                           
-      152             NA                                                            
-      153             NA                                                            
-      154             NA                                                            
-      155                                                                           
-      156             NA                                                            
-      157             NA                                                            
-      158             NA                                                            
-      159             NA                                                            
-      160             NA                                                            
-      161             NA                                                            
-      162             NA                                                            
-      163             NA                                                            
-      164             NA                                                            
-      165                                                                           
-      166             NA                                                            
-      167             NA                                                            
-      168             NA                                                            
-      169                                                                           
-      170                                                                           
-      171                                                                           
-      172                                                                           
-      173             NA                                                            
-      174             NA                                                            
-      175             NA                                                            
-      176                                                                           
-      177                                                                           
-      178                                                                           
-      179                                                                           
-      180                                                                           
-      181                                                                           
-      182                                                                           
-      183                                                                           
-      184                                                                           
-      185                                                                           
-      186                                                                           
-      187           Male                                                            
-      188                                                                           
-      189           Male                                                            
-      190                                                                           
-      191                                                                           
-      192           Male                                                            
-      193                                                                           
-      194             NA                                                            
-      195                                                                           
-      196                                                                           
-      197                                                                           
-      198                                                                           
-      199                                                                           
-      200                                                                           
-      201                                                                           
-      202                                                                           
-      203                                                                           
-      204                                                                           
-      205             NA                                                            
-      206             NA                                                            
-      207             NA                                                            
-      208             NA                                                            
-      209             NA                                                            
-      210             NA                                                            
-      211                                                                           
-      212                                                                           
-      213                                                                           
-      214                                                                           
-      215                                                                           
-      216                                                                           
-      217                                                                           
-      218                                                                           
-      219                                                                           
-      220                                                                           
-      221             NA                                                            
-      222             NA                                                            
-      223                                                                           
-      224                                                                           
-      225                                                                           
-      226             NA                                                            
+      190                                                                                                     500.0
+      191                                                                                                  > 7000.0
+      192                                                                                                     63.21
+      193                                                                                                      72.2
+      194                                                                                                       5.8
+      195                                                                                                     137.0
+      196                                                                                                       4.3
+      197                                                                                                      5.14
+      198                                                                                                       5.8
+      199                                                                                                      23.3
+      200                                                                                                    1148.0
+      201                                                                                                      72.0
+      202                                                                                                     63.79
+      203                                                                                                      1.85
+      204                                                                                                     184.4
+      205                                                                                                   > 288.0
+      206                                                                                                    201.63
+      207                                                                                                     385.9
+      208                                                                                                      44.7
+      209                                                                                                      1.17
+      210                                                                                                     24.45
+      211                                                                                                     -0.65
+      212                                                                                                      35.8
+      213                                                                                                      0.35
+      214                                                                                                       4.2
+      215                                                                                                      0.44
+      216                                                                                                      60.4
+      217                                                                                                     -6.46
+      218                                                                                                     26.95
+      219                                                                                                       0.0
+      220                                                                                                      11.2
+      221                                                                                                       0.0
+      222                                                                                                      51.4
+      223                                                                                                       0.0
+      224                                                                                                      0.37
+      225                                                                                                       1.0
+      226                                                                                                      0.27
+      227                                                                                                       0.0
+      228                                                                                                      0.35
+      229                                                                                                       1.0
+      230                                                                                                      0.44
+      231                                                                                                    -105.0
+      232                                                                                                      0.37
+      233                                                                                                      1.21
+      234                                                                                                      0.99
+      235                                                                                                      2.92
+      236                                                                                                       0.7
+      237                                                                                                     6.307
+      238                                                                                                      0.61
+      239                                                                                                   30.0106
+      240                                                                                                       8.0
+      241                                                                                                     0.562
+      242                                                                                                       5.6
+      243                                                                                                     290.0
+      244                                                                                                       4.2
+      245                                                                                                     -19.0
+      246                                                                                                       3.8
+      247                                                                                                     17.07
+      248                                                                                                      14.5
+      249                                                                                                       0.0
+      250                                                                                                       3.6
+      251                                                                                                       0.0
+      252                                                                                                      0.11
+      253                                                                                                       2.0
+      254                                                                                                       0.3
+      255                                                                                                       4.0
+      256                                                                                                     0.203
+      257                                                                                                      0.35
+      258                                                                                                     0.578
+      259                                                                                                       0.0
+      260                                                                                                  1.409E-9
+      261                                                                                                      0.24
+      262                                                                                                    0.6579
+      263                                                                                                    -11.03
+      264                                                                                                    1.3E-5
+      265                                                                                                      0.73
+      266                                                                                                  2.938E-5
+      267                                                                                                      0.91
+      268                                                                                                       8.2
+      269                                                                                                     -5.07
+      270                                                                                                      12.3
+      271                                                                                                      6.35
+      272                                                                                                       1.6
+      273                                                                                                      5.74
+      274                                                                                                      37.0
+      275                                                                                                      37.0
+      276                                                                                                     79.74
+      277                                                                                                     0.634
+      278                                                                                                    0.1028
+      279                                                                                                    0.1285
+      280                                                                                                      5.74
+                            unit species receptorSpecies                route  sex
+      1                                                                           
+      2                                                                           
+      3                                                                           
+      4                                                                           
+      5                                                                           
+      6                                                                           
+      7                                                                           
+      8                                                                           
+      9                                                                           
+      10                                                                          
+      11                                                                          
+      12                                                                          
+      13                                                                          
+      14                                                                          
+      15                                                                          
+      16                                                                          
+      17                                                                          
+      18                                                                          
+      19                                                                          
+      20                                                                          
+      21                                                                          
+      22                                                                          
+      23                                                                          
+      24                                                                          
+      25                                                                          
+      26                                                                          
+      27                                                                          
+      28                                                                          
+      29                                                                          
+      30                                                                          
+      31                                                                          
+      32                                                                          
+      33                                                                          
+      34                                                                          
+      35                                                                          
+      36                                                                          
+      37                                                                          
+      38                                                                          
+      39                                                                          
+      40                                                                          
+      41                                                                          
+      42                                                                          
+      43                                                                          
+      44                                                                          
+      45                                                                          
+      46                                                                          
+      47                                                                          
+      48                                                                          
+      49                                                                          
+      50                                                                          
+      51                                                                          
+      52                                                                          
+      53                                                                          
+      54                                                                          
+      55                                                                          
+      56                                                                          
+      57                                                                          
+      58                                                                          
+      59                                                                          
+      60                                                                          
+      61                                                                          
+      62                                                                          
+      63                                                                          
+      64                                                                          
+      65                                                                          
+      66                           Human                               Dermal     
+      67                           Human                               Dermal     
+      68                                                                          
+      69                                                                          
+      70                                                                          
+      71                                                                          
+      72                                                                          
+      73                                                                          
+      74                                                                          
+      75                                                                          
+      76                                                                          
+      77                           Mouse                               Dermal     
+      78                                                           Inhalation     
+      79                                                                          
+      80                                                           Inhalation     
+      81                           Mouse                 Dosed drinking water Male
+      82                                                                          
+      83                                                                          
+      84                                                                          
+      85                                                                          
+      86                                                                          
+      87                                                                          
+      88                                                                          
+      89                                                                          
+      90                                                                          
+      91                           Human                               Dermal     
+      92                           Human                               Dermal     
+      93                           Human                               Dermal     
+      94                           Human                               Dermal     
+      95                           Human                               Dermal     
+      96                           Human                               Dermal     
+      97                           Human                               Dermal     
+      98                           Human                               Dermal     
+      99                           Human                               Dermal     
+      100                          Human                               Dermal     
+      101                                                                         
+      102                                                                         
+      103                                                                         
+      104                                                                         
+      105                                                                         
+      106                      %                                                  
+      107                      %                                                  
+      108                      %                                                  
+      109                      %                                                  
+      110                 ug/cm2   Human                               Dermal     
+      111                      %   Human                               Dermal     
+      112                 ug/cm2   Human                               Dermal     
+      113                 ug/cm2   Human                               Dermal     
+      114                      %                                                  
+      115                      %                                                  
+      116                      %                                                  
+      117                      %                                                  
+      118                      %                                                  
+      119                      %                                                  
+      120                      %                                                  
+      121                      %                                                  
+      122                      %                                                  
+      123                      %                                                  
+      124                      %                                                  
+      125                      %                                                  
+      126                      %                                                  
+      127                      %                                                  
+      128                      %                                                  
+      129                      %                                                  
+      130                      %                                                  
+      131                  count                                                  
+      132                      %                                                  
+      133                Minutes                                                  
+      134                      %                                                  
+      135                  count                                                  
+      136                      %                                                  
+      137                  count                                                  
+      138                      %                                                  
+      139                      %                                                  
+      140                      %                                                  
+      141                      %                                                  
+      142                      %   Human                               Dermal     
+      143                      %   Human                               Dermal     
+      144                      %   Human                               Dermal     
+      145                 ug/cm2   Human                               Dermal     
+      146                 ug/cm2   Human                               Dermal     
+      147                      %   Human                               Dermal     
+      148                      %   Human                               Dermal     
+      149                 ug/cm2   Human                               Dermal     
+      150                 ug/cm2   Human                               Dermal     
+      151                      %   Human                               Dermal     
+      152                      %   Human                               Dermal     
+      153                 ug/cm2   Human                               Dermal     
+      154                 ug/cm2   Human                               Dermal     
+      155                 ug/cm2   Human                               Dermal     
+      156                      %   Human                               Dermal     
+      157                      %   Human                               Dermal     
+      158                      %   Human                               Dermal     
+      159                 ug/cm2   Human                               Dermal     
+      160                      %   Human                               Dermal     
+      161               kiloohms                                                  
+      162                      %   Human                               Dermal     
+      163               kiloohms                                                  
+      164                      %   Human                               Dermal     
+      165                      %   Human                               Dermal     
+      166                 ug/cm2   Human                               Dermal     
+      167               kiloohms                                                  
+      168                      %   Human                               Dermal     
+      169               kiloohms                                                  
+      170                 ug/cm2   Human                               Dermal     
+      171               kiloohms                                                  
+      172                      %   Human                               Dermal     
+      173               kiloohms                                                  
+      174                      %   Human                               Dermal     
+      175                  mg/kg     Rat                                      Male
+      176                  mg/kg     Rat                                      Male
+      177                   mg/L                                                  
+      178                   mg/L                                                  
+      179                   mg/L                                                  
+      180                   mg/L                                                  
+      181                   mg/L                                                  
+      182                   mg/L                                                  
+      183         Log10 unitless                                                  
+      184                  ug/mL                                                  
+      185                  ug/mL                                                  
+      186                  mg/kg     Rat                                      Male
+      187                  mg/kg     Rat                                      Male
+      188                  mg/kg     Rat                                      Male
+      189                  mg/kg     Rat                                      Male
+      190                  mg/kg     Rat                                      Male
+      191                  mg/kg     Rat                                      Male
+      192                     uM                                                  
+      193                     uM                                                  
+      194                  ug/mL                                                  
+      195                     uM                                                  
+      196                  ug/mL                                                  
+      197                  ug/mL                                                  
+      198                  ug/mL                                                  
+      199                  ug/mL                                                  
+      200                 ug/cm2   Human                               Dermal     
+      201                      %   Human                               Dermal     
+      202                 ug/cm2   Human                               Dermal     
+      203                      %   Human                               Dermal     
+      204                     uM                                                  
+      205                     uM                                                  
+      206                     uM                                                  
+      207                     uM                                                  
+      208                      %                                                  
+      209          Log10 moles/L                                                  
+      210                      %                                                  
+      211             Log10 days                                                  
+      212                      %                                                  
+      213        Log 10 unitless                                                  
+      214                      %                                                  
+      215             Log10 L/Kg                                                  
+      216                      %                                                  
+      217      Log10 atm-m3/mole                                                  
+      218                      %                                                  
+      219                  count                                                  
+      220                      %                                                  
+      221                  count                                                  
+      222                      %                                                  
+      223      Unitless Fraction                                                  
+      224                      %   Mouse                               Dermal     
+      225                  count                                                  
+      226                      %   Mouse                               Dermal     
+      227                  count                                                  
+      228                      %   Mouse                               Dermal     
+      229                  count                                                  
+      230                      %   Mouse                               Dermal     
+      231               Degree C                                                  
+      232                      %   Mouse                               Dermal     
+      233        Log 10 unitless                                                  
+      234                      %   Mouse                               Dermal     
+      235             Log10 mmHg                                                  
+      236                      %   Mouse                               Dermal     
+      237                 m3/mol                                                  
+      238                      %   Mouse                               Dermal     
+      239                  g/mol                                                  
+      240                      %   Mouse                               Dermal     
+      241  dipole moment/ volume                                                  
+      242                      %   Mouse                               Dermal     
+      243                  mg/kg                                                  
+      244                      %   Mouse                               Dermal     
+      245               Degree C                                                  
+      246                      %   Mouse                               Dermal     
+      247                    A^2                                                  
+      248                      %   Mouse                               Dermal     
+      249                  count                                                  
+      250                      %   Mouse                               Dermal     
+      251                  count                                                  
+      252                      %   Mouse                               Dermal     
+      253                  count                                                  
+      254                      %   Mouse                               Dermal     
+      255                  count                                                  
+      256                   mg/L                                                  
+      257         Log10 unitless                                                  
+      258                   mg/L                                                  
+      259                  count                                                  
+      260              mg/kg/day                                                  
+      261         Log10 unitless                                                  
+      262              mg/kg/day                                                  
+      263 Log10 cm3/molecule-sec                                                  
+      264                  ug/m3                                   Inhalation     
+      265      Unitless Fraction                                                  
+      266              mg/kg/day                                                  
+      267             Log10 days                                                  
+      268                      %   Mouse                               Dermal     
+      269         log(10-6 cm/s)                                                  
+      270                      %   Mouse                               Dermal     
+      271      ul/min/10^6 cells                                                  
+      272                  ug/mL                                                  
+      273                  ug/mL                                                  
+      274                      %                                                  
+      275                      %                                                  
+      276                 ug/cm2   Human                               Dermal     
+      277                  ug/mL                                                  
+      278                      %   Human                               Dermal     
+      279                      %   Human                               Dermal     
+      280                  ug/mL                                                  
+                     strain lifeStage tissue lesion location assaySource
+      1                                                                 
+      2                                                                 
+      3                                                                 
+      4                                                                 
+      5                                                                 
+      6                                                                 
+      7                                                                 
+      8                                                                 
+      9                                                                 
+      10                                                                
+      11                                                                
+      12                                                                
+      13                                                                
+      14                                                                
+      15                                                                
+      16                                                                
+      17                                                                
+      18                                                                
+      19                                                                
+      20                                                                
+      21                                                                
+      22                                                                
+      23                                                                
+      24                                                                
+      25                                                                
+      26                                                                
+      27                                                                
+      28                                                                
+      29                                                                
+      30                                                                
+      31                                                                
+      32                                                                
+      33                                                                
+      34                                                                
+      35                                                                
+      36                                                                
+      37                                                                
+      38                                                                
+      39                                                                
+      40                                                                
+      41                                                                
+      42                                                                
+      43                                                                
+      44                                                                
+      45                                                                
+      46                                                                
+      47                                                                
+      48                                                                
+      49                                                                
+      50                                                                
+      51                                                                
+      52                                                                
+      53                                                                
+      54                                                                
+      55                                                                
+      56                                                                
+      57                                                                
+      58                                                                
+      59                                                                
+      60                                                                
+      61                                                                
+      62                                                                
+      63                                                                
+      64                                                                
+      65                                                                
+      66                                                                
+      67                                                                
+      68                                                                
+      69                                                                
+      70                                                                
+      71                                                                
+      72                                                                
+      73                                                                
+      74                                                                
+      75                                                                
+      76                                                                
+      77                                                                
+      78                                                                
+      79                                                                
+      80                                                                
+      81  P53 +/- (C57BL/6)                                             
+      82                                                                
+      83                                                                
+      84                                                                
+      85                                                                
+      86                                                                
+      87                                                                
+      88                                                                
+      89                                                                
+      90                                                                
+      91                                                                
+      92                                                                
+      93                                                                
+      94                                                                
+      95                                                                
+      96                                                                
+      97                                                                
+      98                                                                
+      99                                                                
+      100                                                               
+      101                                                               
+      102                                                               
+      103                                                               
+      104                                                               
+      105                                                               
+      106                                                               
+      107                                                               
+      108                                                               
+      109                                                               
+      110                                                               
+      111                                                               
+      112                                                               
+      113                                                               
+      114                                                               
+      115                                                               
+      116                                                               
+      117                                                               
+      118                                                               
+      119                                                               
+      120                                                               
+      121                                                               
+      122                                                               
+      123                                                               
+      124                                                               
+      125                                                               
+      126                                                               
+      127                                                               
+      128                                                               
+      129                                                               
+      130                                                               
+      131                                                               
+      132                                                               
+      133                                                               
+      134                                                               
+      135                                                               
+      136                                                               
+      137                                                               
+      138                                                               
+      139                                                               
+      140                                                               
+      141                                                               
+      142                                                               
+      143                                                               
+      144                                                               
+      145                                                               
+      146                                                               
+      147                                                               
+      148                                                               
+      149                                                               
+      150                                                               
+      151                                                               
+      152                                                               
+      153                                                               
+      154                                                               
+      155                                                               
+      156                                                               
+      157                                                               
+      158                                                               
+      159                                                               
+      160                                                               
+      161                                                               
+      162                                                               
+      163                                                               
+      164                                                               
+      165                                                               
+      166                                                               
+      167                                                               
+      168                                                               
+      169                                                               
+      170                                                               
+      171                                                               
+      172                                                               
+      173                                                               
+      174                                                               
+      175                                                               
+      176                                                               
+      177                                                               
+      178                                                               
+      179                                                               
+      180                                                               
+      181                                                               
+      182                                                               
+      183                                                               
+      184                                                               
+      185                                                               
+      186                                                               
+      187                                                               
+      188                                                               
+      189                                                               
+      190                                                               
+      191                                                               
+      192                                                               
+      193                                                               
+      194                                                               
+      195                                                               
+      196                                                               
+      197                                                               
+      198                                                               
+      199                                                               
+      200                                                               
+      201                                                               
+      202                                                               
+      203                                                               
+      204                                                               
+      205                                                               
+      206                                                               
+      207                                                               
+      208                                                               
+      209                                                               
+      210                                                               
+      211                                                               
+      212                                                               
+      213                                                               
+      214                                                               
+      215                                                               
+      216                                                               
+      217                                                               
+      218                                                               
+      219                                                               
+      220                                                               
+      221                                                               
+      222                                                               
+      223                                                               
+      224                                                               
+      225                                                               
+      226                                                               
+      227                                                               
+      228                                                               
+      229                                                               
+      230                                                               
+      231                                                               
+      232                                                               
+      233                                                               
+      234                                                               
+      235                                                               
+      236                                                               
+      237                                                               
+      238                                                               
+      239                                                               
+      240                                                               
+      241                                                               
+      242                                                               
+      243                                                               
+      244                                                               
+      245                                                               
+      246                                                               
+      247                                                               
+      248                                                               
+      249                                                               
+      250                                                               
+      251                                                               
+      252                                                               
+      253                                                               
+      254                                                               
+      255                                                               
+      256                                                               
+      257                                                               
+      258                                                               
+      259                                                               
+      260                                                               
+      261                                                               
+      262                                                               
+      263                                                               
+      264                                                               
+      265                                                               
+      266                                                               
+      267                                                               
+      268                                                               
+      269                                                               
+      270                                                               
+      271                                                               
+      272                                                               
+      273                                                               
+      274                                                               
+      275                                                               
+      276                                                               
+      277                                                               
+      278                                                               
+      279                                                               
+      280                                                               
           inVitroAssayFormat
       1                     
       2                     
@@ -1610,914 +1934,622 @@
       224                   
       225                   
       226                   
-                                                                                                                                             reference
-      1                                                                                                                              Bauch et al. 2012
-      2                                                                                                                                 Not applicable
-      3                                                                                                                              Bauch et al. 2012
-      4                                                                                                                                 Not applicable
-      5                                                                                                                                               
-      6                                                                                                                              Bauch et al. 2012
-      7                                                                                                                            Piroird et al. 2015
-      8                                                                                                                                 Not applicable
-      9       Ashikaga et al. 2010; Nukada et al. 2011; Nukada et al. 2012; Nukada personal communication (undated); Nukada et al. 2013; Not available
-      10                                                                                                                                Not applicable
-      11      Ashikaga et al. 2010; Nukada et al. 2011; Nukada et al. 2012; Nukada personal communication (undated); Nukada et al. 2013; Not available
-      12                                                                                                                                Not applicable
-      13      Ashikaga et al. 2010; Nukada et al. 2011; Nukada et al. 2012; Nukada personal communication (undated); Nukada et al. 2013; Not available
-      14                                                                                                                                Not applicable
-      15                                                                                                                                              
-      16                                                                                                                           Urbisch et al. 2015
-      17                                                                                                                                              
-      18                                                                                                                            Botham et al. 1995
-      19                                                                                                                            Botham et al. 1995
-      20                                                                                                                            Botham et al. 1995
-      21                                                                                                                                              
-      22                                                                                    Emter et al. 2010; Natsch et al. 2013; Urbisch et al. 2015
-      23                                                                                                                                              
-      24                                                                                                                             Bauch et al. 2012
-      25                                                                                                                                              
-      26                                                                                                                           Urbisch et al. 2015
-      27                                                                                   Nukada et al. 2013; Nukada personal communication (undated)
-      28                                                                                              Joint Research Centre of the European Union 2013
-      29                                                                                                                                              
-      30                                                                                              Joint Research Centre of the European Union 2013
-      31                                                                                              Joint Research Centre of the European Union 2013
-      32                                                                                              Joint Research Centre of the European Union 2013
-      33                                                                                              Joint Research Centre of the European Union 2013
-      34                                                                                              Joint Research Centre of the European Union 2013
-      35                                                                                              Joint Research Centre of the European Union 2013
-      36                                                                                                                           Urbisch et al. 2015
-      37                                                                                              Joint Research Centre of the European Union 2013
-      38                                                                                                                             Bauch et al. 2012
-      39                                                                                                                           Urbisch et al. 2015
-      40                                                                                                     Gerberick et al. 2007; Natsch et al. 2013
-      41                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      42                                                                                                                                              
-      43                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      44                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      45                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      46                                                                                                                     Marzulli and Maibach 1973
-      47                                                                                                                     Marzulli and Maibach 1973
-      48                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      49                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      50                                                                                              Joint Research Centre of the European Union 2013
-      51  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      52  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      53                                                                                                                                              
-      54                                                                                                                           Urbisch et al. 2015
-      55                                                                                                                           Urbisch et al. 2015
-      56                                                                                                                           Urbisch et al. 2015
-      57                                                                                                                                              
-      58                                                                                                                     Marzulli and Maibach 1973
-      59                                                                                                                     Marzulli and Maibach 1973
-      60  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      61                                                                                                                            Botham et al. 1995
-      62                                                                                                                            Botham et al. 1995
-      63                                                                                                                            Botham et al. 1995
-      64                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      65                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      66  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      67                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      68                                                                                                                           Urbisch et al. 2015
-      69  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      70  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      71                                                                                                                           Urbisch et al. 2015
-      72  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      73                                                                                                                           Urbisch et al. 2015
-      74  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      75                                                                                                                           Urbisch et al. 2015
-      76                                                                                                                                    ChemIDplus
-      77                                                                                                                                              
-      78                                                                                                                                              
-      79                                                                                                                     Marzulli and Maibach 1973
-      80      Ashikaga et al. 2010; Nukada et al. 2011; Nukada et al. 2012; Nukada personal communication (undated); Nukada et al. 2013; Not available
-      81                                                                                                         ECPA personal communication (undated)
-      82                                                                                                                                              
-      83      Ashikaga et al. 2010; Nukada et al. 2011; Nukada et al. 2012; Nukada personal communication (undated); Nukada et al. 2013; Not available
-      84                                                                                                                     Marzulli and Maibach 1973
-      85                                                                                                                             Bauch et al. 2012
-      86                                                                                                         ECPA personal communication (undated)
-      87                                                                                                                     Marzulli and Maibach 1973
-      88      Ashikaga et al. 2010; Nukada et al. 2011; Nukada et al. 2012; Nukada personal communication (undated); Nukada et al. 2013; Not available
-      89                                                                                                         ECPA personal communication (undated)
-      90                                                                                                                     Marzulli and Maibach 1973
-      91                                                                                                         ECPA personal communication (undated)
-      92                                                                                                                     Marzulli and Maibach 1973
-      93                                                                                                         ECPA personal communication (undated)
-      94                                                                                                                     Marzulli and Maibach 1973
-      95                                                                                                                         Basketter et al. 2003
-      96                                                                                                                     Marzulli and Maibach 1973
-      97                                                                                                                              Ryan et al. 2002
-      98                                                                                                     Gerberick et al. 2007; Natsch et al. 2013
-      99                                                                                                                           Piroird et al. 2015
-      100                                                                                                    Gerberick et al. 2007; Natsch et al. 2013
-      101                                                                                                                          Piroird et al. 2015
-      102                                                                                                                            Bauch et al. 2012
-      103                                                                                                                                             
-      104                                                                                                                            Bauch et al. 2012
-      105                                                                                                                            Bauch et al. 2012
-      106                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      107                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      108                                                                                                                           Kimber et al. 1991
-      109                                                                                                                                             
-      110                                                                                                                                             
-      111                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      112                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      113                                                                                                                                             
-      114                                                                                                                           Hilton et al. 1998
-      115                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      116                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      117                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      118                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      119                                                                                                                    Marzulli and Maibach 1973
-      120                                                                                                                             Ryan et al. 2002
-      121                                                                                                                    Marzulli and Maibach 1973
-      122                                                                                                                             Ryan et al. 2002
-      123                                                                                                                    Marzulli and Maibach 1973
-      124                                                                                                                             Ryan et al. 2002
-      125                                                                                                                    Marzulli and Maibach 1973
-      126                                                                                                                           Hilton et al. 1996
-      127                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      128                                                                                                                        Basketter et al. 2003
-      129                                                                                                                    Marzulli and Maibach 1973
-      130                                                                                                                           Hilton et al. 1998
-      131                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      132                                                                                                                                             
-      133                                                                                                                           Kimber et al. 1991
-      134                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      135                                                                                                                        Basketter et al. 2001
-      136                                                                                             Joint Research Centre of the European Union 2013
-      137                                                                                             Joint Research Centre of the European Union 2013
-      138                                                                                             Joint Research Centre of the European Union 2013
-      139                                                                                             Joint Research Centre of the European Union 2013
-      140                                                                                  Nukada et al. 2013; Nukada personal communication (undated)
-      141                                                                                             Joint Research Centre of the European Union 2013
-      142                                                                                  Nukada et al. 2013; Nukada personal communication (undated)
-      143                                                                                  Nukada et al. 2013; Nukada personal communication (undated)
-      144                                                                                             Joint Research Centre of the European Union 2013
-      145                                                                                             Joint Research Centre of the European Union 2013
-      146                                                                                             Joint Research Centre of the European Union 2013
-      147                                                                                             Joint Research Centre of the European Union 2013
-      148                                                                                             Joint Research Centre of the European Union 2013
-      149                                                                                             Joint Research Centre of the European Union 2013
-      150                                                                                             Joint Research Centre of the European Union 2013
-      151                                                                                                                                             
-      152                                                                                             Joint Research Centre of the European Union 2013
-      153                                                                                             Joint Research Centre of the European Union 2013
-      154                                                                                             Joint Research Centre of the European Union 2013
-      155                                                                                                                                             
-      156                                                                                             Joint Research Centre of the European Union 2013
-      157                                                                                             Joint Research Centre of the European Union 2013
-      158                                                                                             Joint Research Centre of the European Union 2013
-      159                                                                                             Joint Research Centre of the European Union 2013
-      160                                                                                                    Gerberick et al. 2007; Natsch et al. 2013
-      161                                                                                             Joint Research Centre of the European Union 2013
-      162                                                                                             Joint Research Centre of the European Union 2013
-      163                                                                                                                          Urbisch et al. 2015
-      164                                                                                             Joint Research Centre of the European Union 2013
-      165                                                                                                                                             
-      166                                                                                             Joint Research Centre of the European Union 2013
-      167                                                                                             Joint Research Centre of the European Union 2013
-      168                                                                                             Joint Research Centre of the European Union 2013
-      169                                                                                                                                             
-      170                                                                                                                                             
-      171                                                                                                                                             
-      172                                                                                                                                             
-      173                                                                                             Joint Research Centre of the European Union 2013
-      174                                                                                             Joint Research Centre of the European Union 2013
-      175                                                                                                                          Urbisch et al. 2015
-      176                                                                                                                                             
-      177                                                                                                                                             
-      178                                                                                                                                             
-      179                                                                                                                                             
-      180                                                                                                                                             
-      181                                                                                                                                             
-      182                                                                                                                                             
-      183                                                                                                                                             
-      184                                                                                                                                             
-      185                                                                                                                                             
-      186                                                                                                                                             
-      187                                                                                                                                             
-      188                                                                                                                                        NIOSH
-      189                                                                                                                     JRC AcutoxBase (undated)
-      190                                                                                                                                        NIOSH
-      191                                                                                                                     JRC AcutoxBase (undated)
-      192                                                                                                                     JRC AcutoxBase (undated)
-      193                                                                                                                                             
-      194                                                                                                                          Urbisch et al. 2015
-      195                                                                                                 NLM Hazardous Substances Data Bank (undated)
-      196                                                                                                                                             
-      197                                                                                                                                             
-      198                             Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
-      199                             Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
-      200                             Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
-      201                                                                                                                                             
-      202                                                                                                                                             
-      203                                                                                                                                        REACH
-      204                                                                                                                                             
-      205                                                                                   Emter et al. 2010; Natsch et al. 2013; Urbisch et al. 2015
-      206                                                                                                                            Bauch et al. 2012
-      207                                                                                   Emter et al. 2010; Natsch et al. 2013; Urbisch et al. 2015
-      208                                                                                   Emter et al. 2010; Natsch et al. 2013; Urbisch et al. 2015
-      209                                                                                                                          Urbisch et al. 2015
-      210                                                                                                                            Bauch et al. 2012
-      211                                                                                                                                             
-      212                                                                                                                                             
-      213                                                                                                                                        NIOSH
-      214                                                                                                 NLM Hazardous Substances Data Bank (undated)
-      215                                                                                                                                             
-      216                                                                                                                                        NIOSH
-      217                                                                                                                                             
-      218                                                                                                                                             
-      219                                                                                                                                             
-      220                                                                                                                                             
-      221                                                                                   Emter et al. 2010; Natsch et al. 2013; Urbisch et al. 2015
-      222                                                                                                                            Bauch et al. 2012
-      223                                                                                                                                             
-      224                                                                                                                                         AEGL
-      225                                                                                                                                         AEGL
-      226                                                                                                                          Urbisch et al. 2015
-                                                                                                                                           referenceUrl
-      1                                                                                                                     10.1016/j.yrtph.2012.05.013
-      2                                                                             https://ntp.niehs.nih.gov/ntp/roc/content/profiles/formaldehyde.pdf
-      3                                                                                                                     10.1016/j.yrtph.2012.05.013
-      4                                                                 https://cfpub.epa.gov/ncea/iris/iris_documents/documents/subst/0419_summary.pdf
-      5                                                                                                                                                
-      6                                                                                                                     10.1016/j.yrtph.2012.05.013
-      7                                                                                                                       10.1016/j.tiv.2015.03.009
-      8               http://publications.iarc.fr/139; http://publications.iarc.fr/80; http://publications.iarc.fr/106; http://publications.iarc.fr/123
-      9               10.1177/026119291003800403; 10.1111/j.1600-0536.2011.01952.x; 10.1016/j.tiv.2012.07.001; Not available; 10.1016/j.tiv.2012.11.006
-      10                                                                                https://manticore.niehs.nih.gov/cebssearch/test_article/50-00-0
-      11              10.1177/026119291003800403; 10.1111/j.1600-0536.2011.01952.x; 10.1016/j.tiv.2012.07.001; Not available; 10.1016/j.tiv.2012.11.006
-      12                                                                https://cfpub.epa.gov/ncea/iris/iris_documents/documents/subst/0419_summary.pdf
-      13              10.1177/026119291003800403; 10.1111/j.1600-0536.2011.01952.x; 10.1016/j.tiv.2012.07.001; Not available; 10.1016/j.tiv.2012.11.006
-      14                                                                https://cfpub.epa.gov/ncea/iris/iris_documents/documents/subst/0419_summary.pdf
-      15                                                                                                                                               
-      16                                                                                                                    10.1016/j.yrtph.2014.12.008
-      17                                                                                                                                               
-      18                                                                                                                     10.1177/026119299502300207
-      19                                                                                                                     10.1177/026119299502300207
-      20                                                                                                                     10.1177/026119299502300207
-      21                                                                                                                                               
-      22                                                                      10.1016/j.taap.2010.03.009; 10.1002/jat.2868; 10.1016/j.yrtph.2014.12.008
-      23                                                                                                                                               
-      24                                                                                                                    10.1016/j.yrtph.2012.05.013
-      25                                                                                                                                               
-      26                                                                                                                    10.1016/j.yrtph.2014.12.008
-      27                                                                                                                      10.1016/j.tiv.2012.11.006
-      28                                                                                                                                  Not available
-      29                                                                                                                                               
-      30                                                                                                                                  Not available
-      31                                                                                                                                  Not available
-      32                                                                                                                                  Not available
-      33                                                                                                                                  Not available
-      34                                                                                                                                  Not available
-      35                                                                                                                                  Not available
-      36                                                                                                                    10.1016/j.yrtph.2014.12.008
-      37                                                                                                                                  Not available
-      38                                                                                                                    10.1016/j.yrtph.2012.05.013
-      39                                                                                                                    10.1016/j.yrtph.2014.12.008
-      40                                                                                                        10.1093/toxsci/kfm064; 10.1002/jat.2868
-      41                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      42                                                                                                                                               
-      43                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      44        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      45        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      46                                                                                                                                  Not available
-      47                                                                                                                                  Not available
-      48                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      49                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      50                                                                                                                                  Not available
-      51  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      52  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      53                                                                                                                                               
-      54                                                                                                                    10.1016/j.yrtph.2014.12.008
-      55                                                                                                                    10.1016/j.yrtph.2014.12.008
-      56                                                                                                                    10.1016/j.yrtph.2014.12.008
-      57                                                                                                                                               
-      58                                                                                                                                  Not available
-      59                                                                                                                                  Not available
-      60  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      61                                                                                                                     10.1177/026119299502300207
-      62                                                                                                                     10.1177/026119299502300207
-      63                                                                                                                     10.1177/026119299502300207
-      64        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      65                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      66  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      67        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      68                                                                                                                    10.1016/j.yrtph.2014.12.008
-      69  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      70  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      71                                                                                                                    10.1016/j.yrtph.2014.12.008
-      72  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      73                                                                                                                    10.1016/j.yrtph.2014.12.008
-      74  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      75                                                                                                                    10.1016/j.yrtph.2014.12.008
-      76                                                                                                                                               
-      77                                                                                                                                               
-      78                                                                                                                                               
-      79                                                                                                                                  Not available
-      80              10.1177/026119291003800403; 10.1111/j.1600-0536.2011.01952.x; 10.1016/j.tiv.2012.07.001; Not available; 10.1016/j.tiv.2012.11.006
-      81                                                                                                                                  Not available
-      82                                                                                                                                               
-      83              10.1177/026119291003800403; 10.1111/j.1600-0536.2011.01952.x; 10.1016/j.tiv.2012.07.001; Not available; 10.1016/j.tiv.2012.11.006
-      84                                                                                                                                  Not available
-      85                                                                                                                    10.1016/j.yrtph.2012.05.013
-      86                                                                                                                                  Not available
-      87                                                                                                                                  Not available
-      88              10.1177/026119291003800403; 10.1111/j.1600-0536.2011.01952.x; 10.1016/j.tiv.2012.07.001; Not available; 10.1016/j.tiv.2012.11.006
-      89                                                                                                                                  Not available
-      90                                                                                                                                  Not available
-      91                                                                                                                                  Not available
-      92                                                                                                                                  Not available
-      93                                                                                                                                  Not available
-      94                                                                                                                                  Not available
-      95                                                                                                                          10.1081/CUS-120026299
-      96                                                                                                                                  Not available
-      97                                                                                                                  10.1016/s0278-6915(02)00116-3
-      98                                                                                                        10.1093/toxsci/kfm064; 10.1002/jat.2868
-      99                                                                                                                      10.1016/j.tiv.2015.03.009
-      100                                                                                                       10.1093/toxsci/kfm064; 10.1002/jat.2868
-      101                                                                                                                     10.1016/j.tiv.2015.03.009
-      102                                                                                                                   10.1016/j.yrtph.2012.05.013
-      103                                                                                                                                              
-      104                                                                                                                   10.1016/j.yrtph.2012.05.013
-      105                                                                                                                   10.1016/j.yrtph.2012.05.013
-      106                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      107                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      108                                                                                                                  10.1016/0378-4274(91)90135-s
-      109                                                                                                                                              
-      110                                                                                                                                              
-      111                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      112                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      113                                                                                                                                              
-      114                                                                                                                                 Not available
-      115                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      116                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      117                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      118                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      119                                                                                                                                 Not available
-      120                                                                                                                 10.1016/s0278-6915(02)00116-3
-      121                                                                                                                                 Not available
-      122                                                                                                                 10.1016/s0278-6915(02)00116-3
-      123                                                                                                                                 Not available
-      124                                                                                                                 10.1016/s0278-6915(02)00116-3
-      125                                                                                                                                 Not available
-      126                                                                                                                  10.1016/0278-6915(96)00012-9
-      127                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      128                                                                                                                         10.1081/CUS-120026299
-      129                                                                                                                                 Not available
-      130                                                                                                                                 Not available
-      131                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      132                                                                                                                                              
-      133                                                                                                                  10.1016/0378-4274(91)90135-s
-      134                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      135                                                                                                          10.1034/j.1600-0536.2001.045002089.x
-      136                                                                                                                                 Not available
-      137                                                                                                                                 Not available
-      138                                                                                                                                 Not available
-      139                                                                                                                                 Not available
-      140                                                                                                                     10.1016/j.tiv.2012.11.006
-      141                                                                                                                                 Not available
-      142                                                                                                                     10.1016/j.tiv.2012.11.006
-      143                                                                                                                     10.1016/j.tiv.2012.11.006
-      144                                                                                                                                 Not available
-      145                                                                                                                                 Not available
-      146                                                                                                                                 Not available
-      147                                                                                                                                 Not available
-      148                                                                                                                                 Not available
-      149                                                                                                                                 Not available
-      150                                                                                                                                 Not available
-      151                                                                                                                                              
-      152                                                                                                                                 Not available
-      153                                                                                                                                 Not available
-      154                                                                                                                                 Not available
-      155                                                                                                                                              
-      156                                                                                                                                 Not available
-      157                                                                                                                                 Not available
-      158                                                                                                                                 Not available
-      159                                                                                                                                 Not available
-      160                                                                                                       10.1093/toxsci/kfm064; 10.1002/jat.2868
-      161                                                                                                                                 Not available
-      162                                                                                                                                 Not available
-      163                                                                                                                   10.1016/j.yrtph.2014.12.008
-      164                                                                                                                                 Not available
-      165                                                                                                                                              
-      166                                                                                                                                 Not available
-      167                                                                                                                                 Not available
-      168                                                                                                                                 Not available
-      169                                                                                                                                              
-      170                                                                                                                                              
-      171                                                                                                                                              
-      172                                                                                                                                              
-      173                                                                                                                                 Not available
-      174                                                                                                                                 Not available
-      175                                                                                                                   10.1016/j.yrtph.2014.12.008
-      176                                                                                                                                              
-      177                                                                                                                                              
-      178                                                                                                                                              
-      179                                                                                                                                              
-      180                                                                                                                                              
-      181                                                                                                                                              
-      182                                                                                                                                              
-      183                                                                                                                                              
-      184                                                                                                                                              
-      185                                                                                                                                              
-      186                                                                                                                                              
-      187                                                                                                                                              
-      188                                                                                                                                              
-      189                                                                                                                                              
-      190                                                                                                                                              
-      191                                                                                                                                              
-      192                                                                                                                                              
-      193                                                                                                                                              
-      194                                                                                                                   10.1016/j.yrtph.2014.12.008
-      195                                                                                                             https://pubchem.ncbi.nlm.nih.gov/
-      196                                                                                                                                              
-      197                                                                                                                                              
-      198                                                                                https://github.com/HumanExposure/SEEM3RPackage/tree/main/SEEM3
-      199                                                                                https://github.com/HumanExposure/SEEM3RPackage/tree/main/SEEM3
-      200                                                                                https://github.com/HumanExposure/SEEM3RPackage/tree/main/SEEM3
-      201                                                                                                                                              
-      202                                                                                                                                              
-      203               https://echa.europa.eu/registration-dossier/-/registered-dossier/15858/7/3/3/?documentUUID=d1a32765-e92b-4790-99da-6355ab1a22cc
-      204                                                                                                                                              
-      205                                                                     10.1016/j.taap.2010.03.009; 10.1002/jat.2868; 10.1016/j.yrtph.2014.12.008
-      206                                                                                                                   10.1016/j.yrtph.2012.05.013
-      207                                                                     10.1016/j.taap.2010.03.009; 10.1002/jat.2868; 10.1016/j.yrtph.2014.12.008
-      208                                                                     10.1016/j.taap.2010.03.009; 10.1002/jat.2868; 10.1016/j.yrtph.2014.12.008
-      209                                                                                                                   10.1016/j.yrtph.2014.12.008
-      210                                                                                                                   10.1016/j.yrtph.2012.05.013
-      211                                                                                                                                              
-      212                                                                                                                                              
-      213                                                                                                                                              
-      214                                                                                                             https://pubchem.ncbi.nlm.nih.gov/
-      215                                                                                                                                              
-      216                                                                                                                                              
-      217                                                                                                                                              
-      218                                                                                                                                              
-      219                                                                                                                                              
-      220                                                                                                                                              
-      221                                                                     10.1016/j.taap.2010.03.009; 10.1002/jat.2868; 10.1016/j.yrtph.2014.12.008
-      222                                                                                                                   10.1016/j.yrtph.2012.05.013
-      223                                                                                                                                              
-      224                                                                                                                                              
-      225                                                                                                                                              
-      226                                                                                                                   10.1016/j.yrtph.2014.12.008
-                 dtxsid                       substanceName
-      1   DTXSID7020637                        Formaldehyde
-      2   DTXSID7020637                        Formaldehyde
-      3   DTXSID7020637                        Formaldehyde
-      4   DTXSID7020637                        Formaldehyde
-      5   DTXSID7020637                        Formaldehyde
-      6   DTXSID7020637                        Formaldehyde
-      7   DTXSID7020637                        Formaldehyde
-      8   DTXSID7020637                        Formaldehyde
-      9   DTXSID7020637                        Formaldehyde
-      10  DTXSID7020637                        Formaldehyde
-      11  DTXSID7020637                        Formaldehyde
-      12  DTXSID7020637                        Formaldehyde
-      13  DTXSID7020637                        Formaldehyde
-      14  DTXSID7020637                        Formaldehyde
-      15  DTXSID7020637                        Formaldehyde
-      16  DTXSID7020637                        Formaldehyde
-      17  DTXSID7020637                        Formaldehyde
-      18                dicyanamine/formaldehyde condensate
-      19                dicyanamine/formaldehyde condensate
-      20                dicyanamine/formaldehyde condensate
-      21  DTXSID7020637                        Formaldehyde
-      22  DTXSID7020637                        Formaldehyde
-      23  DTXSID7020637                        Formaldehyde
-      24  DTXSID7020637                        Formaldehyde
-      25  DTXSID7020637                        Formaldehyde
-      26  DTXSID7020637                        Formaldehyde
-      27  DTXSID7020637                        Formaldehyde
-      28  DTXSID7020637                        Formaldehyde
-      29  DTXSID7020637                        Formaldehyde
-      30  DTXSID7020637                        Formaldehyde
-      31  DTXSID7020637                        Formaldehyde
-      32  DTXSID7020637                        Formaldehyde
-      33  DTXSID7020637                        Formaldehyde
-      34  DTXSID7020637                        Formaldehyde
-      35  DTXSID7020637                        Formaldehyde
-      36  DTXSID7020637                        Formaldehyde
-      37  DTXSID7020637                        Formaldehyde
-      38  DTXSID7020637                        Formaldehyde
-      39  DTXSID7020637                        Formaldehyde
-      40  DTXSID7020637                        Formaldehyde
-      41  DTXSID7020637                        Formaldehyde
-      42  DTXSID7020637                        Formaldehyde
-      43  DTXSID7020637                        Formaldehyde
-      44  DTXSID7020637                        Formaldehyde
-      45  DTXSID7020637                        Formaldehyde
-      46  DTXSID7020637                        Formaldehyde
-      47  DTXSID7020637                        Formaldehyde
-      48  DTXSID7020637                        Formaldehyde
-      49  DTXSID7020637                        Formaldehyde
-      50  DTXSID7020637                        Formaldehyde
-      51  DTXSID7020637                        Formaldehyde
-      52  DTXSID7020637                        Formaldehyde
-      53  DTXSID7020637                        Formaldehyde
-      54  DTXSID7020637                        Formaldehyde
-      55  DTXSID7020637                        Formaldehyde
-      56  DTXSID7020637                        Formaldehyde
-      57  DTXSID7020637                        Formaldehyde
-      58  DTXSID7020637                        Formaldehyde
-      59  DTXSID7020637                        Formaldehyde
-      60  DTXSID7020637                        Formaldehyde
-      61                dicyanamine/formaldehyde condensate
-      62                dicyanamine/formaldehyde condensate
-      63                dicyanamine/formaldehyde condensate
-      64  DTXSID7020637                        Formaldehyde
-      65  DTXSID7020637                        Formaldehyde
-      66  DTXSID7020637                        Formaldehyde
-      67  DTXSID7020637                        Formaldehyde
-      68  DTXSID7020637                        Formaldehyde
-      69  DTXSID7020637                        Formaldehyde
-      70  DTXSID7020637                        Formaldehyde
-      71  DTXSID7020637                        Formaldehyde
-      72  DTXSID7020637                        Formaldehyde
-      73  DTXSID7020637                        Formaldehyde
-      74  DTXSID7020637                        Formaldehyde
-      75  DTXSID7020637                        Formaldehyde
-      76  DTXSID7020637                        Formaldehyde
-      77  DTXSID7020637                        Formaldehyde
-      78  DTXSID7020637                        Formaldehyde
-      79  DTXSID7020637                        Formaldehyde
-      80  DTXSID7020637                        Formaldehyde
-      81  DTXSID7020637                        Formaldehyde
-      82  DTXSID7020637                        Formaldehyde
-      83  DTXSID7020637                        Formaldehyde
-      84  DTXSID7020637                        Formaldehyde
-      85  DTXSID7020637                        Formaldehyde
-      86  DTXSID7020637                        Formaldehyde
-      87  DTXSID7020637                        Formaldehyde
-      88  DTXSID7020637                        Formaldehyde
-      89  DTXSID7020637                        Formaldehyde
-      90  DTXSID7020637                        Formaldehyde
-      91  DTXSID7020637                        Formaldehyde
-      92  DTXSID7020637                        Formaldehyde
-      93  DTXSID7020637                        Formaldehyde
-      94  DTXSID7020637                        Formaldehyde
-      95  DTXSID7020637                        Formaldehyde
-      96  DTXSID7020637                        Formaldehyde
-      97  DTXSID7020637                        Formaldehyde
-      98  DTXSID7020637                        Formaldehyde
-      99  DTXSID7020637                        Formaldehyde
-      100 DTXSID7020637                        Formaldehyde
-      101 DTXSID7020637                        Formaldehyde
-      102 DTXSID7020637                        Formaldehyde
-      103 DTXSID7020637                        Formaldehyde
-      104 DTXSID7020637                        Formaldehyde
-      105 DTXSID7020637                        Formaldehyde
-      106 DTXSID7020637                        Formaldehyde
-      107 DTXSID7020637                        Formaldehyde
-      108 DTXSID7020637                        Formaldehyde
-      109 DTXSID7020637                        Formaldehyde
-      110 DTXSID7020637                        Formaldehyde
-      111 DTXSID7020637                        Formaldehyde
-      112 DTXSID7020637                        Formaldehyde
-      113 DTXSID7020637                        Formaldehyde
-      114 DTXSID7020637                        Formaldehyde
-      115 DTXSID7020637                        Formaldehyde
-      116 DTXSID7020637                        Formaldehyde
-      117 DTXSID7020637                        Formaldehyde
-      118 DTXSID7020637                        Formaldehyde
-      119 DTXSID7020637                        Formaldehyde
-      120 DTXSID7020637                        Formaldehyde
-      121 DTXSID7020637                        Formaldehyde
-      122 DTXSID7020637                        Formaldehyde
-      123 DTXSID7020637                        Formaldehyde
-      124 DTXSID7020637                        Formaldehyde
-      125 DTXSID7020637                        Formaldehyde
-      126 DTXSID7020637                        Formaldehyde
-      127 DTXSID7020637                        Formaldehyde
-      128 DTXSID7020637                        Formaldehyde
-      129 DTXSID7020637                        Formaldehyde
-      130 DTXSID7020637                        Formaldehyde
-      131 DTXSID7020637                        Formaldehyde
-      132 DTXSID7020637                        Formaldehyde
-      133 DTXSID7020637                        Formaldehyde
-      134 DTXSID7020637                        Formaldehyde
-      135 DTXSID7020637                        Formaldehyde
-      136 DTXSID7020637                        Formaldehyde
-      137 DTXSID7020637                        Formaldehyde
-      138 DTXSID7020637                        Formaldehyde
-      139 DTXSID7020637                        Formaldehyde
-      140 DTXSID7020637                        Formaldehyde
-      141 DTXSID7020637                        Formaldehyde
-      142 DTXSID7020637                        Formaldehyde
-      143 DTXSID7020637                        Formaldehyde
-      144 DTXSID7020637                        Formaldehyde
-      145 DTXSID7020637                        Formaldehyde
-      146 DTXSID7020637                        Formaldehyde
-      147 DTXSID7020637                        Formaldehyde
-      148 DTXSID7020637                        Formaldehyde
-      149 DTXSID7020637                        Formaldehyde
-      150 DTXSID7020637                        Formaldehyde
-      151 DTXSID7020637                        Formaldehyde
-      152 DTXSID7020637                        Formaldehyde
-      153 DTXSID7020637                        Formaldehyde
-      154 DTXSID7020637                        Formaldehyde
-      155 DTXSID7020637                        Formaldehyde
-      156 DTXSID7020637                        Formaldehyde
-      157 DTXSID7020637                        Formaldehyde
-      158 DTXSID7020637                        Formaldehyde
-      159 DTXSID7020637                        Formaldehyde
-      160 DTXSID7020637                        Formaldehyde
-      161 DTXSID7020637                        Formaldehyde
-      162 DTXSID7020637                        Formaldehyde
-      163 DTXSID7020637                        Formaldehyde
-      164 DTXSID7020637                        Formaldehyde
-      165 DTXSID7020637                        Formaldehyde
-      166 DTXSID7020637                        Formaldehyde
-      167 DTXSID7020637                        Formaldehyde
-      168 DTXSID7020637                        Formaldehyde
-      169 DTXSID7020637                        Formaldehyde
-      170 DTXSID7020637                        Formaldehyde
-      171 DTXSID7020637                        Formaldehyde
-      172 DTXSID7020637                        Formaldehyde
-      173 DTXSID7020637                        Formaldehyde
-      174 DTXSID7020637                        Formaldehyde
-      175 DTXSID7020637                        Formaldehyde
-      176 DTXSID7020637                        Formaldehyde
-      177 DTXSID7020637                        Formaldehyde
-      178 DTXSID7020637                        Formaldehyde
-      179 DTXSID7020637                        Formaldehyde
-      180 DTXSID7020637                        Formaldehyde
-      181 DTXSID7020637                        Formaldehyde
-      182 DTXSID7020637                        Formaldehyde
-      183 DTXSID7020637                        Formaldehyde
-      184 DTXSID7020637                        Formaldehyde
-      185 DTXSID7020637                        Formaldehyde
-      186 DTXSID7020637                        Formaldehyde
-      187 DTXSID7020637                        Formaldehyde
-      188 DTXSID7020637                        Formaldehyde
-      189 DTXSID7020637                        Formaldehyde
-      190 DTXSID7020637                        Formaldehyde
-      191 DTXSID7020637                        Formaldehyde
-      192 DTXSID7020637                        Formaldehyde
-      193 DTXSID7020637                        Formaldehyde
-      194 DTXSID7020637                        Formaldehyde
-      195 DTXSID7020637                        Formaldehyde
-      196 DTXSID7020637                        Formaldehyde
-      197 DTXSID7020637                        Formaldehyde
-      198 DTXSID7020637                        Formaldehyde
-      199 DTXSID7020637                        Formaldehyde
-      200 DTXSID7020637                        Formaldehyde
-      201 DTXSID7020637                        Formaldehyde
-      202 DTXSID7020637                        Formaldehyde
-      203 DTXSID7020637                        Formaldehyde
-      204 DTXSID7020637                        Formaldehyde
-      205 DTXSID7020637                        Formaldehyde
-      206 DTXSID7020637                        Formaldehyde
-      207 DTXSID7020637                        Formaldehyde
-      208 DTXSID7020637                        Formaldehyde
-      209 DTXSID7020637                        Formaldehyde
-      210 DTXSID7020637                        Formaldehyde
-      211 DTXSID7020637                        Formaldehyde
-      212 DTXSID7020637                        Formaldehyde
-      213 DTXSID7020637                        Formaldehyde
-      214 DTXSID7020637                        Formaldehyde
-      215 DTXSID7020637                        Formaldehyde
-      216 DTXSID7020637                        Formaldehyde
-      217 DTXSID7020637                        Formaldehyde
-      218 DTXSID7020637                        Formaldehyde
-      219 DTXSID7020637                        Formaldehyde
-      220 DTXSID7020637                        Formaldehyde
-      221 DTXSID7020637                        Formaldehyde
-      222 DTXSID7020637                        Formaldehyde
-      223 DTXSID7020637                        Formaldehyde
-      224 DTXSID7020637                        Formaldehyde
-      225 DTXSID7020637                        Formaldehyde
-      226 DTXSID7020637                        Formaldehyde
-                                                              pubMedId
-      1                                                       22659254
-      2                                                             NA
-      3                                                       22659254
-      4                                                             NA
-      5                                                               
-      6                                                       22659254
-      7                                                       25820135
-      8                                                             NA
-      9          20822320; 21767275; 22796097; Not available; 23149339
-      10                                                            NA
-      11         20822320; 21767275; 22796097; Not available; 23149339
-      12                                                            NA
-      13         20822320; 21767275; 22796097; Not available; 23149339
-      14                                                            NA
-      15                                                              
-      16                                                      25541156
-      17                                                              
-      18                                                 Not available
-      19                                                 Not available
-      20                                                 Not available
-      21                                                              
-      22                                  20307559; 23576290; 25541156
-      23                                                              
-      24                                                      22659254
-      25                                                              
-      26                                                      25541156
-      27                                                      23149339
-      28                                                 Not available
-      29                                                              
-      30                                                 Not available
-      31                                                 Not available
-      32                                                 Not available
-      33                                                 Not available
-      34                                                 Not available
-      35                                                 Not available
-      36                                                      25541156
-      37                                                 Not available
-      38                                                      22659254
-      39                                                      25541156
-      40                                            17400584; 23576290
-      41          4459237; 11526521; Not available; 14623479; 15135206
-      42                                                              
-      43          4459237; 11526521; Not available; 14623479; 15135206
-      44          4459237; Not available; 14623479; 15135206; 16283904
-      45          4459237; Not available; 14623479; 15135206; 16283904
-      46                                                 Not available
-      47                                                 Not available
-      48          4459237; 11526521; Not available; 14623479; 15135206
-      49          4459237; 11526521; Not available; 14623479; 15135206
-      50                                                 Not available
-      51  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      52  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      53                                                              
-      54                                                      25541156
-      55                                                      25541156
-      56                                                      25541156
-      57                                                              
-      58                                                 Not available
-      59                                                 Not available
-      60  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      61                                                 Not available
-      62                                                 Not available
-      63                                                 Not available
-      64          4459237; Not available; 14623479; 15135206; 16283904
-      65          4459237; 11526521; Not available; 14623479; 15135206
-      66  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      67          4459237; Not available; 14623479; 15135206; 16283904
-      68                                                      25541156
-      69  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      70  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      71                                                      25541156
-      72  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      73                                                      25541156
-      74  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      75                                                      25541156
-      76                                                              
-      77                                                              
-      78                                                              
-      79                                                 Not available
-      80         20822320; 21767275; 22796097; Not available; 23149339
-      81                                                 Not available
-      82                                                              
-      83         20822320; 21767275; 22796097; Not available; 23149339
-      84                                                 Not available
-      85                                                      22659254
-      86                                                 Not available
-      87                                                 Not available
-      88         20822320; 21767275; 22796097; Not available; 23149339
-      89                                                 Not available
-      90                                                 Not available
-      91                                                 Not available
-      92                                                 Not available
-      93                                                 Not available
-      94                                                 Not available
-      95                                                 Not available
-      96                                                 Not available
-      97                                                      12176099
-      98                                            17400584; 23576290
-      99                                                      25820135
-      100                                           17400584; 23576290
-      101                                                     25820135
-      102                                                     22659254
-      103                                                             
-      104                                                     22659254
-      105                                                     22659254
-      106         4459237; 11526521; Not available; 14623479; 15135206
-      107         4459237; 11526521; Not available; 14623479; 15135206
-      108                                                      1998208
-      109                                                             
-      110                                                             
-      111         4459237; 11526521; Not available; 14623479; 15135206
-      112         4459237; 11526521; Not available; 14623479; 15135206
-      113                                                             
-      114                                                      9471984
-      115         4459237; 11526521; Not available; 14623479; 15135206
-      116         4459237; 11526521; Not available; 14623479; 15135206
-      117         4459237; 11526521; Not available; 14623479; 15135206
-      118         4459237; 11526521; Not available; 14623479; 15135206
-      119                                                Not available
-      120                                                     12176099
-      121                                                Not available
-      122                                                     12176099
-      123                                                Not available
-      124                                                     12176099
-      125                                                Not available
-      126                                                      8690318
-      127         4459237; 11526521; Not available; 14623479; 15135206
-      128                                                Not available
-      129                                                Not available
-      130                                                      9471984
-      131         4459237; 11526521; Not available; 14623479; 15135206
-      132                                                             
-      133                                                      1998208
-      134         4459237; 11526521; Not available; 14623479; 15135206
-      135                                                     11553118
-      136                                                Not available
-      137                                                Not available
-      138                                                Not available
-      139                                                Not available
-      140                                                     23149339
-      141                                                Not available
-      142                                                     23149339
-      143                                                     23149339
-      144                                                Not available
-      145                                                Not available
-      146                                                Not available
-      147                                                Not available
-      148                                                Not available
-      149                                                Not available
-      150                                                Not available
-      151                                                             
-      152                                                Not available
-      153                                                Not available
-      154                                                Not available
-      155                                                             
-      156                                                Not available
-      157                                                Not available
-      158                                                Not available
-      159                                                Not available
-      160                                           17400584; 23576290
-      161                                                Not available
-      162                                                Not available
-      163                                                     25541156
-      164                                                Not available
-      165                                                             
-      166                                                Not available
-      167                                                Not available
-      168                                                Not available
-      169                                                             
-      170                                                             
-      171                                                             
-      172                                                             
-      173                                                Not available
-      174                                                Not available
-      175                                                     25541156
-      176                                                             
-      177                                                             
-      178                                                             
-      179                                                             
-      180                                                             
-      181                                                             
-      182                                                             
-      183                                                             
-      184                                                             
-      185                                                             
-      186                                                             
-      187                                                           NA
-      188                                                             
-      189                                                           NA
-      190                                                             
-      191                                                           NA
-      192                                                           NA
-      193                                                           NA
-      194                                                     25541156
-      195                                                           NA
-      196                                                             
-      197                                                             
-      198                                                             
-      199                                                             
-      200                                                             
-      201                                                             
-      202                                                             
-      203                                                             
-      204                                                             
-      205                                 20307559; 23576290; 25541156
-      206                                                     22659254
-      207                                 20307559; 23576290; 25541156
-      208                                 20307559; 23576290; 25541156
-      209                                                     25541156
-      210                                                     22659254
-      211                                                             
-      212                                                             
-      213                                                             
-      214                                                           NA
-      215                                                           NA
-      216                                                             
-      217                                                             
-      218                                                             
-      219                                                             
-      220                                                             
-      221                                 20307559; 23576290; 25541156
-      222                                                     22659254
-      223                                                             
-      224                                                             
-      225                                                             
-      226                                                     25541156
+      227                   
+      228                   
+      229                   
+      230                   
+      231                   
+      232                   
+      233                   
+      234                   
+      235                   
+      236                   
+      237                   
+      238                   
+      239                   
+      240                   
+      241                   
+      242                   
+      243                   
+      244                   
+      245                   
+      246                   
+      247                   
+      248                   
+      249                   
+      250                   
+      251                   
+      252                   
+      253                   
+      254                   
+      255                   
+      256                   
+      257                   
+      258                   
+      259                   
+      260                   
+      261                   
+      262                   
+      263                   
+      264                   
+      265                   
+      266                   
+      267                   
+      268                   
+      269                   
+      270                   
+      271                   
+      272                   
+      273                   
+      274                   
+      275                   
+      276                   
+      277                   
+      278                   
+      279                   
+      280                   
+                                                                                                                                                                                                                                                                                                                                                                                  reference
+      1                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      2                                                                                                                                                                                                                                                                                                                                                                                    
+      3                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      4                                                                                                                                                                                                                                                                                                                                                                                    
+      5                                                                                                                                                                                                                                                                                                                                                                                    
+      6                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      7                                                                                                                                                                                                                                                                                                                                                                                    
+      8                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      9                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      10                                                                                                                                                                                                                                                                                                                                                                                   
+      11                                                                                                                                                                                                                                                                                                                         Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      12                                                                                                                                                                                                                                                                                                                                                                                   
+      13                                                                                                                                                                                                                                                                                                                                                                                   
+      14                                                                                                                                                                                                                                                                                                                                                                                   
+      15                                                                                                                                                                                                                                                                                                                                                                                   
+      16                                                                                                                                                                                                                                                                                                                                                                                   
+      17                                                                                                                                                                                                                                                                                                                                                                                   
+      18                                                                                                                                                                                                                                                                                                                                                                                   
+      19                                                                                                                                                                                                                                                                                                                                                                                   
+      20                                                                                                                                                                                                                                                                                                                                                                                   
+      21                                                                                                                                                                                                                                                                                                                                                                                   
+      22                                                                                                                                                                                                                                                                                                                                                                                   
+      23                                                                                                                                                                                                                                                                                                                                                                                   
+      24                                                                                                                                                                                                                                                                                                                                                                                   
+      25                                                                                                                                                                                                                                                                                                                                                                                   
+      26                                                                                                                                                                                                                                                                                                                                                                                   
+      27                                                                                                                                                                                                                                                                                                                                                                                   
+      28                                                                                                                                                                                                                                                                                                                                                                                   
+      29                                                                                                                                                                                                                                                                                                                           Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      30                                                                                                                                                                                                                                                                                                                                                                                   
+      31                                                                                                                                                                                                                                                                                                                           Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      32                                                                                                                                                                                                                                                                                                                                                                                   
+      33                                                                                                                                                                                                                                                                                                                           Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      34                                                                                                                                                                                                                                                                                                                                                                                   
+      35                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      36                                                                                                                                                                                                                                                                                                                                                                                   
+      37                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      38                                                                                                                                                                                                                                                                                                                                                                                   
+      39                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      40                                                                                                                                                                                                                                                                                                                                                                                   
+      41                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      42                                                                                                                                                                                                                                                                                                                                                                                   
+      43                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      44                                                                                                                                                                                                                                                                                                                                                                                   
+      45                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      46                                                                                                                                                                                                                                                                                                                                                                                   
+      47                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      48                                                                                                                                                                                                                                                                                                                                                                                   
+      49                                                                                                                                                                                                                                                                                                                                                                                   
+      50                                                                                                                                                                                                                                                                                                                                                                                   
+      51                                                                                                                                                                                                                                                                                                                                                                                   
+      52                                                                                                                                                                                                                                                                                                                                                                                   
+      53                                                                                                                                                                                                                                                                                                                                                                                   
+      54                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      55                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      56                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      57                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      58                                                                                                                                                                                                                                                                                                                                                                                   
+      59                                                                                                                                                                                                                                                                                                                                                                                   
+      60                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      61                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      62                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      63                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      64                                                                                                                                                                                                                                                                                                                         Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      65                                                                                                                                                                                                                                                                                                                         Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      66  Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      67  Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      68                                                                                                                                                                                                                                                                                                                         Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      69                                                                                                                                                                                                                                                                                                                           Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      70                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      71                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      72                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      73                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      74                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      75                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      76                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      77                                                                                                                                                                                                                                                                                                                                              ECPA personal communication (undated)
+      78                                                                                                                                                                                                                                                                                                                                                                                   
+      79                                                                                                                                                                                                                                                                                                                                                                                   
+      80                                                                                                                                                                                                                                                                                                                                                                                   
+      81                                                                                                                                                                                                                                                                                                                                                                                   
+      82                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      83                                                                                                                                                                                                                                                                                                                                                                                   
+      84                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      85                                                                                                                                                                                                                                                                                                                                                                                   
+      86                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      87                                                                                                                                                                                                                                                                                                                                                                                   
+      88                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      89                                                                                                                                                                                                                                                                                                                                                                                   
+      90                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      91                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      92                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      93                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      94                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      95                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      96                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      97                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      98                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      99                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      100                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      101                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      102                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      103                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      104                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      105                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      106                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      107                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      108                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      109                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      110                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      111                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      112                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      113                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      114                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      115                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      116                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      117                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      118                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      119                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      120                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      121                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      122                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      123                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      124                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      125                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      126                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      127                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      128                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      129                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      130                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      131                                                                                                                                                                                                                                                                                                                                                                                  
+      132                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      133                                                                                                                                                                                                                                                                                                                                                                                  
+      134                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      135                                                                                                                                                                                                                                                                                                                                                                                  
+      136                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      137                                                                                                                                                                                                                                                                                                                                                                                  
+      138                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      139                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      140                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      141                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      142                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      143                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      144                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      145                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      146                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      147                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      148                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      149                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      150                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      151                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      152                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      153                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      154                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      155                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      156                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      157                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      158                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      159                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      160                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      161                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      162                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      163                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      164                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      165                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      166                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      167                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      168                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      169                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      170                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      171                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      172                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      173                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      174                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      175                                                                                                                                                                                                                                                                                                                                                                                  
+      176                                                                                                                                                                                                                                                                                                                                                                                  
+      177                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      178                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      179                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      180                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      181                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      182                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      183                                                                                                                                                                                                                                                                                                                                                                                  
+      184                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      185                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      186                                                                                                                                                                                                                                                                                                                                                                                  
+      187                                                                                                                                                                                                                                                                                                                                                                                  
+      188                                                                                                                                                                                                                                                                                                                                                                                  
+      189                                                                                                                                                                                                                                                                                                                                                                                  
+      190                                                                                                                                                                                                                                                                                                                                                                                  
+      191                                                                                                                                                                                                                                                                                                                                                                                  
+      192                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      193                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      194                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      195                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      196                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      197                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      198                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      199                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      200 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      201 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      202 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      203 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      204                                                                                                                                                                                                                                                                                                                        Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      205                                                                                                                                                                                                                                                                                                                        Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      206                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      207                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      208                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      209                                                                                                                                                                                                                                                                                                                                                                                  
+      210                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      211                                                                                                                                                                                                                                                                                                                                                                                  
+      212                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      213                                                                                                                                                                                                                                                                                                                                                                                  
+      214                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      215                                                                                                                                                                                                                                                                                                                                                                                  
+      216                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      217                                                                                                                                                                                                                                                                                                                                                                                  
+      218                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      219                                                                                                                                                                                                                                                                                                                                                                                  
+      220                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      221                                                                                                                                                                                                                                                                                                                                                                                  
+      222                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      223                                                                                                                                                                                                                                                                                                                                                                                  
+      224                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      225                                                                                                                                                                                                                                                                                                                                                                                  
+      226                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      227                                                                                                                                                                                                                                                                                                                                                                                  
+      228                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      229                                                                                                                                                                                                                                                                                                                                                                                  
+      230                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      231                                                                                                                                                                                                                                                                                                                                                                                  
+      232                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      233                                                                                                                                                                                                                                                                                                                                                                                  
+      234                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      235                                                                                                                                                                                                                                                                                                                                                                                  
+      236                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      237                                                                                                                                                                                                                                                                                                                                                                                  
+      238                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      239                                                                                                                                                                                                                                                                                                                                                                                  
+      240                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      241                                                                                                                                                                                                                                                                                                                                                                                  
+      242                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      243                                                                                                                                                                                                                                                                                                                                                                                  
+      244                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      245                                                                                                                                                                                                                                                                                                                                                                                  
+      246                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      247                                                                                                                                                                                                                                                                                                                                                                                  
+      248                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      249                                                                                                                                                                                                                                                                                                                                                                                  
+      250                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      251                                                                                                                                                                                                                                                                                                                                                                                  
+      252                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      253                                                                                                                                                                                                                                                                                                                                                                                  
+      254                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      255                                                                                                                                                                                                                                                                                                                                                                                  
+      256                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      257                                                                                                                                                                                                                                                                                                                                                                                  
+      258                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      259                                                                                                                                                                                                                                                                                                                                                                                  
+      260                                                                                                                                                                                                                                                                  Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
+      261                                                                                                                                                                                                                                                                                                                                                                                  
+      262                                                                                                                                                                                                                                                                  Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
+      263                                                                                                                                                                                                                                                                                                                                                                                  
+      264                                                                                                                                                                                                                                                                                                                                                                                  
+      265                                                                                                                                                                                                                                                                                                                                                                                  
+      266                                                                                                                                                                                                                                                                  Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
+      267                                                                                                                                                                                                                                                                                                                                                                                  
+      268                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      269                                                                                                                                                                                                                                                                                                                                                                                  
+      270                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      271                                                                                                                                                                                                                                                                                                                                                                                  
+      272                                                                                                                                                                                                                                                                                                                          Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      273                                                                                                                                                                                                                                                                                                                          Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      274                                                                                                                                                                                                                                                                                                                          Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      275                                                                                                                                                                                                                                                                                                                          Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      276 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      277                                                                                                                                                                                                                                                                                                                        Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      278 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      279 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      280                                                                                                                                                                                                                                                                                                                          Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+          referenceUrl        dtxsid                       substanceName pubMedId
+      1                              dicyanamine/formaldehyde condensate         
+      2                DTXSID7020637                        Formaldehyde         
+      3                              dicyanamine/formaldehyde condensate         
+      4                DTXSID7020637                        Formaldehyde         
+      5                DTXSID7020637                        Formaldehyde         
+      6                              dicyanamine/formaldehyde condensate         
+      7                DTXSID7020637                        Formaldehyde         
+      8                              dicyanamine/formaldehyde condensate         
+      9                              dicyanamine/formaldehyde condensate         
+      10               DTXSID7020637                        Formaldehyde         
+      11                             dicyanamine/formaldehyde condensate         
+      12               DTXSID7020637                        Formaldehyde         
+      13               DTXSID7020637                        Formaldehyde         
+      14               DTXSID7020637                        Formaldehyde         
+      15               DTXSID7020637                        Formaldehyde         
+      16               DTXSID7020637                        Formaldehyde         
+      17               DTXSID7020637                        Formaldehyde         
+      18               DTXSID7020637                        Formaldehyde         
+      19               DTXSID7020637                        Formaldehyde         
+      20               DTXSID7020637                        Formaldehyde         
+      21               DTXSID7020637                        Formaldehyde         
+      22               DTXSID7020637                        Formaldehyde         
+      23               DTXSID7020637                        Formaldehyde         
+      24               DTXSID7020637                        Formaldehyde         
+      25               DTXSID7020637                        Formaldehyde         
+      26               DTXSID7020637                        Formaldehyde         
+      27               DTXSID7020637                        Formaldehyde         
+      28               DTXSID7020637                        Formaldehyde         
+      29               DTXSID7020637                        Formaldehyde         
+      30               DTXSID7020637                        Formaldehyde         
+      31               DTXSID7020637                        Formaldehyde         
+      32               DTXSID7020637                        Formaldehyde         
+      33               DTXSID7020637                        Formaldehyde         
+      34               DTXSID7020637                        Formaldehyde         
+      35               DTXSID7020637                        Formaldehyde         
+      36               DTXSID7020637                        Formaldehyde         
+      37               DTXSID7020637                        Formaldehyde         
+      38               DTXSID7020637                        Formaldehyde         
+      39               DTXSID7020637                        Formaldehyde         
+      40               DTXSID7020637                        Formaldehyde         
+      41               DTXSID7020637                        Formaldehyde         
+      42               DTXSID7020637                        Formaldehyde         
+      43               DTXSID7020637                        Formaldehyde         
+      44               DTXSID7020637                        Formaldehyde         
+      45               DTXSID7020637                        Formaldehyde         
+      46               DTXSID7020637                        Formaldehyde         
+      47               DTXSID7020637                        Formaldehyde         
+      48               DTXSID7020637                        Formaldehyde         
+      49               DTXSID7020637                        Formaldehyde         
+      50               DTXSID7020637                        Formaldehyde         
+      51               DTXSID7020637                        Formaldehyde         
+      52               DTXSID7020637                        Formaldehyde         
+      53               DTXSID7020637                        Formaldehyde         
+      54               DTXSID7020637                        Formaldehyde         
+      55               DTXSID7020637                        Formaldehyde         
+      56               DTXSID7020637                        Formaldehyde         
+      57               DTXSID7020637                        Formaldehyde         
+      58               DTXSID7020637                        Formaldehyde         
+      59               DTXSID7020637                        Formaldehyde         
+      60               DTXSID7020637                        Formaldehyde         
+      61               DTXSID7020637                        Formaldehyde         
+      62               DTXSID7020637                        Formaldehyde         
+      63               DTXSID7020637                        Formaldehyde         
+      64               DTXSID7020637                        Formaldehyde         
+      65               DTXSID7020637                        Formaldehyde         
+      66               DTXSID7020637                        Formaldehyde         
+      67               DTXSID7020637                        Formaldehyde         
+      68               DTXSID7020637                        Formaldehyde         
+      69               DTXSID7020637                        Formaldehyde         
+      70               DTXSID7020637                        Formaldehyde         
+      71               DTXSID7020637                        Formaldehyde         
+      72               DTXSID7020637                        Formaldehyde         
+      73               DTXSID7020637                        Formaldehyde         
+      74               DTXSID7020637                        Formaldehyde         
+      75               DTXSID7020637                        Formaldehyde         
+      76               DTXSID7020637                        Formaldehyde         
+      77               DTXSID7020637                        Formaldehyde         
+      78               DTXSID7020637                        Formaldehyde         
+      79               DTXSID7020637                        Formaldehyde         
+      80               DTXSID7020637                        Formaldehyde         
+      81               DTXSID7020637                        Formaldehyde         
+      82               DTXSID7020637                        Formaldehyde         
+      83               DTXSID7020637                        Formaldehyde         
+      84               DTXSID7020637                        Formaldehyde         
+      85               DTXSID7020637                        Formaldehyde         
+      86               DTXSID7020637                        Formaldehyde         
+      87               DTXSID7020637                        Formaldehyde         
+      88               DTXSID7020637                        Formaldehyde         
+      89               DTXSID7020637                        Formaldehyde         
+      90               DTXSID7020637                        Formaldehyde         
+      91               DTXSID7020637                        Formaldehyde         
+      92               DTXSID7020637                        Formaldehyde         
+      93               DTXSID7020637                        Formaldehyde         
+      94               DTXSID7020637                        Formaldehyde         
+      95               DTXSID7020637                        Formaldehyde         
+      96               DTXSID7020637                        Formaldehyde         
+      97               DTXSID7020637                        Formaldehyde         
+      98               DTXSID7020637                        Formaldehyde         
+      99               DTXSID7020637                        Formaldehyde         
+      100              DTXSID7020637                        Formaldehyde         
+      101              DTXSID7020637                        Formaldehyde         
+      102              DTXSID7020637                        Formaldehyde         
+      103              DTXSID7020637                        Formaldehyde         
+      104              DTXSID7020637                        Formaldehyde         
+      105              DTXSID7020637                        Formaldehyde         
+      106              DTXSID7020637                        Formaldehyde         
+      107              DTXSID7020637                        Formaldehyde         
+      108              DTXSID7020637                        Formaldehyde         
+      109              DTXSID7020637                        Formaldehyde         
+      110              DTXSID7020637                        Formaldehyde         
+      111              DTXSID7020637                        Formaldehyde         
+      112              DTXSID7020637                        Formaldehyde         
+      113              DTXSID7020637                        Formaldehyde         
+      114              DTXSID7020637                        Formaldehyde         
+      115              DTXSID7020637                        Formaldehyde         
+      116              DTXSID7020637                        Formaldehyde         
+      117              DTXSID7020637                        Formaldehyde         
+      118              DTXSID7020637                        Formaldehyde         
+      119              DTXSID7020637                        Formaldehyde         
+      120              DTXSID7020637                        Formaldehyde         
+      121              DTXSID7020637                        Formaldehyde         
+      122              DTXSID7020637                        Formaldehyde         
+      123              DTXSID7020637                        Formaldehyde         
+      124              DTXSID7020637                        Formaldehyde         
+      125              DTXSID7020637                        Formaldehyde         
+      126              DTXSID7020637                        Formaldehyde         
+      127              DTXSID7020637                        Formaldehyde         
+      128              DTXSID7020637                        Formaldehyde         
+      129              DTXSID7020637                        Formaldehyde         
+      130              DTXSID7020637                        Formaldehyde         
+      131              DTXSID7020637                        Formaldehyde         
+      132              DTXSID7020637                        Formaldehyde         
+      133              DTXSID7020637                        Formaldehyde         
+      134              DTXSID7020637                        Formaldehyde         
+      135              DTXSID7020637                        Formaldehyde         
+      136              DTXSID7020637                        Formaldehyde         
+      137              DTXSID7020637                        Formaldehyde         
+      138              DTXSID7020637                        Formaldehyde         
+      139              DTXSID7020637                        Formaldehyde         
+      140              DTXSID7020637                        Formaldehyde         
+      141              DTXSID7020637                        Formaldehyde         
+      142              DTXSID7020637                        Formaldehyde         
+      143              DTXSID7020637                        Formaldehyde         
+      144              DTXSID7020637                        Formaldehyde         
+      145              DTXSID7020637                        Formaldehyde         
+      146              DTXSID7020637                        Formaldehyde         
+      147              DTXSID7020637                        Formaldehyde         
+      148              DTXSID7020637                        Formaldehyde         
+      149              DTXSID7020637                        Formaldehyde         
+      150              DTXSID7020637                        Formaldehyde         
+      151              DTXSID7020637                        Formaldehyde         
+      152              DTXSID7020637                        Formaldehyde         
+      153              DTXSID7020637                        Formaldehyde         
+      154              DTXSID7020637                        Formaldehyde         
+      155              DTXSID7020637                        Formaldehyde         
+      156              DTXSID7020637                        Formaldehyde         
+      157              DTXSID7020637                        Formaldehyde         
+      158              DTXSID7020637                        Formaldehyde         
+      159              DTXSID7020637                        Formaldehyde         
+      160              DTXSID7020637                        Formaldehyde         
+      161                            dicyanamine/formaldehyde condensate         
+      162              DTXSID7020637                        Formaldehyde         
+      163                            dicyanamine/formaldehyde condensate         
+      164              DTXSID7020637                        Formaldehyde         
+      165              DTXSID7020637                        Formaldehyde         
+      166              DTXSID7020637                        Formaldehyde         
+      167                            dicyanamine/formaldehyde condensate         
+      168              DTXSID7020637                        Formaldehyde         
+      169                            dicyanamine/formaldehyde condensate         
+      170              DTXSID7020637                        Formaldehyde         
+      171                            dicyanamine/formaldehyde condensate         
+      172              DTXSID7020637                        Formaldehyde         
+      173                            dicyanamine/formaldehyde condensate         
+      174              DTXSID7020637                        Formaldehyde         
+      175              DTXSID7020637                        Formaldehyde         
+      176              DTXSID7020637                        Formaldehyde         
+      177              DTXSID7020637                        Formaldehyde         
+      178              DTXSID7020637                        Formaldehyde         
+      179              DTXSID7020637                        Formaldehyde         
+      180              DTXSID7020637                        Formaldehyde         
+      181              DTXSID7020637                        Formaldehyde         
+      182              DTXSID7020637                        Formaldehyde         
+      183              DTXSID7020637                        Formaldehyde         
+      184              DTXSID7020637                        Formaldehyde         
+      185              DTXSID7020637                        Formaldehyde         
+      186              DTXSID7020637                        Formaldehyde         
+      187              DTXSID7020637                        Formaldehyde         
+      188              DTXSID7020637                        Formaldehyde         
+      189              DTXSID7020637                        Formaldehyde         
+      190              DTXSID7020637                        Formaldehyde         
+      191              DTXSID7020637                        Formaldehyde         
+      192              DTXSID7020637                        Formaldehyde         
+      193              DTXSID7020637                        Formaldehyde         
+      194              DTXSID7020637                        Formaldehyde         
+      195              DTXSID7020637                        Formaldehyde         
+      196              DTXSID7020637                        Formaldehyde         
+      197              DTXSID7020637                        Formaldehyde         
+      198              DTXSID7020637                        Formaldehyde         
+      199              DTXSID7020637                        Formaldehyde         
+      200              DTXSID7020637                        Formaldehyde         
+      201              DTXSID7020637                        Formaldehyde         
+      202              DTXSID7020637                        Formaldehyde         
+      203              DTXSID7020637                        Formaldehyde         
+      204              DTXSID7020637                        Formaldehyde         
+      205              DTXSID7020637                        Formaldehyde         
+      206              DTXSID7020637                        Formaldehyde         
+      207              DTXSID7020637                        Formaldehyde         
+      208              DTXSID7020637                        Formaldehyde         
+      209              DTXSID7020637                        Formaldehyde         
+      210              DTXSID7020637                        Formaldehyde         
+      211              DTXSID7020637                        Formaldehyde         
+      212              DTXSID7020637                        Formaldehyde         
+      213              DTXSID7020637                        Formaldehyde         
+      214              DTXSID7020637                        Formaldehyde         
+      215              DTXSID7020637                        Formaldehyde         
+      216              DTXSID7020637                        Formaldehyde         
+      217              DTXSID7020637                        Formaldehyde         
+      218              DTXSID7020637                        Formaldehyde         
+      219              DTXSID7020637                        Formaldehyde         
+      220              DTXSID7020637                        Formaldehyde         
+      221              DTXSID7020637                        Formaldehyde         
+      222              DTXSID7020637                        Formaldehyde         
+      223              DTXSID7020637                        Formaldehyde         
+      224              DTXSID7020637                        Formaldehyde         
+      225              DTXSID7020637                        Formaldehyde         
+      226              DTXSID7020637                        Formaldehyde         
+      227              DTXSID7020637                        Formaldehyde         
+      228              DTXSID7020637                        Formaldehyde         
+      229              DTXSID7020637                        Formaldehyde         
+      230              DTXSID7020637                        Formaldehyde         
+      231              DTXSID7020637                        Formaldehyde         
+      232              DTXSID7020637                        Formaldehyde         
+      233              DTXSID7020637                        Formaldehyde         
+      234              DTXSID7020637                        Formaldehyde         
+      235              DTXSID7020637                        Formaldehyde         
+      236              DTXSID7020637                        Formaldehyde         
+      237              DTXSID7020637                        Formaldehyde         
+      238              DTXSID7020637                        Formaldehyde         
+      239              DTXSID7020637                        Formaldehyde         
+      240              DTXSID7020637                        Formaldehyde         
+      241              DTXSID7020637                        Formaldehyde         
+      242              DTXSID7020637                        Formaldehyde         
+      243              DTXSID7020637                        Formaldehyde         
+      244              DTXSID7020637                        Formaldehyde         
+      245              DTXSID7020637                        Formaldehyde         
+      246              DTXSID7020637                        Formaldehyde         
+      247              DTXSID7020637                        Formaldehyde         
+      248              DTXSID7020637                        Formaldehyde         
+      249              DTXSID7020637                        Formaldehyde         
+      250              DTXSID7020637                        Formaldehyde         
+      251              DTXSID7020637                        Formaldehyde         
+      252              DTXSID7020637                        Formaldehyde         
+      253              DTXSID7020637                        Formaldehyde         
+      254              DTXSID7020637                        Formaldehyde         
+      255              DTXSID7020637                        Formaldehyde         
+      256              DTXSID7020637                        Formaldehyde         
+      257              DTXSID7020637                        Formaldehyde         
+      258              DTXSID7020637                        Formaldehyde         
+      259              DTXSID7020637                        Formaldehyde         
+      260              DTXSID7020637                        Formaldehyde         
+      261              DTXSID7020637                        Formaldehyde         
+      262              DTXSID7020637                        Formaldehyde         
+      263              DTXSID7020637                        Formaldehyde         
+      264              DTXSID7020637                        Formaldehyde         
+      265              DTXSID7020637                        Formaldehyde         
+      266              DTXSID7020637                        Formaldehyde         
+      267              DTXSID7020637                        Formaldehyde         
+      268              DTXSID7020637                        Formaldehyde         
+      269              DTXSID7020637                        Formaldehyde         
+      270              DTXSID7020637                        Formaldehyde         
+      271              DTXSID7020637                        Formaldehyde         
+      272              DTXSID7020637                        Formaldehyde         
+      273              DTXSID7020637                        Formaldehyde         
+      274              DTXSID7020637                        Formaldehyde         
+      275              DTXSID7020637                        Formaldehyde         
+      276              DTXSID7020637                        Formaldehyde         
+      277              DTXSID7020637                        Formaldehyde         
+      278              DTXSID7020637                        Formaldehyde         
+      279              DTXSID7020637                        Formaldehyde         
+      280              DTXSID7020637                        Formaldehyde         
 
 # extr_ice fetches data for CASRN 50-00-1
 
@@ -2959,988 +2991,2597 @@
       # i 3 more variables: woe_characterization <chr>, toxicity_value_type <chr>,
       #   toxicity_value <chr>
       
-      $input
-      [1] "50-00-0"
-      
-      $found_by
-      [1] "CASRN"
-      
-      $dtxsid
-      [1] "DTXSID7020637"
-      
-      $preferred_name
-      [1] "Formaldehyde"
-      
-      $dtxcid
-      [1] "DTXCID30637"
-      
-      $casrn
-      [1] "50-00-0"
-      
-      $inchikey
-      [1] "WSFSSNUMVMOOMR-UHFFFAOYSA-N"
-      
-      $iupac_name
-      [1] "Formaldehyde"
-      
-      $smiles
-      [1] "C=O"
-      
-      $inchi_string
-      [1] "InChI=1S/CH2O/c1-2/h1H2\n"
-      
-      $ms_ready_smiles
-      [1] "C=O"
-      
-      $qsar_ready_smiles
-      [1] "C=O"
-      
-      $molecular_formula
-      [1] "CH2O"
-      
-      $average_mass
-      [1] 30.026
-      
-      $monoisotopic_mass
-      [1] 30.01056
-      
-      $qc_level
-      [1] 1
-      
-      $safety_data
-      [1] "Y"
-      
-      $expocast
-      [1] "Y"
-      
-      $data_sources
-      [1] 134
-      
-      $toxval_data
-      [1] "Y"
-      
-      $number_of_pubmed_articles
-      [1] 19234
-      
-      $pubchem_data_sources
-      [1] 338
-      
-      $cpdat_count
-      [1] 2328
-      
-      $iris_link
-      [1] "Y"
-      
-      $pprtv_link
-      [1] "N/A"
-      
-      $wikipedia_article
-      [1] "Y"
-      
-      $qc_notes
-      [1] "From the CAMEO dataset: https://cameochemicals.noaa.gov/chemical/22034"
-      
-      $abstract_shifter
-      [1] "-"
-      
-      $toxprint_fingerprint
-      [1] "-"
-      
-      $actor_report
-      [1] "https://actorws.epa.gov/actorws/actor/2015q3/chemicalPdfExport.pdf?casrn=50-00-0"
-      
-      $synonym_identifier
-      [1] "-"
-      
-      $related_relationship
-      [1] "-"
-      
-      $associated_toxcast_assays
-      [1] "-"
-      
-      $toxval_details
-      [1] "-"
-      
-      $chemical_properties_details
-      [1] "-"
-      
-      $bioconcentration_factor_test_pred
-      [1] "N/A"
-      
-      $boiling_point_degc_test_pred
-      [1] -16.012
-      
-      $x48hr_daphnia_lc50_mol_l_test_pred
-      [1] "N/A"
-      
-      $density_g_cm_3_test_pred
-      [1] 0.861
-      
-      $devtox_test_pred
-      [1] "N/A"
-      
-      $x96hr_fathead_minnow_mol_l_test_pred
-      [1] "N/A"
-      
-      $flash_point_degc_test_pred
-      [1] -18.267
-      
-      $melting_point_degc_test_pred
-      [1] -79.361
-      
-      $ames_mutagenicity_test_pred
-      [1] 0.362
-      
-      $oral_rat_ld50_mol_kg_test_pred
-      [1] "N/A"
-      
-      $surface_tension_dyn_cm_test_pred
-      [1] 22.056
-      
-      $thermal_conductivity_mw_m_k_test_pred
-      [1] 164.885
-      
-      $tetrahymena_pyriformis_igc50_mol_l_test_pred
-      [1] "N/A"
-      
-      $viscosity_cp_cp_test_pred
-      [1] 0.254097
-      
-      $vapor_pressure_mmhg_test_pred
-      [1] 1221.8
-      
-      $water_solubility_mol_l_test_pred
-      [1] 9.57194
-      
-      $atmospheric_hydroxylation_rate_aoh_cm3_molecule_sec_opera_pred
-      [1] 9.34288e-12
-      
-      $bioconcentration_factor_opera_pred
-      [1] 1.72988
-      
-      $biodegradation_half_life_days_days_opera_pred
-      [1] 8.20857
-      
-      $boiling_point_degc_opera_pred
-      [1] -19.0454
-      
-      $henrys_law_atm_m3_mole_opera_pred
-      [1] 3.49471e-07
-      
-      $opera_km_days_opera_pred
-      [1] 0.224902
-      
-      $octanol_air_partition_coeff_logkoa_opera_pred
-      [1] 1.20597
-      
-      $soil_adsorption_coefficient_koc_l_kg_opera_pred
-      [1] 2.72646
-      
-      $octanol_water_partition_logp_opera_pred
-      [1] 0.349206
-      
-      $melting_point_degc_opera_pred
-      [1] -105.286
-      
-      $opera_pkaa_opera_pred
-      [1] "N/A"
-      
-      $opera_pkab_opera_pred
-      [1] 1.15
-      
-      $vapor_pressure_mmhg_opera_pred
-      [1] 824.979
-      
-      $water_solubility_mol_l_opera_pred
-      [1] 14.6625
-      
-      $expocast_median_exposure_prediction_mg_kg_bw_day
-      [1] 4.87e-05
-      
-      $nhanes
-      [1] "N/A"
-      
-      $toxcast_number_of_assays_total
-      [1] "N/A"
-      
-      $toxcast_percent_active
-      [1] "N/A"
-      
-      $ice_carc_woe
-                         assay             endpoint substanceType   casrn
-      2  Report on Carcinogens       Listing status      Chemical 50-00-0
-      4   IRIS Carcinogenicity WOE characterization      Chemical 50-00-0
-      8   IARC Carcinogenicity           IARC group      Chemical 50-00-0
-      12  IRIS Carcinogenicity           Tumor type      Chemical 50-00-0
-      14  IRIS Carcinogenicity Inhalation risk unit      Chemical 50-00-0
-                         qsarReadyId
-      2  WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      4  WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      8  WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      12 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-      14 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-                                                                                                             value
-      2                                                                                                      Known
-      4  B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines)
-      8                                                                                                          1
-      12                                                                                   Squamous cell carcinoma
-      14                                                                                     1.2999999999999999E-5
-         unit        species receptorSpecies          route            sex
-      2       Not applicable                 Not applicable Not applicable
-      4       Not applicable                     Inhalation Not applicable
-      8       Not applicable                 Not applicable Not applicable
-      12      Not applicable                     Inhalation Not applicable
-      14      Not applicable                     Inhalation Not applicable
-                 strain lifeStage tissue lesion location assaySource
-      2  Not applicable                                             
-      4  Not applicable                                             
-      8  Not applicable                                             
-      12 Not applicable                                             
-      14 Not applicable                                             
-         inVitroAssayFormat      reference
-      2                     Not applicable
-      4                     Not applicable
-      8                     Not applicable
-      12                    Not applicable
-      14                    Not applicable
-                                                                                                                              referenceUrl
-      2                                                                https://ntp.niehs.nih.gov/ntp/roc/content/profiles/formaldehyde.pdf
-      4                                                    https://cfpub.epa.gov/ncea/iris/iris_documents/documents/subst/0419_summary.pdf
-      8  http://publications.iarc.fr/139; http://publications.iarc.fr/80; http://publications.iarc.fr/106; http://publications.iarc.fr/123
-      12                                                   https://cfpub.epa.gov/ncea/iris/iris_documents/documents/subst/0419_summary.pdf
-      14                                                   https://cfpub.epa.gov/ncea/iris/iris_documents/documents/subst/0419_summary.pdf
-                dtxsid substanceName pubMedId
-      2  DTXSID7020637  Formaldehyde       NA
-      4  DTXSID7020637  Formaldehyde       NA
-      8  DTXSID7020637  Formaldehyde       NA
-      12 DTXSID7020637  Formaldehyde       NA
-      14 DTXSID7020637  Formaldehyde       NA
-      
-      $ice_invivo_acute_tox
-                                  assay endpoint substanceType   casrn
-      76  Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      187       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      188 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      189       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      190 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      191       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      192       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      193       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      195       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      203 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      213 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      214       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      215       Rat Acute Oral Toxicity     LD50      Chemical 50-00-0
-      216 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      224 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-      225 Rat Acute Inhalation Toxicity     LC50      Chemical 50-00-0
-                          qsarReadyId    value  unit species receptorSpecies route
-      76  WSFSSNUMVMOOMR-UHFFFAOYSA-N    0.203  mg/L                              
-      187 WSFSSNUMVMOOMR-UHFFFAOYSA-N  < 800.0 mg/kg     Rat                    NA
-      188 WSFSSNUMVMOOMR-UHFFFAOYSA-N    0.578  mg/L                              
-      189 WSFSSNUMVMOOMR-UHFFFAOYSA-N    800.0 mg/kg     Rat                    NA
-      190 WSFSSNUMVMOOMR-UHFFFAOYSA-N   0.3068  mg/L                              
-      191 WSFSSNUMVMOOMR-UHFFFAOYSA-N    500.0 mg/kg     Rat                    NA
-      192 WSFSSNUMVMOOMR-UHFFFAOYSA-N    550.0 mg/kg     Rat                    NA
-      193 WSFSSNUMVMOOMR-UHFFFAOYSA-N  > 100.0 mg/kg     Rat                    NA
-      195 WSFSSNUMVMOOMR-UHFFFAOYSA-N    100.0 mg/kg     Rat                    NA
-      203 WSFSSNUMVMOOMR-UHFFFAOYSA-N < 0.5682  mg/L                              
-      213 WSFSSNUMVMOOMR-UHFFFAOYSA-N   1.0002  mg/L                              
-      214 WSFSSNUMVMOOMR-UHFFFAOYSA-N   2020.0 mg/kg     Rat                    NA
-      215 WSFSSNUMVMOOMR-UHFFFAOYSA-N > 7000.0 mg/kg     Rat                    NA
-      216 WSFSSNUMVMOOMR-UHFFFAOYSA-N   0.3068  mg/L                              
-      224 WSFSSNUMVMOOMR-UHFFFAOYSA-N   1.0064  mg/L                              
-      225 WSFSSNUMVMOOMR-UHFFFAOYSA-N   0.5866  mg/L                              
-           sex strain lifeStage tissue lesion location assaySource inVitroAssayFormat
-      76                                                                             
-      187 Male                                                                       
-      188                                                                            
-      189 Male                                                                       
-      190                                                                            
-      191                                                                            
-      192 Male                                                                       
-      193                                                                            
-      195                                                                            
-      203                                                                            
-      213                                                                            
-      214                                                                            
-      215                                                                            
-      216                                                                            
-      224                                                                            
-      225                                                                            
-                                             reference
-      76                                    ChemIDplus
-      187                                             
-      188                                        NIOSH
-      189                     JRC AcutoxBase (undated)
-      190                                        NIOSH
-      191                     JRC AcutoxBase (undated)
-      192                     JRC AcutoxBase (undated)
-      193                                             
-      195 NLM Hazardous Substances Data Bank (undated)
-      203                                        REACH
-      213                                        NIOSH
-      214 NLM Hazardous Substances Data Bank (undated)
-      215                                             
-      216                                        NIOSH
-      224                                         AEGL
-      225                                         AEGL
-                                                                                                                             referenceUrl
-      76                                                                                                                                 
-      187                                                                                                                                
-      188                                                                                                                                
-      189                                                                                                                                
-      190                                                                                                                                
-      191                                                                                                                                
-      192                                                                                                                                
-      193                                                                                                                                
-      195                                                                                               https://pubchem.ncbi.nlm.nih.gov/
-      203 https://echa.europa.eu/registration-dossier/-/registered-dossier/15858/7/3/3/?documentUUID=d1a32765-e92b-4790-99da-6355ab1a22cc
-      213                                                                                                                                
-      214                                                                                               https://pubchem.ncbi.nlm.nih.gov/
-      215                                                                                                                                
-      216                                                                                                                                
-      224                                                                                                                                
-      225                                                                                                                                
-                 dtxsid substanceName pubMedId
-      76  DTXSID7020637  Formaldehyde         
-      187 DTXSID7020637  Formaldehyde       NA
-      188 DTXSID7020637  Formaldehyde         
-      189 DTXSID7020637  Formaldehyde       NA
-      190 DTXSID7020637  Formaldehyde         
-      191 DTXSID7020637  Formaldehyde       NA
-      192 DTXSID7020637  Formaldehyde       NA
-      193 DTXSID7020637  Formaldehyde       NA
-      195 DTXSID7020637  Formaldehyde       NA
-      203 DTXSID7020637  Formaldehyde         
-      213 DTXSID7020637  Formaldehyde         
-      214 DTXSID7020637  Formaldehyde       NA
-      215 DTXSID7020637  Formaldehyde       NA
-      216 DTXSID7020637  Formaldehyde         
-      224 DTXSID7020637  Formaldehyde         
-      225 DTXSID7020637  Formaldehyde         
-      
-      $ice_invivo_sensitization
-                                   assay
-      39                            LLNA
-      41  Human Repeat Insult Patch Test
-      43  Human Repeat Insult Patch Test
-      44  Human Repeat Insult Patch Test
-      45  Human Repeat Insult Patch Test
-      46  Human Repeat Insult Patch Test
-      47  Human Repeat Insult Patch Test
-      48  Human Repeat Insult Patch Test
-      49  Human Repeat Insult Patch Test
-      51         Human Maximization Test
-      52         Human Maximization Test
-      58  Human Repeat Insult Patch Test
-      59  Human Repeat Insult Patch Test
-      60         Human Maximization Test
-      64  Human Repeat Insult Patch Test
-      65  Human Repeat Insult Patch Test
-      66         Human Maximization Test
-      67  Human Repeat Insult Patch Test
-      69         Human Maximization Test
-      70         Human Maximization Test
-      72         Human Maximization Test
-      74         Human Maximization Test
-      79  Human Repeat Insult Patch Test
-      81                            LLNA
-      84  Human Repeat Insult Patch Test
-      86                            LLNA
-      87  Human Repeat Insult Patch Test
-      89                            LLNA
-      90  Human Repeat Insult Patch Test
-      91                            LLNA
-      92  Human Repeat Insult Patch Test
-      93                            LLNA
-      94  Human Repeat Insult Patch Test
-      95                            LLNA
-      96  Human Repeat Insult Patch Test
-      97                            LLNA
-      106 Human Repeat Insult Patch Test
-      107 Human Repeat Insult Patch Test
-      108                           LLNA
-      111 Human Repeat Insult Patch Test
-      112 Human Repeat Insult Patch Test
-      114                           LLNA
-      115 Human Repeat Insult Patch Test
-      116 Human Repeat Insult Patch Test
-      117 Human Repeat Insult Patch Test
-      118 Human Repeat Insult Patch Test
-      119 Human Repeat Insult Patch Test
-      120                           LLNA
-      121 Human Repeat Insult Patch Test
-      122                           LLNA
-      123 Human Repeat Insult Patch Test
-      124                           LLNA
-      125 Human Repeat Insult Patch Test
-      126                           LLNA
-      127 Human Repeat Insult Patch Test
-      128                           LLNA
-      129 Human Repeat Insult Patch Test
-      130                           LLNA
-      131 Human Repeat Insult Patch Test
-      133                           LLNA
-      134 Human Repeat Insult Patch Test
-      135                           LLNA
-      209                           LLNA
+      $comptox
+          input found_by        dtxsid preferred_name      dtxcid   casrn
+      1 50-00-0    CASRN DTXSID7020637   Formaldehyde DTXCID30637 50-00-0
+                           inchikey   iupac_name smiles              inchi_string
+      1 WSFSSNUMVMOOMR-UHFFFAOYSA-N Formaldehyde    C=O InChI=1S/CH2O/c1-2/h1H2\n
+        ms_ready_smiles qsar_ready_smiles molecular_formula average_mass
+      1             C=O               C=O              CH2O       30.026
+        monoisotopic_mass qc_level safety_data expocast data_sources toxval_data
+      1          30.01056        1           Y        Y          134           Y
+        number_of_pubmed_articles pubchem_data_sources cpdat_count iris_link
+      1                     19234                  338        2328         Y
+        pprtv_link wikipedia_article
+      1        N/A                 Y
+                                                                      qc_notes
+      1 From the CAMEO dataset: https://cameochemicals.noaa.gov/chemical/22034
+        abstract_shifter toxprint_fingerprint
+      1                -                    -
+                                                                            actor_report
+      1 https://actorws.epa.gov/actorws/actor/2015q3/chemicalPdfExport.pdf?casrn=50-00-0
+        synonym_identifier related_relationship associated_toxcast_assays
+      1                  -                    -                         -
+        toxval_details chemical_properties_details bioconcentration_factor_test_pred
+      1              -                           -                               N/A
+        boiling_point_degc_test_pred x48hr_daphnia_lc50_mol_l_test_pred
+      1                      -16.012                                N/A
+        density_g_cm_3_test_pred devtox_test_pred
+      1                    0.861              N/A
+        x96hr_fathead_minnow_mol_l_test_pred flash_point_degc_test_pred
+      1                                  N/A                    -18.267
+        melting_point_degc_test_pred ames_mutagenicity_test_pred
+      1                      -79.361                       0.362
+        oral_rat_ld50_mol_kg_test_pred surface_tension_dyn_cm_test_pred
+      1                            N/A                           22.056
+        thermal_conductivity_mw_m_k_test_pred
+      1                               164.885
+        tetrahymena_pyriformis_igc50_mol_l_test_pred viscosity_cp_cp_test_pred
+      1                                          N/A                  0.254097
+        vapor_pressure_mmhg_test_pred water_solubility_mol_l_test_pred
+      1                        1221.8                          9.57194
+        atmospheric_hydroxylation_rate_aoh_cm3_molecule_sec_opera_pred
+      1                                                    9.34288e-12
+        bioconcentration_factor_opera_pred
+      1                            1.72988
+        biodegradation_half_life_days_days_opera_pred boiling_point_degc_opera_pred
+      1                                       8.20857                      -19.0454
+        henrys_law_atm_m3_mole_opera_pred opera_km_days_opera_pred
+      1                       3.49471e-07                 0.224902
+        octanol_air_partition_coeff_logkoa_opera_pred
+      1                                       1.20597
+        soil_adsorption_coefficient_koc_l_kg_opera_pred
+      1                                         2.72646
+        octanol_water_partition_logp_opera_pred melting_point_degc_opera_pred
+      1                                0.349206                      -105.286
+        opera_pkaa_opera_pred opera_pkab_opera_pred vapor_pressure_mmhg_opera_pred
+      1                   N/A                  1.15                        824.979
+        water_solubility_mol_l_opera_pred
+      1                           14.6625
+        expocast_median_exposure_prediction_mg_kg_bw_day nhanes
+      1                                         4.87e-05    N/A
+        toxcast_number_of_assays_total toxcast_percent_active
+      1                            N/A                    N/A
+      
+      $ice
+                                                                                                                                             assay
+      1                                                                                                                              TER Corrosion
+      2                                                                                   OPERA, soil adsorption coefficient of organic compounds.
+      3                                                                                                                              TER Corrosion
+      4                                                                                                                OPERA, Henry's Law Constant
+      5                                   OPERA, The whole body primary biotransformation rate (half-life) constant for organic chemicals in fish.
+      6                                                                                                                              TER Corrosion
+      7                                                                                                 OPERA, Octanol-Water Partition Coefficient
+      8                                                                                                                              TER Corrosion
+      9                                                                                                                              TER Corrosion
+      10                                                                                                               OPERA, HPLC retention time.
+      11                                                                                                                             TER Corrosion
+      12                                                                                                      OPERA, Human Plasma Fraction Unbound
+      13                                                                                                                       CoMPARA, AR Binding
+      14                                                                                                       OPERA, Fish bioconcentration factor
+      15  OPERA, OH rate constant for the atmospheric, gas-phase reaction between photochemically produced hydroxyl radicals and organic chemicals
+      16                                                                                                      OPERA, Caco-2 permeability (logPapp)
+      17                                                                                                                        CERAPP, ER Agonist
+      18                                                                                                                       CoMPARA, AR Binding
+      19                                                         OPERA, biodegradation half-life for compounds containing only carbon and hydrogen
+      20                                                                                                                    CoMPARA, AR Antagonist
+      21                                                                                                  OPERA, Human Hepatic Intrinsic Clearance
+      22                                                                                                                        CERAPP, ER Agonist
+      23                                                                                                                    CoMPARA, AR Antagonist
+      24                                                                                                                     CERAPP, ER Antagonist
+      25                                                                                                                     CERAPP, ER Antagonist
+      26                                                                                                                       CoMPARA, AR Agonist
+      27                                                                                                                       CoMPARA, AR Agonist
+      28                                                                                                               CATMoS, Acute Oral Toxicity
+      29                                                                                                                                   SENS-IS
+      30                                                                                                               CATMoS, Acute Oral Toxicity
+      31                                                                                                                                    U-SENS
+      32                                                                                                                        CERAPP, ER Binding
+      33                                                                                                                                    U-SENS
+      34                                                                                                                        CERAPP, ER Binding
+      35                                                                                                                            Functional Use
+      36                                                                                                               CATMoS, Acute Oral Toxicity
+      37                                                                                                                            Functional Use
+      38                                                                                                               CATMoS, Acute Oral Toxicity
+      39                                                                                                                            Functional Use
+      40                                                                                                               CATMoS, Acute Oral Toxicity
+      41                                                                                                                            Functional Use
+      42                                                                                                               CATMoS, Acute Oral Toxicity
+      43                                                                                                                            Functional Use
+      44                                                                                                               CATMoS, Acute Oral Toxicity
+      45                                                                                                                            Functional Use
+      46                                                                                                                      OPERA, Boiling Point
+      47                                                                                                                            Functional Use
+      48                                                                                                               CATMoS, Acute Oral Toxicity
+      49                                                                                                               CATMoS, Acute Oral Toxicity
+      50                                                                                                                     OPERA, Vapor Pressure
+      51                                                                                                                   OPERA, Water Solubility
+      52                                                                                                                      OPERA, Melting Point
+      53                                                                                                  OPERA, Octanol-Air Partition Coefficient
+      54                                                                                                                                     hCLAT
+      55                                                                                                                                     hCLAT
+      56                                                                                                                                     hCLAT
+      57                                                                                                                                     hCLAT
+      58                                                                                                                     Report on Carcinogens
+      59                                                                                                                      IARC Carcinogenicity
+      60                                                                                                                              KeratinoSens
+      61                                                                                                                              KeratinoSens
+      62                                                                                                                              KeratinoSens
+      63                                                                                                                              KeratinoSens
+      64                                                                                                                                    LuSens
+      65                                                                                                                                    LuSens
+      66                                                                                                                   Human Maximization Test
+      67                                                                                                                   Human Maximization Test
+      68                                                                                                                                    mMUSST
+      69                                                                                                                                   SENS-IS
+      70                                                                                                                                      DPRA
+      71                                                                                                                                      DPRA
+      72                                                                                                                                      DPRA
+      73                                                                                                                                      DPRA
+      74                                                                                                                                      DPRA
+      75                                                                                                                                      DPRA
+      76                                                                                                                                      DPRA
+      77                                                                                                                                      LLNA
+      78                                                                                                                      IRIS Carcinogenicity
+      79                                                                                             OPERA, Octanol-Water Distribution Coefficient
+      80                                                                                                                      IRIS Carcinogenicity
+      81                                                                                                                              Genotoxicity
+      82                                                                                                                                     hCLAT
+      83                                                                                         OPERA, Negative Log of Acid Dissociation Constant
+      84                                                                                                                                     hCLAT
+      85                                                                                         OPERA, Negative Log of Acid Dissociation Constant
+      86                                                                                                                                     hCLAT
+      87                                                                                             OPERA, Octanol-Water Distribution Coefficient
+      88                                                                                                                                     hCLAT
+      89                                                                                         OPERA, Negative Log of Acid Dissociation Constant
+      90                                                                                                                                     hCLAT
+      91                                                                                                            Human Repeat Insult Patch Test
+      92                                                                                                            Human Repeat Insult Patch Test
+      93                                                                                                            Human Repeat Insult Patch Test
+      94                                                                                                            Human Repeat Insult Patch Test
+      95                                                                                                            Human Repeat Insult Patch Test
+      96                                                                                                            Human Repeat Insult Patch Test
+      97                                                                                                            Human Repeat Insult Patch Test
+      98                                                                                                            Human Repeat Insult Patch Test
+      99                                                                                                            Human Repeat Insult Patch Test
+      100                                                                                                           Human Repeat Insult Patch Test
+      101                                                                                                                                     DPRA
+      102                                                                                                                                     DPRA
+      103                                                                                                                                     DPRA
+      104                                                                                                                                     DPRA
+      105                                                                                                                                     DPRA
+      106                                                                                                                                     DPRA
+      107                                                                                                                                     DPRA
+      108                                                                                                                                     DPRA
+      109                                                                                                                                     DPRA
+      110                                                                                                           Human Repeat Insult Patch Test
+      111                                                                                                           Human Repeat Insult Patch Test
+      112                                                                                                           Human Repeat Insult Patch Test
+      113                                                                                                           Human Repeat Insult Patch Test
+      114                                                                                                                                     DPRA
+      115                                                                                                                                     DPRA
+      116                                                                                                                                     DPRA
+      117                                                                                                                                     DPRA
+      118                                                                                                                                     DPRA
+      119                                                                                                                                     DPRA
+      120                                                                                                                                     DPRA
+      121                                                                                                                                     DPRA
+      122                                                                                                                                     DPRA
+      123                                                                                                                                     DPRA
+      124                                                                                                                                     DPRA
+      125                                                                                                                                     DPRA
+      126                                                                                                                                     DPRA
+      127                                                                                                                                     DPRA
+      128                                                                                                                                     DPRA
+      129                                                                                                                                     DPRA
+      130                                                                                                                                     DPRA
+      131                                                                                                            OPERA, Number of oxygen atoms
+      132                                                                                                                                     DPRA
+      133                                                                                                              OPERA, HPLC retention time.
+      134                                                                                                                                     DPRA
+      135                                                                               OPERA, Number of rotatable bonds, excluding terminal bonds
+      136                                                                                                                                     DPRA
+      137                                                                                                          OPERA, Number of nitrogen atoms
+      138                                                                                                                                     DPRA
+      139                                                                                                                                     DPRA
+      140                                                                                                                                     DPRA
+      141                                                                                                                                     DPRA
+      142                                                                                                           Human Repeat Insult Patch Test
+      143                                                                                                           Human Repeat Insult Patch Test
+      144                                                                                                           Human Repeat Insult Patch Test
+      145                                                                                                           Human Repeat Insult Patch Test
+      146                                                                                                           Human Repeat Insult Patch Test
+      147                                                                                                           Human Repeat Insult Patch Test
+      148                                                                                                           Human Repeat Insult Patch Test
+      149                                                                                                           Human Repeat Insult Patch Test
+      150                                                                                                           Human Repeat Insult Patch Test
+      151                                                                                                           Human Repeat Insult Patch Test
+      152                                                                                                           Human Repeat Insult Patch Test
+      153                                                                                                           Human Repeat Insult Patch Test
+      154                                                                                                           Human Repeat Insult Patch Test
+      155                                                                                                           Human Repeat Insult Patch Test
+      156                                                                                                           Human Repeat Insult Patch Test
+      157                                                                                                           Human Repeat Insult Patch Test
+      158                                                                                                           Human Repeat Insult Patch Test
+      159                                                                                                           Human Repeat Insult Patch Test
+      160                                                                                                           Human Repeat Insult Patch Test
+      161                                                                                                                            TER Corrosion
+      162                                                                                                           Human Repeat Insult Patch Test
+      163                                                                                                                            TER Corrosion
+      164                                                                                                           Human Repeat Insult Patch Test
+      165                                                                                                           Human Repeat Insult Patch Test
+      166                                                                                                           Human Repeat Insult Patch Test
+      167                                                                                                                            TER Corrosion
+      168                                                                                                           Human Repeat Insult Patch Test
+      169                                                                                                                            TER Corrosion
+      170                                                                                                           Human Repeat Insult Patch Test
+      171                                                                                                                            TER Corrosion
+      172                                                                                                           Human Repeat Insult Patch Test
+      173                                                                                                                            TER Corrosion
+      174                                                                                                           Human Repeat Insult Patch Test
+      175                                                                                                                  Rat Acute Oral Toxicity
+      176                                                                                                                  Rat Acute Oral Toxicity
+      177                                                                                                            Rat Acute Inhalation Toxicity
+      178                                                                                                            Rat Acute Inhalation Toxicity
+      179                                                                                                            Rat Acute Inhalation Toxicity
+      180                                                                                                            Rat Acute Inhalation Toxicity
+      181                                                                                                            Rat Acute Inhalation Toxicity
+      182                                                                                                            Rat Acute Inhalation Toxicity
+      183                                                                                            OPERA, Octanol-Water Distribution Coefficient
+      184                                                                                                                                    hCLAT
+      185                                                                                                                                    hCLAT
+      186                                                                                                                  Rat Acute Oral Toxicity
+      187                                                                                                                  Rat Acute Oral Toxicity
+      188                                                                                                                  Rat Acute Oral Toxicity
+      189                                                                                                                  Rat Acute Oral Toxicity
+      190                                                                                                                  Rat Acute Oral Toxicity
+      191                                                                                                                  Rat Acute Oral Toxicity
+      192                                                                                                                             KeratinoSens
+      193                                                                                                                             KeratinoSens
+      194                                                                                                                                    hCLAT
+      195                                                                                                                             KeratinoSens
+      196                                                                                                                                    hCLAT
+      197                                                                                                                                    hCLAT
+      198                                                                                                                                    hCLAT
+      199                                                                                                                                    hCLAT
+      200                                                                                                                  Human Maximization Test
+      201                                                                                                                  Human Maximization Test
+      202                                                                                                                  Human Maximization Test
+      203                                                                                                                  Human Maximization Test
+      204                                                                                                                                   LuSens
+      205                                                                                                                                   LuSens
+      206                                                                                                                             KeratinoSens
+      207                                                                                                                             KeratinoSens
+      208                                                                                                                                     DPRA
+      209                                                                                                                  OPERA, Water Solubility
+      210                                                                                                                                     DPRA
+      211                                 OPERA, The whole body primary biotransformation rate (half-life) constant for organic chemicals in fish.
+      212                                                                                                                                     DPRA
+      213                                                                                               OPERA, Octanol-Water Partition Coefficient
+      214                                                                                                                                     DPRA
+      215                                                                                 OPERA, soil adsorption coefficient of organic compounds.
+      216                                                                                                                                     DPRA
+      217                                                                                                              OPERA, Henry's Law Constant
+      218                                                                                                                                     DPRA
+      219                                                                                                                   OPERA, Number of rings
+      220                                                                                                                                     DPRA
+      221                                                    OPERA, Number of hydrogen bond donors (using CDK HBondDonorCountDescriptor algorithm)
+      222                                                                                                                                     DPRA
+      223                                                                                            OPERA, Fraction of sp3 carbons to sp2 carbons
+      224                                                                                                                                     LLNA
+      225                                                                                                            OPERA, Number of carbon atoms
+      226                                                                                                                                     LLNA
+      227                                                                                       OPERA, Number failures of the Lipinski's Rule Of 5
+      228                                                                                                                                     LLNA
+      229                                              OPERA, Number of hydrogen bond acceptors (using CDK HBondAcceptorCountDescriptor algorithm)
+      230                                                                                                                                     LLNA
+      231                                                                                                                     OPERA, Melting Point
+      232                                                                                                                                     LLNA
+      233                                                                                                 OPERA, Octanol-Air Partition Coefficient
+      234                                                                                                                                     LLNA
+      235                                                                                                                    OPERA, Vapor Pressure
+      236                                                                                                                                     LLNA
+      237                                                                                                                OPERA, Molar refractivity
+      238                                                                                                                                     LLNA
+      239                                                                                                                         Molecular Weight
+      240                                                                                                                                     LLNA
+      241                                                                                                OPERA, Combined dipolarity/polarizability
+      242                                                                                                                                     LLNA
+      243                                                                                                              CATMoS, Acute Oral Toxicity
+      244                                                                                                                                     LLNA
+      245                                                                                                                     OPERA, Boiling Point
+      246                                                                                                                                     LLNA
+      247                                                                                                    OPERA, Topological polar surface area
+      248                                                                                                                                     LLNA
+      249                                                                  OPERA, Number of rings containing heteroatoms (N, O, P, S, or halogens)
+      250                                                                                                                                     LLNA
+      251                                                                                                          OPERA, Number of aromatic atoms
+      252                                                                                                                                     LLNA
+      253                                                                                         OPERA, Number of heavy atoms (i.e. not hydrogen)
+      254                                                                                                                                     LLNA
+      255                                                                                                                   OPERA, Number of atoms
+      256                                                                                                            Rat Acute Inhalation Toxicity
+      257                                                                                            OPERA, Octanol-Water Distribution Coefficient
+      258                                                                                                            Rat Acute Inhalation Toxicity
+      259                                                                                        OPERA, Negative Log of Acid Dissociation Constant
+      260                                                                                                              SEEM3, Exposure Predictions
+      261                                                                                                      OPERA, Fish bioconcentration factor
+      262                                                                                                              SEEM3, Exposure Predictions
+      263 OPERA, OH rate constant for the atmospheric, gas-phase reaction between photochemically produced hydroxyl radicals and organic chemicals
+      264                                                                                                                     IRIS Carcinogenicity
+      265                                                                                                     OPERA, Human Plasma Fraction Unbound
+      266                                                                                                              SEEM3, Exposure Predictions
+      267                                                        OPERA, biodegradation half-life for compounds containing only carbon and hydrogen
+      268                                                                                                                                     LLNA
+      269                                                                                                     OPERA, Caco-2 permeability (logPapp)
+      270                                                                                                                                     LLNA
+      271                                                                                                 OPERA, Human Hepatic Intrinsic Clearance
+      272                                                                                                                                   U-SENS
+      273                                                                                                                                   U-SENS
+      274                                                                                                                                  SENS-IS
+      275                                                                                                                                  SENS-IS
+      276                                                                                                                  Human Maximization Test
+      277                                                                                                                                   mMUSST
+      278                                                                                                                  Human Maximization Test
+      279                                                                                                                  Human Maximization Test
+      280                                                                                                                                   U-SENS
                                                                   endpoint
-      39                                                              Call
-      41                                                              Call
-      43                                        Relative reliability score
-      44                                                              Call
-      45                                        Relative reliability score
-      46                                                              Call
-      47                                        Relative reliability score
-      48                                                              Call
-      49                                        Relative reliability score
-      51                                                              Call
-      52                                        Relative reliability score
-      58                                                              Call
-      59                                        Relative reliability score
-      60                                      Induction dose per skin area
-      64                                   Incidence of positive responses
-      65                                      Induction dose per skin area
-      66  Induction dose per skin area, 5% incidence of positive responses
-      67                                      Induction dose per skin area
-      69               Induction dose per skin area, one positive response
-      70                 Concentration, 5% incidence of positive responses
-      72                                   Incidence of positive responses
-      74                              Concentration, one positive response
-      79  Induction dose per skin area, 5% incidence of positive responses
-      81                                                               EC3
-      84               Induction dose per skin area, one positive response
-      86                                                               EC3
-      87                 Concentration, 5% incidence of positive responses
-      89                                                               EC3
-      90                                   Incidence of positive responses
-      91                                                               EC3
-      92                              Concentration, one positive response
-      93                                                               EC3
-      94  Induction dose per skin area, 5% incidence of positive responses
-      95                                                               EC3
-      96                                      Induction dose per skin area
-      97                                                               EC3
-      106                                  Incidence of positive responses
-      107                             Concentration, one positive response
-      108                                                              EC3
-      111 Induction dose per skin area, 5% incidence of positive responses
-      112                                     Induction dose per skin area
-      114                                                              EC3
-      115              Induction dose per skin area, one positive response
-      116                Concentration, 5% incidence of positive responses
-      117                                  Incidence of positive responses
-      118                             Concentration, one positive response
-      119              Induction dose per skin area, one positive response
-      120                                                              EC3
-      121                Concentration, 5% incidence of positive responses
-      122                                                              EC3
-      123                                  Incidence of positive responses
-      124                                                              EC3
-      125                             Concentration, one positive response
-      126                                                              EC3
-      127 Induction dose per skin area, 5% incidence of positive responses
-      128                                                              EC3
-      129                                     Induction dose per skin area
-      130                                                              EC3
-      131              Induction dose per skin area, one positive response
-      133                                                              EC3
-      134                Concentration, 5% incidence of positive responses
-      135                                                              EC3
-      209                                                              EC3
-          substanceType   casrn                 qsarReadyId    value   unit species
-      39       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   Active          Mouse
-      41       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   Active          Human
-      43       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N        2          Human
-      44       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N Inactive          Human
-      45       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N        2          Human
-      46       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   Active          Human
-      47       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N        3          Human
-      48       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   Active          Human
-      49       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N        2          Human
-      51       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   Active          Human
-      52       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N        1          Human
-      58       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   Active          Human
-      59       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N        3          Human
-      60       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N  1148.28 ug/cm2   Human
-      64       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      0.0      %   Human
-      65       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   286.75 ug/cm2   Human
-      66       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N    79.74 ug/cm2   Human
-      67       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N    28.68 ug/cm2   Human
-      69       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N    63.79 ug/cm2   Human
-      70       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.13      %   Human
-      72       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     72.0      %   Human
-      74       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      0.1      %   Human
-      79       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N  1828.03 ug/cm2   Human
-      81       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     12.3      %   Mouse
-      84       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   358.44 ug/cm2   Human
-      86       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      5.6      %   Mouse
-      87       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     2.36      %   Human
-      89       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      8.2      %   Mouse
-      90       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     7.84      %   Human
-      91       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      3.8      %   Mouse
-      92       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.46      %   Human
-      93       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      8.0      %   Mouse
-      94       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   931.94 ug/cm2   Human
-      95       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      3.6      %   Mouse
-      96       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N  2867.51 ug/cm2   Human
-      97       Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      4.2      %   Mouse
-      106      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     5.68      %   Human
-      107      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.22      %   Human
-      108      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.37      %   Mouse
-      111      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   319.01 ug/cm2   Human
-      112      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   860.25 ug/cm2   Human
-      114      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.61      %   Mouse
-      115      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N    71.69 ug/cm2   Human
-      116      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.41      %   Human
-      117      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     4.49      %   Human
-      118      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.09      %   Human
-      119      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   358.44 ug/cm2   Human
-      120      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      0.3      %   Mouse
-      121      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      1.2      %   Human
-      122      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     14.5      %   Mouse
-      123      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     7.69      %   Human
-      124      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.27      %   Mouse
-      125      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.46      %   Human
-      126      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.11      %   Mouse
-      127      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   757.02 ug/cm2   Human
-      128      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.44      %   Mouse
-      129      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N  1433.75 ug/cm2   Human
-      130      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.37      %   Mouse
-      131      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N   172.05 ug/cm2   Human
-      133      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.99      %   Mouse
-      134      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.98      %   Human
-      135      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N     0.35      %   Mouse
-      209      Chemical 50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N      0.7      %   Mouse
-          receptorSpecies  route sex strain lifeStage tissue lesion location
-      39                  Dermal  NA                                        
-      41                  Dermal  NA                                        
-      43                  Dermal  NA                                        
-      44                  Dermal  NA                                        
-      45                  Dermal  NA                                        
-      46                  Dermal  NA                                        
-      47                  Dermal  NA                                        
-      48                  Dermal  NA                                        
-      49                  Dermal  NA                                        
-      51                  Dermal  NA                                        
-      52                  Dermal  NA                                        
-      58                  Dermal  NA                                        
-      59                  Dermal  NA                                        
-      60                  Dermal  NA                                        
-      64                  Dermal  NA                                        
-      65                  Dermal  NA                                        
-      66                  Dermal  NA                                        
-      67                  Dermal  NA                                        
-      69                  Dermal  NA                                        
-      70                  Dermal  NA                                        
-      72                  Dermal  NA                                        
-      74                  Dermal  NA                                        
-      79                  Dermal  NA                                        
-      81                  Dermal  NA                                        
-      84                  Dermal  NA                                        
-      86                  Dermal  NA                                        
-      87                  Dermal  NA                                        
-      89                  Dermal  NA                                        
-      90                  Dermal  NA                                        
-      91                  Dermal  NA                                        
-      92                  Dermal  NA                                        
-      93                  Dermal  NA                                        
-      94                  Dermal  NA                                        
-      95                  Dermal  NA                                        
-      96                  Dermal  NA                                        
-      97                  Dermal  NA                                        
-      106                 Dermal  NA                                        
-      107                 Dermal  NA                                        
-      108                 Dermal  NA                                        
-      111                 Dermal  NA                                        
-      112                 Dermal  NA                                        
-      114                 Dermal  NA                                        
-      115                 Dermal  NA                                        
-      116                 Dermal  NA                                        
-      117                 Dermal  NA                                        
-      118                 Dermal  NA                                        
-      119                 Dermal  NA                                        
-      120                 Dermal  NA                                        
-      121                 Dermal  NA                                        
-      122                 Dermal  NA                                        
-      123                 Dermal  NA                                        
-      124                 Dermal  NA                                        
-      125                 Dermal  NA                                        
-      126                 Dermal  NA                                        
-      127                 Dermal  NA                                        
-      128                 Dermal  NA                                        
-      129                 Dermal  NA                                        
-      130                 Dermal  NA                                        
-      131                 Dermal  NA                                        
-      133                 Dermal  NA                                        
-      134                 Dermal  NA                                        
-      135                 Dermal  NA                                        
-      209                 Dermal  NA                                        
-          assaySource inVitroAssayFormat
-      39                                
-      41                                
-      43                                
-      44                                
-      45                                
-      46                                
-      47                                
-      48                                
-      49                                
-      51                                
-      52                                
-      58                                
-      59                                
-      60                                
-      64                                
-      65                                
-      66                                
-      67                                
-      69                                
-      70                                
-      72                                
-      74                                
-      79                                
-      81                                
-      84                                
-      86                                
-      87                                
-      89                                
-      90                                
-      91                                
-      92                                
-      93                                
-      94                                
-      95                                
-      96                                
-      97                                
-      106                               
-      107                               
-      108                               
-      111                               
-      112                               
-      114                               
-      115                               
-      116                               
-      117                               
-      118                               
-      119                               
-      120                               
-      121                               
-      122                               
-      123                               
-      124                               
-      125                               
-      126                               
-      127                               
-      128                               
-      129                               
-      130                               
-      131                               
-      133                               
-      134                               
-      135                               
-      209                               
-                                                                                                                                             reference
-      39                                                                                                                           Urbisch et al. 2015
-      41                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      43                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      44                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      45                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      46                                                                                                                     Marzulli and Maibach 1973
-      47                                                                                                                     Marzulli and Maibach 1973
-      48                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      49                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      51  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      52  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      58                                                                                                                     Marzulli and Maibach 1973
-      59                                                                                                                     Marzulli and Maibach 1973
-      60  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      64                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      65                              Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      66  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      67                              Marzulli and Maibach 1974; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004; Basketter et al. 2005
-      69  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      70  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      72  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      74  Kligman 1966; Greif 1967; Magnusson and Kligman 1969; Basketter et al. 1994; Basketter et al. 1999; Gerberick et al. 2000; Akkan et al. 2003
-      79                                                                                                                     Marzulli and Maibach 1973
-      81                                                                                                         ECPA personal communication (undated)
-      84                                                                                                                     Marzulli and Maibach 1973
-      86                                                                                                         ECPA personal communication (undated)
-      87                                                                                                                     Marzulli and Maibach 1973
-      89                                                                                                         ECPA personal communication (undated)
-      90                                                                                                                     Marzulli and Maibach 1973
-      91                                                                                                         ECPA personal communication (undated)
-      92                                                                                                                     Marzulli and Maibach 1973
-      93                                                                                                         ECPA personal communication (undated)
-      94                                                                                                                     Marzulli and Maibach 1973
-      95                                                                                                                         Basketter et al. 2003
-      96                                                                                                                     Marzulli and Maibach 1973
-      97                                                                                                                              Ryan et al. 2002
-      106                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      107                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      108                                                                                                                           Kimber et al. 1991
-      111                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      112                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      114                                                                                                                           Hilton et al. 1998
-      115                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      116                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      117                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      118                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      119                                                                                                                    Marzulli and Maibach 1973
-      120                                                                                                                             Ryan et al. 2002
-      121                                                                                                                    Marzulli and Maibach 1973
-      122                                                                                                                             Ryan et al. 2002
-      123                                                                                                                    Marzulli and Maibach 1973
-      124                                                                                                                             Ryan et al. 2002
-      125                                                                                                                    Marzulli and Maibach 1973
-      126                                                                                                                           Hilton et al. 1996
-      127                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      128                                                                                                                        Basketter et al. 2003
-      129                                                                                                                    Marzulli and Maibach 1973
-      130                                                                                                                           Hilton et al. 1998
-      131                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      133                                                                                                                           Kimber et al. 1991
-      134                             Marzulli and Maibach 1974; Gerberick et al. 2001; Akkan et al. 2003; Griem et al. 2003; Schneider and Akkan 2004
-      135                                                                                                                        Basketter et al. 2001
-      209                                                                                                                          Urbisch et al. 2015
-                                                                                                                                           referenceUrl
-      39                                                                                                                    10.1016/j.yrtph.2014.12.008
-      41                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      43                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      44        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      45        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      46                                                                                                                                  Not available
-      47                                                                                                                                  Not available
-      48                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      49                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      51  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      52  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      58                                                                                                                                  Not available
-      59                                                                                                                                  Not available
-      60  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      64        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      65                 10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      66  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      67        10.1016/0015-6264(74)90367-8; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002; 10.1111/j.0105-1873.2005.00707.x
-      69  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      70  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      72  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      74  10.1038/jid.1966.160; Not available; 10.1038/jid.1969.42; 10.1016/0278-6915(94)90112-0; 10.1016/S0278-6915(99)00112-x; 10.1053/ajcd.2000.0003
-      79                                                                                                                                  Not available
-      81                                                                                                                                  Not available
-      84                                                                                                                                  Not available
-      86                                                                                                                                  Not available
-      87                                                                                                                                  Not available
-      89                                                                                                                                  Not available
-      90                                                                                                                                  Not available
-      91                                                                                                                                  Not available
-      92                                                                                                                                  Not available
-      93                                                                                                                                  Not available
-      94                                                                                                                                  Not available
-      95                                                                                                                          10.1081/CUS-120026299
-      96                                                                                                                                  Not available
-      97                                                                                                                  10.1016/s0278-6915(02)00116-3
-      106                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      107                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      108                                                                                                                  10.1016/0378-4274(91)90135-s
-      111                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      112                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      114                                                                                                                                 Not available
-      115                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      116                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      117                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      118                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      119                                                                                                                                 Not available
-      120                                                                                                                 10.1016/s0278-6915(02)00116-3
-      121                                                                                                                                 Not available
-      122                                                                                                                 10.1016/s0278-6915(02)00116-3
-      123                                                                                                                                 Not available
-      124                                                                                                                 10.1016/s0278-6915(02)00116-3
-      125                                                                                                                                 Not available
-      126                                                                                                                  10.1016/0278-6915(96)00012-9
-      127                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      128                                                                                                                         10.1081/CUS-120026299
-      129                                                                                                                                 Not available
-      130                                                                                                                                 Not available
-      131                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      133                                                                                                                  10.1016/0378-4274(91)90135-s
-      134                10.1016/0015-6264(74)90367-8; 10.1053/ajcd.2001.23926; Not available; 10.1016/j.yrtph.2003.07.001; 10.1016/j.yrtph.2004.02.002
-      135                                                                                                          10.1034/j.1600-0536.2001.045002089.x
-      209                                                                                                                   10.1016/j.yrtph.2014.12.008
-                 dtxsid substanceName
-      39  DTXSID7020637  Formaldehyde
-      41  DTXSID7020637  Formaldehyde
-      43  DTXSID7020637  Formaldehyde
-      44  DTXSID7020637  Formaldehyde
-      45  DTXSID7020637  Formaldehyde
-      46  DTXSID7020637  Formaldehyde
-      47  DTXSID7020637  Formaldehyde
-      48  DTXSID7020637  Formaldehyde
-      49  DTXSID7020637  Formaldehyde
-      51  DTXSID7020637  Formaldehyde
-      52  DTXSID7020637  Formaldehyde
-      58  DTXSID7020637  Formaldehyde
-      59  DTXSID7020637  Formaldehyde
-      60  DTXSID7020637  Formaldehyde
-      64  DTXSID7020637  Formaldehyde
-      65  DTXSID7020637  Formaldehyde
-      66  DTXSID7020637  Formaldehyde
-      67  DTXSID7020637  Formaldehyde
-      69  DTXSID7020637  Formaldehyde
-      70  DTXSID7020637  Formaldehyde
-      72  DTXSID7020637  Formaldehyde
-      74  DTXSID7020637  Formaldehyde
-      79  DTXSID7020637  Formaldehyde
-      81  DTXSID7020637  Formaldehyde
-      84  DTXSID7020637  Formaldehyde
-      86  DTXSID7020637  Formaldehyde
-      87  DTXSID7020637  Formaldehyde
-      89  DTXSID7020637  Formaldehyde
-      90  DTXSID7020637  Formaldehyde
-      91  DTXSID7020637  Formaldehyde
-      92  DTXSID7020637  Formaldehyde
-      93  DTXSID7020637  Formaldehyde
-      94  DTXSID7020637  Formaldehyde
-      95  DTXSID7020637  Formaldehyde
-      96  DTXSID7020637  Formaldehyde
-      97  DTXSID7020637  Formaldehyde
-      106 DTXSID7020637  Formaldehyde
-      107 DTXSID7020637  Formaldehyde
-      108 DTXSID7020637  Formaldehyde
-      111 DTXSID7020637  Formaldehyde
-      112 DTXSID7020637  Formaldehyde
-      114 DTXSID7020637  Formaldehyde
-      115 DTXSID7020637  Formaldehyde
-      116 DTXSID7020637  Formaldehyde
-      117 DTXSID7020637  Formaldehyde
-      118 DTXSID7020637  Formaldehyde
-      119 DTXSID7020637  Formaldehyde
-      120 DTXSID7020637  Formaldehyde
-      121 DTXSID7020637  Formaldehyde
-      122 DTXSID7020637  Formaldehyde
-      123 DTXSID7020637  Formaldehyde
-      124 DTXSID7020637  Formaldehyde
-      125 DTXSID7020637  Formaldehyde
-      126 DTXSID7020637  Formaldehyde
-      127 DTXSID7020637  Formaldehyde
-      128 DTXSID7020637  Formaldehyde
-      129 DTXSID7020637  Formaldehyde
-      130 DTXSID7020637  Formaldehyde
-      131 DTXSID7020637  Formaldehyde
-      133 DTXSID7020637  Formaldehyde
-      134 DTXSID7020637  Formaldehyde
-      135 DTXSID7020637  Formaldehyde
-      209 DTXSID7020637  Formaldehyde
-                                                              pubMedId
-      39                                                      25541156
-      41          4459237; 11526521; Not available; 14623479; 15135206
-      43          4459237; 11526521; Not available; 14623479; 15135206
-      44          4459237; Not available; 14623479; 15135206; 16283904
-      45          4459237; Not available; 14623479; 15135206; 16283904
-      46                                                 Not available
-      47                                                 Not available
-      48          4459237; 11526521; Not available; 14623479; 15135206
-      49          4459237; 11526521; Not available; 14623479; 15135206
-      51  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      52  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      58                                                 Not available
-      59                                                 Not available
-      60  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      64          4459237; Not available; 14623479; 15135206; 16283904
-      65          4459237; 11526521; Not available; 14623479; 15135206
-      66  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      67          4459237; Not available; 14623479; 15135206; 16283904
-      69  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      70  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      72  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      74  5924294; Not available; 5774356; 8045461; 10654593; 10684384
-      79                                                 Not available
-      81                                                 Not available
-      84                                                 Not available
-      86                                                 Not available
-      87                                                 Not available
-      89                                                 Not available
-      90                                                 Not available
-      91                                                 Not available
-      92                                                 Not available
-      93                                                 Not available
-      94                                                 Not available
-      95                                                 Not available
-      96                                                 Not available
-      97                                                      12176099
-      106         4459237; 11526521; Not available; 14623479; 15135206
-      107         4459237; 11526521; Not available; 14623479; 15135206
-      108                                                      1998208
-      111         4459237; 11526521; Not available; 14623479; 15135206
-      112         4459237; 11526521; Not available; 14623479; 15135206
-      114                                                      9471984
-      115         4459237; 11526521; Not available; 14623479; 15135206
-      116         4459237; 11526521; Not available; 14623479; 15135206
-      117         4459237; 11526521; Not available; 14623479; 15135206
-      118         4459237; 11526521; Not available; 14623479; 15135206
-      119                                                Not available
-      120                                                     12176099
-      121                                                Not available
-      122                                                     12176099
-      123                                                Not available
-      124                                                     12176099
-      125                                                Not available
-      126                                                      8690318
-      127         4459237; 11526521; Not available; 14623479; 15135206
-      128                                                Not available
-      129                                                Not available
-      130                                                      9471984
-      131         4459237; 11526521; Not available; 14623479; 15135206
-      133                                                      1998208
-      134         4459237; 11526521; Not available; 14623479; 15135206
-      135                                                     11553118
-      209                                                     25541156
-      
-      $ice_invivo_irritation
-       [1] assay              endpoint           substanceType      casrn             
-       [5] qsarReadyId        value              unit               species           
-       [9] receptorSpecies    route              sex                strain            
-      [13] lifeStage          tissue             lesion             location          
-      [17] assaySource        inVitroAssayFormat reference          referenceUrl      
-      [21] dtxsid             substanceName      pubMedId          
-      <0 rows> (or 0-length row.names)
-      
-      $ice_invivo_endocrine
-       [1] assay              endpoint           substanceType      casrn             
-       [5] qsarReadyId        value              unit               species           
-       [9] receptorSpecies    route              sex                strain            
-      [13] lifeStage          tissue             lesion             location          
-      [17] assaySource        inVitroAssayFormat reference          referenceUrl      
-      [21] dtxsid             substanceName      pubMedId          
-      <0 rows> (or 0-length row.names)
-      
-      $ice_cancer
-                         assay               endpoint substanceType   casrn
-      10 In Vitro Genotoxicity Bacterial mutagenicity      Chemical 50-00-0
-                         qsarReadyId
-      10 WSFSSNUMVMOOMR-UHFFFAOYSA-N
-                                                                                                          value
-      10 Weakly Positive; Weakly Positive; Positive; Positive; Positive; Positive; Positive; Positive; Positive
-         unit        species receptorSpecies          route            sex
-      10      Not applicable                 Not applicable Not applicable
-                 strain lifeStage tissue lesion location assaySource
-      10 Not applicable                                             
-         inVitroAssayFormat      reference
-      10                    Not applicable
-                                                            referenceUrl
-      10 https://manticore.niehs.nih.gov/cebssearch/test_article/50-00-0
-                dtxsid substanceName pubMedId
-      10 DTXSID7020637  Formaldehyde       NA
-      
-      $ice_dart
-       [1] assay              endpoint           substanceType      casrn             
-       [5] qsarReadyId        value              unit               species           
-       [9] receptorSpecies    route              sex                strain            
-      [13] lifeStage          tissue             lesion             location          
-      [17] assaySource        inVitroAssayFormat reference          referenceUrl      
-      [21] dtxsid             substanceName      pubMedId          
-      <0 rows> (or 0-length row.names)
+      1                                                               Call
+      2                                               Applicability_Domain
+      3                                                               Call
+      4                                               Applicability_Domain
+      5                                               Applicability_Domain
+      6                                                               Call
+      7                                               Applicability_Domain
+      8                                                               Call
+      9                                                               Call
+      10                                              Applicability_Domain
+      11                                                              Call
+      12                                              Applicability_Domain
+      13                                                              Call
+      14                                              Applicability_Domain
+      15                                              Applicability_Domain
+      16                                              Applicability_Domain
+      17                                                              Call
+      18                                              Applicability_Domain
+      19                                              Applicability_Domain
+      20                                              Applicability_Domain
+      21                                              Applicability_Domain
+      22                                              Applicability_Domain
+      23                                                              Call
+      24                                                              Call
+      25                                              Applicability_Domain
+      26                                                              Call
+      27                                              Applicability_Domain
+      28                                                        Very Toxic
+      29                                                           Potency
+      30                                              Applicability_Domain
+      31                                                              Call
+      32                                                              Call
+      33                                                              Call
+      34                                              Applicability_Domain
+      35                                               OECD Functional Use
+      36                                                         Non Toxic
+      37                                               OECD Functional Use
+      38                                              Applicability_Domain
+      39                                               OECD Functional Use
+      40                                                EPA Classification
+      41                                               OECD Functional Use
+      42                                              Applicability_Domain
+      43                                               OECD Functional Use
+      44                                              Applicability_Domain
+      45                                               OECD Functional Use
+      46                                              Applicability_Domain
+      47                                               OECD Functional Use
+      48                                                GHS Classification
+      49                                              Applicability_Domain
+      50                                              Applicability_Domain
+      51                                              Applicability_Domain
+      52                                              Applicability_Domain
+      53                                              Applicability_Domain
+      54                                                        CD86, Call
+      55                                                              Call
+      56                                                        CD54, Call
+      57                                                        CD86, Call
+      58                                                    Listing status
+      59                                                        IARC group
+      60                                                              Call
+      61                                                              Call
+      62                                                              Imax
+      63                                                              Imax
+      64                                                              Imax
+      65                                                              Call
+      66                                                              Call
+      67                                        Relative reliability score
+      68                                                              Call
+      69                                                           Potency
+      70                                                              Call
+      71                                                              Call
+      72                                                              Call
+      73                                                              Call
+      74                                                              Call
+      75                                                              Call
+      76                                                              Call
+      77                                                              Call
+      78                                                        Tumor type
+      79                                              Applicability_Domain
+      80                                              WOE characterization
+      81                                            Bacterial mutagenicity
+      82                                                              Call
+      83                                              Applicability_Domain
+      84                                                        CD86, Call
+      85                                              Applicability_Domain
+      86                                                        CD54, Call
+      87                                              Applicability_Domain
+      88                                                              Call
+      89                                              Applicability_Domain
+      90                                                        CD54, Call
+      91                                                              Call
+      92                                                              Call
+      93                                        Relative reliability score
+      94                                        Relative reliability score
+      95                                                              Call
+      96                                        Relative reliability score
+      97                                                              Call
+      98                                                              Call
+      99                                        Relative reliability score
+      100                                       Relative reliability score
+      101                                                             Call
+      102                                                             Call
+      103                                                             Call
+      104                                                             Call
+      105                                                             Call
+      106                                                    Depletion Cys
+      107                                              Depletion Lys + Cys
+      108                                                    Depletion Cys
+      109                                                    Depletion Lys
+      110                                     Induction dose per skin area
+      111                                  Incidence of positive responses
+      112 Induction dose per skin area, 5% incidence of positive responses
+      113                                     Induction dose per skin area
+      114                                                    Depletion Lys
+      115                                              Depletion Lys + Cys
+      116                                                    Depletion Cys
+      117                                              Depletion Lys + Cys
+      118                                              Depletion Lys + Cys
+      119                                                    Depletion Lys
+      120                                                    Depletion Lys
+      121                                                    Depletion Cys
+      122                                                    Depletion Lys
+      123                                                    Depletion Cys
+      124                                                    Depletion Cys
+      125                                              Depletion Lys + Cys
+      126                                              Depletion Lys + Cys
+      127                                                    Depletion Lys
+      128                                                    Depletion Lys
+      129                                                    Depletion Cys
+      130                                              Depletion Lys + Cys
+      131                                                              nbO
+      132                                                    Depletion Lys
+      133                                                               RT
+      134                                                    Depletion Cys
+      135                                                          nbRotBd
+      136                                              Depletion Lys + Cys
+      137                                                              nbN
+      138                                                    Depletion Lys
+      139                                                    Depletion Cys
+      140                                              Depletion Lys + Cys
+      141                                                    Depletion Lys
+      142                                                    Concentration
+      143                                                    Concentration
+      144                                  Incidence of positive responses
+      145 Induction dose per skin area, 5% incidence of positive responses
+      146 Induction dose per skin area, 5% incidence of positive responses
+      147                Concentration, 5% incidence of positive responses
+      148                Concentration, 5% incidence of positive responses
+      149              Induction dose per skin area, one positive response
+      150              Induction dose per skin area, one positive response
+      151                             Concentration, one positive response
+      152                             Concentration, one positive response
+      153 Induction dose per skin area, 5% incidence of positive responses
+      154                                     Induction dose per skin area
+      155              Induction dose per skin area, one positive response
+      156                Concentration, 5% incidence of positive responses
+      157                                  Incidence of positive responses
+      158                             Concentration, one positive response
+      159                                     Induction dose per skin area
+      160                                                    Concentration
+      161                                                              TER
+      162                                  Incidence of positive responses
+      163                                                              TER
+      164                Concentration, 5% incidence of positive responses
+      165                                                    Concentration
+      166              Induction dose per skin area, one positive response
+      167                                                              TER
+      168                             Concentration, one positive response
+      169                                                              TER
+      170                                     Induction dose per skin area
+      171                                                              TER
+      172                                                    Concentration
+      173                                                              TER
+      174                                  Incidence of positive responses
+      175                                                             LD50
+      176                                                             LD50
+      177                                                             LC50
+      178                                                             LC50
+      179                                                             LC50
+      180                                                             LC50
+      181                                                             LC50
+      182                                                             LC50
+      183                                                     LogD, ph 5.5
+      184                                                      CD86, EC150
+      185                                                      CD54, EC200
+      186                                                             LD50
+      187                                                             LD50
+      188                                                             LD50
+      189                                                             LD50
+      190                                                             LD50
+      191                                                             LD50
+      192                                                            EC1.5
+      193                                                              EC3
+      194                                                             CV75
+      195                                                            EC1.5
+      196                                                      CD86, EC150
+      197                                                      CD54, EC200
+      198                                                             CV75
+      199                                                             CV75
+      200                                     Induction dose per skin area
+      201                                  Incidence of positive responses
+      202              Induction dose per skin area, one positive response
+      203                                                    Concentration
+      204                                                            EC1.5
+      205                                                             IC50
+      206                                                             IC50
+      207                                                             IC50
+      208                                                    Depletion Cys
+      209                                                               WS
+      210                                              Depletion Lys + Cys
+      211                                                            LogKM
+      212                                              Depletion Lys + Cys
+      213                                                             LogP
+      214                                                    Depletion Lys
+      215                                                           LogKOC
+      216                                                    Depletion Cys
+      217                                                               HL
+      218                                              Depletion Lys + Cys
+      219                                                           nbRing
+      220                                                    Depletion Lys
+      221                                                         ndHBdDon
+      222                                                    Depletion Cys
+      223                                                   Sp3Sp2HybRatio
+      224                                                              EC3
+      225                                                              nbC
+      226                                                              EC3
+      227                                               nbLipinskiFailures
+      228                                                              EC3
+      229                                                         nbHBdAcc
+      230                                                              EC3
+      231                                                               MP
+      232                                                              EC3
+      233                                                              KOA
+      234                                                              EC3
+      235                                                               VP
+      236                                                              EC3
+      237                                                     MolarRefract
+      238                                                              EC3
+      239                                                               MW
+      240                                                              EC3
+      241                                                 CombDipolPolariz
+      242                                                              EC3
+      243                                                             LD50
+      244                                                              EC3
+      245                                                               BP
+      246                                                              EC3
+      247                                                   TopoPolSurfAir
+      248                                                              EC3
+      249                                                     nbHeteroRing
+      250                                                              EC3
+      251                                                       nbAromAtom
+      252                                                              EC3
+      253                                                     nbHeavyAtoms
+      254                                                              EC3
+      255                                                          nbAtoms
+      256                                                             LC50
+      257                                                     LogD, ph 7.4
+      258                                                             LC50
+      259                                                 pKa, Ionizations
+      260                                                   5th percentile
+      261                                                           LogBCF
+      262                                                  95th percentile
+      263                                                           LogAOH
+      264                                             Inhalation risk unit
+      265                                                               Fu
+      266                                                  50th percentile
+      267                                                        LogBioDeg
+      268                                                              EC3
+      269                                                         LogCACO2
+      270                                                              EC3
+      271                                                            Clint
+      272                                                      CD86, EC150
+      273                                                      CD86, EC150
+      274                                                    Concentration
+      275                                                    Concentration
+      276 Induction dose per skin area, 5% incidence of positive responses
+      277                                                      CD86, EC120
+      278                             Concentration, one positive response
+      279                Concentration, 5% incidence of positive responses
+      280                                                             CV70
+          substanceType         casrn                 qsarReadyId
+      1         Mixture ICE_660959215                            
+      2        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      3         Mixture ICE_660959215                            
+      4        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      5        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      6         Mixture ICE_660959215                            
+      7        Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      8         Mixture ICE_660959215                            
+      9         Mixture ICE_660959215                            
+      10       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      11        Mixture ICE_660959215                            
+      12       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      13       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      14       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      15       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      16       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      17       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      18       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      19       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      20       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      21       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      22       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      23       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      24       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      25       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      26       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      27       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      28       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      29       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      30       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      31       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      32       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      33       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      34       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      35       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      36       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      37       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      38       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      39       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      40       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      41       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      42       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      43       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      44       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      45       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      46       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      47       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      48       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      49       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      50       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      51       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      52       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      53       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      54       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      55       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      56       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      57       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      58       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      59       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      60       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      61       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      62       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      63       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      64       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      65       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      66       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      67       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      68       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      69       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      70       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      71       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      72       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      73       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      74       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      75       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      76       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      77       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      78       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      79       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      80       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      81       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      82       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      83       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      84       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      85       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      86       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      87       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      88       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      89       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      90       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      91       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      92       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      93       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      94       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      95       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      96       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      97       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      98       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      99       Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      100      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      101      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      102      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      103      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      104      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      105      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      106      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      107      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      108      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      109      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      110      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      111      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      112      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      113      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      114      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      115      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      116      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      117      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      118      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      119      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      120      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      121      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      122      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      123      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      124      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      125      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      126      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      127      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      128      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      129      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      130      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      131      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      132      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      133      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      134      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      135      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      136      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      137      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      138      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      139      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      140      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      141      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      142      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      143      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      144      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      145      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      146      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      147      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      148      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      149      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      150      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      151      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      152      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      153      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      154      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      155      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      156      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      157      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      158      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      159      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      160      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      161       Mixture ICE_660959215                            
+      162      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      163       Mixture ICE_660959215                            
+      164      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      165      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      166      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      167       Mixture ICE_660959215                            
+      168      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      169       Mixture ICE_660959215                            
+      170      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      171       Mixture ICE_660959215                            
+      172      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      173       Mixture ICE_660959215                            
+      174      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      175      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      176      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      177      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      178      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      179      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      180      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      181      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      182      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      183      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      184      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      185      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      186      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      187      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      188      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      189      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      190      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      191      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      192      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      193      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      194      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      195      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      196      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      197      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      198      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      199      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      200      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      201      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      202      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      203      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      204      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      205      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      206      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      207      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      208      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      209      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      210      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      211      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      212      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      213      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      214      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      215      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      216      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      217      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      218      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      219      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      220      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      221      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      222      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      223      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      224      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      225      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      226      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      227      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      228      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      229      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      230      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      231      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      232      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      233      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      234      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      235      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      236      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      237      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      238      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      239      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      240      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      241      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      242      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      243      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      244      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      245      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      246      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      247      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      248      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      249      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      250      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      251      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      252      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      253      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      254      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      255      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      256      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      257      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      258      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      259      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      260      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      261      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      262      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      263      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      264      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      265      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      266      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      267      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      268      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      269      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      270      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      271      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      272      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      273      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      274      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      275      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      276      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      277      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      278      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      279      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+      280      Chemical       50-00-0 WSFSSNUMVMOOMR-UHFFFAOYSA-N
+                                                                                                              value
+      1                                                                                                    Inactive
+      2                                                                                                           1
+      3                                                                                                    Inactive
+      4                                                                                                           1
+      5                                                                                                           0
+      6                                                                                                    Inactive
+      7                                                                                                           1
+      8                                                                                                    Inactive
+      9                                                                                                    Inactive
+      10                                                                                                          0
+      11                                                                                                   Inactive
+      12                                                                                                          0
+      13                                                                                                          0
+      14                                                                                                          1
+      15                                                                                                          1
+      16                                                                                                          0
+      17                                                                                                        0.0
+      18                                                                                                          1
+      19                                                                                                          0
+      20                                                                                                          1
+      21                                                                                                          0
+      22                                                                                                          1
+      23                                                                                                        0.0
+      24                                                                                                        0.0
+      25                                                                                                          1
+      26                                                                                                        0.0
+      27                                                                                                          1
+      28                                                                                                          0
+      29                                                                                                     Strong
+      30                                                                                                          1
+      31                                                                                                     Active
+      32                                                                                                          0
+      33                                                                                                     Active
+      34                                                                                                        1.0
+      35                                                                                                    Biocide
+      36                                                                                                          0
+      37                                                                                    Flavouring and nutrient
+      38                                                                                                          1
+      39                                                                                               Preservative
+      40                                                                                                          2
+      41                                                                                                   Monomers
+      42                                                                                                          1
+      43                                                                                                     Binder
+      44                                                                                                          1
+      45                                                                                                   Monomers
+      46                                                                                                          1
+      47                                                                                               Preservative
+      48                                                                                                          3
+      49                                                                                                          1
+      50                                                                                                          1
+      51                                                                                                          1
+      52                                                                                                          1
+      53                                                                                                          1
+      54                                                                                                   Inactive
+      55                                                                                                     Active
+      56                                                                                                     Active
+      57                                                                                                     Active
+      58                                                                                                      Known
+      59                                                                                                          1
+      60                                                                                                     Active
+      61                                                                                                     Active
+      62                                                                                                      16.92
+      63                                                                                                        4.1
+      64                                                                                                       3.99
+      65                                                                                                     Active
+      66                                                                                                     Active
+      67                                                                                                          1
+      68                                                                                                     Active
+      69                                                                                                     Strong
+      70                                                                                                     Active
+      71                                                                                                     Active
+      72                                                                                                     Active
+      73                                                                                                     Active
+      74                                                                                                     Active
+      75                                                                                                     Active
+      76                                                                                                     Active
+      77                                                                                                     Active
+      78                                                                                    Squamous cell carcinoma
+      79                                                                                                          0
+      80  B1 (Probable human carcinogen - based on limited evidence of carcinogenicity in humans) (1986 guidelines)
+      81     Weakly Positive; Weakly Positive; Positive; Positive; Positive; Positive; Positive; Positive; Positive
+      82                                                                                                     Active
+      83                                                                                                          0
+      84                                                                                                     Active
+      85                                                                                                          0
+      86                                                                                                     Active
+      87                                                                                                          0
+      88                                                                                                   Inactive
+      89                                                                                                          0
+      90                                                                                                   Inactive
+      91                                                                                                     Active
+      92                                                                                                     Active
+      93                                                                                                          2
+      94                                                                                                          3
+      95                                                                                                     Active
+      96                                                                                                          2
+      97                                                                                                     Active
+      98                                                                                                   Inactive
+      99                                                                                                          2
+      100                                                                                                         3
+      101                                                                                                    Active
+      102                                                                                                    Active
+      103                                                                                                    Active
+      104                                                                                                    Active
+      105                                                                                                    Active
+      106                                                                                                      48.6
+      107                                                                                                      25.3
+      108                                                                                                      44.2
+      109                                                                                                       2.0
+      110                                                                                                    2868.0
+      111                                                                                                     4.494
+      112                                                                                                     931.9
+      113                                                                                                     286.8
+      114                                                                                                       3.6
+      115                                                                                                      24.0
+      116                                                                                                      36.7
+      117                                                                                                      19.0
+      118                                                                                                     19.55
+      119                                                                                                       1.3
+      120                                                                                                       1.8
+      121                                                                                                      37.3
+      122                                                                                                       3.8
+      123                                                                                                      40.6
+      124                                                                                                      36.6
+      125                                                                                                      19.9
+      126                                                                                                      15.4
+      127                                                                                                       3.2
+      128                                                                                                       0.3
+      129                                                                                                      30.5
+      130                                                                                                      28.6
+      131                                                                                                       1.0
+      132                                                                                                       2.5
+      133                                                                                                       0.0
+      134                                                                                                      49.6
+      135                                                                                                       0.0
+      136                                                                                                     25.95
+      137                                                                                                       0.0
+      138                                                                                                       2.3
+      139                                                                                                      54.8
+      140                                                                                                      22.2
+      141                                                                                                       2.4
+      142                                                                                                       3.7
+      143                                                                                                      0.37
+      144                                                                                                     7.843
+      145                                                                                                     319.0
+      146                                                                                                    1828.0
+      147                                                                                                    0.4116
+      148                                                                                                     2.359
+      149                                                                                                     71.69
+      150                                                                                                     358.4
+      151                                                                                                    0.0925
+      152                                                                                                    0.4625
+      153                                                                                                     757.0
+      154                                                                                                    1434.0
+      155                                                                                                     172.1
+      156                                                                                                    0.9768
+      157                                                                                                     5.682
+      158                                                                                                     0.222
+      159                                                                                                     860.3
+      160                                                                                                      1.11
+      161                                                                                                      12.3
+      162                                                                                                       0.0
+      163                                                                                                       6.4
+      164                                                                                                     1.202
+      165                                                                                                     0.037
+      166                                                                                                     358.4
+      167                                                                                                      12.3
+      168                                                                                                    0.4625
+      169                                                                                                       6.4
+      170                                                                                                     28.68
+      171                                                                                                       6.1
+      172                                                                                                      1.85
+      173                                                                                                       6.1
+      174                                                                                                     7.692
+      175                                                                                                   > 100.0
+      176                                                                                                     100.0
+      177                                                                                                  < 0.5682
+      178                                                                                                    0.5866
+      179                                                                                                    1.0002
+      180                                                                                                    1.0064
+      181                                                                                                    0.3068
+      182                                                                                                    0.3068
+      183                                                                                                      0.35
+      184                                                                                                       4.3
+      185                                                                                                       5.2
+      186                                                                                                     550.0
+      187                                                                                                   < 800.0
+      188                                                                                                    2020.0
+      189                                                                                                     800.0
+      190                                                                                                     500.0
+      191                                                                                                  > 7000.0
+      192                                                                                                     63.21
+      193                                                                                                      72.2
+      194                                                                                                       5.8
+      195                                                                                                     137.0
+      196                                                                                                       4.3
+      197                                                                                                      5.14
+      198                                                                                                       5.8
+      199                                                                                                      23.3
+      200                                                                                                    1148.0
+      201                                                                                                      72.0
+      202                                                                                                     63.79
+      203                                                                                                      1.85
+      204                                                                                                     184.4
+      205                                                                                                   > 288.0
+      206                                                                                                    201.63
+      207                                                                                                     385.9
+      208                                                                                                      44.7
+      209                                                                                                      1.17
+      210                                                                                                     24.45
+      211                                                                                                     -0.65
+      212                                                                                                      35.8
+      213                                                                                                      0.35
+      214                                                                                                       4.2
+      215                                                                                                      0.44
+      216                                                                                                      60.4
+      217                                                                                                     -6.46
+      218                                                                                                     26.95
+      219                                                                                                       0.0
+      220                                                                                                      11.2
+      221                                                                                                       0.0
+      222                                                                                                      51.4
+      223                                                                                                       0.0
+      224                                                                                                      0.37
+      225                                                                                                       1.0
+      226                                                                                                      0.27
+      227                                                                                                       0.0
+      228                                                                                                      0.35
+      229                                                                                                       1.0
+      230                                                                                                      0.44
+      231                                                                                                    -105.0
+      232                                                                                                      0.37
+      233                                                                                                      1.21
+      234                                                                                                      0.99
+      235                                                                                                      2.92
+      236                                                                                                       0.7
+      237                                                                                                     6.307
+      238                                                                                                      0.61
+      239                                                                                                   30.0106
+      240                                                                                                       8.0
+      241                                                                                                     0.562
+      242                                                                                                       5.6
+      243                                                                                                     290.0
+      244                                                                                                       4.2
+      245                                                                                                     -19.0
+      246                                                                                                       3.8
+      247                                                                                                     17.07
+      248                                                                                                      14.5
+      249                                                                                                       0.0
+      250                                                                                                       3.6
+      251                                                                                                       0.0
+      252                                                                                                      0.11
+      253                                                                                                       2.0
+      254                                                                                                       0.3
+      255                                                                                                       4.0
+      256                                                                                                     0.203
+      257                                                                                                      0.35
+      258                                                                                                     0.578
+      259                                                                                                       0.0
+      260                                                                                                  1.409E-9
+      261                                                                                                      0.24
+      262                                                                                                    0.6579
+      263                                                                                                    -11.03
+      264                                                                                                    1.3E-5
+      265                                                                                                      0.73
+      266                                                                                                  2.938E-5
+      267                                                                                                      0.91
+      268                                                                                                       8.2
+      269                                                                                                     -5.07
+      270                                                                                                      12.3
+      271                                                                                                      6.35
+      272                                                                                                       1.6
+      273                                                                                                      5.74
+      274                                                                                                      37.0
+      275                                                                                                      37.0
+      276                                                                                                     79.74
+      277                                                                                                     0.634
+      278                                                                                                    0.1028
+      279                                                                                                    0.1285
+      280                                                                                                      5.74
+                            unit species receptorSpecies                route  sex
+      1                                                                           
+      2                                                                           
+      3                                                                           
+      4                                                                           
+      5                                                                           
+      6                                                                           
+      7                                                                           
+      8                                                                           
+      9                                                                           
+      10                                                                          
+      11                                                                          
+      12                                                                          
+      13                                                                          
+      14                                                                          
+      15                                                                          
+      16                                                                          
+      17                                                                          
+      18                                                                          
+      19                                                                          
+      20                                                                          
+      21                                                                          
+      22                                                                          
+      23                                                                          
+      24                                                                          
+      25                                                                          
+      26                                                                          
+      27                                                                          
+      28                                                                          
+      29                                                                          
+      30                                                                          
+      31                                                                          
+      32                                                                          
+      33                                                                          
+      34                                                                          
+      35                                                                          
+      36                                                                          
+      37                                                                          
+      38                                                                          
+      39                                                                          
+      40                                                                          
+      41                                                                          
+      42                                                                          
+      43                                                                          
+      44                                                                          
+      45                                                                          
+      46                                                                          
+      47                                                                          
+      48                                                                          
+      49                                                                          
+      50                                                                          
+      51                                                                          
+      52                                                                          
+      53                                                                          
+      54                                                                          
+      55                                                                          
+      56                                                                          
+      57                                                                          
+      58                                                                          
+      59                                                                          
+      60                                                                          
+      61                                                                          
+      62                                                                          
+      63                                                                          
+      64                                                                          
+      65                                                                          
+      66                           Human                               Dermal     
+      67                           Human                               Dermal     
+      68                                                                          
+      69                                                                          
+      70                                                                          
+      71                                                                          
+      72                                                                          
+      73                                                                          
+      74                                                                          
+      75                                                                          
+      76                                                                          
+      77                           Mouse                               Dermal     
+      78                                                           Inhalation     
+      79                                                                          
+      80                                                           Inhalation     
+      81                           Mouse                 Dosed drinking water Male
+      82                                                                          
+      83                                                                          
+      84                                                                          
+      85                                                                          
+      86                                                                          
+      87                                                                          
+      88                                                                          
+      89                                                                          
+      90                                                                          
+      91                           Human                               Dermal     
+      92                           Human                               Dermal     
+      93                           Human                               Dermal     
+      94                           Human                               Dermal     
+      95                           Human                               Dermal     
+      96                           Human                               Dermal     
+      97                           Human                               Dermal     
+      98                           Human                               Dermal     
+      99                           Human                               Dermal     
+      100                          Human                               Dermal     
+      101                                                                         
+      102                                                                         
+      103                                                                         
+      104                                                                         
+      105                                                                         
+      106                      %                                                  
+      107                      %                                                  
+      108                      %                                                  
+      109                      %                                                  
+      110                 ug/cm2   Human                               Dermal     
+      111                      %   Human                               Dermal     
+      112                 ug/cm2   Human                               Dermal     
+      113                 ug/cm2   Human                               Dermal     
+      114                      %                                                  
+      115                      %                                                  
+      116                      %                                                  
+      117                      %                                                  
+      118                      %                                                  
+      119                      %                                                  
+      120                      %                                                  
+      121                      %                                                  
+      122                      %                                                  
+      123                      %                                                  
+      124                      %                                                  
+      125                      %                                                  
+      126                      %                                                  
+      127                      %                                                  
+      128                      %                                                  
+      129                      %                                                  
+      130                      %                                                  
+      131                  count                                                  
+      132                      %                                                  
+      133                Minutes                                                  
+      134                      %                                                  
+      135                  count                                                  
+      136                      %                                                  
+      137                  count                                                  
+      138                      %                                                  
+      139                      %                                                  
+      140                      %                                                  
+      141                      %                                                  
+      142                      %   Human                               Dermal     
+      143                      %   Human                               Dermal     
+      144                      %   Human                               Dermal     
+      145                 ug/cm2   Human                               Dermal     
+      146                 ug/cm2   Human                               Dermal     
+      147                      %   Human                               Dermal     
+      148                      %   Human                               Dermal     
+      149                 ug/cm2   Human                               Dermal     
+      150                 ug/cm2   Human                               Dermal     
+      151                      %   Human                               Dermal     
+      152                      %   Human                               Dermal     
+      153                 ug/cm2   Human                               Dermal     
+      154                 ug/cm2   Human                               Dermal     
+      155                 ug/cm2   Human                               Dermal     
+      156                      %   Human                               Dermal     
+      157                      %   Human                               Dermal     
+      158                      %   Human                               Dermal     
+      159                 ug/cm2   Human                               Dermal     
+      160                      %   Human                               Dermal     
+      161               kiloohms                                                  
+      162                      %   Human                               Dermal     
+      163               kiloohms                                                  
+      164                      %   Human                               Dermal     
+      165                      %   Human                               Dermal     
+      166                 ug/cm2   Human                               Dermal     
+      167               kiloohms                                                  
+      168                      %   Human                               Dermal     
+      169               kiloohms                                                  
+      170                 ug/cm2   Human                               Dermal     
+      171               kiloohms                                                  
+      172                      %   Human                               Dermal     
+      173               kiloohms                                                  
+      174                      %   Human                               Dermal     
+      175                  mg/kg     Rat                                      Male
+      176                  mg/kg     Rat                                      Male
+      177                   mg/L                                                  
+      178                   mg/L                                                  
+      179                   mg/L                                                  
+      180                   mg/L                                                  
+      181                   mg/L                                                  
+      182                   mg/L                                                  
+      183         Log10 unitless                                                  
+      184                  ug/mL                                                  
+      185                  ug/mL                                                  
+      186                  mg/kg     Rat                                      Male
+      187                  mg/kg     Rat                                      Male
+      188                  mg/kg     Rat                                      Male
+      189                  mg/kg     Rat                                      Male
+      190                  mg/kg     Rat                                      Male
+      191                  mg/kg     Rat                                      Male
+      192                     uM                                                  
+      193                     uM                                                  
+      194                  ug/mL                                                  
+      195                     uM                                                  
+      196                  ug/mL                                                  
+      197                  ug/mL                                                  
+      198                  ug/mL                                                  
+      199                  ug/mL                                                  
+      200                 ug/cm2   Human                               Dermal     
+      201                      %   Human                               Dermal     
+      202                 ug/cm2   Human                               Dermal     
+      203                      %   Human                               Dermal     
+      204                     uM                                                  
+      205                     uM                                                  
+      206                     uM                                                  
+      207                     uM                                                  
+      208                      %                                                  
+      209          Log10 moles/L                                                  
+      210                      %                                                  
+      211             Log10 days                                                  
+      212                      %                                                  
+      213        Log 10 unitless                                                  
+      214                      %                                                  
+      215             Log10 L/Kg                                                  
+      216                      %                                                  
+      217      Log10 atm-m3/mole                                                  
+      218                      %                                                  
+      219                  count                                                  
+      220                      %                                                  
+      221                  count                                                  
+      222                      %                                                  
+      223      Unitless Fraction                                                  
+      224                      %   Mouse                               Dermal     
+      225                  count                                                  
+      226                      %   Mouse                               Dermal     
+      227                  count                                                  
+      228                      %   Mouse                               Dermal     
+      229                  count                                                  
+      230                      %   Mouse                               Dermal     
+      231               Degree C                                                  
+      232                      %   Mouse                               Dermal     
+      233        Log 10 unitless                                                  
+      234                      %   Mouse                               Dermal     
+      235             Log10 mmHg                                                  
+      236                      %   Mouse                               Dermal     
+      237                 m3/mol                                                  
+      238                      %   Mouse                               Dermal     
+      239                  g/mol                                                  
+      240                      %   Mouse                               Dermal     
+      241  dipole moment/ volume                                                  
+      242                      %   Mouse                               Dermal     
+      243                  mg/kg                                                  
+      244                      %   Mouse                               Dermal     
+      245               Degree C                                                  
+      246                      %   Mouse                               Dermal     
+      247                    A^2                                                  
+      248                      %   Mouse                               Dermal     
+      249                  count                                                  
+      250                      %   Mouse                               Dermal     
+      251                  count                                                  
+      252                      %   Mouse                               Dermal     
+      253                  count                                                  
+      254                      %   Mouse                               Dermal     
+      255                  count                                                  
+      256                   mg/L                                                  
+      257         Log10 unitless                                                  
+      258                   mg/L                                                  
+      259                  count                                                  
+      260              mg/kg/day                                                  
+      261         Log10 unitless                                                  
+      262              mg/kg/day                                                  
+      263 Log10 cm3/molecule-sec                                                  
+      264                  ug/m3                                   Inhalation     
+      265      Unitless Fraction                                                  
+      266              mg/kg/day                                                  
+      267             Log10 days                                                  
+      268                      %   Mouse                               Dermal     
+      269         log(10-6 cm/s)                                                  
+      270                      %   Mouse                               Dermal     
+      271      ul/min/10^6 cells                                                  
+      272                  ug/mL                                                  
+      273                  ug/mL                                                  
+      274                      %                                                  
+      275                      %                                                  
+      276                 ug/cm2   Human                               Dermal     
+      277                  ug/mL                                                  
+      278                      %   Human                               Dermal     
+      279                      %   Human                               Dermal     
+      280                  ug/mL                                                  
+                     strain lifeStage tissue lesion location assaySource
+      1                                                                 
+      2                                                                 
+      3                                                                 
+      4                                                                 
+      5                                                                 
+      6                                                                 
+      7                                                                 
+      8                                                                 
+      9                                                                 
+      10                                                                
+      11                                                                
+      12                                                                
+      13                                                                
+      14                                                                
+      15                                                                
+      16                                                                
+      17                                                                
+      18                                                                
+      19                                                                
+      20                                                                
+      21                                                                
+      22                                                                
+      23                                                                
+      24                                                                
+      25                                                                
+      26                                                                
+      27                                                                
+      28                                                                
+      29                                                                
+      30                                                                
+      31                                                                
+      32                                                                
+      33                                                                
+      34                                                                
+      35                                                                
+      36                                                                
+      37                                                                
+      38                                                                
+      39                                                                
+      40                                                                
+      41                                                                
+      42                                                                
+      43                                                                
+      44                                                                
+      45                                                                
+      46                                                                
+      47                                                                
+      48                                                                
+      49                                                                
+      50                                                                
+      51                                                                
+      52                                                                
+      53                                                                
+      54                                                                
+      55                                                                
+      56                                                                
+      57                                                                
+      58                                                                
+      59                                                                
+      60                                                                
+      61                                                                
+      62                                                                
+      63                                                                
+      64                                                                
+      65                                                                
+      66                                                                
+      67                                                                
+      68                                                                
+      69                                                                
+      70                                                                
+      71                                                                
+      72                                                                
+      73                                                                
+      74                                                                
+      75                                                                
+      76                                                                
+      77                                                                
+      78                                                                
+      79                                                                
+      80                                                                
+      81  P53 +/- (C57BL/6)                                             
+      82                                                                
+      83                                                                
+      84                                                                
+      85                                                                
+      86                                                                
+      87                                                                
+      88                                                                
+      89                                                                
+      90                                                                
+      91                                                                
+      92                                                                
+      93                                                                
+      94                                                                
+      95                                                                
+      96                                                                
+      97                                                                
+      98                                                                
+      99                                                                
+      100                                                               
+      101                                                               
+      102                                                               
+      103                                                               
+      104                                                               
+      105                                                               
+      106                                                               
+      107                                                               
+      108                                                               
+      109                                                               
+      110                                                               
+      111                                                               
+      112                                                               
+      113                                                               
+      114                                                               
+      115                                                               
+      116                                                               
+      117                                                               
+      118                                                               
+      119                                                               
+      120                                                               
+      121                                                               
+      122                                                               
+      123                                                               
+      124                                                               
+      125                                                               
+      126                                                               
+      127                                                               
+      128                                                               
+      129                                                               
+      130                                                               
+      131                                                               
+      132                                                               
+      133                                                               
+      134                                                               
+      135                                                               
+      136                                                               
+      137                                                               
+      138                                                               
+      139                                                               
+      140                                                               
+      141                                                               
+      142                                                               
+      143                                                               
+      144                                                               
+      145                                                               
+      146                                                               
+      147                                                               
+      148                                                               
+      149                                                               
+      150                                                               
+      151                                                               
+      152                                                               
+      153                                                               
+      154                                                               
+      155                                                               
+      156                                                               
+      157                                                               
+      158                                                               
+      159                                                               
+      160                                                               
+      161                                                               
+      162                                                               
+      163                                                               
+      164                                                               
+      165                                                               
+      166                                                               
+      167                                                               
+      168                                                               
+      169                                                               
+      170                                                               
+      171                                                               
+      172                                                               
+      173                                                               
+      174                                                               
+      175                                                               
+      176                                                               
+      177                                                               
+      178                                                               
+      179                                                               
+      180                                                               
+      181                                                               
+      182                                                               
+      183                                                               
+      184                                                               
+      185                                                               
+      186                                                               
+      187                                                               
+      188                                                               
+      189                                                               
+      190                                                               
+      191                                                               
+      192                                                               
+      193                                                               
+      194                                                               
+      195                                                               
+      196                                                               
+      197                                                               
+      198                                                               
+      199                                                               
+      200                                                               
+      201                                                               
+      202                                                               
+      203                                                               
+      204                                                               
+      205                                                               
+      206                                                               
+      207                                                               
+      208                                                               
+      209                                                               
+      210                                                               
+      211                                                               
+      212                                                               
+      213                                                               
+      214                                                               
+      215                                                               
+      216                                                               
+      217                                                               
+      218                                                               
+      219                                                               
+      220                                                               
+      221                                                               
+      222                                                               
+      223                                                               
+      224                                                               
+      225                                                               
+      226                                                               
+      227                                                               
+      228                                                               
+      229                                                               
+      230                                                               
+      231                                                               
+      232                                                               
+      233                                                               
+      234                                                               
+      235                                                               
+      236                                                               
+      237                                                               
+      238                                                               
+      239                                                               
+      240                                                               
+      241                                                               
+      242                                                               
+      243                                                               
+      244                                                               
+      245                                                               
+      246                                                               
+      247                                                               
+      248                                                               
+      249                                                               
+      250                                                               
+      251                                                               
+      252                                                               
+      253                                                               
+      254                                                               
+      255                                                               
+      256                                                               
+      257                                                               
+      258                                                               
+      259                                                               
+      260                                                               
+      261                                                               
+      262                                                               
+      263                                                               
+      264                                                               
+      265                                                               
+      266                                                               
+      267                                                               
+      268                                                               
+      269                                                               
+      270                                                               
+      271                                                               
+      272                                                               
+      273                                                               
+      274                                                               
+      275                                                               
+      276                                                               
+      277                                                               
+      278                                                               
+      279                                                               
+      280                                                               
+          inVitroAssayFormat
+      1                     
+      2                     
+      3                     
+      4                     
+      5                     
+      6                     
+      7                     
+      8                     
+      9                     
+      10                    
+      11                    
+      12                    
+      13                    
+      14                    
+      15                    
+      16                    
+      17                    
+      18                    
+      19                    
+      20                    
+      21                    
+      22                    
+      23                    
+      24                    
+      25                    
+      26                    
+      27                    
+      28                    
+      29                    
+      30                    
+      31                    
+      32                    
+      33                    
+      34                    
+      35                    
+      36                    
+      37                    
+      38                    
+      39                    
+      40                    
+      41                    
+      42                    
+      43                    
+      44                    
+      45                    
+      46                    
+      47                    
+      48                    
+      49                    
+      50                    
+      51                    
+      52                    
+      53                    
+      54                    
+      55                    
+      56                    
+      57                    
+      58                    
+      59                    
+      60                    
+      61                    
+      62                    
+      63                    
+      64                    
+      65                    
+      66                    
+      67                    
+      68                    
+      69                    
+      70                    
+      71                    
+      72                    
+      73                    
+      74                    
+      75                    
+      76                    
+      77                    
+      78                    
+      79                    
+      80                    
+      81                    
+      82                    
+      83                    
+      84                    
+      85                    
+      86                    
+      87                    
+      88                    
+      89                    
+      90                    
+      91                    
+      92                    
+      93                    
+      94                    
+      95                    
+      96                    
+      97                    
+      98                    
+      99                    
+      100                   
+      101                   
+      102                   
+      103                   
+      104                   
+      105                   
+      106                   
+      107                   
+      108                   
+      109                   
+      110                   
+      111                   
+      112                   
+      113                   
+      114                   
+      115                   
+      116                   
+      117                   
+      118                   
+      119                   
+      120                   
+      121                   
+      122                   
+      123                   
+      124                   
+      125                   
+      126                   
+      127                   
+      128                   
+      129                   
+      130                   
+      131                   
+      132                   
+      133                   
+      134                   
+      135                   
+      136                   
+      137                   
+      138                   
+      139                   
+      140                   
+      141                   
+      142                   
+      143                   
+      144                   
+      145                   
+      146                   
+      147                   
+      148                   
+      149                   
+      150                   
+      151                   
+      152                   
+      153                   
+      154                   
+      155                   
+      156                   
+      157                   
+      158                   
+      159                   
+      160                   
+      161                   
+      162                   
+      163                   
+      164                   
+      165                   
+      166                   
+      167                   
+      168                   
+      169                   
+      170                   
+      171                   
+      172                   
+      173                   
+      174                   
+      175                   
+      176                   
+      177                   
+      178                   
+      179                   
+      180                   
+      181                   
+      182                   
+      183                   
+      184                   
+      185                   
+      186                   
+      187                   
+      188                   
+      189                   
+      190                   
+      191                   
+      192                   
+      193                   
+      194                   
+      195                   
+      196                   
+      197                   
+      198                   
+      199                   
+      200                   
+      201                   
+      202                   
+      203                   
+      204                   
+      205                   
+      206                   
+      207                   
+      208                   
+      209                   
+      210                   
+      211                   
+      212                   
+      213                   
+      214                   
+      215                   
+      216                   
+      217                   
+      218                   
+      219                   
+      220                   
+      221                   
+      222                   
+      223                   
+      224                   
+      225                   
+      226                   
+      227                   
+      228                   
+      229                   
+      230                   
+      231                   
+      232                   
+      233                   
+      234                   
+      235                   
+      236                   
+      237                   
+      238                   
+      239                   
+      240                   
+      241                   
+      242                   
+      243                   
+      244                   
+      245                   
+      246                   
+      247                   
+      248                   
+      249                   
+      250                   
+      251                   
+      252                   
+      253                   
+      254                   
+      255                   
+      256                   
+      257                   
+      258                   
+      259                   
+      260                   
+      261                   
+      262                   
+      263                   
+      264                   
+      265                   
+      266                   
+      267                   
+      268                   
+      269                   
+      270                   
+      271                   
+      272                   
+      273                   
+      274                   
+      275                   
+      276                   
+      277                   
+      278                   
+      279                   
+      280                   
+                                                                                                                                                                                                                                                                                                                                                                                  reference
+      1                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      2                                                                                                                                                                                                                                                                                                                                                                                    
+      3                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      4                                                                                                                                                                                                                                                                                                                                                                                    
+      5                                                                                                                                                                                                                                                                                                                                                                                    
+      6                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      7                                                                                                                                                                                                                                                                                                                                                                                    
+      8                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      9                                                                                                                                                                                                                                                                                                                          Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      10                                                                                                                                                                                                                                                                                                                                                                                   
+      11                                                                                                                                                                                                                                                                                                                         Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      12                                                                                                                                                                                                                                                                                                                                                                                   
+      13                                                                                                                                                                                                                                                                                                                                                                                   
+      14                                                                                                                                                                                                                                                                                                                                                                                   
+      15                                                                                                                                                                                                                                                                                                                                                                                   
+      16                                                                                                                                                                                                                                                                                                                                                                                   
+      17                                                                                                                                                                                                                                                                                                                                                                                   
+      18                                                                                                                                                                                                                                                                                                                                                                                   
+      19                                                                                                                                                                                                                                                                                                                                                                                   
+      20                                                                                                                                                                                                                                                                                                                                                                                   
+      21                                                                                                                                                                                                                                                                                                                                                                                   
+      22                                                                                                                                                                                                                                                                                                                                                                                   
+      23                                                                                                                                                                                                                                                                                                                                                                                   
+      24                                                                                                                                                                                                                                                                                                                                                                                   
+      25                                                                                                                                                                                                                                                                                                                                                                                   
+      26                                                                                                                                                                                                                                                                                                                                                                                   
+      27                                                                                                                                                                                                                                                                                                                                                                                   
+      28                                                                                                                                                                                                                                                                                                                                                                                   
+      29                                                                                                                                                                                                                                                                                                                           Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      30                                                                                                                                                                                                                                                                                                                                                                                   
+      31                                                                                                                                                                                                                                                                                                                           Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      32                                                                                                                                                                                                                                                                                                                                                                                   
+      33                                                                                                                                                                                                                                                                                                                           Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      34                                                                                                                                                                                                                                                                                                                                                                                   
+      35                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      36                                                                                                                                                                                                                                                                                                                                                                                   
+      37                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      38                                                                                                                                                                                                                                                                                                                                                                                   
+      39                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      40                                                                                                                                                                                                                                                                                                                                                                                   
+      41                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      42                                                                                                                                                                                                                                                                                                                                                                                   
+      43                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      44                                                                                                                                                                                                                                                                                                                                                                                   
+      45                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      46                                                                                                                                                                                                                                                                                                                                                                                   
+      47                                                                                                                                                                                                                                                    Data retrieved by NICEATM from the Environmental Protection Agency's Chemical and Products Database Version 3, dated 2020-12-16
+      48                                                                                                                                                                                                                                                                                                                                                                                   
+      49                                                                                                                                                                                                                                                                                                                                                                                   
+      50                                                                                                                                                                                                                                                                                                                                                                                   
+      51                                                                                                                                                                                                                                                                                                                                                                                   
+      52                                                                                                                                                                                                                                                                                                                                                                                   
+      53                                                                                                                                                                                                                                                                                                                                                                                   
+      54                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      55                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      56                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      57                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      58                                                                                                                                                                                                                                                                                                                                                                                   
+      59                                                                                                                                                                                                                                                                                                                                                                                   
+      60                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      61                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      62                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      63                                                                                                                                                                                                                                                                                                                           Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      64                                                                                                                                                                                                                                                                                                                         Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      65                                                                                                                                                                                                                                                                                                                         Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      66  Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      67  Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      68                                                                                                                                                                                                                                                                                                                         Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      69                                                                                                                                                                                                                                                                                                                           Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      70                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      71                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      72                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      73                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      74                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      75                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      76                                                                                                                                                                                                                                                                                                                                   Joint Research Centre of the European Union 2013
+      77                                                                                                                                                                                                                                                                                                                                              ECPA personal communication (undated)
+      78                                                                                                                                                                                                                                                                                                                                                                                   
+      79                                                                                                                                                                                                                                                                                                                                                                                   
+      80                                                                                                                                                                                                                                                                                                                                                                                   
+      81                                                                                                                                                                                                                                                                                                                                                                                   
+      82                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      83                                                                                                                                                                                                                                                                                                                                                                                   
+      84                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      85                                                                                                                                                                                                                                                                                                                                                                                   
+      86                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      87                                                                                                                                                                                                                                                                                                                                                                                   
+      88                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      89                                                                                                                                                                                                                                                                                                                                                                                   
+      90                                                                                                  Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      91                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      92                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      93                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      94                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      95                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      96                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      97                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      98                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      99                                                                                 Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      100                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      101                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      102                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      103                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      104                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      105                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      106                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      107                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      108                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      109                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      110                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      111                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      112                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      113                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      114                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      115                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      116                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      117                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      118                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      119                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      120                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      121                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      122                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      123                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      124                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      125                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      126                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      127                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      128                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      129                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      130                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      131                                                                                                                                                                                                                                                                                                                                                                                  
+      132                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      133                                                                                                                                                                                                                                                                                                                                                                                  
+      134                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      135                                                                                                                                                                                                                                                                                                                                                                                  
+      136                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      137                                                                                                                                                                                                                                                                                                                                                                                  
+      138                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      139                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      140                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      141                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      142                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      143                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      144                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      145                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      146                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      147                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      148                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      149                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      150                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      151                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      152                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      153                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      154                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      155                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      156                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      157                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      158                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      159                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      160                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      161                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      162                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      163                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      164                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      165                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      166                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      167                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      168                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      169                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      170                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      171                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      172                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      173                                                                                                                                                                                                                                                                                                                        Botham et al. 1992; 20732113; 10.1016/0887-2333(92)90031-l
+      174                                                                                Marzulli and Maibach 1974; 4459237; 10.1016/0015-6264(74)90367-8|Gerberick et al. 2001; 11526521; 10.1053/ajcd.2001.23926|Akkan et al. 2003; Not available; Not available|Griem et al. 2003; 14623479; 10.1016/j.yrtph.2003.07.001|Schneider and Akkan 2004; 15135206; 10.1016/j.yrtph.2004.02.002
+      175                                                                                                                                                                                                                                                                                                                                                                                  
+      176                                                                                                                                                                                                                                                                                                                                                                                  
+      177                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      178                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      179                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      180                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      181                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      182                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      183                                                                                                                                                                                                                                                                                                                                                                                  
+      184                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      185                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      186                                                                                                                                                                                                                                                                                                                                                                                  
+      187                                                                                                                                                                                                                                                                                                                                                                                  
+      188                                                                                                                                                                                                                                                                                                                                                                                  
+      189                                                                                                                                                                                                                                                                                                                                                                                  
+      190                                                                                                                                                                                                                                                                                                                                                                                  
+      191                                                                                                                                                                                                                                                                                                                                                                                  
+      192                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      193                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      194                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      195                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      196                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      197                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      198                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      199                                                                                                 Ashikaga et al. 2010; 20822320; 10.1177/026119291003800403|Nukada et al. 2011; 21767275; 10.1111/j.1600-0536.2011.01952.x|Nukada et al. 2012; 22796097; 10.1016/j.tiv.2012.07.001|Nukada personal communication (undated)|Nukada et al. 2013; 23149339; 10.1016/j.tiv.2012.11.006
+      200 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      201 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      202 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      203 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      204                                                                                                                                                                                                                                                                                                                        Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      205                                                                                                                                                                                                                                                                                                                        Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      206                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      207                                                                                                                                                                                                                                                                                                                          Bauch et al. 2012; 22659254; 10.1016/j.yrtph.2012.05.013
+      208                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      209                                                                                                                                                                                                                                                                                                                                                                                  
+      210                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      211                                                                                                                                                                                                                                                                                                                                                                                  
+      212                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      213                                                                                                                                                                                                                                                                                                                                                                                  
+      214                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      215                                                                                                                                                                                                                                                                                                                                                                                  
+      216                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      217                                                                                                                                                                                                                                                                                                                                                                                  
+      218                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      219                                                                                                                                                                                                                                                                                                                                                                                  
+      220                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      221                                                                                                                                                                                                                                                                                                                                                                                  
+      222                                                                                                                                                                                                                                                                                                                                  Joint Research Centre of the European Union 2013
+      223                                                                                                                                                                                                                                                                                                                                                                                  
+      224                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      225                                                                                                                                                                                                                                                                                                                                                                                  
+      226                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      227                                                                                                                                                                                                                                                                                                                                                                                  
+      228                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      229                                                                                                                                                                                                                                                                                                                                                                                  
+      230                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      231                                                                                                                                                                                                                                                                                                                                                                                  
+      232                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      233                                                                                                                                                                                                                                                                                                                                                                                  
+      234                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      235                                                                                                                                                                                                                                                                                                                                                                                  
+      236                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      237                                                                                                                                                                                                                                                                                                                                                                                  
+      238                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      239                                                                                                                                                                                                                                                                                                                                                                                  
+      240                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      241                                                                                                                                                                                                                                                                                                                                                                                  
+      242                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      243                                                                                                                                                                                                                                                                                                                                                                                  
+      244                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      245                                                                                                                                                                                                                                                                                                                                                                                  
+      246                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      247                                                                                                                                                                                                                                                                                                                                                                                  
+      248                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      249                                                                                                                                                                                                                                                                                                                                                                                  
+      250                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      251                                                                                                                                                                                                                                                                                                                                                                                  
+      252                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      253                                                                                                                                                                                                                                                                                                                                                                                  
+      254                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      255                                                                                                                                                                                                                                                                                                                                                                                  
+      256                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      257                                                                                                                                                                                                                                                                                                                                                                                  
+      258                                                                                                                                                                                                                                                                                                                                                                              AEGL
+      259                                                                                                                                                                                                                                                                                                                                                                                  
+      260                                                                                                                                                                                                                                                                  Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
+      261                                                                                                                                                                                                                                                                                                                                                                                  
+      262                                                                                                                                                                                                                                                                  Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
+      263                                                                                                                                                                                                                                                                                                                                                                                  
+      264                                                                                                                                                                                                                                                                                                                                                                                  
+      265                                                                                                                                                                                                                                                                                                                                                                                  
+      266                                                                                                                                                                                                                                                                  Data retrieved by NICEATM from the Environmental Protection Agency's Human Exposure github page in November 2022
+      267                                                                                                                                                                                                                                                                                                                                                                                  
+      268                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      269                                                                                                                                                                                                                                                                                                                                                                                  
+      270                                                                                                                                                                                                                                                                                                                                             ECPA personal communication (undated)
+      271                                                                                                                                                                                                                                                                                                                                                                                  
+      272                                                                                                                                                                                                                                                                                                                          Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      273                                                                                                                                                                                                                                                                                                                          Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+      274                                                                                                                                                                                                                                                                                                                          Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      275                                                                                                                                                                                                                                                                                                                          Cottrez et al. 2015; 25724174; 10.1016/j.tiv.2015.02.012
+      276 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      277                                                                                                                                                                                                                                                                                                                        Urbisch et al. 2015; 25541156; 10.1016/j.yrtph.2014.12.008
+      278 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      279 Kligman 1966; 5924294; 10.1038/jid.1966.160|Greif 1967; Not available; Not available|Magnusson and Kligman 1969; 5774356; 10.1038/jid.1969.42|Basketter et al. 1994; 8045461; 10.1016/0278-6915(94)90112-0|Basketter et al. 1999; 10654593; 10.1016/S0278-6915(99)00112-x|Gerberick et al. 2000; 10684384; 10.1053/ajcd.2000.0003|Akkan et al. 2003; Not available; Not available
+      280                                                                                                                                                                                                                                                                                                                          Piroird et al. 2015; 25820135; 10.1016/j.tiv.2015.03.009
+          referenceUrl        dtxsid                       substanceName pubMedId
+      1                              dicyanamine/formaldehyde condensate         
+      2                DTXSID7020637                        Formaldehyde         
+      3                              dicyanamine/formaldehyde condensate         
+      4                DTXSID7020637                        Formaldehyde         
+      5                DTXSID7020637                        Formaldehyde         
+      6                              dicyanamine/formaldehyde condensate         
+      7                DTXSID7020637                        Formaldehyde         
+      8                              dicyanamine/formaldehyde condensate         
+      9                              dicyanamine/formaldehyde condensate         
+      10               DTXSID7020637                        Formaldehyde         
+      11                             dicyanamine/formaldehyde condensate         
+      12               DTXSID7020637                        Formaldehyde         
+      13               DTXSID7020637                        Formaldehyde         
+      14               DTXSID7020637                        Formaldehyde         
+      15               DTXSID7020637                        Formaldehyde         
+      16               DTXSID7020637                        Formaldehyde         
+      17               DTXSID7020637                        Formaldehyde         
+      18               DTXSID7020637                        Formaldehyde         
+      19               DTXSID7020637                        Formaldehyde         
+      20               DTXSID7020637                        Formaldehyde         
+      21               DTXSID7020637                        Formaldehyde         
+      22               DTXSID7020637                        Formaldehyde         
+      23               DTXSID7020637                        Formaldehyde         
+      24               DTXSID7020637                        Formaldehyde         
+      25               DTXSID7020637                        Formaldehyde         
+      26               DTXSID7020637                        Formaldehyde         
+      27               DTXSID7020637                        Formaldehyde         
+      28               DTXSID7020637                        Formaldehyde         
+      29               DTXSID7020637                        Formaldehyde         
+      30               DTXSID7020637                        Formaldehyde         
+      31               DTXSID7020637                        Formaldehyde         
+      32               DTXSID7020637                        Formaldehyde         
+      33               DTXSID7020637                        Formaldehyde         
+      34               DTXSID7020637                        Formaldehyde         
+      35               DTXSID7020637                        Formaldehyde         
+      36               DTXSID7020637                        Formaldehyde         
+      37               DTXSID7020637                        Formaldehyde         
+      38               DTXSID7020637                        Formaldehyde         
+      39               DTXSID7020637                        Formaldehyde         
+      40               DTXSID7020637                        Formaldehyde         
+      41               DTXSID7020637                        Formaldehyde         
+      42               DTXSID7020637                        Formaldehyde         
+      43               DTXSID7020637                        Formaldehyde         
+      44               DTXSID7020637                        Formaldehyde         
+      45               DTXSID7020637                        Formaldehyde         
+      46               DTXSID7020637                        Formaldehyde         
+      47               DTXSID7020637                        Formaldehyde         
+      48               DTXSID7020637                        Formaldehyde         
+      49               DTXSID7020637                        Formaldehyde         
+      50               DTXSID7020637                        Formaldehyde         
+      51               DTXSID7020637                        Formaldehyde         
+      52               DTXSID7020637                        Formaldehyde         
+      53               DTXSID7020637                        Formaldehyde         
+      54               DTXSID7020637                        Formaldehyde         
+      55               DTXSID7020637                        Formaldehyde         
+      56               DTXSID7020637                        Formaldehyde         
+      57               DTXSID7020637                        Formaldehyde         
+      58               DTXSID7020637                        Formaldehyde         
+      59               DTXSID7020637                        Formaldehyde         
+      60               DTXSID7020637                        Formaldehyde         
+      61               DTXSID7020637                        Formaldehyde         
+      62               DTXSID7020637                        Formaldehyde         
+      63               DTXSID7020637                        Formaldehyde         
+      64               DTXSID7020637                        Formaldehyde         
+      65               DTXSID7020637                        Formaldehyde         
+      66               DTXSID7020637                        Formaldehyde         
+      67               DTXSID7020637                        Formaldehyde         
+      68               DTXSID7020637                        Formaldehyde         
+      69               DTXSID7020637                        Formaldehyde         
+      70               DTXSID7020637                        Formaldehyde         
+      71               DTXSID7020637                        Formaldehyde         
+      72               DTXSID7020637                        Formaldehyde         
+      73               DTXSID7020637                        Formaldehyde         
+      74               DTXSID7020637                        Formaldehyde         
+      75               DTXSID7020637                        Formaldehyde         
+      76               DTXSID7020637                        Formaldehyde         
+      77               DTXSID7020637                        Formaldehyde         
+      78               DTXSID7020637                        Formaldehyde         
+      79               DTXSID7020637                        Formaldehyde         
+      80               DTXSID7020637                        Formaldehyde         
+      81               DTXSID7020637                        Formaldehyde         
+      82               DTXSID7020637                        Formaldehyde         
+      83               DTXSID7020637                        Formaldehyde         
+      84               DTXSID7020637                        Formaldehyde         
+      85               DTXSID7020637                        Formaldehyde         
+      86               DTXSID7020637                        Formaldehyde         
+      87               DTXSID7020637                        Formaldehyde         
+      88               DTXSID7020637                        Formaldehyde         
+      89               DTXSID7020637                        Formaldehyde         
+      90               DTXSID7020637                        Formaldehyde         
+      91               DTXSID7020637                        Formaldehyde         
+      92               DTXSID7020637                        Formaldehyde         
+      93               DTXSID7020637                        Formaldehyde         
+      94               DTXSID7020637                        Formaldehyde         
+      95               DTXSID7020637                        Formaldehyde         
+      96               DTXSID7020637                        Formaldehyde         
+      97               DTXSID7020637                        Formaldehyde         
+      98               DTXSID7020637                        Formaldehyde         
+      99               DTXSID7020637                        Formaldehyde         
+      100              DTXSID7020637                        Formaldehyde         
+      101              DTXSID7020637                        Formaldehyde         
+      102              DTXSID7020637                        Formaldehyde         
+      103              DTXSID7020637                        Formaldehyde         
+      104              DTXSID7020637                        Formaldehyde         
+      105              DTXSID7020637                        Formaldehyde         
+      106              DTXSID7020637                        Formaldehyde         
+      107              DTXSID7020637                        Formaldehyde         
+      108              DTXSID7020637                        Formaldehyde         
+      109              DTXSID7020637                        Formaldehyde         
+      110              DTXSID7020637                        Formaldehyde         
+      111              DTXSID7020637                        Formaldehyde         
+      112              DTXSID7020637                        Formaldehyde         
+      113              DTXSID7020637                        Formaldehyde         
+      114              DTXSID7020637                        Formaldehyde         
+      115              DTXSID7020637                        Formaldehyde         
+      116              DTXSID7020637                        Formaldehyde         
+      117              DTXSID7020637                        Formaldehyde         
+      118              DTXSID7020637                        Formaldehyde         
+      119              DTXSID7020637                        Formaldehyde         
+      120              DTXSID7020637                        Formaldehyde         
+      121              DTXSID7020637                        Formaldehyde         
+      122              DTXSID7020637                        Formaldehyde         
+      123              DTXSID7020637                        Formaldehyde         
+      124              DTXSID7020637                        Formaldehyde         
+      125              DTXSID7020637                        Formaldehyde         
+      126              DTXSID7020637                        Formaldehyde         
+      127              DTXSID7020637                        Formaldehyde         
+      128              DTXSID7020637                        Formaldehyde         
+      129              DTXSID7020637                        Formaldehyde         
+      130              DTXSID7020637                        Formaldehyde         
+      131              DTXSID7020637                        Formaldehyde         
+      132              DTXSID7020637                        Formaldehyde         
+      133              DTXSID7020637                        Formaldehyde         
+      134              DTXSID7020637                        Formaldehyde         
+      135              DTXSID7020637                        Formaldehyde         
+      136              DTXSID7020637                        Formaldehyde         
+      137              DTXSID7020637                        Formaldehyde         
+      138              DTXSID7020637                        Formaldehyde         
+      139              DTXSID7020637                        Formaldehyde         
+      140              DTXSID7020637                        Formaldehyde         
+      141              DTXSID7020637                        Formaldehyde         
+      142              DTXSID7020637                        Formaldehyde         
+      143              DTXSID7020637                        Formaldehyde         
+      144              DTXSID7020637                        Formaldehyde         
+      145              DTXSID7020637                        Formaldehyde         
+      146              DTXSID7020637                        Formaldehyde         
+      147              DTXSID7020637                        Formaldehyde         
+      148              DTXSID7020637                        Formaldehyde         
+      149              DTXSID7020637                        Formaldehyde         
+      150              DTXSID7020637                        Formaldehyde         
+      151              DTXSID7020637                        Formaldehyde         
+      152              DTXSID7020637                        Formaldehyde         
+      153              DTXSID7020637                        Formaldehyde         
+      154              DTXSID7020637                        Formaldehyde         
+      155              DTXSID7020637                        Formaldehyde         
+      156              DTXSID7020637                        Formaldehyde         
+      157              DTXSID7020637                        Formaldehyde         
+      158              DTXSID7020637                        Formaldehyde         
+      159              DTXSID7020637                        Formaldehyde         
+      160              DTXSID7020637                        Formaldehyde         
+      161                            dicyanamine/formaldehyde condensate         
+      162              DTXSID7020637                        Formaldehyde         
+      163                            dicyanamine/formaldehyde condensate         
+      164              DTXSID7020637                        Formaldehyde         
+      165              DTXSID7020637                        Formaldehyde         
+      166              DTXSID7020637                        Formaldehyde         
+      167                            dicyanamine/formaldehyde condensate         
+      168              DTXSID7020637                        Formaldehyde         
+      169                            dicyanamine/formaldehyde condensate         
+      170              DTXSID7020637                        Formaldehyde         
+      171                            dicyanamine/formaldehyde condensate         
+      172              DTXSID7020637                        Formaldehyde         
+      173                            dicyanamine/formaldehyde condensate         
+      174              DTXSID7020637                        Formaldehyde         
+      175              DTXSID7020637                        Formaldehyde         
+      176              DTXSID7020637                        Formaldehyde         
+      177              DTXSID7020637                        Formaldehyde         
+      178              DTXSID7020637                        Formaldehyde         
+      179              DTXSID7020637                        Formaldehyde         
+      180              DTXSID7020637                        Formaldehyde         
+      181              DTXSID7020637                        Formaldehyde         
+      182              DTXSID7020637                        Formaldehyde         
+      183              DTXSID7020637                        Formaldehyde         
+      184              DTXSID7020637                        Formaldehyde         
+      185              DTXSID7020637                        Formaldehyde         
+      186              DTXSID7020637                        Formaldehyde         
+      187              DTXSID7020637                        Formaldehyde         
+      188              DTXSID7020637                        Formaldehyde         
+      189              DTXSID7020637                        Formaldehyde         
+      190              DTXSID7020637                        Formaldehyde         
+      191              DTXSID7020637                        Formaldehyde         
+      192              DTXSID7020637                        Formaldehyde         
+      193              DTXSID7020637                        Formaldehyde         
+      194              DTXSID7020637                        Formaldehyde         
+      195              DTXSID7020637                        Formaldehyde         
+      196              DTXSID7020637                        Formaldehyde         
+      197              DTXSID7020637                        Formaldehyde         
+      198              DTXSID7020637                        Formaldehyde         
+      199              DTXSID7020637                        Formaldehyde         
+      200              DTXSID7020637                        Formaldehyde         
+      201              DTXSID7020637                        Formaldehyde         
+      202              DTXSID7020637                        Formaldehyde         
+      203              DTXSID7020637                        Formaldehyde         
+      204              DTXSID7020637                        Formaldehyde         
+      205              DTXSID7020637                        Formaldehyde         
+      206              DTXSID7020637                        Formaldehyde         
+      207              DTXSID7020637                        Formaldehyde         
+      208              DTXSID7020637                        Formaldehyde         
+      209              DTXSID7020637                        Formaldehyde         
+      210              DTXSID7020637                        Formaldehyde         
+      211              DTXSID7020637                        Formaldehyde         
+      212              DTXSID7020637                        Formaldehyde         
+      213              DTXSID7020637                        Formaldehyde         
+      214              DTXSID7020637                        Formaldehyde         
+      215              DTXSID7020637                        Formaldehyde         
+      216              DTXSID7020637                        Formaldehyde         
+      217              DTXSID7020637                        Formaldehyde         
+      218              DTXSID7020637                        Formaldehyde         
+      219              DTXSID7020637                        Formaldehyde         
+      220              DTXSID7020637                        Formaldehyde         
+      221              DTXSID7020637                        Formaldehyde         
+      222              DTXSID7020637                        Formaldehyde         
+      223              DTXSID7020637                        Formaldehyde         
+      224              DTXSID7020637                        Formaldehyde         
+      225              DTXSID7020637                        Formaldehyde         
+      226              DTXSID7020637                        Formaldehyde         
+      227              DTXSID7020637                        Formaldehyde         
+      228              DTXSID7020637                        Formaldehyde         
+      229              DTXSID7020637                        Formaldehyde         
+      230              DTXSID7020637                        Formaldehyde         
+      231              DTXSID7020637                        Formaldehyde         
+      232              DTXSID7020637                        Formaldehyde         
+      233              DTXSID7020637                        Formaldehyde         
+      234              DTXSID7020637                        Formaldehyde         
+      235              DTXSID7020637                        Formaldehyde         
+      236              DTXSID7020637                        Formaldehyde         
+      237              DTXSID7020637                        Formaldehyde         
+      238              DTXSID7020637                        Formaldehyde         
+      239              DTXSID7020637                        Formaldehyde         
+      240              DTXSID7020637                        Formaldehyde         
+      241              DTXSID7020637                        Formaldehyde         
+      242              DTXSID7020637                        Formaldehyde         
+      243              DTXSID7020637                        Formaldehyde         
+      244              DTXSID7020637                        Formaldehyde         
+      245              DTXSID7020637                        Formaldehyde         
+      246              DTXSID7020637                        Formaldehyde         
+      247              DTXSID7020637                        Formaldehyde         
+      248              DTXSID7020637                        Formaldehyde         
+      249              DTXSID7020637                        Formaldehyde         
+      250              DTXSID7020637                        Formaldehyde         
+      251              DTXSID7020637                        Formaldehyde         
+      252              DTXSID7020637                        Formaldehyde         
+      253              DTXSID7020637                        Formaldehyde         
+      254              DTXSID7020637                        Formaldehyde         
+      255              DTXSID7020637                        Formaldehyde         
+      256              DTXSID7020637                        Formaldehyde         
+      257              DTXSID7020637                        Formaldehyde         
+      258              DTXSID7020637                        Formaldehyde         
+      259              DTXSID7020637                        Formaldehyde         
+      260              DTXSID7020637                        Formaldehyde         
+      261              DTXSID7020637                        Formaldehyde         
+      262              DTXSID7020637                        Formaldehyde         
+      263              DTXSID7020637                        Formaldehyde         
+      264              DTXSID7020637                        Formaldehyde         
+      265              DTXSID7020637                        Formaldehyde         
+      266              DTXSID7020637                        Formaldehyde         
+      267              DTXSID7020637                        Formaldehyde         
+      268              DTXSID7020637                        Formaldehyde         
+      269              DTXSID7020637                        Formaldehyde         
+      270              DTXSID7020637                        Formaldehyde         
+      271              DTXSID7020637                        Formaldehyde         
+      272              DTXSID7020637                        Formaldehyde         
+      273              DTXSID7020637                        Formaldehyde         
+      274              DTXSID7020637                        Formaldehyde         
+      275              DTXSID7020637                        Formaldehyde         
+      276              DTXSID7020637                        Formaldehyde         
+      277              DTXSID7020637                        Formaldehyde         
+      278              DTXSID7020637                        Formaldehyde         
+      279              DTXSID7020637                        Formaldehyde         
+      280              DTXSID7020637                        Formaldehyde         
       
 

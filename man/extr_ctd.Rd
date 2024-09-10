@@ -71,6 +71,15 @@ dat <- extr_ctd(
   ontology = c("go_bp", "go_cc")
 )
 str(dat)
+
+# Get expresssion data
+dat2 <-  extr_ctd(input_terms = input_terms,
+   report_type = "cgixns",
+   category = "chem",
+   action_types = "expression")
+
+str(dat2)
+
 }
 }
 \references{

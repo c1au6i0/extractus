@@ -19,8 +19,7 @@ This function creates an Excel file with each dataframe in a list as a separate 
 }
 \examples{
 \dontrun{
-df1 <- data.frame(a = 1:3, b = letters[1:3])
-df2 <- data.frame(x = rnorm(5), y = runif(5))
-write_dataframes_to_excel(list(df1 = df1, df2 = df2), "mydata.xlsx")
+tox_dat <- extr_tox("50-00-0")
+write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
 }
 }

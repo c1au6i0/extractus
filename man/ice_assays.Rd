@@ -7,8 +7,5 @@
 ice_assays()
 }
 \description{
-Assays of iris used in \code{extr_tox}.
-}
-\seealso{
-\code{\link[=extr_tox]{extr_tox()}}
+Selection of assays of iris
 }

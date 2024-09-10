@@ -487,12 +487,13 @@ extr_tox <- function(casrn) {
     assays = NULL
   )
 
-  assays_to_filt <- ice_assays()
-  ice_dat_list <- lapply(assays_to_filt, function(x) ice_dat[ice_dat$assay %in% x, ])
-  names(ice_dat_list) <- names(assays_to_filt)
+  # assays_to_filt <- ice_assays()
+  # ice_dat_list <- lapply(assays_to_filt, function(x) ice_dat[ice_dat$assay %in% x, ])
+  # names(ice_dat_list) <- names(assays_to_filt)
 
 
   iris_filt <- extr_iris(keyword = casrn)
 
-  c(list(ghs_dat = ghs_dat, iris = iris_filt), comptox_list, ice_dat_list)
+  list(ghs_dat = ghs_dat, iris = iris_filt, comptox = comptox_list, ice = ice_dat)
+
 }
