@@ -1,5 +1,7 @@
 library(testthat)
 
+Sys.sleep(3)
+
 # Test 1: Check if the function works with a valid chemical name input
 test_that("Valid chemical name input", {
 
@@ -10,6 +12,9 @@ test_that("Valid chemical name input", {
   )
   expect_snapshot(result)
 })
+
+Sys.sleep(3)
+
 
 # Test 2: Check if the function works with a valid CASRN input
 test_that("Valid CASRN input", {
@@ -23,7 +28,8 @@ test_that("Valid CASRN input", {
 })
 
 
-# Test 4: Check if the function works with differnt type of input
+Sys.sleep(3)
+
 test_that("Valid inputs", {
 
   skip_on_cran()
@@ -34,8 +40,8 @@ test_that("Valid inputs", {
   expect_snapshot(result)
 })
 
+Sys.sleep(3)
 
-# Test 4: Check error handling when a required parameter is missing
 test_that("Missing required parameter", {
   skip_on_cran()
   expect_error(

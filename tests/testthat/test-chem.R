@@ -3,6 +3,7 @@ library(testthat)
 
 compounds <- c("Formaldehyde", "Aflatoxin B1")
 
+Sys.sleep(3)
 
 test_that("extr_chem_info fetches chem data", {
 
