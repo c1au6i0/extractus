@@ -1,6 +1,6 @@
 Package: extractus
 Title: Extract chemical info from various databases
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: 
     person(given = "Claudio",
            family = "Zanettini",

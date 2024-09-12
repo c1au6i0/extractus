@@ -16,7 +16,7 @@ extr_tetramer(
 )
 }
 \arguments{
-\item{chem}{A string indicating the 1 chemical identifier such as CAS number or IUPAC name of the chemical.}
+\item{chem}{A string indicating the chemical identifiers such as CAS number or IUPAC name of the chemical.}
 
 \item{disease}{A string indicating a disease term. Default is an empty string.}
 
@@ -41,7 +41,7 @@ This function queries the Comparative Toxicogenomics Database API to retrieve te
 \examples{
 \dontrun{
 tetramer_data <- extr_tetramer(
-  chem = c("50-00-0"),
+  chem = c("50-00-0", "ethanol"),
   disease = "",
   gene = "",
   go = "",

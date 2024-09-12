@@ -47,7 +47,7 @@ test_that("extr_ctd fetches tetramers data", {
   # Ensure the output is as expected by comparing to a stored snapshot
   expect_snapshot(
     extr_tetramer(
-        chem = c("50-00-0"),
+        chem = c("50-00-0", "ethanol"),
         disease = "",
         gene = "",
         go = "",
