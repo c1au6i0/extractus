@@ -1,5 +1,5 @@
 Package: extractus
-Title: What the Package Does (One Line, Title Case)
+Title: Extract chemical info from various databases
 Version: 0.0.3
 Authors@R: 
     person(given = "Claudio",

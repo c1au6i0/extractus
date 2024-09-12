@@ -143,8 +143,9 @@ extr_ctd <- function(
 #' Extract Tetramer Data from the CTD API
 #'
 #' This function queries the Comparative Toxicogenomics Database API to retrieve tetramer data based on chemicals, diseases, genes, or other categories.
+#' Function used internally.
 #'
-#' @param chem A string indicating the 1 chemical identifier such as CAS number or IUPAC name of the chemical.
+#' @param chem A string indicating the ONE chemical identifier such as CAS number or IUPAC name of the chemical.
 #' @param disease A string indicating a disease term. Default is an empty string.
 #' @param gene A string indicating a gene symbol. Default is an empty string.
 #' @param go A string indicating a Gene Ontology term. Default is an empty string.
@@ -152,22 +153,8 @@ extr_ctd <- function(
 #' @param qt_match_type A string specifying the query type match method. Options are "equals" or "contains". Default is "equals".
 #' @param verify_ssl Boolean to control if SSL should be verified or not. Default is FALSE.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
-#' @export
 #' @return A data frame containing the queried tetramer data in CSV format.
-#'
-#' @examples
-#' \dontrun{
-#' tetramer_data <- extr_tetramer(
-#'   chem = c("50-00-0"),
-#'   disease = "",
-#'   gene = "",
-#'   go = "",
-#'   input_term_search_type = "directAssociations",
-#'   qt_match_type = "equals"
-#' )
-#' str(tetramer_data)
-#' }
-extr_tetramer <- function(
+extr_tetramer_ <- function(
     chem,
     disease = "",
     gene = "",
@@ -185,6 +172,8 @@ extr_tetramer <- function(
 
   # Define the base URL
   base_url <- "https://ctdbase.org/query.go"
+
+
 
   # Define the parameters for the request
   params <- list(
@@ -206,7 +195,7 @@ extr_tetramer <- function(
   )
 
   # Perform the request and get a response
-  cli::cli_inform("Sending request to CTD database for tetramer data...")
+  cli::cli_inform("Sending request to CTD database for tetramer data for {.field {chem}}...")
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
@@ -235,5 +224,95 @@ extr_tetramer <- function(
 
   unlink(tab_file)
 
+  # if no chem is found it returns a dataframe with one single column
+  if(ncol(out) == 1) {
+
+    cli::cli_warn("The chem {.field {chem}} was not found.")
+    out <- data.frame(
+      query = chem,
+      chemical =  NA,
+      chemical_id = NA,
+      gene = NA,
+      gene_id = NA,
+      phenotype = NA,
+      phenotype_id = NA,
+      disease = NA,
+      disease_id = NA
+    )
+  } else {
+
+    out <-  cbind(query = chem, out)
+  }
+
   out
+
+}
+
+
+#' Extract Tetramer Data from the CTD API
+#'
+#' This function queries the Comparative Toxicogenomics Database API to retrieve tetramer data based on chemicals, diseases, genes, or other categories.
+#'
+#' @param chem A string indicating the chemical identifiers such as CAS number or IUPAC name of the chemical.
+#' @param disease A string indicating a disease term. Default is an empty string.
+#' @param gene A string indicating a gene symbol. Default is an empty string.
+#' @param go A string indicating a Gene Ontology term. Default is an empty string.
+#' @param input_term_search_type A string specifying the search method to use. Options are "hierarchicalAssociations" or "directAssociations". Default is "directAssociations".
+#' @param qt_match_type A string specifying the query type match method. Options are "equals" or "contains". Default is "equals".
+#' @param verify_ssl Boolean to control if SSL should be verified or not. Default is FALSE.
+#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
+#' @export
+#' @return A data frame containing the queried tetramer data in CSV format.
+#'
+#' @examples
+#' \dontrun{
+#' tetramer_data <- extr_tetramer(
+#'   chem = c("50-00-0", "ethanol"),
+#'   disease = "",
+#'   gene = "",
+#'   go = "",
+#'   input_term_search_type = "directAssociations",
+#'   qt_match_type = "equals"
+#' )
+#' str(tetramer_data)
+#' }
+extr_tetramer <- function(
+    chem,
+    disease = "",
+    gene = "",
+    go = "",
+    input_term_search_type= "directAssociations",
+    qt_match_type = "equals",
+    verify_ssl = FALSE,
+    ...) {
+
+  if(length(chem) > 1){
+    dat <- lapply(chem, extr_tetramer_,
+                  disease = disease,
+                  gene = gene,
+                  go = go,
+                  input_term_search_type = input_term_search_type,
+                  qt_match_type = qt_match_type,
+                  verify_ssl = verify_ssl,
+                  ...
+                  )
+    out <- do.call(rbind, dat)
+  } else {
+
+    out <- extr_tetramer_(
+      chem = chem,
+      disease = disease,
+      gene = gene,
+      go = go,
+      input_term_search_type = input_term_search_type,
+      qt_match_type = qt_match_type,
+      verify_ssl = verify_ssl,
+      ...
+    )
+  }
+
+  out
+
+
+
 }
