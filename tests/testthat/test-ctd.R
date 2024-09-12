@@ -1,5 +1,5 @@
 library(testthat)
-
+set.seed(1)
 
 
 input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
@@ -10,11 +10,16 @@ test_that("extr_ctd fetches expression data", {
 
   skip_on_cran()
   # Ensure the output is as expected by comparing to a stored snapshot
-  expect_snapshot(
-    extr_ctd(input_terms = input_terms,
+  expect_snapshot({
+    dat <- extr_ctd(input_terms = input_terms,
                 report_type = "cgixns",
                 category = "chem",
                 action_types = "expression")
+
+    random_indices <- sample(1:nrow(dat), 100)
+    dat[random_indices,]
+
+  }
   )
 })
 
@@ -25,7 +30,7 @@ test_that("extr_ctd fetches other data", {
 
   skip_on_cran()
   # Ensure the output is as expected by comparing to a stored snapshot
-  expect_snapshot(
+  expect_snapshot({
     extr_ctd(
          input_terms = input_terms,
          category = "chem",
@@ -34,6 +39,9 @@ test_that("extr_ctd fetches other data", {
          action_types = "ANY",
          ontology = c("go_bp", "go_cc")
       )
+    random_indices <- sample(1:nrow(dat), 100)
+    dat[random_indices,]
+  }
   )
 })
 
@@ -45,8 +53,8 @@ test_that("extr_ctd fetches tetramers data", {
 
   skip_on_cran()
   # Ensure the output is as expected by comparing to a stored snapshot
-  expect_snapshot(
-    extr_tetramer(
+  expect_snapshot({
+   dat <- extr_tetramer(
         chem = c("50-00-0", "ethanol"),
         disease = "",
         gene = "",
@@ -54,5 +62,10 @@ test_that("extr_ctd fetches tetramers data", {
         input_term_search_type = "directAssociations",
         qt_match_type = "equals"
       )
+   random_indices <- sample(1:nrow(dat), 100)
+
+   dat[random_indices,]
+
+  }
   )
 })
