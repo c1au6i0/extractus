@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-extractus is a comprehensive R package designed to simplify querying
+`extractus` is a comprehensive R package designed to simplify querying
 various chemical, toxicological, and biological databases such as
 PubChem, the Comparative Toxicogenomics Database (CTD), EPA’s ICE
 (Integrated Chemical Environment), EPA’s IRIS (Integrated Risk
