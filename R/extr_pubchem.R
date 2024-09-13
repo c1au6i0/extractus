@@ -111,3 +111,161 @@ extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE){
 
   out_clean
 }
+
+
+
+
+#' extr_pubchem_fema_
+#'
+#' @param casrn Atomic Vector.
+extr_pubchem_fema_ <- function(casrn) {
+
+  dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
+  cat("\n")
+  col_out <- c("cid",
+               "casrn",
+               "name",
+               "result",
+               "source_name",
+               "source_id",
+               "other")
+
+  if (is.na(dat_cid$cid)) {
+    na_matrix <- matrix(NA, nrow = 1, ncol = 7)
+    out_df <- as.data.frame(na_matrix)
+    colnames(out_df) <- col_out
+    out_df$casrn <- casrn
+    out_df$other <- "casrn not found"
+    cli::cli_alert_info("CASRN {.field {casrn}} not found!")
+  } else {
+    names(dat_cid)[1] <- "casrn"
+    dat <- janitor::clean_names(webchem::pc_sect(dat_cid$cid,
+                                                 verbose = TRUE,
+                                                 section = "FEMA Flavor Profile"))
+
+    if (length(dat) == 0) {
+      na_matrix <- matrix(NA, nrow = 1, ncol = 7)
+      out_df <- as.data.frame(na_matrix)
+      colnames(out_df) <-col_out
+      out_df$casrn <- casrn
+      out_df$other <- "FEMA info not found"
+      cli::cli_alert_info("FEMA for {.field {casrn}} not found!")
+      out_df$cid <- dat_cid$cid
+    } else {
+      out_df <- merge(dat_cid, dat, by = "cid")
+      out_df[, "other"] <- NA
+      out_df$result <- gsub("Flavor and Extract Manufacturers Association \\(FEMA\\)", "", out_df$result)
+    }
+
+  }
+
+  out_df
+}
+
+#' Extract FEMA from PubChem
+#'
+#' This function retrieves FEMA (Flavor and Extract Manufacturers Association) flavor profile information for a list of CAS Registry Numbers (CASRN) from the PubChem database using the `webchem` package. It applies the function `extr_fema_pubchem_` to each CASRN in the input vector and combines the results into a single data frame.
+#'
+#' @param casrn A vector of CAS Registry Numbers (CASRN) as atomic vectors.
+#' @return A data frame containing the FEMA flavor profile information for each CASRN. If no information is found for a particular CASRN, the output will include a row indicating this.
+#' @export
+#' @examples
+#' \dontrun{
+#' casrn_list <- c("64-17-5", "50-00-0")
+#' result <- extr_fema_pubchem(casrn_list)
+#' print(result)
+#' }
+extr_pubchem_fema <- function(casrn){
+
+
+  dat <- lapply(casrn, extr_pubchem_fema_)
+  do.call(rbind, dat)
+
+}
+
+
+
+#' extr_ghs_pubchem
+#'
+#' Extract GHS codes from PubChem. The function relay on the package `webchem` to interact with pubchem.
+#'
+#' @param casrn Atomic character vector of casrn.
+#'
+#' @return Dataframe of GHS info.
+extr_pubchem_ghs_ <- function(casrn) {
+  if (missing(casrn)) {
+    cli::cli_abort("The argument {.field {casrn}} is required.")
+  }
+
+  # Check if online
+
+  cli::cli_alert_info("Getting PubChem IDS...")
+  dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
+  cat("\n")
+
+  col_out <- c("cid", "casrn", "name", "GHS", "source_name", "source_id", "other")
+
+  if (is.na(dat_cid$cid)) {
+    na_matrix <- matrix(NA, nrow = length(casrn), ncol = 7)
+    out_df <- as.data.frame(na_matrix)
+    colnames(out_df) <- col_out
+    cli::cli_alert_info("CASRN {.field {casrn}} not found!")
+
+    out_df$casrn <- casrn
+    out_df$other <- "CASRN not found"
+  } else {
+    names(dat_cid)[1] <- "casrn"
+
+    dat <- webchem::pc_sect(dat_cid$cid, verbose = TRUE, section = "GHS Classification") |>
+      janitor::clean_names()
+
+    if (length(dat) == 0) {
+      na_matrix <- matrix(NA, nrow = 1, ncol = 7)
+      out_df <- as.data.frame(na_matrix)
+      colnames(out_df) <- col_out
+      out_df$casrn <- casrn
+      out_df$other <- "GHS info not found"
+      cli::cli_alert_info("GHS for {.field {casrn}} not found!")
+      out_df$cid <- dat_cid$cid
+    } else {
+
+    cat("\n")
+    dat_f <- dat[dat$result != "          ", ]
+
+    names(dat_f)[3] <- "GHS"
+    out_df <- merge(dat_cid, dat_f, by = "cid")
+    out_df[, "other"] <- NA
+
+    }
+  }
+
+  out_df
+}
+
+
+#' Extract GHS Codes from PubChem
+#'
+#' This function extracts GHS (Globally Harmonized System) codes from PubChem. It relies on the `webchem` package to interact with PubChem.
+#'
+#' @param casrn Character vector of CAS Registry Numbers (CASRN).
+#'
+#' @return A dataframe containing GHS information.
+#' @export
+#' @examples
+#' \dontrun{
+#' ghs_info <- extr_ghs_pubchem(casrn = c("50-00-0", "64-17-5"))
+#' ghs_info
+#' }
+extr_pubchem_ghs <- function(casrn) {
+
+  dat <- lapply(casrn, extr_pubchem_ghs_)
+  do.call(rbind, dat)
+
+}
+
+
+
+
+
+
+

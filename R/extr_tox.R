@@ -324,51 +324,6 @@ extr_comptox <- function(ids,
 }
 
 
-
-#' extr_ghs_pubchem
-#'
-#' @param casrn Character vector of carn.
-#'
-#' @return Dataframe of GHS info.
-#' @export
-extr_ghs_pubchem <- function(casrn) {
-  if (missing(casrn)) {
-    cli::cli_abort("The argument {.field {casrn}} is required.")
-  }
-
-  # Check if online
-
-  cli::cli_alert_info("Getting PubChem IDS...")
-  dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
-  cat("\n")
-
-
-  if (all(is.na(dat_cid$cid))) {
-    na_matrix <- matrix(NA, nrow = length(casrn), ncol = 6)
-    out_df <- as.data.frame(na_matrix)
-    colnames(out_df) <- c("cid", "casrn", "name", "GHS", "source_name", "source_id")
-
-    out_df$casrn <- casrn
-  } else {
-    names(dat_cid)[1] <- "casrn"
-    dat_cid <- dat_cid[!is.na(dat_cid$cid), ]
-
-    cli::cli_alert_info("Getting GHS from PubChem...")
-
-    dat <- webchem::pc_sect(dat_cid$cid, verbose = TRUE, section = "GHS Classification") |>
-      janitor::clean_names()
-    cat("\n")
-
-    dat_f <- dat[dat$result != "          ", ]
-
-    names(dat_f)[3] <- "GHS"
-    out_df <- merge(dat_cid, dat_f, by = "cid")
-  }
-
-  out_df
-}
-
-
 #' Extract Data from ICE Database
 #'
 #' The `extr_ice` function sends a POST request to the ICE API to search for information based on specified chemical IDs and assays.
@@ -478,7 +433,7 @@ extr_tox <- function(casrn) {
   }
 
 
-  ghs_dat <- extr_ghs_pubchem(casrn)
+  ghs_dat <- extr_pubchem_ghs(casrn)
 
   comptox_list <- extr_comptox(casrn)
 
