@@ -13,7 +13,6 @@
 #'   \item{cas_rn}{The corresponding CAS-RN of the compound.}
 #'   \item{IUPACName}{The IUPAC name of the compound.}
 #' }
-#' @export
 #' @examples
 #' \dontrun{
 #' # Example with formaldehyde and aflatoxin
@@ -172,7 +171,7 @@ extr_pubchem_fema_ <- function(casrn) {
 #' @examples
 #' \dontrun{
 #' casrn_list <- c("64-17-5", "50-00-0")
-#' result <- extr_fema_pubchem(casrn_list)
+#' result <- extr_pubchem_fema(casrn_list)
 #' print(result)
 #' }
 extr_pubchem_fema <- function(casrn){
@@ -253,7 +252,7 @@ extr_pubchem_ghs_ <- function(casrn) {
 #' @export
 #' @examples
 #' \dontrun{
-#' ghs_info <- extr_ghs_pubchem(casrn = c("50-00-0", "64-17-5"))
+#' ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 #' ghs_info
 #' }
 extr_pubchem_ghs <- function(casrn) {

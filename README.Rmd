@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-`extractus` is an R package designed to facilitate the extraction of toxicological and chemical information from several key databases, including EPA IRIS, Comptox, PubChem, ICE and CTD. 
+extractus is a comprehensive R package designed to simplify querying various chemical, toxicological, and biological databases such as PubChem, the Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated Chemical Environment), EPA’s IRIS (Integrated Risk Information System), and EPA’s COMPTOX. The package facilitates interaction with APIs, providing curated and user-friendly outputs.
 
 To communicate to Pubchem, `extractus` relies on the package`webchem`.
 
@@ -29,9 +29,137 @@ You can install the package from GitHub:
 ```r
 # Install devtools if not already installed
 if (!requireNamespace("devtools", quietly = TRUE)) {
-  install.packages("devtools")
+  install.packages("pak")
 }
 
 # Install the package from GitHub
-devtools::install_github("c1au6i0/extractus")
+pak::pkg_install("c1au6i0/extractus")
 ```
+
+## Features
+
+###  PubChem Database
+
+PubChem is a public repository for information on the biological activities of small molecules. It provides information on chemical structures, identifiers, chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations, and more.
+
+A series of functions that rely on the `webchem` package are used to extract chemical information, Globally Harmonized System (GHS) classification data, or flavor classification from PubChem.
+
+The function `extr_chem_info` retrieves chemical information of IUPAC-named chemicals. A warning is displayed if the chemical is not found.
+
+```{r}
+library(extractus)
+chem_info <- extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
+names(chem_info)
+
+```
+
+
+Two functions are used to extract specific sections of PubChem chemical information using CASRN:
+
+- `extr_pubchem_ghs` extracts Globally Harmonized System (GHS) codes.
+- `extr_pubchem_fema` extracts flavor profile data."
+
+
+```{r}
+ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
+fema_info <- extr_pubchem_fema(casrn = c("50-00-0", "123-68-2"))
+```
+
+
+
+
+
+###  ICE Database
+
+The Integrated Chemical Environment (ICE) database, managed by the EPA, provides access to a variety of data related to chemical toxicity, exposure, and risk assessment. It includes data from high-throughput screening assays, in vivo studies, and computational models.
+
+`extr_ice` provides access to EPA’s Integrated Chemical Environment (ICE) database for toxicological and exposure-related data.
+
+
+```{r}
+ice_data<- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
+names(ice_data)
+```
+
+### IRIS
+
+The Integrated Risk Information System (IRIS) is a database managed by the EPA that contains information on the health effects of exposure to various substances found in the environment. It provides qualitative and quantitative health risk information.
+
+`extr_iris` provides access to EPA’s IRIS database and accepts queries of CASRN or IUPAC names of chemicals.
+
+```{r}
+iris_info <- extr_iris(c("glyphosate", "50-00-0"))
+names(iris_info)
+```
+
+### COMPTOX
+
+The CompTox Chemistry Dashboard, managed by the EPA, provides access to data on chemical structures, properties, and associated bioactivity data. It integrates data from various sources to support chemical safety assessments.
+`
+`extr_comptox` extracts data from the CompTox Chemistry Dashboard using both CASRN and IUPAC names of chemicals.
+
+```{r}
+info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
+names(info_comptox)
+```
+
+
+### Tox Info
+
+The function `extr_tox` is a wrapper used to call all the above-mentioned functions and retrieve a list of dataframes.
+
+```{r}
+info_tox <- extr_tox(casrn = c("Aspirin", "50-00-0"))
+```
+
+### CTD Database
+
+The Comparative Toxicogenomics Database (CTD) provides information about the interactions between chemicals, genes, and diseases. It helps in understanding the effects of environmental exposures on human health.
+
+A series of functions interact with the CTD database.
+
+`extr_ctd` extracts information related to chemical-gene or pathway associations.
+
+```{r}
+input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
+ctd_association <- extr_ctd(
+   input_terms = input_terms,
+   category = "chem",
+   report_type = "genes_curated",
+   input_term_search_type = "directAssociations",
+   action_types = "ANY",
+   ontology = c("go_bp", "go_cc")
+ )
+
+
+ # Get expresssion data
+ ctd_expression <-  extr_ctd(input_terms = input_terms,
+    report_type = "cgixns",
+    category = "chem",
+    action_types = "expression")
+ 
+names(ctd_expression)
+```
+
+
+CTD Tetramers are computationally generated information units that interrelate four data types from the CTD: a chemical, gene product, phenotype, and disease. They help in understanding the complex relationships between these entities and their combined impact on human health.
+
+`extr_tetramer` extract info related to tetramers from CTD.
+
+```{r}
+tetramer_data <- extr_tetramer(
+   chem = c("50-00-0", "ethanol"),
+   disease = "",
+   gene = "",
+   go = "",
+   input_term_search_type = "directAssociations",
+   qt_match_type = "equals"
+ )
+
+names(tetramer_data)
+```
+
+
+
+
+
