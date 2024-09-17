@@ -13,9 +13,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-# extractus
+# extractus <img src='inst/img/extractus.png' align="right" height="139">
 
 <!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 `extractus` is a comprehensive R package designed to simplify querying various chemical, toxicological, and biological databases such as PubChem, the Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated Chemical Environment), EPA’s IRIS (Integrated Risk Information System), and EPA’s COMPTOX. The package facilitates interaction with APIs, providing curated and user-friendly outputs.
