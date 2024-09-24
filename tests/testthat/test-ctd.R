@@ -31,7 +31,7 @@ test_that("extr_ctd fetches other data", {
   skip_on_cran()
   # Ensure the output is as expected by comparing to a stored snapshot
   expect_snapshot({
-    extr_ctd(
+    dat <- extr_ctd(
          input_terms = input_terms,
          category = "chem",
          report_type = "genes_curated",

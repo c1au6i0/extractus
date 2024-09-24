@@ -516,6 +516,222 @@
       23836                   37054933
       10271                   29361514
 
+# extr_ctd fetches other data
+
+    Code
+      dat <- extr_ctd(input_terms = input_terms, category = "chem", report_type = "genes_curated",
+        input_term_search_type = "directAssociations", action_types = "ANY",
+        ontology = c("go_bp", "go_cc"))
+    Message
+      Sending request to CTD database...
+      Request succeeded with status code: 200
+    Code
+      random_indices <- sample(1:nrow(dat), 100)
+      dat[random_indices, ]
+    Output
+             x_input chemical_name chemical_id  cas_rn gene_symbol   gene_id
+      5388   64-17-5       Ethanol     D000431 64-17-5      CABP1A    449789
+      11564  64-17-5       Ethanol     D000431 64-17-5    PPP1R3CB    393807
+      2762   50-00-0  Formaldehyde     D005557 50-00-0       PRPS1      5631
+      25186  ethanol       Ethanol     D000431 64-17-5        MTOR      2475
+      11546  64-17-5       Ethanol     D000431 64-17-5    PPP1R12B      4660
+      17649 methanal  Formaldehyde     D005557 50-00-0      PIEZO2     63895
+      11260  64-17-5       Ethanol     D000431 64-17-5      PHF21A     51317
+      24196  ethanol       Ethanol     D000431 64-17-5      KIF1AB    566766
+      14773  64-17-5       Ethanol     D000431 64-17-5  Y69A2AR.14    190540
+      4182   64-17-5       Ethanol     D000431 64-17-5      ACAA1A    113868
+      18649 methanal  Formaldehyde     D005557 50-00-0   TNFRSF13B     23495
+      27416  ethanol       Ethanol     D000431 64-17-5       RPS23      6228
+      18540 methanal  Formaldehyde     D005557 50-00-0       TERF2      7014
+      22799  ethanol       Ethanol     D000431 64-17-5       FREM2    341640
+      5390   64-17-5       Ethanol     D000431 64-17-5       CABP7    164633
+      25327  ethanol       Ethanol     D000431 64-17-5        NAV2     89797
+      7151   64-17-5       Ethanol     D000431 64-17-5        EME2    197342
+      21842  ethanol       Ethanol     D000431 64-17-5      DNAH5L    335340
+      22113  ethanol       Ethanol     D000431 64-17-5       EIF3B      8662
+      18144 methanal  Formaldehyde     D005557 50-00-0     SERINC1     57515
+      5704   64-17-5       Ethanol     D000431 64-17-5       CDC42       998
+      22069  ethanol       Ethanol     D000431 64-17-5        EGFR      1956
+      4664   64-17-5       Ethanol     D000431 64-17-5       ANXA8    653145
+      13290  64-17-5       Ethanol     D000431 64-17-5      SPE-26    177929
+      13031  64-17-5       Ethanol     D000431 64-17-5     SLC39A3     29985
+      28635  ethanol       Ethanol     D000431 64-17-5     T01B4.4  13224477
+      4075   50-00-0  Formaldehyde     D005557 50-00-0       ZNF84      7637
+      28082  ethanol       Ethanol     D000431 64-17-5     SLC49A4     84925
+      15104 methanal  Formaldehyde     D005557 50-00-0      AFG3L1    114896
+      14537  64-17-5       Ethanol     D000431 64-17-5       VIT-6    177619
+      27540  ethanol       Ethanol     D000431 64-17-5        SAA2      6289
+      21858  ethanol       Ethanol     D000431 64-17-5     DNAJC17     55192
+      23909  ethanol       Ethanol     D000431 64-17-5      INSIG1      3638
+      11613  64-17-5       Ethanol     D000431 64-17-5      PRDM16     63976
+      28162  ethanol       Ethanol     D000431 64-17-5       SMAD3      4088
+      4212   64-17-5       Ethanol     D000431 64-17-5       ACBD7    414149
+      10235  64-17-5       Ethanol     D000431 64-17-5       MYO3A     53904
+      15215 methanal  Formaldehyde     D005557 50-00-0    ARHGAP15     55843
+      15782 methanal  Formaldehyde     D005557 50-00-0       CSPP1     79848
+      19454  ethanol       Ethanol     D000431 64-17-5        AGLA    567798
+      21737  ethanol       Ethanol     D000431 64-17-5       DERL2     51009
+      7439   64-17-5       Ethanol     D000431 64-17-5    F53E10.1    178729
+      9655   64-17-5       Ethanol     D000431 64-17-5       MAPK8      5599
+      9413   64-17-5       Ethanol     D000431 64-17-5      LIPL-1    179771
+      27868  ethanol       Ethanol     D000431 64-17-5       SIRT6     51548
+      462    50-00-0  Formaldehyde     D005557 50-00-0        CBX5     23468
+      10149  64-17-5       Ethanol     D000431 64-17-5      MTMR11     10903
+      22827  ethanol       Ethanol     D000431 64-17-5         FTL      2512
+      10475  64-17-5       Ethanol     D000431 64-17-5         NGF      4803
+      20433  ethanol       Ethanol     D000431 64-17-5   CACNA2D4B 100150428
+      23041  ethanol       Ethanol     D000431 64-17-5        GLDN    342035
+      9690   64-17-5       Ethanol     D000431 64-17-5      MATH-3    173547
+      10413  64-17-5       Ethanol     D000431 64-17-5      NEP-13    173672
+      12129  64-17-5       Ethanol     D000431 64-17-5        RELA      5970
+      29779  ethanol       Ethanol     D000431 64-17-5   Y54G2A.13    190279
+      26074  ethanol       Ethanol     D000431 64-17-5     PCDHGA7     56108
+      29079  ethanol       Ethanol     D000431 64-17-5    TNFRSF1B      7133
+      14660  64-17-5       Ethanol     D000431 64-17-5       WSCD2      9671
+      24272  ethanol       Ethanol     D000431 64-17-5       KRCC1     51315
+      18417 methanal  Formaldehyde     D005557 50-00-0     STARD10     10809
+      731    50-00-0  Formaldehyde     D005557 50-00-0      CREBRF    153222
+      28857  ethanol       Ethanol     D000431 64-17-5        TGM2      7052
+      23423  ethanol       Ethanol     D000431 64-17-5        H4C2      8366
+      16230 methanal  Formaldehyde     D005557 50-00-0       FNDC4     64838
+      19197  ethanol       Ethanol     D000431 64-17-5       ABRAA    324520
+      13492  64-17-5       Ethanol     D000431 64-17-5       STX1A      6804
+      20189  ethanol       Ethanol     D000431 64-17-5       BMP2K     55589
+      12781  64-17-5       Ethanol     D000431 64-17-5    SH3PXD2A      9644
+      21155  ethanol       Ethanol     D000431 64-17-5      COL-65    187138
+      28490  ethanol       Ethanol     D000431 64-17-5       STIP1     10963
+      966    50-00-0  Formaldehyde     D005557 50-00-0        EBPL     84650
+      10684  64-17-5       Ethanol     D000431 64-17-5       NRXN1      9378
+      9383   64-17-5       Ethanol     D000431 64-17-5         LIF      3976
+      22577  ethanol       Ethanol     D000431 64-17-5       FARS2     10667
+      26593  ethanol       Ethanol     D000431 64-17-5    PPP1R3CB    393807
+      5591   64-17-5       Ethanol     D000431 64-17-5     CCDC88A     55704
+      28350  ethanol       Ethanol     D000431 64-17-5      SPRED1    161742
+      22177  ethanol       Ethanol     D000431 64-17-5        EMC8     10328
+      24867  ethanol       Ethanol     D000431 64-17-5       MIEF1     54471
+      28555  ethanol       Ethanol     D000431 64-17-5    SULT1ST1    323424
+      4749   64-17-5       Ethanol     D000431 64-17-5    ARHGAP33    115703
+      24823  ethanol       Ethanol     D000431 64-17-5       MFGE8      4240
+      2482   50-00-0  Formaldehyde     D005557 50-00-0      OSBPL3     26031
+      6885   64-17-5       Ethanol     D000431 64-17-5     DPY19L1     23333
+      19772  ethanol       Ethanol     D000431 64-17-5    ARHGAP18     93663
+      15706 methanal  Formaldehyde     D005557 50-00-0      CNKSR2     22866
+      3418   50-00-0  Formaldehyde     D005557 50-00-0      STXBP3      6814
+      27560  ethanol       Ethanol     D000431 64-17-5       SAR1A     56681
+      2722   50-00-0  Formaldehyde     D005557 50-00-0      PPP3R2      5535
+      19268  ethanol       Ethanol     D000431 64-17-5     ACOT11B    641574
+      56     50-00-0  Formaldehyde     D005557 50-00-0        ADH5       128
+      7193   64-17-5       Ethanol     D000431 64-17-5        ENY2     56943
+      17318 methanal  Formaldehyde     D005557 50-00-0      MYO15A     51168
+      27729  ethanol       Ethanol     D000431 64-17-5   SERPINA12    145264
+      24024  ethanol       Ethanol     D000431 64-17-5       JAZF1    221895
+      29001  ethanol       Ethanol     D000431 64-17-5     TMEM203     94107
+      8109   64-17-5       Ethanol     D000431 64-17-5       GOLM2    113201
+      4590   64-17-5       Ethanol     D000431 64-17-5        AMPH       273
+      29963  ethanol       Ethanol     D000431 64-17-5      ZFP941    407812
+      24267  ethanol       Ethanol     D000431 64-17-5       KPNA4      3840
+                          organism organism_id                pub_med_ids
+      5388             Danio rerio        7955                   35412187
+      11564            Danio rerio        7955                   29361514
+      2762            Homo sapiens        9606                   23649840
+      25186           Homo sapiens        9606                   29524503
+      11546           Mus musculus       10090                   30319688
+      17649           Homo sapiens        9606                   23649840
+      11260           Mus musculus       10090                   30319688
+      24196            Danio rerio        7955                   29361514
+      14773 Caenorhabditis elegans        6239                   23381935
+      4182       Rattus norvegicus       10116                   26115886
+      18649           Homo sapiens        9606                   23649840
+      27416           Mus musculus       10090                   30319688
+      18540           Homo sapiens        9606                   20655997
+      22799           Homo sapiens        9606                   31059573
+      5390            Mus musculus       10090                   30319688
+      25327           Homo sapiens        9606                   29432896
+      7151            Mus musculus       10090                   30319688
+      21842            Danio rerio        7955                   29361514
+      22113           Mus musculus       10090                   30319688
+      18144           Homo sapiens        9606                   23649840
+      5704            Mus musculus       10090                   30319688
+      22069           Homo sapiens        9606                   22222162
+      4664            Homo sapiens        9606                   29432896
+      13290 Caenorhabditis elegans        6239                   23381935
+      13031           Mus musculus       10090                   30319688
+      28635 Caenorhabditis elegans        6239                   23381935
+      4075            Homo sapiens        9606                   23649840
+      28082           Mus musculus       10090          19167417|30319688
+      15104           Homo sapiens        9606                   20655997
+      14537 Caenorhabditis elegans        6239                   23381935
+      27540           Mus musculus       10090                   30517762
+      21858           Mus musculus       10090                   30319688
+      23909           Homo sapiens        9606                   29432896
+      11613           Mus musculus       10090                   30319688
+      28162           Mus musculus       10090                   30319688
+      4212             Danio rerio        7955                   29361514
+      10235            Danio rerio        7955                   35412187
+      15215           Homo sapiens        9606                   23649840
+      15782           Homo sapiens        9606          20655997|23649840
+      19454            Danio rerio        7955                   29361514
+      21737            Danio rerio        7955                   29361514
+      7439  Caenorhabditis elegans        6239                   23381935
+      9655       Rattus norvegicus       10116                   19735724
+      9413  Caenorhabditis elegans        6239                   23381935
+      27868           Mus musculus       10090                   30319688
+      462             Homo sapiens        9606                   23649840
+      10149           Mus musculus       10090                   30319688
+      22827           Homo sapiens        9606                   15963989
+      10475           Mus musculus       10090          19397965|35181401
+      20433            Danio rerio        7955                   35412187
+      23041           Homo sapiens        9606                   23378141
+      9690  Caenorhabditis elegans        6239                   23381935
+      10413 Caenorhabditis elegans        6239                   23381935
+      12129        Cavia porcellus       10141                   24239723
+      29779 Caenorhabditis elegans        6239                   23381935
+      26074           Mus musculus       10090                   30319688
+      29079           Homo sapiens        9606          26470730|26733986
+      14660           Mus musculus       10090                   30319688
+      24272           Mus musculus       10090                   30319688
+      18417           Homo sapiens        9606                   23649840
+      731             Homo sapiens        9606                   23649840
+      28857           Mus musculus       10090 11696672|30319688|30517762
+      23423           Homo sapiens        9606                   28986285
+      16230           Homo sapiens        9606                   27664576
+      19197            Danio rerio        7955                   35412187
+      13492           Mus musculus       10090          19167417|30319688
+      20189           Mus musculus       10090                   30319688
+      12781           Homo sapiens        9606                   29432896
+      21155 Caenorhabditis elegans        6239                   23381935
+      28490           Mus musculus       10090                   30319688
+      966             Homo sapiens        9606                   23649840
+      10684           Mus musculus       10090                   30319688
+      9383            Homo sapiens        9606                   35690182
+      22577           Mus musculus       10090                   30319688
+      26593            Danio rerio        7955                   29361514
+      5591            Mus musculus       10090                   29018328
+      28350           Mus musculus       10090                   30319688
+      22177           Mus musculus       10090                   30319688
+      24867           Mus musculus       10090                   30319688
+      28555            Danio rerio        7955                   29361514
+      4749            Mus musculus       10090                   30319688
+      24823           Mus musculus       10090 19167417|30319688|30517762
+      2482            Homo sapiens        9606                   23649840
+      6885            Mus musculus       10090                   30319688
+      19772           Mus musculus       10090                   30319688
+      15706           Homo sapiens        9606                   23649840
+      3418            Homo sapiens        9606                   23649840
+      27560           Mus musculus       10090                   30319688
+      2722            Homo sapiens        9606                   27905399
+      19268            Danio rerio        7955                   29361514
+      56                                    NA                   21920416
+      7193            Mus musculus       10090                   30319688
+      17318           Homo sapiens        9606                   28937961
+      27729           Mus musculus       10090                   19167417
+      24024           Mus musculus       10090                   30319688
+      29001           Mus musculus       10090                   30319688
+      8109            Mus musculus       10090                   30319688
+      4590            Homo sapiens        9606                   20621659
+      29963           Mus musculus       10090                   30319688
+      24267           Mus musculus       10090                   30319688
+
 # extr_ctd fetches tetramers data
 
     Code
@@ -531,306 +747,306 @@
       dat[random_indices, ]
     Output
               query     chemical chemical_id    gene gene_id
-      11564 ethanol      Ethanol     D000431     HPX    3263
-      25186 ethanol      Ethanol     D000431  CYP2E1    1571
-      17649 ethanol      Ethanol     D000431    INS1   16333
-      11260 ethanol      Ethanol     D000431    SPP1    6696
-      47541 ethanol      Ethanol     D000431 CYP24A1    1591
-      4182  50-00-0 Formaldehyde     D005557   DDIT3    1649
-      27416 ethanol      Ethanol     D000431 PPP2R5C    5527
-      18540 ethanol      Ethanol     D000431    FGF8    2253
-      5390  ethanol      Ethanol     D000431 ANGPTL3   27329
-      30929 ethanol      Ethanol     D000431  TGFBR2    7048
-      21842 ethanol      Ethanol     D000431   JAZF1  221895
-      18144 ethanol      Ethanol     D000431   PTGES    9536
-      46058 ethanol      Ethanol     D000431  CTNNB1    1499
-      30407 ethanol      Ethanol     D000431    SPP1    6696
-      36843 ethanol      Ethanol     D000431   S100B    6285
-      15104 ethanol      Ethanol     D000431    LEPR    3953
-      27540 ethanol      Ethanol     D000431     NGF    4803
-      32331 ethanol      Ethanol     D000431    AGER     177
-      36980 ethanol      Ethanol     D000431  ADIPOQ    9370
-      15782 ethanol      Ethanol     D000431    IL18    3606
-      9413  ethanol      Ethanol     D000431  CTNNB1    1499
-      33230 ethanol      Ethanol     D000431     SRC    6714
-      22827 ethanol      Ethanol     D000431    APOE     348
-      20433 ethanol      Ethanol     D000431   TGFB1    7040
-      9690  ethanol      Ethanol     D000431    BCL2     596
-      12129 ethanol      Ethanol     D000431     ATM     472
-      47428 ethanol      Ethanol     D000431  CYP2E1    1571
-      23423 ethanol      Ethanol     D000431   ITGB1    3688
-      31184 ethanol      Ethanol     D000431    MMP9    4318
-      20189 ethanol      Ethanol     D000431   MECP2    4204
-      33734 ethanol      Ethanol     D000431     INS    3630
-      9383  ethanol      Ethanol     D000431   SORT1    6272
-      26593 ethanol      Ethanol     D000431   TGFB1    7040
-      4749  ethanol      Ethanol     D000431  CXCL12    6387
-      35250 ethanol      Ethanol     D000431    CD36     948
-      3418  50-00-0 Formaldehyde     D005557   MIR21  406991
-      19268 ethanol      Ethanol     D000431   GSK3B    2932
-      39961 ethanol      Ethanol     D000431     IL6    3569
-      27729 ethanol      Ethanol     D000431   PPARG    5468
-      4590  ethanol      Ethanol     D000431    IGF1    3479
-      29001 ethanol      Ethanol     D000431   PPARG    5468
-      11158 ethanol      Ethanol     D000431    NOS2    4843
-      43112 ethanol      Ethanol     D000431     REN    5972
-      4257  50-00-0 Formaldehyde     D005557    SOD1    6647
-      31156 ethanol      Ethanol     D000431   VEGFA    7422
-      28932 ethanol      Ethanol     D000431   HDAC1    3065
-      10688 ethanol      Ethanol     D000431    BCL2     596
-      45237 ethanol      Ethanol     D000431    GCLM    2730
-      26028 ethanol      Ethanol     D000431    MTOR    2475
-      15737 ethanol      Ethanol     D000431    EDN1    1906
-      28573 ethanol      Ethanol     D000431     ID1    3397
-      45347 ethanol      Ethanol     D000431     CAT     847
-      10185 ethanol      Ethanol     D000431    CCN2    1490
-      32916 ethanol      Ethanol     D000431    JAK2    3717
-      121   50-00-0 Formaldehyde     D005557   PARP1     142
-      8790  ethanol      Ethanol     D000431    BMP4     652
-      10770 ethanol      Ethanol     D000431   FGFR2    2263
-      30119 ethanol      Ethanol     D000431  COL1A1    1277
-      33883 ethanol      Ethanol     D000431   PTGS2    5743
-      3616  50-00-0 Formaldehyde     D005557     TNF    7124
-      45107 ethanol      Ethanol     D000431    SOD2    6648
-      43473 ethanol      Ethanol     D000431    BAP1    8314
-      34905 ethanol      Ethanol     D000431     TNF    7124
-      30613 ethanol      Ethanol     D000431    SOD2    6648
-      47695 ethanol      Ethanol     D000431    EDN1    1906
-      12284 ethanol      Ethanol     D000431   PTGS1    5742
-      35520 ethanol      Ethanol     D000431     IL6    3569
-      41806 ethanol      Ethanol     D000431    CCL3    6348
-      46464 ethanol      Ethanol     D000431    DRD1    1812
-      8411  ethanol      Ethanol     D000431    ALPL     249
-      49722 ethanol      Ethanol     D000431     TNF    7124
-      1926  50-00-0 Formaldehyde     D005557    TLR4    7099
-      18197 ethanol      Ethanol     D000431    FKRP   79147
-      2833  50-00-0 Formaldehyde     D005557    NQO1    1728
-      22078 ethanol      Ethanol     D000431   ENPP2    5168
-      40749 ethanol      Ethanol     D000431    EDN1    1906
-      21545 ethanol      Ethanol     D000431   PPARG    5468
-      7560  ethanol      Ethanol     D000431 SLC10A7   84068
-      24857 ethanol      Ethanol     D000431   NR3C1    2908
-      48020 ethanol      Ethanol     D000431 SIGMAR1   10280
-      37498 ethanol      Ethanol     D000431     LEP    3952
-      25068 ethanol      Ethanol     D000431    TERT    7015
-      3255  50-00-0 Formaldehyde     D005557   GSK3B    2932
-      8706  ethanol      Ethanol     D000431   SPARC    6678
-      47932 ethanol      Ethanol     D000431    NOX4   50507
-      45626 ethanol      Ethanol     D000431   PTGS2    5743
-      42213 ethanol      Ethanol     D000431     AGT     183
-      27417 ethanol      Ethanol     D000431     TNF    7124
-      6186  ethanol      Ethanol     D000431    CD40     958
-      34427 ethanol      Ethanol     D000431   ERBB2    2064
-      26757 ethanol      Ethanol     D000431   PTGS2    5743
-      48321 ethanol      Ethanol     D000431    GPX1    2876
-      2312  50-00-0 Formaldehyde     D005557   MYOCD   93649
-      27219 ethanol      Ethanol     D000431    FGF2    2247
-      34607 ethanol      Ethanol     D000431   STK11    6794
-      46448 ethanol      Ethanol     D000431   MECP2    4204
-      15923 ethanol      Ethanol     D000431   TRAF4    9618
-      42726 ethanol      Ethanol     D000431     MET    4233
-      42504 ethanol      Ethanol     D000431     AHR     196
-      32445 ethanol      Ethanol     D000431   SIRT1   23411
-                                                                                    phenotype
-      11564                                                     cellular iron ion homeostasis
-      25186                                                                     mitochondrion
-      17649                                                         glucose metabolic process
-      11260                                                  cellular calcium ion homeostasis
-      47541                                                         steroid metabolic process
-      4182                                           response to endoplasmic reticulum stress
-      27416                              negative regulation of cell population proliferation
-      18540                                                                 heart development
-      5390                                                                       angiogenesis
-      30929                                               positive regulation of angiogenesis
-      21842                                                           lipid metabolic process
-      18144                                                  glutathione transferase activity
-      46058                                                       skeletal system development
-      30407                                                        osteoblast differentiation
-      36843                        positive regulation of I-kappaB kinase/NF-kappaB signaling
-      15104                                                     cytochrome-c oxidase activity
-      27540                              negative regulation of cell population proliferation
-      32331                                          positive regulation of apoptotic process
-      36980                        positive regulation of I-kappaB kinase/NF-kappaB signaling
-      15782                                                     establishment of skin barrier
-      9413                                                               cell differentiation
-      33230                              positive regulation of cell population proliferation
-      22827                                                   locomotory exploration behavior
-      20433                                                             inflammatory response
-      9690                                                                        cell growth
-      12129                                          cellular response to DNA damage stimulus
-      47428                                                         steroid metabolic process
-      23423                                                maintenance of blood-brain barrier
-      31184                                               positive regulation of angiogenesis
-      20189                                                             inflammatory response
-      33734                              positive regulation of cell population proliferation
-      9383                                                               cell differentiation
-      26593                                         negative regulation of cell-cell adhesion
-      4749                                                          adult locomotory behavior
-      35250                        positive regulation of cytosolic calcium ion concentration
-      3418       positive regulation of cytokine production involved in inflammatory response
-      19268                                                  hepatic stellate cell activation
-      39961                          positive regulation of nitric oxide biosynthetic process
-      27729                              negative regulation of cell population proliferation
-      4590                                            activation of protein kinase B activity
-      29001 negative regulation of transforming growth factor beta receptor signaling pathway
-      11158                                                            cell redox homeostasis
-      43112                                                      regulation of blood pressure
-      4257                                                      superoxide dismutase activity
-      31156                                               positive regulation of angiogenesis
-      28932 negative regulation of transforming growth factor beta receptor signaling pathway
-      10688                                                     cell population proliferation
-      45237                                                      response to oxidative stress
-      26028                                                     multicellular organism growth
-      15737                                                        epithelial fluid transport
-      28573                                               negative regulation of neurogenesis
-      45347                                                      response to oxidative stress
-      10185                                                                    cell migration
-      32916                                       positive regulation of cell differentiation
-      121                                                                   apoptotic process
-      8790                                                              cartilage development
-      10770                                                     cell population proliferation
-      30119                                                                      ossification
-      33883                              positive regulation of cell population proliferation
-      3616                                     positive regulation of NIK/NF-kappaB signaling
-      45107                                                      response to oxidative stress
-      43473               regulation of cytokine production involved in inflammatory response
-      34905      positive regulation of cytokine production involved in inflammatory response
-      30613                                                               paracrine signaling
-      47695                                                       superoxide anion generation
-      12284                                      cellular response to organic cyclic compound
-      35520                                      positive regulation of ERK1 and ERK2 cascade
-      41806                           positive regulation of tumor necrosis factor production
-      46464                                                                   social behavior
-      8411                                                            calcium ion homeostasis
-      49722                                                                      vasodilation
-      1926                                                          interleukin-10 production
-      18197                                                 glycoprotein biosynthetic process
-      2833                                                  nitric oxide biosynthetic process
-      22078                                                           lipid metabolic process
-      40749                            positive regulation of protein localization to nucleus
-      21545                                                                 lipid homeostasis
-      7560                                                                   bone development
-      24857                                                                     mitochondrion
-      48020                                                                 swimming behavior
-      37498                                   positive regulation of interleukin-6 production
-      25068                                                                     mitochondrion
-      3255                                           positive regulation of apoptotic process
-      8706                                                              cartilage development
-      47932                                                      superoxide metabolic process
-      45626                                                      response to oxidative stress
-      42213                                                       protein import into nucleus
-      27417                              negative regulation of cell population proliferation
-      6186                                                                  apoptotic process
-      34427                              positive regulation of cell population proliferation
-      26757                              negative regulation of cell population proliferation
-      48321                                                           temperature homeostasis
-      2312                               negative regulation of cell population proliferation
-      27219                              negative regulation of cell population proliferation
-      34607                                        positive regulation of cellular senescence
-      46448                                                                   social behavior
-      15923                                                                   eye development
-      42726                                         reactive oxygen species metabolic process
-      42504                                      reactive oxygen species biosynthetic process
-      32445                                          positive regulation of apoptotic process
-            phenotype_id                                         disease disease_id
-      11564   GO:0006879                             Acute Kidney Injury    D058186
-      25186   GO:0005739                   Liver Neoplasms, Experimental    D008114
-      17649   GO:0006006                                        Necrosis    D009336
-      11260   GO:0006874                             Acute Kidney Injury    D058186
-      47541   GO:0008202                                  Lung Neoplasms    D008175
-      4182    GO:0034976                                           Ulcer    D014456
-      27416   GO:0008285               Micronuclei, Chromosome-Defective    D048629
-      18540   GO:0007507                                    Cleft Palate    D002972
-      5390    GO:0001525                   Liver Cirrhosis, Experimental    D008106
-      30929   GO:0045766                               Eye Abnormalities    D005124
-      21842   GO:0006629                       Diabetes Mellitus, Type 2    D003924
-      18144   GO:0004364                                  Hydronephrosis    D006869
-      46058   GO:0001501          Chemical and Drug Induced Liver Injury    D056486
-      30407   GO:0001649                                  Heart Diseases    D006331
-      36843   GO:0043123                             Cerebral Hemorrhage    D002543
-      15104   GO:0004129                                   Hyperglycemia    D006943
-      27540   GO:0008285                              Nerve Degeneration    D009410
-      32331   GO:0043065                                  Osteoarthritis    D010003
-      36980   GO:0043123                                    Hypertension    D006973
-      15782   GO:0061436                                  Brain Ischemia    D002545
-      9413    GO:0030154                                  Lung Neoplasms    D008175
-      33230   GO:0008284                                    Cardiomegaly    D006332
-      22827   GO:0035641                  Neurobehavioral Manifestations    D019954
-      20433   GO:0006954                                  Lung Neoplasms    D008175
-      9690    GO:0016049                                Memory Disorders    D008569
-      12129   GO:0006974                            Pancreatic Neoplasms    D010190
-      47428   GO:0008202          Chemical and Drug Induced Liver Injury    D056486
-      23423   GO:0035633                                Cardiomyopathies    D009202
-      31184   GO:0045766                            Pancreatic Neoplasms    D010190
-      20189   GO:0006954                                    Hyperalgesia    D006930
-      33734   GO:0008284                            Hypertriglyceridemia    D015228
-      9383    GO:0030154                                  Liver Diseases    D008107
-      26593   GO:0022408               Non-alcoholic Fatty Liver Disease    D065626
-      4749    GO:0008344                                  HIV Infections    D015658
-      35250   GO:0007204                             Myocardial Ischemia    D017202
-      3418    GO:1900017                                    Inflammation    D007249
-      19268   GO:0035733                 Cell Transformation, Neoplastic    D002471
-      39961   GO:0045429                       Diabetes Mellitus, Type 2    D003924
-      27729   GO:0008285                               Stomach Neoplasms    D013274
-      4590    GO:0032148 Drug-Related Side Effects and Adverse Reactions    D064420
-      29001   GO:0030512                               Stomach Neoplasms    D013274
-      11158   GO:0045454                                     Hypothermia    D007035
-      43112   GO:0008217                   Hypertrophy, Left Ventricular    D017379
-      4257    GO:0004784          Chemical and Drug Induced Liver Injury    D056486
-      31156   GO:0045766                             Neoplasm Metastasis    D009362
-      28932   GO:0030512                                  Heart Diseases    D006331
-      10688   GO:0008283                           Learning Disabilities    D007859
-      45237   GO:0006979          Chemical and Drug Induced Liver Injury    D056486
-      26028   GO:0035264                                    Hepatomegaly    D006529
-      15737   GO:0042045                             Acute Kidney Injury    D058186
-      28573   GO:0050768                             Neoplasm Metastasis    D009362
-      45347   GO:0006979                                     Fatty Liver    D005234
-      10185   GO:0016477               Prenatal Exposure Delayed Effects    D011297
-      32916   GO:0045597                             Myocardial Ischemia    D017202
-      121     GO:0006915                                Cardiomyopathies    D009202
-      8790    GO:0051216                                  Osteoarthritis    D010003
-      10770   GO:0008283                                  Lung Neoplasms    D008175
-      30119   GO:0001503                                        Fibrosis    D005355
-      33883   GO:0008284                   Liver Cirrhosis, Experimental    D008106
-      3616    GO:1901224                                  Lung Neoplasms    D008175
-      45107   GO:0006979                                 Atherosclerosis    D050197
-      43473   GO:1900015                                Breast Neoplasms    D001943
-      34905   GO:1900017                           Myocardial Infarction    D009203
-      30613   GO:0038001                                     Fatty Liver    D005234
-      47695   GO:0042554                             Myocardial Ischemia    D017202
-      12284   GO:0071407                                Breast Neoplasms    D001943
-      35520   GO:0070374                                  Brain Injuries    D001930
-      41806   GO:0032760                           Neoplasm Invasiveness    D009361
-      46464   GO:0035176                                     Hypotension    D007022
-      8411    GO:0055074                        Bone Diseases, Metabolic    D001851
-      49722   GO:0042311                         Ventricular Dysfunction    D018754
-      1926    GO:0032613                                       Pneumonia    D011014
-      18197   GO:0009101                                         Dyspnea    D004417
-      2833    GO:0006809                         Neoplasms, Experimental    D009374
-      22078   GO:0006629                   Liver Cirrhosis, Experimental    D008106
-      40749   GO:1900182                      Depressive Disorder, Major    D003865
-      21545   GO:0055088                                    Hypertension    D006973
-      7560    GO:0060348                                     Cholestasis    D002779
-      24857   GO:0005739 Drug-Related Side Effects and Adverse Reactions    D064420
-      48020   GO:0036269                                  HIV Infections    D015658
-      37498   GO:0032755                                   Hyperglycemia    D006943
-      25068   GO:0005739                                 Kidney Diseases    D007674
-      3255    GO:0043065                                       Poisoning    D011041
-      8706    GO:0051216                                    Hyperalgesia    D006930
-      47932   GO:0006801                   Liver Cirrhosis, Experimental    D008106
-      45626   GO:0006979                             Neoplasm Metastasis    D009362
-      42213   GO:0006606                   Hypertrophy, Left Ventricular    D017379
-      27417   GO:0008285               Micronuclei, Chromosome-Defective    D048629
-      6186    GO:0006915                                   Hyperglycemia    D006943
-      34427   GO:0008284                       Urinary Bladder Neoplasms    D001749
-      26757   GO:0008285                                Breast Neoplasms    D001943
-      48321   GO:0001659                                    Hypertension    D006973
-      2312    GO:0008285                                    Cardiomegaly    D006332
-      27219   GO:0008285                                    Inflammation    D007249
-      34607   GO:2000774                            Pancreatic Neoplasms    D010190
-      46448   GO:0035176                                    Hyperalgesia    D006930
-      15923   GO:0001654                                  Brain Injuries    D001930
-      42726   GO:0072593                             Neoplasm Metastasis    D009362
-      42504   GO:1903409                                    Cardiomegaly    D006332
-      32445   GO:0043065                                Retinal Diseases    D012164
+      3552  50-00-0 Formaldehyde     D005557    DRD2    1813
+      37891 ethanol      Ethanol     D000431  MAP2K7    5609
+      39571 ethanol      Ethanol     D000431    NQO1    1728
+      10624 ethanol      Ethanol     D000431     AGT     183
+      127   50-00-0 Formaldehyde     D005557     BAX     581
+      17101 ethanol      Ethanol     D000431    AKT2     208
+      46913 ethanol      Ethanol     D000431    CNR1    1268
+      31208 ethanol      Ethanol     D000431    IL1B    3553
+      30206 ethanol      Ethanol     D000431     NCL    4691
+      46698 ethanol      Ethanol     D000431    IL1A    3552
+      7715  ethanol      Ethanol     D000431    ALPL     249
+      32629 ethanol      Ethanol     D000431   GSK3B    2932
+      49828 ethanol      Ethanol     D000431   MECP2    4204
+      38563 ethanol      Ethanol     D000431   FGFR1    2260
+      12438 ethanol      Ethanol     D000431    NOS3    4846
+      1491  50-00-0 Formaldehyde     D005557     ID4    3400
+      19199 ethanol      Ethanol     D000431    EDN1    1906
+      26156 ethanol      Ethanol     D000431   MAPK1    5594
+      28445 ethanol      Ethanol     D000431    IL1B    3553
+      36319 ethanol      Ethanol     D000431    TLR4    7099
+      43127 ethanol      Ethanol     D000431   CALCA     796
+      30949 ethanol      Ethanol     D000431    FGF2    2247
+      26359 ethanol      Ethanol     D000431    TP53    7157
+      49588 ethanol      Ethanol     D000431   VEGFA    7422
+      533   50-00-0 Formaldehyde     D005557    CCN2    1490
+      46963 ethanol      Ethanol     D000431    NGFR    4804
+      42341 ethanol      Ethanol     D000431   PARP1     142
+      21976 ethanol      Ethanol     D000431    APOE     348
+      22843 ethanol      Ethanol     D000431    TAC1    6863
+      25434 ethanol      Ethanol     D000431    CNR1    1268
+      39744 ethanol      Ethanol     D000431    IL1B    3553
+      22050 ethanol      Ethanol     D000431 CYP27A1    1593
+      7681  ethanol      Ethanol     D000431    LRP5    4041
+      24269 ethanol      Ethanol     D000431   FGFR2    2263
+      11381 ethanol      Ethanol     D000431   TGFB1    7040
+      26074 ethanol      Ethanol     D000431   ERCC6    2074
+      42818 ethanol      Ethanol     D000431    NOS3    4846
+      12921 ethanol      Ethanol     D000431    SOD2    6648
+      36831 ethanol      Ethanol     D000431     TNF    7124
+      724   50-00-0 Formaldehyde     D005557     EPO    2056
+      6164  ethanol      Ethanol     D000431   BIRC2     329
+      42909 ethanol      Ethanol     D000431 TNFRSF9    3604
+      22401 ethanol      Ethanol     D000431    FZD4    8322
+      15833 ethanol      Ethanol     D000431    TP63    8626
+      18400 ethanol      Ethanol     D000431   MAPK1    5594
+      10381 ethanol      Ethanol     D000431     RB1    5925
+      16516 ethanol      Ethanol     D000431    POMC    5443
+      43762 ethanol      Ethanol     D000431   NR4A1    3164
+      22822 ethanol      Ethanol     D000431    APOE     348
+      42381 ethanol      Ethanol     D000431     LOX    4015
+      39089 ethanol      Ethanol     D000431    JAK2    3717
+      5040  ethanol      Ethanol     D000431   NRCAM    4897
+      36273 ethanol      Ethanol     D000431   ITGB3    3690
+      31447 ethanol      Ethanol     D000431   C1QBP     708
+      24896 ethanol      Ethanol     D000431   HADHB    3032
+      9666  ethanol      Ethanol     D000431   SMAD2    4087
+      22979 ethanol      Ethanol     D000431  SHANK1   50944
+      34935 ethanol      Ethanol     D000431     TNF    7124
+      46840 ethanol      Ethanol     D000431    PLAU    5328
+      10014 ethanol      Ethanol     D000431    IRS2    8660
+      41069 ethanol      Ethanol     D000431   TRP53   22059
+      35355 ethanol      Ethanol     D000431    GDNF    2668
+      21291 ethanol      Ethanol     D000431    GLI3    2737
+      16777 ethanol      Ethanol     D000431   GNAI2    2771
+      31830 ethanol      Ethanol     D000431   SIRT1   23411
+      20592 ethanol      Ethanol     D000431 MIR130B  406920
+      29612 ethanol      Ethanol     D000431    WDR1    9948
+      6410  ethanol      Ethanol     D000431    PTEN    5728
+      45185 ethanol      Ethanol     D000431    SOD2    6648
+      2016  50-00-0 Formaldehyde     D005557   MECP2    4204
+      44900 ethanol      Ethanol     D000431    MMP9    4318
+      44293 ethanol      Ethanol     D000431  MAP3K5    4217
+      23718 ethanol      Ethanol     D000431     APP     351
+      37204 ethanol      Ethanol     D000431   HMOX1    3162
+      12700 ethanol      Ethanol     D000431   PARP1     142
+      49251 ethanol      Ethanol     D000431     AGT     183
+      24367 ethanol      Ethanol     D000431   DNM1L   10059
+      3822  50-00-0 Formaldehyde     D005557    IL1B    3553
+      23373 ethanol      Ethanol     D000431  POU5F1    5460
+      24189 ethanol      Ethanol     D000431     CLU    1191
+      32884 ethanol      Ethanol     D000431    EDN1    1906
+      23744 ethanol      Ethanol     D000431    PTEN    5728
+      19541 ethanol      Ethanol     D000431   CASP3     836
+      9424  ethanol      Ethanol     D000431    RAF1    5894
+      39141 ethanol      Ethanol     D000431   PARP1     142
+      25304 ethanol      Ethanol     D000431   OPRM1    4988
+      771   50-00-0 Formaldehyde     D005557     MYC    4609
+      5207  ethanol      Ethanol     D000431   HDAC6   10013
+      27798 ethanol      Ethanol     D000431     AGT     183
+      49210 ethanol      Ethanol     D000431     ACE    1636
+      42469 ethanol      Ethanol     D000431   PARP1     142
+      27759 ethanol      Ethanol     D000431    DRD2    1813
+      47481 ethanol      Ethanol     D000431  CYP1A2    1544
+      7883  ethanol      Ethanol     D000431   HTR1B    3351
+      28716 ethanol      Ethanol     D000431   GSK3B    2932
+      1803  50-00-0 Formaldehyde     D005557  NFE2L2    4780
+      27696 ethanol      Ethanol     D000431 ADORA2B     136
+      313   50-00-0 Formaldehyde     D005557   MAPK3    5595
+      17206 ethanol      Ethanol     D000431     IL6    3569
+      21864 ethanol      Ethanol     D000431   PLPP1    8611
+                                                                               phenotype
+      3552                          positive regulation of multicellular organism growth
+      37891                                           positive regulation of JNK cascade
+      39571                              positive regulation of neuron apoptotic process
+      10624                                                cell population proliferation
+      127                                                              apoptotic process
+      17101                                                          glucose homeostasis
+      46913                                                              spermatogenesis
+      31208                                          positive regulation of angiogenesis
+      30206                                                                 ossification
+      46698                                                              spermatogenesis
+      7715                                                           bone mineralization
+      32629                                             positive regulation of autophagy
+      49828                                                              visual learning
+      38563                                          positive regulation of MAPK cascade
+      12438                                 cellular response to organic cyclic compound
+      1491                                                             heart development
+      19199                                                                heart process
+      26156                                                                  myelination
+      28445                                          negative regulation of neurogenesis
+      36319                                 positive regulation of ERK1 and ERK2 cascade
+      43127                                                 regulation of blood pressure
+      30949                                          positive regulation of angiogenesis
+      26359                                                          necroptotic process
+      49588                                                                 vasodilation
+      533                                                                 cell migration
+      46963                                                              spermatogenesis
+      42341                                                 protein modification process
+      21976                                                      lipid metabolic process
+      22843                                                             long-term memory
+      25434                                                                mitochondrion
+      39744                              positive regulation of neuron apoptotic process
+      22050                                                      lipid metabolic process
+      7681                                                              bone development
+      24269                                                         midbrain development
+      11381                                             cellular calcium ion homeostasis
+      26074                                                multicellular organism growth
+      42818                                                 regulation of blood pressure
+      12921                                        cellular response to oxidative stress
+      36831                   positive regulation of I-kappaB kinase/NF-kappaB signaling
+      724                                                  cell population proliferation
+      6164                                                             apoptotic process
+      42909                                                 regulation of blood pressure
+      22401                                   locomotion involved in locomotory behavior
+      15833                                                establishment of skin barrier
+      18400                                                            heart development
+      10381                                                cell population proliferation
+      16516                                                             feeding behavior
+      43762                                      regulation of glucose metabolic process
+      22822                                              locomotory exploration behavior
+      42381                                                 protein modification process
+      39089                                          positive regulation of MAPK cascade
+      5040                                                                  angiogenesis
+      36273                                 positive regulation of ERK1 and ERK2 cascade
+      31447                                     positive regulation of apoptotic process
+      24896                                                                mitochondrion
+      9666                                                          cell differentiation
+      22979                                                             long-term memory
+      34935 positive regulation of cytokine production involved in inflammatory response
+      46840                                                              spermatogenesis
+      10014                                                               cell migration
+      41069             positive regulation of reactive oxygen species metabolic process
+      35355                                    positive regulation of dopamine secretion
+      21291                                                             limb development
+      16777                                    gamma-aminobutyric acid signaling pathway
+      31830                                     positive regulation of apoptotic process
+      20592                                                        inflammatory response
+      29612                                                         neutrophil migration
+      6410                                                             apoptotic process
+      45185                                                 response to oxidative stress
+      2016                                                                      learning
+      44900                                                         response to nutrient
+      44293                                     response to endoplasmic reticulum stress
+      23718                                                                       memory
+      37204                   positive regulation of I-kappaB kinase/NF-kappaB signaling
+      12700                                        cellular response to oxidative stress
+      49251                                                                 vasodilation
+      24367                                                        mitochondrial fission
+      3822                      positive regulation of nitric oxide biosynthetic process
+      23373                                            lysine-acetylated histone binding
+      24189                                                   microglial cell activation
+      32884                                  positive regulation of cell differentiation
+      23744                                                                       memory
+      19541                                                      hippocampus development
+      9424                                                          cell differentiation
+      39141                          positive regulation of mitochondrial depolarization
+      25304                                                                mitochondrion
+      771                                                  cell population proliferation
+      5207                                                                  angiogenesis
+      27798                         negative regulation of cell population proliferation
+      49210                                                             vasoconstriction
+      42469                                                protein poly-ADP-ribosylation
+      27759                         negative regulation of cell population proliferation
+      47481                                                    steroid metabolic process
+      7883                                                               bone remodeling
+      28716                       negative regulation of protein localization to nucleus
+      1803                                                         inflammatory response
+      27696                         negative regulation of cell population proliferation
+      313                                                              apoptotic process
+      17206                                                          glucose homeostasis
+      21864                                                      lipid metabolic process
+            phenotype_id                                disease disease_id
+      3552    GO:0040018                                   Pain    D010146
+      37891   GO:0046330                               Fibrosis    D005355
+      39571   GO:0043525                          Hyperglycemia    D006943
+      10624   GO:0008283                           Hyperalgesia    D006930
+      127     GO:0006915 Chemical and Drug Induced Liver Injury    D056486
+      17101   GO:0042593              Diabetes Mellitus, Type 2    D003924
+      46913   GO:0007283                     Movement Disorders    D009069
+      31208   GO:0045766                     Reperfusion Injury    D015427
+      30206   GO:0001503                    Myocardial Ischemia    D017202
+      46698   GO:0007283 Chemical and Drug Induced Liver Injury    D056486
+      7715    GO:0030282               Bone Diseases, Metabolic    D001851
+      32629   GO:0010508        Cell Transformation, Neoplastic    D002471
+      49828   GO:0008542                 Disease Models, Animal    D004195
+      38563   GO:0043410             Craniofacial Abnormalities    D019465
+      12438   GO:0071407                           Hepatomegaly    D006529
+      1491    GO:0007507                  Neoplasm Invasiveness    D009361
+      19199   GO:0003015              Gastrointestinal Diseases    D005767
+      26156   GO:0042552                       Cardiomyopathies    D009202
+      28445   GO:0050768                           Cardiomegaly    D006332
+      36319   GO:0070374                            Weight Loss    D015431
+      43127   GO:0008217                           Inflammation    D007249
+      30949   GO:0045766                                Gliosis    D005911
+      26359   GO:0070266        Cell Transformation, Neoplastic    D002471
+      49588   GO:0042311                    Myocardial Ischemia    D017202
+      533     GO:0016477                  Scleroderma, Systemic    D012595
+      46963   GO:0007283                     Nerve Degeneration    D009410
+      42341   GO:0036211              Carcinoma, Hepatocellular    D006528
+      21976   GO:0006629                   Hypercholesterolemia    D006937
+      22843   GO:0007616                                Amnesia    D000647
+      25434   GO:0005739                   Pancreatic Neoplasms    D010190
+      39744   GO:0043525                     Reperfusion Injury    D015427
+      22050   GO:0006629                        Liver Cirrhosis    D008103
+      7681    GO:0060348                           Osteoporosis    D010024
+      24269   GO:0030901             Craniofacial Abnormalities    D019465
+      11381   GO:0006874                           Hepatomegaly    D006529
+      26074   GO:0035264                         Microphthalmos    D008850
+      42818   GO:0008217                    Acute Kidney Injury    D058186
+      12921   GO:0034599                   Pancreatic Neoplasms    D010190
+      36831   GO:0043123                         Cardiotoxicity    D066126
+      724     GO:0008283                  Neoplasm Invasiveness    D009361
+      6164    GO:0006915                         HIV Infections    D015658
+      42909   GO:0008217                Cardiomyopathy, Dilated    D002311
+      22401   GO:0031987             Craniofacial Abnormalities    D019465
+      15833   GO:0061436                    Neoplasm Metastasis    D009362
+      18400   GO:0007507                         Brain Ischemia    D002545
+      10381   GO:0008283              Carcinoma, Hepatocellular    D006528
+      16516   GO:0007631                       Long QT Syndrome    D008133
+      43762   GO:0010906                            Proteinuria    D011507
+      22822   GO:0035641                     Nerve Degeneration    D009410
+      42381   GO:0036211          Liver Cirrhosis, Experimental    D008106
+      39089   GO:0043410              Urinary Bladder Neoplasms    D001749
+      5040    GO:0001525                       Breast Neoplasms    D001943
+      36273   GO:0070374                                 Stroke    D020521
+      31447   GO:0043065                       Breast Neoplasms    D001943
+      24896   GO:0005739                            Fatty Liver    D005234
+      9666    GO:0030154                 Ventricular Remodeling    D020257
+      22979   GO:0007616                 Motor Skills Disorders    D019957
+      34935   GO:1900017                    Pulmonary Emphysema    D011656
+      46840   GO:0007283               Intracranial Hemorrhages    D020300
+      10014   GO:0016477                          Hyperglycemia    D006943
+      41069   GO:2000379              Carcinoma, Hepatocellular    D006528
+      35355   GO:0033603          Amphetamine-Related Disorders    D019969
+      21291   GO:0060173                      Stomach Neoplasms    D013274
+      16777   GO:0007214                            Bradycardia    D001919
+      31830   GO:0043065                    Glucose Intolerance    D018149
+      20592   GO:0006954                           Pancreatitis    D010195
+      29612   GO:1990266                           Osteoporosis    D010024
+      6410    GO:0006915                         Lung Neoplasms    D008175
+      45185   GO:0006979                           Cardiomegaly    D006332
+      2016    GO:0007612                     Pulmonary Fibrosis    D011658
+      44900   GO:0007584                  Myocardial Infarction    D009203
+      44293   GO:0034976                       Cardiomyopathies    D009202
+      23718   GO:0007613                 Disease Models, Animal    D004195
+      37204   GO:0043123                    Pulmonary Emphysema    D011656
+      12700   GO:0034599                       Cardiomyopathies    D009202
+      49251   GO:0042311                                 Anemia    D000740
+      24367   GO:0000266                           Microcephaly    D008831
+      3822    GO:0045429                      Stomach Neoplasms    D013274
+      23373   GO:0070577              Heart Defects, Congenital    D006330
+      24189   GO:0001774                         Osteoarthritis    D010003
+      32884   GO:0045597          Liver Cirrhosis, Experimental    D008106
+      23744   GO:0007613                            Fatty Liver    D005234
+      19541   GO:0021766                Subarachnoid Hemorrhage    D013345
+      9424    GO:0030154                         Lung Neoplasms    D008175
+      39141   GO:0051901                              Hepatitis    D006505
+      25304   GO:0005739                                 Nausea    D009325
+      771     GO:0008283                      Stomach Neoplasms    D013274
+      5207    GO:0001525                    Disease Progression    D018450
+      27798   GO:0008285                 Ventricular Remodeling    D020257
+      49210   GO:0042310           Psychoses, Substance-Induced    D011605
+      42469   GO:0070212                           Inflammation    D007249
+      27759   GO:0008285                            Tachycardia    D013610
+      47481   GO:0008202                           Hepatomegaly    D006529
+      7883    GO:0046849          Amphetamine-Related Disorders    D019969
+      28716   GO:1900181                    Cognition Disorders    D003072
+      1803    GO:0006954                         Lung Neoplasms    D008175
+      27696   GO:0008285                                 Sepsis    D018805
+      313     GO:0006915                     Nerve Degeneration    D009410
+      17206   GO:0042593                           Hypertension    D006973
+      21864   GO:0006629                    Disease Progression    D018450
 
