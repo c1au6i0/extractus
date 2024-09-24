@@ -7,6 +7,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/c1au6i0/extractus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractus/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `extractus` is a comprehensive R package designed to simplify querying
@@ -56,9 +57,6 @@ chem_info <- extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
 #> Querying Formaldehyde. OK (HTTP 200).
 #> Querying Aflatoxin B1. OK (HTTP 200).
 #> ℹ Querying 712 and 186907.
-```
-
-``` r
 names(chem_info)
 #>  [1] "cid"                         "iupac_name"                 
 #>  [3] "cas_rn"                      "cid_all"                    
@@ -99,9 +97,6 @@ ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 #> ℹ Getting PubChem IDS...
 #> Querying 64-17-5. OK (HTTP 200).
 #> Querying 702. OK (HTTP 200).
-```
-
-``` r
 fema_info <- extr_pubchem_fema(casrn = c("50-00-0", "123-68-2"))
 #> Querying 50-00-0. OK (HTTP 200).
 #> Querying 712. Not Found (HTTP 404).
@@ -124,9 +119,6 @@ screening assays, in vivo studies, and computational models.
 ice_data<- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
 #> Sending request to ICE database...
 #> Request succeeded with status code: 200
-```
-
-``` r
 names(ice_data)
 #>  [1] "assay"              "endpoint"           "substanceType"     
 #>  [4] "casrn"              "qsarReadyId"        "value"             
@@ -154,9 +146,6 @@ iris_info <- extr_iris(c("glyphosate", "50-00-0"))
 #> Request succeeded with status code: 200
 #> Quering 50-00-0 to EPA IRIS database...
 #> Request succeeded with status code: 200
-```
-
-``` r
 names(iris_info)
 #> [1] "chemical_name"                 "casrn"                        
 #> [3] "exposure_route"                "assessment_type"              
@@ -180,9 +169,6 @@ info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
 #> ℹ Getting info from CompTox...
 #> 
 #> Request succeeded with status code: 200
-```
-
-``` r
 names(info_comptox)
 #>  [1] "input"                                                         
 #>  [2] "found_by"                                                      
@@ -297,9 +283,6 @@ ctd_association <- extr_ctd(
  )
 #> Sending request to CTD database...
 #> Request succeeded with status code: 200
-```
-
-``` r
 
 
  # Get expresssion data
@@ -309,9 +292,6 @@ ctd_association <- extr_ctd(
     action_types = "expression")
 #> Sending request to CTD database...
 #> Request succeeded with status code: 200
-```
-
-``` r
  
 names(ctd_expression)
 #>  [1] "x_input"             "chemical_name"       "chemical_id"        
@@ -341,9 +321,6 @@ tetramer_data <- extr_tetramer(
 #> Request succeeded with status code: 200
 #> Sending request to CTD database for tetramer data for ethanol...
 #> Request succeeded with status code: 200
-```
-
-``` r
 
 names(tetramer_data)
 #> [1] "query"        "chemical"     "chemical_id"  "gene"         "gene_id"     
