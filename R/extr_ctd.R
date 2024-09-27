@@ -119,7 +119,7 @@ extr_ctd <- function(
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {e$message}")
+      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
 
@@ -207,7 +207,7 @@ extr_tetramer_ <- function(
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {e$message}")
+      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
 

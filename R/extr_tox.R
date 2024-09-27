@@ -39,7 +39,7 @@ extr_iris_ <- function(keyword = NULL,
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {e$message}")
+      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
 
@@ -54,7 +54,7 @@ extr_iris_ <- function(keyword = NULL,
         rvest::html_table()
     },
     error = function(e) {
-      cli::cli_abort("Failed to parse the HTML content: {e$message}")
+      cli::cli_abort("Failed to parse the HTML content: {conditionMessage(e)}")
     }
   )
 
@@ -283,7 +283,7 @@ extr_comptox <- function(ids,
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {e$message}")
+      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
 
@@ -302,7 +302,7 @@ extr_comptox <- function(ids,
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {e$message}")
+      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
 
@@ -364,7 +364,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {e$message}")
+      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
 
@@ -391,10 +391,10 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     },
     error = function(e) {
       if (grepl("Unexpected content type \"text/plain\"", e$message)) {
-        cli::cli_warn("It seems that the ids were not found in ICE: {e$message}")
+        cli::cli_warn("It seems that the ids were not found in ICE: {conditionMessage(e)}")
         NULL # Or another suitable value
       } else {
-        cli::cli_abort("An unexpected error occurred: {e$message}")
+        cli::cli_abort("An unexpected error occurred: {conditionMessage(e)}")
       }
     }
   )
@@ -410,7 +410,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
           as.data.frame()
       },
       error = function(e) {
-        cli::cli_abort("Failed to parse the JSON content: {e$message}")
+        cli::cli_abort("Failed to parse the JSON content: {conditionMessage(e)}")
       }
     )
   }
