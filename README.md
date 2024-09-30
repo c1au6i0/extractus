@@ -24,8 +24,8 @@ To communicate to Pubchem, `extractus` relies on the package`webchem`.
 You can install the package from GitHub:
 
 ``` r
-# Install devtools if not already installed
-if (!requireNamespace("devtools", quietly = TRUE)) {
+# Install pak if not already installed
+if (!requireNamespace("pak", quietly = TRUE)) {
   install.packages("pak")
 }
 
