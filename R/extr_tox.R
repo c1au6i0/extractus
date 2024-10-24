@@ -3,7 +3,7 @@
 #' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keyword and cancer types. It retrieves and parses the HTML content from the response.
 #' Note that if `keyword` is not provide all dataset are retrieved.
 #'
-#' @param keyword A single character string specifying the IUPAC name or the CASRN for the search.
+#' @param casrn A single character string specifying the IUPAC name or the CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
@@ -12,9 +12,9 @@
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @examples
 #' \dontrun{
-#' dat <- extr_iris("acephate")
+#' dat <- extr_iris("1332-21-4")
 #' }
-extr_iris_ <- function(keyword = NULL,
+extr_iris_ <- function(casrn = NULL,
                        cancer_types = c("non_cancer", "cancer"),
                        verify_ssl = FALSE,
                        ...) {
@@ -23,14 +23,14 @@ extr_iris_ <- function(keyword = NULL,
 
   # Construct query parameters
   query_params <- list(
-    keyword = keyword,
+    keyword = casrn,
     cancer_or_no_cancer = cancer_types
   )
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   # Perform the request and get a response
-  cli::cli_inform("Quering {.field {keyword}} to EPA IRIS database...")
+  cli::cli_inform("Quering {.field {casrn}} to EPA IRIS database...")
   resp <- tryCatch(
     {
       httr2::request(base_url = "https://cfpub.epa.gov/ncea/iris/search/basic/") |>
@@ -65,10 +65,9 @@ extr_iris_ <- function(keyword = NULL,
 #' @export
 #' @examples
 #' \dontrun{
-#' dat <- extr_iris("glyphosate")
-#' dat <- extr_iris(c("glyphosate", "50-00-0"))
+#' dat <- extr_iris(c("1332-21-4", "50-00-0"))
 #' }
-extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) {
+extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
     cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
   }
@@ -76,15 +75,17 @@ extr_iris <- function(keyword = NULL, cancer_types = c("non_cancer", "cancer")) 
   # Check if online
   check_internet()
 
-  if (length(keyword) > 1) {
-    dat <- lapply(keyword, extr_iris_, cancer_types = cancer_types)
+  if (length(casrn) > 1) {
+    dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types)
     out <- do.call(rbind, dat)
   } else {
-    out <- extr_iris_(keyword = keyword, cancer_types = cancer_types)
+    out <- extr_iris_(casrn = casrn, cancer_types = cancer_types)
   }
 
-  out |>
+  out_cl <- out |>
     janitor::clean_names()
+
+  out_cl[out_cl$casrn %in% casrn, ]
 }
 
 
