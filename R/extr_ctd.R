@@ -75,14 +75,11 @@ extr_ctd <- function(
     cli::cli_abort("The argument {.field {input_terms}} is required.")
   }
 
-  # Check if online
+
+  base_url <- "https://ctdbase.org/tools/batchQuery.go"
   check_internet()
 
-  # Define the base URL
-  base_url <- "https://ctdbase.org/tools/batchQuery.go"
 
-
-  # Define the parameters for the request
   params <- list(
     inputType = category,
     inputTerms = NULL, # this is add after
@@ -167,12 +164,8 @@ extr_tetramer_ <- function(
     cli::cli_abort("The argument {.field {chem}} is required.")
   }
 
-  # Check if online
-  check_internet()
-
   # Define the base URL
   base_url <- "https://ctdbase.org/query.go"
-
 
 
   # Define the parameters for the request
@@ -299,7 +292,11 @@ extr_tetramer <- function(
     out <- do.call(rbind, dat)
   } else {
 
-    out <- extr_tetramer_(
+  base_url <- "https://ctdbase.org/query.go"
+  check_internet()
+
+
+  out <- extr_tetramer_(
       chem = chem,
       disease = disease,
       gene = gene,

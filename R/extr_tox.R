@@ -19,7 +19,7 @@ extr_iris_ <- function(casrn = NULL,
                        verify_ssl = FALSE,
                        ...) {
   # Check if online
-  check_internet()
+  base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
 
   # Construct query parameters
   query_params <- list(
@@ -33,7 +33,7 @@ extr_iris_ <- function(casrn = NULL,
   cli::cli_inform("Quering {.field {casrn}} to EPA IRIS database...")
   resp <- tryCatch(
     {
-      httr2::request(base_url = "https://cfpub.epa.gov/ncea/iris/search/basic/") |>
+      httr2::request(base_url = base_url) |>
         httr2::req_url_query(!!!query_params, .multi = "explode") |>
         httr2::req_options(!!!libcurl_opt) |>
         httr2::req_perform()
@@ -73,6 +73,7 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   }
 
   # Check if online
+  base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
   check_internet()
 
   if (length(casrn) > 1) {
@@ -251,10 +252,8 @@ extr_comptox <- function(ids,
     cli::cli_abort("The argument {.field ids} is required.")
   }
 
-  # Check if online
+  base_url <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/?lb2ljny4"
   check_internet()
-
-  cli::cli_alert_info("Getting CompTox info...")
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
@@ -270,7 +269,6 @@ extr_comptox <- function(ids,
     downloadType = "CSV"
   )
 
-  base_url <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/?lb2ljny4"
 
   cli::cli_alert_info("Sending request to CompTox...")
 
@@ -291,8 +289,10 @@ extr_comptox <- function(ids,
 
   check_status_code(post_result)
 
-  base_url_down <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/content/"
   response_body <- httr2::resp_body_string(post_result)
+
+  # base url for download
+  base_url_down <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/content/"
 
   cli::cli_alert_info("Getting info from CompTox...")
 
@@ -347,6 +347,9 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   }
 
   # Check if online
+  base_url <- "https://ice.ntp.niehs.nih.gov/api/v1/search"
+  #check_internet()
+  # Unfortunatelly this would fail see #7
   check_internet()
 
   # Perform the request and get a response
@@ -359,7 +362,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 
   resp <- tryCatch(
     {
-      httr2::request("https://ice.ntp.niehs.nih.gov/api/v1/search") |>
+      httr2::request(base_url) |>
         httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
         httr2::req_options(!!!libcurl_opt) |>
         httr2::req_perform()
@@ -448,7 +451,7 @@ extr_tox <- function(casrn) {
   # names(ice_dat_list) <- names(assays_to_filt)
 
 
-  iris_filt <- extr_iris(keyword = casrn)
+  iris_filt <- extr_iris(casrn = casrn)
 
   list(ghs_dat = ghs_dat, iris = iris_filt, comptox = comptox_list, ice = ice_dat)
 

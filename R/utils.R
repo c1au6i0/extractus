@@ -93,19 +93,84 @@ write_dataframes_to_excel <- function(df_list, filename) {
   cli::cli_alert_info("Excell file written in {filename}...")
 }
 
-#' Check Internet Connection
+#' Check Internet
 #'
-#' This function checks if the computer is connected to the internet.
-#' If not connected, it stops execution with an error message.
+#' Wrapper around {pingr::is_online} to print message
+#' a better message.
 #'
-#' @return Prints a message indicating whether the computer is connected to the internet.
-check_internet <- function() {
-  if (!pingr::is_online()) {
-    cli::cli_abort("It seems that you are not connected to internet")
+#' @param verbose Boolean to display messages.
+check_internet <- function(verbose = TRUE) {
+
+  if (isTRUE(verbose)){
+    cli::cli_alert_info("Checking Internet Connection...")
   }
+
+  if (isFALSE(pingr::is_online())) {
+    cli::cli_abort("It seems that you are not connected to internet!")
+    out <- FALSE
+  } else {
+    cli::cli_alert_info("Internet connection OK...")
+    out <- TRUE
+  }
+
+  out
 }
 
 
+
+#' check_url
+#'
+#' Check if url can be read... so if it is up. This function is a present from
+#' Lucio Queiroz.
+#'
+#' @param url_to_check  String of url to check. Note that `http://`  uses port 80
+#' whereas `http://` uses port 443.
+#'
+#' @return Boolean
+check_url <- function(url_to_check) {
+  internet_check <- tryCatch(
+    suppressWarnings(
+    {
+        url_con <- base::url(
+          description = url_to_check,
+          open = "r"
+        )
+
+
+      base::readLines(url_con, n = 1)
+      base::close(url_con)
+      TRUE
+    }
+    ),
+    error = function(e) {
+      FALSE
+    }
+  )
+  return(internet_check)
+}
+
+
+#' Check Url and Internet
+#'
+#' Stop if URL unreachable or not online.
+#'
+#' @param url_to_check string, url.
+check_url_internet <- function(url_to_check) {
+
+  url_up <- check_url(url_to_check)
+
+  if (isFALSE(url_up)) {
+
+    cli::cli_alert_info("URL {.url {url_to_check}} not reachable!")
+
+    internet_ok <- check_internet()
+
+    if (isTRUE(internet_ok)) {
+      cli::cli_abort("Error: {.url {url_to_check}} is down or misspelled!")
+    }
+
+    }
+}
 
 
 #' Verify SSL

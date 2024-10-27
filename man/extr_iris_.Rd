@@ -5,14 +5,14 @@
 \title{Extract Data from EPA IRIS Database}
 \usage{
 extr_iris_(
-  keyword = NULL,
+  casrn = NULL,
   cancer_types = c("non_cancer", "cancer"),
   verify_ssl = FALSE,
   ...
 )
 }
 \arguments{
-\item{keyword}{A single character string specifying the IUPAC name or the CASRN for the search.}
+\item{casrn}{A single character string specifying the IUPAC name or the CASRN for the search.}
 
 \item{cancer_types}{A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".}
 
@@ -29,7 +29,7 @@ Note that if \code{keyword} is not provide all dataset are retrieved.
 }
 \examples{
 \dontrun{
-dat <- extr_iris("acephate")
+dat <- extr_iris("1332-21-4")
 }
 }
 \seealso{

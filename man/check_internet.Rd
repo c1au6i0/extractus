@@ -2,14 +2,14 @@
 % Please edit documentation in R/utils.R
 \name{check_internet}
 \alias{check_internet}
-\title{Check Internet Connection}
+\title{Check Internet}
 \usage{
-check_internet()
+check_internet(verbose = TRUE)
 }
-\value{
-Prints a message indicating whether the computer is connected to the internet.
+\arguments{
+\item{verbose}{Boolean to display messages.}
 }
 \description{
-This function checks if the computer is connected to the internet.
-If not connected, it stops execution with an error message.
+Wrapper around {pingr::is_online} to print message
+a better message.
 }
