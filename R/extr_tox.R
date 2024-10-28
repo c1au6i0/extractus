@@ -34,6 +34,7 @@ extr_iris_ <- function(casrn = NULL,
   resp <- tryCatch(
     {
       httr2::request(base_url = base_url) |>
+        httr2::req_retry(max_tries = 2, backoff = ~3) |>
         httr2::req_url_query(!!!query_params, .multi = "explode") |>
         httr2::req_options(!!!libcurl_opt) |>
         httr2::req_perform()
@@ -275,7 +276,7 @@ extr_comptox <- function(ids,
   post_result <- tryCatch(
     {
       httr2::request(base_url) |>
-        httr2::req_retry(max_tries = 5, max_seconds = 10) |>
+        httr2::req_retry(max_tries = 2, backoff = ~3) |>
         httr2::req_body_json(params) |>
         httr2::req_options(!!!libcurl_opt) |>
         httr2::req_method("POST") |>
@@ -368,6 +369,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   resp <- tryCatch(
     {
       httr2::request(base_url) |>
+        httr2::req_retry(max_tries = 2, backoff = ~3) |>
         httr2::req_body_json(list(chemids = casrn, assays = assays), auto_unbox = FALSE) |>
         httr2::req_options(!!!libcurl_opt) |>
         httr2::req_perform()
