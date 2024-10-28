@@ -116,7 +116,9 @@ screening assays, in vivo studies, and computational models.
 (ICE) database for toxicological and exposure-related data.
 
 ``` r
-ice_data<- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
+ice_data <- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> Sending request to ICE database...
 #> Request succeeded with status code: 200
 names(ice_data)
@@ -142,6 +144,8 @@ of CASRN or IUPAC names of chemicals.
 
 ``` r
 iris_info <- extr_iris(c("glyphosate", "50-00-0"))
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> Quering glyphosate to EPA IRIS database...
 #> Request succeeded with status code: 200
 #> Quering 50-00-0 to EPA IRIS database...
@@ -159,86 +163,23 @@ The CompTox Chemistry Dashboard, managed by the EPA, provides access to
 data on chemical structures, properties, and associated bioactivity
 data. It integrates data from various sources to support chemical safety
 assessments. ``extr_comptox\` extracts data from the CompTox Chemistry
-Dashboard using both CASRN and IUPAC names of chemicals.
+Dashboard using both CASRN and IUPAC names of chemicals and returns a
+list of **dataframes**.
 
 ``` r
 info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
-#> ℹ Getting CompTox info...
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> ℹ Sending request to CompTox...
 #> Request succeeded with status code: 202
 #> ℹ Getting info from CompTox...
 #> 
 #> Request succeeded with status code: 200
 names(info_comptox)
-#>  [1] "input"                                                         
-#>  [2] "found_by"                                                      
-#>  [3] "dtxsid"                                                        
-#>  [4] "preferred_name"                                                
-#>  [5] "dtxcid"                                                        
-#>  [6] "casrn"                                                         
-#>  [7] "inchikey"                                                      
-#>  [8] "iupac_name"                                                    
-#>  [9] "smiles"                                                        
-#> [10] "inchi_string"                                                  
-#> [11] "ms_ready_smiles"                                               
-#> [12] "qsar_ready_smiles"                                             
-#> [13] "molecular_formula"                                             
-#> [14] "average_mass"                                                  
-#> [15] "monoisotopic_mass"                                             
-#> [16] "qc_level"                                                      
-#> [17] "safety_data"                                                   
-#> [18] "expocast"                                                      
-#> [19] "data_sources"                                                  
-#> [20] "toxval_data"                                                   
-#> [21] "number_of_pubmed_articles"                                     
-#> [22] "pubchem_data_sources"                                          
-#> [23] "cpdat_count"                                                   
-#> [24] "iris_link"                                                     
-#> [25] "pprtv_link"                                                    
-#> [26] "wikipedia_article"                                             
-#> [27] "qc_notes"                                                      
-#> [28] "abstract_shifter"                                              
-#> [29] "toxprint_fingerprint"                                          
-#> [30] "actor_report"                                                  
-#> [31] "synonym_identifier"                                            
-#> [32] "related_relationship"                                          
-#> [33] "associated_toxcast_assays"                                     
-#> [34] "toxval_details"                                                
-#> [35] "chemical_properties_details"                                   
-#> [36] "bioconcentration_factor_test_pred"                             
-#> [37] "boiling_point_degc_test_pred"                                  
-#> [38] "x48hr_daphnia_lc50_mol_l_test_pred"                            
-#> [39] "density_g_cm_3_test_pred"                                      
-#> [40] "devtox_test_pred"                                              
-#> [41] "x96hr_fathead_minnow_mol_l_test_pred"                          
-#> [42] "flash_point_degc_test_pred"                                    
-#> [43] "melting_point_degc_test_pred"                                  
-#> [44] "ames_mutagenicity_test_pred"                                   
-#> [45] "oral_rat_ld50_mol_kg_test_pred"                                
-#> [46] "surface_tension_dyn_cm_test_pred"                              
-#> [47] "thermal_conductivity_mw_m_k_test_pred"                         
-#> [48] "tetrahymena_pyriformis_igc50_mol_l_test_pred"                  
-#> [49] "viscosity_cp_cp_test_pred"                                     
-#> [50] "vapor_pressure_mmhg_test_pred"                                 
-#> [51] "water_solubility_mol_l_test_pred"                              
-#> [52] "atmospheric_hydroxylation_rate_aoh_cm3_molecule_sec_opera_pred"
-#> [53] "bioconcentration_factor_opera_pred"                            
-#> [54] "biodegradation_half_life_days_days_opera_pred"                 
-#> [55] "boiling_point_degc_opera_pred"                                 
-#> [56] "henrys_law_atm_m3_mole_opera_pred"                             
-#> [57] "opera_km_days_opera_pred"                                      
-#> [58] "octanol_air_partition_coeff_logkoa_opera_pred"                 
-#> [59] "soil_adsorption_coefficient_koc_l_kg_opera_pred"               
-#> [60] "octanol_water_partition_logp_opera_pred"                       
-#> [61] "melting_point_degc_opera_pred"                                 
-#> [62] "opera_pkaa_opera_pred"                                         
-#> [63] "opera_pkab_opera_pred"                                         
-#> [64] "vapor_pressure_mmhg_opera_pred"                                
-#> [65] "water_solubility_mol_l_opera_pred"                             
-#> [66] "expocast_median_exposure_prediction_mg_kg_bw_day"              
-#> [67] "nhanes"                                                        
-#> [68] "toxcast_number_of_assays_total"                                
-#> [69] "toxcast_percent_active"
+#> [1] "comptox_cover_sheet"           "comptox_main_data"            
+#> [3] "comptox_abstract_sifter"       "comptox_synonym_identifier"   
+#> [5] "comptox_related_relationships" "comptox_toxcast_assays_ac50"  
+#> [7] "comptox_toxval_details"        "comptox_chemical_properties"
 ```
 
 ### Tox Info
@@ -254,10 +195,15 @@ info_tox <- extr_tox(casrn = c("Aspirin", "50-00-0"))
 #> ℹ Getting PubChem IDS...
 #> Querying 50-00-0. OK (HTTP 200).
 #> Querying 712. OK (HTTP 200).
-#> ℹ Getting CompTox info...
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> ℹ Sending request to CompTox...
 #> Request succeeded with status code: 202ℹ Getting info from CompTox...
-#> Request succeeded with status code: 200Sending request to ICE database...Request succeeded with status code: 200Quering Aspirin to EPA IRIS database...Request succeeded with status code: 200Quering 50-00-0 to EPA IRIS database...Request succeeded with status code: 200
+#> Request succeeded with status code: 200ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
+#> Sending request to ICE database...Request succeeded with status code: 200ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
+#> Quering Aspirin to EPA IRIS database...Request succeeded with status code: 200Quering 50-00-0 to EPA IRIS database...Request succeeded with status code: 200
 ```
 
 ### CTD Database
@@ -281,6 +227,8 @@ ctd_association <- extr_ctd(
    action_types = "ANY",
    ontology = c("go_bp", "go_cc")
  )
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> Sending request to CTD database...
 #> Request succeeded with status code: 200
 
@@ -290,8 +238,9 @@ ctd_association <- extr_ctd(
     report_type = "cgixns",
     category = "chem",
     action_types = "expression")
-#> Sending request to CTD database...
-#> Request succeeded with status code: 200
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
+#> Sending request to CTD database...Request succeeded with status code: 200
  
 names(ctd_expression)
 #>  [1] "x_input"             "chemical_name"       "chemical_id"        
