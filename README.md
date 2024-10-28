@@ -11,11 +11,11 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 `extractus` is a comprehensive R package designed to simplify querying
-various chemical, toxicological, and biological databases such as
-PubChem, the Comparative Toxicogenomics Database (CTD), EPA’s ICE
-(Integrated Chemical Environment), EPA’s IRIS (Integrated Risk
-Information System), and EPA’s COMPTOX. The package facilitates
-interaction with APIs, providing curated and user-friendly outputs.
+various chemical, toxicological, and biological databases such as the
+Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated
+Chemical Environment), EPA’s IRIS (Integrated Risk Information System),
+EPA’s COMPTOX and PubChem. The package facilitates interaction with
+APIs, providing curated and user-friendly outputs.
 
 To communicate to Pubchem, `extractus` relies on the package`webchem`.
 
@@ -35,76 +35,6 @@ pak::pkg_install("c1au6i0/extractus")
 
 ## Features
 
-### PubChem Database
-
-PubChem is a public repository for information on the biological
-activities of small molecules. It provides information on chemical
-structures, identifiers, chemical and physical properties, biological
-activities, safety and toxicity information, patents, literature
-citations, and more.
-
-A series of functions that rely on the `webchem` package are used to
-extract chemical information, Globally Harmonized System (GHS)
-classification data, or flavor classification from PubChem.
-
-The function `extr_chem_info` retrieves chemical information of
-IUPAC-named chemicals. A warning is displayed if the chemical is not
-found.
-
-``` r
-library(extractus)
-chem_info <- extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
-#> Querying Formaldehyde. OK (HTTP 200).
-#> Querying Aflatoxin B1. OK (HTTP 200).
-#> ℹ Querying 712 and 186907.
-names(chem_info)
-#>  [1] "cid"                         "iupac_name"                 
-#>  [3] "cas_rn"                      "cid_all"                    
-#>  [5] "cas_rn_all"                  "molecular_formula"          
-#>  [7] "molecular_weight"            "canonical_smiles"           
-#>  [9] "isomeric_smiles"             "in_ch_i"                    
-#> [11] "in_ch_i_key"                 "iupac_name_y"               
-#> [13] "x_log_p"                     "exact_mass"                 
-#> [15] "monoisotopic_mass"           "tpsa"                       
-#> [17] "complexity"                  "charge"                     
-#> [19] "h_bond_donor_count"          "h_bond_acceptor_count"      
-#> [21] "rotatable_bond_count"        "heavy_atom_count"           
-#> [23] "isotope_atom_count"          "atom_stereo_count"          
-#> [25] "defined_atom_stereo_count"   "undefined_atom_stereo_count"
-#> [27] "bond_stereo_count"           "defined_bond_stereo_count"  
-#> [29] "undefined_bond_stereo_count" "covalent_unit_count"        
-#> [31] "volume3d"                    "x_steric_quadrupole3d"      
-#> [33] "y_steric_quadrupole3d"       "z_steric_quadrupole3d"      
-#> [35] "feature_count3d"             "feature_acceptor_count3d"   
-#> [37] "feature_donor_count3d"       "feature_anion_count3d"      
-#> [39] "feature_cation_count3d"      "feature_ring_count3d"       
-#> [41] "feature_hydrophobe_count3d"  "conformer_model_rmsd3d"     
-#> [43] "effective_rotor_count3d"     "conformer_count3d"          
-#> [45] "fingerprint2d"               "query"
-```
-
-Two functions are used to extract specific sections of PubChem chemical
-information using CASRN:
-
-- `extr_pubchem_ghs` extracts Globally Harmonized System (GHS) codes.
-- `extr_pubchem_fema` extracts flavor profile data.”
-
-``` r
-ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
-#> ℹ Getting PubChem IDS...
-#> Querying 50-00-0. OK (HTTP 200).
-#> Querying 712. OK (HTTP 200).
-#> ℹ Getting PubChem IDS...
-#> Querying 64-17-5. OK (HTTP 200).
-#> Querying 702. OK (HTTP 200).
-fema_info <- extr_pubchem_fema(casrn = c("50-00-0", "123-68-2"))
-#> Querying 50-00-0. OK (HTTP 200).
-#> Querying 712. Not Found (HTTP 404).
-#> ℹ FEMA for 50-00-0 not found!
-#> Querying 123-68-2. OK (HTTP 200).
-#> Querying 31266. OK (HTTP 200).
-```
-
 ### ICE Database
 
 The Integrated Chemical Environment (ICE) database, managed by the EPA,
@@ -116,6 +46,7 @@ screening assays, in vivo studies, and computational models.
 (ICE) database for toxicological and exposure-related data.
 
 ``` r
+library(extractus)
 ice_data <- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
 #> ℹ Checking Internet Connection...
 #> ℹ Internet connection OK...
@@ -274,4 +205,73 @@ tetramer_data <- extr_tetramer(
 names(tetramer_data)
 #> [1] "query"        "chemical"     "chemical_id"  "gene"         "gene_id"     
 #> [6] "phenotype"    "phenotype_id" "disease"      "disease_id"
+```
+
+### PubChem Database
+
+PubChem is a public repository for information on the biological
+activities of small molecules. It provides information on chemical
+structures, identifiers, chemical and physical properties, biological
+activities, safety and toxicity information, patents, literature
+citations, and more.
+
+A series of functions that rely on the `webchem` package are used to
+extract chemical information, Globally Harmonized System (GHS)
+classification data, or flavor classification from PubChem.
+
+The function `extr_chem_info` retrieves chemical information of
+IUPAC-named chemicals. A warning is displayed if the chemical is not
+found.
+
+``` r
+chem_info <- extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
+#> Querying Formaldehyde. OK (HTTP 200).
+#> Querying Aflatoxin B1. OK (HTTP 200).
+#> ℹ Querying 712 and 186907.
+names(chem_info)
+#>  [1] "cid"                         "iupac_name"                 
+#>  [3] "cas_rn"                      "cid_all"                    
+#>  [5] "cas_rn_all"                  "molecular_formula"          
+#>  [7] "molecular_weight"            "canonical_smiles"           
+#>  [9] "isomeric_smiles"             "in_ch_i"                    
+#> [11] "in_ch_i_key"                 "iupac_name_y"               
+#> [13] "x_log_p"                     "exact_mass"                 
+#> [15] "monoisotopic_mass"           "tpsa"                       
+#> [17] "complexity"                  "charge"                     
+#> [19] "h_bond_donor_count"          "h_bond_acceptor_count"      
+#> [21] "rotatable_bond_count"        "heavy_atom_count"           
+#> [23] "isotope_atom_count"          "atom_stereo_count"          
+#> [25] "defined_atom_stereo_count"   "undefined_atom_stereo_count"
+#> [27] "bond_stereo_count"           "defined_bond_stereo_count"  
+#> [29] "undefined_bond_stereo_count" "covalent_unit_count"        
+#> [31] "volume3d"                    "x_steric_quadrupole3d"      
+#> [33] "y_steric_quadrupole3d"       "z_steric_quadrupole3d"      
+#> [35] "feature_count3d"             "feature_acceptor_count3d"   
+#> [37] "feature_donor_count3d"       "feature_anion_count3d"      
+#> [39] "feature_cation_count3d"      "feature_ring_count3d"       
+#> [41] "feature_hydrophobe_count3d"  "conformer_model_rmsd3d"     
+#> [43] "effective_rotor_count3d"     "conformer_count3d"          
+#> [45] "fingerprint2d"               "query"
+```
+
+Two functions are used to extract specific sections of PubChem chemical
+information using CASRN:
+
+- `extr_pubchem_ghs` extracts Globally Harmonized System (GHS) codes.
+- `extr_pubchem_fema` extracts flavor profile data.”
+
+``` r
+ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
+#> ℹ Getting PubChem IDS...
+#> Querying 50-00-0. OK (HTTP 200).
+#> Querying 712. OK (HTTP 200).
+#> ℹ Getting PubChem IDS...
+#> Querying 64-17-5. OK (HTTP 200).
+#> Querying 702. OK (HTTP 200).
+fema_info <- extr_pubchem_fema(casrn = c("50-00-0", "123-68-2"))
+#> Querying 50-00-0. OK (HTTP 200).
+#> Querying 712. Not Found (HTTP 404).
+#> ℹ FEMA for 50-00-0 not found!
+#> Querying 123-68-2. OK (HTTP 200).
+#> Querying 31266. OK (HTTP 200).
 ```
