@@ -79,10 +79,15 @@ ice_assays <- function() {
 #' write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
 #' }
 write_dataframes_to_excel <- function(df_list, filename) {
-  # Create a new workbook
+
+
+  if (isFALSE(requireNamespace("openxlsx", quietly = TRUE))) {
+    cli::cli_abort(message = "{.pkg  openxlsx} not installed. Install it with: `install.packages('openxlsx')`"
+    )
+  }
+
   wb <- openxlsx::createWorkbook()
 
-  # Add each dataframe as a new sheet
   for (name in names(df_list)) {
     openxlsx::addWorksheet(wb, name)
     openxlsx::writeData(wb, sheet = name, df_list[[name]])

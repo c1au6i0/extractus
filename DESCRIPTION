@@ -16,13 +16,14 @@ Imports:
     cli,
     httr2,
     janitor,
-    openxlsx,
     pingr,
     rvest,
+    readxl,
     webchem
 Depends: 
     R (>= 4.1)
 LazyData: true
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    openxlsx
 Config/testthat/edition: 3

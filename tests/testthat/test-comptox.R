@@ -10,7 +10,7 @@ test_that("Valid chemical name input", {
     ids = c("Aspirin"),
     download_items = c("DTXCID", "CASRN")
   )
-  expect_snapshot(result)
+    expect_snapshot(result[!names(result) %in% "comptox_cover_sheet"])
 })
 
 Sys.sleep(3)
@@ -24,7 +24,7 @@ test_that("Valid CASRN input", {
     ids = c("50-00-0"),
     download_items = c("DTXCID", "CASRN")
   )
-  expect_snapshot(result)
+  expect_snapshot(result[!names(result) %in% "comptox_cover_sheet"])
 })
 
 
@@ -37,7 +37,7 @@ test_that("Valid inputs", {
     ids = c("50-00-0", "Aspirin", "DTXSID5020023"),
     download_items = c("DTXCID", "CASRN")
   )
-  expect_snapshot(result)
+  expect_snapshot(result[!names(result) %in% "comptox_cover_sheet"])
 })
 
 Sys.sleep(3)

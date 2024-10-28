@@ -1,35 +1,7 @@
 # extr_tox fetches data for CASRN 50-00-0
 
     Code
-      extr_tox(casrn = "50-00-0")
-    Message
-      i Getting PubChem IDS...
-      Querying 50-00-0. 
-      OK (HTTP 200).
-      
-    Output
-      
-    Message
-      Querying 712. 
-      OK (HTTP 200).
-      
-    Output
-      
-    Message
-      i Checking Internet Connection...
-      i Internet connection OK...
-      i Sending request to CompTox...
-      Request succeeded with status code: 202
-      i Getting info from CompTox...
-      Request succeeded with status code: 200
-      i Checking Internet Connection...
-      i Internet connection OK...
-      Sending request to ICE database...
-      Request succeeded with status code: 200
-      i Checking Internet Connection...
-      i Internet connection OK...
-      Quering 50-00-0 to EPA IRIS database...
-      Request succeeded with status code: 200
+      result[!names(result) %in% "comptox_cover_sheet"]
     Output
       $ghs_dat
          cid   casrn         name
@@ -427,68 +399,6 @@
       # i abbreviated name: 1: critical_effect_or_tumor_type
       # i 3 more variables: woe_characterization <chr>, toxicity_value_type <chr>,
       #   toxicity_value <chr>
-      
-      $comptox
-          input found_by        dtxsid preferred_name      dtxcid   casrn
-      1 50-00-0    CASRN DTXSID7020637   Formaldehyde DTXCID30637 50-00-0
-                           inchikey   iupac_name smiles              inchi_string
-      1 WSFSSNUMVMOOMR-UHFFFAOYSA-N Formaldehyde    C=O InChI=1S/CH2O/c1-2/h1H2\n
-        ms_ready_smiles qsar_ready_smiles molecular_formula average_mass
-      1             C=O               C=O              CH2O       30.026
-        monoisotopic_mass qc_level safety_data expocast data_sources toxval_data
-      1          30.01056        1           Y        Y          134           Y
-        number_of_pubmed_articles pubchem_data_sources cpdat_count iris_link
-      1                     19234                  338        2328         Y
-        pprtv_link wikipedia_article
-      1        N/A                 Y
-                                                                      qc_notes
-      1 From the CAMEO dataset: https://cameochemicals.noaa.gov/chemical/22034
-        abstract_shifter toxprint_fingerprint
-      1                -                    -
-                                                                            actor_report
-      1 https://actorws.epa.gov/actorws/actor/2015q3/chemicalPdfExport.pdf?casrn=50-00-0
-        synonym_identifier related_relationship associated_toxcast_assays
-      1                  -                    -                         -
-        toxval_details chemical_properties_details bioconcentration_factor_test_pred
-      1              -                           -                               N/A
-        boiling_point_degc_test_pred x48hr_daphnia_lc50_mol_l_test_pred
-      1                      -16.012                                N/A
-        density_g_cm_3_test_pred devtox_test_pred
-      1                    0.861              N/A
-        x96hr_fathead_minnow_mol_l_test_pred flash_point_degc_test_pred
-      1                                  N/A                    -18.267
-        melting_point_degc_test_pred ames_mutagenicity_test_pred
-      1                      -79.361                       0.362
-        oral_rat_ld50_mol_kg_test_pred surface_tension_dyn_cm_test_pred
-      1                            N/A                           22.056
-        thermal_conductivity_mw_m_k_test_pred
-      1                               164.885
-        tetrahymena_pyriformis_igc50_mol_l_test_pred viscosity_cp_cp_test_pred
-      1                                          N/A                  0.254097
-        vapor_pressure_mmhg_test_pred water_solubility_mol_l_test_pred
-      1                        1221.8                          9.57194
-        atmospheric_hydroxylation_rate_aoh_cm3_molecule_sec_opera_pred
-      1                                                    9.34288e-12
-        bioconcentration_factor_opera_pred
-      1                            1.72988
-        biodegradation_half_life_days_days_opera_pred boiling_point_degc_opera_pred
-      1                                       8.20857                      -19.0454
-        henrys_law_atm_m3_mole_opera_pred opera_km_days_opera_pred
-      1                       3.49471e-07                 0.224902
-        octanol_air_partition_coeff_logkoa_opera_pred
-      1                                       1.20597
-        soil_adsorption_coefficient_koc_l_kg_opera_pred
-      1                                         2.72646
-        octanol_water_partition_logp_opera_pred melting_point_degc_opera_pred
-      1                                0.349206                      -105.286
-        opera_pkaa_opera_pred opera_pkab_opera_pred vapor_pressure_mmhg_opera_pred
-      1                   N/A                  1.15                        824.979
-        water_solubility_mol_l_opera_pred
-      1                           14.6625
-        expocast_median_exposure_prediction_mg_kg_bw_day nhanes
-      1                                         4.87e-05    N/A
-        toxcast_number_of_assays_total toxcast_percent_active
-      1                            N/A                    N/A
       
       $ice
                                                                                                                                              assay
@@ -3020,5 +2930,101 @@
       278              DTXSID7020637                        Formaldehyde         
       279              DTXSID7020637                        Formaldehyde         
       280              DTXSID7020637                        Formaldehyde         
+      
+      $comptox_main_data
+      # A tibble: 1 x 63
+        INPUT   FOUND_BY DTXSID PREFERRED_NAME DTXCID CASRN INCHIKEY IUPAC_NAME SMILES
+        <chr>   <chr>    <chr>  <chr>          <chr>  <chr> <chr>    <chr>      <chr> 
+      1 50-00-0 CASRN    DTXSI~ Formaldehyde   DTXCI~ 50-0~ WSFSSNU~ Formaldeh~ C=O   
+      # i 54 more variables: INCHI_STRING <chr>, MS_READY_SMILES <chr>,
+      #   QSAR_READY_SMILES <chr>, MOLECULAR_FORMULA <chr>, AVERAGE_MASS <dbl>,
+      #   MONOISOTOPIC_MASS <dbl>, QC_LEVEL <dbl>, SAFETY_DATA <chr>, EXPOCAST <chr>,
+      #   DATA_SOURCES <dbl>, TOXVAL_DATA <chr>, NUMBER_OF_PUBMED_ARTICLES <dbl>,
+      #   PUBCHEM_DATA_SOURCES <dbl>, CPDAT_COUNT <dbl>, IRIS_LINK <chr>,
+      #   PPRTV_LINK <lgl>, WIKIPEDIA_ARTICLE <chr>, QC_NOTES <chr>,
+      #   TOXPRINT_FINGERPRINT <chr>, ACTOR_REPORT <chr>, ...
+      
+      $comptox_abstract_sifter
+      # A tibble: 1 x 3
+        DSSTOX_LINK_TO_DASHBOARD PREFERRED_NAME `CHEMICAL/ENTITY_QUERY`
+        <chr>                    <chr>          <chr>                  
+      1 DTXSID7020637            Formaldehyde   50-00-0 OR Formaldehyde
+      
+      $comptox_synonym_identifier
+      # A tibble: 1 x 3
+        SEARCHED_CHEMICAL IDENTIFIER                                        `PC-CODES`
+        <chr>             <chr>                                             <chr>     
+      1 Formaldehyde      NSC 298885|UN 2209|Formalin 40|Superlysoform|For~ PC-043001 
+      
+      $comptox_related_relationships
+      # A tibble: 56 x 7
+         INPUT   DTXSID        PREFERRED_NAME HAS_RELATIONSHIP_WITH  RELATED_DTXSID 
+         <chr>   <chr>         <chr>          <chr>                  <chr>          
+       1 50-00-0 DTXSID7020637 Formaldehyde   Searched Chemical      DTXSID7020637  
+       2 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID6029709  
+       3 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID6029757  
+       4 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID60873853 
+       5 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID60905168 
+       6 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID6094144  
+       7 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID8049626  
+       8 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID701029969
+       9 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID701092815
+      10 50-00-0 DTXSID7020637 Formaldehyde   Predecessor: Component DTXSID70873849 
+      # i 46 more rows
+      # i 2 more variables: RELATED_PREFERRED_NAME <chr>, RELATED_CASRN <chr>
+      
+      $comptox_toxcast_assays_ac50
+      # A tibble: 1,485 x 2
+         INPUT                            `50-00-0_DTXSID7020637`
+         <chr>                            <chr>                  
+       1 ACEA_AR_agonist_80hr             -                      
+       2 ACEA_AR_agonist_AUC_viability    -                      
+       3 ACEA_AR_antagonist_80hr          -                      
+       4 ACEA_AR_antagonist_AUC_viability -                      
+       5 ACEA_ER_80hr                     -                      
+       6 ACEA_ER_AUC_viability            -                      
+       7 APR_HepG2_CellCycleArrest_1hr    -                      
+       8 APR_HepG2_CellCycleArrest_24hr   -                      
+       9 APR_HepG2_CellCycleArrest_72hr   -                      
+      10 APR_HepG2_CellLoss_1hr           -                      
+      # i 1,475 more rows
+      
+      $comptox_toxval_details
+      # A tibble: 1,124 x 68
+         SEARCHED_CHEMICAL DTXSID        CASRN   NAME    SOURCE SUB_SOURCE TOXVAL_TYPE
+         <chr>             <chr>         <chr>   <chr>   <chr>  <chr>      <chr>      
+       1 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
+       2 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
+       3 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
+       4 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
+       5 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
+       6 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
+       7 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
+       8 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
+       9 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
+      10 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
+      # i 1,114 more rows
+      # i 61 more variables: TOXVAL_TYPE_ORIGINAL <chr>, TOXVAL_SUBTYPE <chr>,
+      #   TOXVAL_TYPE_SUPERCATEGORY <chr>, TOXVAL_TYPE_CATEGORY <chr>,
+      #   QUALIFIER <chr>, TOXVAL_NUMERIC <dbl>, TOXVAL_NUMERIC_ORIGINAL <chr>,
+      #   TOXVAL_UNITS <chr>, TOXVAL_UNITS_ORIGINAL <chr>,
+      #   RISK_ASSESSMENT_CLASS <chr>, STUDY_TYPE <chr>, STUDY_TYPE_ORIGINAL <chr>,
+      #   STUDY_DURATION_CLASS <chr>, STUDY_DURATION_CLASS_ORIGINAL <chr>, ...
+      
+      $comptox_chemical_properties
+      # A tibble: 46 x 8
+         DTXSID        DTXCID      TYPE         NAME    VALUE UNITS SOURCE DESCRIPTION
+         <chr>         <chr>       <chr>        <chr>   <chr> <chr> <chr>  <chr>      
+       1 DTXSID7020637 DTXCID30637 experimental Henry'~ 3.37~ atm-~ "Phys~ "The PHYSP~
+       2 DTXSID7020637 DTXCID30637 experimental Boilin~ -21.~ °C    "NIOS~ "The NIOSH~
+       3 DTXSID7020637 DTXCID30637 experimental Boilin~ -19.1 °C    "Phys~ "The PHYSP~
+       4 DTXSID7020637 DTXCID30637 experimental Meltin~ -92.~ °C    "NIOS~ "The NIOSH~
+       5 DTXSID7020637 DTXCID30637 experimental Meltin~ -92.0 °C    "Jean~ "Jean-Clau~
+       6 DTXSID7020637 DTXCID30637 experimental Water ~ 13.2  mol/L "Kovd~ "Kovdienko~
+       7 DTXSID7020637 DTXCID30637 experimental Water ~ 13.2~ mol/L "Phys~ "The PHYSP~
+       8 DTXSID7020637 DTXCID30637 experimental Water ~ 18.2  mol/L "Lewi~ "Lewis, K.~
+       9 DTXSID7020637 DTXCID30637 experimental LogKow~ 0.35  <NA>  "Phys~ "The PHYSP~
+      10 DTXSID7020637 DTXCID30637 experimental pKa Ba~ 1.15  <NA>  "Data~ "This pKa ~
+      # i 36 more rows
       
 

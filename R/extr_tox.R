@@ -266,7 +266,7 @@ extr_comptox <- function(ids,
     downloadItems = download_items,
     searchItems = paste0(ids, collapse = "\n"),
     inputType = input_type,
-    downloadType = "CSV"
+    downloadType = "EXCEL"
   )
 
 
@@ -296,6 +296,8 @@ extr_comptox <- function(ids,
 
   cli::cli_alert_info("Getting info from CompTox...")
 
+  Sys.sleep(1)
+
   resp <- tryCatch(
     {
       httr2::request(paste0(base_url_down, response_body)) |>
@@ -310,18 +312,21 @@ extr_comptox <- function(ids,
 
   check_status_code(resp)
 
-  csv_file <- tempfile(fileext = "csv")
+  xlsx_file <- tempfile(fileext = "xls")
+
 
   resp |>
     httr2::resp_body_raw() |>
-    writeBin(csv_file)
+    writeBin(xlsx_file)
 
-  out <- utils::read.csv(csv_file) |>
-    janitor::clean_names()
 
-  unlink(csv_file)
+  sheet_names <- readxl::excel_sheets(xlsx_file)
 
-  out
+  dat_list <- lapply(sheet_names, readxl::read_excel, path = xlsx_file)
+  names(dat_list) <- paste0("comptox_", gsub(" ", "_", tolower(sheet_names)))
+  unlink(xlsx_file)
+
+  dat_list
 }
 
 
@@ -446,13 +451,10 @@ extr_tox <- function(casrn) {
     assays = NULL
   )
 
-  # assays_to_filt <- ice_assays()
-  # ice_dat_list <- lapply(assays_to_filt, function(x) ice_dat[ice_dat$assay %in% x, ])
-  # names(ice_dat_list) <- names(assays_to_filt)
-
 
   iris_filt <- extr_iris(casrn = casrn)
 
-  list(ghs_dat = ghs_dat, iris = iris_filt, comptox = comptox_list, ice = ice_dat)
+  list_1 <- list(ghs_dat = ghs_dat, iris = iris_filt, ice = ice_dat)
+  out <- c(list_1, comptox_list)
 
 }
