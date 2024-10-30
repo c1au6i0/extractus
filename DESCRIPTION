@@ -26,4 +26,7 @@ LazyData: true
 Suggests: 
     testthat (>= 3.0.0),
     openxlsx
+    condathis
+Remotes:
+    github::lucioqr/condathis
 Config/testthat/edition: 3

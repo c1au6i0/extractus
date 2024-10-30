@@ -1,5 +1,3 @@
-#' ice_assays
-#'
 #' Selection of assays of iris
 ice_assays <- function() {
   ice_carc_woe <-
@@ -122,62 +120,6 @@ check_internet <- function(verbose = TRUE) {
 }
 
 
-
-#' check_url
-#'
-#' Check if url can be read... so if it is up. This function is a present from
-#' Lucio Queiroz.
-#'
-#' @param url_to_check  String of url to check. Note that `http://`  uses port 80
-#' whereas `http://` uses port 443.
-#'
-#' @return Boolean
-check_url <- function(url_to_check) {
-  internet_check <- tryCatch(
-    suppressWarnings(
-    {
-        url_con <- base::url(
-          description = url_to_check,
-          open = "r"
-        )
-
-
-      base::readLines(url_con, n = 1)
-      base::close(url_con)
-      TRUE
-    }
-    ),
-    error = function(e) {
-      FALSE
-    }
-  )
-  return(internet_check)
-}
-
-
-#' Check Url and Internet
-#'
-#' Stop if URL unreachable or not online.
-#'
-#' @param url_to_check string, url.
-check_url_internet <- function(url_to_check) {
-
-  url_up <- check_url(url_to_check)
-
-  if (isFALSE(url_up)) {
-
-    cli::cli_alert_info("URL {.url {url_to_check}} not reachable!")
-
-    internet_ok <- check_internet()
-
-    if (isTRUE(internet_ok)) {
-      cli::cli_abort("Error: {.url {url_to_check}} is down or misspelled!")
-    }
-
-    }
-}
-
-
 #' Verify SSL
 #'
 #' @param verify_ssl Boolean.
@@ -208,6 +150,64 @@ check_status_code <- function(resp) {
     cli::cli_inform("Request succeeded with status code: {status_code}")
   }
 }
+
+
+
+#' check_libcurl_condathis
+#'
+#' Check if System is Linux and if libcurl version is more than 7.78.0.
+#' @return Bolean
+check_need_libcurl_condathis <- function(){
+
+  libcurl_safe <- TRUE
+
+  if (libcurlVersion()[1] >= "7.78.0") {
+    libcurl_safe <- FALSE
+  }
+
+  isFALSE(libcurl_safe) && isTRUE(Sys.info()[["sysname"]] == "Linux")
+}
+
+
+
+
+#' install curl
+#'
+#' Use `{condathis}` to install  `curl==7.78.0`.
+condathis_downgrade_libcurl <- function(){
+
+  if (isFALSE(requireNamespace("condathis", quietly = TRUE))) {
+    cli::cli_abort("{.pkg condathis} not installed. Install it with: `remotes::install_github('luciorq/condathis')`")
+  }
+
+  if (!condathis::env_exists("openssl-linux-env")){
+
+    condathis::create_env(
+      c("curl==7.78.0", "libcurl", "openssl"),
+      env_name = "openssl-linux-env",
+      verbose = FALSE
+    )
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
