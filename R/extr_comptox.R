@@ -209,6 +209,7 @@ extr_comptox_other_os_ <- function(ids,
                          ...) {
 
 
+
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   identifier_types <- c("chemical_name", "CASRN", "INCHIKEY", "dtxsid")
@@ -226,6 +227,8 @@ extr_comptox_other_os_ <- function(ids,
 
   cli::cli_alert_info("Sending request to CompTox...")
 
+
+
   post_result <- tryCatch(
     {
       httr2::request(base_url) |>
@@ -240,7 +243,6 @@ extr_comptox_other_os_ <- function(ids,
     }
   )
 
-
   check_status_code(post_result)
 
   response_body <- httr2::resp_body_string(post_result)
@@ -250,7 +252,7 @@ extr_comptox_other_os_ <- function(ids,
 
   cli::cli_alert_info("Getting info from CompTox...")
 
-  Sys.sleep(1)
+  Sys.sleep(5)
 
   resp <- tryCatch(
     {
@@ -262,6 +264,8 @@ extr_comptox_other_os_ <- function(ids,
       cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
     }
   )
+
+  check_status_code(resp)
 
   resp |>
     httr2::resp_body_raw() |>
