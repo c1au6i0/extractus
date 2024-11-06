@@ -317,7 +317,7 @@ extr_comptox_linux_ <- function(ids,
 
 
   cli::cli_alert_info("Getting info from CompTox...")
-  Sys.sleep(4)
+  Sys.sleep(5)
 
   arg_call <- c(
     "-f",
@@ -334,7 +334,6 @@ extr_comptox_linux_ <- function(ids,
   other_headers <- c(
     "-H",  'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0'
   )
-
 
   curl_res_2 <- condathis::run("curl",
                                arg_call,

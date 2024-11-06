@@ -229,8 +229,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
       }
     )
   }
-
-  dat
+  data.frame(lapply(dat, unlist))
 }
 
 
