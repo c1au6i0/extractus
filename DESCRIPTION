@@ -28,5 +28,5 @@ Suggests:
     openxlsx,
     condathis
 Remotes:
-    github::lucioqr/condathis
+    github::luciorq/condathis
 Config/testthat/edition: 3
