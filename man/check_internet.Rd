@@ -10,6 +10,6 @@ check_internet(verbose = TRUE)
 \item{verbose}{Boolean to display messages.}
 }
 \description{
-Wrapper around {pingr::is_online} to print message
+Wrapper around \code{pingr::is_online} to print message
 a better message.
 }

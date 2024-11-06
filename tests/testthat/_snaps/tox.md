@@ -2932,11 +2932,11 @@
       280              DTXSID7020637                        Formaldehyde         
       
       $comptox_main_data
-      # A tibble: 1 x 63
-        INPUT   FOUND_BY DTXSID PREFERRED_NAME DTXCID CASRN INCHIKEY IUPAC_NAME SMILES
-        <chr>   <chr>    <chr>  <chr>          <chr>  <chr> <chr>    <chr>      <chr> 
-      1 50-00-0 CASRN    DTXSI~ Formaldehyde   DTXCI~ 50-0~ WSFSSNU~ Formaldeh~ C=O   
-      # i 54 more variables: INCHI_STRING <chr>, MS_READY_SMILES <chr>,
+      # A tibble: 1 x 64
+        INPUT   FOUND_BY PREFERRED_NAME DTXCID      CASRN   INCHIKEY IUPAC_NAME SMILES
+        <chr>   <chr>    <chr>          <chr>       <chr>   <chr>    <chr>      <chr> 
+      1 50-00-0 CASRN    Formaldehyde   DTXCID30637 50-00-0 WSFSSNU~ Formaldeh~ C=O   
+      # i 56 more variables: INCHI_STRING <chr>, MS_READY_SMILES <chr>,
       #   QSAR_READY_SMILES <chr>, MOLECULAR_FORMULA <chr>, AVERAGE_MASS <dbl>,
       #   MONOISOTOPIC_MASS <dbl>, QC_LEVEL <dbl>, SAFETY_DATA <chr>, EXPOCAST <chr>,
       #   DATA_SOURCES <dbl>, TOXVAL_DATA <chr>, NUMBER_OF_PUBMED_ARTICLES <dbl>,
@@ -2990,26 +2990,26 @@
       # i 1,475 more rows
       
       $comptox_toxval_details
-      # A tibble: 1,124 x 68
+      # A tibble: 143 x 63
          SEARCHED_CHEMICAL DTXSID        CASRN   NAME    SOURCE SUB_SOURCE TOXVAL_TYPE
          <chr>             <chr>         <chr>   <chr>   <chr>  <chr>      <chr>      
-       1 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
-       2 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
-       3 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
-       4 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
-       5 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        MRL        
-       6 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
-       7 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
-       8 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
-       9 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
-      10 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR~ CDC        NOAEL      
-      # i 1,114 more rows
-      # i 61 more variables: TOXVAL_TYPE_ORIGINAL <chr>, TOXVAL_SUBTYPE <chr>,
-      #   TOXVAL_TYPE_SUPERCATEGORY <chr>, TOXVAL_TYPE_CATEGORY <chr>,
-      #   QUALIFIER <chr>, TOXVAL_NUMERIC <dbl>, TOXVAL_NUMERIC_ORIGINAL <chr>,
-      #   TOXVAL_UNITS <chr>, TOXVAL_UNITS_ORIGINAL <chr>,
-      #   RISK_ASSESSMENT_CLASS <chr>, STUDY_TYPE <chr>, STUDY_TYPE_ORIGINAL <chr>,
-      #   STUDY_DURATION_CLASS <chr>, STUDY_DURATION_CLASS_ORIGINAL <chr>, ...
+       1 Formaldehyde      DTXSID7020637 50-00-0 Formal~ NIOSH  -          IDLH       
+       2 Formaldehyde      DTXSID7020637 50-00-0 Formal~ Cal O~ Cal OEHHA~ cancer slo~
+       3 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          LOAEL      
+       4 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          LOAEL      
+       5 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          MRL        
+       6 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          MRL        
+       7 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          MRL        
+       8 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          MRL        
+       9 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          MRL        
+      10 Formaldehyde      DTXSID7020637 50-00-0 Formal~ ATSDR  -          NOAEL      
+      # i 133 more rows
+      # i 56 more variables: TOXVAL_SUBTYPE <chr>, TOXVAL_TYPE_SUPERCATEGORY <chr>,
+      #   QUALIFIER <chr>, TOXVAL_NUMERIC <dbl>, TOXVAL_UNITS <chr>,
+      #   RISK_ASSESSMENT_CLASS <chr>, STUDY_TYPE <chr>, STUDY_DURATION_CLASS <chr>,
+      #   STUDY_DURATION_VALUE <dbl>, STUDY_DURATION_UNITS <chr>,
+      #   SPECIES_COMMON <chr>, STRAIN <chr>, LATIN_NAME <chr>,
+      #   SPECIES_SUPERCATEGORY <chr>, SEX <chr>, GENERATION <chr>, ...
       
       $comptox_chemical_properties
       # A tibble: 46 x 8

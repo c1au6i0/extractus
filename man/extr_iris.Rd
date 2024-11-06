@@ -7,7 +7,7 @@
 extr_iris(casrn = NULL, cancer_types = c("non_cancer", "cancer"))
 }
 \arguments{
-\item{casrn}{A single character string specifying the IUPAC name or the CASRN for the search.}
+\item{casrn}{A single character string specifying the CASRN for the search.}
 
 \item{cancer_types}{A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".}
 }

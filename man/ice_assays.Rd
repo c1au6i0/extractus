@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{ice_assays}
 \alias{ice_assays}
-\title{ice_assays}
+\title{Selection of assays of iris}
 \usage{
 ice_assays()
 }

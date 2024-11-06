@@ -21,7 +21,7 @@
 #' }
 extr_casrn_from_cid <- function(pubchem_id) {
 
-  check_url_internet("https://pubchem.ncbi.nlm.nih.gov/")
+  check_internet()
 
   cli::cli_alert_info("Querying {pubchem_id}.")
 
@@ -68,7 +68,7 @@ extr_casrn_from_cid <- function(pubchem_id) {
 #' }
 extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE){
 
-  check_url_internet("https://pubchem.ncbi.nlm.nih.gov/")
+  check_internet()
 
   iupac_cid <- webchem::get_cid(IUPAC_names, domain = "compound", verbose = TRUE)
 
@@ -181,8 +181,8 @@ extr_pubchem_fema_ <- function(casrn) {
 #' }
 extr_pubchem_fema <- function(casrn){
 
-  check_url_internet("https://pubchem.ncbi.nlm.nih.gov/")
 
+  check_internet()
   dat <- lapply(casrn, extr_pubchem_fema_)
   do.call(rbind, dat)
 
@@ -263,8 +263,7 @@ extr_pubchem_ghs_ <- function(casrn) {
 #' }
 extr_pubchem_ghs <- function(casrn) {
 
-  check_url_internet("https://pubchem.ncbi.nlm.nih.gov/")
-
+  check_internet()
   dat <- lapply(casrn, extr_pubchem_ghs_)
   do.call(rbind, dat)
 

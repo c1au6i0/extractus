@@ -3,12 +3,16 @@
     Code
       extr_chem_info(compounds)
     Message
+      i Checking Internet Connection...
+      i Internet connection OK...
       Querying Formaldehyde. 
       OK (HTTP 200).
       
       Querying Aflatoxin B1. 
       OK (HTTP 200).
       
+      i Checking Internet Connection...
+      i Internet connection OK...
       i Querying 712 and 186907.
     Output
            cid   iupac_name    cas_rn cid_all cas_rn_all molecular_formula
