@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(extractus)
+library(extractox)
 
-test_check("extractus")
+test_check("extractox")

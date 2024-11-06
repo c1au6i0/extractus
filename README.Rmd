@@ -13,16 +13,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-# extractus <img src='inst/img/extractus.png' align="right" height="139">
+# extractox <img src='inst/img/extractox.png' align="right" height="139">
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/c1au6i0/extractus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractus/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-`extractus` is a comprehensive R package designed to simplify querying various chemical, toxicological, and biological databases such as  the Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated Chemical Environment), EPA’s IRIS (Integrated Risk Information System), EPA’s COMPTOX and PubChem. The package facilitates interaction with APIs, providing curated and user-friendly outputs.
+`extractox` is a comprehensive R package designed to simplify querying various chemical, toxicological, and biological databases such as  the Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated Chemical Environment), EPA’s IRIS (Integrated Risk Information System), EPA’s COMPTOX and PubChem. The package facilitates interaction with APIs, providing curated and user-friendly outputs.
 
-To communicate to Pubchem, `extractus` relies on the package`webchem`.
+To communicate to Pubchem, `extractox` relies on the package`webchem`.
 
 ## Installation
 
@@ -35,7 +35,7 @@ if (!requireNamespace("pak", quietly = TRUE)) {
 }
 
 # Install the package from GitHub
-pak::pkg_install("c1au6i0/extractus")
+pak::pkg_install("c1au6i0/extractox")
 ```
 
 ## Features
@@ -49,7 +49,7 @@ The Integrated Chemical Environment (ICE) database, managed by the EPA, provides
 
 
 ```{r}
-library(extractus)
+library(extractox)
 ice_data <- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
 names(ice_data)
 ```

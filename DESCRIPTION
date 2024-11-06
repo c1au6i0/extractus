@@ -1,12 +1,16 @@
-Package: extractus
-Title: Extract chemical info from various databases
-Version: 0.0.5
-Authors@R: 
+Package: extractox
+Title: Extract TOX info from various databases
+Version: 0.0.7
+Authors@R: c(
     person(given = "Claudio",
            family = "Zanettini",
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            email = "claudio.zanettini@gmail.com",
-           comment = c(ORCID = "0000-0001-5043-8033"))
+           comment = c(ORCID = "0000-0001-5043-8033")),
+    person("Lucio", "Queiroz", , "luciorqueiroz@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-6090-1834"))
+    )
 Description: Extract Tox Info.
 License: MIT + file LICENSE
 Encoding: UTF-8

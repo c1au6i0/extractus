@@ -1,23 +1,23 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# extractus <img src='inst/img/extractus.png' align="right" height="139">
+# extractox <img src='inst/img/extractox.png' align="right" height="139">
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/c1au6i0/extractus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractus/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-`extractus` is a comprehensive R package designed to simplify querying
+`extractox` is a comprehensive R package designed to simplify querying
 various chemical, toxicological, and biological databases such as the
 Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated
 Chemical Environment), EPA’s IRIS (Integrated Risk Information System),
 EPA’s COMPTOX and PubChem. The package facilitates interaction with
 APIs, providing curated and user-friendly outputs.
 
-To communicate to Pubchem, `extractus` relies on the package`webchem`.
+To communicate to Pubchem, `extractox` relies on the package`webchem`.
 
 ## Installation
 
@@ -30,7 +30,7 @@ if (!requireNamespace("pak", quietly = TRUE)) {
 }
 
 # Install the package from GitHub
-pak::pkg_install("c1au6i0/extractus")
+pak::pkg_install("c1au6i0/extractox")
 ```
 
 ## Features
@@ -46,7 +46,7 @@ screening assays, in vivo studies, and computational models.
 (ICE) database for toxicological and exposure-related data.
 
 ``` r
-library(extractus)
+library(extractox)
 ice_data <- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
 #> ℹ Checking Internet Connection...
 #> ℹ Internet connection OK...
@@ -99,8 +99,6 @@ list of **dataframes**.
 
 ``` r
 info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
-#> ℹ Checking Internet Connection...
-#> ℹ Internet connection OK...
 #> ℹ Sending request to CompTox...
 #> Request succeeded with status code: 202
 #> ℹ Getting info from CompTox...
@@ -120,14 +118,14 @@ above-mentioned functions and retrieve a list of dataframes.
 
 ``` r
 info_tox <- extr_tox(casrn = c("Aspirin", "50-00-0"))
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> ℹ Getting PubChem IDS...
 #> Querying Aspirin. OK (HTTP 200).
 #> Querying 2244. OK (HTTP 200).
 #> ℹ Getting PubChem IDS...
 #> Querying 50-00-0. OK (HTTP 200).
 #> Querying 712. OK (HTTP 200).
-#> ℹ Checking Internet Connection...
-#> ℹ Internet connection OK...
 #> ℹ Sending request to CompTox...
 #> Request succeeded with status code: 202ℹ Getting info from CompTox...
 #> Request succeeded with status code: 200ℹ Checking Internet Connection...
@@ -225,8 +223,12 @@ found.
 
 ``` r
 chem_info <- extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> Querying Formaldehyde. OK (HTTP 200).
 #> Querying Aflatoxin B1. OK (HTTP 200).
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> ℹ Querying 712 and 186907.
 names(chem_info)
 #>  [1] "cid"                         "iupac_name"                 
@@ -262,6 +264,8 @@ information using CASRN:
 
 ``` r
 ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> ℹ Getting PubChem IDS...
 #> Querying 50-00-0. OK (HTTP 200).
 #> Querying 712. OK (HTTP 200).
@@ -269,6 +273,8 @@ ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 #> Querying 64-17-5. OK (HTTP 200).
 #> Querying 702. OK (HTTP 200).
 fema_info <- extr_pubchem_fema(casrn = c("50-00-0", "123-68-2"))
+#> ℹ Checking Internet Connection...
+#> ℹ Internet connection OK...
 #> Querying 50-00-0. OK (HTTP 200).
 #> Querying 712. Not Found (HTTP 404).
 #> ℹ FEMA for 50-00-0 not found!
