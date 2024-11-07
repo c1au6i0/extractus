@@ -260,7 +260,7 @@ Two functions are used to extract specific sections of PubChem chemical
 information using CASRN:
 
 - `extr_pubchem_ghs` extracts Globally Harmonized System (GHS) codes.
-- `extr_pubchem_fema` extracts flavor profile data.”
+- `extr_pubchem_fema` extracts flavor profile data.
 
 ``` r
 ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))

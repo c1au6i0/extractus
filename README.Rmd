@@ -68,7 +68,7 @@ names(iris_info)
 ### COMPTOX
 
 The CompTox Chemistry Dashboard, managed by the EPA, provides access to data on chemical structures, properties, and associated bioactivity data. It integrates data from various sources to support chemical safety assessments.
-`
+
 `extr_comptox` extracts data from the CompTox Chemistry Dashboard using both CASRN and IUPAC names of chemicals and returns a list of **dataframes**.
 
 ```{r}
@@ -149,7 +149,7 @@ names(chem_info)
 Two functions are used to extract specific sections of PubChem chemical information using CASRN:
 
 - `extr_pubchem_ghs` extracts Globally Harmonized System (GHS) codes.
-- `extr_pubchem_fema` extracts flavor profile data."
+- `extr_pubchem_fema` extracts flavor profile data.
 
 
 ```{r}

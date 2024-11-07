@@ -30,7 +30,10 @@ LazyData: true
 Suggests: 
     testthat (>= 3.0.0),
     openxlsx,
-    condathis
+    condathis,
+    knitr,
+    rmarkdown
 Remotes:
     github::luciorq/condathis
 Config/testthat/edition: 3
+VignetteBuilder: knitr
