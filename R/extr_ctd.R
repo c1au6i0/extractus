@@ -54,13 +54,14 @@
 #' str(dat)
 #'
 #' # Get expresssion data
-#' dat2 <-  extr_ctd(input_terms = input_terms,
-#'    report_type = "cgixns",
-#'    category = "chem",
-#'    action_types = "expression")
+#' dat2 <- extr_ctd(
+#'   input_terms = input_terms,
+#'   report_type = "cgixns",
+#'   category = "chem",
+#'   action_types = "expression"
+#' )
 #'
 #' str(dat2)
-#'
 #' }
 extr_ctd <- function(
     input_terms,
@@ -218,12 +219,11 @@ extr_tetramer_ <- function(
   unlink(tab_file)
 
   # if no chem is found it returns a dataframe with one single column
-  if(ncol(out) == 1) {
-
+  if (ncol(out) == 1) {
     cli::cli_warn("The chem {.field {chem}} was not found.")
     out <- data.frame(
       query = chem,
-      chemical =  NA,
+      chemical = NA,
       chemical_id = NA,
       gene = NA,
       gene_id = NA,
@@ -233,12 +233,10 @@ extr_tetramer_ <- function(
       disease_id = NA
     )
   } else {
-
-    out <-  cbind(query = chem, out)
+    out <- cbind(query = chem, out)
   }
 
   out
-
 }
 
 
@@ -274,29 +272,27 @@ extr_tetramer <- function(
     disease = "",
     gene = "",
     go = "",
-    input_term_search_type= "directAssociations",
+    input_term_search_type = "directAssociations",
     qt_match_type = "equals",
     verify_ssl = FALSE,
     ...) {
-
-  if(length(chem) > 1){
+  if (length(chem) > 1) {
     dat <- lapply(chem, extr_tetramer_,
-                  disease = disease,
-                  gene = gene,
-                  go = go,
-                  input_term_search_type = input_term_search_type,
-                  qt_match_type = qt_match_type,
-                  verify_ssl = verify_ssl,
-                  ...
-                  )
+      disease = disease,
+      gene = gene,
+      go = go,
+      input_term_search_type = input_term_search_type,
+      qt_match_type = qt_match_type,
+      verify_ssl = verify_ssl,
+      ...
+    )
     out <- do.call(rbind, dat)
   } else {
+    base_url <- "https://ctdbase.org/query.go"
+    check_internet()
 
-  base_url <- "https://ctdbase.org/query.go"
-  check_internet()
 
-
-  out <- extr_tetramer_(
+    out <- extr_tetramer_(
       chem = chem,
       disease = disease,
       gene = gene,
@@ -309,7 +305,4 @@ extr_tetramer <- function(
   }
 
   out
-
-
-
 }

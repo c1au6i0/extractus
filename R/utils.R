@@ -14,11 +14,8 @@
 #' write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
 #' }
 write_dataframes_to_excel <- function(df_list, filename) {
-
-
   if (isFALSE(requireNamespace("openxlsx", quietly = TRUE))) {
-    cli::cli_abort(message = "{.pkg  openxlsx} not installed. Install it with: `install.packages('openxlsx')`"
-    )
+    cli::cli_abort(message = "{.pkg  openxlsx} not installed. Install it with: `install.packages('openxlsx')`")
   }
 
   wb <- openxlsx::createWorkbook()
@@ -40,8 +37,7 @@ write_dataframes_to_excel <- function(df_list, filename) {
 #'
 #' @param verbose Boolean to display messages.
 i <- function(verbose = TRUE) {
-
-  if (isTRUE(verbose)){
+  if (isTRUE(verbose)) {
     cli::cli_alert_info("Checking Internet Connection...")
   }
 
@@ -94,8 +90,7 @@ check_status_code <- function(resp) {
 #'
 #' Check if System is Linux and if libcurl version is more than 7.78.0.
 #' @return Boolean
-check_need_libcurl_condathis <- function(){
-
+check_need_libcurl_condathis <- function() {
   libcurl_safe <- TRUE
 
   if (libcurlVersion()[1] >= "7.78.0") {
@@ -111,21 +106,18 @@ check_need_libcurl_condathis <- function(){
 #' install curl
 #'
 #' Use `{condathis}` to install  `curl==7.78.0`.
-condathis_downgrade_libcurl <- function(){
-
+condathis_downgrade_libcurl <- function() {
   if (isFALSE(requireNamespace("condathis", quietly = TRUE))) {
     cli::cli_abort("{.pkg condathis} not installed. Install it with: `remotes::install_github('luciorq/condathis')`")
   }
 
-  if (!condathis::env_exists("openssl-linux-env")){
-
+  if (!condathis::env_exists("openssl-linux-env")) {
     condathis::create_env(
       c("curl==7.78.0", "libcurl", "openssl"),
       env_name = "openssl-linux-env",
       verbose = FALSE
     )
   }
-
 }
 
 #' Selection of assays of iris
@@ -198,8 +190,7 @@ ice_assays <- function() {
 #'
 #' @param verbose Boolean to display messages.
 check_internet <- function(verbose = TRUE) {
-
-  if (isTRUE(verbose)){
+  if (isTRUE(verbose)) {
     cli::cli_alert_info("Checking Internet Connection...")
   }
 
@@ -210,18 +201,4 @@ check_internet <- function(verbose = TRUE) {
     cli::cli_alert_info("Internet connection OK...")
     out <- TRUE
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

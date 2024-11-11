@@ -96,21 +96,23 @@ A series of functions interact with the CTD database.
 ```{r}
 input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
 ctd_association <- extr_ctd(
-   input_terms = input_terms,
-   category = "chem",
-   report_type = "genes_curated",
-   input_term_search_type = "directAssociations",
-   action_types = "ANY",
-   ontology = c("go_bp", "go_cc")
- )
+  input_terms = input_terms,
+  category = "chem",
+  report_type = "genes_curated",
+  input_term_search_type = "directAssociations",
+  action_types = "ANY",
+  ontology = c("go_bp", "go_cc")
+)
 
 
- # Get expresssion data
- ctd_expression <-  extr_ctd(input_terms = input_terms,
-    report_type = "cgixns",
-    category = "chem",
-    action_types = "expression")
- 
+# Get expresssion data
+ctd_expression <- extr_ctd(
+  input_terms = input_terms,
+  report_type = "cgixns",
+  category = "chem",
+  action_types = "expression"
+)
+
 names(ctd_expression)
 ```
 
@@ -121,13 +123,13 @@ CTD Tetramers are computationally generated information units that interrelate f
 
 ```{r}
 tetramer_data <- extr_tetramer(
-   chem = c("50-00-0", "ethanol"),
-   disease = "",
-   gene = "",
-   go = "",
-   input_term_search_type = "directAssociations",
-   qt_match_type = "equals"
- )
+  chem = c("50-00-0", "ethanol"),
+  disease = "",
+  gene = "",
+  go = "",
+  input_term_search_type = "directAssociations",
+  qt_match_type = "equals"
+)
 
 names(tetramer_data)
 ```

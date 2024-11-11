@@ -65,9 +65,7 @@ extr_iris_ <- function(casrn = NULL,
 #' extr_iris_linux
 #'
 #' @inheritParams extr_iris_
-extr_iris_linux_ <- function(casrn , cancer_types = c("non_cancer", "cancer")) {
-
-
+extr_iris_linux_ <- function(casrn, cancer_types = c("non_cancer", "cancer")) {
   base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/?"
 
   # Construct query parameters dynamically
@@ -84,8 +82,9 @@ extr_iris_linux_ <- function(casrn , cancer_types = c("non_cancer", "cancer")) {
 
 
   curl_res <- condathis::run("curl",
-                             paste0(base_url, query_string, collapse = ""),
-                             env_name = "openssl-linux-env", verbose = FALSE)
+    paste0(base_url, query_string, collapse = ""),
+    env_name = "openssl-linux-env", verbose = FALSE
+  )
 
   out <- curl_res$stdout |>
     rvest::read_html() |>
@@ -101,7 +100,6 @@ extr_iris_linux_ <- function(casrn , cancer_types = c("non_cancer", "cancer")) {
 #' dat <- extr_iris(c("1332-21-4", "50-00-0"))
 #' }
 extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
-
   if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
     cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
   }
@@ -111,11 +109,9 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   check_internet()
 
   # Need to downgrade libcurl?
-  if(isTRUE(check_need_libcurl_condathis())){
-
+  if (isTRUE(check_need_libcurl_condathis())) {
     condathis_downgrade_libcurl()
     extr_iris_to_use <- extr_iris_linux_
-
   } else {
     extr_iris_to_use <- extr_iris_
   }
@@ -158,7 +154,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 
   # Check if online
   base_url <- "https://ice.ntp.niehs.nih.gov/api/v1/search"
-  #check_internet()
+  # check_internet()
   # Unfortunatelly this would fail see #7
   check_internet()
 
@@ -261,5 +257,4 @@ extr_tox <- function(casrn) {
 
   list_1 <- list(ghs_dat = ghs_dat, iris = iris_filt, ice = ice_dat)
   out <- c(list_1, comptox_list)
-
 }

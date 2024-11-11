@@ -164,25 +164,27 @@ extr_comptox <- function(ids,
 
   base_url <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/?lb2ljny4"
   # Need to downgrade libcurl?
-  if(isTRUE(check_need_libcurl_condathis())){
-
+  if (isTRUE(check_need_libcurl_condathis())) {
     condathis_downgrade_libcurl()
 
 
-    resp <- extr_comptox_linux_(ids = ids,
-                                download_items = download_items,
-                                mass_error = mass_error,
-                                xlsx_file = xlsx_file,
-                                base_url = base_url)
-
+    resp <- extr_comptox_linux_(
+      ids = ids,
+      download_items = download_items,
+      mass_error = mass_error,
+      xlsx_file = xlsx_file,
+      base_url = base_url
+    )
   } else {
-    resp <- extr_comptox_other_os_(ids = ids,
-                                   download_items = download_items,
-                                   mass_error = mass_error,
-                                   verify_ssl =  verify_ssl,
-                                   xlsx_file = xlsx_file,
-                                   base_url = base_url,
-                                   ...)
+    resp <- extr_comptox_other_os_(
+      ids = ids,
+      download_items = download_items,
+      mass_error = mass_error,
+      verify_ssl = verify_ssl,
+      xlsx_file = xlsx_file,
+      base_url = base_url,
+      ...
+    )
   }
 
   sheet_names <- readxl::excel_sheets(xlsx_file)
@@ -192,8 +194,6 @@ extr_comptox <- function(ids,
   unlink(xlsx_file)
 
   dat_list
-
-
 }
 
 #' @inherit extr_comptox title description
@@ -201,15 +201,12 @@ extr_comptox <- function(ids,
 #' @param  xlsx_file Path to file to write with results.
 #' @param  base_url Comptox url.
 extr_comptox_other_os_ <- function(ids,
-                         download_items = NULL,
-                         mass_error = 0,
-                         verify_ssl = FALSE,
-                         xlsx_file,
-                         base_url,
-                         ...) {
-
-
-
+                                   download_items = NULL,
+                                   mass_error = 0,
+                                   verify_ssl = FALSE,
+                                   xlsx_file,
+                                   base_url,
+                                   ...) {
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   identifier_types <- c("chemical_name", "CASRN", "INCHIKEY", "dtxsid")
@@ -277,12 +274,10 @@ extr_comptox_other_os_ <- function(ids,
 #' @param  xlsx_file Path to file to write with results.
 #' @param  base_url Comptox url.
 extr_comptox_linux_ <- function(ids,
-                               download_items =  NULL,
-                               mass_error = 0,
-                               xlsx_file,
-                               base_url) {
-
-
+                                download_items = NULL,
+                                mass_error = 0,
+                                xlsx_file,
+                                base_url) {
   # Create JSON-like string
   json_string <- sprintf(
     '{
@@ -295,24 +290,25 @@ extr_comptox_linux_ <- function(ids,
   }',
     mass_error,
     paste(shQuote(download_items, type = "cmd"), collapse = ", "),
-    paste(ids, collapse = "\\n")  # Double backslashes for R to produce \n in the output
+    paste(ids, collapse = "\\n") # Double backslashes for R to produce \n in the output
   )
 
 
   cli::cli_alert_info("Sending request to CompTox...")
 
   curl_res <- condathis::run("curl",
-                             "-X",
-                             "POST",
-                             base_url,
-                             "-H", "User-Agent: httr2/1.0.1 r-curl/5.2.1 libcurl/8.4.0",
-                             "-H",  "Accept: */*",
-                             "-H", "Accept-Encoding: deflate, gzip",
-                             "-H", "Content-Type: application/json",
-                             "-d",
-                             json_string,
-                             env_name = "openssl-linux-env",
-                             verbose = "silent")
+    "-X",
+    "POST",
+    base_url,
+    "-H", "User-Agent: httr2/1.0.1 r-curl/5.2.1 libcurl/8.4.0",
+    "-H", "Accept: */*",
+    "-H", "Accept-Encoding: deflate, gzip",
+    "-H", "Content-Type: application/json",
+    "-d",
+    json_string,
+    env_name = "openssl-linux-env",
+    verbose = "silent"
+  )
 
 
 
@@ -336,21 +332,19 @@ extr_comptox_linux_ <- function(ids,
   )
 
   other_headers <- c(
-    "-H",  'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0'
+    "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0"
   )
 
   curl_res_2 <- condathis::run("curl",
-                               arg_call,
-                               full_url_down,
-                               other_headers,
-                               env_name = "openssl-linux-env",
-                               error = "continue",
-                               verbose = "silent"
-                               # stdout = xlsx_file
+    arg_call,
+    full_url_down,
+    other_headers,
+    env_name = "openssl-linux-env",
+    error = "continue",
+    verbose = "silent"
+    # stdout = xlsx_file
   )
- if(curl_res_2$stderr != "") {
-   cli::cli_abort("Failed to perform the request: {curl_res_2$stderr}")
- }
+  if (curl_res_2$stderr != "") {
+    cli::cli_abort("Failed to perform the request: {curl_res_2$stderr}")
+  }
 }
-
-

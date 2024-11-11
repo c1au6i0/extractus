@@ -16,11 +16,10 @@
 #' @examples
 #' \dontrun{
 #' # Example with formaldehyde and aflatoxin
-#' cids <- c(712, 14434)  # CID for formaldehyde and aflatoxin B1
+#' cids <- c(712, 14434) # CID for formaldehyde and aflatoxin B1
 #' extr_casrn_from_cid(cids)
 #' }
 extr_casrn_from_cid <- function(pubchem_id) {
-
   check_internet()
 
   cli::cli_alert_info("Querying {pubchem_id}.")
@@ -66,8 +65,7 @@ extr_casrn_from_cid <- function(pubchem_id) {
 #' compounds <- c("Formaldehyde", "Aflatoxin B1")
 #' extr_chem_info(compounds)
 #' }
-extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE){
-
+extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE) {
   check_internet()
 
   iupac_cid <- webchem::get_cid(IUPAC_names, domain = "compound", verbose = TRUE)
@@ -123,16 +121,17 @@ extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE){
 #'
 #' @param casrn Atomic Vector.
 extr_pubchem_fema_ <- function(casrn) {
-
   dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
   cat("\n")
-  col_out <- c("cid",
-               "casrn",
-               "name",
-               "result",
-               "source_name",
-               "source_id",
-               "other")
+  col_out <- c(
+    "cid",
+    "casrn",
+    "name",
+    "result",
+    "source_name",
+    "source_id",
+    "other"
+  )
 
   if (is.na(dat_cid$cid)) {
     na_matrix <- matrix(NA, nrow = 1, ncol = 7)
@@ -144,13 +143,14 @@ extr_pubchem_fema_ <- function(casrn) {
   } else {
     names(dat_cid)[1] <- "casrn"
     dat <- janitor::clean_names(webchem::pc_sect(dat_cid$cid,
-                                                 verbose = TRUE,
-                                                 section = "FEMA Flavor Profile"))
+      verbose = TRUE,
+      section = "FEMA Flavor Profile"
+    ))
 
     if (length(dat) == 0) {
       na_matrix <- matrix(NA, nrow = 1, ncol = 7)
       out_df <- as.data.frame(na_matrix)
-      colnames(out_df) <-col_out
+      colnames(out_df) <- col_out
       out_df$casrn <- casrn
       out_df$other <- "FEMA info not found"
       cli::cli_alert_info("FEMA for {.field {casrn}} not found!")
@@ -160,7 +160,6 @@ extr_pubchem_fema_ <- function(casrn) {
       out_df[, "other"] <- NA
       out_df$result <- gsub("Flavor and Extract Manufacturers Association \\(FEMA\\)", "", out_df$result)
     }
-
   }
 
   out_df
@@ -179,13 +178,10 @@ extr_pubchem_fema_ <- function(casrn) {
 #' result <- extr_pubchem_fema(casrn_list)
 #' print(result)
 #' }
-extr_pubchem_fema <- function(casrn){
-
-
+extr_pubchem_fema <- function(casrn) {
   check_internet()
   dat <- lapply(casrn, extr_pubchem_fema_)
   do.call(rbind, dat)
-
 }
 
 
@@ -233,14 +229,12 @@ extr_pubchem_ghs_ <- function(casrn) {
       cli::cli_alert_info("GHS for {.field {casrn}} not found!")
       out_df$cid <- dat_cid$cid
     } else {
+      cat("\n")
+      dat_f <- dat[dat$result != "          ", ]
 
-    cat("\n")
-    dat_f <- dat[dat$result != "          ", ]
-
-    names(dat_f)[3] <- "GHS"
-    out_df <- merge(dat_cid, dat_f, by = "cid")
-    out_df[, "other"] <- NA
-
+      names(dat_f)[3] <- "GHS"
+      out_df <- merge(dat_cid, dat_f, by = "cid")
+      out_df[, "other"] <- NA
     }
   }
 
@@ -262,16 +256,7 @@ extr_pubchem_ghs_ <- function(casrn) {
 #' ghs_info
 #' }
 extr_pubchem_ghs <- function(casrn) {
-
   check_internet()
   dat <- lapply(casrn, extr_pubchem_ghs_)
   do.call(rbind, dat)
-
 }
-
-
-
-
-
-
-
