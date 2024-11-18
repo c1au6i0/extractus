@@ -30,29 +30,6 @@ write_dataframes_to_excel <- function(df_list, filename) {
   cli::cli_alert_info("Excell file written in {filename}...")
 }
 
-#' Check Internet
-#'
-#' Wrapper around `pingr::is_online` to print message
-#' a better message.
-#'
-#' @param verbose Boolean to display messages.
-i <- function(verbose = TRUE) {
-  if (isTRUE(verbose)) {
-    cli::cli_alert_info("Checking Internet Connection...")
-  }
-
-  if (isFALSE(pingr::is_online())) {
-    cli::cli_abort("It seems that you are not connected to internet!")
-    out <- FALSE
-  } else {
-    cli::cli_alert_info("Internet connection OK...")
-    out <- TRUE
-  }
-
-  out
-}
-
-
 #' Verify SSL
 #'
 #' @param verify_ssl Boolean.
@@ -185,7 +162,7 @@ ice_assays <- function() {
 
 #' Check Internet
 #'
-#' Wrapper around {pingr::is_online} to print message
+#' Wrapper around `pingr::is_online` to print message
 #' a better message.
 #'
 #' @param verbose Boolean to display messages.

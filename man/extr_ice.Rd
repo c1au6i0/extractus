@@ -23,6 +23,6 @@ The \code{extr_ice} function sends a POST request to the ICE API to search for i
 }
 \examples{
 \dontrun{
-dat <- extr_ice(c("50-00-0"))
+extr_ice(c("50-00-0"))
 }
 }

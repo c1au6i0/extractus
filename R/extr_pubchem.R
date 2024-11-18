@@ -62,8 +62,7 @@ extr_casrn_from_cid <- function(pubchem_id) {
 #' @examples
 #' \dontrun{
 #' # Example with formaldehyde and aflatoxin
-#' compounds <- c("Formaldehyde", "Aflatoxin B1")
-#' extr_chem_info(compounds)
+#' extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
 #' }
 extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE) {
   check_internet()
@@ -174,9 +173,7 @@ extr_pubchem_fema_ <- function(casrn) {
 #' @export
 #' @examples
 #' \dontrun{
-#' casrn_list <- c("64-17-5", "50-00-0")
-#' result <- extr_pubchem_fema(casrn_list)
-#' print(result)
+#' extr_pubchem_fema(c("64-17-5", "50-00-0"))
 #' }
 extr_pubchem_fema <- function(casrn) {
   check_internet()
@@ -252,8 +249,7 @@ extr_pubchem_ghs_ <- function(casrn) {
 #' @export
 #' @examples
 #' \dontrun{
-#' ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
-#' ghs_info
+#' extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 #' }
 extr_pubchem_ghs <- function(casrn) {
   check_internet()

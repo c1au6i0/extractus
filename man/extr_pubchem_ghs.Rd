@@ -17,7 +17,6 @@ This function extracts GHS (Globally Harmonized System) codes from PubChem. It r
 }
 \examples{
 \dontrun{
-ghs_info <- extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
-ghs_info
+extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 }
 }

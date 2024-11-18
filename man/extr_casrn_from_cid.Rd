@@ -27,7 +27,7 @@ the \code{webchem} package and extracts the CAS-RN from the depositor-supplied s
 \examples{
 \dontrun{
 # Example with formaldehyde and aflatoxin
-cids <- c(712, 14434)  # CID for formaldehyde and aflatoxin B1
+cids <- c(712, 14434) # CID for formaldehyde and aflatoxin B1
 extr_casrn_from_cid(cids)
 }
 }

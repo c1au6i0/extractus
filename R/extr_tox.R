@@ -12,7 +12,7 @@
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @examples
 #' \dontrun{
-#' dat <- extr_iris("1332-21-4")
+#' extr_iris("1332-21-4")
 #' }
 extr_iris_ <- function(casrn = NULL,
                        cancer_types = c("non_cancer", "cancer"),
@@ -97,7 +97,7 @@ extr_iris_linux_ <- function(casrn, cancer_types = c("non_cancer", "cancer")) {
 #' @export
 #' @examples
 #' \dontrun{
-#' dat <- extr_iris(c("1332-21-4", "50-00-0"))
+#' extr_iris(c("1332-21-4", "50-00-0"))
 #' }
 extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
@@ -145,7 +145,7 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
 #'
 #' @examples
 #' \dontrun{
-#' dat <- extr_ice(c("50-00-0"))
+#' extr_ice(c("50-00-0"))
 #' }
 extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   if (missing(casrn)) {
@@ -229,14 +229,36 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 }
 
 
-#' extr_tox
+#' Extract Toxicological Information from Multiple Databases
 #'
-#' Extract toxicological information from PubChem, ICE, Comptox, IRIS.
+#' This wrapper function retrieves toxicological information for specified chemicals by calling several external
+#' functions to query multiple databases, including PubChem, the Integrated Chemical Environment (ICE), CompTox
+#' Chemicals Dashboard, and the Integrated Risk Information System (IRIS).
 #'
-#' @param casrn A vector of CASRN.
+#' Specifically, this function:
+#'   \itemize{
+#'     \item Calls \code{\link{extr_pubchem_ghs}} to retrieve GHS classification data from PubChem.
+#'     \item Calls \code{\link{extr_comptox}} to retrieve data from the CompTox Chemicals Dashboard.
+#'     \item Calls \code{\link{extr_ice}} to gather assay data from the ICE database.
+#'     \item Calls \code{\link{extr_iris}} to retrieve risk assessment information from the IRIS database.
+#'   }
 #'
-#' @return List of dataframes.
+#' @param casrn A character vector of CAS Registry Numbers (CASRN) representing the chemicals of interest.
+#'
+#' @return A list of data frames containing toxicological information retrieved from each database:
+#'   \describe{
+#'     \item{ghs_dat}{Toxicity data from PubChem's Globally Harmonized System (GHS) classification.}
+#'     \item{comptox_list}{List of toxicity information from the CompTox Chemicals Dashboard.}
+#'     \item{ice_dat}{Assay data from the Integrated Chemical Environment (ICE) database.}
+#'     \item{iris}{Risk assessment data from the IRIS database.}
+#'   }
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' casrn <- c("50-00-0", "107-02-8")
+#' extr_tox(casrn)
+#' }
 extr_tox <- function(casrn) {
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")

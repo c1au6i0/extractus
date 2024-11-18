@@ -32,7 +32,6 @@ a unique row with the CID, CAS-RN, and additional chemical properties.
 \examples{
 \dontrun{
 # Example with formaldehyde and aflatoxin
-compounds <- c("Formaldehyde", "Aflatoxin B1")
-extr_chem_info(compounds)
+extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
 }
 }

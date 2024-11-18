@@ -5,8 +5,6 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
@@ -93,9 +91,11 @@ names(iris_info)
 The CompTox Chemistry Dashboard, managed by the EPA, provides access to
 data on chemical structures, properties, and associated bioactivity
 data. It integrates data from various sources to support chemical safety
-assessments. ``extr_comptox\` extracts data from the CompTox Chemistry
-Dashboard using both CASRN and IUPAC names of chemicals and returns a
-list of **dataframes**.
+assessments.
+
+`extr_comptox` extracts data from the CompTox Chemistry Dashboard using
+both CASRN and IUPAC names of chemicals and returns a list of
+**dataframes**.
 
 ``` r
 info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
@@ -149,28 +149,30 @@ associations.
 ``` r
 input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
 ctd_association <- extr_ctd(
-   input_terms = input_terms,
-   category = "chem",
-   report_type = "genes_curated",
-   input_term_search_type = "directAssociations",
-   action_types = "ANY",
-   ontology = c("go_bp", "go_cc")
- )
+  input_terms = input_terms,
+  category = "chem",
+  report_type = "genes_curated",
+  input_term_search_type = "directAssociations",
+  action_types = "ANY",
+  ontology = c("go_bp", "go_cc")
+)
 #> ℹ Checking Internet Connection...
 #> ℹ Internet connection OK...
 #> Sending request to CTD database...
 #> Request succeeded with status code: 200
 
 
- # Get expresssion data
- ctd_expression <-  extr_ctd(input_terms = input_terms,
-    report_type = "cgixns",
-    category = "chem",
-    action_types = "expression")
+# Get expresssion data
+ctd_expression <- extr_ctd(
+  input_terms = input_terms,
+  report_type = "cgixns",
+  category = "chem",
+  action_types = "expression"
+)
 #> ℹ Checking Internet Connection...
 #> ℹ Internet connection OK...
 #> Sending request to CTD database...Request succeeded with status code: 200
- 
+
 names(ctd_expression)
 #>  [1] "x_input"             "chemical_name"       "chemical_id"        
 #>  [4] "cas_rn"              "gene_symbol"         "gene_id"            
@@ -188,13 +190,13 @@ health.
 
 ``` r
 tetramer_data <- extr_tetramer(
-   chem = c("50-00-0", "ethanol"),
-   disease = "",
-   gene = "",
-   go = "",
-   input_term_search_type = "directAssociations",
-   qt_match_type = "equals"
- )
+  chem = c("50-00-0", "ethanol"),
+  disease = "",
+  gene = "",
+  go = "",
+  input_term_search_type = "directAssociations",
+  qt_match_type = "equals"
+)
 #> Sending request to CTD database for tetramer data for 50-00-0...
 #> Request succeeded with status code: 200
 #> Sending request to CTD database for tetramer data for ethanol...

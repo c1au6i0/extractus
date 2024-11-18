@@ -1,3 +1,3 @@
-# extractox 0.0.7
+# extractox 0.1.0
 
 * Initial CRAN submission.

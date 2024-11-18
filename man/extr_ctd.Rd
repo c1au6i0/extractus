@@ -73,13 +73,14 @@ dat <- extr_ctd(
 str(dat)
 
 # Get expresssion data
-dat2 <-  extr_ctd(input_terms = input_terms,
-   report_type = "cgixns",
-   category = "chem",
-   action_types = "expression")
+dat2 <- extr_ctd(
+  input_terms = input_terms,
+  report_type = "cgixns",
+  category = "chem",
+  action_types = "expression"
+)
 
 str(dat2)
-
 }
 }
 \references{

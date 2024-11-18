@@ -29,7 +29,7 @@ Note that if \code{keyword} is not provide all dataset are retrieved.
 }
 \examples{
 \dontrun{
-dat <- extr_iris("1332-21-4")
+extr_iris("1332-21-4")
 }
 }
 \seealso{

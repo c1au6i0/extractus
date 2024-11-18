@@ -2,16 +2,39 @@
 % Please edit documentation in R/extr_tox.R
 \name{extr_tox}
 \alias{extr_tox}
-\title{extr_tox}
+\title{Extract Toxicological Information from Multiple Databases}
 \usage{
 extr_tox(casrn)
 }
 \arguments{
-\item{casrn}{A vector of CASRN.}
+\item{casrn}{A character vector of CAS Registry Numbers (CASRN) representing the chemicals of interest.}
 }
 \value{
-List of dataframes.
+A list of data frames containing toxicological information retrieved from each database:
+\describe{
+\item{ghs_dat}{Toxicity data from PubChem's Globally Harmonized System (GHS) classification.}
+\item{comptox_list}{List of toxicity information from the CompTox Chemicals Dashboard.}
+\item{ice_dat}{Assay data from the Integrated Chemical Environment (ICE) database.}
+\item{iris}{Risk assessment data from the IRIS database.}
+}
 }
 \description{
-Extract toxicological information from PubChem, ICE, Comptox, IRIS.
+This wrapper function retrieves toxicological information for specified chemicals by calling several external
+functions to query multiple databases, including PubChem, the Integrated Chemical Environment (ICE), CompTox
+Chemicals Dashboard, and the Integrated Risk Information System (IRIS).
+}
+\details{
+Specifically, this function:
+\itemize{
+\item Calls \code{\link{extr_pubchem_ghs}} to retrieve GHS classification data from PubChem.
+\item Calls \code{\link{extr_comptox}} to retrieve data from the CompTox Chemicals Dashboard.
+\item Calls \code{\link{extr_ice}} to gather assay data from the ICE database.
+\item Calls \code{\link{extr_iris}} to retrieve risk assessment information from the IRIS database.
+}
+}
+\examples{
+\dontrun{
+casrn <- c("50-00-0", "107-02-8")
+extr_tox(casrn)
+}
 }

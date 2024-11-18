@@ -1,6 +1,6 @@
 Package: extractox
 Title: Extract Tox Info from various databases
-Version: 0.0.7
+Version: 0.1.0
 Authors@R: c(
     person(given = "Claudio",
            family = "Zanettini",
@@ -32,10 +32,7 @@ LazyData: true
 Suggests: 
     testthat (>= 3.0.0),
     openxlsx,
-    condathis,
-    knitr,
-    rmarkdown
+    condathis
 Remotes:
     github::luciorq/condathis
 Config/testthat/edition: 3
-VignetteBuilder: knitr

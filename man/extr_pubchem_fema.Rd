@@ -17,8 +17,6 @@ This function retrieves FEMA (Flavor and Extract Manufacturers Association) flav
 }
 \examples{
 \dontrun{
-casrn_list <- c("64-17-5", "50-00-0")
-result <- extr_pubchem_fema(casrn_list)
-print(result)
+extr_pubchem_fema(c("64-17-5", "50-00-0"))
 }
 }
