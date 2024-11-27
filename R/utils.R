@@ -54,6 +54,7 @@ set_ssl <- function(verify_ssl, ...) {
 #' @return This function does not return a value. It is used for its side effects.
 check_status_code <- function(resp) {
   status_code <- httr2::resp_status(resp)
+  browser()
   if (!status_code %in% c(200L, 202L)) {
     cli::cli_abort("Request failed with status code: {status_code}")
   } else {
@@ -61,41 +62,16 @@ check_status_code <- function(resp) {
   }
 }
 
-
-
-#' check_libcurl_condathis
+#' #' install curl
+#' #'
+#' #' Install  `curl==7.78.0`.
+#' condathis_downgrade_libcurl <- function() {
 #'
-#' Check if System is Linux and if libcurl version is more than 7.78.0.
-#' @return Boolean
-check_need_libcurl_condathis <- function() {
-  libcurl_safe <- TRUE
-
-  if (libcurlVersion()[1] >= "7.78.0") {
-    libcurl_safe <- FALSE
-  }
-
-  isFALSE(libcurl_safe) && isTRUE(Sys.info()[["sysname"]] == "Linux")
-}
-
-
-
-
-#' install curl
-#'
-#' Use `{condathis}` to install  `curl==7.78.0`.
-condathis_downgrade_libcurl <- function() {
-  if (isFALSE(requireNamespace("condathis", quietly = TRUE))) {
-    cli::cli_abort("{.pkg condathis} not installed. Install it with: `remotes::install_github('luciorq/condathis')`")
-  }
-
-  if (!condathis::env_exists("openssl-linux-env")) {
-    condathis::create_env(
-      c("curl==7.78.0", "libcurl", "openssl"),
-      env_name = "openssl-linux-env",
-      verbose = FALSE
-    )
-  }
-}
+#'   cli::cli_warn("If this function fails you might need curl version 7.78!")
+#'   # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#'   # When condathis on CRAN we could fix this                                    @
+#'   # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#' }
 
 #' Selection of assays of iris
 ice_assays <- function() {

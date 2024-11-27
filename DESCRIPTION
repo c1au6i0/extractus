@@ -31,10 +31,7 @@ Depends:
 LazyData: true
 Suggests: 
     testthat (>= 3.0.0),
-    openxlsx,
-    condathis
-Remotes:
-    github::luciorq/condathis
+    openxlsx
 Config/testthat/edition: 3
 URL: https://github.com/c1au6i0/extractox
 BugReports: https://github.com/c1au6i0/extractox/issues

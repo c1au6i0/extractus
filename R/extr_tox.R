@@ -29,7 +29,8 @@ extr_iris_ <- function(casrn = NULL,
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
-  # Perform the request and get a response
+  error_result <- NULL
+
   cli::cli_inform("Quering {.field {casrn}} to EPA IRIS database...")
   resp <- tryCatch(
     {
@@ -40,9 +41,20 @@ extr_iris_ <- function(casrn = NULL,
         httr2::req_perform()
     },
     error = function(e) {
-      cli::cli_abort("Failed to perform the request: {conditionMessage(e)}")
+      error_result <<- e
+      NULL
     }
   )
+
+  msg <- "Failed to perform the request: {conditionMessage(error_result)}"
+
+  if (!is.null(error_result)) {
+    if(grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
+      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl version 7.78.0!"))
+    }
+    cli::cli_abort(msg)
+
+  }
 
   check_status_code(resp)
 
@@ -60,37 +72,6 @@ extr_iris_ <- function(casrn = NULL,
   )
 
   dat
-}
-
-#' extr_iris_linux
-#'
-#' @inheritParams extr_iris_
-extr_iris_linux_ <- function(casrn, cancer_types = c("non_cancer", "cancer")) {
-  base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/?"
-
-  # Construct query parameters dynamically
-  query_params <- list(
-    keyword = casrn,
-    cancer_or_no_cancer = cancer_types
-  )
-
-  query_string <- paste(
-    paste0("keyword=", query_params$keyword),
-    paste0("cancer_or_no_cancer=", query_params$cancer_or_no_cancer, collapse = "&"),
-    sep = "&"
-  )
-
-
-  curl_res <- condathis::run("curl",
-    paste0(base_url, query_string, collapse = ""),
-    env_name = "openssl-linux-env", verbose = FALSE
-  )
-
-  out <- curl_res$stdout |>
-    rvest::read_html() |>
-    rvest::html_table()
-
-  out[[1]]
 }
 
 #' @inherit extr_iris_ title description params return details seealso
@@ -111,16 +92,13 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   # Need to downgrade libcurl?
   if (isTRUE(check_need_libcurl_condathis())) {
     condathis_downgrade_libcurl()
-    extr_iris_to_use <- extr_iris_linux_
-  } else {
-    extr_iris_to_use <- extr_iris_
   }
 
   if (length(casrn) > 1) {
-    dat <- lapply(casrn, extr_iris_to_use, cancer_types = cancer_types)
+    dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types)
     out <- do.call(rbind, dat)
   } else {
-    out <- extr_iris_to_use(casrn = casrn, cancer_types = cancer_types)
+    out <- extr_iris_(casrn = casrn, cancer_types = cancer_types)
   }
 
   out_cl <- out |>
