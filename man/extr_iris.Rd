@@ -18,6 +18,14 @@ A data frame containing the extracted data.
 The \code{extr_iris} function sends a request to the EPA IRIS database to search for information based on a specified keyword and cancer types. It retrieves and parses the HTML content from the response.
 Note that if \code{keyword} is not provide all dataset are retrieved.
 }
+\details{
+Please note that this function, which pulls data from EPA servers, may encounter issues on some Linux systems.
+This is because those servers do not accept secure legacy renegotiation. On Linux systems, the current function depends
+on \code{curl} and \code{OpenSSL}, which have known problems with unsafe legacy renegotiation in newer versions.
+One workaround is to downgrade to \code{curl v7.78.0} and \code{OpenSSL v1.1.1}.
+However, please be aware that using these older versions might introduce potential security vulnerabilities.
+Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}{this gist} for instructions on how to downgrade \code{curl} and \code{OpenSSL} on Ubuntu.
+}
 \examples{
 \dontrun{
 extr_iris(c("1332-21-4", "50-00-0"))

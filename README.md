@@ -15,7 +15,7 @@ Chemical Environment), EPA’s IRIS (Integrated Risk Information System),
 EPA’s COMPTOX and PubChem. The package facilitates interaction with
 APIs, providing curated and user-friendly outputs.
 
-To communicate to Pubchem, `extractox` relies on the package`webchem`.
+To communicate with Pubchem, `extractox` relies on the package`webchem`.
 
 ## Installation
 
@@ -283,3 +283,16 @@ fema_info <- extr_pubchem_fema(casrn = c("50-00-0", "123-68-2"))
 #> Querying 123-68-2. OK (HTTP 200).
 #> Querying 31266. OK (HTTP 200).
 ```
+
+## Important Note for Linux Users
+
+Please note that functions that pull data from EPA servers may encounter
+issues on some Linux systems. This is because these servers do not
+accept secure legacy renegotiation. On Linux system, those functions
+depend on `curl` and `OpenSSL`, which have known problems with unsafe
+legacy renegotiation in newer versions. One workaround is to downgrade
+to `curl v7.78.0` and `OpenSSL v1.1.1`. However, please be aware that
+using these older versions might introduce potential security
+vulnerabilities. Refer to [this
+gist](https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c)
+for instructions on how to downgrade `curl` and `OpenSSL` on Ubuntu.

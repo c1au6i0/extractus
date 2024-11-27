@@ -6,3 +6,4 @@
 .httr-oauth
 data-raw/ds.xlsx
 inst/doc
+.actrc

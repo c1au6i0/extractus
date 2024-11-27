@@ -77,6 +77,14 @@
 #'   on linux OS.
 #' @param ... Additional arguments passed to `httr2::req_options()`. Note that this argument is not used
 #'   on linux OS.
+#' @details
+#' Please note that this function, which pulls data from EPA servers, may encounter issues on some Linux systems.
+#' This is because those servers do not accept secure legacy renegotiation. On Linux systems, the current function depends
+#' on \code{curl} and \code{OpenSSL}, which have known problems with unsafe legacy renegotiation in newer versions.
+#' One workaround is to downgrade to \code{curl v7.78.0} and \code{OpenSSL v1.1.1}.
+#' However, please be aware that using these older versions might introduce potential security vulnerabilities.
+#' Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}{this gist} for instructions on how to downgrade \code{curl} and \code{OpenSSL} on Ubuntu.
+#'
 #' @return A cleaned data frame containing the requested data from CompTox.
 #' @examples
 #' \dontrun{
@@ -164,11 +172,6 @@ extr_comptox <- function(ids,
 
   base_url <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/?lb2ljny4"
 
-  # # Need to downgrade libcurl?
-  # if (isTRUE(check_need_libcurl_condathis())) {
-  #   condathis_downgrade_libcurl()
-  # }
-
   resp <- extr_comptox_(
       ids = ids,
       download_items = download_items,
@@ -238,7 +241,7 @@ extr_comptox_ <- function(ids,
 
   if (!is.null(error_result)) {
     if(grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
-      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl version 7.78.0!"))
+      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl v1.1.1!"))
     }
     cli::cli_abort(msg)
 
@@ -266,7 +269,6 @@ extr_comptox_ <- function(ids,
     }
   )
 
-  browser()
   check_status_code(resp)
 
   resp |>

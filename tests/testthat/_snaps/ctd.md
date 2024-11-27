@@ -12,511 +12,511 @@
       random_indices <- sample(1:nrow(dat), 100)
       dat[random_indices, ]
     Output
-             x_input chemical_name chemical_id  cas_rn    gene_symbol   gene_id
-      24388  ethanol       Ethanol     D000431 64-17-5          CASP3       836
-      4050   50-00-0  Formaldehyde     D005557 50-00-0         TRIM29     23650
-      11571  64-17-5       Ethanol     D000431 64-17-5         LRRTM1    347730
-      25173  ethanol       Ethanol     D000431 64-17-5         COL1A1      1277
-      32618  ethanol       Ethanol     D000431 64-17-5       R07E5.15    175570
-      13903  64-17-5       Ethanol     D000431 64-17-5         PNPLA2     57104
-      8229   64-17-5       Ethanol     D000431 64-17-5 DRE-MIR-146B-1 100033671
-      25305  ethanol       Ethanol     D000431 64-17-5          CPT1A      1374
-      25061  ethanol       Ethanol     D000431 64-17-5         CMKLR1      1240
-      22306 methanal  Formaldehyde     D005557 50-00-0          XRCC5      7520
-      12204  64-17-5       Ethanol     D000431 64-17-5          MSD-1    177863
-      7075   64-17-5       Ethanol     D000431 64-17-5        COL10A1      1300
-      26954  ethanol       Ethanol     D000431 64-17-5           FASN      2194
-      31276  ethanol       Ethanol     D000431 64-17-5          OLIG3    167826
-      16044  64-17-5       Ethanol     D000431 64-17-5          SPI1B     30117
-      6519   64-17-5       Ethanol     D000431 64-17-5           CCN1      3491
-      33990  ethanol       Ethanol     D000431 64-17-5           SOD1      6647
-      26663  ethanol       Ethanol     D000431 64-17-5          EXOC3     11336
-      19242 methanal  Formaldehyde     D005557 50-00-0     FAM83C-AS1    140846
-      21784 methanal  Formaldehyde     D005557 50-00-0          STAT3      6774
-      16910  64-17-5       Ethanol     D000431 64-17-5         TMSB10      9168
-      21875 methanal  Formaldehyde     D005557 50-00-0         TBC1D1     23216
-      25559  ethanol       Ethanol     D000431 64-17-5           CYBB      1536
-      21323 methanal  Formaldehyde     D005557 50-00-0         RNF145    153830
-      13284  64-17-5       Ethanol     D000431 64-17-5           OST4 100128731
-      7976   64-17-5       Ethanol     D000431 64-17-5          DDIT3      1649
-      9392   64-17-5       Ethanol     D000431 64-17-5           GCLC      2729
-      3863   50-00-0  Formaldehyde     D005557 50-00-0        TEKT4P2 100132288
-      26876  ethanol       Ethanol     D000431 64-17-5        FAM107A     11170
-      23148  ethanol       Ethanol     D000431 64-17-5         AKR1B1       231
-      13973  64-17-5       Ethanol     D000431 64-17-5          PPARA      5465
-      31334  ethanol       Ethanol     D000431 64-17-5         OTUD7B     56957
-      28278  ethanol       Ethanol     D000431 64-17-5          HMOX1      3162
-      858    50-00-0  Formaldehyde     D005557 50-00-0         CYP4A8    266674
-      6763   64-17-5       Ethanol     D000431 64-17-5          CEL.2    565117
-      32480  ethanol       Ethanol     D000431 64-17-5          PTGS2      5743
-      11367  64-17-5       Ethanol     D000431 64-17-5           LDHA      3939
-      29747  ethanol       Ethanol     D000431 64-17-5          MAPK1      5594
-      13602  64-17-5       Ethanol     D000431 64-17-5           PENK      5179
-      5051   64-17-5       Ethanol     D000431 64-17-5          AGTR1       185
-      34474  ethanol       Ethanol     D000431 64-17-5        T10E9.4    172362
-      33269  ethanol       Ethanol     D000431 64-17-5          SCP2A    393839
-      16920  64-17-5       Ethanol     D000431 64-17-5            TNC      3371
-      29660  ethanol       Ethanol     D000431 64-17-5          M60.7    187467
-      29697  ethanol       Ethanol     D000431 64-17-5       MAP1LC3B     81631
-      11854  64-17-5       Ethanol     D000431 64-17-5        METTL26     84326
-      4934   64-17-5       Ethanol     D000431 64-17-5         ADIPOQ      9370
-      13940  64-17-5       Ethanol     D000431 64-17-5           PON2      5445
-      27075  ethanol       Ethanol     D000431 64-17-5          FHL2B    450007
-      21987 methanal  Formaldehyde     D005557 50-00-0       TMEM184C     55751
-      22126 methanal  Formaldehyde     D005557 50-00-0         TSPYL2     64061
-      25649  ethanol       Ethanol     D000431 64-17-5         CYP2A4     13086
-      12535  64-17-5       Ethanol     D000431 64-17-5           NEFH      4744
-      32987  ethanol       Ethanol     D000431 64-17-5          ROCK1      6093
-      12399  64-17-5       Ethanol     D000431 64-17-5         MYOZ3A 100148802
-      35891  ethanol       Ethanol     D000431 64-17-5          YWHAH      7533
-      25488  ethanol       Ethanol     D000431 64-17-5           CUBN      8029
-      14330  64-17-5       Ethanol     D000431 64-17-5          PSMA2      5683
-      17626  64-17-5       Ethanol     D000431 64-17-5            VXN    254778
-      33986  ethanol       Ethanol     D000431 64-17-5          SOCS3      9021
-      8465   64-17-5       Ethanol     D000431 64-17-5          EMC10    284361
-      6563   64-17-5       Ethanol     D000431 64-17-5          CCND2       894
-      20205 methanal  Formaldehyde     D005557 50-00-0           LTO1    220064
-      22281 methanal  Formaldehyde     D005557 50-00-0         WDSUB1    151525
-      10844  64-17-5       Ethanol     D000431 64-17-5            IL6      3569
-      33432  ethanol       Ethanol     D000431 64-17-5           SFPQ      6421
-      33487  ethanol       Ethanol     D000431 64-17-5        SHROOM1    134549
-      3045   50-00-0  Formaldehyde     D005557 50-00-0           PRLR      5618
-      8615   64-17-5       Ethanol     D000431 64-17-5          EXC-4    173314
-      29670  ethanol       Ethanol     D000431 64-17-5          MAGT1     84061
-      9346   64-17-5       Ethanol     D000431 64-17-5          GAP43      2596
-      13824  64-17-5       Ethanol     D000431 64-17-5        PLEKHB2     55041
-      8696   64-17-5       Ethanol     D000431 64-17-5        F32B4.2    173036
-      7131   64-17-5       Ethanol     D000431 64-17-5         COL1A1      1277
-      32671  ethanol       Ethanol     D000431 64-17-5          RABL3    285282
-      20785 methanal  Formaldehyde     D005557 50-00-0           OPA1      4976
-      10816  64-17-5       Ethanol     D000431 64-17-5            IL6      3569
-      11114  64-17-5       Ethanol     D000431 64-17-5          KCND1      3750
-      7146   64-17-5       Ethanol     D000431 64-17-5         COL2A1      1280
-      11096  64-17-5       Ethanol     D000431 64-17-5          KCNA5      3741
-      12597  64-17-5       Ethanol     D000431 64-17-5         NFATC4      4776
-      11878  64-17-5       Ethanol     D000431 64-17-5         MFSD2A     84879
-      34558  ethanol       Ethanol     D000431 64-17-5         TBKBP1      9755
-      24450  ethanol       Ethanol     D000431 64-17-5            CAT       847
-      9086   64-17-5       Ethanol     D000431 64-17-5          FMO-4    179845
-      10148  64-17-5       Ethanol     D000431 64-17-5          HMGA1      3159
-      14504  64-17-5       Ethanol     D000431 64-17-5          PTPRO      5800
-      8613   64-17-5       Ethanol     D000431 64-17-5          EWSR1      2130
-      21432 methanal  Formaldehyde     D005557 50-00-0           SCG5      6447
-      7793   64-17-5       Ethanol     D000431 64-17-5       CYP-35A5    178802
-      6217   64-17-5       Ethanol     D000431 64-17-5          CALB2       794
-      30249  ethanol       Ethanol     D000431 64-17-5          MSD-2    260109
-      26244  ethanol       Ethanol     D000431 64-17-5           DPCD     25911
-      12669  64-17-5       Ethanol     D000431 64-17-5         NFE2L2      4780
-      32441  ethanol       Ethanol     D000431 64-17-5         PTGFRN      5738
-      23193  ethanol       Ethanol     D000431 64-17-5        ALDH1L1     10840
-      20480 methanal  Formaldehyde     D005557 50-00-0           MMP3      4314
-      36070  ethanol       Ethanol     D000431 64-17-5         ZNF425    155054
-      23836  ethanol       Ethanol     D000431 64-17-5           BCL2       596
-      10271  64-17-5       Ethanol     D000431 64-17-5       HOTAIRM1 100506311
-                          organism organism_id
-      24388      Rattus norvegicus       10116
-      4050            Homo sapiens        9606
-      11571           Mus musculus       10090
-      25173      Rattus norvegicus       10116
-      32618 Caenorhabditis elegans        6239
-      13903      Rattus norvegicus       10116
-      8229             Danio rerio        7955
-      25305           Homo sapiens        9606
-      25061            Danio rerio        7955
-      22306           Homo sapiens        9606
-      12204 Caenorhabditis elegans        6239
-      7075       Rattus norvegicus       10116
-      26954           Mus musculus       10090
-      31276           Homo sapiens        9606
-      16044            Danio rerio        7955
-      6519            Homo sapiens        9606
-      33990           Homo sapiens        9606
-      26663           Homo sapiens        9606
-      19242           Homo sapiens        9606
-      21784           Homo sapiens        9606
-      16910           Mus musculus       10090
-      21875           Homo sapiens        9606
-      25559           Mus musculus       10090
-      21323           Homo sapiens        9606
-      13284            Danio rerio        7955
-      7976            Mus musculus       10090
-      9392            Mus musculus       10090
-      3863            Homo sapiens        9606
-      26876           Mus musculus       10090
-      23148      Rattus norvegicus       10116
-      13973           Homo sapiens        9606
-      31334           Mus musculus       10090
-      28278      Rattus norvegicus       10116
-      858        Rattus norvegicus       10116
-      6763             Danio rerio        7955
-      32480      Rattus norvegicus       10116
-      11367      Rattus norvegicus       10116
-      29747           Mus musculus       10090
-      13602           Homo sapiens        9606
-      5051       Rattus norvegicus       10116
-      34474 Caenorhabditis elegans        6239
-      33269            Danio rerio        7955
-      16920           Mus musculus       10090
-      29660 Caenorhabditis elegans        6239
-      29697           Homo sapiens        9606
-      11854           Mus musculus       10090
-      4934            Homo sapiens        9606
-      13940            Danio rerio        7955
-      27075            Danio rerio        7955
-      21987           Homo sapiens        9606
-      22126           Homo sapiens        9606
-      25649           Mus musculus       10090
-      12535      Rattus norvegicus       10116
-      32987           Mus musculus       10090
-      12399            Danio rerio        7955
-      35891           Mus musculus       10090
-      25488      Rattus norvegicus       10116
-      14330            Danio rerio        7955
-      17626           Mus musculus       10090
-      33986      Rattus norvegicus       10116
-      8465            Mus musculus       10090
-      6563            Homo sapiens        9606
-      20205           Homo sapiens        9606
-      22281           Homo sapiens        9606
-      10844      Rattus norvegicus       10116
-      33432           Mus musculus       10090
-      33487           Mus musculus       10090
-      3045            Homo sapiens        9606
-      8615  Caenorhabditis elegans        6239
-      29670           Mus musculus       10090
-      9346            Mus musculus       10090
-      13824           Mus musculus       10090
-      8696  Caenorhabditis elegans        6239
-      7131       Rattus norvegicus       10116
-      32671           Mus musculus       10090
-      20785           Homo sapiens        9606
-      10816           Mus musculus       10090
-      11114           Mus musculus       10090
-      7146           Gallus gallus        9031
-      11096           Mus musculus       10090
-      12597           Homo sapiens        9606
-      11878           Mus musculus       10090
-      34558           Mus musculus       10090
-      24450      Rattus norvegicus       10116
-      9086  Caenorhabditis elegans        6239
-      10148           Mus musculus       10090
-      14504      Rattus norvegicus       10116
-      8613            Mus musculus       10090
-      21432      Rattus norvegicus       10116
-      7793  Caenorhabditis elegans        6239
-      6217       Rattus norvegicus       10116
-      30249 Caenorhabditis elegans        6239
-      26244           Mus musculus       10090
-      12669           Mus musculus       10090
-      32441           Mus musculus       10090
-      23193      Rattus norvegicus       10116
-      20480           Homo sapiens        9606
-      36070           Homo sapiens        9606
-      23836           Mus musculus       10090
-      10271           Homo sapiens        9606
-                                                                                                                                                                                                     interaction
-      24388                                                                                             beta-patchoulene analog inhibits the reaction [Ethanol results in increased expression of CASP3 protein]
-      4050                                                                                                                                           Formaldehyde results in increased expression of TRIM29 mRNA
-      11571                                                                                                                                                        Ethanol affects the expression of LRRTM1 mRNA
-      25173                                                                                                        [Carbon Tetrachloride co-treated with Ethanol] results in increased expression of COL1A1 mRNA
-      32618                                                                                                                                             Ethanol results in decreased expression of R07E5.15 mRNA
-      13903                                                                                                             Silymarin inhibits the reaction [Ethanol results in increased expression of PNPLA2 mRNA]
-      8229                                                                                                                                        Ethanol results in increased expression of DRE-MIR-146B-1 mRNA
-      25305                                                                           [artenimol co-treated with NR1H4 protein] inhibits the reaction [Ethanol results in decreased expression of CPT1A protein]
-      25061                                                                                                              [Ethanol co-treated with Benzo(a)pyrene] results in decreased expression of CMKLR1 mRNA
-      22306                                                                                                                                           Formaldehyde results in decreased expression of XRCC5 mRNA
-      12204                                                                                                                                                Ethanol results in decreased expression of MSD-1 mRNA
-      7075                                                                                                                                            Ethanol results in increased expression of COL10A1 protein
-      26954                                                                                                                                                 Ethanol results in decreased expression of FASN mRNA
-      31276                                                                                                                   [Ethanol co-treated with Folic Acid] results in increased expression of OLIG3 mRNA
-      16044                                                                                                               [Ethanol co-treated with Benzo(a)pyrene] results in decreased expression of SPI1B mRNA
-      6519                                                      CCN1 protein inhibits the reaction [pterostilbene inhibits the reaction [Ethanol results in increased expression of H2AX protein modified form]]
-      33990                                                                                                          NFE2L2 protein promotes the reaction [Ethanol results in increased expression of SOD1 mRNA]
-      26663     [[Gasoline co-treated with Ethanol] results in increased abundance of [Particulate Matter co-treated with Polycyclic Aromatic Hydrocarbons]] which results in increased expression of EXOC3 mRNA
-      19242                                                                                                                                      Formaldehyde results in increased expression of FAM83C-AS1 mRNA
-      21784                                                                                                                                           Formaldehyde results in increased expression of STAT3 mRNA
-      16910                                                                                                                                               Ethanol results in increased expression of TMSB10 mRNA
-      21875                                                                                                                                          Formaldehyde results in increased expression of TBC1D1 mRNA
-      25559                                                                                                                                                 Ethanol results in increased expression of CYBB mRNA
-      21323                                                                                                                                          Formaldehyde results in decreased expression of RNF145 mRNA
-      13284                                                                                                                                                 Ethanol results in increased expression of OST4 mRNA
-      7976                                                                                                                                                 Ethanol results in increased expression of DDIT3 mRNA
-      9392                                                                                                                                                  Ethanol results in increased expression of GCLC mRNA
-      3863                                                                                                                                          Formaldehyde results in increased expression of TEKT4P2 mRNA
-      26876                                                                                                                                              Ethanol results in increased expression of FAM107A mRNA
-      23148                                                                                                                                               Ethanol results in decreased expression of AKR1B1 mRNA
-      13973                                                                                                       NR1H4 protein inhibits the reaction [Ethanol results in decreased expression of PPARA protein]
-      31334                                                                                                                                               Ethanol results in increased expression of OTUD7B mRNA
-      28278                                                                                                              Silymarin inhibits the reaction [Ethanol results in decreased expression of HMOX1 mRNA]
-      858                                                                                                                                            Formaldehyde results in decreased expression of CYP4A8 mRNA
-      6763                                                                                                                                                 Ethanol results in decreased expression of CEL.2 mRNA
-      32480 Ethanol promotes the reaction [[2,4-dichlorophenoxyacetic acid isooctyl ester results in increased abundance of 2,4-Dichlorophenoxyacetic Acid] which results in increased expression of PTGS2 mRNA]
-      11367                                                                       Sildenafil Citrate inhibits the reaction [[Aflatoxin B1 co-treated with Ethanol] results in increased expression of LDHA mRNA]
-      29747                                                                                                                                             Ethanol results in decreased expression of MAPK1 protein
-      13602                                                                                                              Fomepizole inhibits the reaction [Ethanol results in decreased expression of PENK mRNA]
-      5051                                                                                                                   Ethanol affects the reaction [Dietary Fats affects the expression of AGTR1 protein]
-      34474                                                                                                                                              Ethanol results in decreased expression of T10E9.4 mRNA
-      33269                                                                                                                                                Ethanol results in decreased expression of SCP2A mRNA
-      16920                                                                                                                                                  Ethanol results in increased expression of TNC mRNA
-      29660                                                                                                                                                Ethanol results in increased expression of M60.7 mRNA
-      29697                                                                                                                                          Ethanol results in decreased expression of MAP1LC3B protein
-      11854                                                                                                                                                       Ethanol affects the expression of METTL26 mRNA
-      4934                                                                                                           ADIPOQ protein inhibits the reaction [Ethanol results in decreased expression of ATG5 mRNA]
-      13940                                                                                                                                                 Ethanol results in decreased expression of PON2 mRNA
-      27075                                                                                                               [Ethanol co-treated with Benzo(a)pyrene] results in increased expression of FHL2B mRNA
-      21987                                                                                                                                        Formaldehyde results in increased expression of TMEM184C mRNA
-      22126                                                                                                                                          Formaldehyde results in increased expression of TSPYL2 mRNA
-      25649                                                                                                                                               Ethanol results in increased expression of CYP2A4 mRNA
-      12535                                                                                                                                                          Ethanol affects the expression of NEFH mRNA
-      32987                                                                                                                                                Ethanol results in increased expression of ROCK1 mRNA
-      12399                                                                                                              [Ethanol co-treated with Benzo(a)pyrene] results in increased expression of MYOZ3A mRNA
-      35891                                                                                                                                                Ethanol results in increased expression of YWHAH mRNA
-      25488                                                                                                                                              Ethanol results in decreased expression of CUBN protein
-      14330                                                                                                                                                         Ethanol affects the expression of PSMA2 mRNA
-      17626                                                                                                                                                           Ethanol affects the expression of VXN mRNA
-      33986                                                                                                         Ethanol promotes the reaction [ADIPOQ protein results in increased expression of SOCS3 mRNA]
-      8465                                                                                                                              Ethanol affects the expression of and affects the splicing of EMC10 mRNA
-      6563                                                                       4-benzyl-2-methyl-1,2,4-thiadiazolidine-3,5-dione inhibits the reaction [Ethanol results in decreased expression of CCND2 mRNA]
-      20205                                                                                                                                            Formaldehyde results in decreased expression of LTO1 mRNA
-      22281                                                                                                                                          Formaldehyde results in increased expression of WDSUB1 mRNA
-      10844                                                                                                          platycodin D inhibits the reaction [Ethanol results in increased expression of IL6 protein]
-      33432                                                                                                                              Ethanol affects the expression of and affects the splicing of SFPQ mRNA
-      33487                                                                                                                                                       Ethanol affects the expression of SHROOM1 mRNA
-      3045                                                                                                                                             Formaldehyde results in increased expression of PRLR mRNA
-      8615                                                                                                                                                 Ethanol results in increased expression of EXC-4 mRNA
-      29670                                                                                                                                                Ethanol results in increased expression of MAGT1 mRNA
-      9346                                                                                                                              Ethanol affects the expression of and affects the splicing of GAP43 mRNA
-      13824                                                                                                                           Ethanol affects the expression of and affects the splicing of PLEKHB2 mRNA
-      8696                                                                                                                                               Ethanol results in decreased expression of F32B4.2 mRNA
-      7131                                                                                                                 [Ethanol co-treated with Dietary Fats] results in increased expression of COL1A1 mRNA
-      32671                                                                                                                                                Ethanol results in increased expression of RABL3 mRNA
-      20785                                                                                                                                            Formaldehyde results in decreased expression of OPA1 mRNA
-      10816                                                                       Thalidomide inhibits the reaction [[Ethanol co-treated with Hydrochloric Acid] results in increased expression of IL6 protein]
-      11114                                                                                                                                                Ethanol results in increased expression of KCND1 mRNA
-      7146                                                                                                                                                Ethanol results in decreased expression of COL2A1 mRNA
-      11096                                                                                                                                                         Ethanol affects the expression of KCNA5 mRNA
-      12597                                                              pterostilbene inhibits the reaction [Ethanol results in increased expression of and results in increased acetylation of NFATC4 protein]
-      11878                                                                                                                                               Ethanol results in increased expression of MFSD2A mRNA
-      34558                                                                                                                                                        Ethanol affects the expression of TBKBP1 mRNA
-      24450                                                                                                           3-nitropropionic acid affects the reaction [Ethanol affects the expression of CAT protein]
-      9086                                                                                                                                                 Ethanol results in increased expression of FMO-4 mRNA
-      10148                                                                  CCN1 protein inhibits the reaction [pterostilbene inhibits the reaction [Ethanol results in increased expression of HMGA1 protein]]
-      14504                                                                                                                                                Ethanol results in decreased expression of PTPRO mRNA
-      8613                                                                                                                                                          Ethanol affects the expression of EWSR1 mRNA
-      21432                                                                                                                                            Formaldehyde results in decreased expression of SCG5 mRNA
-      7793                                                                                                                                              Ethanol results in increased expression of CYP-35A5 mRNA
-      6217                                                                                                                                                 Ethanol results in decreased expression of CALB2 mRNA
-      30249                                                                                                                                                Ethanol results in decreased expression of MSD-2 mRNA
-      26244                                                                                                                                                 Ethanol results in decreased expression of DPCD mRNA
-      12669                                                                     NFE2L2 affects the reaction [tetramethylpyrazine inhibits the reaction [Ethanol results in increased expression of SREBF1 mRNA]]
-      32441                                                                                                                                               Ethanol results in increased expression of PTGFRN mRNA
-      23193                                                                                                                                              Ethanol results in decreased expression of ALDH1L1 mRNA
-      20480                                                                                                                                            Formaldehyde results in increased expression of MMP3 mRNA
-      36070                                                                                                                                               Ethanol results in increased expression of ZNF425 mRNA
-      23836                                                                                                                                              Ethanol results in decreased expression of BCL2 protein
-      10271                                                                                                                                             Ethanol results in decreased expression of HOTAIRM1 mRNA
-                                                      interaction_actions
-      24388                       decreases^reaction|increases^expression
-      4050                                           increases^expression
-      11571                                            affects^expression
-      25173                      affects^cotreatment|increases^expression
-      32618                                          decreases^expression
-      13903                       decreases^reaction|increases^expression
-      8229                                           increases^expression
-      25305   affects^cotreatment|decreases^expression|decreases^reaction
-      25061                      affects^cotreatment|decreases^expression
-      22306                                          decreases^expression
-      12204                                          decreases^expression
-      7075                                           increases^expression
-      26954                                          decreases^expression
-      31276                      affects^cotreatment|increases^expression
-      16044                      affects^cotreatment|decreases^expression
-      6519                        decreases^reaction|increases^expression
-      33990                       increases^expression|increases^reaction
-      26663  affects^cotreatment|increases^abundance|increases^expression
-      19242                                          increases^expression
-      21784                                          increases^expression
-      16910                                          increases^expression
-      21875                                          increases^expression
-      25559                                          increases^expression
-      21323                                          decreases^expression
-      13284                                          increases^expression
-      7976                                           increases^expression
-      9392                                           increases^expression
-      3863                                           increases^expression
-      26876                                          increases^expression
-      23148                                          decreases^expression
-      13973                       decreases^expression|decreases^reaction
-      31334                                          increases^expression
-      28278                       decreases^expression|decreases^reaction
-      858                                            decreases^expression
-      6763                                           decreases^expression
-      32480   increases^abundance|increases^expression|increases^reaction
-      11367   affects^cotreatment|decreases^reaction|increases^expression
-      29747                                          decreases^expression
-      13602                       decreases^expression|decreases^reaction
-      5051                            affects^expression|affects^reaction
-      34474                                          decreases^expression
-      33269                                          decreases^expression
-      16920                                          increases^expression
-      29660                                          increases^expression
-      29697                                          decreases^expression
-      11854                                            affects^expression
-      4934                        decreases^expression|decreases^reaction
-      13940                                          decreases^expression
-      27075                      affects^cotreatment|increases^expression
-      21987                                          increases^expression
-      22126                                          increases^expression
-      25649                                          increases^expression
-      12535                                            affects^expression
-      32987                                          increases^expression
-      12399                      affects^cotreatment|increases^expression
-      35891                                          increases^expression
-      25488                                          decreases^expression
-      14330                                            affects^expression
-      17626                                            affects^expression
-      33986                       increases^expression|increases^reaction
-      8465                            affects^expression|affects^splicing
-      6563                        decreases^expression|decreases^reaction
-      20205                                          decreases^expression
-      22281                                          increases^expression
-      10844                       decreases^reaction|increases^expression
-      33432                           affects^expression|affects^splicing
-      33487                                            affects^expression
-      3045                                           increases^expression
-      8615                                           increases^expression
-      29670                                          increases^expression
-      9346                            affects^expression|affects^splicing
-      13824                           affects^expression|affects^splicing
-      8696                                           decreases^expression
-      7131                       affects^cotreatment|increases^expression
-      32671                                          increases^expression
-      20785                                          decreases^expression
-      10816   affects^cotreatment|decreases^reaction|increases^expression
-      11114                                          increases^expression
-      7146                                           decreases^expression
-      11096                                            affects^expression
-      12597 decreases^reaction|increases^acetylation|increases^expression
-      11878                                          increases^expression
-      34558                                            affects^expression
-      24450                           affects^expression|affects^reaction
-      9086                                           increases^expression
-      10148                       decreases^reaction|increases^expression
-      14504                                          decreases^expression
-      8613                                             affects^expression
-      21432                                          decreases^expression
-      7793                                           increases^expression
-      6217                                           decreases^expression
-      30249                                          decreases^expression
-      26244                                          decreases^expression
-      12669      affects^reaction|decreases^reaction|increases^expression
-      32441                                          increases^expression
-      23193                                          decreases^expression
-      20480                                          increases^expression
-      36070                                          increases^expression
-      23836                                          decreases^expression
-      10271                                          decreases^expression
+             x_input chemical_name chemical_id  cas_rn gene_symbol   gene_id
+      24388  ethanol       Ethanol     D000431 64-17-5       CASP3       836
+      4050   50-00-0  Formaldehyde     D005557 50-00-0      TRIM29     23650
+      11571  64-17-5       Ethanol     D000431 64-17-5      LRRC8C     84230
+      25173  ethanol       Ethanol     D000431 64-17-5      COL1A1      1277
+      32618  ethanol       Ethanol     D000431 64-17-5      PYCARD     29108
+      13903  64-17-5       Ethanol     D000431 64-17-5        PNO1     56902
+      8229   64-17-5       Ethanol     D000431 64-17-5        DRD2      1813
+      25305  ethanol       Ethanol     D000431 64-17-5       CPG-1    175586
+      25061  ethanol       Ethanol     D000431 64-17-5      CLSTN2     64084
+      22306 methanal  Formaldehyde     D005557 50-00-0      WTAPP1 100288077
+      12204  64-17-5       Ethanol     D000431 64-17-5      MRPS21     54460
+      7075   64-17-5       Ethanol     D000431 64-17-5     COL-106    176955
+      26954  ethanol       Ethanol     D000431 64-17-5        FASN      2194
+      31276  ethanol       Ethanol     D000431 64-17-5        ODC1      4953
+      16044  64-17-5       Ethanol     D000431 64-17-5        SPEN     23013
+      6519   64-17-5       Ethanol     D000431 64-17-5        CCN1      3491
+      33990  ethanol       Ethanol     D000431 64-17-5       SNRPG      6637
+      26663  ethanol       Ethanol     D000431 64-17-5        ETS1      2113
+      19242 methanal  Formaldehyde     D005557 50-00-0     FAM199X    139231
+      21784 methanal  Formaldehyde     D005557 50-00-0    ST20-AS1    283687
+      16910  64-17-5       Ethanol     D000431 64-17-5     TMEM86A    144110
+      21875 methanal  Formaldehyde     D005557 50-00-0       TANC1     85461
+      25559  ethanol       Ethanol     D000431 64-17-5      CYB5R2     51700
+      21323 methanal  Formaldehyde     D005557 50-00-0        RIT1      6016
+      13284  64-17-5       Ethanol     D000431 64-17-5        ORM2      5005
+      7976   64-17-5       Ethanol     D000431 64-17-5       DDIT3      1649
+      9392   64-17-5       Ethanol     D000431 64-17-5        GCLC      2729
+      3863   50-00-0  Formaldehyde     D005557 50-00-0     TEKT4P2 100132288
+      26876  ethanol       Ethanol     D000431 64-17-5       FABP4      2167
+      23148  ethanol       Ethanol     D000431 64-17-5         AK3     50808
+      13973  64-17-5       Ethanol     D000431 64-17-5       PPARA      5465
+      31334  ethanol       Ethanol     D000431 64-17-5       ORAI1     84876
+      28278  ethanol       Ethanol     D000431 64-17-5       HMOX1      3162
+      858    50-00-0  Formaldehyde     D005557 50-00-0      CYP4A8    266674
+      6763   64-17-5       Ethanol     D000431 64-17-5       CECR2     27443
+      32480  ethanol       Ethanol     D000431 64-17-5       PTGS2      5743
+      11367  64-17-5       Ethanol     D000431 64-17-5       LCP2A    336073
+      29747  ethanol       Ethanol     D000431 64-17-5     MAP3K10      4294
+      13602  64-17-5       Ethanol     D000431 64-17-5       PEDS1    387521
+      5051   64-17-5       Ethanol     D000431 64-17-5       AGTR1       185
+      34474  ethanol       Ethanol     D000431 64-17-5     T01D1.3    173402
+      33269  ethanol       Ethanol     D000431 64-17-5       SCFD1     23256
+      16920  64-17-5       Ethanol     D000431 64-17-5      TMSB10      9168
+      29660  ethanol       Ethanol     D000431 64-17-5        LY86      9450
+      29697  ethanol       Ethanol     D000431 64-17-5       MAML2     84441
+      11854  64-17-5       Ethanol     D000431 64-17-5      METAP1     23173
+      4934   64-17-5       Ethanol     D000431 64-17-5      ADIPOQ      9370
+      13940  64-17-5       Ethanol     D000431 64-17-5        POMC      5443
+      27075  ethanol       Ethanol     D000431 64-17-5       FGFR1      2260
+      21987 methanal  Formaldehyde     D005557 50-00-0       TMCC1     23023
+      22126 methanal  Formaldehyde     D005557 50-00-0        TSF1     32821
+      25649  ethanol       Ethanol     D000431 64-17-5     CYP27A1      1593
+      12535  64-17-5       Ethanol     D000431 64-17-5      NECAB3     63941
+      32987  ethanol       Ethanol     D000431 64-17-5      RNF227    284023
+      12399  64-17-5       Ethanol     D000431 64-17-5       MYO5A      4644
+      35891  ethanol       Ethanol     D000431 64-17-5   Y73F8A.20    178430
+      25488  ethanol       Ethanol     D000431 64-17-5        CTSK      1513
+      14330  64-17-5       Ethanol     D000431 64-17-5       PSAT1     29968
+      17626  64-17-5       Ethanol     D000431 64-17-5        VSIR     64115
+      33986  ethanol       Ethanol     D000431 64-17-5      SNRPA1      6627
+      8465   64-17-5       Ethanol     D000431 64-17-5      ELOVL6     79071
+      6563   64-17-5       Ethanol     D000431 64-17-5       CCND1       595
+      20205 methanal  Formaldehyde     D005557 50-00-0       LSAMP      4045
+      22281 methanal  Formaldehyde     D005557 50-00-0       WDR36    134430
+      10844  64-17-5       Ethanol     D000431 64-17-5         IL6      3569
+      33432  ethanol       Ethanol     D000431 64-17-5       SESN2     83667
+      33487  ethanol       Ethanol     D000431 64-17-5      SH3TC1     54436
+      3045   50-00-0  Formaldehyde     D005557 50-00-0        PRLR      5618
+      8615   64-17-5       Ethanol     D000431 64-17-5         EVC      2121
+      29670  ethanol       Ethanol     D000431 64-17-5       LYSET     26175
+      9346   64-17-5       Ethanol     D000431 64-17-5      GALNT4      8693
+      13824  64-17-5       Ethanol     D000431 64-17-5        PLEK      5341
+      8696   64-17-5       Ethanol     D000431 64-17-5          F3      2152
+      7131   64-17-5       Ethanol     D000431 64-17-5      COL1A1      1277
+      32671  ethanol       Ethanol     D000431 64-17-5       RAB28      9364
+      20785 methanal  Formaldehyde     D005557 50-00-0        OAS2      4939
+      10816  64-17-5       Ethanol     D000431 64-17-5         IL6      3569
+      11114  64-17-5       Ethanol     D000431 64-17-5       KCNB1      3745
+      7146   64-17-5       Ethanol     D000431 64-17-5      COL1A2      1278
+      11096  64-17-5       Ethanol     D000431 64-17-5        KAZN     23254
+      12597  64-17-5       Ethanol     D000431 64-17-5      NFATC4      4776
+      11878  64-17-5       Ethanol     D000431 64-17-5        MFN1     55669
+      34558  ethanol       Ethanol     D000431 64-17-5       TARS1      6897
+      24450  ethanol       Ethanol     D000431 64-17-5         CAT       847
+      9086   64-17-5       Ethanol     D000431 64-17-5       FMO-2     35561
+      10148  64-17-5       Ethanol     D000431 64-17-5       HMGA1      3159
+      14504  64-17-5       Ethanol     D000431 64-17-5       PTPRD      5789
+      8613   64-17-5       Ethanol     D000431 64-17-5       EVA1A     84141
+      21432 methanal  Formaldehyde     D005557 50-00-0       SCAF4     57466
+      7793   64-17-5       Ethanol     D000431 64-17-5      CYP2X8    431734
+      6217   64-17-5       Ethanol     D000431 64-17-5       CALB1       793
+      30249  ethanol       Ethanol     D000431 64-17-5      MRPL41     64975
+      26244  ethanol       Ethanol     D000431 64-17-5       DNPH1     10591
+      12669  64-17-5       Ethanol     D000431 64-17-5      NFE2L2      4780
+      32441  ethanol       Ethanol     D000431 64-17-5       PTC-3    173631
+      23193  ethanol       Ethanol     D000431 64-17-5         ALB       213
+      20480 methanal  Formaldehyde     D005557 50-00-0         MLX      6945
+      36094  ethanol       Ethanol     D000431 64-17-5      ZNF425    155054
+      23836  ethanol       Ethanol     D000431 64-17-5        BCL2       596
+      10271  64-17-5       Ethanol     D000431 64-17-5      HOMER3      9454
+                           organism organism_id
+      24388            Mus musculus       10090
+      4050             Homo sapiens        9606
+      11571            Mus musculus       10090
+      25173            Mus musculus       10090
+      32618            Mus musculus       10090
+      13903            Mus musculus       10090
+      8229        Rattus norvegicus       10116
+      25305  Caenorhabditis elegans        6239
+      25061            Mus musculus       10090
+      22306            Homo sapiens        9606
+      12204            Mus musculus       10090
+      7075   Caenorhabditis elegans        6239
+      26954            Homo sapiens        9606
+      31276            Homo sapiens        9606
+      16044            Mus musculus       10090
+      6519             Homo sapiens        9606
+      33990            Homo sapiens        9606
+      26663            Homo sapiens        9606
+      19242            Homo sapiens        9606
+      21784            Homo sapiens        9606
+      16910            Mus musculus       10090
+      21875            Homo sapiens        9606
+      25559             Danio rerio        7955
+      21323            Homo sapiens        9606
+      13284            Homo sapiens        9606
+      7976             Homo sapiens        9606
+      9392             Homo sapiens        9606
+      3863             Homo sapiens        9606
+      26876            Mus musculus       10090
+      23148       Rattus norvegicus       10116
+      13973            Homo sapiens        9606
+      31334       Rattus norvegicus       10116
+      28278            Mus musculus       10090
+      858         Rattus norvegicus       10116
+      6763             Mus musculus       10090
+      32480            Mus musculus       10090
+      11367             Danio rerio        7955
+      29747            Mus musculus       10090
+      13602             Danio rerio        7955
+      5051        Rattus norvegicus       10116
+      34474  Caenorhabditis elegans        6239
+      33269             Danio rerio        7955
+      16920            Mus musculus       10090
+      29660            Mus musculus       10090
+      29697            Mus musculus       10090
+      11854            Homo sapiens        9606
+      4934             Homo sapiens        9606
+      13940       Rattus norvegicus       10116
+      27075       Rattus norvegicus       10116
+      21987            Homo sapiens        9606
+      22126 Drosophila melanogaster        7227
+      25649            Mus musculus       10090
+      12535             Danio rerio        7955
+      32987            Mus musculus       10090
+      12399            Mus musculus       10090
+      35891  Caenorhabditis elegans        6239
+      25488            Mus musculus       10090
+      14330            Mus musculus       10090
+      17626            Mus musculus       10090
+      33986            Homo sapiens        9606
+      8465             Homo sapiens        9606
+      6563        Rattus norvegicus       10116
+      20205            Homo sapiens        9606
+      22281            Homo sapiens        9606
+      10844       Rattus norvegicus       10116
+      33432            Mus musculus       10090
+      33487             Danio rerio        7955
+      3045             Homo sapiens        9606
+      8615             Mus musculus       10090
+      29670            Mus musculus       10090
+      9346             Mus musculus       10090
+      13824            Mus musculus       10090
+      8696             Mus musculus       10090
+      7131        Rattus norvegicus       10116
+      32671            Mus musculus       10090
+      20785            Homo sapiens        9606
+      10816            Mus musculus       10090
+      11114            Mus musculus       10090
+      7146        Rattus norvegicus       10116
+      11096            Mus musculus       10090
+      12597            Homo sapiens        9606
+      11878            Homo sapiens        9606
+      34558             Danio rerio        7955
+      24450            Homo sapiens        9606
+      9086   Caenorhabditis elegans        6239
+      10148            Homo sapiens        9606
+      14504            Mus musculus       10090
+      8613             Mus musculus       10090
+      21432            Homo sapiens        9606
+      7793              Danio rerio        7955
+      6217        Rattus norvegicus       10116
+      30249            Homo sapiens        9606
+      26244            Homo sapiens        9606
+      12669            Mus musculus       10090
+      32441  Caenorhabditis elegans        6239
+      23193       Rattus norvegicus       10116
+      20480            Homo sapiens        9606
+      36094            Homo sapiens        9606
+      23836            Homo sapiens        9606
+      10271            Mus musculus       10090
+                                                                                                                                                                                                  interaction
+      24388                                                                                                        Ethanol results in increased expression of and results in increased cleavage of CASP3 mRNA
+      4050                                                                                                                                        Formaldehyde results in increased expression of TRIM29 mRNA
+      11571                                                                                                                                            Ethanol results in increased expression of LRRC8C mRNA
+      25173                                                              CNR1 gene mutant form inhibits the reaction [[Ethanol co-treated with Thioacetamide] results in increased expression of COL1A1 mRNA]
+      32618                                                                                               diallyl disulfide inhibits the reaction [Ethanol results in increased expression of PYCARD protein]
+      13903                                                                                                                                                       Ethanol affects the expression of PNO1 mRNA
+      8229                                                                                                                                               Ethanol results in increased expression of DRD2 mRNA
+      25305                                                                                                                                             Ethanol results in decreased expression of CPG-1 mRNA
+      25061                                                                                                                                            Ethanol results in increased expression of CLSTN2 mRNA
+      22306                                                                                                                                       Formaldehyde results in decreased expression of WTAPP1 mRNA
+      12204                                                                                                                                                     Ethanol affects the expression of MRPS21 mRNA
+      7075                                                                                                                                            Ethanol results in decreased expression of COL-106 mRNA
+      26954                                                                                                                                           Ethanol results in increased expression of FASN protein
+      31276                                                                                                                                              Ethanol results in increased expression of ODC1 mRNA
+      16044                                                                                                                                                       Ethanol affects the expression of SPEN mRNA
+      6519                                                                BECN1 protein promotes the reaction [pterostilbene inhibits the reaction [Ethanol results in increased expression of CCN1 protein]]
+      33990                                                                                                                                             Ethanol results in decreased expression of SNRPG mRNA
+      26663   [[Gasoline co-treated with Ethanol] results in increased abundance of [Particulate Matter co-treated with Polycyclic Aromatic Hydrocarbons]] which results in increased expression of ETS1 mRNA
+      19242                                                                                                                                      Formaldehyde results in decreased expression of FAM199X mRNA
+      21784                                                                                                                                     Formaldehyde results in increased expression of ST20-AS1 mRNA
+      16910                                                                                                                                                    Ethanol affects the expression of TMEM86A mRNA
+      21875                                                                                                                                        Formaldehyde results in increased expression of TANC1 mRNA
+      25559                                                                                                                                            Ethanol results in increased expression of CYB5R2 mRNA
+      21323                                                                                                                                         Formaldehyde results in increased expression of RIT1 mRNA
+      13284                                                                                                                 [Ethanol co-treated with Folic Acid] results in increased expression of ORM2 mRNA
+      7976                                                                                                                                           Ethanol results in increased expression of DDIT3 protein
+      9392                                                                                                        CYP2E1 protein promotes the reaction [Ethanol results in increased expression of GCLC mRNA]
+      3863                                                                                                                                       Formaldehyde results in increased expression of TEKT4P2 mRNA
+      26876                                                                                                                                             Ethanol results in decreased expression of FABP4 mRNA
+      23148                                                                                                                                               Ethanol results in decreased expression of AK3 mRNA
+      13973                                                                        [artenimol co-treated with NR1H4 protein] inhibits the reaction [Ethanol results in decreased expression of PPARA protein]
+      31334                                                                                                                                          Ethanol results in increased expression of ORAI1 protein
+      28278                                                                                                                                             Ethanol results in increased expression of HMOX1 mRNA
+      858                                                                                                                                         Formaldehyde results in decreased expression of CYP4A8 mRNA
+      6763                                                                                                                                              Ethanol results in increased expression of CECR2 mRNA
+      32480                                                                                                diallyl disulfide inhibits the reaction [Ethanol results in increased expression of PTGS2 protein]
+      11367                                                                                                            [Ethanol co-treated with Benzo(a)pyrene] results in decreased expression of LCP2A mRNA
+      29747                                                                                                                                           Ethanol results in increased expression of MAP3K10 mRNA
+      13602                                                                                                                                             Ethanol results in increased expression of PEDS1 mRNA
+      5051                                                                                                                Ethanol affects the reaction [Dietary Fats affects the expression of AGTR1 protein]
+      34474                                                                                                                                           Ethanol results in increased expression of T01D1.3 mRNA
+      33269                                                                                                                                             Ethanol results in decreased expression of SCFD1 mRNA
+      16920                                                                                                                                                     Ethanol affects the expression of TMSB10 mRNA
+      29660                                                                                                                                              Ethanol results in increased expression of LY86 mRNA
+      29697                                                                                                                                             Ethanol results in increased expression of MAML2 mRNA
+      11854 [[Gasoline co-treated with Ethanol] results in increased abundance of [Particulate Matter co-treated with Polycyclic Aromatic Hydrocarbons]] which results in decreased expression of METAP1 mRNA
+      4934                                                                                                        ADIPOQ protein inhibits the reaction [Ethanol results in decreased expression of ATG5 mRNA]
+      13940                                                                                                                  [Ethanol co-treated with Cyanamide] results in increased expression of POMC mRNA
+      27075                                                                                                                                          Ethanol results in increased expression of FGFR1 protein
+      21987                                                                                                                                        Formaldehyde results in decreased expression of TMCC1 mRNA
+      22126                                                                                                                                         Formaldehyde results in increased expression of TSF1 mRNA
+      25649                                                                                                            AM 251 inhibits the reaction [Ethanol results in increased expression of CYP27A1 mRNA]
+      12535                                                                                                                                            Ethanol results in increased expression of NECAB3 mRNA
+      32987                                                                                                                         Ethanol affects the expression of and affects the splicing of RNF227 mRNA
+      12399                                                                                                                          Ethanol affects the expression of and affects the splicing of MYO5A mRNA
+      35891                                                                                                                                         Ethanol results in decreased expression of Y73F8A.20 mRNA
+      25488                                                                                                       [Carbon Tetrachloride co-treated with Ethanol] results in increased expression of CTSK mRNA
+      14330                                                                                                                                             Ethanol results in increased expression of PSAT1 mRNA
+      17626                                                                                                                                              Ethanol results in increased expression of VSIR mRNA
+      33986                                                                                                               [Ethanol co-treated with Folic Acid] results in increased expression of SNRPA1 mRNA
+      8465  [[Gasoline co-treated with Ethanol] results in increased abundance of [Particulate Matter co-treated with Polycyclic Aromatic Hydrocarbons]] which results in decreased expression of ELOVL6 mRNA
+      6563                                                                                                     Ethanol affects the reaction [Corticosterone results in decreased expression of CCND1 protein]
+      20205                                                                                                                                        Formaldehyde results in decreased expression of LSAMP mRNA
+      22281                                                                                                                                        Formaldehyde results in decreased expression of WDR36 mRNA
+      10844                                                                                                          Genistein inhibits the reaction [Ethanol results in increased expression of IL6 protein]
+      33432                                                              SESN2 protein promotes the reaction [pterostilbene inhibits the reaction [Ethanol results in decreased expression of HMGA1 protein]]
+      33487                                                                                                                                            Ethanol results in decreased expression of SH3TC1 mRNA
+      3045                                                                                                                                          Formaldehyde results in increased expression of PRLR mRNA
+      8615                                                                                                                                                Ethanol results in decreased expression of EVC mRNA
+      29670                                                                                                                                             Ethanol results in increased expression of LYSET mRNA
+      9346                                                                                                                                             Ethanol results in increased expression of GALNT4 mRNA
+      13824                                                                                                                                              Ethanol results in increased expression of PLEK mRNA
+      8696                                                                                                          [Carbon Tetrachloride co-treated with Ethanol] results in decreased expression of F3 mRNA
+      7131                                                                 3-methyladenine inhibits the reaction [Ethanol promotes the reaction [Mirtazapine results in increased expression of COL1A1 mRNA]]
+      32671                                                                                                                                                      Ethanol affects the expression of RAB28 mRNA
+      20785                                                                                                                                         Formaldehyde results in decreased expression of OAS2 mRNA
+      10816                                                                                                         pterostilbene inhibits the reaction [Ethanol results in increased expression of IL6 mRNA]
+      11114                                                                                                    ferrostatin-1 inhibits the reaction [Ethanol results in decreased expression of KCNB1 protein]
+      7146                                                                                                                 [Fish Oils co-treated with Ethanol] results in increased expression of COL1A2 mRNA
+      11096                                                                                                                                                       Ethanol affects the expression of KAZN mRNA
+      12597                                                                                                     NFATC4 protein affects the reaction [Ethanol results in increased expression of H2AX protein]
+      11878                                                                                                           Silybin inhibits the reaction [Ethanol results in decreased expression of MFN1 protein]
+      34558                                                                                                                                             Ethanol results in increased expression of TARS1 mRNA
+      24450                                                                 CAT protein inhibits the reaction [sodium arsenite promotes the reaction [Ethanol results in increased expression of PTGS2 mRNA]]
+      9086                                                                                                                                              Ethanol results in increased expression of FMO-2 mRNA
+      10148                                                                                                       NFATC4 protein affects the reaction [Ethanol results in increased expression of HMGA1 mRNA]
+      14504                                                                                                                          Ethanol affects the expression of and affects the splicing of PTPRD mRNA
+      8613                                                                                                                                                       Ethanol affects the expression of EVA1A mRNA
+      21432                                                                                                                                        Formaldehyde results in decreased expression of SCAF4 mRNA
+      7793                                                                                                                                             Ethanol results in decreased expression of CYP2X8 mRNA
+      6217                                                                                                                                              Ethanol results in decreased expression of CALB1 mRNA
+      30249 [[Gasoline co-treated with Ethanol] results in increased abundance of [Particulate Matter co-treated with Polycyclic Aromatic Hydrocarbons]] which results in increased expression of MRPL41 mRNA
+      26244                                                                                                                                             Ethanol results in decreased expression of DNPH1 mRNA
+      12669                                                                NFE2L2 affects the reaction [tetramethylpyrazine inhibits the reaction [Ethanol results in decreased expression of PPARA protein]]
+      32441                                                                                                                                             Ethanol results in increased expression of PTC-3 mRNA
+      23193                                                                                                                                            Ethanol results in increased expression of ALB protein
+      20480                                                                                                                                          Formaldehyde results in decreased expression of MLX mRNA
+      36094                                                                                                                                            Ethanol results in increased expression of ZNF425 mRNA
+      23836                                                                                                                                              Ethanol results in decreased expression of BCL2 mRNA
+      10271                                                                                                                                            Ethanol results in increased expression of HOMER3 mRNA
+                                                     interaction_actions
+      24388                      increases^cleavage|increases^expression
+      4050                                          increases^expression
+      11571                                         increases^expression
+      25173  affects^cotreatment|decreases^reaction|increases^expression
+      32618                      decreases^reaction|increases^expression
+      13903                                           affects^expression
+      8229                                          increases^expression
+      25305                                         decreases^expression
+      25061                                         increases^expression
+      22306                                         decreases^expression
+      12204                                           affects^expression
+      7075                                          decreases^expression
+      26954                                         increases^expression
+      31276                                         increases^expression
+      16044                                           affects^expression
+      6519    decreases^reaction|increases^expression|increases^reaction
+      33990                                         decreases^expression
+      26663 affects^cotreatment|increases^abundance|increases^expression
+      19242                                         decreases^expression
+      21784                                         increases^expression
+      16910                                           affects^expression
+      21875                                         increases^expression
+      25559                                         increases^expression
+      21323                                         increases^expression
+      13284                     affects^cotreatment|increases^expression
+      7976                                          increases^expression
+      9392                       increases^expression|increases^reaction
+      3863                                          increases^expression
+      26876                                         decreases^expression
+      23148                                         decreases^expression
+      13973  affects^cotreatment|decreases^expression|decreases^reaction
+      31334                                         increases^expression
+      28278                                         increases^expression
+      858                                           decreases^expression
+      6763                                          increases^expression
+      32480                      decreases^reaction|increases^expression
+      11367                     affects^cotreatment|decreases^expression
+      29747                                         increases^expression
+      13602                                         increases^expression
+      5051                           affects^expression|affects^reaction
+      34474                                         increases^expression
+      33269                                         decreases^expression
+      16920                                           affects^expression
+      29660                                         increases^expression
+      29697                                         increases^expression
+      11854 affects^cotreatment|decreases^expression|increases^abundance
+      4934                       decreases^expression|decreases^reaction
+      13940                     affects^cotreatment|increases^expression
+      27075                                         increases^expression
+      21987                                         decreases^expression
+      22126                                         increases^expression
+      25649                      decreases^reaction|increases^expression
+      12535                                         increases^expression
+      32987                          affects^expression|affects^splicing
+      12399                          affects^expression|affects^splicing
+      35891                                         decreases^expression
+      25488                     affects^cotreatment|increases^expression
+      14330                                         increases^expression
+      17626                                         increases^expression
+      33986                     affects^cotreatment|increases^expression
+      8465  affects^cotreatment|decreases^expression|increases^abundance
+      6563                         affects^reaction|decreases^expression
+      20205                                         decreases^expression
+      22281                                         decreases^expression
+      10844                      decreases^reaction|increases^expression
+      33432   decreases^expression|decreases^reaction|increases^reaction
+      33487                                         decreases^expression
+      3045                                          increases^expression
+      8615                                          decreases^expression
+      29670                                         increases^expression
+      9346                                          increases^expression
+      13824                                         increases^expression
+      8696                      affects^cotreatment|decreases^expression
+      7131    decreases^reaction|increases^expression|increases^reaction
+      32671                                           affects^expression
+      20785                                         decreases^expression
+      10816                      decreases^reaction|increases^expression
+      11114                      decreases^expression|decreases^reaction
+      7146                      affects^cotreatment|increases^expression
+      11096                                           affects^expression
+      12597                        affects^reaction|increases^expression
+      11878                      decreases^expression|decreases^reaction
+      34558                                         increases^expression
+      24450   decreases^reaction|increases^expression|increases^reaction
+      9086                                          increases^expression
+      10148                        affects^reaction|increases^expression
+      14504                          affects^expression|affects^splicing
+      8613                                            affects^expression
+      21432                                         decreases^expression
+      7793                                          decreases^expression
+      6217                                          decreases^expression
+      30249 affects^cotreatment|increases^abundance|increases^expression
+      26244                                         decreases^expression
+      12669     affects^reaction|decreases^expression|decreases^reaction
+      32441                                         increases^expression
+      23193                                         increases^expression
+      20480                                         decreases^expression
+      36094                                         increases^expression
+      23836                                         decreases^expression
+      10271                                         increases^expression
                           pub_med_i_ds
-      24388                   29339218
+      24388                   35639301
       4050                    23649840
       11571                   30319688
-      25173                   30543783
-      32618                   23381935
-      13903                   26115886
-      8229                    22298809
-      25305                   27939985
-      25061                   35412187
-      22306                   20655997
-      12204                   23381935
-      7075                    36174738
-      26954                   22173916
-      31276                   23378141
-      16044                   35412187
+      25173                   21863215
+      32618                   35526736
+      13903                   30319688
+      8229  18713641|34547370|35227807
+      25305                   23381935
+      25061                   30319688
+      22306                   28937961
+      12204                   30319688
+      7075                    23381935
+      26954          27939985|29476730
+      31276                   28986285
+      16044                   30319688
       6519                    34405320
-      33990                   23994065
+      33990                   23378141
       26663                   29432896
-      19242                   27905399
+      19242                   23649840
       21784                   23649840
       16910                   30319688
       21875                   23649840
-      25559 23978445|27984176|28935932
+      25559                   29361514
       21323                   23649840
-      13284                   29361514
-      7976                    28119953
-      9392                    34995708
+      13284                   23378141
+      7976                    24224909
+      9392                    19133322
       3863                    23649840
-      26876          21955143|30319688
-      23148                   15353170
+      26876          15513904|22173916
+      23148                   17920746
       13973                   27939985
-      31334                   30319688
-      28278                   34346143
+      31334                   26033013
+      28278          20861358|34995708
       858                     12679049
-      6763                    29361514
-      32480                   36085217
-      11367                   35608386
-      29747                   35181401
-      13602                   17934066
+      6763                    30319688
+      32480                   35526736
+      11367                   35412187
+      29747                   30319688
+      13602                   29361514
       5051                    31811911
       34474                   23381935
-      33269                   29361514
-      16920                   30319688
-      29660                   23381935
-      29697                   34405320
-      11854                   30319688
+      33269                   24355176
+      16920                   26730594
+      29660                   30319688
+      29697                   30319688
+      11854                   29432896
       4934                    24582693
-      13940                   29361514
-      27075                   35412187
-      21987                   23649840
-      22126                   17938736
-      25649                   19167417
-      12535                   22954530
+      13940                   11139417
+      27075                   29769550
+      21987          20655997|23649840
+      22126                   28621308
+      25649          23894352|28095641
+      12535                   29361514
       32987                   30319688
-      12399                   35412187
-      35891                   30319688
-      25488                   26185205
-      14330                   24355176
+      12399                   30319688
+      35891                   23381935
+      25488                   30517762
+      14330                   19167417
       17626                   30319688
-      33986                   20052772
-      8465                    30319688
-      6563                    21878650
-      20205                   23649840
+      33986                   23378141
+      8465                    29432896
+      6563                    38259729
+      20205                   27905399
       22281                   23649840
-      10844                   28852734
-      33432                   30319688
-      33487                   30319688
+      10844                   23274713
+      33432                   34405320
+      33487                   29361514
       3045           27905399|28937961
-      8615                    22239914
+      8615                    34492310
       29670                   30319688
       9346                    30319688
       13824                   30319688
-      8696                    23381935
-      7131                    21051528
+      8696                    30517762
+      7131                    35066094
       32671                   30319688
-      20785                   23649840
-      10816                   25478868
-      11114                   30319688
-      7146                    27112526
+      20785                   28937961
+      10816                   34405320
+      11114                   34864093
+      7146                    17347304
       11096                   30319688
-      12597                   34474091
-      11878                   30319688
-      34558                   30319688
-      24450                   31550440
+      12597                   34192554
+      11878                   35158046
+      34558                   29361514
+      24450                   26220687
       9086                    23381935
-      10148                   34405320
-      14504                   15353170
+      10148                   34192554
+      14504                   30319688
       8613                    30319688
-      21432                   12679049
-      7793                    23381935
-      6217                    35227807
-      30249                   23381935
-      26244                   34492310
+      21432                   20655997
+      7793                    29361514
+      6217                    17618662
+      30249                   29432896
+      26244                   11566570
       12669                   27837167
-      32441                   30319688
-      23193                   17920746
-      20480                   27664576
-      36070                   28986285
-      23836 19429258|27983966|29069573
-      10271                   28986285
+      32441                   23381935
+      23193                   23200777
+      20480                   23649840
+      36094                   28986285
+      23836 21878650|31226463|35685625
+      10271                   30319688
 
 # extr_ctd fetches other data
 
@@ -634,107 +634,208 @@
       4590   64-17-5       Ethanol     D000431 64-17-5        ALPL       249
       30011  ethanol       Ethanol     D000431 64-17-5      ZFP941    407812
       24267  ethanol       Ethanol     D000431 64-17-5       KLF13     51621
-                          organism organism_id                         pub_med_ids
-      5388            Mus musculus       10090                            19167417
-      11564            Danio rerio        7955                            29361514
-      2762            Homo sapiens        9606                            20655997
-      25186            Danio rerio        7955                            35412187
-      11546           Mus musculus       10090                            30319688
-      17649           Homo sapiens        9606                            23649840
-      11260 Caenorhabditis elegans        6239                            23381935
-      24196           Homo sapiens        9606                            31059573
-      14773 Caenorhabditis elegans        6239                            23381935
-      4182            Mus musculus       10090                   30319688|30517762
-      18649           Homo sapiens        9606                            23649840
-      27416           Mus musculus       10090                            30319688
-      18540           Homo sapiens        9606                            20655997
-      22799      Rattus norvegicus       10116                            31039417
-      5390            Mus musculus       10090                            30319688
-      25327           Mus musculus       10090                            30319688
-      7151            Mus musculus       10090                   19167417|30319688
-      21842           Homo sapiens        9606                            28986285
-      22113      Rattus norvegicus       10116                            15353170
-      18144           Homo sapiens        9606                            28937961
-      5704             Danio rerio        7955                            35412187
-      22069           Mus musculus       10090                            30319688
-      4664            Mus musculus       10090                            30319688
-      13290           Homo sapiens        9606                            15963989
-      13031           Homo sapiens        9606                            28986285
-      28635 Caenorhabditis elegans        6239                            25713357
-      4075            Homo sapiens        9606                            23649840
-      28082            Danio rerio        7955                            29361514
-      15104           Homo sapiens        9606                            23649840
-      14537           Mus musculus       10090                            30319688
-      27540           Mus musculus       10090                            30319688
-      21858           Mus musculus       10090                            30319688
-      23909           Homo sapiens        9606 28763032|28964808|33161052|34474091
-      11613           Mus musculus       10090                            30319688
-      28162           Mus musculus       10090                   30319688|33017621
-      4212             Danio rerio        7955                            29361514
-      10235           Homo sapiens        9606                   31059573|35713687
-      15215           Homo sapiens        9606                            23649840
-      15782           Homo sapiens        9606                            23649840
-      19454           Homo sapiens        9606                            29432896
-      21737           Mus musculus       10090                            30319688
-      7439  Caenorhabditis elegans        6239                            23381935
-      9655            Mus musculus       10090                            30319688
-      9413            Mus musculus       10090                            30319688
-      27868           Mus musculus       10090                            30319688
-      462             Homo sapiens        9606                   23649840|27905399
-      10149      Rattus norvegicus       10116                   15475485|17637929
-      22827           Mus musculus       10090                            30319688
-      10475      Rattus norvegicus       10116                            15353170
-      20433            Danio rerio        7955                            29361514
-      23041            Danio rerio        7955                            29361514
-      9690            Mus musculus       10090                            30319688
-      10413           Homo sapiens        9606                            23378141
-      12129            Danio rerio        7955                            35412187
-      29779 Caenorhabditis elegans        6239                            23381935
-      26074            Danio rerio        7955                            29361514
-      29079           Homo sapiens        9606                            29432896
-      14660           Mus musculus       10090                            30319688
-      24272      Rattus norvegicus       10116                            22486562
-      18417           Homo sapiens        9606                            23649840
-      731             Homo sapiens        9606                            20655997
-      28857           Mus musculus       10090                            30319688
-      23423           Homo sapiens        9606                            23378141
-      16230           Homo sapiens        9606                            20655997
-      19197            Danio rerio        7955                            35412187
-      13492           Mus musculus       10090                            30319688
-      20189 Caenorhabditis elegans        6239                            23381935
-      12781           Mus musculus       10090                            30319688
-      21155           Homo sapiens        9606                            31059573
-      28490           Mus musculus       10090                            30319688
-      966             Homo sapiens        9606                            23649840
-      10684           Mus musculus       10090                            30319688
-      9383            Mus musculus       10090                            30319688
-      22577           Mus musculus       10090                            30319688
-      26593           Homo sapiens        9606                   20621659|23378141
-      5591            Mus musculus       10090                            30319688
-      28350            Danio rerio        7955                            29361514
-      22177            Danio rerio        7955                            29361514
-      24867      Rattus norvegicus       10116                            17920746
-      28555           Mus musculus       10090                            30319688
-      4749            Mus musculus       10090                            30319688
-      24823           Mus musculus       10090                            30319688
-      2482            Homo sapiens        9606                            23649840
-      6885  Caenorhabditis elegans        6239                            23381935
-      19772            Danio rerio        7955                            29361514
-      15706           Homo sapiens        9606                            23649840
-      3418            Homo sapiens        9606                            23649840
-      27560           Homo sapiens        9606                            31059573
-      2722            Homo sapiens        9606                            27905399
-      19268           Mus musculus       10090                            30319688
-      56                                    NA                            21920416
-      7193            Homo sapiens        9606                   23378141|28986285
-      17318           Homo sapiens        9606                            23649840
-      27729            Danio rerio        7955                   29361514|35412187
-      24024           Mus musculus       10090                   29018328|30319688
-      29001            Danio rerio        7955                            29361514
-      8109             Danio rerio        7955                            35412187
-      4590            Homo sapiens        9606                            23378141
-      30011           Mus musculus       10090                            30319688
-      24267           Mus musculus       10090                            30319688
+                          organism organism_id
+      5388            Mus musculus       10090
+      11564            Danio rerio        7955
+      2762            Homo sapiens        9606
+      25186            Danio rerio        7955
+      11546           Mus musculus       10090
+      17649           Homo sapiens        9606
+      11260 Caenorhabditis elegans        6239
+      24196           Homo sapiens        9606
+      14773 Caenorhabditis elegans        6239
+      4182            Mus musculus       10090
+      18649           Homo sapiens        9606
+      27416           Mus musculus       10090
+      18540           Homo sapiens        9606
+      22799      Rattus norvegicus       10116
+      5390            Mus musculus       10090
+      25327           Mus musculus       10090
+      7151            Mus musculus       10090
+      21842           Homo sapiens        9606
+      22113      Rattus norvegicus       10116
+      18144           Homo sapiens        9606
+      5704             Danio rerio        7955
+      22069           Mus musculus       10090
+      4664            Mus musculus       10090
+      13290           Homo sapiens        9606
+      13031           Homo sapiens        9606
+      28635 Caenorhabditis elegans        6239
+      4075            Homo sapiens        9606
+      28082            Danio rerio        7955
+      15104           Homo sapiens        9606
+      14537           Mus musculus       10090
+      27540           Mus musculus       10090
+      21858           Mus musculus       10090
+      23909           Homo sapiens        9606
+      11613           Mus musculus       10090
+      28162           Mus musculus       10090
+      4212             Danio rerio        7955
+      10235           Homo sapiens        9606
+      15215           Homo sapiens        9606
+      15782           Homo sapiens        9606
+      19454           Homo sapiens        9606
+      21737           Mus musculus       10090
+      7439  Caenorhabditis elegans        6239
+      9655            Mus musculus       10090
+      9413            Mus musculus       10090
+      27868           Mus musculus       10090
+      462             Homo sapiens        9606
+      10149      Rattus norvegicus       10116
+      22827           Mus musculus       10090
+      10475      Rattus norvegicus       10116
+      20433            Danio rerio        7955
+      23041            Danio rerio        7955
+      9690            Mus musculus       10090
+      10413           Homo sapiens        9606
+      12129            Danio rerio        7955
+      29779 Caenorhabditis elegans        6239
+      26074            Danio rerio        7955
+      29079           Homo sapiens        9606
+      14660           Mus musculus       10090
+      24272      Rattus norvegicus       10116
+      18417           Homo sapiens        9606
+      731             Homo sapiens        9606
+      28857           Mus musculus       10090
+      23423           Homo sapiens        9606
+      16230           Homo sapiens        9606
+      19197            Danio rerio        7955
+      13492           Mus musculus       10090
+      20189 Caenorhabditis elegans        6239
+      12781           Mus musculus       10090
+      21155           Homo sapiens        9606
+      28490           Mus musculus       10090
+      966             Homo sapiens        9606
+      10684           Mus musculus       10090
+      9383            Mus musculus       10090
+      22577           Mus musculus       10090
+      26593           Homo sapiens        9606
+      5591            Mus musculus       10090
+      28350            Danio rerio        7955
+      22177            Danio rerio        7955
+      24867      Rattus norvegicus       10116
+      28555           Mus musculus       10090
+      4749            Mus musculus       10090
+      24823           Mus musculus       10090
+      2482            Homo sapiens        9606
+      6885  Caenorhabditis elegans        6239
+      19772            Danio rerio        7955
+      15706           Homo sapiens        9606
+      3418            Homo sapiens        9606
+      27560           Homo sapiens        9606
+      2722            Homo sapiens        9606
+      19268           Mus musculus       10090
+      56                                    NA
+      7193            Homo sapiens        9606
+      17318           Homo sapiens        9606
+      27729            Danio rerio        7955
+      24024           Mus musculus       10090
+      29001            Danio rerio        7955
+      8109             Danio rerio        7955
+      4590            Homo sapiens        9606
+      30011           Mus musculus       10090
+      24267           Mus musculus       10090
+                                             pub_med_ids
+      5388                                      19167417
+      11564                                     29361514
+      2762                                      20655997
+      25186                                     35412187
+      11546                                     30319688
+      17649                                     23649840
+      11260                                     23381935
+      24196                                     31059573
+      14773                                     23381935
+      4182                             30319688|30517762
+      18649                                     23649840
+      27416                                     30319688
+      18540                                     20655997
+      22799                                     31039417
+      5390                                      30319688
+      25327                                     30319688
+      7151                             19167417|30319688
+      21842                                     28986285
+      22113                                     15353170
+      18144                                     28937961
+      5704                                      35412187
+      22069                                     30319688
+      4664                                      30319688
+      13290                                     15963989
+      13031                                     28986285
+      28635                                     25713357
+      4075                                      23649840
+      28082                                     29361514
+      15104                                     23649840
+      14537                                     30319688
+      27540                                     30319688
+      21858                                     30319688
+      23909 28763032|28964808|33161052|34474091|35685625
+      11613                                     30319688
+      28162                            30319688|33017621
+      4212                                      29361514
+      10235                            31059573|35713687
+      15215                                     23649840
+      15782                                     23649840
+      19454                                     29432896
+      21737                                     30319688
+      7439                                      23381935
+      9655                                      30319688
+      9413                                      30319688
+      27868                                     30319688
+      462                              23649840|27905399
+      10149                            15475485|17637929
+      22827                                     30319688
+      10475                                     15353170
+      20433                                     29361514
+      23041                                     29361514
+      9690                                      30319688
+      10413                                     23378141
+      12129                                     35412187
+      29779                                     23381935
+      26074                                     29361514
+      29079                                     29432896
+      14660                                     30319688
+      24272                                     22486562
+      18417                                     23649840
+      731                                       20655997
+      28857                                     30319688
+      23423                                     23378141
+      16230                                     20655997
+      19197                                     35412187
+      13492                                     30319688
+      20189                                     23381935
+      12781                                     30319688
+      21155                                     31059573
+      28490                                     30319688
+      966                                       23649840
+      10684                                     30319688
+      9383                                      30319688
+      22577                                     30319688
+      26593                            20621659|23378141
+      5591                                      30319688
+      28350                                     29361514
+      22177                                     29361514
+      24867                                     17920746
+      28555                                     30319688
+      4749                                      30319688
+      24823                                     30319688
+      2482                                      23649840
+      6885                                      23381935
+      19772                                     29361514
+      15706                                     23649840
+      3418                                      23649840
+      27560                                     31059573
+      2722                                      27905399
+      19268                                     30319688
+      56                                        21920416
+      7193                             23378141|28986285
+      17318                                     23649840
+      27729                            29361514|35412187
+      24024                            29018328|30319688
+      29001                                     29361514
+      8109                                      35412187
+      4590                                      23378141
+      30011                                     30319688
+      24267                                     30319688
 
 # extr_ctd fetches tetramers data
 
@@ -750,181 +851,182 @@
       random_indices <- sample(1:nrow(dat), 100)
       dat[random_indices, ]
     Output
-              query     chemical chemical_id     gene gene_id
-      3552  50-00-0 Formaldehyde     D005557     BCL2     596
-      37891 ethanol      Ethanol     D000431    MAPK3    5595
-      39571 ethanol      Ethanol     D000431      AGT     183
-      10624 ethanol      Ethanol     D000431     SOX9    6662
-      127   50-00-0 Formaldehyde     D005557    KMT2A    4297
-      17101 ethanol      Ethanol     D000431      LEP    3952
-      46913 ethanol      Ethanol     D000431     TP53    7157
-      31208 ethanol      Ethanol     D000431      TNF    7124
-      30206 ethanol      Ethanol     D000431    VEGFA    7422
-      46698 ethanol      Ethanol     D000431    FGFR1    2260
-      7715  ethanol      Ethanol     D000431    PTGS2    5743
-      32629 ethanol      Ethanol     D000431     ACTB      60
-      38563 ethanol      Ethanol     D000431   CHRNA7    1139
-      12438 ethanol      Ethanol     D000431     NOS3    4846
-      1491  50-00-0 Formaldehyde     D005557     EDN1    1906
-      19199 ethanol      Ethanol     D000431     INSR    3643
-      26156 ethanol      Ethanol     D000431      IL6    3569
-      28445 ethanol      Ethanol     D000431    SIRT1   23411
-      36319 ethanol      Ethanol     D000431    HMOX1    3162
-      43127 ethanol      Ethanol     D000431   MAPK14    1432
-      30949 ethanol      Ethanol     D000431      ACE    1636
-      26359 ethanol      Ethanol     D000431      AGT     183
-      49588 ethanol      Ethanol     D000431    GSTM2    2946
-      533   50-00-0 Formaldehyde     D005557     BCL2     596
-      46963 ethanol      Ethanol     D000431     FGF2    2247
-      42341 ethanol      Ethanol     D000431   NFE2L2    4780
-      21976 ethanol      Ethanol     D000431  ADORA2A     135
-      22843 ethanol      Ethanol     D000431     ACTB      60
-      25434 ethanol      Ethanol     D000431  SLC4A10   57282
-      39744 ethanol      Ethanol     D000431     JAK2    3717
-      22050 ethanol      Ethanol     D000431     PTEN    5728
-      7681  ethanol      Ethanol     D000431     MST1    4485
-      24269 ethanol      Ethanol     D000431  ALDH7A1     501
-      11381 ethanol      Ethanol     D000431      PTH    5741
-      26074 ethanol      Ethanol     D000431     BCL2     596
-      42818 ethanol      Ethanol     D000431   ATP1A1     476
-      12921 ethanol      Ethanol     D000431      NPY    4852
-      36831 ethanol      Ethanol     D000431   ADIPOQ    9370
-      724   50-00-0 Formaldehyde     D005557     HES1    3280
-      6164  ethanol      Ethanol     D000431    BIRC2     329
-      42909 ethanol      Ethanol     D000431     SOD2    6648
-      22401 ethanol      Ethanol     D000431     DRD2    1813
-      15833 ethanol      Ethanol     D000431    MAPK3    5595
-      18400 ethanol      Ethanol     D000431     TERT    7015
-      10381 ethanol      Ethanol     D000431    CCND1     595
-      16516 ethanol      Ethanol     D000431  SLC12A2    6558
-      43762 ethanol      Ethanol     D000431      CRH    1392
-      22822 ethanol      Ethanol     D000431      DMD    1756
-      42381 ethanol      Ethanol     D000431     SOD1    6647
-      39089 ethanol      Ethanol     D000431    FGFR3    2261
-      5040  ethanol      Ethanol     D000431      JUN    3725
-      36273 ethanol      Ethanol     D000431 TNFRSF1A    7132
-      31447 ethanol      Ethanol     D000431     IL1B    3553
-      24896 ethanol      Ethanol     D000431      APP     351
-      9666  ethanol      Ethanol     D000431     DRD2    1813
-      22979 ethanol      Ethanol     D000431    PTGS2    5743
-      34935 ethanol      Ethanol     D000431     APOE     348
-      46840 ethanol      Ethanol     D000431     GLI2    2736
-      10014 ethanol      Ethanol     D000431     CD44     960
-      41069 ethanol      Ethanol     D000431     IFNG    3458
-      35355 ethanol      Ethanol     D000431     IGF1    3479
-      21291 ethanol      Ethanol     D000431    PPARG    5468
-      16777 ethanol      Ethanol     D000431    FOXA1    3169
-      31830 ethanol      Ethanol     D000431      TNF    7124
-      20592 ethanol      Ethanol     D000431    MAPK1    5594
-      29612 ethanol      Ethanol     D000431   COL5A2    1290
-      6410  ethanol      Ethanol     D000431     IL1B    3553
-      45185 ethanol      Ethanol     D000431   NFE2L2    4780
-      2016  50-00-0 Formaldehyde     D005557      TNF    7124
-      44900 ethanol      Ethanol     D000431     EGFR    1956
-      44293 ethanol      Ethanol     D000431   UGT1A1   54658
-      23718 ethanol      Ethanol     D000431     OTX2    5015
-      37204 ethanol      Ethanol     D000431     NOS2    4843
-      12700 ethanol      Ethanol     D000431     GGT1    2678
-      49251 ethanol      Ethanol     D000431      TNF    7124
-      24367 ethanol      Ethanol     D000431   PPP3CC    5533
-      3822  50-00-0 Formaldehyde     D005557    TRPV1    7442
-      23373 ethanol      Ethanol     D000431   CHRNB2    1141
-      24189 ethanol      Ethanol     D000431    PINK1   65018
-      32884 ethanol      Ethanol     D000431      IL6    3569
-      23744 ethanol      Ethanol     D000431     CDH2    1000
-      19541 ethanol      Ethanol     D000431      TNF    7124
-      9424  ethanol      Ethanol     D000431   NOTCH2    4853
-      39141 ethanol      Ethanol     D000431    TRP53   22059
-      25304 ethanol      Ethanol     D000431     SOD2    6648
-      771   50-00-0 Formaldehyde     D005557    HMOX1    3162
-      5207  ethanol      Ethanol     D000431    FGFR1    2260
-      27798 ethanol      Ethanol     D000431    ADRB2     154
-      49210 ethanol      Ethanol     D000431     SOD2    6648
-      42469 ethanol      Ethanol     D000431     NOS2    4843
-      27759 ethanol      Ethanol     D000431     EGFR    1956
-      47481 ethanol      Ethanol     D000431     SOD1    6647
-      7883  ethanol      Ethanol     D000431   CTNNB1    1499
-      28716 ethanol      Ethanol     D000431   AGTR1A   11607
-      1803  50-00-0 Formaldehyde     D005557    ANXA1     301
-      27696 ethanol      Ethanol     D000431      TNF    7124
-      313   50-00-0 Formaldehyde     D005557   CDKN1B    1027
-      17206 ethanol      Ethanol     D000431   MAPK14    1432
-      21864 ethanol      Ethanol     D000431   SLC1A1    6505
-      28363 ethanol      Ethanol     D000431     TP53    7157
+              query     chemical chemical_id    gene gene_id
+      3552  50-00-0 Formaldehyde     D005557   HMGA2    8091
+      37891 ethanol      Ethanol     D000431    AGER     177
+      39571 ethanol      Ethanol     D000431    IL1B    3553
+      10624 ethanol      Ethanol     D000431   PRDX1    5052
+      127   50-00-0 Formaldehyde     D005557  TGFBR1    7046
+      17101 ethanol      Ethanol     D000431   SIRT6   51548
+      46913 ethanol      Ethanol     D000431   SMAD4    4089
+      31208 ethanol      Ethanol     D000431     CCK     885
+      30206 ethanol      Ethanol     D000431   SMAD4    4089
+      46698 ethanol      Ethanol     D000431   CCNA1    8900
+      7715  ethanol      Ethanol     D000431    NOS3    4846
+      32629 ethanol      Ethanol     D000431    DPF3    8110
+      49828 ethanol      Ethanol     D000431    KRAS    3845
+      38563 ethanol      Ethanol     D000431     TNF    7124
+      12438 ethanol      Ethanol     D000431    NOS3    4846
+      1491  50-00-0 Formaldehyde     D005557    NPPB    4879
+      19199 ethanol      Ethanol     D000431    APOE     348
+      26156 ethanol      Ethanol     D000431    LDHB    3945
+      28445 ethanol      Ethanol     D000431     TNF    7124
+      36319 ethanol      Ethanol     D000431 SULT1E1    6783
+      43127 ethanol      Ethanol     D000431 GUCY1A1    2982
+      30949 ethanol      Ethanol     D000431    IGF2    3481
+      26359 ethanol      Ethanol     D000431    PTK2    5747
+      49588 ethanol      Ethanol     D000431    INS1   16333
+      533   50-00-0 Formaldehyde     D005557    BCL2     596
+      46963 ethanol      Ethanol     D000431     BAX     581
+      42341 ethanol      Ethanol     D000431   KMT2A    4297
+      21976 ethanol      Ethanol     D000431 HSD11B2    3291
+      22843 ethanol      Ethanol     D000431  MIR204  406987
+      25434 ethanol      Ethanol     D000431   GSK3B    2932
+      39744 ethanol      Ethanol     D000431     TNF    7124
+      22050 ethanol      Ethanol     D000431     LEP    3952
+      7681  ethanol      Ethanol     D000431   FGFR2    2263
+      24269 ethanol      Ethanol     D000431   PARP1     142
+      11381 ethanol      Ethanol     D000431    EDN1    1906
+      26074 ethanol      Ethanol     D000431    EGR2    1959
+      42818 ethanol      Ethanol     D000431    CES1    1066
+      12921 ethanol      Ethanol     D000431    NGFR    4804
+      36831 ethanol      Ethanol     D000431    RHOA     387
+      724   50-00-0 Formaldehyde     D005557     BAX     581
+      6164  ethanol      Ethanol     D000431    FGF8    2253
+      42909 ethanol      Ethanol     D000431   NISCH   11188
+      22401 ethanol      Ethanol     D000431     APP     351
+      15833 ethanol      Ethanol     D000431    EDN1    1906
+      18400 ethanol      Ethanol     D000431    MDM2    4193
+      10381 ethanol      Ethanol     D000431   GNAI2    2771
+      16516 ethanol      Ethanol     D000431    ZEB1    6935
+      43762 ethanol      Ethanol     D000431  ADIPOQ    9370
+      22822 ethanol      Ethanol     D000431   GRIA1    2890
+      42381 ethanol      Ethanol     D000431   PLOD2    5352
+      39089 ethanol      Ethanol     D000431     IL6    3569
+      5040  ethanol      Ethanol     D000431    RAF1    5894
+      36273 ethanol      Ethanol     D000431    AKT1     207
+      31447 ethanol      Ethanol     D000431 TSC22D1    8848
+      24896 ethanol      Ethanol     D000431     KMO    8564
+      9666  ethanol      Ethanol     D000431     ID4    3400
+      22979 ethanol      Ethanol     D000431    CD36     948
+      34935 ethanol      Ethanol     D000431    EDN1    1906
+      46840 ethanol      Ethanol     D000431    PLAU    5328
+      10014 ethanol      Ethanol     D000431  PIK3CA    5290
+      41069 ethanol      Ethanol     D000431    TLR4    7099
+      35355 ethanol      Ethanol     D000431    IGF1    3479
+      21291 ethanol      Ethanol     D000431  CTNNB1    1499
+      16777 ethanol      Ethanol     D000431   PPARA    5465
+      31830 ethanol      Ethanol     D000431    NOS3    4846
+      20592 ethanol      Ethanol     D000431    NOS2    4843
+      29612 ethanol      Ethanol     D000431    AKT1     207
+      6410  ethanol      Ethanol     D000431   VEGFA    7422
+      45185 ethanol      Ethanol     D000431    AKT1     207
+      2016  50-00-0 Formaldehyde     D005557    CCL2    6347
+      44900 ethanol      Ethanol     D000431     ALB     213
+      44293 ethanol      Ethanol     D000431  PPP3CA    5530
+      23718 ethanol      Ethanol     D000431    BDNF     627
+      37204 ethanol      Ethanol     D000431   TGFB1    7040
+      12700 ethanol      Ethanol     D000431   PARP1     142
+      49251 ethanol      Ethanol     D000431 ADORA2A     135
+      24367 ethanol      Ethanol     D000431   TRP53   22059
+      3822  50-00-0 Formaldehyde     D005557    TLR4    7099
+      23373 ethanol      Ethanol     D000431   ASIC1      41
+      24189 ethanol      Ethanol     D000431  CYP2D6    1565
+      32884 ethanol      Ethanol     D000431    IGF2    3481
+      23744 ethanol      Ethanol     D000431  GRIN2A    2903
+      19541 ethanol      Ethanol     D000431    SOD1    6647
+      9424  ethanol      Ethanol     D000431   VEGFA    7422
+      39141 ethanol      Ethanol     D000431     RYK    6259
+      25304 ethanol      Ethanol     D000431 ALDH7A1     501
+      771   50-00-0 Formaldehyde     D005557    SOD1    6647
+      5207  ethanol      Ethanol     D000431    BMP4     652
+      27798 ethanol      Ethanol     D000431     TNF    7124
+      49210 ethanol      Ethanol     D000431   HTR1B    3351
+      42469 ethanol      Ethanol     D000431   PARP1     142
+      27759 ethanol      Ethanol     D000431     TRH    7200
+      47481 ethanol      Ethanol     D000431  CYP1B1    1545
+      7883  ethanol      Ethanol     D000431   HIF1A    3091
+      28716 ethanol      Ethanol     D000431    TP53    7157
+      1803  50-00-0 Formaldehyde     D005557    IL1B    3553
+      27696 ethanol      Ethanol     D000431    NOS1    4842
+      313   50-00-0 Formaldehyde     D005557     APC     324
+      17206 ethanol      Ethanol     D000431    PAX6    5080
+      21864 ethanol      Ethanol     D000431  INPPL1    3636
                                                                                     phenotype
       3552                               positive regulation of multicellular organism growth
-      37891                                      positive regulation of macrophage chemotaxis
-      39571                          positive regulation of nitric oxide biosynthetic process
+      37891                                                positive regulation of JNK cascade
+      39571                                   positive regulation of neuron apoptotic process
       10624                                                     cell population proliferation
       127                                                                   apoptotic process
       17101                                                               glucose homeostasis
-      46913                                                           stem cell proliferation
+      46913                                                                   spermatogenesis
       31208                                          positive regulation of apoptotic process
-      30206                                               positive regulation of angiogenesis
-      46698                                                  stem cell population maintenance
-      7715                                                                bone mineralization
-      32629                              positive regulation of cell population proliferation
+      30206                                                        osteoblast differentiation
+      46698                                                                   spermatogenesis
+      7715                                                                   bone development
+      32629                                       positive regulation of cell differentiation
+      49828                                                                   visual learning
       38563                                               positive regulation of MAPK cascade
       12438                                      cellular response to organic cyclic compound
       1491                                                                  heart development
-      19199                                                           hippocampus development
-      26156                              negative regulation of cell population proliferation
-      28445 negative regulation of transforming growth factor beta receptor signaling pathway
-      36319                        positive regulation of I-kappaB kinase/NF-kappaB signaling
-      43127               regulation of cytokine production involved in inflammatory response
-      30949                                          positive regulation of apoptotic process
-      26359                              negative regulation of cell population proliferation
-      49588                                                      xenobiotic catabolic process
+      19199                                       high-density lipoprotein particle clearance
+      26156                                                             NAD metabolic process
+      28445                                               negative regulation of neurogenesis
+      36319                                   positive regulation of fat cell differentiation
+      43127                                                      regulation of blood pressure
+      30949                                               positive regulation of angiogenesis
+      26359                                         negative regulation of cell-cell adhesion
+      49588                                                                      vasodilation
       533                                                       cell population proliferation
-      46963                                                           stem cell proliferation
-      42341                                         reactive oxygen species metabolic process
-      21976                                                               locomotory behavior
-      22843                                                maintenance of blood-brain barrier
-      25434                                                     multicellular organism growth
-      39744                          positive regulation of nitric oxide biosynthetic process
-      22050                                                               locomotory behavior
-      7681                                                                bone mineralization
+      46963                                                                   spermatogenesis
+      42341                                                      protein modification process
+      21976                                                           lipid metabolic process
+      22843                                                   long-term synaptic potentiation
+      25434                                                        mitochondrion organization
+      39744                                   positive regulation of neuron apoptotic process
+      22050                                                           lipid metabolic process
+      7681                                                                   bone development
       24269                                                                     mitochondrion
       11381                                                  cellular calcium ion homeostasis
-      26074                              negative regulation of cell population proliferation
-      42818                                                      regulation of blood pressure
-      12921                                                    chemical synaptic transmission
+      26074                                                                       myelination
+      42818                                      regulation of bile acid biosynthetic process
+      12921                                             cellular response to oxidative stress
       36831                        positive regulation of I-kappaB kinase/NF-kappaB signaling
       724                                                       cell population proliferation
       6164                                                                  apoptotic process
       42909                                                      regulation of blood pressure
-      22401                                                                  long-term memory
-      15833                                                                   eye development
+      22401                                                               locomotory behavior
+      15833                                                        epithelial fluid transport
       18400                                                                 heart development
       10381                                                     cell population proliferation
-      16516                                         gamma-aminobutyric acid signaling pathway
-      43762                                              regulation of NMDA receptor activity
-      22822                                                maintenance of blood-brain barrier
-      42381                                         reactive oxygen species metabolic process
-      39089                                   positive regulation of neuron apoptotic process
-      5040                                                                       angiogenesis
-      36273                        positive regulation of I-kappaB kinase/NF-kappaB signaling
+      16516                                                             forebrain development
+      43762                                           regulation of glucose metabolic process
+      22822                                                   long-term synaptic potentiation
+      42381                                                      protein modification process
+      39089                                               positive regulation of MAPK cascade
+      5040                                              AMP-activated protein kinase activity
+      36273                                   positive regulation of fat cell differentiation
       31447                                          positive regulation of apoptotic process
       24896                                                                     mitochondrion
-      9666                                                                     cell migration
-      22979                                                maintenance of blood-brain barrier
-      34935                                                positive regulation of endocytosis
-      46840                                                           stem cell proliferation
+      9666                                                               cell differentiation
+      22979                                        low-density lipoprotein particle clearance
+      34935                        positive regulation of cytosolic calcium ion concentration
+      46840                                                                   spermatogenesis
       10014                                                                    cell migration
-      41069                           positive regulation of tumor necrosis factor production
+      41069               positive regulation of reactive oxygen species biosynthetic process
       35355                                      positive regulation of ERK1 and ERK2 cascade
-      21291                                                                 lipid homeostasis
-      16777                                                               glucose homeostasis
+      21291                                                                  limb development
+      16777                                                                   gluconeogenesis
       31830                                          positive regulation of apoptotic process
-      20592                             insulin-like growth factor receptor signaling pathway
-      29612                                                                      ossification
+      20592                                                             inflammatory response
+      29612                                                 nitric oxide biosynthetic process
       6410                                                                  apoptotic process
       45185                                                      response to oxidative stress
       2016                              leukocyte migration involved in inflammatory response
-      44900                                                      response to oxidative stress
-      44293                                                              response to nutrient
-      23718                                                              midbrain development
-      37204                                   positive regulation of interleukin-6 production
+      44900                                                              response to nutrient
+      44293                                                                  renal filtration
+      23718                                                                            memory
+      37204                        positive regulation of I-kappaB kinase/NF-kappaB signaling
       12700                                             cellular response to oxidative stress
       49251                                                                      vasodilation
       24367                                                                     mitochondrion
@@ -932,125 +1034,124 @@
       23373                                                                            memory
       24189                                                                     mitochondrion
       32884                              positive regulation of cell population proliferation
-      23744                                                              midbrain development
-      19541                                                             inflammatory response
+      23744                                                                            memory
+      19541                                            hydrogen peroxide biosynthetic process
       9424                                                               cell differentiation
-      39141                                   positive regulation of neuron apoptotic process
-      25304                                                        mitochondrion organization
+      39141                                               positive regulation of MAPK cascade
+      25304                                                                     mitochondrion
       771                                                       cellular iron ion homeostasis
       5207                                                                       angiogenesis
-      27798                              negative regulation of multicellular organism growth
-      49210                                                                      vasodilation
-      42469                                                      regulation of blood pressure
-      27759                                         negative regulation of mitotic cell cycle
-      47481                                                      superoxide metabolic process
-      7883                                                                    bone remodeling
-      28716                                                                      neurogenesis
+      27798                                                 negative regulation of heart rate
+      49210                                                                  vasoconstriction
+      42469                                                     protein poly-ADP-ribosylation
+      27759                                           negative regulation of feeding behavior
+      47481                                                         steroid metabolic process
+      7883                                                                bone mineralization
+      28716 negative regulation of transforming growth factor beta receptor signaling pathway
       1803                                                              inflammatory response
-      27696                                         negative regulation of mitotic cell cycle
+      27696                        negative regulation of cytosolic calcium ion concentration
       313                                                                   apoptotic process
-      17206                                                         glucose metabolic process
-      21864                                                               locomotory behavior
-      28363 negative regulation of transforming growth factor beta receptor signaling pathway
-            phenotype_id                                         disease disease_id
-      3552    GO:0040018                              Nerve Degeneration    D009410
-      37891   GO:0010759                                  Brain Ischemia    D002545
-      39571   GO:0045429                                   Death, Sudden    D003645
-      10624   GO:0008283                                  Lung Neoplasms    D008175
-      127     GO:0006915                          Chromosome Aberrations    D002869
-      17101   GO:0042593                                   Stomach Ulcer    D013276
-      46913   GO:0072089                                  Lung Neoplasms    D008175
-      31208   GO:0043065 Drug-Related Side Effects and Adverse Reactions    D064420
-      30206   GO:0045766                             Acute Kidney Injury    D058186
-      46698   GO:0019827                                Breast Neoplasms    D001943
-      7715    GO:0030282                            Esophageal Neoplasms    D004938
-      32629   GO:0008284                       Carcinoma, Hepatocellular    D006528
-      38563   GO:0043410                              Nerve Degeneration    D009410
-      12438   GO:0071407                                          Sepsis    D018805
-      1491    GO:0007507                              Pulmonary Fibrosis    D011658
-      19199   GO:0021766                                    Hyperalgesia    D006930
-      26156   GO:0008285                                  Brain Ischemia    D002545
-      28445   GO:0030512                                Retinal Diseases    D012164
-      36319   GO:0043123                                Breast Neoplasms    D001943
-      43127   GO:1900015                             Myocardial Ischemia    D017202
-      30949   GO:0043065                       Carcinoma, Hepatocellular    D006528
-      26359   GO:0008285                                     Cholestasis    D002779
-      49588   GO:0042178          Chemical and Drug Induced Liver Injury    D056486
-      533     GO:0008283                                          Asthma    D001249
-      46963   GO:0072089               Prenatal Exposure Delayed Effects    D011297
-      42341   GO:0072593               Non-alcoholic Fatty Liver Disease    D065626
-      21976   GO:0007626               Genetic Predisposition to Disease    D020022
-      22843   GO:0035633                       Carcinoma, Hepatocellular    D006528
-      25434   GO:0035264                             Cognition Disorders    D003072
-      39744   GO:0045429                   Liver Cirrhosis, Experimental    D008106
-      22050   GO:0007626                                Long QT Syndrome    D008133
-      7681    GO:0030282          Chemical and Drug Induced Liver Injury    D056486
-      24269   GO:0005739                             Disease Progression    D018450
-      11381   GO:0006874                                    Osteoporosis    D010024
-      26074   GO:0008285                                         Adenoma    D000236
-      42818   GO:0008217                             Myocardial Ischemia    D017202
-      12921   GO:0007268                       Cocaine-Related Disorders    D019970
-      36831   GO:0043123                                     Weight Loss    D015431
-      724     GO:0008283               Neuroectodermal Tumors, Primitive    D018242
-      6164    GO:0006915                                  HIV Infections    D015658
-      42909   GO:0008217                              Reperfusion Injury    D015427
-      22401   GO:0007616                                Memory Disorders    D008569
-      15833   GO:0001654                                    Hyperalgesia    D006930
-      18400   GO:0007507               Genetic Predisposition to Disease    D020022
-      10381   GO:0008283                             Disease Progression    D018450
-      16516   GO:0007214                             Glucose Intolerance    D018149
-      43762   GO:2000310                                     Hypotension    D007022
-      22822   GO:0035633                                          Ataxia    D001259
-      42381   GO:0072593                                     Weight Loss    D015431
-      39089   GO:0043525                                    Cleft Palate    D002972
-      5040    GO:0001525                                  Brain Injuries    D001930
-      36273   GO:0043123                                        Anorexia    D000855
-      31447   GO:0043065                           Learning Disabilities    D007859
-      24896   GO:0005739                                       Paralysis    D010243
-      9666    GO:0016477   Attention Deficit Disorder with Hyperactivity    D001289
-      22979   GO:0035633                       Urinary Bladder Neoplasms    D001749
-      34935   GO:0045807                                   Dyslipidemias    D050171
-      46840   GO:0072089                          Disease Models, Animal    D004195
-      10014   GO:0016477                            Pancreatic Neoplasms    D010190
-      41069   GO:0032760                                 Atherosclerosis    D050197
-      35355   GO:0070374                                    Hyperalgesia    D006930
-      21291   GO:0055088               Non-alcoholic Fatty Liver Disease    D065626
-      16777   GO:0042593                 Cell Transformation, Neoplastic    D002471
-      31830   GO:0043065                            Pancreatic Neoplasms    D010190
-      20592   GO:0048009                              Nerve Degeneration    D009410
-      29612   GO:0001503                                 Liver Cirrhosis    D008103
-      6410    GO:0006915                               Muscular Diseases    D009135
-      45185   GO:0006979               Micronuclei, Chromosome-Defective    D048629
-      2016    GO:0002523          Chemical and Drug Induced Liver Injury    D056486
-      44900   GO:0006979                       Diabetes Mellitus, Type 2    D003924
-      44293   GO:0007584 Drug-Related Side Effects and Adverse Reactions    D064420
-      23718   GO:0030901                               Jaw Abnormalities    D007569
-      37204   GO:0032755                                        Necrosis    D009336
-      12700   GO:0034599                           Myocardial Infarction    D009203
-      49251   GO:0042311                                Retinal Diseases    D012164
-      24367   GO:0005739               Genetic Predisposition to Disease    D020022
-      3822    GO:0045429                                        Sneezing    D012912
-      23373   GO:0007613                                Reflex, Abnormal    D012021
-      24189   GO:0005739                             Cognition Disorders    D003072
-      32884   GO:0008284                             Depressive Disorder    D003866
-      23744   GO:0030901                               Stomach Neoplasms    D013274
-      19541   GO:0006954                                     Brain Edema    D001929
-      9424    GO:0030154               Prenatal Exposure Delayed Effects    D011297
-      39141   GO:0043525 Drug-Related Side Effects and Adverse Reactions    D064420
-      25304   GO:0007005                    Psychoses, Substance-Induced    D011605
-      771     GO:0006879          Chemical and Drug Induced Liver Injury    D056486
-      5207    GO:0001525                      Craniofacial Abnormalities    D019465
-      27798   GO:0040015                         Cardiomyopathy, Dilated    D002311
-      49210   GO:0042311                                  Osteoarthritis    D010003
-      42469   GO:0008217                                  Brain Ischemia    D002545
-      27759   GO:0045930                            Pancreatic Neoplasms    D010190
-      47481   GO:0006801                                        Ischemia    D007511
-      7883    GO:0046849                                  Lung Neoplasms    D008175
-      28716   GO:0022008                             Glucose Intolerance    D018149
-      1803    GO:0006954                           Neoplasm Invasiveness    D009361
-      27696   GO:0045930                            Hepatitis, Alcoholic    D006519
-      313     GO:0006915                               Stomach Neoplasms    D013274
-      17206   GO:0006006                                     Cholestasis    D002779
-      21864   GO:0007626                                         Atrophy    D001284
-      28363   GO:0030512                             Disease Progression    D018450
+      17206                                                               glucose homeostasis
+      21864                                                           lipid metabolic process
+            phenotype_id                                disease disease_id
+      3552    GO:0040018                  Neoplasm Invasiveness    D009361
+      37891   GO:0046330                          Hyperglycemia    D006943
+      39571   GO:0043525      Genetic Predisposition to Disease    D020022
+      10624   GO:0008283                   Esophageal Neoplasms    D004938
+      127     GO:0006915 Chemical and Drug Induced Liver Injury    D056486
+      17101   GO:0042593          Hypertrophy, Left Ventricular    D017379
+      46913   GO:0007283          Liver Cirrhosis, Experimental    D008106
+      31208   GO:0043065                               Anorexia    D000855
+      30206   GO:0001649                    Cognition Disorders    D003072
+      46698   GO:0007283              Carcinoma, Hepatocellular    D006528
+      7715    GO:0060348                   Esophageal Neoplasms    D004938
+      32629   GO:0045597                    Atrial Fibrillation    D001281
+      49828   GO:0008542                    Disease Progression    D018450
+      38563   GO:0043410                                Colitis    D003092
+      12438   GO:0071407               Fetal Growth Retardation    D005317
+      1491    GO:0007507                                   Pain    D010146
+      19199   GO:0034384                               Fibrosis    D005355
+      26156   GO:0019674          Liver Cirrhosis, Experimental    D008106
+      28445   GO:0050768                          Stomach Ulcer    D013276
+      36319   GO:0045600                   Hepatitis, Alcoholic    D006519
+      43127   GO:0008217                           Hypertension    D006973
+      30949   GO:0045766                       Memory Disorders    D008569
+      26359   GO:0022408              Carcinoma, Hepatocellular    D006528
+      49588   GO:0042311                               Necrosis    D009336
+      533     GO:0008283                                Adenoma    D000236
+      46963   GO:0007283                  Myocardial Infarction    D009203
+      42341   GO:0036211              Carcinoma, Hepatocellular    D006528
+      21976   GO:0006629                  Myocardial Infarction    D009203
+      22843   GO:0060291              Diabetes Mellitus, Type 2    D003924
+      25434   GO:0007005                         Brain Injuries    D001930
+      39744   GO:0043525      Non-alcoholic Fatty Liver Disease    D065626
+      22050   GO:0006629                            Proteinuria    D011507
+      7681    GO:0060348                              Cleft Lip    D002971
+      24269   GO:0005739                         Brain Ischemia    D002545
+      11381   GO:0006874                Cardiovascular Diseases    D002318
+      26074   GO:0042552                    Myocardial Ischemia    D017202
+      42818   GO:0070857                         Brain Injuries    D001930
+      12921   GO:0034599                     Nerve Degeneration    D009410
+      36831   GO:0043123                 Disease Models, Animal    D004195
+      724     GO:0008283                     Nerve Degeneration    D009410
+      6164    GO:0006915                              Cleft Lip    D002971
+      42909   GO:0008217                       Breast Neoplasms    D001943
+      22401   GO:0007626                               Necrosis    D009336
+      15833   GO:0042045              Gastrointestinal Diseases    D005767
+      18400   GO:0007507        Cell Transformation, Neoplastic    D002471
+      10381   GO:0008283                       Breast Neoplasms    D001943
+      16516   GO:0030900        Cell Transformation, Neoplastic    D002471
+      43762   GO:0010906              Diabetes Mellitus, Type 2    D003924
+      22822   GO:0060291              Cocaine-Related Disorders    D019970
+      42381   GO:0036211                        Liver Cirrhosis    D008103
+      39089   GO:0043410                                 Stroke    D020521
+      5040    GO:0004679                Cardiomyopathy, Dilated    D002311
+      36273   GO:0045600                           Cardiomegaly    D006332
+      31447   GO:0043065        Cell Transformation, Neoplastic    D002471
+      24896   GO:0005739          Liver Cirrhosis, Experimental    D008106
+      9666    GO:0030154                      Stomach Neoplasms    D013274
+      22979   GO:0034383                Cardiomyopathy, Dilated    D002311
+      34935   GO:0007204                       Cardiomyopathies    D009202
+      46840   GO:0007283                             Hemorrhage    D006470
+      10014   GO:0016477                    Disease Progression    D018450
+      41069   GO:1903428                  Neoplasm Invasiveness    D009361
+      35355   GO:0070374                    Acute Kidney Injury    D058186
+      21291   GO:0060173                         Lung Neoplasms    D008175
+      16777   GO:0006094 Chemical and Drug Induced Liver Injury    D056486
+      31830   GO:0043065                               Ischemia    D007511
+      20592   GO:0006954                Subarachnoid Hemorrhage    D013345
+      29612   GO:0006809                               Fibrosis    D005355
+      6410    GO:0006915                           Inflammation    D007249
+      45185   GO:0006979                       Breast Neoplasms    D001943
+      2016    GO:0002523              Bronchial Hyperreactivity    D016535
+      44900   GO:0007584                   Liver Failure, Acute    D017114
+      44293   GO:0097205                         Brain Injuries    D001930
+      23718   GO:0007613                      Stomach Neoplasms    D013274
+      37204   GO:0043123                                 Stroke    D020521
+      12700   GO:0034599                         Brain Injuries    D001930
+      49251   GO:0042311                      Anxiety Disorders    D001008
+      24367   GO:0005739              Carcinoma, Hepatocellular    D006528
+      3822    GO:0045429           Respiratory Hypersensitivity    D012130
+      23373   GO:0007613                         Brain Ischemia    D002545
+      24189   GO:0005739          Amphetamine-Related Disorders    D019969
+      32884   GO:0008284                        Atherosclerosis    D050197
+      23744   GO:0007613          Substance Withdrawal Syndrome    D013375
+      19541   GO:0050665                 Motor Skills Disorders    D019957
+      9424    GO:0030154                        Liver Cirrhosis    D008103
+      39141   GO:0043410                            Weight Gain    D015430
+      25304   GO:0005739                      Stomach Neoplasms    D013274
+      771     GO:0006879                                 Asthma    D001249
+      5207    GO:0001525                       Breast Neoplasms    D001943
+      27798   GO:0010459                               Anorexia    D000855
+      49210   GO:0042310                               Seizures    D012640
+      42469   GO:0070212        Cell Transformation, Neoplastic    D002471
+      27759   GO:2000252                            Hypothermia    D007035
+      47481   GO:0008202                            Fatty Liver    D005234
+      7883    GO:0030282                 Diabetes Complications    D048909
+      28716   GO:0030512                       Breast Neoplasms    D001943
+      1803    GO:0006954                               Necrosis    D009336
+      27696   GO:0051481                     Nerve Degeneration    D009410
+      313     GO:0006915                      Stomach Neoplasms    D013274
+      17206   GO:0042593           Nervous System Malformations    D009421
+      21864   GO:0006629                           Hypertension    D006973
 

@@ -50,7 +50,8 @@ extr_iris_ <- function(casrn = NULL,
 
   if (!is.null(error_result)) {
     if(grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
-      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl version 7.78.0!"))
+      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl v1.1.1!"))
+
     }
     cli::cli_abort(msg)
 
@@ -74,7 +75,8 @@ extr_iris_ <- function(casrn = NULL,
   dat
 }
 
-#' @inherit extr_iris_ title description params return details seealso
+#' @inherit extr_iris_ title description params return seealso
+#' @inherit extr_comptox details
 #' @export
 #' @examples
 #' \dontrun{
@@ -88,11 +90,6 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   # Check if online
   base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
   check_internet()
-
-  # Need to downgrade libcurl?
-  if (isTRUE(check_need_libcurl_condathis())) {
-    condathis_downgrade_libcurl()
-  }
 
   if (length(casrn) > 1) {
     dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types)

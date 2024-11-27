@@ -54,7 +54,6 @@ set_ssl <- function(verify_ssl, ...) {
 #' @return This function does not return a value. It is used for its side effects.
 check_status_code <- function(resp) {
   status_code <- httr2::resp_status(resp)
-  browser()
   if (!status_code %in% c(200L, 202L)) {
     cli::cli_abort("Request failed with status code: {status_code}")
   } else {
@@ -62,16 +61,26 @@ check_status_code <- function(resp) {
   }
 }
 
-#' #' install curl
-#' #'
-#' #' Install  `curl==7.78.0`.
-#' condathis_downgrade_libcurl <- function() {
+
+#' Check Internet
 #'
-#'   cli::cli_warn("If this function fails you might need curl version 7.78!")
-#'   # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#'   # When condathis on CRAN we could fix this                                    @
-#'   # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#' }
+#' Wrapper around `pingr::is_online` to print message
+#' a better message.
+#'
+#' @param verbose Boolean to display messages.
+check_internet <- function(verbose = TRUE) {
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Checking Internet Connection...")
+  }
+
+  if (isFALSE(pingr::is_online())) {
+    cli::cli_abort("It seems that you are not connected to internet!")
+    out <- FALSE
+  } else {
+    cli::cli_alert_info("Internet connection OK...")
+    out <- TRUE
+  }
+}
 
 #' Selection of assays of iris
 ice_assays <- function() {
@@ -136,22 +145,4 @@ ice_assays <- function() {
 }
 
 
-#' Check Internet
-#'
-#' Wrapper around `pingr::is_online` to print message
-#' a better message.
-#'
-#' @param verbose Boolean to display messages.
-check_internet <- function(verbose = TRUE) {
-  if (isTRUE(verbose)) {
-    cli::cli_alert_info("Checking Internet Connection...")
-  }
 
-  if (isFALSE(pingr::is_online())) {
-    cli::cli_abort("It seems that you are not connected to internet!")
-    out <- FALSE
-  } else {
-    cli::cli_alert_info("Internet connection OK...")
-    out <- TRUE
-  }
-}

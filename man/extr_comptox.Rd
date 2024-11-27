@@ -128,6 +128,14 @@ A cleaned data frame containing the requested data from CompTox.
 This function interacts with the CompTox Chemistry Dashboard to download and extract a wide range of chemical data based on user-defined search criteria. It allows for flexible input types and supports downloading various chemical properties, identifiers, and predictive data.
 It was inspired by the \code{ECOTOXr::websearch_comptox} function.
 }
+\details{
+Please note that this function, which pulls data from EPA servers, may encounter issues on some Linux systems.
+This is because those servers do not accept secure legacy renegotiation. On Linux systems, the current function depends
+on \code{curl} and \code{OpenSSL}, which have known problems with unsafe legacy renegotiation in newer versions.
+One workaround is to downgrade to \code{curl v7.78.0} and \code{OpenSSL v1.1.1}.
+However, please be aware that using these older versions might introduce potential security vulnerabilities.
+Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}{this gist} for instructions on how to downgrade \code{curl} and \code{OpenSSL} on Ubuntu.
+}
 \examples{
 \dontrun{
 # Example usage of the function:

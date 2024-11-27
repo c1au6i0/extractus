@@ -7,7 +7,7 @@ library(testthat)
 
 
 
-Sys.sleep(3)
+Sys.sleep(4)
 
 test_that("extr_iris_ fetches data for multiple CASRN", {
   skip_on_cran()
@@ -16,7 +16,7 @@ test_that("extr_iris_ fetches data for multiple CASRN", {
   expect_snapshot(results)
 })
 
-Sys.sleep(3)
+Sys.sleep(4)
 
 test_that("extr_iris_ returns an empty data when wrong CASRN", {
   skip_on_cran()
