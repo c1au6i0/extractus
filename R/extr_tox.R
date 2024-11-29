@@ -49,12 +49,10 @@ extr_iris_ <- function(casrn = NULL,
   msg <- "Failed to perform the request: {conditionMessage(error_result)}"
 
   if (!is.null(error_result)) {
-    if(grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
-      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl v1.1.1!"))
-
+    if (grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
+      msg <- c(msg, "", cli::style_italic("!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl v1.1.1!"))
     }
     cli::cli_abort(msg)
-
   }
 
   check_status_code(resp)

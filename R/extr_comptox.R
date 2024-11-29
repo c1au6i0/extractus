@@ -173,13 +173,13 @@ extr_comptox <- function(ids,
   base_url <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/?lb2ljny4"
 
   resp <- extr_comptox_(
-      ids = ids,
-      download_items = download_items,
-      mass_error = mass_error,
-      verify_ssl = verify_ssl,
-      xlsx_file = xlsx_file,
-      base_url = base_url,
-      ...
+    ids = ids,
+    download_items = download_items,
+    mass_error = mass_error,
+    verify_ssl = verify_ssl,
+    xlsx_file = xlsx_file,
+    base_url = base_url,
+    ...
   )
 
   sheet_names <- readxl::excel_sheets(xlsx_file)
@@ -196,12 +196,12 @@ extr_comptox <- function(ids,
 #' @param  xlsx_file Path to file to write with results.
 #' @param  base_url Comptox url.
 extr_comptox_ <- function(ids,
-                                   download_items = NULL,
-                                   mass_error = 0,
-                                   verify_ssl = FALSE,
-                                   xlsx_file,
-                                   base_url,
-                                   ...) {
+                          download_items = NULL,
+                          mass_error = 0,
+                          verify_ssl = FALSE,
+                          xlsx_file,
+                          base_url,
+                          ...) {
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   identifier_types <- c("chemical_name", "CASRN", "INCHIKEY", "dtxsid")
@@ -240,11 +240,10 @@ extr_comptox_ <- function(ids,
   msg <- "Failed to perform the request: {conditionMessage(error_result)}"
 
   if (!is.null(error_result)) {
-    if(grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
-      msg <- c(msg,"", cli::style_italic("!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl v1.1.1!"))
+    if (grepl("unsafe legacy renegotiation disabled", conditionMessage(error_result))) {
+      msg <- c(msg, "", cli::style_italic("!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl v1.1.1!"))
     }
     cli::cli_abort(msg)
-
   }
 
   check_status_code(post_result)
