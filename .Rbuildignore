@@ -8,3 +8,6 @@
 ^\.github$
 ^cran-comments\.md$
 'NULL'
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
