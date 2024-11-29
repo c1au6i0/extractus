@@ -4,7 +4,7 @@ library(testthat)
 # ICE ----
 # @@@@@@@@@
 
-Sys.sleep(3)
+Sys.sleep(4)
 
 test_that("extr_ice fetches data for CASRN 50-00-0", {
   skip_on_cran()

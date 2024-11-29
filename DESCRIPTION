@@ -1,5 +1,5 @@
 Package: extractox
-Title: Extract Tox Info from various databases
+Title: Extract Tox Info from Various Databases
 Version: 0.0.9
 Authors@R: c(
     person(given = "Claudio",
@@ -11,7 +11,7 @@ Authors@R: c(
            role = c("aut"),
            comment = c(ORCID = "0000-0002-6090-1834"))
     )
-Description: A package for extracting toxicological and chemical information from databases
+Description: Extract toxicological and chemical information from databases
    maintained by scientific agencies and resources, including the Environmental Protection Agency (EPA),
    PubChem, the National Toxicology Program (NTP), and the Comparative Toxicogenomics Database (CTD).
 License: MIT + file LICENSE
