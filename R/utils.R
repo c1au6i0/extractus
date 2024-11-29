@@ -34,6 +34,7 @@ write_dataframes_to_excel <- function(df_list, filename) {
 #'
 #' @param verify_ssl Boolean.
 #' @param ... Any other arguments to be supplied to `req_option`
+#' @keywords internal
 #'
 #' @return Named list.
 set_ssl <- function(verify_ssl, ...) {
@@ -51,6 +52,8 @@ set_ssl <- function(verify_ssl, ...) {
 #' appropriate messages based on the status.
 #'
 #' @param resp An HTTP response object from the httr2 package.
+#' @keywords internal
+#'
 #' @return This function does not return a value. It is used for its side effects.
 check_status_code <- function(resp) {
   status_code <- httr2::resp_status(resp)
@@ -68,6 +71,7 @@ check_status_code <- function(resp) {
 #' a better message.
 #'
 #' @param verbose Boolean to display messages.
+#' @keywords internal
 check_internet <- function(verbose = TRUE) {
   if (isTRUE(verbose)) {
     cli::cli_alert_info("Checking Internet Connection...")
@@ -83,6 +87,8 @@ check_internet <- function(verbose = TRUE) {
 }
 
 #' Selection of assays of iris
+
+#' @keywords internal
 ice_assays <- function() {
   ice_carc_woe <-
     c(

@@ -1,13 +1,14 @@
 #' Extract Data from EPA IRIS Database
 #'
-#' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keyword and cancer types. It retrieves and parses the HTML content from the response.
-#' Note that if `keyword` is not provide all dataset are retrieved.
+#' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
+#' Note that if `keywords` is not provide all dataset are retrieved.
 #'
 #' @param casrn A single character string specifying the CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #'
+#' @keywords internal
 #' @return A data frame containing the extracted data.
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @examples
@@ -23,7 +24,7 @@ extr_iris_ <- function(casrn = NULL,
 
   # Construct query parameters
   query_params <- list(
-    keyword = casrn,
+    keywords = casrn,
     cancer_or_no_cancer = cancer_types
   )
 

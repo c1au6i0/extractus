@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# extractox <img src='inst/img/extractox.png' align="right" height="139">
+# extractox <img src='man/figures/extractox.png' align='right' height="139px" alt='logo'  style="float:right; height:139px;">
 
 <!-- badges: start -->
 

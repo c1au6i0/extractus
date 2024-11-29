@@ -192,6 +192,7 @@ extr_comptox <- function(ids,
 }
 
 #' @inherit extr_comptox title description
+#' @keywords internal
 #' @inheritParams extr_comptox
 #' @param  xlsx_file Path to file to write with results.
 #' @param  base_url Comptox url.

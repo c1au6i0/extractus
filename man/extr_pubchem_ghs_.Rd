@@ -15,3 +15,4 @@ Dataframe of GHS info.
 \description{
 Extract GHS codes from PubChem. The function relay on the package \code{webchem} to interact with pubchem.
 }
+\keyword{internal}

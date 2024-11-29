@@ -13,3 +13,4 @@ check_internet(verbose = TRUE)
 Wrapper around \code{pingr::is_online} to print message
 a better message.
 }
+\keyword{internal}

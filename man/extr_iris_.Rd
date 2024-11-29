@@ -24,8 +24,8 @@ extr_iris_(
 A data frame containing the extracted data.
 }
 \description{
-The \code{extr_iris} function sends a request to the EPA IRIS database to search for information based on a specified keyword and cancer types. It retrieves and parses the HTML content from the response.
-Note that if \code{keyword} is not provide all dataset are retrieved.
+The \code{extr_iris} function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
+Note that if \code{keywords} is not provide all dataset are retrieved.
 }
 \examples{
 \dontrun{
@@ -35,3 +35,4 @@ extr_iris("1332-21-4")
 \seealso{
 \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 }
+\keyword{internal}

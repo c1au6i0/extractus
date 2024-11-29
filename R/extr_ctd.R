@@ -152,6 +152,7 @@ extr_ctd <- function(
 #' @param verify_ssl Boolean to control if SSL should be verified or not. Default is FALSE.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @return A data frame containing the queried tetramer data in CSV format.
+#' @keywords internal
 extr_tetramer_ <- function(
     chem,
     disease = "",

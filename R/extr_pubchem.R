@@ -41,7 +41,6 @@ extr_casrn_from_cid <- function(pubchem_id) {
 
 #' extr_chem_info
 #'
-#' `r lifecycle::badge('experimental')`
 #' This function takes a vector of IUPAC names and queries the PubChem database
 #' (using the `webchem` package) to obtain the corresponding CAS-RN and CID for
 #' each compound. It reshapes the resulting data, ensuring that each compound has
@@ -119,6 +118,7 @@ extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE) {
 #' extr_pubchem_fema_
 #'
 #' @param casrn Atomic Vector.
+#' @keywords internal
 extr_pubchem_fema_ <- function(casrn) {
   dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
   cat("\n")
@@ -188,6 +188,7 @@ extr_pubchem_fema <- function(casrn) {
 #' Extract GHS codes from PubChem. The function relay on the package `webchem` to interact with pubchem.
 #'
 #' @param casrn Atomic character vector of casrn.
+#' @keywords internal
 #'
 #' @return Dataframe of GHS info.
 extr_pubchem_ghs_ <- function(casrn) {

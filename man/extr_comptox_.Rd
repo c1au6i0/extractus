@@ -102,3 +102,4 @@ on linux OS.}
 This function interacts with the CompTox Chemistry Dashboard to download and extract a wide range of chemical data based on user-defined search criteria. It allows for flexible input types and supports downloading various chemical properties, identifiers, and predictive data.
 It was inspired by the \code{ECOTOXr::websearch_comptox} function.
 }
+\keyword{internal}

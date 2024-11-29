@@ -23,7 +23,6 @@ A data frame with information on the queried compounds, including:
 }
 }
 \description{
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
 This function takes a vector of IUPAC names and queries the PubChem database
 (using the \code{webchem} package) to obtain the corresponding CAS-RN and CID for
 each compound. It reshapes the resulting data, ensuring that each compound has

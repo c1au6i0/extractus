@@ -9,3 +9,4 @@ ice_assays()
 \description{
 Selection of assays of iris
 }
+\keyword{internal}

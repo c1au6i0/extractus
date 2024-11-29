@@ -16,3 +16,4 @@ This function does not return a value. It is used for its side effects.
 This function checks the status code of an HTTP response and provides
 appropriate messages based on the status.
 }
+\keyword{internal}

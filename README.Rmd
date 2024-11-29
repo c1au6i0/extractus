@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# extractox <img src='inst/img/extractox.png' align="right" height="139">
+# extractox <img src='man/figures/extractox.png' align='right' height="139px" alt='logo'  style="float:right; height:139px;">
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/c1au6i0/extractox/actions/workflows/R-CMD-check.yaml)
