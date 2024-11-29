@@ -1,6 +1,6 @@
 Package: extractox
 Title: Extract Tox Info from Various Databases
-Version: 0.0.9
+Version: 0.1.0
 Authors@R: c(
     person(given = "Claudio",
            family = "Zanettini",
