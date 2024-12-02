@@ -142,3 +142,6 @@ Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}
 extr_comptox(ids = c("Aspirin", "50-00-0"))
 }
 }
+\seealso{
+\href{https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-resource-hub}{CompTox Chemicals Dashboard Resource Hub}
+}

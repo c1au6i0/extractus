@@ -51,3 +51,17 @@ tetramer_data <- extr_tetramer(
 str(tetramer_data)
 }
 }
+\references{
+\itemize{
+\item Comparative Toxicogenomics Database: \url{http://ctdbase.org}
+\item Davis, A. P., Grondin, C. J., Johnson, R. J., Sciaky, D., McMorran, R., Wiegers, T. C., & Mattingly, C. J. (2019).
+The Comparative Toxicogenomics Database: update 2019. Nucleic acids research, 47(D1), D948–D954. \doi{10.1093/nar/gky868}
+\item Davis, A. P., Wiegers, T. C., Wiegers, J., Wyatt, B., Johnson, R. J., Sciaky, D., Barkalow, F., Strong, M., Planchart, A., & Mattingly, C. J. (2023).
+CTD tetramers: A new online tool that computationally links curated chemicals, genes, phenotypes, and diseases to inform molecular mechanisms for
+environmental health. Toxicological Sciences, 195(2), 155–168.
+\doi{10.1093/toxsci/kfad069}
+}
+}
+\seealso{
+\href{http://ctdbase.org}{Comparative Toxicogenomics Database}
+}

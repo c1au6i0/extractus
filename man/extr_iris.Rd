@@ -10,6 +10,10 @@ extr_iris(casrn = NULL, cancer_types = c("non_cancer", "cancer"))
 \item{casrn}{A single character string specifying the CASRN for the search.}
 
 \item{cancer_types}{A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".}
+
+\item{verify_ssl}{Boolean to control of SSL should be verified or not.}
+
+\item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }
 \value{
 A data frame containing the extracted data.
@@ -17,14 +21,6 @@ A data frame containing the extracted data.
 \description{
 The \code{extr_iris} function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
 Note that if \code{keywords} is not provide all dataset are retrieved.
-}
-\details{
-Please note that this function, which pulls data from EPA servers, may encounter issues on some Linux systems.
-This is because those servers do not accept secure legacy renegotiation. On Linux systems, the current function depends
-on \code{curl} and \code{OpenSSL}, which have known problems with unsafe legacy renegotiation in newer versions.
-One workaround is to downgrade to \code{curl v7.78.0} and \code{OpenSSL v1.1.1}.
-However, please be aware that using these older versions might introduce potential security vulnerabilities.
-Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}{this gist} for instructions on how to downgrade \code{curl} and \code{OpenSSL} on Ubuntu.
 }
 \examples{
 \dontrun{

@@ -1,5 +1,14 @@
-#' @inherit extr_iris_ title description params return seealso
-#' @inherit extr_comptox details
+#' Extract Data from EPA IRIS Database
+#'
+#' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
+#' Note that if `keywords` is not provide all dataset are retrieved.
+#'
+#' @param casrn A single character string specifying the CASRN for the search.
+#' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
+#' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
+#' @return A data frame containing the extracted data.
+#' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @export
 #' @examples
 #' \dontrun{
@@ -27,20 +36,9 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
   out_cl[out_cl$casrn %in% casrn, ]
 }
 
-
-#' Extract Data from EPA IRIS Database
-#'
-#' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
-#' Note that if `keywords` is not provide all dataset are retrieved.
-#'
-#' @param casrn A single character string specifying the CASRN for the search.
-#' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
-#' @param verify_ssl Boolean to control of SSL should be verified or not.
-#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
-#'
+#' @inherit extr_iris title description params return seealso
+#' @noRd
 #' @keywords internal
-#' @return A data frame containing the extracted data.
-#' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 extr_iris_ <- function(casrn = NULL,
                        cancer_types = c("non_cancer", "cancer"),
                        verify_ssl = FALSE,
@@ -109,10 +107,9 @@ extr_iris_ <- function(casrn = NULL,
 #' @param assays A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
-#'
 #' @return A data frame containing the extracted data from the ICE API.
+#' @seealso \href{https://ice.ntp.niehs.nih.gov/}{NTP ICE database}
 #' @export
-#'
 #' @examples
 #' \dontrun{
 #' extr_ice(c("50-00-0"))
@@ -212,9 +209,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 #'     \item Calls \code{\link{extr_ice}} to gather assay data from the ICE database.
 #'     \item Calls \code{\link{extr_iris}} to retrieve risk assessment information from the IRIS database.
 #'   }
-#'
 #' @param casrn A character vector of CAS Registry Numbers (CASRN) representing the chemicals of interest.
-#'
 #' @return A list of data frames containing toxicological information retrieved from each database:
 #'   \describe{
 #'     \item{ghs_dat}{Toxicity data from PubChem's Globally Harmonized System (GHS) classification.}
@@ -223,7 +218,6 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 #'     \item{iris}{Risk assessment data from the IRIS database.}
 #'   }
 #' @export
-#'
 #' @examples
 #' \dontrun{
 #' casrn <- c("50-00-0", "107-02-8")

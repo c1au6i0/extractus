@@ -7,7 +7,6 @@
 #'
 #' @return No return value. The function prints a message indicating the completion of the Excel file writing.
 #' @export
-#'
 #' @examples
 #' \dontrun{
 #' tox_dat <- extr_tox("50-00-0")
@@ -35,7 +34,7 @@ write_dataframes_to_excel <- function(df_list, filename) {
 #' @param verify_ssl Boolean.
 #' @param ... Any other arguments to be supplied to `req_option`
 #' @keywords internal
-#'
+#' @noRd
 #' @return Named list.
 set_ssl <- function(verify_ssl, ...) {
   libcurl_opt <- list(...)
@@ -53,7 +52,7 @@ set_ssl <- function(verify_ssl, ...) {
 #'
 #' @param resp An HTTP response object from the httr2 package.
 #' @keywords internal
-#'
+#' @noRd
 #' @return This function does not return a value. It is used for its side effects.
 check_status_code <- function(resp) {
   status_code <- httr2::resp_status(resp)
@@ -72,6 +71,7 @@ check_status_code <- function(resp) {
 #'
 #' @param verbose Boolean to display messages.
 #' @keywords internal
+#' @noRd
 check_internet <- function(verbose = TRUE) {
   if (isTRUE(verbose)) {
     cli::cli_alert_info("Checking Internet Connection...")
@@ -89,6 +89,7 @@ check_internet <- function(verbose = TRUE) {
 #' Selection of assays of iris
 
 #' @keywords internal
+#' @noRd
 ice_assays <- function() {
   ice_carc_woe <-
     c(

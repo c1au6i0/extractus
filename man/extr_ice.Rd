@@ -26,3 +26,6 @@ The \code{extr_ice} function sends a POST request to the ICE API to search for i
 extr_ice(c("50-00-0"))
 }
 }
+\seealso{
+\href{https://ice.ntp.niehs.nih.gov/}{NTP ICE database}
+}

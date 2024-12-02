@@ -1,18 +1,18 @@
 #' extr_casrn_from_cid
 #'
-#' This function retrieves the CAS-RN (Chemical Abstracts Service Registry Number)
-#' for a given set of PubChem Compound Identifiers (CID). It queries PubChem through
-#' the `webchem` package and extracts the CAS-RN from the depositor-supplied synonyms.
+#' This function retrieves the CASRN for a given set of PubChem Compound Identifiers (CID).
+#' It queries PubChem through the `webchem` package and extracts the CASRN from the depositor-supplied synonyms.
 #'
 #' @param pubchem_id A numeric vector of PubChem CIDs. These are unique identifiers
 #' for chemical compounds in the PubChem database.
-#' @return A data frame containing the CID, CAS-RN, and IUPAC name of the compound.
+#' @return A data frame containing the CID, CASRN, and IUPAC name of the compound.
 #' The returned data frame includes three columns:
 #' \describe{
 #'   \item{CID}{The PubChem Compound Identifier.}
-#'   \item{cas_rn}{The corresponding CAS-RN of the compound.}
+#'   \item{cas_rn}{The corresponding CASRN of the compound.}
 #'   \item{IUPACName}{The IUPAC name of the compound.}
 #' }
+#' @export
 #' @examples
 #' \dontrun{
 #' # Example with formaldehyde and aflatoxin
@@ -42,9 +42,9 @@ extr_casrn_from_cid <- function(pubchem_id) {
 #' extr_chem_info
 #'
 #' This function takes a vector of IUPAC names and queries the PubChem database
-#' (using the `webchem` package) to obtain the corresponding CAS-RN and CID for
+#' (using the `webchem` package) to obtain the corresponding CASRN and CID for
 #' each compound. It reshapes the resulting data, ensuring that each compound has
-#' a unique row with the CID, CAS-RN, and additional chemical properties.
+#' a unique row with the CID, CASRN, and additional chemical properties.
 #'
 #' @param IUPAC_names A character vector of IUPAC names. These are standardized names
 #' of chemical compounds that will be used to search in the PubChem database.
@@ -113,11 +113,28 @@ extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE) {
 }
 
 
+#' Extract FEMA from PubChem
+#'
+#' This function retrieves FEMA (Flavor and Extract Manufacturers Association) flavor profile information for a list of CAS Registry Numbers (CASRN) from the PubChem database using the `webchem` package. It applies the function `extr_fema_pubchem_` to each CASRN in the input vector and combines the results into a single data frame.
+#'
+#' @param casrn A vector of CAS Registry Numbers (CASRN) as atomic vectors.
+#' @return A data frame containing the FEMA flavor profile information for each CASRN. If no information is found for a particular CASRN, the output will include a row indicating this.
+#' @export
+#' @examples
+#' \dontrun{
+#' extr_pubchem_fema(c("64-17-5", "50-00-0"))
+#' }
+extr_pubchem_fema <- function(casrn) {
+  check_internet()
+  dat <- lapply(casrn, extr_pubchem_fema_)
+  do.call(rbind, dat)
+}
 
 
 #' extr_pubchem_fema_
 #'
 #' @param casrn Atomic Vector.
+#' @noRd
 #' @keywords internal
 extr_pubchem_fema_ <- function(casrn) {
   dat_cid <- webchem::get_cid(casrn, match = "first", verbose = TRUE)
@@ -164,32 +181,32 @@ extr_pubchem_fema_ <- function(casrn) {
   out_df
 }
 
-#' Extract FEMA from PubChem
+
+#' Extract GHS Codes from PubChem
 #'
-#' This function retrieves FEMA (Flavor and Extract Manufacturers Association) flavor profile information for a list of CAS Registry Numbers (CASRN) from the PubChem database using the `webchem` package. It applies the function `extr_fema_pubchem_` to each CASRN in the input vector and combines the results into a single data frame.
+#' This function extracts GHS (Globally Harmonized System) codes from PubChem. It relies on the `webchem` package to interact with PubChem.
 #'
-#' @param casrn A vector of CAS Registry Numbers (CASRN) as atomic vectors.
-#' @return A data frame containing the FEMA flavor profile information for each CASRN. If no information is found for a particular CASRN, the output will include a row indicating this.
+#' @param casrn Character vector of CAS Registry Numbers (CASRN).
+#' @return A dataframe containing GHS information.
 #' @export
 #' @examples
 #' \dontrun{
-#' extr_pubchem_fema(c("64-17-5", "50-00-0"))
+#' extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 #' }
-extr_pubchem_fema <- function(casrn) {
+extr_pubchem_ghs <- function(casrn) {
   check_internet()
-  dat <- lapply(casrn, extr_pubchem_fema_)
+  dat <- lapply(casrn, extr_pubchem_ghs_)
   do.call(rbind, dat)
 }
 
 
-
-#' extr_ghs_pubchem
+#' extr_ghs_pubchem_
 #'
 #' Extract GHS codes from PubChem. The function relay on the package `webchem` to interact with pubchem.
 #'
 #' @param casrn Atomic character vector of casrn.
+#' @noRd
 #' @keywords internal
-#'
 #' @return Dataframe of GHS info.
 extr_pubchem_ghs_ <- function(casrn) {
   if (missing(casrn)) {
@@ -240,20 +257,4 @@ extr_pubchem_ghs_ <- function(casrn) {
 }
 
 
-#' Extract GHS Codes from PubChem
-#'
-#' This function extracts GHS (Globally Harmonized System) codes from PubChem. It relies on the `webchem` package to interact with PubChem.
-#'
-#' @param casrn Character vector of CAS Registry Numbers (CASRN).
-#'
-#' @return A dataframe containing GHS information.
-#' @export
-#' @examples
-#' \dontrun{
-#' extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
-#' }
-extr_pubchem_ghs <- function(casrn) {
-  check_internet()
-  dat <- lapply(casrn, extr_pubchem_ghs_)
-  do.call(rbind, dat)
-}
+

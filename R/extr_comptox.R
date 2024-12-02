@@ -84,14 +84,14 @@
 #' One workaround is to downgrade to \code{curl v7.78.0} and \code{OpenSSL v1.1.1}.
 #' However, please be aware that using these older versions might introduce potential security vulnerabilities.
 #' Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}{this gist} for instructions on how to downgrade \code{curl} and \code{OpenSSL} on Ubuntu.
-#'
+#' @seealso \href{https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-resource-hub}{CompTox Chemicals Dashboard Resource Hub}
 #' @return A cleaned data frame containing the requested data from CompTox.
+#' @export
 #' @examples
 #' \dontrun{
 #' # Example usage of the function:
 #' extr_comptox(ids = c("Aspirin", "50-00-0"))
 #' }
-#' @export
 extr_comptox <- function(ids,
                          download_items = c(
                            "DTXCID",
@@ -193,6 +193,7 @@ extr_comptox <- function(ids,
 
 #' @inherit extr_comptox title description
 #' @keywords internal
+#' @noRd
 #' @inheritParams extr_comptox
 #' @param  xlsx_file Path to file to write with results.
 #' @param  base_url Comptox url.

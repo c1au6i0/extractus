@@ -11,18 +11,17 @@ extr_casrn_from_cid(pubchem_id)
 for chemical compounds in the PubChem database.}
 }
 \value{
-A data frame containing the CID, CAS-RN, and IUPAC name of the compound.
+A data frame containing the CID, CASRN, and IUPAC name of the compound.
 The returned data frame includes three columns:
 \describe{
 \item{CID}{The PubChem Compound Identifier.}
-\item{cas_rn}{The corresponding CAS-RN of the compound.}
+\item{cas_rn}{The corresponding CASRN of the compound.}
 \item{IUPACName}{The IUPAC name of the compound.}
 }
 }
 \description{
-This function retrieves the CAS-RN (Chemical Abstracts Service Registry Number)
-for a given set of PubChem Compound Identifiers (CID). It queries PubChem through
-the \code{webchem} package and extracts the CAS-RN from the depositor-supplied synonyms.
+This function retrieves the CASRN for a given set of PubChem Compound Identifiers (CID).
+It queries PubChem through the \code{webchem} package and extracts the CASRN from the depositor-supplied synonyms.
 }
 \examples{
 \dontrun{

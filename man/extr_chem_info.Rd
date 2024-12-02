@@ -24,9 +24,9 @@ A data frame with information on the queried compounds, including:
 }
 \description{
 This function takes a vector of IUPAC names and queries the PubChem database
-(using the \code{webchem} package) to obtain the corresponding CAS-RN and CID for
+(using the \code{webchem} package) to obtain the corresponding CASRN and CID for
 each compound. It reshapes the resulting data, ensuring that each compound has
-a unique row with the CID, CAS-RN, and additional chemical properties.
+a unique row with the CID, CASRN, and additional chemical properties.
 }
 \examples{
 \dontrun{

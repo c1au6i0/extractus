@@ -85,8 +85,10 @@ str(dat2)
 }
 \references{
 \itemize{
-\item Comparative Toxicogenomics Database: \url{http://ctdbase.org}
 \item Davis, A. P., Grondin, C. J., Johnson, R. J., Sciaky, D., McMorran, R., Wiegers, T. C., & Mattingly, C. J. (2019).
 The Comparative Toxicogenomics Database: update 2019. Nucleic acids research, 47(D1), D948–D954. \doi{10.1093/nar/gky868}
 }
+}
+\seealso{
+\href{http://ctdbase.org}{Comparative Toxicogenomics Database}
 }
