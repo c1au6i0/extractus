@@ -56,19 +56,18 @@ Note that if <code>keywords</code> is not provide all dataset are retrieved.</p>
 <dt id="arg-cancer-types">cancer_types<a class="anchor" aria-label="anchor" href="#arg-cancer-types"></a></dt>
 <dd><p>A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".</p></dd>
 
+
+<dt id="arg-verify-ssl">verify_ssl<a class="anchor" aria-label="anchor" href="#arg-verify-ssl"></a></dt>
+<dd><p>Boolean to control of SSL should be verified or not.</p></dd>
+
+
+<dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
+<dd><p>Any other arguments to be supplied to <code>req_option</code> and thus to <code>libcurl</code>.</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     <p>A data frame containing the extracted data.</p>
-    </div>
-    <div class="section level2">
-    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>Please note that this function, which pulls data from EPA servers, may encounter issues on some Linux systems.
-This is because those servers do not accept secure legacy renegotiation. On Linux systems, the current function depends
-on <code>curl</code> and <code>OpenSSL</code>, which have known problems with unsafe legacy renegotiation in newer versions.
-One workaround is to downgrade to <code>curl v7.78.0</code> and <code>OpenSSL v1.1.1</code>.
-However, please be aware that using these older versions might introduce potential security vulnerabilities.
-Refer to <a href="https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c" class="external-link">this gist</a> for instructions on how to downgrade <code>curl</code> and <code>OpenSSL</code> on Ubuntu.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
