@@ -393,9 +393,9 @@
       # A tibble: 3 x 8
         chemical_name casrn   exposure_route assessment_type critical_effect_or_tumo~1
         <chr>         <chr>   <chr>          <chr>           <chr>                    
-      1 Formaldehyde  50-00-0 Oral           Noncancer       Reduced weight gain, his~
-      2 Formaldehyde  50-00-0 Inhalation     Cancer          Nasopharyngeal cancer, s~
-      3 Formaldehyde  50-00-0 Inhalation     Noncancer       Decreased pulmonary func~
+      1 Formaldehyde  50-00-0 Inhalation     Cancer          Nasopharyngeal cancer, s~
+      2 Formaldehyde  50-00-0 Inhalation     Noncancer       Decreased pulmonary func~
+      3 Formaldehyde  50-00-0 Oral           Noncancer       Reduced weight gain, his~
       # i abbreviated name: 1: critical_effect_or_tumor_type
       # i 3 more variables: woe_characterization <chr>, toxicity_value_type <chr>,
       #   toxicity_value <chr>

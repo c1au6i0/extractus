@@ -10,16 +10,30 @@
 
 `extractox` is a comprehensive R package designed to simplify querying
 various chemical, toxicological, and biological databases such as the
-Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated
-Chemical Environment), EPA’s IRIS (Integrated Risk Information System),
-EPA’s COMPTOX and PubChem. The package facilitates interaction with
-APIs, providing curated and user-friendly outputs.
+Comparative Toxicogenomics Database (CTP) of the MDI Biological
+Laboratory and NC State University, the Integrated Chemical Environment
+(ICE) of the National Toxicology Program (NTP), the Integrated Risk
+Information System (IRIS) of the Environmental Protection Agency (EPA),
+the CompTox Chemicals Dashboard Resource Hub (CompTox) of EPA, and
+PubChem of the National Center for Biotechnology Information/National
+Institures Of Health (NCBI, NIH). The package facilitates interaction
+with APIs, providing curated and user-friendly outputs.
 
 To communicate with Pubchem, `extractox` relies on the package`webchem`.
 
 ## Installation
 
-You can install the package from GitHub:
+Install the package `extractox` from CRAN.
+
+``` r
+# From CRAN
+install.packages("extractox")
+```
+
+### Development Version
+
+To get a bug fix or to use a feature from the development version, you
+can install the development version of `extractox` from GitHub.
 
 ``` r
 # Install pak if not already installed
@@ -35,13 +49,13 @@ pak::pkg_install("c1au6i0/extractox")
 
 ### ICE Database
 
-The Integrated Chemical Environment (ICE) database, managed by the EPA,
-provides access to a variety of data related to chemical toxicity,
-exposure, and risk assessment. It includes data from high-throughput
-screening assays, in vivo studies, and computational models.
+The ICE database, managed by the EPA, provides access to a variety of
+data related to chemical toxicity, exposure, and risk assessment. It
+includes data from high-throughput screening assays, in vivo studies,
+and computational models.
 
-`extr_ice` provides access to EPA’s Integrated Chemical Environment
-(ICE) database for toxicological and exposure-related data.
+`extr_ice` provides access to NTP’s ICE database for toxicological and
+exposure-related data.
 
 ``` r
 library(extractox)
@@ -63,13 +77,14 @@ names(ice_data)
 
 ### IRIS
 
-The Integrated Risk Information System (IRIS) is a database managed by
-the EPA that contains information on the health effects of exposure to
-various substances found in the environment. It provides qualitative and
-quantitative health risk information.
+The IRIS database is managed by the EPA and contains information on the
+health effects of exposure to various substances found in the
+environment. It provides qualitative and quantitative health risk
+information.
 
 `extr_iris` provides access to EPA’s IRIS database and accepts queries
-of CASRN or IUPAC names of chemicals.
+of Chemical Abstracts Service Registry Number (CASRN) or International
+Union of Pure and Applied Chemistry (IUPAC) names of chemicals.
 
 ``` r
 iris_info <- extr_iris(c("glyphosate", "50-00-0"))
@@ -86,7 +101,7 @@ names(iris_info)
 #> [7] "toxicity_value_type"           "toxicity_value"
 ```
 
-### COMPTOX
+### CompTox
 
 The CompTox Chemistry Dashboard, managed by the EPA, provides access to
 data on chemical structures, properties, and associated bioactivity
@@ -137,11 +152,11 @@ info_tox <- extr_tox(casrn = c("Aspirin", "50-00-0"))
 
 ### CTD Database
 
-The Comparative Toxicogenomics Database (CTD) provides information about
-the interactions between chemicals, genes, and diseases. It helps in
-understanding the effects of environmental exposures on human health.
+The CTP provides information about the interactions between chemicals,
+genes, and diseases. It helps in understanding the effects of
+environmental exposures on human health.
 
-A series of functions interact with the CTD database.
+A series of functions interact with the CTP database.
 
 `extr_ctd` extracts information related to chemical-gene or pathway
 associations.
@@ -180,8 +195,8 @@ names(ctd_expression)
 #> [10] "interaction_actions" "pub_med_i_ds"
 ```
 
-CTD Tetramers are computationally generated information units that
-interrelate four data types from the CTD: a chemical, gene product,
+Tetramers are computationally generated information units that
+interrelate four data types from the CTP: a chemical, gene product,
 phenotype, and disease. They help in understanding the complex
 relationships between these entities and their combined impact on human
 health.
@@ -209,14 +224,13 @@ names(tetramer_data)
 
 ### PubChem Database
 
-PubChem is a public repository for information on the biological
-activities of small molecules. It provides information on chemical
-structures, identifiers, chemical and physical properties, biological
-activities, safety and toxicity information, patents, literature
-citations, and more.
+PubChem is an open chemistry database at the NIH. It provides
+information on chemical structures, identifiers, chemical and physical
+properties, biological activities, safety and toxicity information,
+patents, literature citations, and more.
 
 A series of functions that rely on the `webchem` package are used to
-extract chemical information, Globally Harmonized System (GHS)
+extract chemical information, Globally Harmonized System (`GHS`)
 classification data, or flavor classification from PubChem.
 
 The function `extr_chem_info` retrieves chemical information of

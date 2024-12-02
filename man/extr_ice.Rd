@@ -2,12 +2,12 @@
 % Please edit documentation in R/extr_tox.R
 \name{extr_ice}
 \alias{extr_ice}
-\title{Extract Data from ICE Database}
+\title{Extract Data from NTP ICE Database}
 \usage{
 extr_ice(casrn, assays = NULL, verify_ssl = FALSE, ...)
 }
 \arguments{
-\item{casrn}{A character vector specifying the chemical IDs (CASRNs) for the search.}
+\item{casrn}{A character vector specifying the CASRNs for the search.}
 
 \item{assays}{A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.}
 

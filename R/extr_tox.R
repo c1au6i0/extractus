@@ -1,3 +1,33 @@
+#' @inherit extr_iris_ title description params return seealso
+#' @inherit extr_comptox details
+#' @export
+#' @examples
+#' \dontrun{
+#' extr_iris(c("1332-21-4", "50-00-0"))
+#' }
+extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
+  if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
+    cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
+  }
+
+  # Check if online
+  base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
+  check_internet()
+
+  if (length(casrn) > 1) {
+    dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types)
+    out <- do.call(rbind, dat)
+  } else {
+    out <- extr_iris_(casrn = casrn, cancer_types = cancer_types)
+  }
+
+  out_cl <- out |>
+    janitor::clean_names()
+
+  out_cl[out_cl$casrn %in% casrn, ]
+}
+
+
 #' Extract Data from EPA IRIS Database
 #'
 #' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
@@ -11,10 +41,6 @@
 #' @keywords internal
 #' @return A data frame containing the extracted data.
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
-#' @examples
-#' \dontrun{
-#' extr_iris("1332-21-4")
-#' }
 extr_iris_ <- function(casrn = NULL,
                        cancer_types = c("non_cancer", "cancer"),
                        verify_ssl = FALSE,
@@ -74,42 +100,12 @@ extr_iris_ <- function(casrn = NULL,
   dat
 }
 
-#' @inherit extr_iris_ title description params return seealso
-#' @inherit extr_comptox details
-#' @export
-#' @examples
-#' \dontrun{
-#' extr_iris(c("1332-21-4", "50-00-0"))
-#' }
-extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
-  if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
-    cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
-  }
 
-  # Check if online
-  base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
-  check_internet()
-
-  if (length(casrn) > 1) {
-    dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types)
-    out <- do.call(rbind, dat)
-  } else {
-    out <- extr_iris_(casrn = casrn, cancer_types = cancer_types)
-  }
-
-  out_cl <- out |>
-    janitor::clean_names()
-
-  out_cl[out_cl$casrn %in% casrn, ]
-}
-
-
-
-#' Extract Data from ICE Database
+#' Extract Data from NTP ICE Database
 #'
 #' The `extr_ice` function sends a POST request to the ICE API to search for information based on specified chemical IDs and assays.
 #'
-#' @param casrn A character vector specifying the chemical IDs (CASRNs) for the search.
+#' @param casrn A character vector specifying the CASRNs for the search.
 #' @param assays A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
