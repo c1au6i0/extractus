@@ -10,10 +10,6 @@ extr_iris(casrn = NULL, cancer_types = c("non_cancer", "cancer"))
 \item{casrn}{A single character string specifying the CASRN for the search.}
 
 \item{cancer_types}{A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".}
-
-\item{verify_ssl}{Boolean to control of SSL should be verified or not.}
-
-\item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }
 \value{
 A data frame containing the extracted data.

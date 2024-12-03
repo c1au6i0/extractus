@@ -5,8 +5,6 @@
 #'
 #' @param casrn A single character string specifying the CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
-#' @param verify_ssl Boolean to control of SSL should be verified or not.
-#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @return A data frame containing the extracted data.
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @export
@@ -37,6 +35,8 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
 }
 
 #' @inherit extr_iris title description params return seealso
+#' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @noRd
 #' @keywords internal
 extr_iris_ <- function(casrn = NULL,
