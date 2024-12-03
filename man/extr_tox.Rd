@@ -33,7 +33,7 @@ Specifically, this function:
 }
 }
 \examples{
-\dontrun{
+\donttest{
 casrn <- c("50-00-0", "107-02-8")
 extr_tox(casrn)
 }

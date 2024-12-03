@@ -38,7 +38,7 @@
 #' The Comparative Toxicogenomics Database: update 2019. Nucleic acids research, 47(D1), D948–D954. \doi{10.1093/nar/gky868}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
 #' dat <- extr_ctd(
 #'   input_terms = input_terms,
@@ -158,7 +158,7 @@ extr_ctd <- function(
 #' \doi{10.1093/toxsci/kfad069}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' tetramer_data <- extr_tetramer(
 #'   chem = c("50-00-0", "ethanol"),
 #'   disease = "",

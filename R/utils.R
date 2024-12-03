@@ -8,7 +8,7 @@
 #' @return No return value. The function prints a message indicating the completion of the Excel file writing.
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' tox_dat <- extr_tox("50-00-0")
 #' write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
 #' }

@@ -39,7 +39,7 @@ A data frame containing the queried tetramer data in CSV format.
 This function queries the Comparative Toxicogenomics Database API to retrieve tetramer data based on chemicals, diseases, genes, or other categories.
 }
 \examples{
-\dontrun{
+\donttest{
 tetramer_data <- extr_tetramer(
   chem = c("50-00-0", "ethanol"),
   disease = "",

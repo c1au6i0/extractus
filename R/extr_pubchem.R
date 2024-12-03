@@ -15,7 +15,7 @@
 #' @seealso \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Example with formaldehyde and aflatoxin
 #' cids <- c(712, 14434) # CID for formaldehyde and aflatoxin B1
 #' extr_casrn_from_cid(cids)
@@ -60,7 +60,7 @@ extr_casrn_from_cid <- function(pubchem_id) {
 #' }
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Example with formaldehyde and aflatoxin
 #' extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
 #' }
@@ -123,7 +123,7 @@ extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE) {
 #' @seealso \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' extr_pubchem_fema(c("64-17-5", "50-00-0"))
 #' }
 extr_pubchem_fema <- function(casrn) {
@@ -193,7 +193,7 @@ extr_pubchem_fema_ <- function(casrn) {
 #' @seealso \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 #' }
 extr_pubchem_ghs <- function(casrn) {

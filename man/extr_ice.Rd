@@ -22,7 +22,7 @@ A data frame containing the extracted data from the ICE API.
 The \code{extr_ice} function sends a POST request to the ICE API to search for information based on specified chemical IDs and assays.
 }
 \examples{
-\dontrun{
+\donttest{
 extr_ice(c("50-00-0"))
 }
 }

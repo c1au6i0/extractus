@@ -60,7 +60,7 @@ A data frame containing the queried data in CSV format.
 This function queries the Comparative Toxicogenomics Database API to retrieve data related to chemicals, diseases, genes, or other categories.
 }
 \examples{
-\dontrun{
+\donttest{
 input_terms <- c("50-00-0", "64-17-5", "methanal", "ethanol")
 dat <- extr_ctd(
   input_terms = input_terms,

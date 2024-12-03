@@ -9,7 +9,7 @@
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' extr_iris(c("1332-21-4", "50-00-0"))
 #' }
 extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
@@ -111,7 +111,7 @@ extr_iris_ <- function(casrn = NULL,
 #' @seealso \href{https://ice.ntp.niehs.nih.gov/}{NTP ICE database}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' extr_ice(c("50-00-0"))
 #' }
 extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
@@ -219,7 +219,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 #'   }
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' casrn <- c("50-00-0", "107-02-8")
 #' extr_tox(casrn)
 #' }

@@ -29,7 +29,7 @@ each compound. It reshapes the resulting data, ensuring that each compound has
 a unique row with the CID, CASRN, and additional chemical properties.
 }
 \examples{
-\dontrun{
+\donttest{
 # Example with formaldehyde and aflatoxin
 extr_chem_info(IUPAC_names = c("Formaldehyde", "Aflatoxin B1"))
 }

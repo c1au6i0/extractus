@@ -137,7 +137,7 @@ However, please be aware that using these older versions might introduce potenti
 Refer to \href{https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c}{this gist} for instructions on how to downgrade \code{curl} and \code{OpenSSL} on Ubuntu.
 }
 \examples{
-\dontrun{
+\donttest{
 # Example usage of the function:
 extr_comptox(ids = c("Aspirin", "50-00-0"))
 }

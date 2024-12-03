@@ -16,7 +16,7 @@ A data frame containing the FEMA flavor profile information for each CASRN. If n
 This function retrieves FEMA (Flavor and Extract Manufacturers Association) flavor profile information for a list of CAS Registry Numbers (CASRN) from the PubChem database using the \code{webchem} package. It applies the function \code{extr_fema_pubchem_} to each CASRN in the input vector and combines the results into a single data frame.
 }
 \examples{
-\dontrun{
+\donttest{
 extr_pubchem_fema(c("64-17-5", "50-00-0"))
 }
 }

@@ -24,7 +24,7 @@ This function retrieves the CASRN for a given set of PubChem Compound Identifier
 It queries PubChem through the \code{webchem} package and extracts the CASRN from the depositor-supplied synonyms.
 }
 \examples{
-\dontrun{
+\donttest{
 # Example with formaldehyde and aflatoxin
 cids <- c(712, 14434) # CID for formaldehyde and aflatoxin B1
 extr_casrn_from_cid(cids)

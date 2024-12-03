@@ -18,7 +18,7 @@ No return value. The function prints a message indicating the completion of the 
 This function creates an Excel file with each dataframe in a list as a separate sheet.
 }
 \examples{
-\dontrun{
+\donttest{
 tox_dat <- extr_tox("50-00-0")
 write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
 }

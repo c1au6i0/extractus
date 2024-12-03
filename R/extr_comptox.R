@@ -88,7 +88,7 @@
 #' @return A cleaned data frame containing the requested data from CompTox.
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # Example usage of the function:
 #' extr_comptox(ids = c("Aspirin", "50-00-0"))
 #' }

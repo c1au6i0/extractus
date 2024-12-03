@@ -19,7 +19,7 @@ The \code{extr_iris} function sends a request to the EPA IRIS database to search
 Note that if \code{keywords} is not provide all dataset are retrieved.
 }
 \examples{
-\dontrun{
+\donttest{
 extr_iris(c("1332-21-4", "50-00-0"))
 }
 }

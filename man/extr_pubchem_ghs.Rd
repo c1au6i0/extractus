@@ -16,7 +16,7 @@ A dataframe containing GHS information.
 This function extracts GHS (Globally Harmonized System) codes from PubChem. It relies on the \code{webchem} package to interact with PubChem.
 }
 \examples{
-\dontrun{
+\donttest{
 extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 }
 }
