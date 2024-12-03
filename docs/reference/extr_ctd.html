@@ -148,35 +148,69 @@ for a full list.</p></dd>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
 
-<ul><li><p>Comparative Toxicogenomics Database: <a href="http://ctdbase.org" class="external-link">http://ctdbase.org</a></p></li>
-<li><p>Davis, A. P., Grondin, C. J., Johnson, R. J., Sciaky, D., McMorran, R., Wiegers, T. C., &amp; Mattingly, C. J. (2019).
+<ul><li><p>Davis, A. P., Grondin, C. J., Johnson, R. J., Sciaky, D., McMorran, R., Wiegers, T. C., &amp; Mattingly, C. J. (2019).
 The Comparative Toxicogenomics Database: update 2019. Nucleic acids research, 47(D1), D948–D954. <a href="https://doi.org/10.1093/nar/gky868" class="external-link">doi:10.1093/nar/gky868</a></p></li>
 </ul></div>
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p><a href="http://ctdbase.org" class="external-link">Comparative Toxicogenomics Database</a></p></div>
+    </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co">#\donttest{</span></span>
-<span><span class="va">input_terms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span>, <span class="st">"64-17-5"</span>, <span class="st">"methanal"</span>, <span class="st">"ethanol"</span><span class="op">)</span></span>
-<span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu">extr_ctd</span><span class="op">(</span></span>
-<span>  input_terms <span class="op">=</span> <span class="va">input_terms</span>,</span>
-<span>  category <span class="op">=</span> <span class="st">"chem"</span>,</span>
-<span>  report_type <span class="op">=</span> <span class="st">"genes_curated"</span>,</span>
-<span>  input_term_search_type <span class="op">=</span> <span class="st">"directAssociations"</span>,</span>
-<span>  action_types <span class="op">=</span> <span class="st">"ANY"</span>,</span>
-<span>  ontology <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"go_bp"</span>, <span class="st">"go_cc"</span><span class="op">)</span></span>
-<span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Get expresssion data</span></span>
-<span><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu">extr_ctd</span><span class="op">(</span></span>
-<span>  input_terms <span class="op">=</span> <span class="va">input_terms</span>,</span>
-<span>  report_type <span class="op">=</span> <span class="st">"cgixns"</span>,</span>
-<span>  category <span class="op">=</span> <span class="st">"chem"</span>,</span>
-<span>  action_types <span class="op">=</span> <span class="st">"expression"</span></span>
-<span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">dat2</span><span class="op">)</span></span>
-<span><span class="op">}</span> <span class="co"># }</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
+<span class="r-in"><span><span class="va">input_terms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span>, <span class="st">"64-17-5"</span>, <span class="st">"methanal"</span>, <span class="st">"ethanol"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu">extr_ctd</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  input_terms <span class="op">=</span> <span class="va">input_terms</span>,</span></span>
+<span class="r-in"><span>  category <span class="op">=</span> <span class="st">"chem"</span>,</span></span>
+<span class="r-in"><span>  report_type <span class="op">=</span> <span class="st">"genes_curated"</span>,</span></span>
+<span class="r-in"><span>  input_term_search_type <span class="op">=</span> <span class="st">"directAssociations"</span>,</span></span>
+<span class="r-in"><span>  action_types <span class="op">=</span> <span class="st">"ANY"</span>,</span></span>
+<span class="r-in"><span>  ontology <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"go_bp"</span>, <span class="st">"go_cc"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Checking Internet Connection...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Internet connection OK...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Sending request to CTD database...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Request succeeded with status code: 200</span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 'data.frame':	30106 obs. of  9 variables:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ x_input      : chr  "50-00-0" "50-00-0" "50-00-0" "50-00-0" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ chemical_name: chr  "Formaldehyde" "Formaldehyde" "Formaldehyde" "Formaldehyde" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ chemical_id  : chr  "D005557" "D005557" "D005557" "D005557" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ cas_rn       : chr  "50-00-0" "50-00-0" "50-00-0" "50-00-0" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ gene_symbol  : chr  "A4GALT" "AAK1" "AAMDC" "ABCA11P" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ gene_id      : int  53947 22848 28971 79963 26154 10351 5243 8714 10057 5825 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ organism     : chr  "Homo sapiens" "Homo sapiens" "Homo sapiens" "Homo sapiens" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ organism_id  : int  9606 9606 9606 9606 9606 9606 9606 9606 9606 9606 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ pub_med_ids  : chr  "27664576" "23649840" "23649840" "20655997" ...</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Get expresssion data</span></span></span>
+<span class="r-in"><span><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu">extr_ctd</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  input_terms <span class="op">=</span> <span class="va">input_terms</span>,</span></span>
+<span class="r-in"><span>  report_type <span class="op">=</span> <span class="st">"cgixns"</span>,</span></span>
+<span class="r-in"><span>  category <span class="op">=</span> <span class="st">"chem"</span>,</span></span>
+<span class="r-in"><span>  action_types <span class="op">=</span> <span class="st">"expression"</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Checking Internet Connection...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Internet connection OK...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Sending request to CTD database...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Request succeeded with status code: 200</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">dat2</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 'data.frame':	36112 obs. of  11 variables:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ x_input            : chr  "50-00-0" "50-00-0" "50-00-0" "50-00-0" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ chemical_name      : chr  "Formaldehyde" "Formaldehyde" "Formaldehyde" "Formaldehyde" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ chemical_id        : chr  "D005557" "D005557" "D005557" "D005557" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ cas_rn             : chr  "50-00-0" "50-00-0" "50-00-0" "50-00-0" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ gene_symbol        : chr  "A4GALT" "AAK1" "AAMDC" "ABCA11P" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ gene_id            : int  53947 22848 28971 79963 26154 10351 5243 8714 10057 5825 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ organism           : chr  "Homo sapiens" "Homo sapiens" "Homo sapiens" "Homo sapiens" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ organism_id        : int  9606 9606 9606 9606 9606 9606 9606 9606 9606 9606 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ interaction        : chr  "Formaldehyde results in decreased expression of A4GALT mRNA" "Formaldehyde results in increased expression of AAK1 mRNA" "Formaldehyde results in increased expression of AAMDC mRNA" "Formaldehyde results in decreased expression of ABCA11P mRNA" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ interaction_actions: chr  "decreases^expression" "increases^expression" "increases^expression" "decreases^expression" ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ pub_med_i_ds       : chr  "27664576" "23649840" "23649840" "20655997" ...</span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
+</code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>

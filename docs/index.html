@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Extract Tox Info from Various Databases">
-<meta name="description" content="Extract toxicological and chemical information from databases maintained by scientific agencies and resources, including the Environmental Protection Agency (EPA), PubChem, the National Toxicology Program (NTP), and the Comparative Toxicogenomics Database (CTD).">
-<meta property="og:description" content="Extract toxicological and chemical information from databases maintained by scientific agencies and resources, including the Environmental Protection Agency (EPA), PubChem, the National Toxicology Program (NTP), and the Comparative Toxicogenomics Database (CTD).">
+<meta name="description" content="Extract toxicological and chemical information from databases maintained by scientific agencies and resources, including the Comparative Toxicogenomics Database &lt;https://ctdbase.org/&gt;, the Integrated Chemical Environment &lt;https://ice.ntp.niehs.nih.gov/&gt;, the Integrated Risk Information System &lt;https://cfpub.epa.gov/ncea/iris/&gt;, the CompTox Chemicals Dashboard Resource Hub &lt;https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-resource-hub&gt;, and PubChem &lt;https://pubchem.ncbi.nlm.nih.gov/&gt;.">
+<meta property="og:description" content="Extract toxicological and chemical information from databases maintained by scientific agencies and resources, including the Comparative Toxicogenomics Database &lt;https://ctdbase.org/&gt;, the Integrated Chemical Environment &lt;https://ice.ntp.niehs.nih.gov/&gt;, the Integrated Risk Information System &lt;https://cfpub.epa.gov/ncea/iris/&gt;, the CompTox Chemicals Dashboard Resource Hub &lt;https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-resource-hub&gt;, and PubChem &lt;https://pubchem.ncbi.nlm.nih.gov/&gt;.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -51,13 +51,20 @@
 </h1></div>
 <!-- badges: start -->
 
-<p><code>extractox</code> is a comprehensive R package designed to simplify querying various chemical, toxicological, and biological databases such as the Comparative Toxicogenomics Database (CTD), EPA’s ICE (Integrated Chemical Environment), EPA’s IRIS (Integrated Risk Information System), EPA’s COMPTOX and PubChem. The package facilitates interaction with APIs, providing curated and user-friendly outputs.</p>
+<p><code>extractox</code> is a comprehensive R package designed to simplify querying various chemical, toxicological, and biological databases such as the Comparative Toxicogenomics Database (CTP) of the MDI Biological Laboratory and NC State University, the Integrated Chemical Environment (ICE) of the National Toxicology Program (NTP), the Integrated Risk Information System (IRIS) of the Environmental Protection Agency (EPA), the CompTox Chemicals Dashboard Resource Hub (CompTox) of EPA, and PubChem of the National Center for Biotechnology Information/National Institures Of Health (NCBI, NIH). The package facilitates interaction with APIs, providing curated and user-friendly outputs.</p>
 <p>To communicate with Pubchem, <code>extractox</code> relies on the package<code>webchem</code>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the package from GitHub:</p>
+<p>Install the package <code>extractox</code> from CRAN.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># From CRAN</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"extractox"</span><span class="op">)</span></span></code></pre></div>
+<div class="section level3">
+<h3 id="development-version">Development Version<a class="anchor" aria-label="anchor" href="#development-version"></a>
+</h3>
+<p>To get a bug fix or to use a feature from the development version, you can install the development version of <code>extractox</code> from GitHub.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Install pak if not already installed</span></span>
 <span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html" class="external-link">requireNamespace</a></span><span class="op">(</span><span class="st">"pak"</span>, quietly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
@@ -66,15 +73,16 @@
 <span><span class="co"># Install the package from GitHub</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pkg_install.html" class="external-link">pkg_install</a></span><span class="op">(</span><span class="st">"c1au6i0/extractox"</span><span class="op">)</span></span></code></pre></div>
 </div>
+</div>
 <div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
 </h2>
 <div class="section level3">
 <h3 id="ice-database">ICE Database<a class="anchor" aria-label="anchor" href="#ice-database"></a>
 </h3>
-<p>The Integrated Chemical Environment (ICE) database, managed by the EPA, provides access to a variety of data related to chemical toxicity, exposure, and risk assessment. It includes data from high-throughput screening assays, in vivo studies, and computational models.</p>
-<p><code>extr_ice</code> provides access to EPA’s Integrated Chemical Environment (ICE) database for toxicological and exposure-related data.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<p>The ICE database, managed by the EPA, provides access to a variety of data related to chemical toxicity, exposure, and risk assessment. It includes data from high-throughput screening assays, in vivo studies, and computational models.</p>
+<p><code>extr_ice</code> provides access to NTP’s ICE database for toxicological and exposure-related data.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/c1au6i0/extractox" class="external-link">extractox</a></span><span class="op">)</span></span>
 <span><span class="va">ice_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_ice.html">extr_ice</a></span><span class="op">(</span>casrn <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span><span class="op">)</span>, assays <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="co"># assays is null so all assays are retrieved</span></span>
 <span><span class="co">#&gt; ℹ Checking Internet Connection...</span></span>
@@ -94,9 +102,9 @@
 <div class="section level3">
 <h3 id="iris">IRIS<a class="anchor" aria-label="anchor" href="#iris"></a>
 </h3>
-<p>The Integrated Risk Information System (IRIS) is a database managed by the EPA that contains information on the health effects of exposure to various substances found in the environment. It provides qualitative and quantitative health risk information.</p>
-<p><code>extr_iris</code> provides access to EPA’s IRIS database and accepts queries of CASRN or IUPAC names of chemicals.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<p>The IRIS database is managed by the EPA and contains information on the health effects of exposure to various substances found in the environment. It provides qualitative and quantitative health risk information.</p>
+<p><code>extr_iris</code> provides access to EPA’s IRIS database and accepts queries of Chemical Abstracts Service Registry Number (CASRN) or International Union of Pure and Applied Chemistry (IUPAC) names of chemicals.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">iris_info</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_iris.html">extr_iris</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"glyphosate"</span>, <span class="st">"50-00-0"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ℹ Checking Internet Connection...</span></span>
 <span><span class="co">#&gt; ℹ Internet connection OK...</span></span>
@@ -111,11 +119,11 @@
 <span><span class="co">#&gt; [7] "toxicity_value_type"           "toxicity_value"</span></span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="comptox">COMPTOX<a class="anchor" aria-label="anchor" href="#comptox"></a>
+<h3 id="comptox">CompTox<a class="anchor" aria-label="anchor" href="#comptox"></a>
 </h3>
 <p>The CompTox Chemistry Dashboard, managed by the EPA, provides access to data on chemical structures, properties, and associated bioactivity data. It integrates data from various sources to support chemical safety assessments.</p>
 <p><code>extr_comptox</code> extracts data from the CompTox Chemistry Dashboard using both CASRN and IUPAC names of chemicals and returns a list of <strong>dataframes</strong>.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">info_comptox</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_comptox.html">extr_comptox</a></span><span class="op">(</span>ids <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Aspirin"</span>, <span class="st">"50-00-0"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ℹ Sending request to CompTox...</span></span>
 <span><span class="co">#&gt; Request succeeded with status code: 202</span></span>
@@ -132,7 +140,7 @@
 <h3 id="tox-info">Tox Info<a class="anchor" aria-label="anchor" href="#tox-info"></a>
 </h3>
 <p>The function <code>extr_tox</code> is a wrapper used to call all the above-mentioned functions and retrieve a list of dataframes.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">info_tox</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_tox.html">extr_tox</a></span><span class="op">(</span>casrn <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Aspirin"</span>, <span class="st">"50-00-0"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ℹ Checking Internet Connection...</span></span>
 <span><span class="co">#&gt; ℹ Internet connection OK...</span></span>
@@ -153,10 +161,10 @@
 <div class="section level3">
 <h3 id="ctd-database">CTD Database<a class="anchor" aria-label="anchor" href="#ctd-database"></a>
 </h3>
-<p>The Comparative Toxicogenomics Database (CTD) provides information about the interactions between chemicals, genes, and diseases. It helps in understanding the effects of environmental exposures on human health.</p>
-<p>A series of functions interact with the CTD database.</p>
+<p>The CTP provides information about the interactions between chemicals, genes, and diseases. It helps in understanding the effects of environmental exposures on human health.</p>
+<p>A series of functions interact with the CTP database.</p>
 <p><code>extr_ctd</code> extracts information related to chemical-gene or pathway associations.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">input_terms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span>, <span class="st">"64-17-5"</span>, <span class="st">"methanal"</span>, <span class="st">"ethanol"</span><span class="op">)</span></span>
 <span><span class="va">ctd_association</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_ctd.html">extr_ctd</a></span><span class="op">(</span></span>
 <span>  input_terms <span class="op">=</span> <span class="va">input_terms</span>,</span>
@@ -188,9 +196,9 @@
 <span><span class="co">#&gt;  [4] "cas_rn"              "gene_symbol"         "gene_id"            </span></span>
 <span><span class="co">#&gt;  [7] "organism"            "organism_id"         "interaction"        </span></span>
 <span><span class="co">#&gt; [10] "interaction_actions" "pub_med_i_ds"</span></span></code></pre></div>
-<p>CTD Tetramers are computationally generated information units that interrelate four data types from the CTD: a chemical, gene product, phenotype, and disease. They help in understanding the complex relationships between these entities and their combined impact on human health.</p>
+<p>Tetramers are computationally generated information units that interrelate four data types from the CTP: a chemical, gene product, phenotype, and disease. They help in understanding the complex relationships between these entities and their combined impact on human health.</p>
 <p><code>extr_tetramer</code> extract info related to tetramers from CTD.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">tetramer_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_tetramer.html">extr_tetramer</a></span><span class="op">(</span></span>
 <span>  chem <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span>, <span class="st">"ethanol"</span><span class="op">)</span>,</span>
 <span>  disease <span class="op">=</span> <span class="st">""</span>,</span>
@@ -211,10 +219,10 @@
 <div class="section level3">
 <h3 id="pubchem-database">PubChem Database<a class="anchor" aria-label="anchor" href="#pubchem-database"></a>
 </h3>
-<p>PubChem is a public repository for information on the biological activities of small molecules. It provides information on chemical structures, identifiers, chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations, and more.</p>
-<p>A series of functions that rely on the <code>webchem</code> package are used to extract chemical information, Globally Harmonized System (GHS) classification data, or flavor classification from PubChem.</p>
+<p>PubChem is an open chemistry database at the NIH. It provides information on chemical structures, identifiers, chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations, and more.</p>
+<p>A series of functions that rely on the <code>webchem</code> package are used to extract chemical information, Globally Harmonized System (<code>GHS</code>) classification data, or flavor classification from PubChem.</p>
 <p>The function <code>extr_chem_info</code> retrieves chemical information of IUPAC-named chemicals. A warning is displayed if the chemical is not found.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">chem_info</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_chem_info.html">extr_chem_info</a></span><span class="op">(</span>IUPAC_names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Formaldehyde"</span>, <span class="st">"Aflatoxin B1"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ℹ Checking Internet Connection...</span></span>
 <span><span class="co">#&gt; ℹ Internet connection OK...</span></span>
@@ -254,7 +262,7 @@
 <li>
 <code>extr_pubchem_fema</code> extracts flavor profile data.</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">ghs_info</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extr_pubchem_ghs.html">extr_pubchem_ghs</a></span><span class="op">(</span>casrn <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span>, <span class="st">"64-17-5"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ℹ Checking Internet Connection...</span></span>
 <span><span class="co">#&gt; ℹ Internet connection OK...</span></span>

@@ -1,4 +1,4 @@
-#' extr_casrn_from_cid
+#' Retrieve CASRN for PubChem CIDs
 #'
 #' This function retrieves the CASRN for a given set of PubChem Compound Identifiers (CID).
 #' It queries PubChem through the `webchem` package and extracts the CASRN from the depositor-supplied synonyms.
@@ -40,7 +40,7 @@ extr_casrn_from_cid <- function(pubchem_id) {
 
 
 
-#' extr_chem_info
+#' Query Chemical Information from IUPAC Names
 #'
 #' This function takes a vector of IUPAC names and queries the PubChem database
 #' (using the `webchem` package) to obtain the corresponding CASRN and CID for
