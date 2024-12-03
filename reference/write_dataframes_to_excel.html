@@ -81,7 +81,8 @@
 <span class="r-err co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-style: italic;">!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl</span></span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-style: italic;">v1.1.1!</span></span>
-<span class="r-in"><span><span class="fu">write_dataframes_to_excel</span><span class="op">(</span><span class="va">tox_dat</span>, <span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"tox_dat.xlsx"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">temp_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempfile</a></span><span class="op">(</span>fileext <span class="op">=</span> <span class="st">".xlsx"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">write_dataframes_to_excel</span><span class="op">(</span><span class="va">tox_dat</span>, filename <span class="op">=</span> <span class="va">temp_file</span><span class="op">)</span></span></span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'tox_dat' not found</span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
