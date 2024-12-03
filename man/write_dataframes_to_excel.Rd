@@ -20,6 +20,7 @@ This function creates an Excel file with each dataframe in a list as a separate 
 \examples{
 \donttest{
 tox_dat <- extr_tox("50-00-0")
-write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
+temp_file <- tempfile(fileext = ".xlsx")
+write_dataframes_to_excel(tox_dat, filename = temp_file)
 }
 }

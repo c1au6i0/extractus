@@ -4,13 +4,13 @@
 #'
 #' @param df_list A named list of dataframes to write to the Excel file.
 #' @param filename The name of the Excel file to create.
-#'
 #' @return No return value. The function prints a message indicating the completion of the Excel file writing.
 #' @export
 #' @examples
 #' \donttest{
 #' tox_dat <- extr_tox("50-00-0")
-#' write_dataframes_to_excel(tox_dat, here::here("tox_dat.xlsx"))
+#' temp_file <- tempfile(fileext = ".xlsx")
+#' write_dataframes_to_excel(tox_dat, filename = temp_file)
 #' }
 write_dataframes_to_excel <- function(df_list, filename) {
   if (isFALSE(requireNamespace("openxlsx", quietly = TRUE))) {

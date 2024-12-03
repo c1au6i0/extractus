@@ -13,8 +13,7 @@ Description: Extract toxicological and chemical information from databases
     Integrated Chemical Environment <https://ice.ntp.niehs.nih.gov/>, the
     Integrated Risk Information System <https://cfpub.epa.gov/ncea/iris/>,
     the CompTox Chemicals Dashboard Resource Hub
-    <https://www.epa.gov/comptox-tools/
-    comptox-chemicals-dashboard-resource-hub>, and PubChem
+    <https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-resource-hub>, and PubChem
     <https://pubchem.ncbi.nlm.nih.gov/>.
 License: MIT + file LICENSE
 URL: https://github.com/c1au6i0/extractox,
