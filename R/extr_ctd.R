@@ -180,13 +180,13 @@ extr_tetramer <- function(
     ...) {
   if (length(chem) > 1) {
     dat <- lapply(chem, extr_tetramer_,
-                  disease = disease,
-                  gene = gene,
-                  go = go,
-                  input_term_search_type = input_term_search_type,
-                  qt_match_type = qt_match_type,
-                  verify_ssl = verify_ssl,
-                  ...
+      disease = disease,
+      gene = gene,
+      go = go,
+      input_term_search_type = input_term_search_type,
+      qt_match_type = qt_match_type,
+      verify_ssl = verify_ssl,
+      ...
     )
     out <- do.call(rbind, dat)
   } else {
@@ -299,6 +299,3 @@ extr_tetramer_ <- function(
 
   out
 }
-
-
-

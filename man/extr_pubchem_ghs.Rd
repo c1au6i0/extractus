@@ -20,3 +20,6 @@ This function extracts GHS (Globally Harmonized System) codes from PubChem. It r
 extr_pubchem_ghs(casrn = c("50-00-0", "64-17-5"))
 }
 }
+\seealso{
+\href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
+}

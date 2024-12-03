@@ -20,3 +20,6 @@ This function retrieves FEMA (Flavor and Extract Manufacturers Association) flav
 extr_pubchem_fema(c("64-17-5", "50-00-0"))
 }
 }
+\seealso{
+\href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
+}

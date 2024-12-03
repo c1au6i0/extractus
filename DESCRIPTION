@@ -2,36 +2,39 @@ Package: extractox
 Title: Extract Tox Info from Various Databases
 Version: 0.1.0
 Authors@R: c(
-    person(given = "Claudio",
-           family = "Zanettini",
-           role = c("aut", "cre", "cph"),
-           email = "claudio.zanettini@gmail.com",
+    person("Claudio", "Zanettini", , "claudio.zanettini@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-5043-8033")),
-    person("Lucio", "Queiroz", , "luciorqueiroz@gmail.com",
-           role = c("aut"),
+    person("Lucio", "Queiroz", , "luciorqueiroz@gmail.com", role = "aut",
            comment = c(ORCID = "0000-0002-6090-1834"))
-    )
+  )
 Description: Extract toxicological and chemical information from databases
-   maintained by scientific agencies and resources, including the Environmental Protection Agency (EPA),
-   PubChem, the National Toxicology Program (NTP), and the Comparative Toxicogenomics Database (CTD).
+    maintained by scientific agencies and resources, including the
+    Comparative Toxicogenomics Database <https://ctdbase.org/>, the
+    Integrated Chemical Environment <https://ice.ntp.niehs.nih.gov/>, the
+    Integrated Risk Information System <https://cfpub.epa.gov/ncea/iris/>,
+    the CompTox Chemicals Dashboard Resource Hub
+    <https://www.epa.gov/comptox-tools/
+    comptox-chemicals-dashboard-resource-hub>, and PubChem
+    <https://pubchem.ncbi.nlm.nih.gov/>.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+URL: https://github.com/c1au6i0/extractox,
+    https://c1au6i0.github.io/extractox/
+BugReports: https://github.com/c1au6i0/extractox/issues
+Depends: 
+    R (>= 4.1)
 Imports: 
     cli,
     httr2,
     janitor,
     pingr,
-    rvest,
     readxl,
+    rvest,
     webchem
-Depends: 
-    R (>= 4.1)
-LazyData: true
 Suggests: 
-    testthat (>= 3.0.0),
-    openxlsx
+    openxlsx,
+    testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://github.com/c1au6i0/extractox, https://c1au6i0.github.io/extractox/
-BugReports: https://github.com/c1au6i0/extractox/issues
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

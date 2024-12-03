@@ -12,6 +12,7 @@
 #'   \item{cas_rn}{The corresponding CASRN of the compound.}
 #'   \item{IUPACName}{The IUPAC name of the compound.}
 #' }
+#' @seealso \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
 #' @export
 #' @examples
 #' \dontrun{
@@ -119,6 +120,7 @@ extr_chem_info <- function(IUPAC_names, stop_on_warning = FALSE) {
 #'
 #' @param casrn A vector of CAS Registry Numbers (CASRN) as atomic vectors.
 #' @return A data frame containing the FEMA flavor profile information for each CASRN. If no information is found for a particular CASRN, the output will include a row indicating this.
+#' @seealso \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
 #' @export
 #' @examples
 #' \dontrun{
@@ -188,6 +190,7 @@ extr_pubchem_fema_ <- function(casrn) {
 #'
 #' @param casrn Character vector of CAS Registry Numbers (CASRN).
 #' @return A dataframe containing GHS information.
+#' @seealso \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem}
 #' @export
 #' @examples
 #' \dontrun{
@@ -255,6 +258,3 @@ extr_pubchem_ghs_ <- function(casrn) {
 
   out_df
 }
-
-
-
