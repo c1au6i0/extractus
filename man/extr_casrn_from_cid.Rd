@@ -2,7 +2,7 @@
 % Please edit documentation in R/extr_pubchem.R
 \name{extr_casrn_from_cid}
 \alias{extr_casrn_from_cid}
-\title{extr_casrn_from_cid}
+\title{Retrieve CASRN for PubChem CIDs}
 \usage{
 extr_casrn_from_cid(pubchem_id)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/extr_pubchem.R
 \name{extr_chem_info}
 \alias{extr_chem_info}
-\title{extr_chem_info}
+\title{Query Chemical Information from IUPAC Names}
 \usage{
 extr_chem_info(IUPAC_names, stop_on_warning = FALSE)
 }
