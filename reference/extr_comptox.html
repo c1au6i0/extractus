@@ -315,13 +315,24 @@ One workaround is to downgrade to <code>curl v7.78.0</code> and <code>OpenSSL v1
 However, please be aware that using these older versions might introduce potential security vulnerabilities.
 Refer to <a href="https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb657c" class="external-link">this gist</a> for instructions on how to downgrade <code>curl</code> and <code>OpenSSL</code> on Ubuntu.</p>
     </div>
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p><a href="https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-resource-hub" class="external-link">CompTox Chemicals Dashboard Resource Hub</a></p></div>
+    </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># \dontrun{</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co"># Example usage of the function:</span></span></span>
 <span class="r-in"><span><span class="fu">extr_comptox</span><span class="op">(</span>ids <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Aspirin"</span>, <span class="st">"50-00-0"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Sending request to CompTox...</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in extr_comptox_(ids = ids, download_items = download_items, mass_error = mass_error,     verify_ssl = verify_ssl, xlsx_file = xlsx_file, base_url = base_url,     ...):</span> Failed to perform the request: Failed to perform HTTP request. <span style="font-weight: bold;">Caused by</span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">error in `curl::curl_fetch_memory()`:</span> <span style="color: #BBBB00;">!</span> SSL connect error [comptox.epa.gov]:</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> error:0A000152:SSL routines::unsafe legacy renegotiation disabled</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-style: italic;">!If you are using openssl, you might need to downgrade to curl v7.78.0, openssl</span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-style: italic;">v1.1.1!</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
