@@ -46,3 +46,10 @@ test_that("Missing required parameter", {
     "The argument ids is required."
   )
 })
+
+
+test_that("extr_comptox when download_items is set to one val", {
+  expect_no_error(
+  result <- extr_comptox(c("31-12-5", "80-05-7"), download_items = "TOXVAL_DETAILS")
+  )
+})

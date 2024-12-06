@@ -6,17 +6,16 @@
 \usage{
 extr_comptox(
   ids,
-  download_items = c("DTXCID", "CASRN", "INCHIKEY", "IUPAC_NAME", "SMILES",
-    "INCHI_STRING", "MS_READY_SMILES", "QSAR_READY_SMILES", "MOLECULAR_FORMULA",
-    "AVERAGE_MASS", "MONOISOTOPIC_MASS", "QC_LEVEL", "SAFETY_DATA", "EXPOCAST",
-    "DATA_SOURCES", "TOXVAL_DATA", "NUMBER_OF_PUBMED_ARTICLES", "PUBCHEM_DATA_SOURCES",
-    "CPDAT_COUNT", "IRIS_LINK", "PPRTV_LINK", "WIKIPEDIA_ARTICLE", "QC_NOTES",
-    "ABSTRACT_SHIFTER", "TOXPRINT_FINGERPRINT", "ACTOR_REPORT", "SYNONYM_IDENTIFIER",
-    "RELATED_RELATIONSHIP", "ASSOCIATED_TOXCAST_ASSAYS", 
-     "TOXVAL_DETAILS",
-    "CHEMICAL_PROPERTIES_DETAILS", "BIOCONCENTRATION_FACTOR_TEST_PRED",
-    "BOILING_POINT_DEGC_TEST_PRED", "48HR_DAPHNIA_LC50_MOL/L_TEST_PRED",
-    "DENSITY_G/CM^3_TEST_PRED", "DEVTOX_TEST_PRED",
+  download_items = c("CASRN", "INCHIKEY", "IUPAC_NAME", "SMILES", "INCHI_STRING",
+    "MS_READY_SMILES", "QSAR_READY_SMILES", "MOLECULAR_FORMULA", "AVERAGE_MASS",
+    "MONOISOTOPIC_MASS", "QC_LEVEL", "SAFETY_DATA", "EXPOCAST", "DATA_SOURCES",
+    "TOXVAL_DATA", "NUMBER_OF_PUBMED_ARTICLES", "PUBCHEM_DATA_SOURCES", "CPDAT_COUNT",
+    "IRIS_LINK", "PPRTV_LINK", "WIKIPEDIA_ARTICLE", "QC_NOTES", "ABSTRACT_SHIFTER",
+    "TOXPRINT_FINGERPRINT", "ACTOR_REPORT", "SYNONYM_IDENTIFIER", "RELATED_RELATIONSHIP",
+    "ASSOCIATED_TOXCAST_ASSAYS", "TOXVAL_DETAILS", 
+     "CHEMICAL_PROPERTIES_DETAILS",
+    "BIOCONCENTRATION_FACTOR_TEST_PRED", "BOILING_POINT_DEGC_TEST_PRED",
+    "48HR_DAPHNIA_LC50_MOL/L_TEST_PRED", "DENSITY_G/CM^3_TEST_PRED", "DEVTOX_TEST_PRED",
     "96HR_FATHEAD_MINNOW_MOL/L_TEST_PRED", "FLASH_POINT_DEGC_TEST_PRED",
     "MELTING_POINT_DEGC_TEST_PRED", "AMES_MUTAGENICITY_TEST_PRED",
     "ORAL_RAT_LD50_MOL/KG_TEST_PRED", "SURFACE_TENSION_DYN/CM_TEST_PRED",
@@ -46,7 +45,6 @@ extr_comptox(
 
 \item{download_items}{A character vector of items to be downloaded. This includes a comprehensive set of chemical properties, identifiers, predictive data, and other relevant information. By Default, it download all the info
 \describe{
-\item{DTXCID}{The unique identifier for a chemical in the EPA's CompTox Chemicals Dashboard.}
 \item{CASRN}{The Chemical Abstracts Service Registry Number, a unique numerical identifier for chemical substances.}
 \item{INCHIKEY}{The hashed version of the full International Chemical Identifier (InChI) string.}
 \item{IUPAC_NAME}{The International Union of Pure and Applied Chemistry (IUPAC) name of the chemical.}

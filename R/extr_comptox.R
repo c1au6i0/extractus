@@ -6,7 +6,6 @@
 #' @param ids A character vector containing the items to be searched within the CompTox Chemistry Dashboard. These can be chemical names, CAS Registry Numbers (CASRN), InChIKeys, or DSSTox substance identifiers (DTXSID).
 #' @param download_items A character vector of items to be downloaded. This includes a comprehensive set of chemical properties, identifiers, predictive data, and other relevant information. By Default, it download all the info
 #' \describe{
-#'   \item{DTXCID}{The unique identifier for a chemical in the EPA's CompTox Chemicals Dashboard.}
 #'   \item{CASRN}{The Chemical Abstracts Service Registry Number, a unique numerical identifier for chemical substances.}
 #'   \item{INCHIKEY}{The hashed version of the full International Chemical Identifier (InChI) string.}
 #'   \item{IUPAC_NAME}{The International Union of Pure and Applied Chemistry (IUPAC) name of the chemical.}
@@ -94,7 +93,6 @@
 #' }
 extr_comptox <- function(ids,
                          download_items = c(
-                           "DTXCID",
                            "CASRN",
                            "INCHIKEY",
                            "IUPAC_NAME",
@@ -208,6 +206,9 @@ extr_comptox_ <- function(ids,
 
   identifier_types <- c("chemical_name", "CASRN", "INCHIKEY", "dtxsid")
   input_type <- "IDENTIFIER"
+
+
+  download_items <-  c("DTXCID", download_items)
 
   params <- list(
     identifierTypes = identifier_types,
