@@ -3,7 +3,7 @@
 #' The `extr_iris` function sends a request to the EPA IRIS database to search for information based on a specified keywords and cancer types. It retrieves and parses the HTML content from the response.
 #' Note that if `keywords` is not provide all dataset are retrieved.
 #'
-#' @param casrn A single character string specifying the CASRN for the search.
+#' @param casrn A vector CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
 #' @return A data frame containing the extracted data.
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
@@ -48,14 +48,14 @@ extr_iris_ <- function(casrn = NULL,
 
   # Construct query parameters
   query_params <- list(
-    keywords = casrn,
+    keyword = casrn,
     cancer_or_no_cancer = cancer_types
   )
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   error_result <- NULL
-
+  # browser()
   cli::cli_inform("Quering {.field {casrn}} to EPA IRIS database...")
   resp <- tryCatch(
     {
@@ -95,7 +95,7 @@ extr_iris_ <- function(casrn = NULL,
     }
   )
 
-  dat
+  dat[dat$CASRN %in% casrn, ]
 }
 
 

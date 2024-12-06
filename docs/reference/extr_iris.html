@@ -9,7 +9,7 @@ Note that if keywords is not provide all dataset are retrieved."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">extractox</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@ Note that if <code>keywords</code> is not provide all dataset are retrieved.</p>
 
 
 <dl><dt id="arg-casrn">casrn<a class="anchor" aria-label="anchor" href="#arg-casrn"></a></dt>
-<dd><p>A single character string specifying the CASRN for the search.</p></dd>
+<dd><p>A vector CASRN for the search.</p></dd>
 
 
 <dt id="arg-cancer-types">cancer_types<a class="anchor" aria-label="anchor" href="#arg-cancer-types"></a></dt>
@@ -76,17 +76,13 @@ Note that if <code>keywords</code> is not provide all dataset are retrieved.</p>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Request succeeded with status code: 200</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Quering <span style="color: #00BB00;">50-00-0</span> to EPA IRIS database...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Request succeeded with status code: 200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 8 × 8</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 8</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   chemical_name casrn     exposure_route assessment_type critical_effect_or_tu…¹</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Asbestos      1332-21-4 Inhalation     Cancer          Lung cancer and mesoth…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Formaldehyde  50-00-0   Inhalation     Cancer          Nasopharyngeal cancer,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Formaldehyde  50-00-0   Inhalation     Noncancer       Decreased pulmonary fu…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Formaldehyde  50-00-0   Oral           Noncancer       Reduced weight gain, h…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> Asbestos      1332-21-4 Inhalation     Cancer          Lung cancer and mesoth…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> Formaldehyde  50-00-0   Inhalation     Cancer          Nasopharyngeal cancer,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> Formaldehyde  50-00-0   Inhalation     Noncancer       Decreased pulmonary fu…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> Formaldehyde  50-00-0   Oral           Noncancer       Reduced weight gain, h…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Formaldehyde  50-00-0   Oral           Noncancer       Reduced weight gain, h…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Formaldehyde  50-00-0   Inhalation     Cancer          Nasopharyngeal cancer,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Formaldehyde  50-00-0   Inhalation     Noncancer       Decreased pulmonary fu…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ abbreviated name: ¹​critical_effect_or_tumor_type</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: woe_characterization &lt;chr&gt;, toxicity_value_type &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   toxicity_value &lt;chr&gt;</span></span>

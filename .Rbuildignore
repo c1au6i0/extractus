@@ -13,3 +13,4 @@
 ^pkgdown$
 ^inst/img$
 ^CRAN-SUBMISSION$
+justfile$
