@@ -62,6 +62,13 @@ ice_data <- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so al
 names(ice_data)
 ```
 
+There are more than **2000 possible assays** in ICE. The `extr_ice_assay_names()` function allows to search for assay names that match a pattern you're interested in. Please note that searches are case sensitive and accept regexp.
+
+```{r}
+extr_ice_assay_names("Rat Acute") # keep empty to retrieve all
+```
+
+
 ### IRIS
 
 The IRIS database is managed by the EPA and contains information on the health effects of exposure to various substances found in the environment. It provides qualitative and quantitative health risk information.
@@ -72,6 +79,7 @@ The IRIS database is managed by the EPA and contains information on the health e
 iris_info <- extr_iris(c("glyphosate", "50-00-0"))
 names(iris_info)
 ```
+
 
 ### CompTox
 

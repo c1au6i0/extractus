@@ -208,7 +208,7 @@ extr_comptox_ <- function(ids,
   input_type <- "IDENTIFIER"
 
 
-  download_items <-  c("DTXCID", download_items)
+  download_items <- c("DTXCID", download_items)
 
   params <- list(
     identifierTypes = identifier_types,

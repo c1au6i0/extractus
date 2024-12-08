@@ -23,3 +23,22 @@ test_that("extr_ice warns for CASRN 50-00-1", {
     "It seems that the ids were not found in ICE"
   )
 })
+
+# @@@@@@@@@@@@@@@@@@@@@@
+# TEST FIND ASSAYS. ---
+# @@@@@@@@@@@@@@@@@@@@@@
+
+test_that("extr_ice_assay_names returns 2030 elements with NULL", {
+  result <- extr_ice_assay_names()
+  expect_equal(length(result), 2030)
+})
+
+# Test 2: When searching for "opera", it should return exactly 45 elements
+test_that("extr_ice_assay_names returns 45 elements for 'opera' search", {
+  result <- extr_ice_assay_names("OPERA")
+  expect_equal(length(result), 45) #
+})
+
+test_that("extr_ice_assay_names returns 0 elements for '10' search", {
+  expect_error(extr_ice_assay_names(10))
+})
