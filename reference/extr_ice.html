@@ -29,7 +29,7 @@
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>Extract Data from NTP ICE Database</h1>
-      <small class="dont-index">Source: <a href="https://github.com/c1au6i0/extractox/blob/main/R/extr_tox.R" class="external-link"><code>R/extr_tox.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/c1au6i0/extractox/blob/main/R/extr_ice.R" class="external-link"><code>R/extr_ice.R</code></a></small>
       <div class="d-none name"><code>extr_ice.Rd</code></div>
     </div>
 
@@ -51,7 +51,9 @@
 
 
 <dt id="arg-assays">assays<a class="anchor" aria-label="anchor" href="#arg-assays"></a></dt>
-<dd><p>A character vector specifying the assays to include in the search. Default is NULL, meaning all assays are included.</p></dd>
+<dd><p>A character vector specifying the assays to include in the search. Default is NULL,
+meaning all assays are included. If you don't know the exact assay name, you can use the
+<code><a href="extr_ice_assay_names.html">extr_ice_assay_names()</a></code> function to search for assay names that match a pattern you're interested in.</p></dd>
 
 
 <dt id="arg-verify-ssl">verify_ssl<a class="anchor" aria-label="anchor" href="#arg-verify-ssl"></a></dt>
@@ -68,7 +70,8 @@
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
-    <div class="dont-index"><p><a href="https://ice.ntp.niehs.nih.gov/" class="external-link">NTP ICE database</a></p></div>
+    <div class="dont-index"><p><code><a href="extr_ice_assay_names.html">extr_ice_assay_names</a></code>,
+<a href="https://ice.ntp.niehs.nih.gov/" class="external-link">NTP ICE database</a></p></div>
     </div>
 
     <div class="section level2">
