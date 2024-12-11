@@ -60,8 +60,8 @@ exposure-related data.
     ice_data <- extr_ice(casrn = c("50-00-0"), assays = NULL) # assays is null so all assays are retrieved
     #> ℹ Checking Internet Connection...
     #> ℹ Internet connection OK...
-    #> Sending request to ICE database...
-    #> Request succeeded with status code: 200
+    #> ℹ Sending request to ICE database...
+    #> ℹ Request succeeded with status code: 200
     names(ice_data)
     #>  [1] "assay"              "endpoint"           "substanceType"     
     #>  [4] "casrn"              "qsarReadyId"        "value"             
@@ -89,16 +89,15 @@ environment. It provides qualitative and quantitative health risk
 information.
 
 `extr_iris` provides access to EPA’s IRIS database and accepts queries
-of Chemical Abstracts Service Registry Number (CASRN) or International
-Union of Pure and Applied Chemistry (IUPAC) names of chemicals.
+CASRN or IUPAC names of chemicals.
 
     iris_info <- extr_iris(c("glyphosate", "50-00-0"))
     #> ℹ Checking Internet Connection...
     #> ℹ Internet connection OK...
-    #> Quering glyphosate to EPA IRIS database...
-    #> Request succeeded with status code: 200
-    #> Quering 50-00-0 to EPA IRIS database...
-    #> Request succeeded with status code: 200
+    #> ℹ Quering glyphosate to EPA IRIS database...
+    #> ℹ Request succeeded with status code: 200
+    #> ℹ Quering 50-00-0 to EPA IRIS database...
+    #> ℹ Request succeeded with status code: 200
     names(iris_info)
     #> [1] "chemical_name"                 "casrn"                        
     #> [3] "exposure_route"                "assessment_type"              
@@ -118,15 +117,48 @@ both CASRN and IUPAC names of chemicals and returns a list of
 
     info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
     #> ℹ Sending request to CompTox...
-    #> Request succeeded with status code: 202
+    #> ℹ Request succeeded with status code: 202
     #> ℹ Getting info from CompTox...
-    #> 
-    #> Request succeeded with status code: 200
+    #> ℹ Request succeeded with status code: 200
     names(info_comptox)
     #> [1] "comptox_cover_sheet"           "comptox_main_data"            
     #> [3] "comptox_abstract_sifter"       "comptox_synonym_identifier"   
     #> [5] "comptox_related_relationships" "comptox_toxcast_assays_ac50"  
     #> [7] "comptox_toxval_details"        "comptox_chemical_properties"
+
+### WHO IARC
+
+The IARC Monographs database is managed by the World Health Organization
+(WHO) International Agency for Research on Cancer (IARC) and contains
+evaluations of the carcinogenic risks of various substances to humans.
+It provides detailed information about Monographs, including publication
+volumes and years, evaluation years, and additional relevant details.
+
+The functione `extr_monograph` provides access to the WHO IARC
+Monographs database and accepts queries using CASRN or the names of
+chemicals.
+
+    dat <- extr_monograph(search_type = "casrn", ids = c("105-74-8", "120-58-1"))
+    #> ℹ Checking Internet Connection...
+    #> ℹ Internet connection OK...
+    #> ℹ Extracting WHO IARC monographs...
+    #> Last updated: 2024-11-29 5:08pm (CET)
+    str(dat)
+    #> 'data.frame':    2 obs. of  7 variables:
+    #>  $ casrn                  : chr  "105-74-8" "120-58-1"
+    #>  $ agent                  : chr  "Lauroyl peroxide" "Isosafrole"
+    #>  $ group                  : chr  "3" "3"
+    #>  $ volume                 : chr  "36, Sup 7, 71" "10, Sup 7"
+    #>  $ volume_publication_year: chr  "1999" "1987"
+    #>  $ evaluation_year        : int  1998 1987
+    #>  $ additional_information : chr  "" ""
+
+    # Example usage for name search
+    dat2 <- extr_monograph(search_type = "name", ids = c("Aloe", "Schistosoma", "Styrene"))
+    #> ℹ Checking Internet Connection...
+    #> ℹ Internet connection OK...
+    #> ℹ Extracting WHO IARC monographs...
+    #> Last updated: 2024-11-29 5:08pm (CET)
 
 ### Tox Info
 
@@ -143,12 +175,23 @@ above-mentioned functions and retrieve a list of dataframes.
     #> Querying 50-00-0. OK (HTTP 200).
     #> Querying 712. OK (HTTP 200).
     #> ℹ Sending request to CompTox...
-    #> Request succeeded with status code: 202ℹ Getting info from CompTox...
-    #> Request succeeded with status code: 200ℹ Checking Internet Connection...
+    #> ℹ Request succeeded with status code: 202
+    #> ℹ Getting info from CompTox...
+    #> ℹ Request succeeded with status code: 200
+    #> ℹ Checking Internet Connection...
     #> ℹ Internet connection OK...
-    #> Sending request to ICE database...Request succeeded with status code: 200ℹ Checking Internet Connection...
+    #> ℹ Sending request to ICE database...
+    #> ℹ Request succeeded with status code: 200
+    #> ℹ Checking Internet Connection...
     #> ℹ Internet connection OK...
-    #> Quering Aspirin to EPA IRIS database...Request succeeded with status code: 200Quering 50-00-0 to EPA IRIS database...Request succeeded with status code: 200
+    #> ℹ Quering Aspirin to EPA IRIS database...
+    #> ℹ Request succeeded with status code: 200
+    #> ℹ Quering 50-00-0 to EPA IRIS database...
+    #> ℹ Request succeeded with status code: 200
+    #> ℹ Checking Internet Connection...
+    #> ℹ Internet connection OK...
+    #> ℹ Extracting WHO IARC monographs...
+    #> Last updated: 2024-11-29 5:08pm (CET)
 
 ### CTD Database
 
@@ -172,8 +215,8 @@ associations.
     )
     #> ℹ Checking Internet Connection...
     #> ℹ Internet connection OK...
-    #> Sending request to CTD database...
-    #> Request succeeded with status code: 200
+    #> ℹ Sending request to CTD database...
+    #> ℹ Request succeeded with status code: 200
 
 
     # Get expresssion data
@@ -185,7 +228,8 @@ associations.
     )
     #> ℹ Checking Internet Connection...
     #> ℹ Internet connection OK...
-    #> Sending request to CTD database...Request succeeded with status code: 200
+    #> ℹ Sending request to CTD database...
+    #> ℹ Request succeeded with status code: 200
 
     names(ctd_expression)
     #>  [1] "x_input"             "chemical_name"       "chemical_id"        
@@ -209,10 +253,10 @@ health.
       input_term_search_type = "directAssociations",
       qt_match_type = "equals"
     )
-    #> Sending request to CTD database for tetramer data for 50-00-0...
-    #> Request succeeded with status code: 200
-    #> Sending request to CTD database for tetramer data for ethanol...
-    #> Request succeeded with status code: 200
+    #> ℹ Sending request to CTD database for tetramer data for 50-00-0...
+    #> ℹ Request succeeded with status code: 200
+    #> ℹ Sending request to CTD database for tetramer data for ethanol...
+    #> ℹ Request succeeded with status code: 200
 
     names(tetramer_data)
     #> [1] "query"        "chemical"     "chemical_id"  "gene"         "gene_id"     

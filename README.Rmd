@@ -73,7 +73,7 @@ extr_ice_assay_names("Rat Acute") # keep empty to retrieve all
 
 The IRIS database is managed by the EPA and contains information on the health effects of exposure to various substances found in the environment. It provides qualitative and quantitative health risk information.
 
-`extr_iris` provides access to EPA’s IRIS database and accepts queries of Chemical Abstracts Service Registry Number (CASRN) or International Union of Pure and Applied Chemistry (IUPAC) names of chemicals.
+`extr_iris` provides access to EPA’s IRIS database and accepts queries CASRN or IUPAC names of chemicals.
 
 ```{r}
 iris_info <- extr_iris(c("glyphosate", "50-00-0"))
@@ -90,6 +90,22 @@ The CompTox Chemistry Dashboard, managed by the EPA, provides access to data on 
 ```{r}
 info_comptox <- extr_comptox(ids = c("Aspirin", "50-00-0"))
 names(info_comptox)
+```
+
+
+### WHO IARC
+
+The IARC Monographs database is managed by the World Health Organization (WHO) International Agency for Research on Cancer (IARC) and contains evaluations of the carcinogenic risks of various substances to humans. It provides detailed information about Monographs, including publication volumes and years, evaluation years, and additional relevant details.
+
+The functione `extr_monograph` provides access to the WHO IARC Monographs database and accepts queries using CASRN or the names of chemicals.
+
+
+```{r}
+dat <- extr_monograph(search_type = "casrn", ids = c("105-74-8", "120-58-1"))
+str(dat)
+
+# Example usage for name search
+dat2 <- extr_monograph(search_type = "name", ids = c("Aloe", "Schistosoma", "Styrene"))
 ```
 
 

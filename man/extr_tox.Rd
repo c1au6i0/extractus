@@ -12,10 +12,12 @@ extr_tox(casrn)
 \value{
 A list of data frames containing toxicological information retrieved from each database:
 \describe{
+\item{who_iarc_monographs}{Lists if any, the WHO IARC monographs related to that chemical.}
 \item{ghs_dat}{Toxicity data from PubChem's Globally Harmonized System (GHS) classification.}
-\item{comptox_list}{List of toxicity information from the CompTox Chemicals Dashboard.}
 \item{ice_dat}{Assay data from the Integrated Chemical Environment (ICE) database.}
 \item{iris}{Risk assessment data from the IRIS database.}
+\item{iris}{Risk assessment data from the IRIS database.}
+\item{comptox_list}{List of dataframe with toxicity information from the CompTox Chemicals Dashboard.}
 }
 }
 \description{
@@ -26,15 +28,16 @@ Chemicals Dashboard, and the Integrated Risk Information System (IRIS).
 \details{
 Specifically, this function:
 \itemize{
+\item Calls \code{\link{extr_monograph}} to return monographs informations from WHO IARC.
 \item Calls \code{\link{extr_pubchem_ghs}} to retrieve GHS classification data from PubChem.
-\item Calls \code{\link{extr_comptox}} to retrieve data from the CompTox Chemicals Dashboard.
 \item Calls \code{\link{extr_ice}} to gather assay data from the ICE database.
 \item Calls \code{\link{extr_iris}} to retrieve risk assessment information from the IRIS database.
+\item Calls \code{\link{extr_comptox}} to retrieve data from the CompTox Chemicals Dashboard.
 }
 }
 \examples{
 \donttest{
-casrn <- c("50-00-0", "107-02-8")
+casrn <- c("100-00-5", "107-02-8")
 extr_tox(casrn)
 }
 }
