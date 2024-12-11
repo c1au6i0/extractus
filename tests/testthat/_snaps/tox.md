@@ -3,6 +3,12 @@
     Code
       result[!names(result) %in% "comptox_cover_sheet"]
     Output
+      $who_iarc_monographs
+            casrn        agent group              volume volume_publication_year
+      677 50-00-0 Formaldehyde     1 Sup 7, 62, 88, 100F                    2012
+          evaluation_year additional_information
+      677            2009                       
+      
       $ghs_dat
          cid   casrn         name
       1  712 50-00-0 Formaldehyde

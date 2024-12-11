@@ -34,7 +34,7 @@ Specifically, this function:
 }
 \examples{
 \donttest{
-casrn <- c("50-00-0", "107-02-8")
+casrn <- c("100-00-5", "107-02-8")
 extr_tox(casrn)
 }
 }

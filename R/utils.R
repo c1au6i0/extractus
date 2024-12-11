@@ -59,7 +59,7 @@ check_status_code <- function(resp) {
   if (!status_code %in% c(200L, 202L)) {
     cli::cli_abort("Request failed with status code: {status_code}")
   } else {
-    cli::cli_inform("Request succeeded with status code: {status_code}")
+    cli::cli_alert_info("Request succeeded with status code: {status_code}")
   }
 }
 
