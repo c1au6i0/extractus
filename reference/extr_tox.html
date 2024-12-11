@@ -58,11 +58,11 @@ Chemicals Dashboard, and the Integrated Risk Information System (IRIS).</p>
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A list of data frames containing toxicological information retrieved from each database:</p><dl><dt>ghs_dat</dt>
-<dd><p>Toxicity data from PubChem's Globally Harmonized System (GHS) classification.</p></dd>
+    <p>A list of data frames containing toxicological information retrieved from each database:</p><dl><dt>who_iarc_monographs</dt>
+<dd><p>Lists if any, the WHO IARC monographs related to that chemical.</p></dd>
 
-<dt>comptox_list</dt>
-<dd><p>List of toxicity information from the CompTox Chemicals Dashboard.</p></dd>
+<dt>ghs_dat</dt>
+<dd><p>Toxicity data from PubChem's Globally Harmonized System (GHS) classification.</p></dd>
 
 <dt>ice_dat</dt>
 <dd><p>Assay data from the Integrated Chemical Environment (ICE) database.</p></dd>
@@ -70,29 +70,36 @@ Chemicals Dashboard, and the Integrated Risk Information System (IRIS).</p>
 <dt>iris</dt>
 <dd><p>Risk assessment data from the IRIS database.</p></dd>
 
+<dt>iris</dt>
+<dd><p>Risk assessment data from the IRIS database.</p></dd>
+
+<dt>comptox_list</dt>
+<dd><p>List of dataframe with toxicity information from the CompTox Chemicals Dashboard.</p></dd>
+
 
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>Specifically, this function:</p><ul><li><p>Calls <code><a href="extr_pubchem_ghs.html">extr_pubchem_ghs</a></code> to retrieve GHS classification data from PubChem.</p></li>
-<li><p>Calls <code><a href="extr_comptox.html">extr_comptox</a></code> to retrieve data from the CompTox Chemicals Dashboard.</p></li>
+    <p>Specifically, this function:</p><ul><li><p>Calls <code><a href="extr_monograph.html">extr_monograph</a></code> to return monographs informations from WHO IARC.</p></li>
+<li><p>Calls <code><a href="extr_pubchem_ghs.html">extr_pubchem_ghs</a></code> to retrieve GHS classification data from PubChem.</p></li>
 <li><p>Calls <code><a href="extr_ice.html">extr_ice</a></code> to gather assay data from the ICE database.</p></li>
 <li><p>Calls <code><a href="extr_iris.html">extr_iris</a></code> to retrieve risk assessment information from the IRIS database.</p></li>
+<li><p>Calls <code><a href="extr_comptox.html">extr_comptox</a></code> to retrieve data from the CompTox Chemicals Dashboard.</p></li>
 </ul></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
-<span class="r-in"><span><span class="va">casrn</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"50-00-0"</span>, <span class="st">"107-02-8"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">casrn</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"100-00-5"</span>, <span class="st">"107-02-8"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">extr_tox</span><span class="op">(</span><span class="va">casrn</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Checking Internet Connection...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Internet connection OK...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Getting PubChem IDS...</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 50-00-0. </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 100-00-5. </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> OK (HTTP 200).</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 712. </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 7474. </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> OK (HTTP 200).</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>

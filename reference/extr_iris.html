@@ -31,7 +31,7 @@ Note that if keywords is not provide all dataset are retrieved."></head><body>
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>Extract Data from EPA IRIS Database</h1>
-      <small class="dont-index">Source: <a href="https://github.com/c1au6i0/extractox/blob/main/R/extr_tox.R" class="external-link"><code>R/extr_tox.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/c1au6i0/extractox/blob/main/R/extr_iris.R" class="external-link"><code>R/extr_iris.R</code></a></small>
       <div class="d-none name"><code>extr_iris.Rd</code></div>
     </div>
 
@@ -72,7 +72,7 @@ Note that if <code>keywords</code> is not provide all dataset are retrieved.</p>
 <span class="r-in"><span><span class="fu">extr_iris</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1332-21-4"</span>, <span class="st">"50-00-0"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Checking Internet Connection...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Internet connection OK...</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Quering <span style="color: #00BB00;">1332-21-4</span> to EPA IRIS database...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Quering <span style="color: #00BB00;">1332-21-4</span> to EPA IRIS database...</span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in FUN(X[[i]], ...):</span> Failed to perform the request: Failed to perform HTTP request. <span style="font-weight: bold;">Caused by</span></span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">error in `curl::curl_fetch_memory()`:</span> <span style="color: #BBBB00;">!</span> SSL connect error [cfpub.epa.gov]:</span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> error:0A000152:SSL routines::unsafe legacy renegotiation disabled</span>
