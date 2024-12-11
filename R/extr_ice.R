@@ -29,7 +29,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   check_internet()
 
   # Perform the request and get a response
-  cli::cli_inform("Sending request to ICE database...")
+  cli::cli_alert_info("Sending request to ICE database...")
 
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
@@ -117,7 +117,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
 #' }
 extr_ice_assay_names <- function(regex = NULL) {
   if (is.null(regex)) {
-    cli::cli_inform("Returning all available assay names from the ICE database.")
+    cli::cli_alert_info("Returning all available assay names from the ICE database.")
     return(all_ice_assays)
   }
 
