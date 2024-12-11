@@ -34,7 +34,7 @@
       1 (3S,7R)-11-methoxy-6,8,19-trioxapentacyclo[10.7.0.02,9.03,7.013,17]nonadeca-1,4,9,11,13(17)-pentaene-16,18-dione
       2                                                                                                     formaldehyde
         x_log_p   exact_mass monoisotopic_mass tpsa complexity charge
-      1     1.6 312.06338810      312.06338810 71.1        650      0
+      1     1.6 312.06338810      312.06338810 71.1        649      0
       2     1.2 30.010564683      30.010564683 17.1          2      0
         h_bond_donor_count h_bond_acceptor_count rotatable_bond_count
       1                  0                     6                    1

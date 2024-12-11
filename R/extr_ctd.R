@@ -102,7 +102,7 @@ extr_ctd <- function(
   }
 
   # Perform the request and get a response
-  cli::cli_inform("Sending request to CTD database...")
+  cli::cli_alert_info("Sending request to CTD database...")
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
@@ -250,7 +250,7 @@ extr_tetramer_ <- function(
   )
 
   # Perform the request and get a response
-  cli::cli_inform("Sending request to CTD database for tetramer data for {.field {chem}}...")
+  cli::cli_alert_info("Sending request to CTD database for tetramer data for {.field {chem}}...")
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
