@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">extr_pubchem_ghs</span><span class="op">(</span><span class="va">casrn</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">extr_pubchem_ghs</span><span class="op">(</span><span class="va">casrn</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -48,6 +48,10 @@
 
 <dl><dt id="arg-casrn">casrn<a class="anchor" aria-label="anchor" href="#arg-casrn"></a></dt>
 <dd><p>Character vector of CAS Registry Numbers (CASRN).</p></dd>
+
+
+<dt id="arg-verbose">verbose<a class="anchor" aria-label="anchor" href="#arg-verbose"></a></dt>
+<dd><p>A logical value indicating whether to print detailed messages. Default is TRUE.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -69,20 +73,16 @@
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 50-00-0. </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> OK (HTTP 200).</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 712. </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> OK (HTTP 200).</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Getting PubChem IDS...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 64-17-5. </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> OK (HTTP 200).</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Querying 702. </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> OK (HTTP 200).</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     cid   casrn         name</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   712 50-00-0 Formaldehyde</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2   712 50-00-0 Formaldehyde</span>

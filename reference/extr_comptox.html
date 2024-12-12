@@ -75,6 +75,7 @@ It was inspired by the <code>ECOTOXr::websearch_comptox</code> function.</p>
 <span>    <span class="st">"TOXCAST_NUMBER_OF_ASSAYS/TOTAL"</span>, <span class="st">"TOXCAST_PERCENT_ACTIVE"</span><span class="op">)</span>,</span>
 <span>  mass_error <span class="op">=</span> <span class="fl">0</span>,</span>
 <span>  verify_ssl <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  verbose <span class="op">=</span> <span class="cn">TRUE</span>,</span>
 <span>  <span class="va">...</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
@@ -293,6 +294,10 @@ It was inspired by the <code>ECOTOXr::websearch_comptox</code> function.</p>
 on linux OS.</p></dd>
 
 
+<dt id="arg-verbose">verbose<a class="anchor" aria-label="anchor" href="#arg-verbose"></a></dt>
+<dd><p>A logical value indicating whether to print detailed messages. Default is TRUE.</p></dd>
+
+
 <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
 <dd><p>Additional arguments passed to <code><a href="https://httr2.r-lib.org/reference/req_options.html" class="external-link">httr2::req_options()</a></code>. Note that this argument is not used
 on linux OS.</p></dd>
@@ -321,8 +326,10 @@ Refer to <a href="https://gist.github.com/c1au6i0/5cc2d87966340a31032ffebf1cfb65
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co"># Example usage of the function:</span></span></span>
 <span class="r-in"><span><span class="fu">extr_comptox</span><span class="op">(</span>ids <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Aspirin"</span>, <span class="st">"50-00-0"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Checking Internet Connection...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Internet connection OK...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Sending request to CompTox...</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in extr_comptox_(ids = ids, download_items = download_items, mass_error = mass_error,     verify_ssl = verify_ssl, xlsx_file = xlsx_file, base_url = base_url,     ...):</span> Failed to perform the request: Failed to perform HTTP request. <span style="font-weight: bold;">Caused by</span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in extr_comptox_(ids = ids, download_items = download_items, mass_error = mass_error,     verify_ssl = verify_ssl, xlsx_file = xlsx_file, base_url = base_url,     verbose = verbose, ...):</span> Failed to perform the request: Failed to perform HTTP request. <span style="font-weight: bold;">Caused by</span></span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">error in `curl::curl_fetch_memory()`:</span> <span style="color: #BBBB00;">!</span> SSL connect error [comptox.epa.gov]:</span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> error:0A000152:SSL routines::unsafe legacy renegotiation disabled</span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> </span>
