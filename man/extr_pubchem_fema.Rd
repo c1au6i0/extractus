@@ -4,10 +4,12 @@
 \alias{extr_pubchem_fema}
 \title{Extract FEMA from PubChem}
 \usage{
-extr_pubchem_fema(casrn)
+extr_pubchem_fema(casrn, verbose = TRUE)
 }
 \arguments{
 \item{casrn}{A vector of CAS Registry Numbers (CASRN) as atomic vectors.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 }
 \value{
 A data frame containing the FEMA flavor profile information for each CASRN. If no information is found for a particular CASRN, the output will include a row indicating this.
@@ -17,7 +19,7 @@ This function retrieves FEMA (Flavor and Extract Manufacturers Association) flav
 }
 \examples{
 \donttest{
-extr_pubchem_fema(c("64-17-5", "50-00-0"))
+extr_pubchem_fema(c("83-67-0", "1490-04-6"))
 }
 }
 \seealso{

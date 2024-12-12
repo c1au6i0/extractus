@@ -4,10 +4,12 @@
 \alias{extr_tox}
 \title{Extract Toxicological Information from Multiple Databases}
 \usage{
-extr_tox(casrn)
+extr_tox(casrn, verbose = TRUE)
 }
 \arguments{
 \item{casrn}{A character vector of CAS Registry Numbers (CASRN) representing the chemicals of interest.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 }
 \value{
 A list of data frames containing toxicological information retrieved from each database:
@@ -37,7 +39,6 @@ Specifically, this function:
 }
 \examples{
 \donttest{
-casrn <- c("100-00-5", "107-02-8")
-extr_tox(casrn)
+extr_tox(casrn = c("100-00-5", "107-02-8"))
 }
 }

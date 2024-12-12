@@ -30,6 +30,7 @@
 #'    for a full list.
 #' @param ontology An optional character vector specifying one or more ontologies for filtering GO reports. Default NULL.
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param verbose A logical value indicating whether to print detailed messages. Default is TRUE.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @return A data frame containing the queried data in CSV format.
 #' @seealso \href{http://ctdbase.org}{Comparative Toxicogenomics Database}
@@ -68,6 +69,7 @@ extr_ctd <- function(
     action_types = NULL,
     ontology = NULL,
     verify_ssl = FALSE,
+    verbose = TRUE,
     ...) {
   if (missing(input_terms)) {
     cli::cli_abort("The argument {.field {input_terms}} is required.")
@@ -75,7 +77,7 @@ extr_ctd <- function(
 
 
   base_url <- "https://ctdbase.org/tools/batchQuery.go"
-  check_internet()
+  check_internet(verbose = verbose)
 
 
   params <- list(
@@ -102,7 +104,9 @@ extr_ctd <- function(
   }
 
   # Perform the request and get a response
-  cli::cli_alert_info("Sending request to CTD database...")
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Sending request to CTD database...")
+  }
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
@@ -118,7 +122,7 @@ extr_ctd <- function(
     }
   )
 
-  check_status_code(resp)
+  check_status_code(resp, verbose = verbose)
 
   csv_file <- tempfile(fileext = "csv")
 
@@ -145,6 +149,7 @@ extr_ctd <- function(
 #' @param input_term_search_type A string specifying the search method to use. Options are "hierarchicalAssociations" or "directAssociations". Default is "directAssociations".
 #' @param qt_match_type A string specifying the query type match method. Options are "equals" or "contains". Default is "equals".
 #' @param verify_ssl Boolean to control if SSL should be verified or not. Default is FALSE.
+#' @param verbose A logical value indicating whether to print detailed messages. Default is TRUE.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @return A data frame containing the queried tetramer data in CSV format.
 #' @seealso \href{http://ctdbase.org}{Comparative Toxicogenomics Database}
@@ -177,7 +182,10 @@ extr_tetramer <- function(
     input_term_search_type = "directAssociations",
     qt_match_type = "equals",
     verify_ssl = FALSE,
+    verbose = TRUE,
     ...) {
+  check_internet(verbose = verbose)
+
   if (length(chem) > 1) {
     dat <- lapply(chem, extr_tetramer_,
       disease = disease,
@@ -186,13 +194,12 @@ extr_tetramer <- function(
       input_term_search_type = input_term_search_type,
       qt_match_type = qt_match_type,
       verify_ssl = verify_ssl,
+      verbose = verbose,
       ...
     )
     out <- do.call(rbind, dat)
   } else {
     base_url <- "https://ctdbase.org/query.go"
-    check_internet()
-
 
     out <- extr_tetramer_(
       chem = chem,
@@ -202,6 +209,7 @@ extr_tetramer <- function(
       input_term_search_type = input_term_search_type,
       qt_match_type = qt_match_type,
       verify_ssl = verify_ssl,
+      verbose = verbose,
       ...
     )
   }
@@ -222,6 +230,7 @@ extr_tetramer_ <- function(
     input_term_search_type = "directAssociations",
     qt_match_type = "equals",
     verify_ssl = FALSE,
+    verbose = verbose,
     ...) {
   if (missing(chem)) {
     cli::cli_abort("The argument {.field {chem}} is required.")
@@ -250,7 +259,9 @@ extr_tetramer_ <- function(
   )
 
   # Perform the request and get a response
-  cli::cli_alert_info("Sending request to CTD database for tetramer data for {.field {chem}}...")
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Sending request to CTD database for tetramer data for {.field {chem}}...")
+  }
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
@@ -266,7 +277,7 @@ extr_tetramer_ <- function(
     }
   )
 
-  check_status_code(resp)
+  check_status_code(resp, verbose = verbose)
 
   tab_file <- tempfile(fileext = "csv")
 

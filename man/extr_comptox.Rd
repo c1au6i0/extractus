@@ -37,6 +37,7 @@ extr_comptox(
     "TOXCAST_NUMBER_OF_ASSAYS/TOTAL", "TOXCAST_PERCENT_ACTIVE"),
   mass_error = 0,
   verify_ssl = FALSE,
+  verbose = TRUE,
   ...
 )
 }
@@ -115,6 +116,8 @@ extr_comptox(
 
 \item{verify_ssl}{Logical value indicating whether SSL certificates should be verified. Default is \code{FALSE}. Note that this argument is not used
 on linux OS.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 
 \item{...}{Additional arguments passed to \code{httr2::req_options()}. Note that this argument is not used
 on linux OS.}

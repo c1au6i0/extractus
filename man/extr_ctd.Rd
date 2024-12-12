@@ -12,6 +12,7 @@ extr_ctd(
   action_types = NULL,
   ontology = NULL,
   verify_ssl = FALSE,
+  verbose = TRUE,
   ...
 )
 }
@@ -50,6 +51,8 @@ for a full list.}
 \item{ontology}{An optional character vector specifying one or more ontologies for filtering GO reports. Default NULL.}
 
 \item{verify_ssl}{Boolean to control of SSL should be verified or not.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 
 \item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }

@@ -4,10 +4,12 @@
 \alias{extr_pubchem_ghs}
 \title{Extract GHS Codes from PubChem}
 \usage{
-extr_pubchem_ghs(casrn)
+extr_pubchem_ghs(casrn, verbose = TRUE)
 }
 \arguments{
 \item{casrn}{Character vector of CAS Registry Numbers (CASRN).}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 }
 \value{
 A dataframe containing GHS information.

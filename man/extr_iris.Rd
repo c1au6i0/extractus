@@ -4,12 +4,18 @@
 \alias{extr_iris}
 \title{Extract Data from EPA IRIS Database}
 \usage{
-extr_iris(casrn = NULL, cancer_types = c("non_cancer", "cancer"))
+extr_iris(
+  casrn = NULL,
+  cancer_types = c("non_cancer", "cancer"),
+  verbose = TRUE
+)
 }
 \arguments{
 \item{casrn}{A vector CASRN for the search.}
 
 \item{cancer_types}{A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 }
 \value{
 A data frame containing the extracted data.

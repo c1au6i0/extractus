@@ -74,6 +74,7 @@
 #' @param mass_error Numeric value indicating the mass error tolerance for searches involving mass data. Default is `0`.
 #' @param verify_ssl Logical value indicating whether SSL certificates should be verified. Default is `FALSE`. Note that this argument is not used
 #'   on linux OS.
+#' @param verbose A logical value indicating whether to print detailed messages. Default is TRUE.
 #' @param ... Additional arguments passed to `httr2::req_options()`. Note that this argument is not used
 #'   on linux OS.
 #' @details
@@ -160,11 +161,13 @@ extr_comptox <- function(ids,
                          ),
                          mass_error = 0,
                          verify_ssl = FALSE,
+                         verbose = TRUE,
                          ...) {
   if (missing(ids)) {
     cli::cli_abort("The argument {.field ids} is required.")
   }
 
+  check_internet(verbose = verbose)
   xlsx_file <- tempfile(fileext = ".xlsx")
 
 
@@ -177,6 +180,7 @@ extr_comptox <- function(ids,
     verify_ssl = verify_ssl,
     xlsx_file = xlsx_file,
     base_url = base_url,
+    verbose = verbose,
     ...
   )
 
@@ -201,6 +205,7 @@ extr_comptox_ <- function(ids,
                           verify_ssl = FALSE,
                           xlsx_file,
                           base_url,
+                          verbose = TRUE,
                           ...) {
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
@@ -219,8 +224,9 @@ extr_comptox_ <- function(ids,
     downloadType = "EXCEL"
   )
 
-
-  cli::cli_alert_info("Sending request to CompTox...")
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Sending request to CompTox...")
+  }
 
   error_result <- NULL
 
@@ -249,14 +255,17 @@ extr_comptox_ <- function(ids,
     cli::cli_abort(msg)
   }
 
-  check_status_code(post_result)
+  check_status_code(post_result, verbose = verbose)
 
   response_body <- httr2::resp_body_string(post_result)
 
   # base url for download
   base_url_down <- "https://comptox.epa.gov/dashboard-api/batchsearch/export/content/"
 
-  cli::cli_alert_info("Getting info from CompTox...")
+
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Getting info from CompTox...")
+  }
 
   Sys.sleep(5)
 
@@ -271,7 +280,7 @@ extr_comptox_ <- function(ids,
     }
   )
 
-  check_status_code(resp)
+  check_status_code(resp, verbose = verbose)
 
   resp |>
     httr2::resp_body_raw() |>

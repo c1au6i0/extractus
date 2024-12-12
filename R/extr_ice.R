@@ -7,6 +7,7 @@
 #'     meaning all assays are included. If you don't know the exact assay name, you can use the
 #'     `extr_ice_assay_names()` function to search for assay names that match a pattern you're interested in.
 #' @param verify_ssl Boolean to control of SSL should be verified or not.
+#' @param verbose A logical value indicating whether to print detailed messages. Default is TRUE.
 #' @param ... Any other arguments to be supplied to `req_option` and thus to `libcurl`.
 #' @return A data frame containing the extracted data from the ICE API.
 #' @seealso
@@ -17,7 +18,7 @@
 #' \donttest{
 #' extr_ice(c("50-00-0"))
 #' }
-extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
+extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, verbose = TRUE, ...) {
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
   }
@@ -26,15 +27,14 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
   base_url <- "https://ice.ntp.niehs.nih.gov/api/v1/search"
   # check_internet()
   # Unfortunatelly this would fail see #7
-  check_internet()
+  check_internet(verbose = verbose)
 
   # Perform the request and get a response
-  cli::cli_alert_info("Sending request to ICE database...")
-
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Sending request to ICE database...")
+  }
 
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
-
-
 
   resp <- tryCatch(
     {
@@ -49,7 +49,7 @@ extr_ice <- function(casrn, assays = NULL, verify_ssl = FALSE, ...) {
     }
   )
 
-  check_status_code(resp)
+  check_status_code(resp, verbose = verbose)
 
   # This is used in case no results are retrieved in next chunk
   col_names <- c(

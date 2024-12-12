@@ -5,6 +5,7 @@
 #'
 #' @param casrn A vector CASRN for the search.
 #' @param cancer_types A character vector specifying the types of cancer to include in the search. Must be either "non_cancer" or "cancer".
+#' @param verbose A logical value indicating whether to print detailed messages. Default is TRUE.
 #' @return A data frame containing the extracted data.
 #' @seealso \href{https://cfpub.epa.gov/ncea/iris/search/}{EPA IRIS database}
 #' @export
@@ -12,20 +13,20 @@
 #' \donttest{
 #' extr_iris(c("1332-21-4", "50-00-0"))
 #' }
-extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
+extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer"), verbose = TRUE) {
   if (!all(cancer_types %in% c("non_cancer", "cancer"))) {
     cli::cli_abort("Cancer types must be either 'non_cancer' or 'cancer'.")
   }
 
   # Check if online
   base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
-  check_internet()
+  check_internet(verbose = verbose)
 
   if (length(casrn) > 1) {
-    dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types)
+    dat <- lapply(casrn, extr_iris_, cancer_types = cancer_types, verbose = verbose)
     out <- do.call(rbind, dat)
   } else {
-    out <- extr_iris_(casrn = casrn, cancer_types = cancer_types)
+    out <- extr_iris_(casrn = casrn, cancer_types = cancer_types, verbose = verbose)
   }
 
   out_cl <- out |>
@@ -42,6 +43,7 @@ extr_iris <- function(casrn = NULL, cancer_types = c("non_cancer", "cancer")) {
 extr_iris_ <- function(casrn = NULL,
                        cancer_types = c("non_cancer", "cancer"),
                        verify_ssl = FALSE,
+                       verbose = TRUE,
                        ...) {
   # Check if online
   base_url <- "https://cfpub.epa.gov/ncea/iris/search/basic/"
@@ -55,7 +57,10 @@ extr_iris_ <- function(casrn = NULL,
   libcurl_opt <- set_ssl(verify_ssl = verify_ssl, other_opt = ...)
 
   error_result <- NULL
-  cli::cli_alert_info("Quering {.field {casrn}} to EPA IRIS database...\n")
+
+  if (isTRUE(verbose)) {
+    cli::cli_alert_info("Quering {.field {casrn}} to EPA IRIS database...\n")
+  }
   resp <- tryCatch(
     {
       httr2::request(base_url = base_url) |>
@@ -79,7 +84,7 @@ extr_iris_ <- function(casrn = NULL,
     cli::cli_abort(msg)
   }
 
-  check_status_code(resp)
+  check_status_code(resp, verbose = verbose)
 
   # Parse the HTML content
   content <- httr2::resp_body_html(resp)

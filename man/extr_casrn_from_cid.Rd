@@ -4,11 +4,13 @@
 \alias{extr_casrn_from_cid}
 \title{Retrieve CASRN for PubChem CIDs}
 \usage{
-extr_casrn_from_cid(pubchem_id)
+extr_casrn_from_cid(pubchem_id, verbose = TRUE)
 }
 \arguments{
 \item{pubchem_id}{A numeric vector of PubChem CIDs. These are unique identifiers
 for chemical compounds in the PubChem database.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 }
 \value{
 A data frame containing the CID, CASRN, and IUPAC name of the compound.
