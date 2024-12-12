@@ -4,7 +4,7 @@
 \alias{extr_ice}
 \title{Extract Data from NTP ICE Database}
 \usage{
-extr_ice(casrn, assays = NULL, verify_ssl = FALSE, ...)
+extr_ice(casrn, assays = NULL, verify_ssl = FALSE, verbose = TRUE, ...)
 }
 \arguments{
 \item{casrn}{A character vector specifying the CASRNs for the search.}
@@ -14,6 +14,8 @@ meaning all assays are included. If you don't know the exact assay name, you can
 \code{extr_ice_assay_names()} function to search for assay names that match a pattern you're interested in.}
 
 \item{verify_ssl}{Boolean to control of SSL should be verified or not.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 
 \item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }

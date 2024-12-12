@@ -13,6 +13,7 @@
 #'     \item Calls \code{\link{extr_comptox}} to retrieve data from the CompTox Chemicals Dashboard.
 #'   }
 #' @param casrn A character vector of CAS Registry Numbers (CASRN) representing the chemicals of interest.
+#' @param verbose A logical value indicating whether to print detailed messages. Default is TRUE.
 #' @return A list of data frames containing toxicological information retrieved from each database:
 #'   \describe{
 #'     \item{who_iarc_monographs}{Lists if any, the WHO IARC monographs related to that chemical.}
@@ -25,29 +26,30 @@
 #' @export
 #' @examples
 #' \donttest{
-#' casrn <- c("100-00-5", "107-02-8")
-#' extr_tox(casrn)
+#' extr_tox(casrn = c("100-00-5", "107-02-8"))
 #' }
-extr_tox <- function(casrn) {
+extr_tox <- function(casrn, verbose = TRUE) {
   if (missing(casrn)) {
     cli::cli_abort("The argument {.field {casrn}} is required.")
   }
 
 
-  ghs_dat <- extr_pubchem_ghs(casrn)
+  ghs_dat <- extr_pubchem_ghs(casrn, verbose = verbose)
 
-  comptox_list <- extr_comptox(casrn)
+  comptox_list <- extr_comptox(casrn, verbose = verbose)
 
   ice_dat <- extr_ice(
     casrn = casrn,
-    assays = NULL
+    assays = NULL,
+    verbose = verbose
   )
 
 
-  iris_filt <- extr_iris(casrn = casrn)
+  iris_filt <- extr_iris(casrn = casrn, verbose = verbose)
 
-  extracted_monographs <- extr_monograph(ids = casrn, search_type = "casrn", verbose = TRUE)
+  extracted_monographs <- extr_monograph(ids = casrn, search_type = "casrn", verbose = verbose)
 
   list_1 <- list(who_iarc_monographs = extracted_monographs, ghs_dat = ghs_dat, iris = iris_filt, ice = ice_dat)
   out <- c(list_1, comptox_list)
+  out
 }

@@ -12,6 +12,7 @@ extr_tetramer(
   input_term_search_type = "directAssociations",
   qt_match_type = "equals",
   verify_ssl = FALSE,
+  verbose = TRUE,
   ...
 )
 }
@@ -29,6 +30,8 @@ extr_tetramer(
 \item{qt_match_type}{A string specifying the query type match method. Options are "equals" or "contains". Default is "equals".}
 
 \item{verify_ssl}{Boolean to control if SSL should be verified or not. Default is FALSE.}
+
+\item{verbose}{A logical value indicating whether to print detailed messages. Default is TRUE.}
 
 \item{...}{Any other arguments to be supplied to \code{req_option} and thus to \code{libcurl}.}
 }

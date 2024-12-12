@@ -42,7 +42,7 @@ It queries PubChem through the <code>webchem</code> package and extracts the CAS
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">extr_casrn_from_cid</span><span class="op">(</span><span class="va">pubchem_id</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">extr_casrn_from_cid</span><span class="op">(</span><span class="va">pubchem_id</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -52,6 +52,10 @@ It queries PubChem through the <code>webchem</code> package and extracts the CAS
 <dl><dt id="arg-pubchem-id">pubchem_id<a class="anchor" aria-label="anchor" href="#arg-pubchem-id"></a></dt>
 <dd><p>A numeric vector of PubChem CIDs. These are unique identifiers
 for chemical compounds in the PubChem database.</p></dd>
+
+
+<dt id="arg-verbose">verbose<a class="anchor" aria-label="anchor" href="#arg-verbose"></a></dt>
+<dd><p>A logical value indicating whether to print detailed messages. Default is TRUE.</p></dd>
 
 </dl></div>
     <div class="section level2">
