@@ -89,7 +89,9 @@ check_internet <- function(verbose = TRUE) {
     }
     out <- TRUE
   }
+  invisible(out)
 }
+
 
 #' Selection of assays of iris
 
